@@ -1,0 +1,103 @@
+================================================================================
+V6: 2D SWEEP
+================================================================================
+Started: 2025-11-18 12:43:16
+Grid: (128, 128)
+Total runs: 792
+================================================================================
+
+M_s = 1
+  symmetric, in-phase, T=100s, gamma=0.0010
+  symmetric, in-phase, T=100s, gamma=0.0050
+  symmetric, in-phase, T=200s, gamma=0.0010
+  symmetric, in-phase, T=200s, gamma=0.0050
+  symmetric, in-phase, T=500s, gamma=0.0010
+    Progress: 50/792
+  symmetric, in-phase, T=500s, gamma=0.0050
+  symmetric, anti-phase, T=100s, gamma=0.0010
+  symmetric, anti-phase, T=100s, gamma=0.0050
+  symmetric, anti-phase, T=200s, gamma=0.0010
+  symmetric, anti-phase, T=200s, gamma=0.0050
+    Progress: 100/792
+  symmetric, anti-phase, T=500s, gamma=0.0010
+  symmetric, anti-phase, T=500s, gamma=0.0050
+  clustered, in-phase, T=100s, gamma=0.0010
+  clustered, in-phase, T=100s, gamma=0.0050
+    Progress: 150/792
+  clustered, in-phase, T=200s, gamma=0.0010
+  clustered, in-phase, T=200s, gamma=0.0050
+  clustered, in-phase, T=500s, gamma=0.0010
+  clustered, in-phase, T=500s, gamma=0.0050
+  clustered, anti-phase, T=100s, gamma=0.0010
+    Progress: 200/792
+  clustered, anti-phase, T=100s, gamma=0.0050
+  clustered, anti-phase, T=200s, gamma=0.0010
+  clustered, anti-phase, T=200s, gamma=0.0050
+  clustered, anti-phase, T=500s, gamma=0.0010
+    Progress: 250/792
+  clustered, anti-phase, T=500s, gamma=0.0050
+
+M_s = 2
+  symmetric, in-phase, T=100s, gamma=0.0010
+  symmetric, in-phase, T=100s, gamma=0.0050
+  symmetric, in-phase, T=200s, gamma=0.0010
+  symmetric, in-phase, T=200s, gamma=0.0050
+    Progress: 300/792
+  symmetric, in-phase, T=500s, gamma=0.0010
+  symmetric, in-phase, T=500s, gamma=0.0050
+  symmetric, anti-phase, T=100s, gamma=0.0010
+  symmetric, anti-phase, T=100s, gamma=0.0050
+    Progress: 350/792
+  symmetric, anti-phase, T=200s, gamma=0.0010
+  symmetric, anti-phase, T=200s, gamma=0.0050
+  symmetric, anti-phase, T=500s, gamma=0.0010
+  symmetric, anti-phase, T=500s, gamma=0.0050
+  clustered, in-phase, T=100s, gamma=0.0010
+    Progress: 400/792
+  clustered, in-phase, T=100s, gamma=0.0050
+  clustered, in-phase, T=200s, gamma=0.0010
+  clustered, in-phase, T=200s, gamma=0.0050
+  clustered, in-phase, T=500s, gamma=0.0010
+    Progress: 450/792
+  clustered, in-phase, T=500s, gamma=0.0050
+  clustered, anti-phase, T=100s, gamma=0.0010
+  clustered, anti-phase, T=100s, gamma=0.0050
+  clustered, anti-phase, T=200s, gamma=0.0010
+  clustered, anti-phase, T=200s, gamma=0.0050
+    Progress: 500/792
+  clustered, anti-phase, T=500s, gamma=0.0010
+  clustered, anti-phase, T=500s, gamma=0.0050
+
+M_s = 4
+  symmetric, in-phase, T=100s, gamma=0.0010
+  symmetric, in-phase, T=100s, gamma=0.0050
+    Progress: 550/792
+  symmetric, in-phase, T=200s, gamma=0.0010
+  symmetric, in-phase, T=200s, gamma=0.0050
+  symmetric, in-phase, T=500s, gamma=0.0010
+  symmetric, in-phase, T=500s, gamma=0.0050
+  symmetric, anti-phase, T=100s, gamma=0.0010
+    Progress: 600/792
+  symmetric, anti-phase, T=100s, gamma=0.0050
+  symmetric, anti-phase, T=200s, gamma=0.0010
+  symmetric, anti-phase, T=200s, gamma=0.0050
+  symmetric, anti-phase, T=500s, gamma=0.0010
+  symmetric, anti-phase, T=500s, gamma=0.0050
+    Progress: 650/792
+  clustered, in-phase, T=100s, gamma=0.0010
+  clustered, in-phase, T=100s, gamma=0.0050
+  clustered, in-phase, T=200s, gamma=0.0010
+  clustered, in-phase, T=200s, gamma=0.0050
+    Progress: 700/792
+  clustered, in-phase, T=500s, gamma=0.0010
+  clustered, in-phase, T=500s, gamma=0.0050
+  clustered, anti-phase, T=100s, gamma=0.0010
+  clustered, anti-phase, T=100s, gamma=0.0050
+  clustered, anti-phase, T=200s, gamma=0.0010
+    Progress: 750/792
+  clustered, anti-phase, T=200s, gamma=0.0050
+  clustered, anti-phase, T=500s, gamma=0.0010
+  clustered, anti-phase, T=500s, gamma=0.0050
+
+Completed: 2025-11-19 11:24:35
+Results: v6_2d_results.json, v6_2d_results.csv

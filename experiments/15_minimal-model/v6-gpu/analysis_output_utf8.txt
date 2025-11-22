@@ -1,0 +1,167 @@
+Loading CSV files...
+
+Total records loaded: 3163
+1D: 792, 2D: 792, 3D: 792, 4D: 787
+
+================================================================================
+DATA OVERVIEW
+================================================================================
+
+1D:
+  Total configs: 792
+  Alpha range: 0.60 - 2.60
+  Num sources: [np.int64(1), np.int64(2), np.int64(4)]
+  Commit rate range: 0.12 - 1623.07
+  First commit time: 2.58 - 8.62
+
+2D:
+  Total configs: 792
+  Alpha range: 0.60 - 2.60
+  Num sources: [np.int64(1), np.int64(2), np.int64(4)]
+  Commit rate range: 6.44 - 205.60
+  First commit time: 4.50 - 14.27
+
+3D:
+  Total configs: 792
+  Alpha range: 0.60 - 2.60
+  Num sources: [np.int64(1), np.int64(2), np.int64(4)]
+  Commit rate range: 25.04 - 96.43
+  First commit time: 6.27 - 19.73
+
+4D:
+  Total configs: 787
+  Alpha range: 0.60 - 2.60
+  Num sources: [np.int64(1), np.int64(2), np.int64(4)]
+  Commit rate range: 50.77 - 97.65
+  First commit time: 4.49 - 14.14
+
+================================================================================
+H1: BINARY JUMP WEAKENS WITH INCREASING DIMENSION
+================================================================================
+
+Analysis: Measure sharpness of commit rate vs alpha transition
+Method: Look at commit rate gradient and variance at low alpha values
+
+1D, Ms=1: alpha=[0.60, 2.60], rate=[0.12, 5.11], grad_mean=2.49, grad_max=15.25
+1D, Ms=2: alpha=[0.60, 2.60], rate=[0.52, 19.65], grad_mean=9.56, grad_max=55.60
+1D, Ms=4: alpha=[0.60, 2.60], rate=[2.03, 75.08], grad_mean=36.52, grad_max=215.50
+2D, Ms=1: alpha=[0.60, 2.60], rate=[8.40, 110.94], grad_mean=51.27, grad_max=104.30
+2D, Ms=2: alpha=[0.60, 2.60], rate=[31.35, 158.79], grad_mean=63.72, grad_max=168.50
+2D, Ms=4: alpha=[0.60, 2.60], rate=[103.95, 180.84], grad_mean=38.44, grad_max=172.25
+3D, Ms=1: alpha=[0.60, 2.60], rate=[25.04, 64.22], grad_mean=19.59, grad_max=50.65
+3D, Ms=2: alpha=[0.60, 2.60], rate=[47.18, 74.74], grad_mean=13.78, grad_max=35.65
+3D, Ms=4: alpha=[0.60, 2.60], rate=[62.75, 82.17], grad_mean=9.71, grad_max=25.10
+4D, Ms=1: alpha=[0.60, 2.60], rate=[50.77, 76.45], grad_mean=12.84, grad_max=33.20
+4D, Ms=2: alpha=[0.60, 2.60], rate=[65.27, 83.37], grad_mean=9.05, grad_max=23.35
+4D, Ms=4: alpha=[0.60, 2.60], rate=[75.49, 88.26], grad_mean=6.39, grad_max=16.45
+
+Interpretation: Higher max_gradient = sharper jump (more binary)
+Expected: gradient should decrease from 1D to 4D
+
+================================================================================
+H2: GEOMETRY AND PHASE EFFECTS FOR d >= 2
+================================================================================
+
+Geometry effects (symmetric vs clustered) at alpha=1.0:
+1D, Ms=2: sym=38.722, clust=19.245, diff=19.477 (50.3%) ***
+1D, Ms=4: sym=125.597, clust=138.000, diff=12.403 (9.0%) 
+2D, Ms=2: sym=119.522, clust=119.532, diff=0.010 (0.0%) 
+2D, Ms=4: sym=160.645, clust=160.655, diff=0.010 (0.0%) 
+3D, Ms=2: sym=79.752, clust=79.752, diff=0.000 (0.0%) 
+3D, Ms=4: sym=85.618, clust=85.618, diff=0.000 (0.0%) 
+4D, Ms=2: sym=86.575, clust=86.575, diff=0.000 (0.0%) 
+4D, Ms=4: sym=90.500, clust=90.500, diff=0.000 (0.0%) 
+
+Phase effects (phase=0 vs phase=1) at alpha=1.0:
+1D, Ms=2: phi=0: 38.722, phi=pi: 38.722, diff=0.000 (0.0%) 
+1D, Ms=4: phi=0: 125.597, phi=pi: 125.597, diff=0.000 (0.0%) 
+2D, Ms=2: phi=0: 119.522, phi=pi: 119.522, diff=0.000 (0.0%) 
+2D, Ms=4: phi=0: 160.645, phi=pi: 160.645, diff=0.000 (0.0%) 
+3D, Ms=2: phi=0: 79.752, phi=pi: 79.752, diff=0.000 (0.0%) 
+3D, Ms=4: phi=0: 85.618, phi=pi: 85.618, diff=0.000 (0.0%) 
+4D, Ms=2: phi=0: 86.575, phi=pi: 86.575, diff=0.000 (0.0%) 
+4D, Ms=4: phi=0: 90.500, phi=pi: 90.500, diff=0.000 (0.0%) 
+
+*** indicates >=10% difference (significant by test plan)
+
+================================================================================
+H3: TIME-DEPENDENT THRESHOLD PERSISTS ACROSS DIMENSIONS
+================================================================================
+
+Commit rates vs horizon T (alpha=1.0, Ms=2, symmetric, phi=0, gamma=0.001):
+1D: T=100: 1.780, T=200: 1.860, T=500: 2.570, ratio(500/100)=1.44
+2D: T=100: 70.250, T=200: 62.510, T=500: 52.736, ratio(500/100)=0.75
+3D: T=100: 59.170, T=200: 79.585, T=500: 91.834, ratio(500/100)=1.55
+4D: T=100: 73.130, T=200: 86.565, T=500: 94.626, ratio(500/100)=1.29
+
+First commit time vs T:
+1D: T=100: 5.10, T=200: 5.10, T=500: 5.10
+2D: T=100: 8.74, T=200: 8.74, T=500: 8.74
+3D: T=100: 12.14, T=200: 12.14, T=500: 12.14
+4D: T=100: 8.70, T=200: 8.70, T=500: 8.70
+
+================================================================================
+H4: THRESHOLD SCALES AS alpha prop to Ms^-beta(d), WITH beta(d) -> 0.5
+================================================================================
+
+Commit rate scaling with Ms (at alpha=1.0, T=200, symmetric, phi=0, gamma=0.001):
+1D: Ms=1: 0.460, Ms=2: 1.860, Ms=4: 7.445, rho≈2.008
+2D: Ms=1: 19.905, Ms=2: 62.510, Ms=4: 134.255, rho≈1.377
+3D: Ms=1: 71.045, Ms=2: 79.585, Ms=4: 85.595, rho≈0.134
+4D: Ms=1: 80.965, Ms=2: 86.565, Ms=4: 90.515, rho≈0.080
+
+First commit time scaling with Ms:
+1D: Ms=1: 6.86, Ms=2: 5.10, Ms=4: 3.82, ratio(1/4)=1.80
+2D: Ms=1: 11.58, Ms=2: 8.74, Ms=4: 6.61, ratio(1/4)=1.75
+3D: Ms=1: 16.03, Ms=2: 12.14, Ms=4: 9.20, ratio(1/4)=1.74
+4D: Ms=1: 11.48, Ms=2: 8.70, Ms=4: 6.59, ratio(1/4)=1.74
+
+================================================================================
+H5: FOR d >= 4, THRESHOLD AND RATE SCALING STABILIZE
+================================================================================
+
+3D vs 4D comparison (alpha=1.0, T=200, symmetric, phi=0, gamma=0.001):
+
+Commit rates:
+  Ms=1: 3D=71.045, 4D=80.965, diff=9.920 (14.0%)
+  Ms=2: 3D=79.585, 4D=86.565, diff=6.980 (8.8%)
+  Ms=4: 3D=85.595, 4D=90.515, diff=4.920 (5.7%)
+
+First commit times:
+  Ms=1: 3D=16.03, 4D=11.48, diff=4.55 (28.4%)
+  Ms=2: 3D=12.14, 4D=8.70, diff=3.44 (28.3%)
+  Ms=4: 3D=9.20, 4D=6.59, diff=2.61 (28.4%)
+
+================================================================================
+DIMENSIONAL SCALING SUMMARY
+================================================================================
+
+Salience amplification (max_salience) by dimension:
+(alpha=1.0, Ms=2, T=200, symmetric, phi=0, gamma=0.001)
+  1D: 0.004477
+  2D: 1.059073
+  3D: 274.150889
+  4D: 1443.002083
+
+Final Psi by dimension:
+  1D: 0.327311
+  2D: 0.707920
+  3D: 274.150889
+  4D: 1443.002083
+
+================================================================================
+COMPREHENSIVE STATISTICS TABLE
+================================================================================
+
+Sample statistics (Ms=2, symmetric, phi=0, gamma=0.001, T=200):
+ d  n  rate_mean  rate_std  fct_mean     sal_max
+ 1 11   6.383636  4.739046  4.439094    0.017047
+ 2 11 105.790000 40.950597  7.635505    3.156956
+ 3 11  82.658182  4.372188 10.612727  809.379316
+ 4 11  88.587727  2.872367  7.600909 4280.990513
+
+Full summary saved to: analysis_summary.csv (288 rows)
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================

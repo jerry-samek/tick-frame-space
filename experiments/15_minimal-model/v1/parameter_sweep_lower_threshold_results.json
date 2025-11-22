@@ -1,0 +1,98 @@
+[
+  {
+    "parameters": {
+      "alpha_0": 10.0
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 22,
+      "first_commit_time": 51.09500000000769,
+      "max_salience": 1.3713460980802534,
+      "avg_salience": 0.2828056924821048
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 20.0
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 44,
+      "first_commit_time": 39.09500000000155,
+      "max_salience": 5.485384392321014,
+      "avg_salience": 1.1312227699284192
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 25.0
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 50,
+      "first_commit_time": 36.09500000000001,
+      "max_salience": 8.57091311298536,
+      "avg_salience": 1.767535578012332
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 30.0
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 54,
+      "first_commit_time": 33.09999999999848,
+      "max_salience": 12.342114882715867,
+      "avg_salience": 2.545251232338002
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 35.0
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 58,
+      "first_commit_time": 31.099999999998097,
+      "max_salience": 16.798989701457426,
+      "avg_salience": 3.46436973290072
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 40.0
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 61,
+      "first_commit_time": 30.099999999998296,
+      "max_salience": 21.941537569284055,
+      "avg_salience": 4.524891079713677
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 45.0
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 62,
+      "first_commit_time": 28.099999999998694,
+      "max_salience": 27.769758486128232,
+      "avg_salience": 5.72681527276712
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 50.0
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 65,
+      "first_commit_time": 27.099999999998893,
+      "max_salience": 34.28365245194144,
+      "avg_salience": 7.070142312049328
+    }
+  }
+]

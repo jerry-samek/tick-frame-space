@@ -1,0 +1,2810 @@
+[
+  {
+    "parameters": {
+      "alpha_0": 1.6,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.02045612774349668,
+      "avg_salience": 0.004595216724016457,
+      "final_psi": 0.4549264556776292,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6500000000000001,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.02175461241469045,
+      "avg_salience": 0.004886905285594869,
+      "final_psi": 0.48380362327389204,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7000000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.02309305046038403,
+      "avg_salience": 0.005187568879834779,
+      "final_psi": 0.5135693191036431,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7500000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.024471441880600932,
+      "avg_salience": 0.005497207506743678,
+      "final_psi": 0.544223543167624,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8000000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.0258897866752483,
+      "avg_salience": 0.00581582116631726,
+      "final_psi": 0.5757662954654087,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8500000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.027348084844493383,
+      "avg_salience": 0.006143409858554996,
+      "final_psi": 0.6081975759969446,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.02884633638821126,
+      "avg_salience": 0.006479973583457632,
+      "final_psi": 0.6415173847623055,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.030384541306360504,
+      "avg_salience": 0.006825512341011523,
+      "final_psi": 0.6757257217601407,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.031962699598991985,
+      "avg_salience": 0.007180026131235612,
+      "final_psi": 0.7108225869923256,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0500000000000007,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03358081126638824,
+      "avg_salience": 0.007543514954158105,
+      "final_psi": 0.7468079804616525,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1000000000000005,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03523887630785111,
+      "avg_salience": 0.007915978809682051,
+      "final_psi": 0.7836819021585233,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03693689472418019,
+      "avg_salience": 0.008297417697929571,
+      "final_psi": 0.8214443520950275,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.2000000000000006,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03867486651493262,
+      "avg_salience": 0.008687831618816644,
+      "final_psi": 0.8600953302628478,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.0197493636743431,
+      "avg_salience": 0.004535924276851791,
+      "final_psi": 0.2222602895657377,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6500000000000001,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.021002985391928065,
+      "avg_salience": 0.004823849157702054,
+      "final_psi": 0.23636860872740068,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7000000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.02229518008544081,
+      "avg_salience": 0.005120633265652921,
+      "final_psi": 0.2509110300169931,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7500000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.023625947754902878,
+      "avg_salience": 0.00542627660071182,
+      "final_psi": 0.26588755343487913,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8000000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.02499528840022962,
+      "avg_salience": 0.005740779162874916,
+      "final_psi": 0.28129817898087095,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8500000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.026403202021570732,
+      "avg_salience": 0.006064140952140768,
+      "final_psi": 0.2971429066548976,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.027849688618818425,
+      "avg_salience": 0.006396361968510804,
+      "final_psi": 0.3134217364570294,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.0293347481919263,
+      "avg_salience": 0.006737442211971435,
+      "final_psi": 0.3301346683866004,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.030858380740945567,
+      "avg_salience": 0.0070873816825415634,
+      "final_psi": 0.34728170244453666,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0500000000000007,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03242058626614662,
+      "avg_salience": 0.007446180380248191,
+      "final_psi": 0.3648628386321614,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1000000000000005,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.034021364766857506,
+      "avg_salience": 0.007813838304997009,
+      "final_psi": 0.3828780769448534,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03566071624385119,
+      "avg_salience": 0.008190355456907241,
+      "final_psi": 0.4013274173884549,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.2000000000000006,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.037338640696689594,
+      "avg_salience": 0.00857573183589627,
+      "final_psi": 0.4202108599589172,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.018385396499845764,
+      "avg_salience": 0.004417444041891803,
+      "final_psi": 0.10601865700540326,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6500000000000001,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.019552438269829994,
+      "avg_salience": 0.004697848204702769,
+      "final_psi": 0.11274835691286647,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7000000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.02075538901735366,
+      "avg_salience": 0.004986880187905379,
+      "final_psi": 0.11968512450972908,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7500000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.021994248742441144,
+      "avg_salience": 0.005284539991506974,
+      "final_psi": 0.12682895979616737,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8000000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.023269017445015975,
+      "avg_salience": 0.005590827615504568,
+      "final_psi": 0.13417986277210964,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8500000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.024579695125194503,
+      "avg_salience": 0.005905743059894962,
+      "final_psi": 0.1417378334374791,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.025926281782904043,
+      "avg_salience": 0.0062292863246809415,
+      "final_psi": 0.14950287179234256,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.02730877741809028,
+      "avg_salience": 0.00656145740984907,
+      "final_psi": 0.15747497783637768,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.02872718203080582,
+      "avg_salience": 0.006902256315418086,
+      "final_psi": 0.16565415157003405,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0500000000000007,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.030181495621293013,
+      "avg_salience": 0.007251683041412605,
+      "final_psi": 0.17404039299390256,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1000000000000005,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03167171818893296,
+      "avg_salience": 0.007609737587743636,
+      "final_psi": 0.18263370210584726,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.033197849734446984,
+      "avg_salience": 0.007976419954524593,
+      "final_psi": 0.19143407890859024,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.2000000000000006,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.034759890257404766,
+      "avg_salience": 0.00835173014167572,
+      "final_psi": 0.20044152340021726,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.027340297551309012,
+      "avg_salience": 0.005869025140921189,
+      "final_psi": 0.5810334889511977,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6500000000000001,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.02907576565768263,
+      "avg_salience": 0.006241570682100602,
+      "final_psi": 0.6179154975279597,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7000000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.030864632782721852,
+      "avg_salience": 0.006625579163017496,
+      "final_psi": 0.6559323371387321,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7500000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03270689892620556,
+      "avg_salience": 0.007021050583634048,
+      "final_psi": 0.6950840077797708,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8000000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.034602564088451866,
+      "avg_salience": 0.007427984943985888,
+      "final_psi": 0.735370509454603,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8500000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.036551628269294485,
+      "avg_salience": 0.007846382244063947,
+      "final_psi": 0.7767918421623307,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03855409146871045,
+      "avg_salience": 0.00827624248385216,
+      "final_psi": 0.8193480059013636,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04060995368706924,
+      "avg_salience": 0.008717565663428378,
+      "final_psi": 0.8630390006794095,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04271921492392156,
+      "avg_salience": 0.009170351782688387,
+      "final_psi": 0.9078648264861501,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0500000000000007,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.044881875179328345,
+      "avg_salience": 0.009634600841671405,
+      "final_psi": 0.9538254833254691,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1000000000000005,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04709793445371679,
+      "avg_salience": 0.010110312840432793,
+      "final_psi": 1.0009209712028462,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 99.09999999998236,
+      "first_commit_tick": 99,
+      "max_salience": 0.04936739274651484,
+      "avg_salience": 0.010597487778877972,
+      "final_psi": 0.0,
+      "has_commits": true
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.2000000000000006,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 98.09999999998327,
+      "first_commit_tick": 98,
+      "max_salience": 0.05169025005790797,
+      "avg_salience": 0.011096125657048714,
+      "final_psi": 0.05169025005790797,
+      "has_commits": true
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.026327583679553245,
+      "avg_salience": 0.0057868171844261615,
+      "final_psi": 0.2835540420368819,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6500000000000001,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.027998768190546596,
+      "avg_salience": 0.006154144447116722,
+      "final_psi": 0.3015530779087194,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7000000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.029721373763423233,
+      "avg_salience": 0.006532774087129775,
+      "final_psi": 0.3201059302693589,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7500000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03149540039798022,
+      "avg_salience": 0.006922706104428277,
+      "final_psi": 0.3392125991169855,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8000000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.033320848094506486,
+      "avg_salience": 0.007323940499046546,
+      "final_psi": 0.35887308445328076,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8500000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.035197716852855804,
+      "avg_salience": 0.007736477270976276,
+      "final_psi": 0.37908738627783756,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03712600667299951,
+      "avg_salience": 0.008160316420201376,
+      "final_psi": 0.39985550458986746,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03910571755529502,
+      "avg_salience": 0.008595457946798566,
+      "final_psi": 0.42117743939312974,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04113684949930652,
+      "avg_salience": 0.009041901850664886,
+      "final_psi": 0.4430531906825794,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0500000000000007,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.043219402505097974,
+      "avg_salience": 0.00949964813183966,
+      "final_psi": 0.46548275846014336,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1000000000000005,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04535337657307497,
+      "avg_salience": 0.009968696790376591,
+      "final_psi": 0.48846614272845307,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04753877170268723,
+      "avg_salience": 0.01044904782618308,
+      "final_psi": 0.5120033434829709,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.2000000000000006,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04977558789412532,
+      "avg_salience": 0.010940701239300429,
+      "final_psi": 0.536094360725721,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.024382484978691023,
+      "avg_salience": 0.005622749223446119,
+      "final_psi": 0.13494598136270683,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6500000000000001,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.025930201310417882,
+      "avg_salience": 0.00597966201595648,
+      "final_psi": 0.1435118883829555,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7000000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.027525539683130495,
+      "avg_salience": 0.006347556740553169,
+      "final_psi": 0.15234136177327606,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7500000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.029168500096649803,
+      "avg_salience": 0.006726433397200612,
+      "final_psi": 0.1614344015328147,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8000000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.030859082551218036,
+      "avg_salience": 0.007116291985930556,
+      "final_psi": 0.17079100766233335,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8500000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03259728704672092,
+      "avg_salience": 0.007517132506736188,
+      "final_psi": 0.18041118016166852,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.034383113583123286,
+      "avg_salience": 0.007928954959601444,
+      "final_psi": 0.1902949190304347,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.036216562160757915,
+      "avg_salience": 0.00835175934460068,
+      "final_psi": 0.2004422242704163,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.038097632779209925,
+      "avg_salience": 0.00878554566163354,
+      "final_psi": 0.21085309587920498,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0500000000000007,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.040026325438562084,
+      "avg_salience": 0.009230313910739528,
+      "final_psi": 0.22152753385774865,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1000000000000005,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.042002640139163744,
+      "avg_salience": 0.009686064091968906,
+      "final_psi": 0.23246553820725377,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.044026576880519475,
+      "avg_salience": 0.010152796205233265,
+      "final_psi": 0.24366710892559834,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.2000000000000006,
+      "alpha_1": 0.0,
+      "gamma": 0.005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.046098135662816134,
+      "avg_salience": 0.010630510250572786,
+      "final_psi": 0.25513224601374684,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.035106460110817854,
+      "avg_salience": 0.007239825727541725,
+      "final_psi": 0.7167427470266308,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6500000000000001,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.037334897520224467,
+      "avg_salience": 0.007699384977825648,
+      "final_psi": 0.7622391128047391,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7000000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.039631902234394584,
+      "avg_salience": 0.008173084512728676,
+      "final_psi": 0.8091353667601391,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7500000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04199747425364102,
+      "avg_salience": 0.008660924332263092,
+      "final_psi": 0.8574315088940462,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8000000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.044431613577749066,
+      "avg_salience": 0.009162904436415698,
+      "final_psi": 0.9071275392051542,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8500000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.0469343202069447,
+      "avg_salience": 0.00967902482522238,
+      "final_psi": 0.9582234576970157,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 99.09999999998236,
+      "first_commit_tick": 99,
+      "max_salience": 0.04950559414067305,
+      "avg_salience": 0.010209285498601138,
+      "final_psi": 0.0,
+      "has_commits": true
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 98.09999999998327,
+      "first_commit_tick": 98,
+      "max_salience": 0.05214543537929878,
+      "avg_salience": 0.010753686456608786,
+      "final_psi": 0.05214543537929878,
+      "has_commits": true
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 97.09999999998418,
+      "first_commit_tick": 97,
+      "max_salience": 0.05485384392306136,
+      "avg_salience": 0.011312227699273586,
+      "final_psi": 0.10754845335867078,
+      "has_commits": true
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0500000000000007,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 96.09999999998509,
+      "first_commit_tick": 96,
+      "max_salience": 0.05763081977173733,
+      "avg_salience": 0.011884909226554862,
+      "final_psi": 0.16615375390283793,
+      "has_commits": true
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1000000000000005,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 96.09999999998509,
+      "first_commit_tick": 96,
+      "max_salience": 0.060476362925291356,
+      "avg_salience": 0.012471731038457104,
+      "final_psi": 0.17435765727829788,
+      "has_commits": true
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 95.099999999986,
+      "first_commit_tick": 95,
+      "max_salience": 0.06339047338372959,
+      "avg_salience": 0.013072693134990111,
+      "final_psi": 0.2388833616485464,
+      "has_commits": true
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.2000000000000006,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 94.0999999999869,
+      "first_commit_tick": 94,
+      "max_salience": 0.06637315114709093,
+      "avg_salience": 0.013687795516144923,
+      "final_psi": 0.30650242909388925,
+      "has_commits": true
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03372455003884326,
+      "avg_salience": 0.007131026543242862,
+      "final_psi": 0.34942030061890017,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6500000000000001,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03586526854719121,
+      "avg_salience": 0.007583679595304519,
+      "final_psi": 0.37160030016992135,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7000000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03807185531721565,
+      "avg_salience": 0.008050260433579188,
+      "final_psi": 0.3944627612453802,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7500000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04034431034918193,
+      "avg_salience": 0.008530769058077545,
+      "final_psi": 0.41800768384579967,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8000000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04268263364290813,
+      "avg_salience": 0.009025205468787432,
+      "final_psi": 0.44223506797058426,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8500000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.045086825198600224,
+      "avg_salience": 0.009533569665743879,
+      "final_psi": 0.46714491362145005,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04755688501574005,
+      "avg_salience": 0.010055861648867017,
+      "final_psi": 0.4927372207944838,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.05009281309466591,
+      "avg_salience": 0.010592081418212284,
+      "final_psi": 0.5190119894924019,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.05269460943560942,
+      "avg_salience": 0.011142228973806973,
+      "final_psi": 0.5459692197165417,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0500000000000007,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.05536227403835067,
+      "avg_salience": 0.011706304315611184,
+      "final_psi": 0.5736089114649479,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1000000000000005,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.05809580690286846,
+      "avg_salience": 0.012284307443629643,
+      "final_psi": 0.6019310647378525,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.060895208029156205,
+      "avg_salience": 0.012876238357872173,
+      "final_psi": 0.6309356795357366,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.2000000000000006,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.06376047741725968,
+      "avg_salience": 0.013482097058329591,
+      "final_psi": 0.66062275585815,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.031082258179541133,
+      "avg_salience": 0.006914147560544037,
+      "final_psi": 0.1659395414530569,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6500000000000001,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03305525308353202,
+      "avg_salience": 0.007353033880305203,
+      "final_psi": 0.17647281312732485,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7000000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.035088955522947385,
+      "avg_salience": 0.007805424394517586,
+      "final_psi": 0.18733018546842203,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7500000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.037183365497973374,
+      "avg_salience": 0.00827131910318901,
+      "final_psi": 0.19851165847653632,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8000000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.039338483008482535,
+      "avg_salience": 0.008750718006309164,
+      "final_psi": 0.21001723215141993,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8500000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04155430805464898,
+      "avg_salience": 0.009243621103911508,
+      "final_psi": 0.22184690649387617,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.043830840636016645,
+      "avg_salience": 0.009750028395920275,
+      "final_psi": 0.2340006815020866,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.046168080752886684,
+      "avg_salience": 0.010269939882388243,
+      "final_psi": 0.24647855717731781,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.048566028405465665,
+      "avg_salience": 0.010803355563340758,
+      "final_psi": 0.2592805335201782,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0500000000000007,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.05102468359354271,
+      "avg_salience": 0.011350275438739526,
+      "final_psi": 0.2724066105297486,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1000000000000005,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.05354404631712086,
+      "avg_salience": 0.011910699508589626,
+      "final_psi": 0.28585678820615096,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.056124116576176865,
+      "avg_salience": 0.012484627772901028,
+      "final_psi": 0.2996310665496247,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.2000000000000006,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.0587648943707574,
+      "avg_salience": 0.013072060231664004,
+      "final_psi": 0.3137294455599361,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03626361575602162,
+      "avg_salience": 0.007439267247136784,
+      "final_psi": 0.7364874574665417,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6500000000000001,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.038565505428167265,
+      "avg_salience": 0.007911486359521061,
+      "final_psi": 0.783237149592585,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7000000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04093822247459044,
+      "avg_salience": 0.00839823529071601,
+      "final_psi": 0.8314252937808851,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7500000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.043381766895507407,
+      "avg_salience": 0.008899514040752456,
+      "final_psi": 0.8810518900344931,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8000000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04589613869116722,
+      "avg_salience": 0.009415322609647331,
+      "final_psi": 0.9321169383550858,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8500000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04848133786136403,
+      "avg_salience": 0.009945660997399956,
+      "final_psi": 0.9846204387425956,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 99.09999999998236,
+      "first_commit_tick": 99,
+      "max_salience": 0.05113736440602769,
+      "avg_salience": 0.010490529203969324,
+      "final_psi": 0.0,
+      "has_commits": true
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 98.09999999998327,
+      "first_commit_tick": 98,
+      "max_salience": 0.05386421832506571,
+      "avg_salience": 0.011049927229370742,
+      "final_psi": 0.05386421832506571,
+      "has_commits": true
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 97.09999999998418,
+      "first_commit_tick": 97,
+      "max_salience": 0.05666189961863078,
+      "avg_salience": 0.011623855073615347,
+      "final_psi": 0.11107569290516814,
+      "has_commits": true
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0500000000000007,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 96.09999999998509,
+      "first_commit_tick": 96,
+      "max_salience": 0.059530408286992666,
+      "avg_salience": 0.012212312736753122,
+      "final_psi": 0.17157609283034755,
+      "has_commits": true
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1000000000000005,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 95.099999999986,
+      "first_commit_tick": 95,
+      "max_salience": 0.062469744329898796,
+      "avg_salience": 0.01281530021871841,
+      "final_psi": 0.2353027014074358,
+      "has_commits": true
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 94.0999999999869,
+      "first_commit_tick": 94,
+      "max_salience": 0.06547990774661364,
+      "avg_salience": 0.013432817519440577,
+      "final_psi": 0.3021889162601693,
+      "has_commits": true
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.2000000000000006,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 93.09999999998782,
+      "first_commit_tick": 93,
+      "max_salience": 0.06856089853884953,
+      "avg_salience": 0.01406486463912769,
+      "final_psi": 0.37216472863502903,
+      "has_commits": true
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.034824827703481734,
+      "avg_salience": 0.007326451929368026,
+      "final_psi": 0.3589961445390333,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6500000000000001,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.03703538805587578,
+      "avg_salience": 0.007791509913182469,
+      "final_psi": 0.38178398574594097,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7000000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.039313965649649375,
+      "avg_salience": 0.008270877373391054,
+      "final_psi": 0.4052729912961616,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7500000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04166056048500378,
+      "avg_salience": 0.00876455431002376,
+      "final_psi": 0.4294631611911643,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8000000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04407517256217023,
+      "avg_salience": 0.0092725407230964,
+      "final_psi": 0.45435449543172357,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8500000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04655780188096129,
+      "avg_salience": 0.00979483661260935,
+      "final_psi": 0.4799469940178581,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.0491084484413031,
+      "avg_salience": 0.010331441978521561,
+      "final_psi": 0.5062406569475566,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.051727112243110954,
+      "avg_salience": 0.010882356820848978,
+      "final_psi": 0.5332354842215999,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.054413793286537365,
+      "avg_salience": 0.011447581139602099,
+      "final_psi": 0.5609314758405028,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0500000000000007,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.05716849157183335,
+      "avg_salience": 0.012027114934829938,
+      "final_psi": 0.589328631806667,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1000000000000005,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.059991207098747966,
+      "avg_salience": 0.0126209582064675,
+      "final_psi": 0.6184269521169076,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.06288193986660608,
+      "avg_salience": 0.013229110954447338,
+      "final_psi": 0.6482264367679195,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.2000000000000006,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.06584068987700435,
+      "avg_salience": 0.013851573178970605,
+      "final_psi": 0.6787270857695596,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.032075450456542455,
+      "avg_salience": 0.007101603833230053,
+      "final_psi": 0.17043849199752129,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.6500000000000001,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.034111489792267115,
+      "avg_salience": 0.007552389232815989,
+      "final_psi": 0.18125734158758378,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7000000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.0362101764919688,
+      "avg_salience": 0.008017044952360152,
+      "final_psi": 0.19240907885664368,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.7500000000000002,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.038371510555818215,
+      "avg_salience": 0.008495570991890994,
+      "final_psi": 0.20389370380538385,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8000000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04059549198401298,
+      "avg_salience": 0.008987967351422089,
+      "final_psi": 0.21571121643413016,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.8500000000000003,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04288212077640325,
+      "avg_salience": 0.009494234030955813,
+      "final_psi": 0.22786161674293953,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04523139693290612,
+      "avg_salience": 0.010014371030451172,
+      "final_psi": 0.24034490473082812,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.04764332045345697,
+      "avg_salience": 0.010548378349925338,
+      "final_psi": 0.2531610803982081,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0000000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.050117891338198106,
+      "avg_salience": 0.011096255989387372,
+      "final_psi": 0.26631014374529693,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0500000000000007,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.05265510958735474,
+      "avg_salience": 0.011658003948884518,
+      "final_psi": 0.2797920947732285,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1000000000000005,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.05525497520066883,
+      "avg_salience": 0.012233622228353174,
+      "final_psi": 0.2936069334804762,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.1500000000000004,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.05791748817758749,
+      "avg_salience": 0.012823110827732057,
+      "final_psi": 0.3077546598655694,
+      "has_commits": false
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.2000000000000006,
+      "alpha_1": 0.0,
+      "gamma": 0.0005,
+      "M": 4
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "first_commit_time": null,
+      "first_commit_tick": null,
+      "max_salience": 0.060642648519494385,
+      "avg_salience": 0.013426469747208644,
+      "final_psi": 0.32223527393300744,
+      "has_commits": false
+    }
+  }
+]

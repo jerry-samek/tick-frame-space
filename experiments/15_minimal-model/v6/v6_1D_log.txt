@@ -1,0 +1,41 @@
+================================================================================
+V6: 1D SWEEP
+================================================================================
+Started: 2025-11-18 12:43:16
+Grid: (1000,)
+Total runs: 792
+================================================================================
+
+M_s = 1
+  symmetric, in-phase, T=100s, gamma=0.0010
+  symmetric, in-phase, T=100s, gamma=0.0050
+  symmetric, in-phase, T=200s, gamma=0.0010
+  symmetric, in-phase, T=200s, gamma=0.0050
+  symmetric, in-phase, T=500s, gamma=0.0010
+    Progress: 50/792
+  symmetric, in-phase, T=500s, gamma=0.0050
+  symmetric, anti-phase, T=100s, gamma=0.0010
+  symmetric, anti-phase, T=100s, gamma=0.0050
+  symmetric, anti-phase, T=200s, gamma=0.0010
+  symmetric, anti-phase, T=200s, gamma=0.0050
+    Progress: 100/792
+  symmetric, anti-phase, T=500s, gamma=0.0010
+  symmetric, anti-phase, T=500s, gamma=0.0050
+  clustered, in-phase, T=100s, gamma=0.0010
+  clustered, in-phase, T=100s, gamma=0.0050
+    Progress: 150/792
+  clustered, in-phase, T=200s, gamma=0.0010
+  clustered, in-phase, T=200s, gamma=0.0050
+  clustered, in-phase, T=500s, gamma=0.0010
+  clustered, in-phase, T=500s, gamma=0.0050
+  clustered, anti-phase, T=100s, gamma=0.0010
+    Progress: 200/792
+Traceback (most recent call last):
+  File "W:\foundation\15 experiment\v6\v6_dimension_1d.py", line 72, in <module>
+    result = run_dimensional_simulation(
+        config, DIMENSION, GRID_SIZE, alpha_0, alpha_1, gamma, M, T
+    )
+  File "W:\foundation\15 experiment\v6\dimensional_wave_solver.py", line 280, in run_dimensional_simulation
+    if cfl > 1.0:
+            ^^^^^
+MemoryError

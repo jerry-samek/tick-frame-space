@@ -1,0 +1,26 @@
+SPBI ANALYSIS - QUICK VERDICT
+================================================================================
+
+Target SPBI range for 'Universe-Like' substrate: 0.05 - 0.10
+
+1D: SPBI = 3.968869 | Verdict: TOO_UNSTABLE
+     CV=2.3695, SLF=0.5970, GPN=0.9500
+
+2D: SPBI = 4.968545 | Verdict: TOO_UNSTABLE
+     CV=3.7427, SLF=0.7533, GPN=0.9889
+
+3D: SPBI = 2.232089 | Verdict: TOO_UNSTABLE
+     CV=2.2293, SLF=0.9987, GPN=1.0000
+
+4D: SPBI = 2.229315 | Verdict: TOO_UNSTABLE
+     CV=2.2260, SLF=0.9985, GPN=0.9847
+
+5D: SPBI = 2.230884 | Verdict: TOO_UNSTABLE
+     CV=2.2274, SLF=0.9985, GPN=1.0000
+
+
+================================================================================
+KEY FINDINGS:
+
+No dimensions fall in the ideal 'Universe-Like' range.
+Too unstable (chaotic): 1D, 2D, 3D, 4D, 5D

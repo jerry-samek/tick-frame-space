@@ -1,0 +1,2762 @@
+[
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 0.8,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 100.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 5431,
+      "commit_rate": 54.31,
+      "first_commit_time": 13.279999999999761,
+      "last_commit_time": 100.00000000001425,
+      "final_psi": 11.575309591090427,
+      "max_salience": 11.575309591090427,
+      "source_emission_counts": [
+        10000,
+        10000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 100.0,
+    "gamma": 0.001,
+    "alpha_0": 0.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 0
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.2,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 100.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 6275,
+      "commit_rate": 62.75,
+      "first_commit_time": 11.279999999999804,
+      "last_commit_time": 100.00000000001425,
+      "final_psi": 26.007726791057184,
+      "max_salience": 26.007726791057184,
+      "source_emission_counts": [
+        10000,
+        10000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 100.0,
+    "gamma": 0.001,
+    "alpha_0": 1.2,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 1
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.8,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 100.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 6962,
+      "commit_rate": 69.62,
+      "first_commit_time": 9.58999999999984,
+      "last_commit_time": 100.00000000001425,
+      "final_psi": 58.53715612533245,
+      "max_salience": 58.53715612533245,
+      "source_emission_counts": [
+        10000,
+        10000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 100.0,
+    "gamma": 0.001,
+    "alpha_0": 1.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 2
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 2.4,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 100.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 7370,
+      "commit_rate": 73.7,
+      "first_commit_time": 8.549999999999862,
+      "last_commit_time": 100.00000000001425,
+      "final_psi": 104.03090716422874,
+      "max_salience": 104.03090716422874,
+      "source_emission_counts": [
+        10000,
+        10000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 100.0,
+    "gamma": 0.001,
+    "alpha_0": 2.4,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 3
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 0.8,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 100.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 4999,
+      "commit_rate": 49.99,
+      "first_commit_time": 13.34999999999976,
+      "last_commit_time": 100.00000000001425,
+      "final_psi": 3.6662925557887305,
+      "max_salience": 3.6662925557887305,
+      "source_emission_counts": [
+        10000,
+        10000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 100.0,
+    "gamma": 0.003,
+    "alpha_0": 0.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 4
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.2,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 100.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 6049,
+      "commit_rate": 60.49,
+      "first_commit_time": 11.329999999999803,
+      "last_commit_time": 100.00000000001425,
+      "final_psi": 8.219308406748672,
+      "max_salience": 8.219308406748672,
+      "source_emission_counts": [
+        10000,
+        10000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 100.0,
+    "gamma": 0.003,
+    "alpha_0": 1.2,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 5
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.8,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 100.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 6840,
+      "commit_rate": 68.4,
+      "first_commit_time": 9.62999999999984,
+      "last_commit_time": 100.00000000001425,
+      "final_psi": 18.534451099152264,
+      "max_salience": 18.534451099152264,
+      "source_emission_counts": [
+        10000,
+        10000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 100.0,
+    "gamma": 0.003,
+    "alpha_0": 1.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 6
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 2.4,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 100.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 7290,
+      "commit_rate": 72.9,
+      "first_commit_time": 8.569999999999862,
+      "last_commit_time": 100.00000000001425,
+      "final_psi": 32.87723362699469,
+      "max_salience": 32.87723362699469,
+      "source_emission_counts": [
+        10000,
+        10000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 100.0,
+    "gamma": 0.003,
+    "alpha_0": 2.4,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 7
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 0.8,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 100.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 5538,
+      "commit_rate": 55.38,
+      "first_commit_time": 13.31999999999976,
+      "last_commit_time": 100.00000000001425,
+      "final_psi": 22.449943380152927,
+      "max_salience": 22.449943380152927,
+      "source_emission_counts": [
+        10000,
+        10000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 100.0,
+    "gamma": 0.005,
+    "alpha_0": 0.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 8
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.2,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 100.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 6318,
+      "commit_rate": 63.18,
+      "first_commit_time": 11.319999999999803,
+      "last_commit_time": 100.00000000001425,
+      "final_psi": 50.416077958776604,
+      "max_salience": 50.416077958776604,
+      "source_emission_counts": [
+        10000,
+        10000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 100.0,
+    "gamma": 0.005,
+    "alpha_0": 1.2,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 9
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.8,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 100.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 6975,
+      "commit_rate": 69.75,
+      "first_commit_time": 9.61999999999984,
+      "last_commit_time": 100.00000000001425,
+      "final_psi": 113.86036195146278,
+      "max_salience": 113.86036195146278,
+      "source_emission_counts": [
+        10000,
+        10000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 100.0,
+    "gamma": 0.005,
+    "alpha_0": 1.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 10
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 2.4,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 100.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 7373,
+      "commit_rate": 73.73,
+      "first_commit_time": 8.569999999999862,
+      "last_commit_time": 100.00000000001425,
+      "final_psi": 201.66431183510642,
+      "max_salience": 201.66431183510642,
+      "source_emission_counts": [
+        10000,
+        10000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 100.0,
+    "gamma": 0.005,
+    "alpha_0": 2.4,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 11
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 0.8,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 200.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 15431,
+      "commit_rate": 77.155,
+      "first_commit_time": 13.279999999999761,
+      "last_commit_time": 199.99999999996308,
+      "final_psi": 174.90999002659578,
+      "max_salience": 174.90999002659578,
+      "source_emission_counts": [
+        20000,
+        20000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 200.0,
+    "gamma": 0.001,
+    "alpha_0": 0.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 12
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.2,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 200.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 16275,
+      "commit_rate": 81.375,
+      "first_commit_time": 11.279999999999804,
+      "last_commit_time": 199.99999999996308,
+      "final_psi": 393.7332945478724,
+      "max_salience": 393.7332945478724,
+      "source_emission_counts": [
+        20000,
+        20000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 200.0,
+    "gamma": 0.001,
+    "alpha_0": 1.2,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 13
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.8,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 200.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 16962,
+      "commit_rate": 84.81,
+      "first_commit_time": 9.58999999999984,
+      "last_commit_time": 199.99999999996308,
+      "final_psi": 887.1321476063831,
+      "max_salience": 887.1321476063831,
+      "source_emission_counts": [
+        20000,
+        20000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 200.0,
+    "gamma": 0.001,
+    "alpha_0": 1.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 14
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 2.4,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 200.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 17370,
+      "commit_rate": 86.85,
+      "first_commit_time": 8.549999999999862,
+      "last_commit_time": 199.99999999996308,
+      "final_psi": 1574.9331781914896,
+      "max_salience": 1574.9331781914896,
+      "source_emission_counts": [
+        20000,
+        20000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 200.0,
+    "gamma": 0.001,
+    "alpha_0": 2.4,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 15
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 0.8,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 200.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 14976,
+      "commit_rate": 74.88,
+      "first_commit_time": 13.34999999999976,
+      "last_commit_time": 199.9899999999631,
+      "final_psi": 0.9915118116013548,
+      "max_salience": 4.637421303607049,
+      "source_emission_counts": [
+        20000,
+        20000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 200.0,
+    "gamma": 0.003,
+    "alpha_0": 0.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 16
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.2,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 200.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 16049,
+      "commit_rate": 80.245,
+      "first_commit_time": 11.329999999999803,
+      "last_commit_time": 199.99999999996308,
+      "final_psi": 1.9690230349276931,
+      "max_salience": 10.395773380360707,
+      "source_emission_counts": [
+        20000,
+        20000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 200.0,
+    "gamma": 0.003,
+    "alpha_0": 1.2,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 17
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.8,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 200.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 16840,
+      "commit_rate": 84.2,
+      "first_commit_time": 9.62999999999984,
+      "last_commit_time": 199.99999999996308,
+      "final_psi": 5.1703711976396285,
+      "max_salience": 23.42251392121011,
+      "source_emission_counts": [
+        20000,
+        20000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 200.0,
+    "gamma": 0.003,
+    "alpha_0": 1.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 18
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 2.4,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 200.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 17290,
+      "commit_rate": 86.45,
+      "first_commit_time": 8.569999999999862,
+      "last_commit_time": 199.99999999996308,
+      "final_psi": 7.876092139710773,
+      "max_salience": 41.58309352144283,
+      "source_emission_counts": [
+        20000,
+        20000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 200.0,
+    "gamma": 0.003,
+    "alpha_0": 2.4,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 19
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 0.8,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 200.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 15538,
+      "commit_rate": 77.69,
+      "first_commit_time": 13.31999999999976,
+      "last_commit_time": 199.99999999996308,
+      "final_psi": 2705.9511303191493,
+      "max_salience": 2705.9511303191493,
+      "source_emission_counts": [
+        20000,
+        20000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 200.0,
+    "gamma": 0.005,
+    "alpha_0": 0.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 20
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.2,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 200.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 16318,
+      "commit_rate": 81.59,
+      "first_commit_time": 11.319999999999803,
+      "last_commit_time": 199.99999999996308,
+      "final_psi": 6110.212765957448,
+      "max_salience": 6110.212765957448,
+      "source_emission_counts": [
+        20000,
+        20000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 200.0,
+    "gamma": 0.005,
+    "alpha_0": 1.2,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 21
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.8,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 200.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 16975,
+      "commit_rate": 84.875,
+      "first_commit_time": 9.61999999999984,
+      "last_commit_time": 199.99999999996308,
+      "final_psi": 13657.188829787236,
+      "max_salience": 13657.188829787236,
+      "source_emission_counts": [
+        20000,
+        20000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 200.0,
+    "gamma": 0.005,
+    "alpha_0": 1.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 22
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 2.4,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 200.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 17373,
+      "commit_rate": 86.865,
+      "first_commit_time": 8.569999999999862,
+      "last_commit_time": 199.99999999996308,
+      "final_psi": 24440.851063829792,
+      "max_salience": 24440.851063829792,
+      "source_emission_counts": [
+        20000,
+        20000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 200.0,
+    "gamma": 0.005,
+    "alpha_0": 2.4,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 23
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 0.8,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 500.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 45431,
+      "commit_rate": 90.862,
+      "first_commit_time": 13.279999999999761,
+      "last_commit_time": 499.99999999969026,
+      "final_psi": 5978.980718085108,
+      "max_salience": 5978.980718085108,
+      "source_emission_counts": [
+        50000,
+        50000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 500.0,
+    "gamma": 0.001,
+    "alpha_0": 0.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 24
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.2,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 500.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 46275,
+      "commit_rate": 92.55,
+      "first_commit_time": 11.279999999999804,
+      "last_commit_time": 499.99999999969026,
+      "final_psi": 13683.00930851064,
+      "max_salience": 13683.00930851064,
+      "source_emission_counts": [
+        50000,
+        50000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 500.0,
+    "gamma": 0.001,
+    "alpha_0": 1.2,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 25
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.8,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 500.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 46962,
+      "commit_rate": 93.924,
+      "first_commit_time": 9.58999999999984,
+      "last_commit_time": 499.99999999969026,
+      "final_psi": 29966.175531914898,
+      "max_salience": 29966.175531914898,
+      "source_emission_counts": [
+        50000,
+        50000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 500.0,
+    "gamma": 0.001,
+    "alpha_0": 1.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 26
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 2.4,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 500.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 47370,
+      "commit_rate": 94.74,
+      "first_commit_time": 8.549999999999862,
+      "last_commit_time": 499.99999999969026,
+      "final_psi": 54732.03723404256,
+      "max_salience": 54732.03723404256,
+      "source_emission_counts": [
+        50000,
+        50000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 500.0,
+    "gamma": 0.001,
+    "alpha_0": 2.4,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 27
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 0.8,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 500.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 34638,
+      "commit_rate": 69.276,
+      "first_commit_time": 13.34999999999976,
+      "last_commit_time": 499.99999999969026,
+      "final_psi": 1.2101126325891376,
+      "max_salience": 4.637421303607049,
+      "source_emission_counts": [
+        50000,
+        50000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 500.0,
+    "gamma": 0.003,
+    "alpha_0": 0.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 28
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.2,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 500.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 41191,
+      "commit_rate": 82.382,
+      "first_commit_time": 11.329999999999803,
+      "last_commit_time": 499.98999999969027,
+      "final_psi": 0.9125638921210107,
+      "max_salience": 10.395773380360707,
+      "source_emission_counts": [
+        50000,
+        50000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 500.0,
+    "gamma": 0.003,
+    "alpha_0": 1.2,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 29
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.8,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 500.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 45086,
+      "commit_rate": 90.172,
+      "first_commit_time": 9.62999999999984,
+      "last_commit_time": 499.99999999969026,
+      "final_psi": 2.0496572940907583,
+      "max_salience": 23.42251392121011,
+      "source_emission_counts": [
+        50000,
+        50000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 500.0,
+    "gamma": 0.003,
+    "alpha_0": 1.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 30
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 2.4,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 500.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 47290,
+      "commit_rate": 94.58,
+      "first_commit_time": 8.569999999999862,
+      "last_commit_time": 499.99999999969026,
+      "final_psi": 3.650255568484043,
+      "max_salience": 41.58309352144283,
+      "source_emission_counts": [
+        50000,
+        50000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 500.0,
+    "gamma": 0.003,
+    "alpha_0": 2.4,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 31
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 0.8,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 500.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 45538,
+      "commit_rate": 91.076,
+      "first_commit_time": 13.31999999999976,
+      "last_commit_time": 499.99999999969026,
+      "final_psi": 23530212.76595745,
+      "max_salience": 23530212.76595745,
+      "source_emission_counts": [
+        50000,
+        50000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 500.0,
+    "gamma": 0.005,
+    "alpha_0": 0.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 32
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.2,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 500.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 46318,
+      "commit_rate": 92.636,
+      "first_commit_time": 11.319999999999803,
+      "last_commit_time": 499.99999999969026,
+      "final_psi": 23530212.76595745,
+      "max_salience": 23530212.76595745,
+      "source_emission_counts": [
+        50000,
+        50000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 500.0,
+    "gamma": 0.005,
+    "alpha_0": 1.2,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 33
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.8,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 500.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 46975,
+      "commit_rate": 93.95,
+      "first_commit_time": 9.61999999999984,
+      "last_commit_time": 499.99999999969026,
+      "final_psi": 23530212.76595745,
+      "max_salience": 23530212.76595745,
+      "source_emission_counts": [
+        50000,
+        50000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 500.0,
+    "gamma": 0.005,
+    "alpha_0": 1.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 34
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 2.4,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 500.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 47373,
+      "commit_rate": 94.746,
+      "first_commit_time": 8.569999999999862,
+      "last_commit_time": 499.99999999969026,
+      "final_psi": 23530212.76595745,
+      "max_salience": 23530212.76595745,
+      "source_emission_counts": [
+        50000,
+        50000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 500.0,
+    "gamma": 0.005,
+    "alpha_0": 2.4,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 35
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 0.8,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 1000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 95431,
+      "commit_rate": 95.431,
+      "first_commit_time": 13.279999999999761,
+      "last_commit_time": 999.9999999992356,
+      "final_psi": 84263.18085106384,
+      "max_salience": 84263.18085106384,
+      "source_emission_counts": [
+        100000,
+        100000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 1000.0,
+    "gamma": 0.001,
+    "alpha_0": 0.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 36
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.2,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 1000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 96275,
+      "commit_rate": 96.275,
+      "first_commit_time": 11.279999999999804,
+      "last_commit_time": 999.9999999992356,
+      "final_psi": 195099.95744680855,
+      "max_salience": 195099.95744680855,
+      "source_emission_counts": [
+        100000,
+        100000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 1000.0,
+    "gamma": 0.001,
+    "alpha_0": 1.2,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 37
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.8,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 1000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 96962,
+      "commit_rate": 96.962,
+      "first_commit_time": 9.58999999999984,
+      "last_commit_time": 999.9999999992356,
+      "final_psi": 422647.9574468086,
+      "max_salience": 422647.9574468086,
+      "source_emission_counts": [
+        100000,
+        100000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 1000.0,
+    "gamma": 0.001,
+    "alpha_0": 1.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 38
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 2.4,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 1000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 97370,
+      "commit_rate": 97.37,
+      "first_commit_time": 8.549999999999862,
+      "last_commit_time": 999.9999999992356,
+      "final_psi": 780399.8297872342,
+      "max_salience": 780399.8297872342,
+      "source_emission_counts": [
+        100000,
+        100000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 1000.0,
+    "gamma": 0.001,
+    "alpha_0": 2.4,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 39
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 0.8,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 1000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 75864,
+      "commit_rate": 75.864,
+      "first_commit_time": 13.34999999999976,
+      "last_commit_time": 999.9899999992356,
+      "final_psi": 0.9061811731216757,
+      "max_salience": 4.637421303607049,
+      "source_emission_counts": [
+        100000,
+        100000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 1000.0,
+    "gamma": 0.003,
+    "alpha_0": 0.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 40
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.2,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 1000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 90032,
+      "commit_rate": 90.032,
+      "first_commit_time": 11.329999999999803,
+      "last_commit_time": 999.9999999992356,
+      "final_psi": 1.9824155442258147,
+      "max_salience": 10.395773380360707,
+      "source_emission_counts": [
+        100000,
+        100000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 1000.0,
+    "gamma": 0.003,
+    "alpha_0": 1.2,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 41
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.8,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 1000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 95086,
+      "commit_rate": 95.086,
+      "first_commit_time": 9.62999999999984,
+      "last_commit_time": 999.9999999992356,
+      "final_psi": 4.422596058946976,
+      "max_salience": 23.42251392121011,
+      "source_emission_counts": [
+        100000,
+        100000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 1000.0,
+    "gamma": 0.003,
+    "alpha_0": 1.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 42
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 2.4,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 1000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 97290,
+      "commit_rate": 97.29,
+      "first_commit_time": 8.569999999999862,
+      "last_commit_time": 999.9999999992356,
+      "final_psi": 7.929662176903259,
+      "max_salience": 41.58309352144283,
+      "source_emission_counts": [
+        100000,
+        100000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 1000.0,
+    "gamma": 0.003,
+    "alpha_0": 2.4,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 43
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 0.8,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 1000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 95538,
+      "commit_rate": 95.538,
+      "first_commit_time": 13.31999999999976,
+      "last_commit_time": 999.9999999992356,
+      "final_psi": 23530212.76595745,
+      "max_salience": 23530212.76595745,
+      "source_emission_counts": [
+        100000,
+        100000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 1000.0,
+    "gamma": 0.005,
+    "alpha_0": 0.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 44
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.2,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 1000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 96318,
+      "commit_rate": 96.318,
+      "first_commit_time": 11.319999999999803,
+      "last_commit_time": 999.9999999992356,
+      "final_psi": 23530212.76595745,
+      "max_salience": 23530212.76595745,
+      "source_emission_counts": [
+        100000,
+        100000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 1000.0,
+    "gamma": 0.005,
+    "alpha_0": 1.2,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 45
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.8,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 1000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 96975,
+      "commit_rate": 96.975,
+      "first_commit_time": 9.61999999999984,
+      "last_commit_time": 999.9999999992356,
+      "final_psi": 23530212.76595745,
+      "max_salience": 23530212.76595745,
+      "source_emission_counts": [
+        100000,
+        100000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 1000.0,
+    "gamma": 0.005,
+    "alpha_0": 1.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 46
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 2.4,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 1000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 97373,
+      "commit_rate": 97.373,
+      "first_commit_time": 8.569999999999862,
+      "last_commit_time": 999.9999999992356,
+      "final_psi": 23530212.76595745,
+      "max_salience": 23530212.76595745,
+      "source_emission_counts": [
+        100000,
+        100000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 1000.0,
+    "gamma": 0.005,
+    "alpha_0": 2.4,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 47
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 0.8,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 2000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 195431,
+      "commit_rate": 97.7155,
+      "first_commit_time": 13.279999999999761,
+      "last_commit_time": 1999.999999998326,
+      "final_psi": 1006469.6170212767,
+      "max_salience": 1006469.6170212767,
+      "source_emission_counts": [
+        200000,
+        200000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 2000.0,
+    "gamma": 0.001,
+    "alpha_0": 0.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 48
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.2,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 2000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 196275,
+      "commit_rate": 98.1375,
+      "first_commit_time": 11.279999999999804,
+      "last_commit_time": 1999.999999998326,
+      "final_psi": 2489406.9787234045,
+      "max_salience": 2489406.9787234045,
+      "source_emission_counts": [
+        200000,
+        200000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 2000.0,
+    "gamma": 0.001,
+    "alpha_0": 1.2,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 49
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.8,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 2000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 196962,
+      "commit_rate": 98.481,
+      "first_commit_time": 9.58999999999984,
+      "last_commit_time": 1999.999999998326,
+      "final_psi": 5484192.000000001,
+      "max_salience": 5484192.000000001,
+      "source_emission_counts": [
+        200000,
+        200000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 2000.0,
+    "gamma": 0.001,
+    "alpha_0": 1.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 50
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 2.4,
+      "alpha_1": 1.0,
+      "gamma": 0.001,
+      "M": 1,
+      "T": 2000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 197370,
+      "commit_rate": 98.685,
+      "first_commit_time": 8.549999999999862,
+      "last_commit_time": 1999.999999998326,
+      "final_psi": 9957627.914893618,
+      "max_salience": 9957627.914893618,
+      "source_emission_counts": [
+        200000,
+        200000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 2000.0,
+    "gamma": 0.001,
+    "alpha_0": 2.4,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 51
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 0.8,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 2000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 173494,
+      "commit_rate": 86.747,
+      "first_commit_time": 13.34999999999976,
+      "last_commit_time": 1999.999999998326,
+      "final_psi": 1.3911064634931851,
+      "max_salience": 4.637421303607049,
+      "source_emission_counts": [
+        200000,
+        200000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 2000.0,
+    "gamma": 0.003,
+    "alpha_0": 0.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 52
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.2,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 2000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 190032,
+      "commit_rate": 95.016,
+      "first_commit_time": 11.329999999999803,
+      "last_commit_time": 1999.999999998326,
+      "final_psi": 3.0240588898354392,
+      "max_salience": 10.395773380360707,
+      "source_emission_counts": [
+        200000,
+        200000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 2000.0,
+    "gamma": 0.003,
+    "alpha_0": 1.2,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 53
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.8,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 2000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 195086,
+      "commit_rate": 97.543,
+      "first_commit_time": 9.62999999999984,
+      "last_commit_time": 1999.999999998326,
+      "final_psi": 7.127657626537568,
+      "max_salience": 23.42251392121011,
+      "source_emission_counts": [
+        200000,
+        200000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 2000.0,
+    "gamma": 0.003,
+    "alpha_0": 1.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 54
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 2.4,
+      "alpha_1": 1.0,
+      "gamma": 0.003,
+      "M": 1,
+      "T": 2000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 197290,
+      "commit_rate": 98.645,
+      "first_commit_time": 8.569999999999862,
+      "last_commit_time": 1999.999999998326,
+      "final_psi": 12.096235559341757,
+      "max_salience": 41.58309352144283,
+      "source_emission_counts": [
+        200000,
+        200000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 2000.0,
+    "gamma": 0.003,
+    "alpha_0": 2.4,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 55
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 0.8,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 2000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 195538,
+      "commit_rate": 97.769,
+      "first_commit_time": 13.31999999999976,
+      "last_commit_time": 1999.999999998326,
+      "final_psi": 23530212.76595745,
+      "max_salience": 23530212.76595745,
+      "source_emission_counts": [
+        200000,
+        200000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 2000.0,
+    "gamma": 0.005,
+    "alpha_0": 0.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 56
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.2,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 2000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 196318,
+      "commit_rate": 98.159,
+      "first_commit_time": 11.319999999999803,
+      "last_commit_time": 1999.999999998326,
+      "final_psi": 23530212.76595745,
+      "max_salience": 23530212.76595745,
+      "source_emission_counts": [
+        200000,
+        200000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 2000.0,
+    "gamma": 0.005,
+    "alpha_0": 1.2,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 57
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 1.8,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 2000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 196975,
+      "commit_rate": 98.4875,
+      "first_commit_time": 9.61999999999984,
+      "last_commit_time": 1999.999999998326,
+      "final_psi": 23530212.76595745,
+      "max_salience": 23530212.76595745,
+      "source_emission_counts": [
+        200000,
+        200000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 2000.0,
+    "gamma": 0.005,
+    "alpha_0": 1.8,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 58
+  },
+  {
+    "parameters": {
+      "dimension": 3,
+      "num_sources": 2,
+      "alpha_0": 2.4,
+      "alpha_1": 1.0,
+      "gamma": 0.005,
+      "M": 1,
+      "T": 2000.0,
+      "grid_sizes": [
+        48,
+        48,
+        48
+      ],
+      "geometry": "symmetric",
+      "phase_offset": 0
+    },
+    "statistics": {
+      "has_commits": true,
+      "agent_commit_count": 197373,
+      "commit_rate": 98.6865,
+      "first_commit_time": 8.569999999999862,
+      "last_commit_time": 1999.999999998326,
+      "final_psi": 23530212.76595745,
+      "max_salience": 23530212.76595745,
+      "source_emission_counts": [
+        200000,
+        200000
+      ]
+    },
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 2000.0,
+    "gamma": 0.005,
+    "alpha_0": 2.4,
+    "dimension": 3,
+    "grid_sizes": [
+      48,
+      48,
+      48
+    ],
+    "alpha_1": 1.0,
+    "M": 1,
+    "run_id": 59
+  }
+]

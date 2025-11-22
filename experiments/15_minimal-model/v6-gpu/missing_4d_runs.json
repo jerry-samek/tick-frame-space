@@ -1,0 +1,47 @@
+[
+  {
+    "num_sources": 1,
+    "geometry": "clustered",
+    "phase_offset": 1,
+    "T": 200.0,
+    "gamma": 0.001,
+    "alpha_0": 0.6,
+    "run_id": 220
+  },
+  {
+    "num_sources": 2,
+    "geometry": "symmetric",
+    "phase_offset": 0,
+    "T": 500.0,
+    "gamma": 0.005,
+    "alpha_0": 0.6,
+    "run_id": 319
+  },
+  {
+    "num_sources": 4,
+    "geometry": "symmetric",
+    "phase_offset": 1,
+    "T": 500.0,
+    "gamma": 0.001,
+    "alpha_0": 0.6,
+    "run_id": 638
+  },
+  {
+    "num_sources": 4,
+    "geometry": "symmetric",
+    "phase_offset": 1,
+    "T": 500.0,
+    "gamma": 0.001,
+    "alpha_0": 0.8,
+    "run_id": 639
+  },
+  {
+    "num_sources": 4,
+    "geometry": "symmetric",
+    "phase_offset": 1,
+    "T": 500.0,
+    "gamma": 0.005,
+    "alpha_0": 0.6,
+    "run_id": 649
+  }
+]

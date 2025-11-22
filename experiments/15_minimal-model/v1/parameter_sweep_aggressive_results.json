@@ -1,0 +1,3872 @@
+[
+  {
+    "parameters": {
+      "alpha_0": 5.0,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 5.0,
+      "max_salience": 1.9015646312327252e-05,
+      "avg_salience": 4.753827925379305e-06,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.792459184461452e-08,
+        "Salience": 1.792459184461452e-08,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 1.5633890558925423e-07,
+        "Salience": 1.384143137446397e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 7.050859926450489e-07,
+        "Salience": 5.487470870557947e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 2.2158017611888697e-06,
+        "Salience": 1.510715768543821e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 5.591220960698255e-06,
+        "Salience": 3.3754191995093846e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 1.216478248571391e-05,
+        "Salience": 6.573561525015655e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 2.3768805016086493e-05,
+        "Salience": 1.1604022530372583e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 4.2784451328413745e-05,
+        "Salience": 1.9015646312327252e-05,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 5.0,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 5.0,
+      "max_salience": 1.1604022530372583e-05,
+      "avg_salience": 3.886528352195594e-06,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.792459184461452e-08,
+        "Salience": 1.792459184461452e-08,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 5.666716789004091e-07,
+        "Salience": 5.487470870557947e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 3.942090878409794e-06,
+        "Salience": 3.3754191995093846e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 1.5546113408782375e-05,
+        "Salience": 1.1604022530372583e-05,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 5.0,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 5.0,
+      "max_salience": 2.0001258708621173e-05,
+      "avg_salience": 4.9688201623361025e-06,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.5631613439640808e-08,
+        "Salience": 1.5631613439640808e-08,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 1.555768814327481e-07,
+        "Salience": 1.3994526799310732e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 7.146727120515723e-07,
+        "Salience": 5.590958306188242e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 2.266042032009297e-06,
+        "Salience": 1.551369319957725e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 5.753751733370316e-06,
+        "Salience": 3.4877097013610186e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 1.2584160347584437e-05,
+        "Salience": 6.830408614214121e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 2.4718122752403748e-05,
+        "Salience": 1.2133962404819311e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 4.471938146102492e-05,
+        "Salience": 2.0001258708621173e-05,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 5.0,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 5.0,
+      "max_salience": 1.2133962404819311e-05,
+      "avg_salience": 4.049099887559698e-06,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.5631613439640808e-08,
+        "Salience": 1.5631613439640808e-08,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 5.74727444058465e-07,
+        "Salience": 5.590958306188242e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 4.0624371454194836e-06,
+        "Salience": 3.4877097013610186e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 1.6196399550238793e-05,
+        "Salience": 1.2133962404819311e-05,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 5.0,
+      "alpha_1": 5.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 8.467878252797828,
+      "max_salience": 6.203760899490443e-05,
+      "avg_salience": 1.5965110215605245e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 7.177328927528242e-08,
+        "Salience": 7.177328927528242e-08,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 6.090368862240168e-07,
+        "Salience": 5.372635969487344e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 2.6717274960459977e-06,
+        "Salience": 2.062690609821981e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 8.181398272374771e-06,
+        "Salience": 5.509670776328774e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 2.0138320800705942e-05,
+        "Salience": 1.1956922528331172e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 4.277351831337626e-05,
+        "Salience": 2.263519751267032e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 8.164838294554279e-05,
+        "Salience": 3.8874864632166524e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.0001436859919404472,
+        "Salience": 6.203760899490443e-05,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 5.0,
+      "alpha_1": 5.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 8.467878252797828,
+      "max_salience": 3.8874864632166524e-05,
+      "avg_salience": 1.324156276489874e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 7.177328927528242e-08,
+        "Salience": 7.177328927528242e-08,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 2.1344638990972636e-06,
+        "Salience": 2.062690609821981e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 1.4091386427428436e-05,
+        "Salience": 1.1956922528331172e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 5.296625105959496e-05,
+        "Salience": 3.8874864632166524e-05,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 5.0,
+      "alpha_1": 5.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 8.467878252797828,
+      "max_salience": 6.534897392055833e-05,
+      "avg_salience": 1.6701688897750614e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 6.259179137625863e-08,
+        "Salience": 6.259179137625863e-08,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 6.053161058541855e-07,
+        "Salience": 5.427243144779269e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 2.707383343657962e-06,
+        "Salience": 2.1020672378037765e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 8.367921905670715e-06,
+        "Salience": 5.660538562012752e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 2.07297894119287e-05,
+        "Salience": 1.2361867506257983e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 4.426947622501085e-05,
+        "Salience": 2.3539686813082145e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 8.496622615919723e-05,
+        "Salience": 4.0696749934186376e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.00015031520007975557,
+        "Salience": 6.534897392055833e-05,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 5.0,
+      "alpha_1": 5.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 8.467878252797828,
+      "max_salience": 4.0696749934186376e-05,
+      "avg_salience": 1.38058191174061e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 6.259179137625863e-08,
+        "Salience": 6.259179137625863e-08,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 2.1646590291800353e-06,
+        "Salience": 2.1020672378037765e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 1.4526526535438018e-05,
+        "Salience": 1.2361867506257983e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 5.52232764696244e-05,
+        "Salience": 4.0696749934186376e-05,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 5.0,
+      "alpha_1": 10.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 11.935756505595657,
+      "max_salience": 0.00012977999321477256,
+      "avg_salience": 3.377238956527776e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.6154611185435572e-07,
+        "Salience": 1.6154611185435572e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 1.358247907188565e-06,
+        "Salience": 1.1967017953342093e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 5.902135876008666e-06,
+        "Salience": 4.543887968820101e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 1.7911329344950764e-05,
+        "Salience": 1.20091934689421e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 4.370283620866642e-05,
+        "Salience": 2.579150686371566e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 9.202478410578636e-05,
+        "Salience": 4.8321947897119934e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0001741715128727273,
+        "Salience": 8.214672876694094e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.0003039515060874998,
+        "Salience": 0.00012977999321477256,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 5.0,
+      "alpha_1": 10.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 11.935756505595657,
+      "max_salience": 8.214672876694094e-05,
+      "avg_salience": 2.8160917427832764e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.6154611185435572e-07,
+        "Salience": 1.6154611185435572e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 4.705434080674457e-06,
+        "Salience": 4.543887968820101e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 3.0496940944390117e-05,
+        "Salience": 2.579150686371566e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.00011264366971133105,
+        "Salience": 8.214672876694094e-05,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 5.0,
+      "alpha_1": 10.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 11.935756505595657,
+      "max_salience": 0.00013678401698886505,
+      "avg_salience": 3.5341885250943384e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.4088055086973606e-07,
+        "Salience": 1.4088055086973606e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 1.3493504807325159e-06,
+        "Salience": 1.2084699298627797e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 5.980345829258055e-06,
+        "Salience": 4.630995348525539e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 1.832037987546014e-05,
+        "Salience": 1.2340034046202085e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 4.4990884861699525e-05,
+        "Salience": 2.667050498623939e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 9.525954990118203e-05,
+        "Salience": 5.026866503948251e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0001812929502696254,
+        "Salience": 8.603340036844336e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.00031807696725849046,
+        "Salience": 0.00013678401698886505,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 5.0,
+      "alpha_1": 10.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 11.935756505595657,
+      "max_salience": 8.603340036844336e-05,
+      "avg_salience": 2.9368945313519507e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.4088055086973606e-07,
+        "Salience": 1.4088055086973606e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 4.771875899395275e-06,
+        "Salience": 4.630995348525539e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 3.1442380885634666e-05,
+        "Salience": 2.667050498623939e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.00011747578125407803,
+        "Salience": 8.603340036844336e-05,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 10.0,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 10.0,
+      "max_salience": 7.606258524930901e-05,
+      "avg_salience": 1.901531170151722e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 7.169836737845809e-08,
+        "Salience": 7.169836737845809e-08,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 6.253556223570169e-07,
+        "Salience": 5.536572549785588e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 2.8203439705801955e-06,
+        "Salience": 2.1949883482231786e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 8.863207044755479e-06,
+        "Salience": 6.042863074175284e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 2.236488384279302e-05,
+        "Salience": 1.3501676798037539e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 4.865912994285564e-05,
+        "Salience": 2.629424610006262e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 9.507522006434597e-05,
+        "Salience": 4.641609012149033e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.00017113780531365498,
+        "Salience": 7.606258524930901e-05,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 10.0,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 10.0,
+      "max_salience": 4.641609012149033e-05,
+      "avg_salience": 1.5546113408782375e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 7.169836737845809e-08,
+        "Salience": 7.169836737845809e-08,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 2.2666867156016365e-06,
+        "Salience": 2.1949883482231786e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 1.5768363513639175e-05,
+        "Salience": 1.3501676798037539e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 6.21844536351295e-05,
+        "Salience": 4.641609012149033e-05,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 10.0,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 10.0,
+      "max_salience": 8.000503483448469e-05,
+      "avg_salience": 1.987528064934441e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 6.252645375856323e-08,
+        "Salience": 6.252645375856323e-08,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 6.223075257309924e-07,
+        "Salience": 5.597810719724293e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 2.858690848206289e-06,
+        "Salience": 2.2363833224752966e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 9.064168128037188e-06,
+        "Salience": 6.2054772798309e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 2.3015006933481264e-05,
+        "Salience": 1.3950838805444074e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 5.0336641390337747e-05,
+        "Salience": 2.7321634456856482e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 9.887249100961499e-05,
+        "Salience": 4.8535849619277244e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.00017887752584409968,
+        "Salience": 8.000503483448469e-05,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 10.0,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 10.0,
+      "max_salience": 4.8535849619277244e-05,
+      "avg_salience": 1.6196399550238793e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 6.252645375856323e-08,
+        "Salience": 6.252645375856323e-08,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 2.29890977623386e-06,
+        "Salience": 2.2363833224752966e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 1.6249748581677934e-05,
+        "Salience": 1.3950838805444074e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 6.478559820095517e-05,
+        "Salience": 4.8535849619277244e-05,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 10.0,
+      "alpha_1": 5.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 13.467878252797826,
+      "max_salience": 0.00014974629984582213,
+      "avg_salience": 3.813987775224477e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.6143369966556978e-07,
+        "Salience": 1.6143369966556978e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 1.3824950634614012e-06,
+        "Salience": 1.2210613637958315e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 6.121743539100139e-06,
+        "Salience": 4.7392484756387374e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 1.8912232786429193e-05,
+        "Salience": 1.2790489247329054e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 4.6950375738825507e-05,
+        "Salience": 2.8038142952396314e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.0001005553366157947,
+        "Salience": 5.36049608769692e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0001935125999243808,
+        "Salience": 9.295726330858609e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.00034325889977020294,
+        "Salience": 0.00014974629984582213,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 10.0,
+      "alpha_1": 5.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 13.467878252797826,
+      "max_salience": 9.295726330858609e-05,
+      "avg_salience": 3.147402210907168e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.6143369966556978e-07,
+        "Salience": 1.6143369966556978e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 4.900682175304307e-06,
+        "Salience": 4.7392484756387374e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 3.2938825127700624e-05,
+        "Salience": 2.8038142952396314e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0001258960884362867,
+        "Salience": 9.295726330858609e-05,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 10.0,
+      "alpha_1": 5.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 13.467878252797826,
+      "max_salience": 0.00015765680133017363,
+      "avg_salience": 3.9887354311284514e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.4078251885336181e-07,
+        "Salience": 1.4078251885336181e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 1.374638399345319e-06,
+        "Salience": 1.2338558804919572e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 6.2039861844217285e-06,
+        "Salience": 4.82934778507641e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 1.9342638827294627e-05,
+        "Salience": 1.31386526428729e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 4.832455340498974e-05,
+        "Salience": 2.898191457769511e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.00010405489424581779,
+        "Salience": 5.573034084082806e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.000201329387471387,
+        "Salience": 9.727449322556921e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.0003589861888015606,
+        "Salience": 0.00015765680133017363,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 10.0,
+      "alpha_1": 5.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 13.467878252797826,
+      "max_salience": 9.727449322556921e-05,
+      "avg_salience": 3.280663452679852e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.4078251885336181e-07,
+        "Salience": 1.4078251885336181e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 4.9701303039297715e-06,
+        "Salience": 4.82934778507641e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 3.395204488162488e-05,
+        "Salience": 2.898191457769511e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.00013122653810719408,
+        "Salience": 9.727449322556921e-05,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 10.0,
+      "alpha_1": 10.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 16.935756505595656,
+      "max_salience": 0.00024815043597961774,
+      "avg_salience": 6.386044086242098e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 2.870931571011297e-07,
+        "Salience": 2.870931571011297e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 2.436147544896067e-06,
+        "Salience": 2.1490543877949376e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 1.068690998418399e-05,
+        "Salience": 8.250762439287924e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 3.2725593089499085e-05,
+        "Salience": 2.2038683105315096e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 8.055328320282377e-05,
+        "Salience": 4.782769011332469e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.00017109407325350504,
+        "Salience": 9.054079005068129e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.00032659353178217116,
+        "Salience": 0.0001554994585286661,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.0005747439677617888,
+        "Salience": 0.00024815043597961774,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 10.0,
+      "alpha_1": 10.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 16.935756505595656,
+      "max_salience": 0.0001554994585286661,
+      "avg_salience": 5.296625105959496e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 2.870931571011297e-07,
+        "Salience": 2.870931571011297e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 8.537855596389054e-06,
+        "Salience": 8.250762439287924e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 5.6365545709713745e-05,
+        "Salience": 4.782769011332469e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.00021186500423837985,
+        "Salience": 0.0001554994585286661,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 10.0,
+      "alpha_1": 10.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 16.935756505595656,
+      "max_salience": 0.00026139589568223334,
+      "avg_salience": 6.680675559100246e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 2.503671655050345e-07,
+        "Salience": 2.503671655050345e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 2.421264423416742e-06,
+        "Salience": 2.1708972579117077e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 1.0829533374631848e-05,
+        "Salience": 8.408268951215106e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 3.347168762268286e-05,
+        "Salience": 2.264215424805101e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 8.29191576477148e-05,
+        "Salience": 4.944747002503193e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.0001770779049000434,
+        "Salience": 9.415874725232858e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0003398649046367889,
+        "Salience": 0.0001627869997367455,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.0006012608003190223,
+        "Salience": 0.00026139589568223334,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 10.0,
+      "alpha_1": 10.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 16.935756505595656,
+      "max_salience": 0.0001627869997367455,
+      "avg_salience": 5.52232764696244e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 2.503671655050345e-07,
+        "Salience": 2.503671655050345e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 8.658636116720141e-06,
+        "Salience": 8.408268951215106e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 5.8106106141752074e-05,
+        "Salience": 4.944747002503193e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0002208931058784976,
+        "Salience": 0.0001627869997367455,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 20.0,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 20.0,
+      "max_salience": 0.00030425034099723603,
+      "avg_salience": 7.606124680606888e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 2.8679346951383234e-07,
+        "Salience": 2.8679346951383234e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 2.5014224894280676e-06,
+        "Salience": 2.214629019914235e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 1.1281375882320782e-05,
+        "Salience": 8.779953392892714e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 3.5452828179021915e-05,
+        "Salience": 2.4171452296701136e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 8.945953537117208e-05,
+        "Salience": 5.4006707192150154e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.00019463651977142256,
+        "Salience": 0.00010517698440025048,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0003803008802573839,
+        "Salience": 0.00018566436048596133,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.0006845512212546199,
+        "Salience": 0.00030425034099723603,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 20.0,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 20.0,
+      "max_salience": 0.00018566436048596133,
+      "avg_salience": 6.21844536351295e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 2.8679346951383234e-07,
+        "Salience": 2.8679346951383234e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 9.066746862406546e-06,
+        "Salience": 8.779953392892714e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 6.30734540545567e-05,
+        "Salience": 5.4006707192150154e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.000248737814540518,
+        "Salience": 0.00018566436048596133,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 20.0,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 20.0,
+      "max_salience": 0.00032002013933793877,
+      "avg_salience": 7.950112259737764e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 2.501058150342529e-07,
+        "Salience": 2.501058150342529e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 2.4892301029239698e-06,
+        "Salience": 2.239124287889717e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 1.1434763392825156e-05,
+        "Salience": 8.945533289901186e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 3.625667251214875e-05,
+        "Salience": 2.48219091193236e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 9.206002773392506e-05,
+        "Salience": 5.58033552217763e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.00020134656556135099,
+        "Salience": 0.00010928653782742593,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.00039548996403845996,
+        "Salience": 0.00019414339847710898,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.0007155101033763987,
+        "Salience": 0.00032002013933793877,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 20.0,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 20.0,
+      "max_salience": 0.00019414339847710898,
+      "avg_salience": 6.478559820095517e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 2.501058150342529e-07,
+        "Salience": 2.501058150342529e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 9.19563910493544e-06,
+        "Salience": 8.945533289901186e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 6.499899432671174e-05,
+        "Salience": 5.58033552217763e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0002591423928038207,
+        "Salience": 0.00019414339847710898,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 20.0,
+      "alpha_1": 5.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 23.46787825279783,
+      "max_salience": 0.00043925755942166445,
+      "avg_salience": 0.00011101238037781117,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 4.48302071513856e-07,
+        "Salience": 4.48302071513856e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 3.867444851471932e-06,
+        "Salience": 3.4191427799580754e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 1.7252291581079875e-05,
+        "Salience": 1.3384846729607943e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 5.366871238167516e-05,
+        "Salience": 3.641642080059529e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0001341218113792657,
+        "Salience": 8.045309899759053e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.0002891076681349443,
+        "Salience": 0.0001549858567556786,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0005598538639786359,
+        "Salience": 0.00027074619584369167,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.0009991114234003005,
+        "Salience": 0.00043925755942166445,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 20.0,
+      "alpha_1": 5.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 23.46787825279783,
+      "max_salience": 0.00027074619584369167,
+      "avg_salience": 9.1258110910601e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 4.48302071513856e-07,
+        "Salience": 4.48302071513856e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 1.38331488011218e-05,
+        "Salience": 1.3384846729607943e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 9.428624779871233e-05,
+        "Salience": 8.045309899759053e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.000365032443642404,
+        "Salience": 0.00027074619584369167,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 20.0,
+      "alpha_1": 5.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 23.46787825279783,
+      "max_salience": 0.00046228000840110726,
+      "avg_salience": 0.00011607160611236595,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 3.909536544454615e-07,
+        "Salience": 3.909536544454615e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 3.84674427492457e-06,
+        "Salience": 3.455790620479108e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 1.748522813826062e-05,
+        "Salience": 1.3638483863336048e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 5.4888324862603324e-05,
+        "Salience": 3.74030967243427e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.00013803659179134186,
+        "Salience": 8.314826692873855e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.0002991306923729454,
+        "Salience": 0.00016109410058160357,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0005823644466101864,
+        "Salience": 0.00028323375423724094,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.0010446444550112936,
+        "Salience": 0.00046228000840110726,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 20.0,
+      "alpha_1": 5.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 23.46787825279783,
+      "max_salience": 0.00028323375423724094,
+      "avg_salience": 9.510286467094025e-05,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 3.909536544454615e-07,
+        "Salience": 3.909536544454615e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 1.402943751778151e-05,
+        "Salience": 1.3638483863336048e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 9.717770444652006e-05,
+        "Salience": 8.314826692873855e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.000380411458683761,
+        "Salience": 0.00028323375423724094,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 20.0,
+      "alpha_1": 10.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 26.935756505595652,
+      "max_salience": 0.0005989851993832885,
+      "avg_salience": 0.00015255951100897908,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 6.457347986622791e-07,
+        "Salience": 6.457347986622791e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 5.529980253845605e-06,
+        "Salience": 4.884245455183326e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 2.4486974156400554e-05,
+        "Salience": 1.895699390255495e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 7.564893114571677e-05,
+        "Salience": 5.1161956989316216e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.00018780150295530203,
+        "Salience": 0.00011215257180958526,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.0004022213464631788,
+        "Salience": 0.0002144198435078768,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0007740503996975232,
+        "Salience": 0.00037182905323434435,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.0013730355990808117,
+        "Salience": 0.0005989851993832885,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 20.0,
+      "alpha_1": 10.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 26.935756505595652,
+      "max_salience": 0.00037182905323434435,
+      "avg_salience": 0.0001258960884362867,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 6.457347986622791e-07,
+        "Salience": 6.457347986622791e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 1.960272870121723e-05,
+        "Salience": 1.895699390255495e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0001317553005108025,
+        "Salience": 0.00011215257180958526,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0005035843537451468,
+        "Salience": 0.00037182905323434435,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 20.0,
+      "alpha_1": 10.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 26.935756505595652,
+      "max_salience": 0.0006306272053206945,
+      "avg_salience": 0.00015954941724513806,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 5.631300754134473e-07,
+        "Salience": 5.631300754134473e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 5.498553597381276e-06,
+        "Salience": 4.935423521967829e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 2.4815944737686914e-05,
+        "Salience": 1.931739114030564e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 7.737055530917851e-05,
+        "Salience": 5.25546105714916e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.00019329821361995897,
+        "Salience": 0.00011592765831078044,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.00041621957698327117,
+        "Salience": 0.00022292136336331223,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.000805317549885548,
+        "Salience": 0.00038909797290227684,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.0014359447552062424,
+        "Salience": 0.0006306272053206945,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 20.0,
+      "alpha_1": 10.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 26.935756505595652,
+      "max_salience": 0.00038909797290227684,
+      "avg_salience": 0.00013122653810719408,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 5.631300754134473e-07,
+        "Salience": 5.631300754134473e-07,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 1.9880521215719086e-05,
+        "Salience": 1.931739114030564e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.00013580817952649953,
+        "Salience": 0.00011592765831078044,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0005249061524287763,
+        "Salience": 0.00038909797290227684,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 50.0,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 50.0,
+      "max_salience": 0.0019015646312328632,
+      "avg_salience": 0.00047538279253796483,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.7924591844614116e-06,
+        "Salience": 1.7924591844614116e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 1.563389055892528e-05,
+        "Salience": 1.384143137446387e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 7.050859926450587e-05,
+        "Salience": 5.4874708705580587e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 0.0002215801761188919,
+        "Salience": 0.00015107157685438605,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0005591220960698472,
+        "Salience": 0.0003375419199509552,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.0012164782485714625,
+        "Salience": 0.0006573561525016153,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.00237688050160882,
+        "Salience": 0.0011604022530373574,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.0042784451328416835,
+        "Salience": 0.0019015646312328632,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 50.0,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 50.0,
+      "max_salience": 0.0011604022530373574,
+      "avg_salience": 0.00038865283521958866,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.7924591844614116e-06,
+        "Salience": 1.7924591844614116e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 5.6667167890041995e-05,
+        "Salience": 5.4874708705580587e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0003942090878409972,
+        "Salience": 0.0003375419199509552,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0015546113408783546,
+        "Salience": 0.0011604022530373574,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 50.0,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 50.0,
+      "max_salience": 0.0020001258708620875,
+      "avg_salience": 0.0004968820162336257,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.563161343964164e-06,
+        "Salience": 1.563161343964164e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 1.555768814327563e-05,
+        "Salience": 1.3994526799311464e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 7.14672712051616e-05,
+        "Salience": 5.5909583061885966e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 0.00022660420320095,
+        "Salience": 0.0001551369319957884,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0005753751733370939,
+        "Salience": 0.0003487709701361438,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.0012584160347585585,
+        "Salience": 0.0006830408614214646,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0024718122752405433,
+        "Salience": 0.001213396240481985,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.004471938146102631,
+        "Salience": 0.0020001258708620875,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 50.0,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 50.0,
+      "max_salience": 0.001213396240481985,
+      "avg_salience": 0.0004049099887559948,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.563161343964164e-06,
+        "Salience": 1.563161343964164e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 5.747274440585013e-05,
+        "Salience": 5.5909583061885966e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.00040624371454199397,
+        "Salience": 0.0003487709701361438,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0016196399550239791,
+        "Salience": 0.001213396240481985,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 50.0,
+      "alpha_1": 5.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 53.46787825279783,
+      "max_salience": 0.0022205423611406233,
+      "avg_salience": 0.0005578136286726481,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 2.1692875956001497e-06,
+        "Salience": 2.1692875956001497e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 1.8826561683786707e-05,
+        "Salience": 1.6657274088186558e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 8.448806335397675e-05,
+        "Salience": 6.566150167019004e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 0.00026429663570446175,
+        "Salience": 0.00017980857235048498,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0006640147244140553,
+        "Salience": 0.0003997180887095935,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.0014386742220065254,
+        "Salience": 0.0007746594975924701,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.00279978029691321,
+        "Salience": 0.0013611060749066845,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.0050203226580538335,
+        "Salience": 0.0022205423611406233,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 50.0,
+      "alpha_1": 5.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 53.46787825279783,
+      "max_salience": 0.0013611060749066845,
+      "avg_salience": 0.00045716373822051706,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 2.1692875956001497e-06,
+        "Salience": 2.1692875956001497e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 6.78307892657902e-05,
+        "Salience": 6.566150167019004e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0004675488779753837,
+        "Salience": 0.0003997180887095935,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0018286549528820683,
+        "Salience": 0.0013611060749066845,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 50.0,
+      "alpha_1": 5.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 53.46787825279783,
+      "max_salience": 0.0023362100476278847,
+      "avg_salience": 0.0005831277293077661,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.8917845063244138e-06,
+        "Salience": 1.8917845063244138e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 1.8730752210433327e-05,
+        "Salience": 1.6838967704108913e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 8.563324417824899e-05,
+        "Salience": 6.690249196781567e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 0.00027029540050496517,
+        "Salience": 0.00018466215632671618,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0006833527901521536,
+        "Salience": 0.0004130573896471884,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.0014883977834383665,
+        "Salience": 0.0008050449932862128,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0029119395161420103,
+        "Salience": 0.0014235417327036438,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.005248149563769895,
+        "Salience": 0.0023362100476278847,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 50.0,
+      "alpha_1": 5.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 53.46787825279783,
+      "max_salience": 0.0014235417327036438,
+      "avg_salience": 0.00047634834970624305,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 1.8917845063244138e-06,
+        "Salience": 1.8917845063244138e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 6.879427647414008e-05,
+        "Salience": 6.690249196781567e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0004818516661213285,
+        "Salience": 0.0004130573896471884,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0019053933988249722,
+        "Salience": 0.0014235417327036438,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 50.0,
+      "alpha_1": 10.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 56.93575650559566,
+      "max_salience": 0.0025642405125859474,
+      "avg_salience": 0.0006468404618668401,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 2.582040131887443e-06,
+        "Salience": 2.582040131887443e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 2.2315745848979758e-05,
+        "Salience": 1.9733705717092314e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 9.973129432001555e-05,
+        "Salience": 7.74155484710358e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 0.000310777429851438,
+        "Salience": 0.00021104613553142243,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0007779247683262473,
+        "Salience": 0.0004671473384748093,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.0016795127254064345,
+        "Salience": 0.0009015879570801873,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.003257323644215613,
+        "Salience": 0.0015778109188091785,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.005821564156801561,
+        "Salience": 0.0025642405125859474,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 50.0,
+      "alpha_1": 10.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 56.93575650559566,
+      "max_salience": 0.0015778109188091785,
+      "avg_salience": 0.0005312389614717278,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 2.582040131887443e-06,
+        "Salience": 2.582040131887443e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 7.999758860292325e-05,
+        "Salience": 7.74155484710358e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0005471449270777326,
+        "Salience": 0.0004671473384748093,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0021249558458869113,
+        "Salience": 0.0015778109188091785,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 50.0,
+      "alpha_1": 10.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 56.93575650559566,
+      "max_salience": 0.00269838155224995,
+      "avg_salience": 0.0006762807699997104,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 2.25173625024158e-06,
+        "Salience": 2.25173625024158e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 2.2198111428048856e-05,
+        "Salience": 1.9946375177807277e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 0.00010107946900533892,
+        "Salience": 7.888135757729006e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 0.0003178371759051472,
+        "Salience": 0.00021675770689980826,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.000800615464738546,
+        "Salience": 0.0004827782888333989,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.0017376842899171651,
+        "Salience": 0.0009370688251786191,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.003388145377747444,
+        "Salience": 0.0016504610878302788,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.006086526929997393,
+        "Salience": 0.00269838155224995,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 50.0,
+      "alpha_1": 10.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 56.93575650559566,
+      "max_salience": 0.0016504610878302788,
+      "avg_salience": 0.0005535931176228024,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 2.25173625024158e-06,
+        "Salience": 2.25173625024158e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 8.113309382753164e-05,
+        "Salience": 7.888135757729006e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0005639113826609306,
+        "Salience": 0.0004827782888333989,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0022143724704912094,
+        "Salience": 0.0016504610878302788,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 100.0,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 100.0,
+      "max_salience": 0.007606258524931453,
+      "avg_salience": 0.0019015311701518593,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 7.1698367378456465e-06,
+        "Salience": 7.1698367378456465e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 6.253556223570112e-05,
+        "Salience": 5.536572549785548e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 0.00028203439705802347,
+        "Salience": 0.00021949883482232235,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 0.0008863207044755676,
+        "Salience": 0.0006042863074175442,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0022364883842793887,
+        "Salience": 0.0013501676798038209,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.00486591299428585,
+        "Salience": 0.002629424610006461,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.00950752200643528,
+        "Salience": 0.0046416090121494296,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.017113780531366734,
+        "Salience": 0.007606258524931453,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 100.0,
+      "alpha_1": 0.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 100.0,
+      "max_salience": 0.0046416090121494296,
+      "avg_salience": 0.0015546113408783546,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 7.1698367378456465e-06,
+        "Salience": 7.1698367378456465e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 0.00022666867156016798,
+        "Salience": 0.00021949883482232235,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0015768363513639888,
+        "Salience": 0.0013501676798038209,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.0062184453635134185,
+        "Salience": 0.0046416090121494296,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 100.0,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 100.0,
+      "max_salience": 0.00800050348344835,
+      "avg_salience": 0.0019875280649345028,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 6.252645375856656e-06,
+        "Salience": 6.252645375856656e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 6.223075257310252e-05,
+        "Salience": 5.5978107197245856e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 0.0002858690848206464,
+        "Salience": 0.00022363833224754386,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 0.0009064168128038,
+        "Salience": 0.0006205477279831536,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0023015006933483754,
+        "Salience": 0.0013950838805445753,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.005033664139034234,
+        "Salience": 0.0027321634456858586,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.009887249100962173,
+        "Salience": 0.00485358496192794,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.017887752584410523,
+        "Salience": 0.00800050348344835,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 100.0,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 100.0,
+      "max_salience": 0.00485358496192794,
+      "avg_salience": 0.0016196399550239791,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 6.252645375856656e-06,
+        "Salience": 6.252645375856656e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 0.0002298909776234005,
+        "Salience": 0.00022363833224754386,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0016249748581679759,
+        "Salience": 0.0013950838805445753,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.006478559820095917,
+        "Salience": 0.00485358496192794,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 100.0,
+      "alpha_1": 5.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 103.46787825279783,
+      "max_salience": 0.008231853773978157,
+      "avg_salience": 0.002063094843891482,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 7.905531497549151e-06,
+        "Salience": 7.905531497549151e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 6.877264796526127e-05,
+        "Salience": 6.086711646771212e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 0.00030936144179869135,
+        "Salience": 0.00024058879383343008,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 0.0009698714563660432,
+        "Salience": 0.0006605100145673519,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0024417649331839007,
+        "Salience": 0.0014718934768178577,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.00530098367617368,
+        "Salience": 0.002859218742989779,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.01033599982104518,
+        "Salience": 0.0050350161448715,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.01856785359502334,
+        "Salience": 0.008231853773978157,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 100.0,
+      "alpha_1": 5.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 103.46787825279783,
+      "max_salience": 0.0050350161448715,
+      "avg_salience": 0.0016888509867550843,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 7.905531497549151e-06,
+        "Salience": 7.905531497549151e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 0.0002484943253309792,
+        "Salience": 0.00024058879383343008,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0017203878021488368,
+        "Salience": 0.0014718934768178577,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.006755403947020337,
+        "Salience": 0.0050350161448715,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 100.0,
+      "alpha_1": 5.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 103.46787825279783,
+      "max_salience": 0.008659628173050866,
+      "avg_salience": 0.0021565658272736984,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 6.894227409798561e-06,
+        "Salience": 6.894227409798561e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 6.842973313218654e-05,
+        "Salience": 6.153550572238798e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 0.0003135609048398076,
+        "Salience": 0.0002451311717076211,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 0.0009918739183637068,
+        "Salience": 0.0006783130135238992,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.002512813398092728,
+        "Salience": 0.001520939479729021,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.0054839752574940975,
+        "Salience": 0.00297116185940137,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.010749464272412421,
+        "Salience": 0.0052654890149183235,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.019409092445463287,
+        "Salience": 0.008659628173050866,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 100.0,
+      "alpha_1": 5.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 103.46787825279783,
+      "max_salience": 0.0052654890149183235,
+      "avg_salience": 0.001759613473441191,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 6.894227409798561e-06,
+        "Salience": 6.894227409798561e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 0.0002520253991174197,
+        "Salience": 0.0002451311717076211,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0017729648788464406,
+        "Salience": 0.001520939479729021,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.007038453893764764,
+        "Salience": 0.0052654890149183235,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 100.0,
+      "alpha_1": 10.0,
+      "gamma": 0.01,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 106.93575650559566,
+      "max_salience": 0.008882169444562493,
+      "avg_salience": 0.0022312545146905925,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 8.677150382400599e-06,
+        "Salience": 8.677150382400599e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 7.530624673514683e-05,
+        "Salience": 6.662909635274623e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 0.000337952253415907,
+        "Salience": 0.00026264600668076017,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 0.001057186542817847,
+        "Salience": 0.0007192342894019399,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0026560588976562213,
+        "Salience": 0.001598872354838374,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.0057546968880261016,
+        "Salience": 0.0030986379903698803,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.01119912118765284,
+        "Salience": 0.005444424299626738,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.020081290632215334,
+        "Salience": 0.008882169444562493,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 100.0,
+      "alpha_1": 10.0,
+      "gamma": 0.01,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 106.93575650559566,
+      "max_salience": 0.005444424299626738,
+      "avg_salience": 0.0018286549528820683,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 8.677150382400599e-06,
+        "Salience": 8.677150382400599e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 0.0002713231570631608,
+        "Salience": 0.00026264600668076017,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.001870195511901535,
+        "Salience": 0.001598872354838374,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.007314619811528273,
+        "Salience": 0.005444424299626738,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 100.0,
+      "alpha_1": 10.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 9,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 106.93575650559566,
+      "max_salience": 0.009344840190511539,
+      "avg_salience": 0.0023325109172310644,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 1.0999999999999985,
+        "Psi": 0.0,
+        "Salience": 0.0,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 7.567138025297655e-06,
+        "Salience": 7.567138025297655e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 3.099999999999956,
+        "Psi": 7.492300884173331e-05,
+        "Salience": 6.735587081643565e-05,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 0.00034253297671299596,
+        "Salience": 0.00026760996787126266,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 5.0999999999999135,
+        "Psi": 0.0010811816020198607,
+        "Salience": 0.0007386486253068647,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.0027334111606086143,
+        "Salience": 0.0016522295585887537,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 7.099999999999871,
+        "Psi": 0.005953591133753466,
+        "Salience": 0.0032201799731448513,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.011647758064568041,
+        "Salience": 0.005694166930814575,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 9.095000000000022,
+        "Psi": 0.02099259825507958,
+        "Salience": 0.009344840190511539,
+        "Mode": "REPEAT"
+      }
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 100.0,
+      "alpha_1": 10.0,
+      "gamma": 0.001,
+      "M": 2
+    },
+    "statistics": {
+      "tick_count": 9,
+      "agent_percept_count": 4,
+      "agent_commit_count": 0,
+      "avg_emission_strength": 106.93575650559566,
+      "max_salience": 0.005694166930814575,
+      "avg_salience": 0.0019053933988249722,
+      "cfl": 1.0
+    },
+    "agent_log": [
+      {
+        "FrameID": 0,
+        "time": 2.0999999999999774,
+        "Psi": 7.567138025297655e-06,
+        "Salience": 7.567138025297655e-06,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 4.099999999999935,
+        "Psi": 0.00027517710589656033,
+        "Salience": 0.00026760996787126266,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 6.099999999999892,
+        "Psi": 0.001927406664485314,
+        "Salience": 0.0016522295585887537,
+        "Mode": "REPEAT"
+      },
+      {
+        "FrameID": 0,
+        "time": 8.099999999999866,
+        "Psi": 0.007621573595299889,
+        "Salience": 0.005694166930814575,
+        "Mode": "REPEAT"
+      }
+    ]
+  }
+]

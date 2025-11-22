@@ -1,0 +1,254 @@
+W:\foundation\15 experiment\v6-gpu\validate_theory.py:262: OptimizeWarning: Covariance of the parameters could not be estimated
+  popt, _ = curve_fit(steady_state, T, sal, p0=p0, maxfev=10000)
+W:\foundation\15 experiment\v6-gpu\validate_theory.py:266: RuntimeWarning: divide by zero encountered in scalar divide
+  r2 = 1 - np.sum((sal - pred_sal)**2) / np.sum((sal - sal.mean())**2)
+W:\foundation\15 experiment\v6-gpu\validate_theory.py:262: OptimizeWarning: Covariance of the parameters could not be estimated
+  popt, _ = curve_fit(steady_state, T, sal, p0=p0, maxfev=10000)
+W:\foundation\15 experiment\v6-gpu\validate_theory.py:266: RuntimeWarning: divide by zero encountered in scalar divide
+  r2 = 1 - np.sum((sal - pred_sal)**2) / np.sum((sal - sal.mean())**2)
+W:\foundation\15 experiment\v6-gpu\validate_theory.py:262: OptimizeWarning: Covariance of the parameters could not be estimated
+  popt, _ = curve_fit(steady_state, T, sal, p0=p0, maxfev=10000)
+Loading data...
+Total experiments: 3955
+
+Data columns: ['dimension', 'num_sources', 'geometry', 'phase_offset', 'alpha_0', 'gamma', 'M', 'T', 'has_commits', 'agent_commit_count', 'commit_rate', 'first_commit_time', 'final_psi', 'max_salience', 'run_id']
+
+Data shape by dimension:
+  1D: 792 experiments
+  2D: 792 experiments
+  3D: 792 experiments
+  4D: 787 experiments
+  5D: 792 experiments
+
+================================================================================
+1. DIMENSIONAL SCALING ANALYSIS
+================================================================================
+
+Dimensional statistics (max_salience):
+  dimension  max_salience                ...               has_commits commit_rate
+                     mean           std  ...           max        mean        mean
+0         1  2.940435e-01  6.967220e-01  ...  4.072565e+00         1.0  139.681818
+1         2  7.861998e+03  2.942507e+04  ...  2.400369e+05         1.0  139.048561
+2         3  3.933738e+06  8.769413e+06  ...  2.353021e+07         1.0   79.744758
+3         4  7.280753e+06  1.620731e+07  ...  4.369067e+07         1.0   86.534085
+4         5  1.858817e+07  4.140412e+07  ...  1.111111e+08         1.0   86.853591
+
+[5 rows x 7 columns]
+
+Power law fit: salience(d) = 45874.336012 * d^3.725
+  R² = 0.9901
+
+Exponential fit: salience(d) = 184987.907666 * exp(--0.922 * d)
+  R² = 0.9891
+
+Theoretical expectation: r^(2-d) → exponential decay with d
+Observed decay rate λ = -0.922
+
+================================================================================
+2. SOURCE SCALING VALIDATION
+================================================================================
+
+1D: salience ~ Ms^2.250, R² = 0.9977
+  Theory: ρ = 2 for constructive, ρ → 0 for destructive
+
+2D: salience ~ Ms^1.995, R² = 0.9998
+  Theory: ρ = 2 for constructive, ρ → 0 for destructive
+
+3D: salience ~ Ms^0.005, R² = 0.8935
+  Theory: ρ = 2 for constructive, ρ → 0 for destructive
+
+4D: salience ~ Ms^0.003, R² = 0.0208
+  Theory: ρ = 2 for constructive, ρ → 0 for destructive
+
+5D: salience ~ Ms^0.006, R² = 0.8933
+  Theory: ρ = 2 for constructive, ρ → 0 for destructive
+
+================================================================================
+3. DAMPING VALIDATION
+================================================================================
+
+1D: γ=0.001 / γ=0.005 = 0.053 (expected: 5.0)
+  Agreement: 1.1%
+
+2D: γ=0.001 / γ=0.005 = 0.000 (expected: 5.0)
+  Agreement: 0.0%
+
+3D: γ=0.001 / γ=0.005 = 0.002 (expected: 5.0)
+  Agreement: 0.0%
+
+4D: γ=0.001 / γ=0.005 = 0.006 (expected: 5.0)
+  Agreement: 0.1%
+
+5D: γ=0.001 / γ=0.005 = 0.003 (expected: 5.0)
+  Agreement: 0.1%
+
+================================================================================
+4. TIME EVOLUTION ANALYSIS
+================================================================================
+
+1D, γ=0.001: τ = 4.5 (expected: 1000.0), R² = -inf
+
+1D, γ=0.005: τ = 4.4 (expected: 200.0), R² = -inf
+
+2D, γ=0.001: τ = 4.5 (expected: 1000.0), R² = -267761717080.0000
+
+2D, γ=0.005: τ = 6077309.5 (expected: 200.0), R² = 0.7874
+
+3D, γ=0.001: τ = 3289019.5 (expected: 1000.0), R² = 0.7721
+
+3D, γ=0.005: τ = 4582561.1 (expected: 200.0), R² = 0.7507
+
+4D, γ=0.001: τ = 5260186.3 (expected: 1000.0), R² = 0.7720
+
+4D, γ=0.005: τ = 8244198.1 (expected: 200.0), R² = 0.7520
+
+5D, γ=0.001: τ = 9036049.4 (expected: 1000.0), R² = 0.7720
+
+5D, γ=0.005: τ = 2959227.7 (expected: 200.0), R² = 0.7508
+
+================================================================================
+5. α₀ THRESHOLD ANALYSIS
+================================================================================
+
+1D: salience ~ α₀^1.885, R² = 0.8561
+  Theory: exponent = 2 (quadratic)
+  Estimated α₀ threshold: 3.448
+
+2D: salience ~ α₀^1.992, R² = 0.9993
+  Theory: exponent = 2 (quadratic)
+  Estimated α₀ threshold: 0.019
+
+3D: salience ~ α₀^0.004, R² = 0.8679
+  Theory: exponent = 2 (quadratic)
+  Estimated α₀ threshold: 0.000
+
+4D: salience ~ α₀^0.058, R² = 0.4538
+  Theory: exponent = 2 (quadratic)
+  Estimated α₀ threshold: 0.000
+
+5D: salience ~ α₀^0.005, R² = 0.8670
+  Theory: exponent = 2 (quadratic)
+  Estimated α₀ threshold: 0.000
+
+================================================================================
+6. 2D CRITICAL BEHAVIOR ANALYSIS
+================================================================================
+
+Comparing low dimensions:
+1D: mean=0.294044, max=4.072565, std=0.696722
+2D: mean=7861.997531, max=240036.850394, std=29425.065879
+3D: mean=3933737.843228, max=23530212.765957, std=8769412.552733
+
+2D analysis:
+  Number of experiments: 792
+  Mean salience: 7861.997531
+  Salience range: [0.095407, 240036.850394]
+
+================================================================================
+7. GEOMETRY AND PHASE INDEPENDENCE
+================================================================================
+
+1D geometry variation:
+               mean       std  count
+geometry                            
+clustered  0.308751  0.734461    396
+symmetric  0.279336  0.657423    396
+  Coefficient of variation: 2.4978
+
+2D geometry variation:
+                  mean           std  count
+geometry                                   
+clustered  7949.174217  29539.834739    396
+symmetric  7774.820845  29346.957519    396
+  Coefficient of variation: 3.7573
+
+3D geometry variation:
+                   mean           std  count
+geometry                                    
+clustered  3.933746e+06  8.774958e+06    396
+symmetric  3.933730e+06  8.774964e+06    396
+  Coefficient of variation: 2.2307
+
+4D geometry variation:
+                   mean           std  count
+geometry                                    
+clustered  7.363965e+06  1.629207e+07    395
+symmetric  7.196903e+06  1.614184e+07    392
+  Coefficient of variation: 2.2378
+
+5D geometry variation:
+                   mean           std  count
+geometry                                    
+clustered  1.858820e+07  4.143031e+07    396
+symmetric  1.858814e+07  4.143033e+07    396
+  Coefficient of variation: 2.2289
+
+1D phase variation:
+                  mean       std  count
+phase_offset                           
+0             0.294044  0.697163    396
+1             0.294044  0.697163    396
+  Coefficient of variation: 2.3710
+
+2D phase variation:
+                     mean           std  count
+phase_offset                                  
+0             7861.997531  29443.683448    396
+1             7861.997531  29443.683448    396
+  Coefficient of variation: 3.7451
+
+3D phase variation:
+                      mean           std  count
+phase_offset                                   
+0             3.933738e+06  8.774961e+06    396
+1             3.933738e+06  8.774961e+06    396
+  Coefficient of variation: 2.2307
+
+4D phase variation:
+                      mean           std  count
+phase_offset                                   
+0             7.253356e+06  1.619283e+07    395
+1             7.308359e+06  1.624254e+07    392
+  Coefficient of variation: 2.2309
+
+5D phase variation:
+                      mean           std  count
+phase_offset                                   
+0             1.858817e+07  4.143032e+07    396
+1             1.858817e+07  4.143032e+07    396
+  Coefficient of variation: 2.2289
+
+================================================================================
+8. RESIDUAL ANALYSIS
+================================================================================
+1D: observed=0.294044, predicted=465238.383112, error=158220820.8%
+2D: observed=7861.997531, predicted=1170058.928996, error=14782.5%
+3D: observed=3933737.843228, predicted=2942658.961553, error=25.2%
+4D: observed=7280752.571846, predicted=7400688.588771, error=1.6%
+5D: observed=18588171.362415, predicted=18612483.574737, error=0.1%
+
+================================================================================
+9. SAVING RESULTS
+================================================================================W:\foundation\15 experiment\v6-gpu\validate_theory.py:679: UserWarning: Glyph 8322 (\N{SUBSCRIPT TWO}) missing from font(s) Arial.
+  plt.savefig('theoretical_validation.png', dpi=300, bbox_inches='tight')
+W:\foundation\15 experiment\v6-gpu\validate_theory.py:679: UserWarning: Glyph 8321 (\N{SUBSCRIPT ONE}) missing from font(s) Arial.
+  plt.savefig('theoretical_validation.png', dpi=300, bbox_inches='tight')
+W:\foundation\15 experiment\v6-gpu\validate_theory.py:679: UserWarning: Glyph 8320 (\N{SUBSCRIPT ZERO}) missing from font(s) Arial.
+  plt.savefig('theoretical_validation.png', dpi=300, bbox_inches='tight')
+
+Saved: salience_theory_fits.csv
+
+================================================================================
+10. CREATING VISUALIZATION
+================================================================================
+Saved: theoretical_validation.png
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================
+
+Generated files:
+  1. salience_theory_fits.csv
+  2. theoretical_validation.png
+
+Validation results stored in memory for report generation.

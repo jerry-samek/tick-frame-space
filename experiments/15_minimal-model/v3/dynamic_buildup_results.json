@@ -1,0 +1,654 @@
+[
+  {
+    "parameters": {
+      "alpha_0": 1.8,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "threshold_crossing_time": null,
+      "threshold_crossing_tick": null,
+      "buildup_rate": 0.005994594225365531,
+      "has_commits": false
+    },
+    "psi_history": [
+      {
+        "tick": 10,
+        "time": 10.095000000000178,
+        "psi": 9.844606543283462e-06,
+        "salience": 4.04897470593472e-06,
+        "committed": false
+      },
+      {
+        "tick": 20,
+        "time": 20.095000000000287,
+        "psi": 0.00031737364809799717,
+        "salience": 7.178205246324234e-05,
+        "committed": false
+      },
+      {
+        "tick": 30,
+        "time": 30.099999999998296,
+        "psi": 0.0024041344479632035,
+        "salience": 0.0003740128276199921,
+        "committed": false
+      },
+      {
+        "tick": 40,
+        "time": 40.09500000000206,
+        "psi": 0.0100804972267783,
+        "salience": 0.001193870075821423,
+        "committed": false
+      },
+      {
+        "tick": 50,
+        "time": 50.095000000007175,
+        "psi": 0.03060113007564104,
+        "salience": 0.0029255157528001066,
+        "committed": false
+      },
+      {
+        "tick": 60,
+        "time": 60.09500000001229,
+        "psi": 0.07574196080077614,
+        "salience": 0.006067735371358192,
+        "committed": false
+      },
+      {
+        "tick": 70,
+        "time": 70.09500000000874,
+        "psi": 0.16283267299799944,
+        "salience": 0.011221756875898738,
+        "committed": false
+      },
+      {
+        "tick": 80,
+        "time": 80.09999999999964,
+        "psi": 0.3157652933743326,
+        "salience": 0.019092147350200112,
+        "committed": false
+      },
+      {
+        "tick": 90,
+        "time": 90.09999999999054,
+        "psi": 0.5659963122026497,
+        "salience": 0.030465768598403165,
+        "committed": false
+      }
+    ],
+    "commit_times": []
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.85,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 0,
+      "threshold_crossing_time": null,
+      "threshold_crossing_tick": null,
+      "buildup_rate": 0.0063322526964022414,
+      "has_commits": false
+    },
+    "psi_history": [
+      {
+        "tick": 10,
+        "time": 10.095000000000178,
+        "psi": 1.0399125276046311e-05,
+        "salience": 4.2770419540317614e-06,
+        "committed": false
+      },
+      {
+        "tick": 20,
+        "time": 20.095000000000287,
+        "psi": 0.00033525040451094,
+        "salience": 7.582533165291767e-05,
+        "committed": false
+      },
+      {
+        "tick": 30,
+        "time": 30.099999999998296,
+        "psi": 0.002539552514862066,
+        "salience": 0.0003950799081880406,
+        "committed": false
+      },
+      {
+        "tick": 40,
+        "time": 40.09500000000206,
+        "psi": 0.010648303011928723,
+        "salience": 0.0012611173871910904,
+        "committed": false
+      },
+      {
+        "tick": 50,
+        "time": 50.095000000007175,
+        "psi": 0.03232480484070751,
+        "salience": 0.0030903017481361582,
+        "committed": false
+      },
+      {
+        "tick": 60,
+        "time": 60.09500000001229,
+        "psi": 0.08000829038294682,
+        "salience": 0.006409513675460375,
+        "committed": false
+      },
+      {
+        "tick": 70,
+        "time": 70.09500000000874,
+        "psi": 0.17200457510371947,
+        "salience": 0.011853846576481333,
+        "committed": false
+      },
+      {
+        "tick": 80,
+        "time": 80.09999999999964,
+        "psi": 0.33355145573295847,
+        "salience": 0.02016755379820703,
+        "committed": false
+      },
+      {
+        "tick": 90,
+        "time": 90.09999999999054,
+        "psi": 0.5978772773200488,
+        "salience": 0.03218181883590424,
+        "committed": false
+      }
+    ],
+    "commit_times": []
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.9,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "threshold_crossing_time": 99.09999999998236,
+      "threshold_crossing_tick": 99,
+      "buildup_rate": 0.0066791620844340455,
+      "has_commits": true
+    },
+    "psi_history": [
+      {
+        "tick": 10,
+        "time": 10.095000000000178,
+        "psi": 1.0968836302856094e-05,
+        "salience": 4.5113576198841485e-06,
+        "committed": false
+      },
+      {
+        "tick": 20,
+        "time": 20.095000000000287,
+        "psi": 0.00035361693507213003,
+        "salience": 7.997938561490093e-05,
+        "committed": false
+      },
+      {
+        "tick": 30,
+        "time": 30.099999999998296,
+        "psi": 0.0026786806657861967,
+        "salience": 0.0004167241690457643,
+        "committed": false
+      },
+      {
+        "tick": 40,
+        "time": 40.09500000000206,
+        "psi": 0.011231665119959799,
+        "salience": 0.0013302070906527769,
+        "committed": false
+      },
+      {
+        "tick": 50,
+        "time": 50.095000000007175,
+        "psi": 0.03409570357192898,
+        "salience": 0.003259602428273698,
+        "committed": false
+      },
+      {
+        "tick": 60,
+        "time": 60.09500000001229,
+        "psi": 0.08439150570703356,
+        "salience": 0.006760655768704551,
+        "committed": false
+      },
+      {
+        "tick": 70,
+        "time": 70.09500000000874,
+        "psi": 0.18142776219838458,
+        "salience": 0.012503253803082544,
+        "committed": false
+      },
+      {
+        "tick": 80,
+        "time": 80.09999999999964,
+        "psi": 0.35182491021023804,
+        "salience": 0.021272423436482328,
+        "committed": false
+      },
+      {
+        "tick": 90,
+        "time": 90.09999999999054,
+        "psi": 0.630631693534325,
+        "salience": 0.03394488414821626,
+        "committed": false
+      },
+      {
+        "tick": 99,
+        "time": 99.09999999998236,
+        "psi": 1.0107192643615877,
+        "salience": 0.049505594140678184,
+        "committed": true
+      }
+    ],
+    "commit_times": [
+      99.09999999998236
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 1.95,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "threshold_crossing_time": 98.09999999998327,
+      "threshold_crossing_tick": 98,
+      "buildup_rate": 0.007035322389484988,
+      "has_commits": true
+    },
+    "psi_history": [
+      {
+        "tick": 10,
+        "time": 10.095000000000178,
+        "psi": 1.1553739623715405e-05,
+        "salience": 4.751921703493122e-06,
+        "committed": false
+      },
+      {
+        "tick": 20,
+        "time": 20.095000000000287,
+        "psi": 0.00037247323978172107,
+        "salience": 8.424421434924379e-05,
+        "committed": false
+      },
+      {
+        "tick": 30,
+        "time": 30.099999999998296,
+        "psi": 0.002821518900735144,
+        "salience": 0.00043894561019297703,
+        "committed": false
+      },
+      {
+        "tick": 40,
+        "time": 40.09500000000206,
+        "psi": 0.011830583550872173,
+        "salience": 0.0014011391862069952,
+        "committed": false
+      },
+      {
+        "tick": 50,
+        "time": 50.095000000007175,
+        "psi": 0.03591382626933127,
+        "salience": 0.0034334177932170197,
+        "committed": false
+      },
+      {
+        "tick": 60,
+        "time": 60.09500000001229,
+        "psi": 0.08889160677312863,
+        "salience": 0.00712116165110742,
+        "committed": false
+      },
+      {
+        "tick": 70,
+        "time": 70.09500000000874,
+        "psi": 0.19110223428236045,
+        "salience": 0.013169978555736126,
+        "committed": false
+      },
+      {
+        "tick": 80,
+        "time": 80.09999999999964,
+        "psi": 0.370585656807175,
+        "salience": 0.02240675626513303,
+        "committed": false
+      },
+      {
+        "tick": 90,
+        "time": 90.09999999999054,
+        "psi": 0.6642595608481272,
+        "salience": 0.035754964535529225,
+        "committed": false
+      },
+      {
+        "tick": 98,
+        "time": 98.09999999998327,
+        "psi": 1.0124695238251087,
+        "salience": 0.05009281309467186,
+        "committed": true
+      }
+    ],
+    "commit_times": [
+      98.09999999998327
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "threshold_crossing_time": 97.09999999998418,
+      "threshold_crossing_tick": 97,
+      "buildup_rate": 0.007400733611560842,
+      "has_commits": true
+    },
+    "psi_history": [
+      {
+        "tick": 10,
+        "time": 10.095000000000178,
+        "psi": 1.2153835238621915e-05,
+        "salience": 4.998734204857816e-06,
+        "committed": false
+      },
+      {
+        "tick": 20,
+        "time": 20.095000000000287,
+        "psi": 0.0003918193186395321,
+        "salience": 8.861981785586032e-05,
+        "committed": false
+      },
+      {
+        "tick": 30,
+        "time": 30.099999999998296,
+        "psi": 0.0029680672197076228,
+        "salience": 0.0004617442316296036,
+        "committed": false
+      },
+      {
+        "tick": 40,
+        "time": 40.09500000000206,
+        "psi": 0.012445058304665127,
+        "salience": 0.001473913673853518,
+        "committed": false
+      },
+      {
+        "tick": 50,
+        "time": 50.095000000007175,
+        "psi": 0.0377791729328842,
+        "salience": 0.003611747842962049,
+        "committed": false
+      },
+      {
+        "tick": 60,
+        "time": 60.09500000001229,
+        "psi": 0.09350859358120324,
+        "salience": 0.0074910313226672865,
+        "committed": false
+      },
+      {
+        "tick": 70,
+        "time": 70.09500000000874,
+        "psi": 0.201027991355609,
+        "salience": 0.013854020834445669,
+        "committed": false
+      },
+      {
+        "tick": 80,
+        "time": 80.09999999999964,
+        "psi": 0.38983369552390074,
+        "salience": 0.023570552284187175,
+        "committed": false
+      },
+      {
+        "tick": 90,
+        "time": 90.09999999999054,
+        "psi": 0.6987608792622478,
+        "salience": 0.0376120599979711,
+        "committed": false
+      },
+      {
+        "tick": 97,
+        "time": 97.09999999998418,
+        "psi": 1.0123620888692197,
+        "salience": 0.05059908158732589,
+        "committed": true
+      }
+    ],
+    "commit_times": [
+      97.09999999998418
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.5,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "threshold_crossing_time": 89.09999999999145,
+      "threshold_crossing_tick": 89,
+      "buildup_rate": 0.004676679458116393,
+      "has_commits": true
+    },
+    "psi_history": [
+      {
+        "tick": 10,
+        "time": 10.095000000000178,
+        "psi": 1.899036756034693e-05,
+        "salience": 7.810522195090701e-06,
+        "committed": false
+      },
+      {
+        "tick": 20,
+        "time": 20.095000000000287,
+        "psi": 0.0006122176853743519,
+        "salience": 0.000138468465399796,
+        "committed": false
+      },
+      {
+        "tick": 30,
+        "time": 30.099999999998296,
+        "psi": 0.004637605030793191,
+        "salience": 0.0007214753619212844,
+        "committed": false
+      },
+      {
+        "tick": 40,
+        "time": 40.09500000000206,
+        "psi": 0.019445403601033504,
+        "salience": 0.0023029901153948456,
+        "committed": false
+      },
+      {
+        "tick": 50,
+        "time": 50.095000000007175,
+        "psi": 0.05902995770761636,
+        "salience": 0.005643356004628523,
+        "committed": false
+      },
+      {
+        "tick": 60,
+        "time": 60.09500000001229,
+        "psi": 0.14610717747063862,
+        "salience": 0.011704736441670055,
+        "committed": false
+      },
+      {
+        "tick": 70,
+        "time": 70.09500000000874,
+        "psi": 0.3141062364931426,
+        "salience": 0.0216469075538202,
+        "committed": false
+      },
+      {
+        "tick": 80,
+        "time": 80.09999999999964,
+        "psi": 0.6091151492560481,
+        "salience": 0.03682898794404542,
+        "committed": false
+      },
+      {
+        "tick": 89,
+        "time": 89.09999999999145,
+        "psi": 1.0330450301007361,
+        "salience": 0.05622304134043095,
+        "committed": true
+      },
+      {
+        "tick": 90,
+        "time": 90.09999999999054,
+        "psi": 0.05876884374692055,
+        "salience": 0.05876884374692055,
+        "committed": false
+      }
+    ],
+    "commit_times": [
+      89.09999999999145
+    ]
+  },
+  {
+    "parameters": {
+      "alpha_0": 5.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 6,
+      "threshold_crossing_time": 67.09500000001147,
+      "threshold_crossing_tick": 67,
+      "buildup_rate": 0.010203638406995235,
+      "has_commits": true
+    },
+    "psi_history": [
+      {
+        "tick": 10,
+        "time": 10.095000000000178,
+        "psi": 7.596147024138773e-05,
+        "salience": 3.1242088780362805e-05,
+        "committed": false
+      },
+      {
+        "tick": 20,
+        "time": 20.095000000000287,
+        "psi": 0.0024488707414974074,
+        "salience": 0.000553873861599184,
+        "committed": false
+      },
+      {
+        "tick": 30,
+        "time": 30.099999999998296,
+        "psi": 0.018550420123172765,
+        "salience": 0.0028859014476851374,
+        "committed": false
+      },
+      {
+        "tick": 40,
+        "time": 40.09500000000206,
+        "psi": 0.07778161440413402,
+        "salience": 0.009211960461579382,
+        "committed": false
+      },
+      {
+        "tick": 50,
+        "time": 50.095000000007175,
+        "psi": 0.23611983083046545,
+        "salience": 0.02257342401851409,
+        "committed": false
+      },
+      {
+        "tick": 60,
+        "time": 60.09500000001229,
+        "psi": 0.5844287098825545,
+        "salience": 0.04681894576668022,
+        "committed": false
+      },
+      {
+        "tick": 67,
+        "time": 67.09500000001147,
+        "psi": 1.0109295814250205,
+        "salience": 0.07272022105823772,
+        "committed": true
+      },
+      {
+        "tick": 70,
+        "time": 70.09500000000874,
+        "psi": 0.24549536454754994,
+        "salience": 0.0865876302152808,
+        "committed": false
+      },
+      {
+        "tick": 78,
+        "time": 78.09500000000146,
+        "psi": 1.1381153527593626,
+        "salience": 0.13318328914191827,
+        "committed": true
+      },
+      {
+        "tick": 80,
+        "time": 80.09999999999964,
+        "psi": 0.28741566283980935,
+        "salience": 0.14731595177618168,
+        "committed": false
+      },
+      {
+        "tick": 85,
+        "time": 85.09999999999509,
+        "psi": 1.1413880883891965,
+        "salience": 0.18740185277882515,
+        "committed": true
+      },
+      {
+        "tick": 90,
+        "time": 90.09999999999054,
+        "psi": 1.076822472817047,
+        "salience": 0.2350753749876822,
+        "committed": false
+      },
+      {
+        "tick": 90,
+        "time": 90.09999999999054,
+        "psi": 1.076822472817047,
+        "salience": 0.2350753749876822,
+        "committed": true
+      },
+      {
+        "tick": 94,
+        "time": 94.0999999999869,
+        "psi": 1.0490116895442363,
+        "salience": 0.27926546044463274,
+        "committed": true
+      },
+      {
+        "tick": 98,
+        "time": 98.09999999998327,
+        "psi": 1.2403371794771667,
+        "salience": 0.32934130897342634,
+        "committed": true
+      }
+    ],
+    "commit_times": [
+      67.09500000001147,
+      78.09500000000146,
+      85.09999999999509,
+      90.09999999999054,
+      94.0999999999869,
+      98.09999999998327
+    ]
+  }
+]

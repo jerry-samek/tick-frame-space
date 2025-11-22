@@ -1,0 +1,27 @@
+================================================================================
+V6: 4D SWEEP
+================================================================================
+Started: 2025-11-18 12:43:16
+Grid: (24, 24, 24, 24)
+Total runs: 792
+================================================================================
+
+M_s = 1
+  symmetric, in-phase, T=100s, gamma=0.0010
+  symmetric, in-phase, T=100s, gamma=0.0050
+  symmetric, in-phase, T=200s, gamma=0.0010
+    Progress: 30/792
+  symmetric, in-phase, T=200s, gamma=0.0050
+Traceback (most recent call last):
+  File "W:\foundation\15 experiment\v6\v6_dimension_4d.py", line 67, in <module>
+    result = run_dimensional_simulation(
+        config, DIMENSION, GRID_SIZE, alpha_0, alpha_1, gamma, M, T
+    )
+  File "W:\foundation\15 experiment\v6\dimensional_wave_solver.py", line 277, in run_dimensional_simulation
+  File "W:\foundation\15 experiment\v6\dimensional_wave_solver.py", line 118, in compute_salience
+    """
+    
+  File "W:\foundation\15 experiment\v6\dimensional_wave_solver.py", line 118, in <genexpr>
+    """
+    
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 2.53 MiB for an array with shape (24, 24, 24, 24) and data type float64

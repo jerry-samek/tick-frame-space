@@ -1,0 +1,182 @@
+[
+  {
+    "parameters": {
+      "alpha_0": 2.0,
+      "T": 100.0
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 1,
+      "first_commit_time": 97.09999999998418,
+      "last_commit_time": 97.09999999998418,
+      "commit_rate": 0.01,
+      "avg_commit_interval": null,
+      "std_commit_interval": null
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0,
+      "T": 200.0
+    },
+    "statistics": {
+      "tick_count": 199,
+      "agent_commit_count": 28,
+      "first_commit_time": 97.09999999998418,
+      "last_commit_time": 199.09999999989142,
+      "commit_rate": 0.14,
+      "avg_commit_interval": 3.7777777777743426,
+      "std_commit_interval": 2.9481109247576747
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 2.0,
+      "T": 500.0
+    },
+    "statistics": {
+      "tick_count": 499,
+      "agent_commit_count": 323,
+      "first_commit_time": 97.09999999998418,
+      "last_commit_time": 499.0999999996186,
+      "commit_rate": 0.646,
+      "avg_commit_interval": 1.2484472049678088,
+      "std_commit_interval": 1.1530734296508565
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 3.0,
+      "T": 100.0
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 2,
+      "first_commit_time": 83.09999999999691,
+      "last_commit_time": 96.09999999998509,
+      "commit_rate": 0.02,
+      "avg_commit_interval": 12.999999999988177,
+      "std_commit_interval": null
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 3.0,
+      "T": 200.0
+    },
+    "statistics": {
+      "tick_count": 199,
+      "agent_commit_count": 56,
+      "first_commit_time": 83.09999999999691,
+      "last_commit_time": 199.09999999989142,
+      "commit_rate": 0.28,
+      "avg_commit_interval": 2.1090909090889913,
+      "std_commit_interval": 2.059768100561677
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 3.0,
+      "T": 500.0
+    },
+    "statistics": {
+      "tick_count": 499,
+      "agent_commit_count": 356,
+      "first_commit_time": 83.09999999999691,
+      "last_commit_time": 499.0999999996186,
+      "commit_rate": 0.712,
+      "avg_commit_interval": 1.1718309859144271,
+      "std_commit_interval": 0.9046333158918498
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 5.0,
+      "T": 100.0
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 6,
+      "first_commit_time": 67.09500000001147,
+      "last_commit_time": 98.09999999998327,
+      "commit_rate": 0.06,
+      "avg_commit_interval": 6.200999999994361,
+      "std_commit_interval": 2.638485171454889
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 5.0,
+      "T": 200.0
+    },
+    "statistics": {
+      "tick_count": 199,
+      "agent_commit_count": 89,
+      "first_commit_time": 67.09500000001147,
+      "last_commit_time": 199.09999999989142,
+      "commit_rate": 0.445,
+      "avg_commit_interval": 1.5000568181804539,
+      "std_commit_interval": 1.4063776193226816
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 5.0,
+      "T": 500.0
+    },
+    "statistics": {
+      "tick_count": 499,
+      "agent_commit_count": 389,
+      "first_commit_time": 67.09500000001147,
+      "last_commit_time": 499.0999999996186,
+      "commit_rate": 0.778,
+      "avg_commit_interval": 1.1134149484525957,
+      "std_commit_interval": 0.7017452474009886
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 10.0,
+      "T": 100.0
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 22,
+      "first_commit_time": 51.09500000000769,
+      "last_commit_time": 99.09999999998236,
+      "commit_rate": 0.22,
+      "avg_commit_interval": 2.285952380951175,
+      "std_commit_interval": 1.6659457624573646
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 10.0,
+      "T": 200.0
+    },
+    "statistics": {
+      "tick_count": 199,
+      "agent_commit_count": 122,
+      "first_commit_time": 51.09500000000769,
+      "last_commit_time": 199.09999999989142,
+      "commit_rate": 0.61,
+      "avg_commit_interval": 1.2231818181808574,
+      "std_commit_interval": 0.8478607011741033
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 10.0,
+      "T": 500.0
+    },
+    "statistics": {
+      "tick_count": 499,
+      "agent_commit_count": 422,
+      "first_commit_time": 51.09500000000769,
+      "last_commit_time": 499.0999999996186,
+      "commit_rate": 0.844,
+      "avg_commit_interval": 1.064144893110715,
+      "std_commit_interval": 0.4656306023726899
+    }
+  }
+]

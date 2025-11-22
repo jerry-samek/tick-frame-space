@@ -1,0 +1,192 @@
+[
+  {
+    "run_id": 220,
+    "status": "success",
+    "elapsed_seconds": 15.427007675170898,
+    "result": {
+      "parameters": {
+        "dimension": 4,
+        "num_sources": 1,
+        "alpha_0": 0.6,
+        "alpha_1": 1.0,
+        "gamma": 0.001,
+        "M": 1,
+        "T": 200.0,
+        "grid_sizes": [
+          16,
+          16,
+          16,
+          16
+        ],
+        "geometry": "clustered",
+        "phase_offset": 1
+      },
+      "statistics": {
+        "has_commits": true,
+        "agent_commit_count": 15077,
+        "commit_rate": 75.385,
+        "first_commit_time": 14.089999999999744,
+        "last_commit_time": 199.99999999996308,
+        "final_psi": 130.268212890625,
+        "max_salience": 130.268212890625,
+        "source_emission_counts": [
+          20000
+        ]
+      }
+    }
+  },
+  {
+    "run_id": 319,
+    "status": "success",
+    "elapsed_seconds": 36.37733721733093,
+    "result": {
+      "parameters": {
+        "dimension": 4,
+        "num_sources": 2,
+        "alpha_0": 0.6,
+        "alpha_1": 1.0,
+        "gamma": 0.005,
+        "M": 1,
+        "T": 500.0,
+        "grid_sizes": [
+          16,
+          16,
+          16,
+          16
+        ],
+        "geometry": "symmetric",
+        "phase_offset": 0
+      },
+      "statistics": {
+        "has_commits": true,
+        "agent_commit_count": 46558,
+        "commit_rate": 93.116,
+        "first_commit_time": 10.699999999999816,
+        "last_commit_time": 499.99999999969026,
+        "final_psi": 43690666.666666664,
+        "max_salience": 43690666.666666664,
+        "source_emission_counts": [
+          50000,
+          50000
+        ]
+      }
+    }
+  },
+  {
+    "run_id": 638,
+    "status": "success",
+    "elapsed_seconds": 39.19329380989075,
+    "result": {
+      "parameters": {
+        "dimension": 4,
+        "num_sources": 4,
+        "alpha_0": 0.6,
+        "alpha_1": 1.0,
+        "gamma": 0.001,
+        "M": 1,
+        "T": 500.0,
+        "grid_sizes": [
+          16,
+          16,
+          16,
+          16
+        ],
+        "geometry": "symmetric",
+        "phase_offset": 1
+      },
+      "statistics": {
+        "has_commits": true,
+        "agent_commit_count": 47549,
+        "commit_rate": 95.098,
+        "first_commit_time": 8.079999999999872,
+        "last_commit_time": 499.99999999969026,
+        "final_psi": 71695.53333333333,
+        "max_salience": 71695.53333333333,
+        "source_emission_counts": [
+          50000,
+          50000,
+          50000,
+          50000
+        ]
+      }
+    }
+  },
+  {
+    "run_id": 639,
+    "status": "success",
+    "elapsed_seconds": 43.28930139541626,
+    "result": {
+      "parameters": {
+        "dimension": 4,
+        "num_sources": 4,
+        "alpha_0": 0.8,
+        "alpha_1": 1.0,
+        "gamma": 0.001,
+        "M": 1,
+        "T": 500.0,
+        "grid_sizes": [
+          16,
+          16,
+          16,
+          16
+        ],
+        "geometry": "symmetric",
+        "phase_offset": 1
+      },
+      "statistics": {
+        "has_commits": true,
+        "agent_commit_count": 47878,
+        "commit_rate": 95.756,
+        "first_commit_time": 7.199999999999891,
+        "last_commit_time": 499.99999999969026,
+        "final_psi": 127369.46666666666,
+        "max_salience": 127369.46666666666,
+        "source_emission_counts": [
+          50000,
+          50000,
+          50000,
+          50000
+        ]
+      }
+    }
+  },
+  {
+    "run_id": 649,
+    "status": "success",
+    "elapsed_seconds": 49.5795841217041,
+    "result": {
+      "parameters": {
+        "dimension": 4,
+        "num_sources": 4,
+        "alpha_0": 0.6,
+        "alpha_1": 1.0,
+        "gamma": 0.005,
+        "M": 1,
+        "T": 500.0,
+        "grid_sizes": [
+          16,
+          16,
+          16,
+          16
+        ],
+        "geometry": "symmetric",
+        "phase_offset": 1
+      },
+      "statistics": {
+        "has_commits": true,
+        "agent_commit_count": 47548,
+        "commit_rate": 95.096,
+        "first_commit_time": 8.109999999999872,
+        "last_commit_time": 499.99999999969026,
+        "final_psi": 43690666.666666664,
+        "max_salience": 43690666.666666664,
+        "source_emission_counts": [
+          50000,
+          50000,
+          50000,
+          50000
+        ]
+      }
+    }
+  }
+]

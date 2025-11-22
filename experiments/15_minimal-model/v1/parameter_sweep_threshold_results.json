@@ -1,0 +1,92 @@
+[
+  {
+    "parameters": {
+      "alpha_0": 50.0,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 65,
+      "first_commit_time": 27.099999999998893,
+      "max_salience": 34.28365245194144,
+      "avg_salience": 7.070142312049328
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 60.0,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 67,
+      "first_commit_time": 25.09999999999929,
+      "max_salience": 49.36845953086347,
+      "avg_salience": 10.181004929352008
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 70.0,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 70,
+      "first_commit_time": 24.09999999999949,
+      "max_salience": 67.1959588058297,
+      "avg_salience": 13.85747893160288
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 80.0,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 72,
+      "first_commit_time": 23.09999999999969,
+      "max_salience": 87.76615027713622,
+      "avg_salience": 18.099564318854707
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 90.0,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 73,
+      "first_commit_time": 21.095000000000088,
+      "max_salience": 111.07903394451293,
+      "avg_salience": 22.90726109106848
+    }
+  },
+  {
+    "parameters": {
+      "alpha_0": 100.0,
+      "alpha_1": 0.0,
+      "gamma": 0.001,
+      "M": 1
+    },
+    "statistics": {
+      "tick_count": 99,
+      "agent_commit_count": 74,
+      "first_commit_time": 21.095000000000088,
+      "max_salience": 137.13460980776577,
+      "avg_salience": 28.280569248197313
+    }
+  }
+]

@@ -1,0 +1,107 @@
+================================================================================
+v7 EXPERIMENTS - QUICK START GUIDE
+================================================================================
+
+ANSWER TO YOUR QUESTION:
+Cannot do all experiments "in one go" - too large (27,720 runs, 139 hours).
+We split into 3 focused experiments that CAN run in parallel: 270 runs, ~2 hours.
+
+================================================================================
+RECOMMENDED APPROACH: Conservative Parallel (2 hours)
+================================================================================
+
+1. Run v7a (saturation detection) in 3 terminals:
+
+   Terminal 1:
+   cd "W:\foundation\15 experiment\v7"
+   python v7a_saturation_3d.py
+
+   Terminal 2:
+   cd "W:\foundation\15 experiment\v7"
+   python v7a_saturation_4d.py
+
+   Terminal 3:
+   cd "W:\foundation\15 experiment\v7"
+   python v7a_saturation_5d.py
+
+   Wait for all 3 to complete (~40 min each)
+
+2. Run v7c (causal comparison):
+
+   python v7c_causal_comparison.py
+   
+   Wait for completion (~1 hour)
+
+3. Run v7b (analysis only):
+
+   python v7b_normalized_analysis.py
+   
+   Completes in ~1 minute
+
+Total time: ~2 hours
+
+================================================================================
+WHAT EACH EXPERIMENT DOES
+================================================================================
+
+v7a - Saturation Boundary Detection (60 runs × 3 dimensions = 180 runs)
+  → Maps exact T_sat(γ) for 3D-5D
+  → Validates γ·T < 1.0 rule
+  → Confirms saturation caps (23M, 44M, 111M)
+
+v7b - Scale-Normalized Analysis (0 runs, analysis only)
+  → Computes CV_norm = σ / log(μ + 1)
+  → Investigates saturation cap origins
+  → Determines if normalized metrics improve discrimination
+
+v7c - Comparative Causal Analysis (90 runs)
+  → Compares 3D vs 4D at matched scales
+  → Tests if dimensional differences are scale-dependent
+  → 3D: 48³ = 110,592 points
+  → 4D (matched): 18⁴ = 104,976 points
+  → 4D (original): 16⁴ = 65,536 points
+
+================================================================================
+EXPANSION OPTIONS
+================================================================================
+
+If focused experiments reveal interesting patterns:
+
+v7a FULL: 5,940 runs (~50 hours)
+  → Full parameter coverage
+  → Edit scripts to expand ALPHA_0_VALUES, NUM_SOURCES_LIST, etc.
+
+v7c FULL: 1,080 runs (~9 hours)
+  → Full parameter coverage
+  → Edit script to expand sources/geometry/phase
+
+================================================================================
+FILES CREATED
+================================================================================
+
+Experiment scripts:
+  ✓ v7a_saturation_3d.py
+  ✓ v7a_saturation_4d.py
+  ✓ v7a_saturation_5d.py
+  ✓ v7b_normalized_analysis.py
+  ✓ v7c_causal_comparison.py
+
+Utilities (copied from v6-gpu):
+  ✓ gpu_wave_solver.py
+  ✓ parallel_experiment_runner_adaptive.py
+
+Documentation:
+  ✓ V7_EXPERIMENT_PLAN.md (detailed planning)
+  ✓ README.md (full instructions)
+  ✓ QUICK_START.txt (this file)
+
+Original framework:
+  ✓ Stability–Probability Balance Test Framework.md
+
+================================================================================
+READY TO RUN!
+================================================================================
+
+See README.md for detailed instructions and troubleshooting.
+See V7_EXPERIMENT_PLAN.md for experimental design rationale.
+
