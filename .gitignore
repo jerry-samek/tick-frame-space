@@ -3,3 +3,5 @@
 .claude
 **/nul
 nul
+**/__pycache__
+__pycache__
