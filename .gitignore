@@ -5,3 +5,9 @@
 nul
 **/__pycache__
 __pycache__
+/tick-space-runner.iml
+**/.mvn/
+.mvn/
+*.iml
+**/.vscode/
+.vscode
