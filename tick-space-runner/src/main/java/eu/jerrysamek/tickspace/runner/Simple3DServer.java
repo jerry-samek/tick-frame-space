@@ -1,6 +1,8 @@
 package eu.jerrysamek.tickspace.runner;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import eu.jerrysamek.tickspace.server.Brick;
+import eu.jerrysamek.tickspace.server.ViewconePacket;
 import io.undertow.Undertow;
 import io.undertow.websockets.WebSocketProtocolHandshakeHandler;
 import io.undertow.websockets.core.WebSocketChannel;
@@ -74,12 +76,5 @@ public class Simple3DServer {
     return arr;
   }
 
-  // --- Data records ---
-  public record Brick(int[] origin, byte[] dims, byte[] energyU8,
-                      byte[] parityBits, short[] momentumQ) {
-  }
 
-  public record ViewconePacket(long tick, float[] camPos, float[] camDir,
-                               byte brickSize, List<Brick> bricks) {
-  }
 }

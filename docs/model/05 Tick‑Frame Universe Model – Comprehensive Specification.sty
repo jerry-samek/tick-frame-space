@@ -1,0 +1,182 @@
+# 🧠 Tick‑Frame Universe Model – Comprehensive Specification
+
+## 📌 Overview
+
+This document formalizes the architecture, physics, and observer logic of the tick‑frame simulation substrate. It defines causality, motion, energy, gravity, and relativistic effects across substrate and visualization layers, supported by dimensional experiments and falsifiable metrics.
+
+---
+
+## 1. 🧱 Substrate Layer – Causal Engine
+
+### 1.1 Tick‑Frame Dynamics
+
+- **State space**:  
+  \[
+  \psi: \mathbb{Z}^d \times \mathbb{Z}_{\ge 0} \to \mathbb{R}^m
+  \]
+
+- **Update rule**:  
+  \[
+  \psi_{t+1} = F(\psi_t; \gamma, \alpha_0, \theta)
+  \]
+
+- **Locality constraint**:  
+  \[
+  \|y - x\| \le \gamma \cdot (t' - t)
+  \]
+
+### 1.2 Tick Budget and Mass
+
+- **Mass**: Tick budget per update  
+- **Energy**:  
+  \[
+  E = \gamma m
+  \]
+
+- **Velocity**:  
+  \[
+  v = \frac{\text{steps}}{\text{ticks}},\quad v \le c
+  \]
+
+- **Momentum**:  
+  \[
+  p = \gamma m v
+  \]
+
+---
+
+## 2. ⏱️ Temporal Surfing Principle
+
+> Entities persist by renewing themselves across ticks.  
+> Existence is defined by surfing time, not occupying space.
+
+- **Persistence condition**:  
+  \[
+  \text{age}(u) = \max \{ k \le H \mid u \text{ detected at } t-k \}
+  \]
+
+- **Effective wavelength**:  
+  \[
+  \lambda_{\text{eff}}(u) = \frac{H}{n_{\text{cycles}}(u)}
+  \]
+
+---
+
+## 3. 🧭 Dimensional Closure Framework
+
+| Dimension | Behavior | Stability |
+|-----------|----------|-----------|
+| 1D        | Trivial  | ✗         |
+| 2D        | Flat diffusion | ✗     |
+| 3D        | Phase transition | △    |
+| 4D        | Universal scaling | ✅   |
+| 5D        | Stability locked | ✅   |
+
+- **Closure principle**:  
+  Tick‑time stabilizes only in 4D–5D.  
+  Higher dimensions are excluded.
+
+---
+
+## 4. 🎯 Stability–Probability Balance Index (SPBI)
+
+\[
+\text{SPBI} = \frac{\text{Residual Variance (CV)}}{1 - \rho}
+\]
+
+- **3D**: SPBI ≈ 0.05–0.10 → universe-like  
+- **4D–5D**: SPBI → 0 → deterministic
+
+---
+
+## 5. 👁️ Visualization Layer – Observer Logic
+
+### 5.1 Frame Sampling
+
+- **Tickrate**: 10 ms  
+- **Framerate**: 100 ms (e.g. 1 frame per 10 ticks)  
+- **Cone sampling**: Entities within causal cone only
+
+### 5.2 Simulation Relativity Principle (SRP)
+
+> Relativistic effects emerge from cone sampling and frame aggregation.  
+> Time dilation, length contraction, and horizon collapse are perceptual artifacts.
+
+| Effect              | Cause                      | Manifestation              |
+|---------------------|----------------------------|----------------------------|
+| Time dilation       | Frame aggregation          | Clocks appear slower       |
+| Length contraction  | Sparse sampling            | Paths appear shorter       |
+| Horizon collapse    | Cone boundary              | Regions vanish from view   |
+
+---
+
+## 6. 🌌 Horizon Boundaries
+
+- **Causal cone**:  
+  \[
+  \|y - x\| \le \gamma \cdot (t' - t)
+  \]
+
+- **Visibility condition**:  
+  \[
+  v_{\text{rec}}(d) \le v_{\text{frame}} \Rightarrow d \le \frac{v_{\text{frame}}}{H}
+  \]
+
+- **Aliasing rule**:  
+  \[
+  v_{\text{eff}} > v_{\text{frame}} \Rightarrow \texttt{beyond\_horizon}=1
+  \]
+
+---
+
+## 7. 🕳️ Tick‑Frame Gravity
+
+> Gravity = tick exhaustion and scheduling pressure
+
+- **Mass**: Tick budget  
+- **Black hole**:  
+  \[
+  T_{\text{escape}} > F_{\text{frame budget}}
+  \]
+
+- **Salience wells**: Local tick pressure gradients  
+- **Commit suppression**: Fewer updates near mass
+
+---
+
+## 8. 🧪 Minimal Model for Time–Visualization Testing
+
+- **Linear substrate**:  
+  \[
+  \dot{x}(t) = A x(t) + b
+  \]
+
+- **Clock**:  
+  \[
+  \dot{\Theta}(t) = \omega_P F(x(t))
+  \]
+
+- **Wave artefact field**:  
+  \[
+  \partial_{tt}\mathcal{A} - c^2 \nabla^2 \mathcal{A} + \gamma \partial_t \mathcal{A} = J(x,t)
+  \]
+
+- **Agent refresh**:  
+  \[
+  \dot{\Psi}(t) = r_a(t) S(\mathcal{A}, a)
+  \]
+
+---
+
+## 9. 📦 Binary Streaming Protocol (Cone-Sampled)
+
+- **Header (14B)**: tick, cone ID, entity count  
+- **Entity record (17B)**: position, energy, generation, flags  
+- **Compression**: delta encoding, quantization, zstd  
+- **Client decoding**: WebGL-ready, frame-sampled
+
+---
+
+## ✅ Summary
+
+This model defines a deterministic, causal substrate governed by tick-time, layered with a visualization protocol that introduces relativistic artifacts through cone sampling and frame aggregation. It is falsifiable, auditable, and dimensionally bounded. The Simulation Relativity Principle unifies perception and physics, ensuring that emergence remains both observable and meaningful.
