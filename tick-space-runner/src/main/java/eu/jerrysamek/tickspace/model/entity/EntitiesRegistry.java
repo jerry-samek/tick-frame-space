@@ -11,6 +11,7 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Stream;
 
 public class EntitiesRegistry implements TickTimeConsumer<SubstrateModelUpdate> {
@@ -26,25 +27,30 @@ public class EntitiesRegistry implements TickTimeConsumer<SubstrateModelUpdate> 
 
         var position = new Position(coordinates);
 
-        entities.put(position, new EntityModel(UUID.randomUUID(), position, BigInteger.ONE, new Momentum(BigInteger.ONE, new BigInteger[]{BigInteger.ZERO, BigInteger.ZERO, BigInteger.ZERO})));
+        entities.put(position, new EntityModel(UUID.randomUUID(), position, BigInteger.ONE, BigInteger.ZERO, new Momentum(BigInteger.TEN, new BigInteger[]{BigInteger.ZERO, BigInteger.ZERO, BigInteger.ZERO})));
       });
     }
 
     return snapshot()
         .stream()
-        .flatMap(entityModel -> entityModel
-            .onTick(tickCount)
-            .map(entityModelUpdate -> substrate -> {
-                  var updatedEntity = entityModelUpdate.update(substrate);
-                  if (entityModel.getPosition().equals(updatedEntity.getPosition())) {
-                    entities.put(updatedEntity.getPosition(), updatedEntity);
-                  } else {
-                    entities.remove(entityModel.getPosition());
+        .flatMap(entityModel -> {
+              var originalRemoved = new AtomicBoolean(false); // check to verify the entity is removed only once
 
-                    entities.put(updatedEntity.getPosition(), updatedEntity);
-                  }
-                }
-            )
+              return entityModel
+                  .onTick(tickCount)
+                  .map(entityModelUpdate -> substrate -> {
+                        var updatedEntity = entityModelUpdate.update(substrate);
+                        var newPosition = updatedEntity.getPosition();
+
+                        entities.put(newPosition, updatedEntity);
+
+                        if (!entityModel.getPosition().equals(newPosition)
+                            && originalRemoved.compareAndSet(false, true)) {
+                          entities.remove(entityModel.getPosition());
+                        }
+                      }
+                  );
+            }
         );
   }
 
