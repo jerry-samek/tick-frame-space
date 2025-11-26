@@ -91,10 +91,10 @@ P_t < N_t \quad \text{for all } t > 0
   - Science: Puzzle explained by CP violation in particle physics.  
   - Tick‑frame: Structural necessity of expansion and parity constraints.  
 - **Energy distribution:**  
-  - Science: All energy present at Big Bang, redistributed as universe expands.  
+  - Science: All energy present at the Big Bang, redistributed as a universe expands.  
   - Tick‑frame: Energy emerges as a function of time, always less than 100% after expansion.  
 - **Implication:**  
-  - Science treats imbalance as anomaly.  
+  - Science treats imbalance as an anomaly.  
   - Tick‑frame treats imbalance as inevitable geometry.
 
 ---
