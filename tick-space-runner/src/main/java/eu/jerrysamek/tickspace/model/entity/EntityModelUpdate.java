@@ -2,7 +2,9 @@ package eu.jerrysamek.tickspace.model.entity;
 
 import eu.jerrysamek.tickspace.model.substrate.SubstrateModel;
 
+import java.util.stream.Stream;
+
 public interface EntityModelUpdate {
 
-  EntityModel update(SubstrateModel model);
+  Stream<EntityModel> update(SubstrateModel model);
 }

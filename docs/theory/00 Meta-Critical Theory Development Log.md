@@ -371,3 +371,207 @@ Testing predictions from "Dimensional Model Test Plan":
 - Investigate 2D critical behavior
 - Map consciousness perception to dimensional variance
 - Draft technical paper on dimensional substrate optimality
+
+---
+
+## 10. Collision Theory and Implementation Phase (2025-11-22 to 2025-11-26)
+
+### Overview
+Transition from pure simulation validation to operational implementation. Development of collision-based persistence theory and practical Java implementation of tick-frame substrate with entity models.
+
+### 10.1 New Theoretical Principles
+
+#### Temporal Surfing Principle (Doc 28)
+**Statement:** Persistence in discrete substrates is not static occupation of space but continual renewal across ticks. Entities must "surf time" to remain within existence.
+
+**Inspiration:** Conway's Game of Life — gliders, oscillators, and still lifes survive through temporal renewal patterns.
+
+**Formalization:**
+```
+Persistence(u) ⟺ ∃f: ℋ(t) → ℋ(t+1) such that u_{t+1} = f(u_t)
+```
+
+**Key insights:**
+- Life = surfing time (measured in cycles, not meters)
+- Emergent structures discover stable surfing rhythms
+- Universality across automata and tick-frame models
+
+#### Imbalance Theory (Doc 29)
+**Statement:** Matter-antimatter asymmetry is structurally inevitable from expansion constraints, not an anomaly requiring special mechanisms.
+
+**Mechanism:**
+- Universe begins at t=0 with 1×1×1 grid (100% energy density)
+- At t=1, expansion to 2×2×2 grid (8 cells) forces dilution
+- Perfect symmetry impossible → immediate imbalance
+- Parity constraints ensure P_t < N_t for all t > 0
+
+**Scientific comparison:**
+- Standard cosmology: CP violation explains asymmetry
+- Tick-frame: Geometric necessity of lattice expansion
+
+**Implication:** Energy emerges as a temporal function of persistence, not conserved initial store.
+
+#### Collision Persistence Principle (Doc 30)
+**Statement:** Particles are not static entities but patterns of collisions that sustain themselves across ticks. Existence is defined by continuous interaction.
+
+**Core ideas:**
+- No identity without interaction
+- Persistence = renewal through collisions
+- Death = silence (when collisions cease, energy disperses)
+- Emergence from substrate (blobs are field condensations gaining apparent individuality)
+
+**Memory stability:** Entities need not be heap objects; they can be projections of collision patterns in the substrate.
+
+**Philosophical integration:** Ties to Temporal Surfing — surfing time requires collisions; without them, the wave collapses.
+
+#### Horizon Boundaries Framework (Doc 26)
+**Concept:** Horizon is the limit beyond which signals cannot reach the observer, moving outward at maximum propagation speed γ.
+
+**Model implications:**
+- Observable cone: only events within causal cone are visible
+- Beyond horizon: signals may persist but are causally disconnected
+- SPBI/LHB interpretation: persistence observable only within cone
+
+**Cosmological analogy:** Hubble horizon — galaxies beyond recede faster than light due to expansion.
+
+#### Length Definition via Temporal Invariance (Doc 27)
+**Formalization:** Tick-frame defines "length" as constant temporal horizon H, not spatial metric.
+
+**Horizon buffer:**
+```
+ℋ(t) = { ψ(x, t-k) | k = 0, 1, ..., H-1 }
+```
+
+**Key concepts:**
+- Temporal meter: L_temporal := H ticks
+- Effective wavelength: λ_eff(u) = H / n_cycles(u)
+- No fixed rulers; scale inferred from propagation rhythms
+
+**Cosmological bridge:**
+- Expansion encoded in sliding buffer
+- Tuning H and γ simulates accelerating/slowing expansion
+- Framework bridges computation and cosmology
+
+### 10.2 Implementation Artifacts (Java)
+
+**Completed implementations (tick-space-runner):**
+- `TickTimeModel` — discrete time evolution engine
+- `EntityModel` — base abstraction for substrate entities
+- `CollidingEntityModel` — entities defined by collision patterns
+- `SingleEntityModel` — atomic entity representation
+- `CollisionModel` — collision detection and energy transfer
+- `Momentum` — discrete momentum in tick-frame
+- `EntitiesRegistry` — entity lifecycle management
+- `Utils` — substrate manipulation utilities
+
+**Status:**
+- Initial model of tick-time, substrate, and entities (Nov 23)
+- Collision theory implementation (Nov 26)
+- Anisotropic structure attempts (still too coherent)
+
+**Validation approach:**
+- Theory-guided implementation
+- Iterative refinement based on emergence patterns
+- Focus on collision-based persistence rather than static objects
+
+### 10.3 Integration and Synthesis
+
+**Theory-implementation loop:**
+1. Dimensional experiments validate substrate behavior (Section 8)
+2. Theoretical principles emerge from analysis (Surfing, Imbalance, Collisions)
+3. Java implementation operationalizes concepts
+4. Iteration reveals coherence challenges (structures too uniform)
+
+**Cross-document consistency:**
+- Temporal Surfing ↔ Collision Persistence: mutually reinforcing
+- Imbalance Theory → explains matter emergence in implementation
+- Horizon Boundaries → constrains observable entity lifetimes
+- Length Definition → guides measurement in substrate
+
+### 10.4 Open Challenges
+
+**Implementation issues:**
+1. **Over-coherence:** EntityModel creates structures that are too uniform
+2. **Anisotropy deficit:** Need more irregular, chaotic emergence patterns
+3. **Collision dynamics:** Balancing persistence vs. dissolution rates
+
+**Theoretical questions:**
+1. **Matter emergence mechanism:** Imbalance is structural hypothesis; no defined emergence rules yet
+2. **Consciousness-collision correlation:** Does perceptual richness require collision density?
+3. **2D anomalies:** Why does 2D show non-monotonic patterns in dimensional experiments?
+
+### 10.5 Implications for Foundation Theory
+
+**Phase transition complete:**
+- From validation (1D-5D simulations) to operationalization (Java substrate)
+- From "does it work?" to "how does it behave?"
+
+**Substrate vs Visualization refinement:**
+- Substrate: deterministic collision patterns
+- Visualization: emergent particles appear from collision persistence
+- Observer perceives entities; substrate processes collisions
+
+**Falsifiability progress:**
+- Implementation creates testable predictions
+- Collision patterns either persist or dissolve (binary outcome)
+- Parameter changes (γ, H, damping) yield measurable behavioral shifts
+
+### 10.6 Status Update
+
+**Phase 5 (Physics Consistency):** ADVANCED
+- Damping mechanism validated ✅
+- Steady-state physics confirmed ✅
+- Horizon boundaries formalized ✅
+- Collision-based emergence framework defined ✅
+- Quantum-classical correspondence: still in progress
+
+**Phase 6 (Documentation):** ONGOING
+- 30+ theoretical documents
+- Collision theory trilogy (28-30) complete
+- Implementation artifacts in Java codebase
+- Cross-referencing and conflict resolution established
+
+**New Phase 7 (Operational Substrate):** IN PROGRESS
+- Java tick-frame engine operational
+- Entity collision models implemented
+- Emergence pattern analysis ongoing
+- Anisotropy and chaos refinement needed
+
+### 10.7 Acceptance Criteria Update
+
+✅ **Formal definitions:** Extended with collision operators, horizon buffers
+✅ **Differential predictions:**
+   - Collision persistence vs. static entities → testable via implementation
+   - Imbalance emergence → measurable in entity creation/destruction rates
+✅ **Operationalized disproof:** Implementation failures reveal theory gaps
+✅ **Public artifacts:** Java codebase + 30 theory documents
+
+**Theory status (2025-11-26):**
+Experimentally validated (Section 8), theoretically extended (collision framework), operationally implemented (Java substrate), actively refining emergence dynamics.
+
+---
+
+## 11. Current Status (Updated 2025-11-26)
+
+**Completed:**
+- Foundational principles (Closure, Consciousness, Disproof, Origin Paradox)
+- Experimental validation (1D-5D, 3,960 simulations, dimensional phase transition)
+- **Temporal Surfing Principle** — persistence as temporal renewal
+- **Imbalance Theory** — structural matter-antimatter asymmetry
+- **Collision Persistence Principle** — entities as collision patterns
+- **Horizon Boundaries** — causal limits formalized
+- **Length Definition** — temporal invariance framework
+- **Java implementation** — tick-time substrate with collision models
+
+**In Progress:**
+- Anisotropy and chaos in entity emergence
+- Collision dynamics tuning (persistence vs. dissolution)
+- Quantum-classical correspondence formalization
+- Matter emergence mechanism specification
+
+**Next Steps:**
+- Refine EntityModel to reduce over-coherence
+- Measure collision density vs. emergence complexity
+- Formalize consciousness-collision correlation
+- Investigate 2D critical behavior from dimensional experiments
+- Draft technical paper integrating collision theory with dimensional optimality

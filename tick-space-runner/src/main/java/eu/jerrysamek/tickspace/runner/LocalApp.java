@@ -15,7 +15,6 @@ import java.nio.file.Path;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class LocalApp {
 
@@ -56,17 +55,17 @@ public class LocalApp {
       }
     });
 
-    var counter = new AtomicInteger(0);
-
     new TickTimeModel(substrate, tick -> {
-      System.out.println("XXX dimensions : " + substrate.getDimensionalSize());
+      // after tick processing
+      System.out.println("====== tick " + tick + " ======");
+      System.out.println(" - dimensional bounds: " + substrate.getDimensionalSize());
       var count = entitiesRegistry.count();
-      System.out.println("XXX entities : " + count);
-      var snapshot = entitiesRegistry.snapshot();
-      var totalEnergy = snapshot.stream().mapToLong(entityModel -> entityModel.getEnergy().longValue()).sum();
-      System.out.println("XXX total system energy: " + totalEnergy);
-      if (count != counter.getAndSet(count)) {
-        System.out.println("XXX new snapshot: " + tick);
+      System.out.println(" - entities: " + count);
+
+      if (BigInteger.ZERO.equals(tick.remainder(BigInteger.valueOf(1000)))) {
+        var snapshot = entitiesRegistry.snapshot();
+
+        System.out.println(" - new snapshot generated");
 
         synchronized (snapshots) {
           snapshots.add(new Snapshot(tick, snapshot));

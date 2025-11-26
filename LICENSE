@@ -1,7 +1,50 @@
-# License
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
 
-Open for experimentation, remixing, and extension.  
-Treat this as a living sandbox for discrete universe modeling.
+Copyright (C) 2025 Jerry Samek
 
-**Free for personal, academic, and non-commercial use only.**  
-Commercial use is not permitted without explicit permission.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+---
+
+TERMS AND CONDITIONS
+
+The full text of the GNU General Public License v3 can be found at:
+https://www.gnu.org/licenses/gpl-3.0.txt
+
+SUMMARY (not legal advice):
+
+You are free to:
+- Use this software for any purpose, including commercial
+- Study and modify the source code
+- Distribute copies of the software
+- Distribute modified versions
+
+Under these conditions:
+- You must include the original copyright notice and license
+- If you distribute modified versions, you must:
+  * Release the source code under GPL v3
+  * Document your changes
+  * Use the same GPL v3 license
+- You must include the full license text
+- You provide no warranty
+
+This ensures that improvements to this work remain open and accessible
+to the research and development community.
+
+---
+
+Contact: Tomas Samek (jerry.samek@gmail.com)
+Project: Tick-Frame Space - Dimensional Physics Experiments in JAVAw
+Repository: https://github.com/jerry-samek/tick-frame-space

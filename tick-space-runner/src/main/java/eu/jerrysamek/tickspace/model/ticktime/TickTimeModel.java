@@ -36,38 +36,39 @@ public class TickTimeModel implements AutoCloseable {
    * This fires an update to the consumer, incrementing all dimensions by 1.
    */
   public void start() {
-    var tickTaskExecutor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() * 2);
+    var tickTaskExecutor = Executors.newWorkStealingPool(Runtime.getRuntime().availableProcessors() * 2);
 
     executor.scheduleWithFixedDelay(() -> {
       tickCount = tickCount.add(BigInteger.ONE);
+      try {
+        var start = System.nanoTime();
 
-      var start = System.nanoTime();
+        var timeUpdateStream = consumer.onTick(tickCount);
 
-      var timeUpdateStream = consumer.onTick(tickCount);
+        var tickUpdate = System.nanoTime();
+        timeUpdateStream
+            .map(tickTaskExecutor::submit)
+            .toList()
+            .forEach(future -> {
+              try {
+                future.get();
+              } catch (Exception e) {
+                throw new RuntimeException(e);
+              }
+            });
 
-      var tickUpdate = System.nanoTime();
-      //  timeUpdateStream.forEach(Runnable::run);
-      timeUpdateStream
-          .map(tickTaskExecutor::submit)
-          .toList()
-          .forEach(future -> {
-            try {
-              future.get();
-            } catch (Exception e) {
-              throw new RuntimeException(e);
-            }
-          });
+        var tickExecution = System.nanoTime();
 
-      var tickExecution = System.nanoTime();
+        final double updateMs = (tickUpdate - start) / 1_000_000.0;
+        final double executionMs = (tickExecution - tickUpdate) / 1_000_000.0;
+        final double totalMs = (tickExecution - start) / 1_000_000.0;
 
-      double updateMs = (tickUpdate - start) / 1_000_000.0;
-      double executionMs = (tickExecution - tickUpdate) / 1_000_000.0;
-      double totalMs = (tickExecution - start) / 1_000_000.0;
+        afterTick.accept(tickCount);
 
-      System.out.printf("tick %s statistics: update=%.2f ms, execution=%.2f ms, total=%.2f ms%n",
-          tickCount, updateMs, executionMs, totalMs);
-
-      afterTick.accept(tickCount);
+        System.out.printf(" - statistics: update=%.2f ms, execution=%.2f ms, total=%.2f ms%n", updateMs, executionMs, totalMs);
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
     }, 0, 10, TimeUnit.MILLISECONDS);
   }
 
