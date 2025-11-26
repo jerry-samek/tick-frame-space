@@ -61,10 +61,16 @@ public class LocalApp {
       System.out.println(" - dimensional bounds: " + substrate.getDimensionalSize());
       var count = entitiesRegistry.count();
       System.out.println(" - entities: " + count);
+      var snapshot = entitiesRegistry.snapshot();
+
+      var totalEnergyBalance = snapshot.stream().map(entityModel -> entityModel
+              .getEnergy().divide(tick)
+              .subtract(entityModel.getMomentum().totalCost()))
+          .reduce(BigInteger.ZERO, BigInteger::add);
+
+      System.out.println(" - total energy balance: " + totalEnergyBalance);
 
       if (BigInteger.ZERO.equals(tick.remainder(BigInteger.valueOf(1000)))) {
-        var snapshot = entitiesRegistry.snapshot();
-
         System.out.println(" - new snapshot generated");
 
         synchronized (snapshots) {
