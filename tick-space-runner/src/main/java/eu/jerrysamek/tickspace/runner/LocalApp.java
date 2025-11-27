@@ -2,6 +2,7 @@ package eu.jerrysamek.tickspace.runner;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import eu.jerrysamek.tickspace.model.entity.CollidingEntityModel;
 import eu.jerrysamek.tickspace.model.entity.EntitiesRegistry;
 import eu.jerrysamek.tickspace.model.entity.EntityModel;
 import eu.jerrysamek.tickspace.model.substrate.SubstrateModel;
@@ -9,7 +10,9 @@ import eu.jerrysamek.tickspace.model.ticktime.TickTimeModel;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.math.MathContext;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Collection;
@@ -50,12 +53,13 @@ public class LocalApp {
             } catch (IOException e) {
               throw new RuntimeException(e);
             }
+            System.out.println(" - new snapshot generated for tick " + snapshot.tick);
           }
         }
       }
     });
 
-    new TickTimeModel(substrate, tick -> {
+    new TickTimeModel(substrate, (model, tick) -> {
       // after tick processing
       System.out.println("====== tick " + tick + " ======");
       System.out.println(" - dimensional bounds: " + substrate.getDimensionalSize());
@@ -64,14 +68,17 @@ public class LocalApp {
       var snapshot = entitiesRegistry.snapshot();
 
       var totalEnergyBalance = snapshot.stream().map(entityModel -> entityModel
-              .getEnergy().divide(tick)
-              .subtract(entityModel.getMomentum().totalCost()))
-          .reduce(BigInteger.ZERO, BigInteger::add);
+              .getEnergy().normalized(tick)
+              .subtract(new BigDecimal(entityModel.getMomentum().totalCost())))
+          .reduce(BigDecimal.ZERO, BigDecimal::add);
 
       System.out.println(" - total energy balance: " + totalEnergyBalance);
 
-      if (BigInteger.ZERO.equals(tick.remainder(BigInteger.valueOf(1000)))) {
-        System.out.println(" - new snapshot generated");
+      System.out.println(" - total energy loss by annihilation: " + CollidingEntityModel.totalEnergyLoss);
+
+
+      if (tick.remainder(BigInteger.valueOf(100)).equals(BigInteger.ZERO)) {
+        System.out.println(" - preparing new snapshot ...");
 
         synchronized (snapshots) {
           snapshots.add(new Snapshot(tick, snapshot));

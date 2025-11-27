@@ -26,7 +26,7 @@ def process_snapshot(json_file, max_entities=None):
             break
 
         x, y, z = e['position']['coordinates']
-        energy = int(e["energy"])
+        energy = int(e["energy"]['energy'])
         depth = int(e.get("depth", 0))
         momentum = tuple(e.get("momentum", []))
 

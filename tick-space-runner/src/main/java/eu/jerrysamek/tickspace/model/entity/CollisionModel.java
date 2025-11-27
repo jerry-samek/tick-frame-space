@@ -1,9 +1,15 @@
 package eu.jerrysamek.tickspace.model.entity;
 
 import eu.jerrysamek.tickspace.model.substrate.Position;
+import eu.jerrysamek.tickspace.model.substrate.SubstrateModel;
 
 import java.math.BigInteger;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 public class CollisionModel {
 
@@ -16,11 +22,11 @@ public class CollisionModel {
       List<EntityModel> removed) {
   }
 
-  public static CollisionOutcome resolveCollision(List<EntityModel> claimants) {
+  public static CollisionOutcome resolveCollision(SubstrateModel model, List<EntityModel> claimants) {
     if (claimants.isEmpty()) return new CollisionOutcome(OutcomeType.DISAPPEAR, Optional.empty(), List.of(), List.of());
 
     // --- Priority: occupant inertia ---
-    claimants.sort(Comparator.comparing((EntityModel e) -> e.getEnergy().negate())                  // higher energy first
+    claimants.sort(Comparator.comparing((EntityModel e) -> e.getEnergy().getEnergy().negate())                  // higher energy first
         .thenComparing(EntityModel::getGeneration)                   // deeper lineage favored
         .thenComparing(EntityModel::getIdentity));                   // deterministic tie
 
@@ -41,11 +47,11 @@ public class CollisionModel {
 
     if (dotSum.compareTo(BigInteger.ZERO) > 0) {
       // Mostly aligned → MERGE
-      EntityModel merged = mergeEntities(claimants);
+      EntityModel merged = mergeEntities(model, claimants);
       return new CollisionOutcome(OutcomeType.MERGE, Optional.of(merged), List.of(), List.of());
     } else if (dotSum.equals(BigInteger.ZERO)) {
       // Divergent but not opposed → BOUNCE
-      List<EntityModel> bounced = bounceEntities(claimants);
+      List<EntityModel> bounced = bounceEntities(model, claimants);
 
       return new CollisionOutcome(OutcomeType.BOUNCE, Optional.empty(), bounced, List.of());
     } else {
@@ -64,10 +70,11 @@ public class CollisionModel {
     return result;
   }
 
-  private static EntityModel mergeEntities(List<EntityModel> claimants) {
+  private static EntityModel mergeEntities(SubstrateModel model, List<EntityModel> claimants) {
     // --- Energy: sum all energies (conservation of energy) ---
     BigInteger totalEnergy = claimants.stream()
         .map(EntityModel::getEnergy)
+        .map(EnergyState::getEnergy)
         .reduce(BigInteger.ZERO, BigInteger::add);
 
     // --- Generation: take deepest lineage and increment ---
@@ -103,6 +110,7 @@ public class CollisionModel {
 
     // --- Construct merged entity ---
     return new SingleEntityModel(
+        model,
         UUID.randomUUID(),
         position,
         totalEnergy,
@@ -127,7 +135,7 @@ public class CollisionModel {
   }
 
 
-  private static List<EntityModel> bounceEntities(List<EntityModel> claimants) {
+  private static List<EntityModel> bounceEntities(SubstrateModel model, List<EntityModel> claimants) {
     // Inelastic collision: conserve momentum but dissipate some energy
     List<EntityModel> bounced = new ArrayList<>();
 
@@ -141,7 +149,7 @@ public class CollisionModel {
       for (int i = 0; i < totalMomentum.length; i++) {
         totalMomentum[i] = totalMomentum[i].add(vec[i]);
       }
-      totalEnergy = totalEnergy.add(e.getEnergy());
+      totalEnergy = totalEnergy.add(e.getEnergy().getEnergy());
     }
 
     // --- For each entity, compute reflection relative to center of mass ---
@@ -169,9 +177,10 @@ public class CollisionModel {
 
       // Energy loss: roughly 10-30% of relative kinetic energy
       BigInteger energyLoss = sqrt(relMomentumSq).divide(BigInteger.valueOf(5)).max(BigInteger.ONE);
-      BigInteger newEnergy = e.getEnergy().subtract(energyLoss).max(BigInteger.ZERO);
+      BigInteger newEnergy = e.getEnergy().getEnergy().subtract(energyLoss).max(BigInteger.ZERO);
 
       bounced.add(new SingleEntityModel(
+          model,
           e.getIdentity(),
           e.getPosition(),  // entities return to their previous position after bounce
           newEnergy,

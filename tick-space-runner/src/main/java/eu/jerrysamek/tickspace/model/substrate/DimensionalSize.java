@@ -49,8 +49,8 @@ public class DimensionalSize implements TickTimeConsumer<DimensionalSizeUpdate> 
   }
 
   @Override
-  public Stream<DimensionalSizeUpdate> onTick(BigInteger tickCount) {
-    return Stream.of(() -> Arrays.fill(dimensions, tickCount));
+  public Stream<TickAction<DimensionalSizeUpdate>> onTick(BigInteger tickCount) {
+    return Stream.of(new TickAction<>(TickActionType.UPDATE, () -> Arrays.fill(dimensions, tickCount)));
   }
 
   @Override

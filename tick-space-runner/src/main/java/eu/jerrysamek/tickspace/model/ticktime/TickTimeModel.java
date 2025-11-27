@@ -4,7 +4,7 @@ import java.math.BigInteger;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-import java.util.function.Consumer;
+import java.util.function.BiConsumer;
 
 /**
  * Simple tick-based time model that fires updates to TimeTickConsumers.
@@ -16,19 +16,23 @@ public class TickTimeModel implements AutoCloseable {
 
   private final TickTimeConsumer<TickTimeUpdate> consumer;
   private BigInteger tickCount = BigInteger.ZERO;
-  private final Consumer<BigInteger> afterTick;
+  private final BiConsumer<TickTimeModel, BigInteger> afterTick;
 
   /**
    * Creates a TickTimeModel with the associated TickTimeConsumer.
    *
    * @param consumer the consumer to update on each tick
    */
-  public TickTimeModel(final TickTimeConsumer<TickTimeUpdate> consumer, final Consumer<BigInteger> afterTick) {
+  public TickTimeModel(final TickTimeConsumer<TickTimeUpdate> consumer, final BiConsumer<TickTimeModel, BigInteger> afterTick) {
     if (consumer == null) {
       throw new IllegalArgumentException("TickTimeConsumer cannot be null");
     }
     this.consumer = consumer;
     this.afterTick = afterTick;
+  }
+
+  public void stop() {
+    executor.shutdownNow();
   }
 
   /**
@@ -47,6 +51,8 @@ public class TickTimeModel implements AutoCloseable {
 
         var tickUpdate = System.nanoTime();
         timeUpdateStream
+            .filter(action -> action.type() == TickTimeConsumer.TickActionType.UPDATE)
+            .map(TickTimeConsumer.TickAction::action)
             .map(tickTaskExecutor::submit)
             .toList()
             .forEach(future -> {
@@ -63,7 +69,7 @@ public class TickTimeModel implements AutoCloseable {
         final double executionMs = (tickExecution - tickUpdate) / 1_000_000.0;
         final double totalMs = (tickExecution - start) / 1_000_000.0;
 
-        afterTick.accept(tickCount);
+        afterTick.accept(this, tickCount);
 
         System.out.printf(" - statistics: update=%.2f ms, execution=%.2f ms, total=%.2f ms%n", updateMs, executionMs, totalMs);
       } catch (Exception e) {

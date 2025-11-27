@@ -8,8 +8,16 @@ import java.util.stream.Stream;
  */
 public interface TickTimeConsumer<E> {
 
-    /**
-     * Called when a tick occurs.
-     */
-    Stream<E> onTick(BigInteger tickCount);
+  enum TickActionType {
+    WAIT, UPDATE
+  }
+
+  record TickAction<E>(TickActionType type, E action) {
+
+  }
+
+  /**
+   * Called when a tick occurs.
+   */
+  Stream<TickAction<E>> onTick(BigInteger tickCount);
 }
