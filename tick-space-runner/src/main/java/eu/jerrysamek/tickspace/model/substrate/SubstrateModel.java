@@ -122,6 +122,15 @@ public class SubstrateModel implements TickTimeConsumer<TickTimeUpdate> {
     return offsets;
   }
 
+  /**
+   * Flips double-buffered state after all tick actions complete.
+   * Called by TickTimeModel to ensure buffer swap happens AFTER
+   * all parallel entity updates finish.
+   */
+  public void flip() {
+    registry.flip();
+  }
+
   @Override
   public String toString() {
     return "SubstrateModel{" +

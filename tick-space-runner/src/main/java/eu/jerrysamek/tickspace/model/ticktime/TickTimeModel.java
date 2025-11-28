@@ -63,6 +63,12 @@ public class TickTimeModel implements AutoCloseable {
               }
             });
 
+        // CRITICAL: Flip buffers AFTER all futures complete
+        // This ensures double-buffering works correctly for EntitiesRegistry
+        if (consumer instanceof eu.jerrysamek.tickspace.model.substrate.SubstrateModel substrate) {
+          substrate.flip();
+        }
+
         var tickExecution = System.nanoTime();
 
         final double updateMs = (tickUpdate - start) / 1_000_000.0;

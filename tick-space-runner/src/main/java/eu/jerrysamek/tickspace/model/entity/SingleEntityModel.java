@@ -24,13 +24,20 @@ public class SingleEntityModel implements EntityModel {
   private final BigInteger completeDivisionThreshold;
 
   public SingleEntityModel(SubstrateModel model, UUID identity, Position position, BigInteger initialEnergy, BigInteger generation, Momentum momentum) {
-    var thresholds = Stream.of(model.getOffsets())
-        .map(bigIntegers -> Utils.computeEnergyCost(momentum.vector(), bigIntegers, momentum.cost(), generation))
-        .toList();
+    // Optimize: use array-based loop instead of Stream to reduce allocation overhead
+    var offsets = model.getOffsets();
+    var thresholdsArray = new BigInteger[offsets.length];
+    var completeDivisionThreshold = ZERO;
+
+    for (int i = 0; i < offsets.length; i++) {
+      var cost = Utils.computeEnergyCost(momentum.vector(), offsets[i], momentum.cost(), generation);
+      thresholdsArray[i] = cost;
+      completeDivisionThreshold = completeDivisionThreshold.add(cost);
+    }
 
     this(identity, position, initialEnergy, generation, momentum,
-        thresholds,
-        thresholds.stream().reduce(ZERO, BigInteger::add)
+        List.of(thresholdsArray),
+        completeDivisionThreshold
     );
   }
 
@@ -81,17 +88,19 @@ public class SingleEntityModel implements EntityModel {
         .of(new TickAction<>(TickActionType.UPDATE, substrateModel -> {
               if (newEnergy.compareTo(completeDivisionThreshold) >= 0) {
                 var offsets = substrateModel.getOffsets();
-                // Six axis-aligned offsets (octahedral shell)
+                // Create children with matching offset-cost pairs
                 var index = new AtomicInteger(0);
                 return childEnergyThresholds.stream()
                     .map(childCost -> {
-                      var offset = offsets[index.getAndIncrement()];
+                      var offsetIndex = index.getAndIncrement();
+                      var offset = offsets[offsetIndex];
+                      var newPosition = position.offset(offset);
 
                       return new SingleEntityModel(
                           substrateModel,
                           UUID.randomUUID(),
-                          position.offset(offset),
-                          ZERO,
+                          newPosition,
+                          ONE,
                           generation.add(ONE),
                           new Momentum(momentum.cost().add(childCost), offset));
                     });

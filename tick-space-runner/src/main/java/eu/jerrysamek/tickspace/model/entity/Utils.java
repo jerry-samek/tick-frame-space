@@ -10,10 +10,12 @@ public class Utils {
                                              BigInteger[] childOffset,
                                              BigInteger momentumCost,
                                              BigInteger depth) {
-    // --- Base spatial norm (your current logic) ---
-    BigInteger normSquared = Arrays.stream(childOffset)
-        .map(c -> c.multiply(momentumCost).pow(2))
-        .reduce(BigInteger.ZERO, BigInteger::add);
+    // --- Base spatial norm (optimized to avoid Stream overhead) ---
+    BigInteger normSquared = BigInteger.ZERO;
+    for (BigInteger c : childOffset) {
+      BigInteger term = c.multiply(momentumCost);
+      normSquared = normSquared.add(term.multiply(term));
+    }
 
     BigInteger baseNorm = sqrt(normSquared);
 
@@ -26,15 +28,16 @@ public class Utils {
 
   // Penalty based on an angle between parent momentum and child offset
   private static BigInteger directionalPenalty(BigInteger[] parent, BigInteger[] child, BigInteger depth) {
-    // Dot product
+    // Dot product and magnitudes (optimized to avoid Stream overhead)
     BigInteger dot = BigInteger.ZERO;
+    BigInteger parentNormSq = BigInteger.ZERO;
+    BigInteger childNormSq = BigInteger.ZERO;
+
     for (int i = 0; i < parent.length; i++) {
       dot = dot.add(parent[i].multiply(child[i]));
+      parentNormSq = parentNormSq.add(parent[i].multiply(parent[i]));
+      childNormSq = childNormSq.add(child[i].multiply(child[i]));
     }
-
-    // Magnitudes
-    BigInteger parentNormSq = Arrays.stream(parent).map(c -> c.pow(2)).reduce(BigInteger.ZERO, BigInteger::add);
-    BigInteger childNormSq = Arrays.stream(child).map(c -> c.pow(2)).reduce(BigInteger.ZERO, BigInteger::add);
 
     BigInteger parentNorm = sqrt(parentNormSq);
     BigInteger childNorm = sqrt(childNormSq);

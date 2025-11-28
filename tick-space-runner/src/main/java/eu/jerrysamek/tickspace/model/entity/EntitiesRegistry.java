@@ -6,18 +6,15 @@ import eu.jerrysamek.tickspace.model.substrate.SubstrateModelUpdate;
 import eu.jerrysamek.tickspace.model.ticktime.TickTimeConsumer;
 
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Stream;
 
 public class EntitiesRegistry implements TickTimeConsumer<SubstrateModelUpdate> {
 
-  private final Map<Position, EntityModel> entities = new ConcurrentHashMap<>();
+  // Double-buffering: read from 'entities', write to 'nextEntities', then swap
+  private Map<Position, EntityModel> entities = new ConcurrentHashMap<>();
+  private Map<Position, EntityModel> nextEntities;
 
   @Override
   public Stream<TickAction<SubstrateModelUpdate>> onTick(BigInteger tickCount) {
@@ -27,56 +24,79 @@ public class EntitiesRegistry implements TickTimeConsumer<SubstrateModelUpdate> 
         Arrays.fill(coordinates, BigInteger.ZERO);
 
         var position = new Position(coordinates);
-        entities.put(position, new SingleEntityModel(model, UUID.randomUUID(), position, BigInteger.ONE, BigInteger.ZERO, new Momentum(BigInteger.TEN, new BigInteger[]{BigInteger.ZERO, BigInteger.ZERO, BigInteger.ZERO})));
+        entities.put(position, new SingleEntityModel(model, UUID.randomUUID(), position, BigInteger.ONE, BigInteger.ZERO, new Momentum(BigInteger.ONE, new BigInteger[]{BigInteger.ZERO, BigInteger.ZERO, BigInteger.ZERO})));
       }));
     }
 
-    return snapshot()
-        .stream()
-        .flatMap(originalEntity -> {
-              var originalPosition = new AtomicReference<>(originalEntity.getPosition());
+    // Pre-allocate the next tick's map - assume 50% max growth per tick to avoid resizing
+    int currentSize = entities.size();
+    int nextCapacity = Math.max(1024, (int) (currentSize * 1.5));
+    nextEntities = new ConcurrentHashMap<>(nextCapacity);
 
-              return originalEntity
+    // Process all entities from the current tick's immutable snapshot
+    return entities.values()
+        .stream()
+        .flatMap(originalEntity ->
+              originalEntity
                   .onTick(tickCount)
-                  .filter(entityModelUpdateTickAction -> entityModelUpdateTickAction.type() == TickActionType.UPDATE)
-                  .map(TickAction::action)
-                  .map(entityModelUpdate ->
-                      new TickAction<>(TickActionType.UPDATE,
+                  .map(tickAction -> {
+                    if (tickAction.type() == TickActionType.WAIT) {
+                      // WAIT: entity stays at same position - copy to next map
+                      return new TickAction<>(TickActionType.UPDATE,
                           substrate ->
-                              entityModelUpdate
+                              nextEntities.put(originalEntity.getPosition(), originalEntity)
+                      );
+                    } else {
+                      // UPDATE: process entity movement/division
+                      return new TickAction<>(TickActionType.UPDATE,
+                          substrate -> {
+                              tickAction.action()
                                   .update(substrate)
                                   .forEach(updatedEntity -> {
-                                    var newPosition = updatedEntity.getPosition();
-                                    if (updatedEntity.getMomentum().cost().compareTo(BigInteger.TEN) < 0) {
+                                    // Validation
+                                    if (updatedEntity.getEnergy().getEnergy().compareTo(BigInteger.ZERO) < 0) {
+                                      throw new ModelBreakingException("Energy is too low! " + originalEntity + " => " + updatedEntity);
+                                    }
+
+                                    if (updatedEntity.getMomentum().cost().compareTo(BigInteger.ONE) < 0) {
                                       throw new ModelBreakingException("Momentum is too low! " + originalEntity + " => " + updatedEntity);
                                     }
 
-                                    entities.compute(newPosition, (_, collidingEntity) -> {
+                                    var newPosition = updatedEntity.getPosition();
+
+                                    // Write to nextEntities - collision handling via compute()
+                                    nextEntities.compute(newPosition, (_, collidingEntity) -> {
                                       if (collidingEntity == null || updatedEntity.getIdentity().equals(collidingEntity.getIdentity())) {
                                         return updatedEntity;
                                       } else {
                                         return CollidingEntityModel.naive(substrate, updatedEntity, collidingEntity);
                                       }
                                     });
-
-                                    originalPosition.updateAndGet(position -> {
-                                      if (position != null && !position.equals(newPosition)) {
-                                        entities.remove(position);
-
-                                        return null;
-                                      }
-
-                                      return position;
-                                    });
-                                  })
-                      )
-                  );
-            }
+                                  });
+                          }
+                      );
+                    }
+                  })
         );
   }
 
+  /**
+   * Flips the entity buffers after all tick actions have completed.
+   * MUST be called by TickTimeModel after all futures have completed.
+   * Thread-safe: single-threaded execution guaranteed by TickTimeModel.
+   */
+  public void flip() {
+    if (nextEntities != null) {
+      entities = nextEntities;  // Atomic pointer swap
+      nextEntities = null;       // Allow GC of an old map
+    }
+  }
+
   public Collection<EntityModel> snapshot() {
-    return new ArrayList<>(entities.values());
+    // Double-buffering optimization: 'entities' is immutable during tick processing
+    // All writes go to 'nextEntities', so we can safely return values() without copying
+    // This eliminates ~24MB allocation per tick for 3M entities!
+    return entities.values();
   }
 
   public int count() {
