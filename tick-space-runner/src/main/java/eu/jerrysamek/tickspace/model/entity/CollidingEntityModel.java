@@ -29,10 +29,10 @@ public class CollidingEntityModel implements EntityModel {
    * @return only the entity1
    */
   public static EntityModel naive(SubstrateModel substrateModel, EntityModel entity1, EntityModel entity2) {
-    var momentum = Momentum.merge(entity1.getMomentum(), entity2.getMomentum(), entity1.getEnergy().getEnergy(), entity2.getEnergy().getEnergy());
+    var momentum = Momentum.merge(entity1.getMomentum(), entity2.getMomentum(), entity1.getEnergy().value(), entity2.getEnergy().value());
     if (momentum.totalCost().compareTo(ONE) >= 0) {
       // it naively solves merge and bounce by one single entity model
-      var newEnergy = entity1.getEnergy().merge(entity2.getEnergy()).getEnergy().subtract(momentum.totalCost());
+      var newEnergy = entity1.getEnergy().merge(entity2.getEnergy()).value().subtract(momentum.totalCost());
       if (newEnergy.compareTo(ZERO) > 0) {
         return new SingleEntityModel(
             substrateModel,
@@ -112,12 +112,12 @@ public class CollidingEntityModel implements EntityModel {
     // Reduce with energy weighting
     var first = entities.getFirst();
     Momentum result = first.getMomentum();
-    BigInteger resultEnergy = first.getEnergy().getEnergy();
+    BigInteger resultEnergy = first.getEnergy().value();
 
     for (int i = 1; i < entities.size(); i++) {
       var next = entities.get(i);
-      result = Momentum.merge(result, next.getMomentum(), resultEnergy, next.getEnergy().getEnergy());
-      resultEnergy = resultEnergy.add(next.getEnergy().getEnergy());
+      result = Momentum.merge(result, next.getMomentum(), resultEnergy, next.getEnergy().value());
+      resultEnergy = resultEnergy.add(next.getEnergy().value());
     }
 
     return result;
@@ -130,7 +130,7 @@ public class CollidingEntityModel implements EntityModel {
     var generation = getGeneration();
 
     return Stream.of(new TickAction<>(TickActionType.UPDATE, substrateModel -> {
-      if (resolvedMomentum.cost().compareTo(resolvedEnergy.getEnergy()) > 0) {
+      if (resolvedMomentum.cost().compareTo(resolvedEnergy.value()) > 0) {
         // merger ... not enough energy for them to continue by themselves
         var total = this.entities.stream()
             .map(EntityModel::getMomentum)
@@ -139,7 +139,7 @@ public class CollidingEntityModel implements EntityModel {
             .add(resolvedMomentum.cost());
 
         return Stream.of(
-            new SingleEntityModel(substrateModel, UUID.randomUUID(), position, resolvedEnergy.getEnergy()
+            new SingleEntityModel(substrateModel, UUID.randomUUID(), position, resolvedEnergy.value()
                 .subtract(resolvedMomentum.cost()), getGeneration().add(ONE), new Momentum(total, resolvedMomentum.vector())));
       }
 
@@ -156,7 +156,7 @@ public class CollidingEntityModel implements EntityModel {
 
       var energyRequirement = childEnergies.stream().reduce(ZERO, BigInteger::add);
 
-      if (resolvedEnergy.getEnergy().compareTo(energyRequirement) >= 0) {
+      if (resolvedEnergy.value().compareTo(energyRequirement) >= 0) {
         // explosion > chain reaction
 
         var index = new AtomicInteger(0);
@@ -164,7 +164,7 @@ public class CollidingEntityModel implements EntityModel {
             .map(childCost -> {
               var offset = offsets[index.getAndIncrement()];
 
-              var newEnergy = resolvedEnergy.getEnergy().subtract(energyRequirement).divide(BigInteger.valueOf(26));
+              var newEnergy = resolvedEnergy.value().subtract(energyRequirement).divide(BigInteger.valueOf(26));
 
               return new SingleEntityModel(
                   substrateModel,
@@ -176,7 +176,7 @@ public class CollidingEntityModel implements EntityModel {
             });
       }
 
-      var perChildEnergy = resolvedEnergy.getEnergy().divide(BigInteger.valueOf(entities.size()));
+      var perChildEnergy = resolvedEnergy.value().divide(BigInteger.valueOf(entities.size()));
       if (resolvedMomentum.totalCost().compareTo(BigInteger.TEN) < 0) {
         // annihilation - movement stopped and can't reproduce
         return Stream.empty();
@@ -187,8 +187,8 @@ public class CollidingEntityModel implements EntityModel {
         var newMomentum = Momentum.merge(
             entityModel.getMomentum(),
             resolvedMomentum,
-            entityModel.getEnergy().getEnergy(),
-            resolvedEnergy.getEnergy());
+            entityModel.getEnergy().value(),
+            resolvedEnergy.value());
 
         return new SingleEntityModel(substrateModel, UUID.randomUUID(), position.offset(newMomentum.vector()), perChildEnergy, generation, newMomentum);
       });

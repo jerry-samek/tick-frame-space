@@ -1,5 +1,7 @@
 package eu.jerrysamek.tickspace.model.ticktime;
 
+import eu.jerrysamek.tickspace.model.ModelBreakingException;
+
 import java.math.BigInteger;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -59,7 +61,7 @@ public class TickTimeModel implements AutoCloseable {
               try {
                 future.get();
               } catch (Exception e) {
-                throw new RuntimeException(e);
+                throw new ModelBreakingException("Issue during tick processing!", e);
               }
             });
 

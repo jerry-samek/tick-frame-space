@@ -10,8 +10,8 @@ with open(snapshot, "r") as f:
     data = json.load(f)
 
 # Extract energy and positions
-energies = np.array([e["energy"]["energy"] for e in data], dtype=float)
-coords = np.array([e["position"]["coordinates"] for e in data], dtype=float)
+energies = np.array([e["energy"] for e in data], dtype=float)
+coords = np.array([e["position"] for e in data], dtype=float)
 r = np.linalg.norm(coords, axis=1)  # Euclidean radius
 
 # ---- Plot 1: Energy histogram ----

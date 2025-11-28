@@ -21,7 +21,7 @@ public class EnergyState {
     return energy;
   }
 
-  public BigInteger getEnergy() {
+  public BigInteger value() {
     return energy;
   }
 
@@ -30,8 +30,8 @@ public class EnergyState {
   }
 
   public BigDecimal normalized(BigInteger tickCount) {
-    BigDecimal normalized = new BigDecimal(energy);
-    BigDecimal count = new BigDecimal(tickCount);
+    var normalized = new BigDecimal(energy);
+    var count = new BigDecimal(tickCount);
 
     return normalized.divide(count, 10, RoundingMode.HALF_UP);
   }

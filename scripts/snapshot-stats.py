@@ -25,8 +25,8 @@ def process_snapshot(json_file, max_entities=None):
         if max_entities and i >= max_entities:
             break
 
-        x, y, z = e['position']['coordinates']
-        energy = int(e["energy"]['energy'])
+        x, y, z = e['position']
+        energy = int(e["energy"])
         depth = int(e.get("depth", 0))
         momentum = tuple(e.get("momentum", []))
 

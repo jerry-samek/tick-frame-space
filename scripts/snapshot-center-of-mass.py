@@ -6,7 +6,7 @@ with open("frame.json", "r") as f:
     data = json.load(f)
 
 # Extract positions and momenta
-positions = np.array([e["position"]["coordinates"] for e in data], dtype=np.float64)
+positions = np.array([e["position"] for e in data], dtype=np.float64)
 momenta = np.array([e["momentum"]["vector"] for e in data], dtype=np.float64)
 
 # Compute true center-of-mass

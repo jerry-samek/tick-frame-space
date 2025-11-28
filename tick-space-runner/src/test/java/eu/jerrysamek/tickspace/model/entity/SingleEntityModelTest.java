@@ -2,6 +2,7 @@ package eu.jerrysamek.tickspace.model.entity;
 
 import eu.jerrysamek.tickspace.model.substrate.Position;
 import eu.jerrysamek.tickspace.model.substrate.SubstrateModel;
+import eu.jerrysamek.tickspace.model.substrate.Vector;
 import eu.jerrysamek.tickspace.model.ticktime.TickTimeConsumer.TickAction;
 import eu.jerrysamek.tickspace.model.ticktime.TickTimeConsumer.TickActionType;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,7 +13,9 @@ import java.math.BigInteger;
 import java.util.List;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class SingleEntityModelTest {
 
@@ -27,7 +30,7 @@ class SingleEntityModelTest {
     testSubstrateModel = new SubstrateModel(2, registry);
 
     testIdentity = UUID.randomUUID();
-    testPosition = new Position(new BigInteger[]{BigInteger.ZERO, BigInteger.ZERO});
+    testPosition = new Position(Vector.of(BigInteger.ZERO, BigInteger.ZERO));
   }
 
   @Test
@@ -38,7 +41,7 @@ class SingleEntityModelTest {
     // So we need energy=4 to get 5 after increase (5 % 3 = 2, not divisible)
     BigInteger initialEnergy = BigInteger.valueOf(4);
     BigInteger momentumCost = BigInteger.valueOf(3);
-    Momentum momentum = new Momentum(momentumCost, new BigInteger[]{BigInteger.ONE, BigInteger.ZERO});
+    Momentum momentum = new Momentum(momentumCost, Vector.of(BigInteger.ONE, BigInteger.ZERO));
 
     SingleEntityModel entity = new SingleEntityModel(
         testSubstrateModel,
@@ -64,7 +67,7 @@ class SingleEntityModelTest {
     // Energy = 2, cost = 3, after increase = 3 (divisible by 3)
     BigInteger initialEnergy = BigInteger.valueOf(2);
     BigInteger momentumCost = BigInteger.valueOf(3);
-    BigInteger[] momentumVector = new BigInteger[]{BigInteger.ONE, BigInteger.ZERO};
+    Vector momentumVector = Vector.of(BigInteger.ONE, BigInteger.ZERO);
     Momentum momentum = new Momentum(momentumCost, momentumVector);
 
     SingleEntityModel entity = new SingleEntityModel(
@@ -89,7 +92,7 @@ class SingleEntityModelTest {
 
     EntityModel updatedEntity = updatedEntities.getFirst();
     assertEquals(testIdentity, updatedEntity.getIdentity());
-    assertEquals(BigInteger.valueOf(3), updatedEntity.getEnergy().getEnergy());
+    assertEquals(BigInteger.valueOf(3), updatedEntity.getEnergy().value());
 
     // Verify position was updated by momentum vector
     Position expectedPosition = testPosition.offset(momentumVector);
@@ -105,7 +108,7 @@ class SingleEntityModelTest {
     // For simplicity, let's use a high energy value
     BigInteger initialEnergy = BigInteger.valueOf(1000);
     BigInteger momentumCost = BigInteger.ONE;
-    BigInteger[] momentumVector = new BigInteger[]{BigInteger.ONE, BigInteger.ZERO};
+    Vector momentumVector = Vector.of(BigInteger.ONE, BigInteger.ZERO);
     Momentum momentum = new Momentum(momentumCost, momentumVector);
 
     SingleEntityModel entity = new SingleEntityModel(
@@ -134,7 +137,7 @@ class SingleEntityModelTest {
     updatedEntities.forEach(child -> {
       assertNotEquals(testIdentity, child.getIdentity());
       assertEquals(BigInteger.ONE, child.getGeneration()); // generation + 1
-      assertEquals(BigInteger.ONE, child.getEnergy().getEnergy());
+      assertEquals(BigInteger.ONE, child.getEnergy().value());
     });
   }
 
@@ -145,7 +148,7 @@ class SingleEntityModelTest {
     // After increase: energy=1, which is not divisible by 2
     BigInteger initialEnergy = BigInteger.ZERO;
     BigInteger momentumCost = BigInteger.valueOf(2);
-    Momentum momentum = new Momentum(momentumCost, new BigInteger[]{BigInteger.ONE, BigInteger.ZERO});
+    Momentum momentum = new Momentum(momentumCost, Vector.of(BigInteger.ONE, BigInteger.ZERO));
 
     SingleEntityModel entity = new SingleEntityModel(
         testSubstrateModel,
@@ -172,7 +175,7 @@ class SingleEntityModelTest {
     BigInteger parentGeneration = BigInteger.valueOf(5);
     BigInteger parentMomentumCost = BigInteger.valueOf(15);
     BigInteger initialEnergy = BigInteger.valueOf(1004); // 1004 + 1 = 1005, which is divisible by 15
-    BigInteger[] parentMomentumVector = new BigInteger[]{BigInteger.ONE, BigInteger.ZERO};
+    Vector parentMomentumVector = Vector.of(BigInteger.ONE, BigInteger.ZERO);
     Momentum parentMomentum = new Momentum(parentMomentumCost, parentMomentumVector);
 
     SingleEntityModel entity = new SingleEntityModel(
@@ -197,8 +200,8 @@ class SingleEntityModelTest {
     // Find the leading entity (same direction as parent: [1, 0])
     EntityModel leadingChild = children.stream()
         .filter(child -> {
-          BigInteger[] vector = child.getMomentum().vector();
-          return vector[0].equals(BigInteger.ONE) && vector[1].equals(BigInteger.ZERO);
+          Vector vector = child.getMomentum().vector();
+          return vector.get(0).equals(BigInteger.ONE) && vector.get(1).equals(BigInteger.ZERO);
         })
         .findFirst()
         .orElseThrow(() -> new AssertionError("Leading child not found"));
@@ -224,8 +227,8 @@ class SingleEntityModelTest {
     // Verify that the opposite direction ([−1, 0]) has the highest cost due to reversal penalty
     EntityModel oppositeChild = children.stream()
         .filter(child -> {
-          BigInteger[] vector = child.getMomentum().vector();
-          return vector[0].equals(BigInteger.valueOf(-1)) && vector[1].equals(BigInteger.ZERO);
+          Vector vector = child.getMomentum().vector();
+          return vector.get(0).equals(BigInteger.valueOf(-1)) && vector.get(1).equals(BigInteger.ZERO);
         })
         .findFirst()
         .orElseThrow(() -> new AssertionError("Opposite direction child not found"));
@@ -241,7 +244,7 @@ class SingleEntityModelTest {
     // Given
     BigInteger initialEnergy = BigInteger.valueOf(2);
     BigInteger momentumCost = BigInteger.valueOf(3);
-    Momentum momentum = new Momentum(momentumCost, new BigInteger[]{BigInteger.ONE, BigInteger.ZERO});
+    Momentum momentum = new Momentum(momentumCost, Vector.of(BigInteger.ONE, BigInteger.ZERO));
 
     SingleEntityModel entity = new SingleEntityModel(
         testSubstrateModel,

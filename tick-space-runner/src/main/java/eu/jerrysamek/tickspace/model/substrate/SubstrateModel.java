@@ -18,7 +18,7 @@ public class SubstrateModel implements TickTimeConsumer<TickTimeUpdate> {
 
   private final DimensionalSize dimensionalSize;
   private final EntitiesRegistry registry;
-  private final BigInteger[][] offsets;
+  private final Vector[] offsets;
 
   /**
    * Creates a SubstrateModel with the specified number of dimensions.
@@ -61,7 +61,7 @@ public class SubstrateModel implements TickTimeConsumer<TickTimeUpdate> {
    *
    * @return the offset vectors
    */
-  public BigInteger[][] getOffsets() {
+  public Vector[] getOffsets() {
     return offsets;
   }
 
@@ -79,18 +79,18 @@ public class SubstrateModel implements TickTimeConsumer<TickTimeUpdate> {
    * @param dimensionCount number of dimensions
    * @return array of offset vectors (3^N - 1 total)
    */
-  private static BigInteger[][] generateOffsets(int dimensionCount) {
+  private static Vector[] generateOffsets(int dimensionCount) {
     // Total combinations: 3^dimensionCount (each dim can be -1, 0, or 1)
     var totalCombinations = (int) Math.pow(3, dimensionCount);
 
     // Exclude all-zero vector: 3^dimensionCount - 1
-    var offsets = new BigInteger[totalCombinations - 1][dimensionCount];
+    var offsets = new Vector[totalCombinations - 1];
 
     var offsetIndex = 0;
 
     // Iterate through all base-3 combinations
     for (var i = 0; i < totalCombinations; i++) {
-      var offset = new BigInteger[dimensionCount];
+      var components = new BigInteger[dimensionCount];
       var value = i;
       var isZeroVector = true;
 
@@ -101,21 +101,21 @@ public class SubstrateModel implements TickTimeConsumer<TickTimeUpdate> {
 
         // Map base-3 digit to offset value:
         // 0 → -1, 1 → 0, 2 → +1
-        offset[dim] = switch (digit) {
+        components[dim] = switch (digit) {
           case 0 -> ONE.negate();  // -1
           case 1 -> ZERO;          //  0
           case 2 -> ONE;           // +1
           default -> throw new IllegalStateException("Invalid base-3 digit: " + digit);
         };
 
-        if (!offset[dim].equals(ZERO)) {
+        if (!components[dim].equals(ZERO)) {
           isZeroVector = false;
         }
       }
 
       // Skip the all-zero vector [0, 0, ..., 0]
       if (!isZeroVector) {
-        offsets[offsetIndex++] = offset;
+        offsets[offsetIndex++] = Vector.of(components);
       }
     }
 

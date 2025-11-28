@@ -15,12 +15,12 @@ all_x, all_y, all_z, all_energy, normalized_energy = [], [], [], [], []
 for filename in snapshots:
     with open(filename, "r") as f:
         data = json.load(f)
-    
+
     normalizer = len(data)
 
     for entity in data:
-        x, y, z = entity["position"]["coordinates"]
-        energy = entity["energy"]['energy']
+        x, y, z = entity["position"]
+        energy = entity["energy"]
         all_x.append(x)
         all_y.append(y)
         all_z.append(z)

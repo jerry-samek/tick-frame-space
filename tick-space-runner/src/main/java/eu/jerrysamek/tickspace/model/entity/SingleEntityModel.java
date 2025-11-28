@@ -27,17 +27,17 @@ public class SingleEntityModel implements EntityModel {
     // Optimize: use array-based loop instead of Stream to reduce allocation overhead
     var offsets = model.getOffsets();
     var thresholdsArray = new BigInteger[offsets.length];
-    var completeDivisionThreshold = ZERO;
+    var divisionThreshold = ZERO;
 
     for (int i = 0; i < offsets.length; i++) {
       var cost = Utils.computeEnergyCost(momentum.vector(), offsets[i], momentum.cost(), generation);
       thresholdsArray[i] = cost;
-      completeDivisionThreshold = completeDivisionThreshold.add(cost);
+      divisionThreshold = divisionThreshold.add(cost);
     }
 
     this(identity, position, initialEnergy, generation, momentum,
         List.of(thresholdsArray),
-        completeDivisionThreshold
+        divisionThreshold
     );
   }
 
@@ -129,7 +129,7 @@ public class SingleEntityModel implements EntityModel {
   public String toString() {
     return "SingleEntityModel{" +
         "identity=" + identity +
-        ", energy=" + energyState.getEnergy() +
+        ", energy=" + energyState.value() +
         ", generation=" + generation +
         ", position=" + position +
         ", momentum=" + momentum +

@@ -12,9 +12,9 @@ with open(sys.argv[1], "r") as f:
 N = len(data)
 
 generations = [e["generation"] for e in data]
-energies = [e["energy"]["energy"] for e in data]
+energies = [e["energy"] for e in data]
 momentum_costs = [e["momentum"]["cost"] for e in data]
-positions = [e["position"]["coordinates"] for e in data]
+positions = [e["position"] for e in data]
 momentum_vectors = [e["momentum"]["vector"] for e in data]
 
 # --- Basic stats ---

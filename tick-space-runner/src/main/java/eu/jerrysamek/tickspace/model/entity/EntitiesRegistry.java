@@ -3,10 +3,13 @@ package eu.jerrysamek.tickspace.model.entity;
 import eu.jerrysamek.tickspace.model.ModelBreakingException;
 import eu.jerrysamek.tickspace.model.substrate.Position;
 import eu.jerrysamek.tickspace.model.substrate.SubstrateModelUpdate;
+import eu.jerrysamek.tickspace.model.substrate.Vector;
 import eu.jerrysamek.tickspace.model.ticktime.TickTimeConsumer;
 
 import java.math.BigInteger;
-import java.util.*;
+import java.util.Collection;
+import java.util.Map;
+import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Stream;
 
@@ -20,11 +23,10 @@ public class EntitiesRegistry implements TickTimeConsumer<SubstrateModelUpdate> 
   public Stream<TickAction<SubstrateModelUpdate>> onTick(BigInteger tickCount) {
     if (tickCount.equals(BigInteger.ONE)) { // seed ... TODO
       return Stream.of(new TickAction<>(TickActionType.UPDATE, model -> {
-        var coordinates = new BigInteger[model.getDimensionalSize().getDimensionCount()];
-        Arrays.fill(coordinates, BigInteger.ZERO);
-
-        var position = new Position(coordinates);
-        entities.put(position, new SingleEntityModel(model, UUID.randomUUID(), position, BigInteger.ONE, BigInteger.ZERO, new Momentum(BigInteger.ONE, new BigInteger[]{BigInteger.ZERO, BigInteger.ZERO, BigInteger.ZERO})));
+        int dimensionCount = model.getDimensionalSize().getDimensionCount();
+        var position = new Position(Vector.zero(dimensionCount));
+        var momentum = new Momentum(BigInteger.ONE, Vector.zero(dimensionCount));
+        entities.put(position, new SingleEntityModel(model, UUID.randomUUID(), position, BigInteger.ONE, BigInteger.ZERO, momentum));
       }));
     }
 
@@ -37,46 +39,44 @@ public class EntitiesRegistry implements TickTimeConsumer<SubstrateModelUpdate> 
     return entities.values()
         .stream()
         .flatMap(originalEntity ->
-              originalEntity
-                  .onTick(tickCount)
-                  .map(tickAction -> {
-                    if (tickAction.type() == TickActionType.WAIT) {
-                      // WAIT: entity stays at same position - copy to next map
-                      return new TickAction<>(TickActionType.UPDATE,
-                          substrate ->
-                              nextEntities.put(originalEntity.getPosition(), originalEntity)
-                      );
-                    } else {
-                      // UPDATE: process entity movement/division
-                      return new TickAction<>(TickActionType.UPDATE,
-                          substrate -> {
-                              tickAction.action()
-                                  .update(substrate)
-                                  .forEach(updatedEntity -> {
-                                    // Validation
-                                    if (updatedEntity.getEnergy().getEnergy().compareTo(BigInteger.ZERO) < 0) {
-                                      throw new ModelBreakingException("Energy is too low! " + originalEntity + " => " + updatedEntity);
-                                    }
+            originalEntity
+                .onTick(tickCount)
+                .map(tickAction -> {
+                  if (tickAction.type() == TickActionType.WAIT) {
+                    // WAIT: entity stays at same position - copy to next map
+                    return new TickAction<>(TickActionType.UPDATE,
+                        substrate ->
+                            nextEntities.put(originalEntity.getPosition(), originalEntity)
+                    );
+                  } else {
+                    // UPDATE: process entity movement/division
+                    return new TickAction<>(TickActionType.UPDATE,
+                        substrate -> tickAction.action()
+                            .update(substrate)
+                            .forEach(updatedEntity -> {
+                              // Validation
+                              if (updatedEntity.getEnergy().value().compareTo(BigInteger.ZERO) < 0) {
+                                throw new ModelBreakingException("Energy is too low! " + originalEntity + " => " + updatedEntity);
+                              }
 
-                                    if (updatedEntity.getMomentum().cost().compareTo(BigInteger.ONE) < 0) {
-                                      throw new ModelBreakingException("Momentum is too low! " + originalEntity + " => " + updatedEntity);
-                                    }
+                              if (updatedEntity.getMomentum().cost().compareTo(BigInteger.ONE) < 0) {
+                                throw new ModelBreakingException("Momentum is too low! " + originalEntity + " => " + updatedEntity);
+                              }
 
-                                    var newPosition = updatedEntity.getPosition();
+                              var newPosition = updatedEntity.getPosition();
 
-                                    // Write to nextEntities - collision handling via compute()
-                                    nextEntities.compute(newPosition, (_, collidingEntity) -> {
-                                      if (collidingEntity == null || updatedEntity.getIdentity().equals(collidingEntity.getIdentity())) {
-                                        return updatedEntity;
-                                      } else {
-                                        return CollidingEntityModel.naive(substrate, updatedEntity, collidingEntity);
-                                      }
-                                    });
-                                  });
-                          }
-                      );
-                    }
-                  })
+                              // Write to nextEntities - collision handling via compute()
+                              nextEntities.compute(newPosition, (_, collidingEntity) -> {
+                                if (collidingEntity == null || updatedEntity.getIdentity().equals(collidingEntity.getIdentity())) {
+                                  return updatedEntity;
+                                } else {
+                                  return CollidingEntityModel.naive(substrate, updatedEntity, collidingEntity);
+                                }
+                              });
+                            })
+                    );
+                  }
+                })
         );
   }
 

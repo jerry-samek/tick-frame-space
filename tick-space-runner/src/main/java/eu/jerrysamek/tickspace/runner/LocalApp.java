@@ -12,7 +12,6 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.math.MathContext;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Collection;
@@ -27,7 +26,7 @@ public class LocalApp {
   static void main(String[] args) {
     var mapper = new ObjectMapper();
     mapper.disable(SerializationFeature.CLOSE_CLOSEABLE);
-    //mapper.registerModule(JsonTickFrameEntitiesModule.module());
+    mapper.registerModule(JsonTickFrameEntitiesModule.module());
 
     final Queue<Snapshot> snapshots = new LinkedList<>();
 
@@ -42,6 +41,7 @@ public class LocalApp {
             try {
               snapshots.wait();
             } catch (InterruptedException e) {
+              Thread.currentThread().interrupt();
               throw new RuntimeException(e);
             }
           }
