@@ -2,34 +2,33 @@ package eu.jerrysamek.tickspace.model.entity;
 
 import eu.jerrysamek.tickspace.model.substrate.Position;
 import eu.jerrysamek.tickspace.model.substrate.SubstrateModel;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
-import java.math.BigInteger;
 import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Stream;
 
-import static java.math.BigInteger.ONE;
-import static java.math.BigInteger.ZERO;
+import static eu.jerrysamek.tickspace.model.util.FlexInteger.ONE;
+import static eu.jerrysamek.tickspace.model.util.FlexInteger.ZERO;
 
 public class SingleEntityModel implements EntityModel {
 
   private final UUID identity;
-  private final EnergyState energyState;
-  private final BigInteger generation;
+  private final FlexInteger generation;
   private final Position position;
   private final Momentum momentum;
 
-  private final List<BigInteger> childEnergyThresholds;
-  private final BigInteger startOfLife;
-  private final BigInteger completeDivisionThreshold;
-  private final BigInteger nextPossibleAction;
-  private final BigInteger endOfLife;
+  private final List<FlexInteger> childEnergyThresholds;
+  private final FlexInteger startOfLife;
+  private final FlexInteger completeDivisionThreshold;
+  private final FlexInteger nextPossibleAction;
+  private final FlexInteger endOfLife;
 
-  public SingleEntityModel(SubstrateModel model, UUID identity, BigInteger startOfLife, Position position, BigInteger initialEnergy, BigInteger generation, Momentum momentum) {
+  public SingleEntityModel(SubstrateModel model, UUID identity, FlexInteger startOfLife, Position position, FlexInteger generation, Momentum momentum) {
     // Optimize: use cached offset metadata to avoid expensive magnitude calculations
     var offsetMetadata = model.getOffsetMetadata();
-    var thresholdsArray = new BigInteger[offsetMetadata.length];
+    var thresholdsArray = new FlexInteger[offsetMetadata.length];
     var divisionThreshold = ZERO;
 
     for (int i = 0; i < offsetMetadata.length; i++) {
@@ -46,7 +45,7 @@ public class SingleEntityModel implements EntityModel {
       divisionThreshold = divisionThreshold.add(cost);
     }
 
-    this(identity, startOfLife, position, initialEnergy, generation, momentum,
+    this(identity, startOfLife, position, generation, momentum,
         List.of(thresholdsArray),
         divisionThreshold,
         startOfLife.add(momentum.cost()),
@@ -56,16 +55,14 @@ public class SingleEntityModel implements EntityModel {
 
   private SingleEntityModel(
       UUID identity,
-      BigInteger startOfLife,
+      FlexInteger startOfLife,
       Position position,
-      BigInteger energyState,
-      BigInteger generation,
+      FlexInteger generation,
       Momentum momentum,
-      List<BigInteger> childEnergyThresholds,
-      BigInteger completeDivisionThreshold, BigInteger nextPossibleAction, BigInteger endOfLife) {
+      List<FlexInteger> childEnergyThresholds,
+      FlexInteger completeDivisionThreshold, FlexInteger nextPossibleAction, FlexInteger endOfLife) {
     this.identity = identity;
     this.startOfLife = startOfLife;
-    this.energyState = new EnergyState(energyState);
     this.position = position;
     this.generation = generation;
     this.momentum = momentum;
@@ -81,12 +78,12 @@ public class SingleEntityModel implements EntityModel {
   }
 
   @Override
-  public EnergyState getEnergy() {
-    return energyState;
+  public FlexInteger getEnergy(FlexInteger tick) {
+    return tick.subtract(startOfLife);
   }
 
   @Override
-  public BigInteger tickOfBirth() {
+  public FlexInteger tickOfBirth() {
     return startOfLife;
   }
 
@@ -96,7 +93,7 @@ public class SingleEntityModel implements EntityModel {
   }
 
   @Override
-  public BigInteger getGeneration() {
+  public FlexInteger getGeneration() {
     return generation;
   }
 
@@ -106,12 +103,12 @@ public class SingleEntityModel implements EntityModel {
   }
 
   @Override
-  public BigInteger getNextPossibleAction() {
+  public FlexInteger getNextPossibleAction() {
     return nextPossibleAction;
   }
 
   @Override
-  public Stream<TickAction<EntityModelUpdate>> onTick(BigInteger tickCount) {
+  public Stream<TickAction<EntityModelUpdate>> onTick(FlexInteger tickCount) {
     if (tickCount.compareTo(nextPossibleAction) < 0) {
       return Stream.of(new TickAction<>(TickActionType.WAIT, _ -> Stream.empty()));
     }
@@ -133,12 +130,11 @@ public class SingleEntityModel implements EntityModel {
                           UUID.randomUUID(),
                           tickCount,
                           newPosition,
-                          ONE,
                           generation.add(ONE),
                           new Momentum(momentum.cost().add(childCost), offset));
                     });
               } else {
-                return Stream.of(new SingleEntityModel(identity, startOfLife, position.offset(momentum.vector()), tickCount.subtract(startOfLife), generation, momentum, childEnergyThresholds, completeDivisionThreshold, nextPossibleAction.add(momentum.cost()), endOfLife));
+                return Stream.of(new SingleEntityModel(identity, startOfLife, position.offset(momentum.vector()), generation, momentum, childEnergyThresholds, completeDivisionThreshold, nextPossibleAction.add(momentum.cost()), endOfLife));
               }
             })
         );
@@ -160,7 +156,7 @@ public class SingleEntityModel implements EntityModel {
   public String toString() {
     return "SingleEntityModel{" +
         "identity=" + identity +
-        ", energy=" + energyState.value() +
+        ", startOfLife=" + startOfLife +
         ", generation=" + generation +
         ", position=" + position +
         ", momentum=" + momentum +

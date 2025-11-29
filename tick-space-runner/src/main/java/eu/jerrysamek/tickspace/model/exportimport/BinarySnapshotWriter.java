@@ -2,6 +2,7 @@ package eu.jerrysamek.tickspace.model.exportimport;
 
 import eu.jerrysamek.tickspace.model.entity.EntityModel;
 import eu.jerrysamek.tickspace.model.substrate.Vector;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
 import java.io.BufferedOutputStream;
 import java.io.DataOutput;
@@ -48,7 +49,7 @@ public class BinarySnapshotWriter {
 
     // Write entities
     for (var entity : snapshot.entities()) {
-      writeEntity(entity, snapshot.dimensionCount(), out);
+      writeEntity(entity, snapshot.tickCount(), snapshot.dimensionCount(), out);
     }
   }
 
@@ -61,30 +62,30 @@ public class BinarySnapshotWriter {
     out.writeLong(0); // Reserved
   }
 
-  private void writeEntity(EntityModel entity, int dimensionCount, DataOutput out) throws IOException {
+  private void writeEntity(EntityModel entity, FlexInteger tick, int dimensionCount, DataOutput out) throws IOException {
     // Position vector
     var position = entity.getPosition().coordinates();
     for (var i = 0; i < dimensionCount; i++) {
-      BinarySnapshotFormat.writeBigInteger(out, position.get(i));
+      BinarySnapshotFormat.writeBigInteger(out, position.get(i).toBigInteger());
     }
 
     // Energy
-    BinarySnapshotFormat.writeBigInteger(out, entity.getEnergy().value());
+    BinarySnapshotFormat.writeBigInteger(out, entity.getEnergy(tick).toBigInteger());
 
     // Generation
-    BinarySnapshotFormat.writeBigInteger(out, entity.getGeneration());
+    BinarySnapshotFormat.writeBigInteger(out, entity.getGeneration().toBigInteger());
 
     // Momentum cost
-    BinarySnapshotFormat.writeBigInteger(out, entity.getMomentum().cost());
+    BinarySnapshotFormat.writeBigInteger(out, entity.getMomentum().cost().toBigInteger());
 
     // Momentum vector
     Vector momentum = entity.getMomentum().vector();
     for (var i = 0; i < dimensionCount; i++) {
-      BinarySnapshotFormat.writeBigInteger(out, momentum.get(i));
+      BinarySnapshotFormat.writeBigInteger(out, momentum.get(i).toBigInteger());
     }
 
     // Birth tick
-    BinarySnapshotFormat.writeBigInteger(out, entity.tickOfBirth());
+    BinarySnapshotFormat.writeBigInteger(out, entity.tickOfBirth().toBigInteger());
   }
 
   /**

@@ -1,6 +1,7 @@
 package eu.jerrysamek.tickspace.model.entity;
 
 import eu.jerrysamek.tickspace.model.substrate.Vector;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
 import java.math.BigInteger;
 
@@ -9,11 +10,11 @@ public class Utils {
   }
 
   // Compute energy cost for child move relative to parent momentum
-  public static BigInteger computeEnergyCost(
+  public static FlexInteger computeEnergyCost(
       Vector parentMomentum,
       Vector childOffset,
-      BigInteger momentumCost,
-      BigInteger depth) {
+      FlexInteger momentumCost,
+      FlexInteger depth) {
     // --- Base spatial norm ---
     var scaledOffset = childOffset.scale(momentumCost);
     var baseNorm = scaledOffset.magnitude();
@@ -36,12 +37,12 @@ public class Utils {
    * @param depth              Entity generation (depth in lineage tree)
    * @return Energy cost for this child direction
    */
-  public static BigInteger computeEnergyCostOptimized(
+  public static FlexInteger computeEnergyCostOptimized(
       Vector parentMomentum,
       Vector childOffset,
-      BigInteger childOffsetMagnitude,
-      BigInteger momentumCost,
-      BigInteger depth) {
+      FlexInteger childOffsetMagnitude,
+      FlexInteger momentumCost,
+      FlexInteger depth) {
     // --- Base spatial norm (optimized: use cached magnitude) ---
     // baseNorm = |childOffset × momentumCost| = |childOffset| × momentumCost
     var baseNorm = childOffsetMagnitude.multiply(momentumCost);
@@ -54,7 +55,7 @@ public class Utils {
   }
 
   // Penalty based on an angle between parent momentum and child offset
-  private static BigInteger directionalPenalty(Vector parent, Vector child, BigInteger depth) {
+  private static FlexInteger directionalPenalty(Vector parent, Vector child, FlexInteger depth) {
     // Dot product and magnitudes
     var dot = parent.dot(child);
     var parentNorm = parent.magnitude();
@@ -79,6 +80,6 @@ public class Utils {
     }
 
     // Depth scaling: older lineages pay more to rotate
-    return BigInteger.valueOf(angleCategory).multiply(depth);
+    return FlexInteger.of(angleCategory).multiply(depth);
   }
 }

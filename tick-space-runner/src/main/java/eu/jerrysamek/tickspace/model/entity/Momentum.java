@@ -1,15 +1,11 @@
 package eu.jerrysamek.tickspace.model.entity;
 
 import eu.jerrysamek.tickspace.model.substrate.Vector;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
-import java.math.BigInteger;
+public record Momentum(FlexInteger cost, Vector vector) {
 
-import static java.math.BigInteger.ONE;
-import static java.math.BigInteger.ZERO;
-
-public record Momentum(BigInteger cost, Vector vector) {
-
-  public BigInteger totalCost() {
+  public FlexInteger totalCost() {
     // Use Vector operations for cleaner code
     return vector.scale(cost).sumComponents();
   }
@@ -25,12 +21,12 @@ public record Momentum(BigInteger cost, Vector vector) {
    * @param energy2 Second entity's energy (acts as "mass")
    * @return Combined momentum
    */
-  public static Momentum merge(Momentum m1, Momentum m2, BigInteger energy1, BigInteger energy2) {
+  public static Momentum merge(Momentum m1, Momentum m2, FlexInteger energy1, FlexInteger energy2) {
     var dimensions = m1.vector().dimensions();
 
     // Handle zero energy edge case
-    if (energy1.equals(ZERO) && energy2.equals(ZERO)) {
-      return new Momentum(ONE, Vector.zero(dimensions)); // Default at-rest state
+    if (energy1.equals(FlexInteger.ZERO) && energy2.equals(FlexInteger.ZERO)) {
+      return new Momentum(FlexInteger.ONE, Vector.zero(dimensions)); // Default at-rest state
     }
 
     var totalEnergy = energy1.add(energy2);
@@ -50,7 +46,7 @@ public record Momentum(BigInteger cost, Vector vector) {
     // Check for zero total momentum (annihilation or both at rest)
     if (totalMomentumVec.isZero()) {
       // Perfect annihilation or both at rest
-      return new Momentum(ZERO, Vector.zero(dimensions));
+      return new Momentum(FlexInteger.ZERO, Vector.zero(dimensions));
     }
 
     // Calculate magnitude of total momentum
@@ -65,8 +61,8 @@ public record Momentum(BigInteger cost, Vector vector) {
     var newCost = totalEnergy.multiply(costProduct).divide(momentumMagnitude);
 
     // Ensure minimum cost (speed limit)
-    if (newCost.compareTo(ONE) < 0) {
-      newCost = ONE;  // Maximum speed limit (speed of light analogue)
+    if (newCost.compareTo(FlexInteger.ONE) < 0) {
+      newCost = FlexInteger.ONE;  // Maximum speed limit (speed of light analogue)
     }
 
     return new Momentum(newCost, newVector);

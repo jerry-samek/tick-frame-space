@@ -5,11 +5,11 @@ import eu.jerrysamek.tickspace.model.substrate.SubstrateModel;
 import eu.jerrysamek.tickspace.model.substrate.Vector;
 import eu.jerrysamek.tickspace.model.ticktime.TickTimeConsumer.TickAction;
 import eu.jerrysamek.tickspace.model.ticktime.TickTimeConsumer.TickActionType;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.math.BigInteger;
 import java.util.List;
 import java.util.UUID;
 
@@ -30,7 +30,7 @@ class SingleEntityModelTest {
     testSubstrateModel = new SubstrateModel(2, registry);
 
     testIdentity = UUID.randomUUID();
-    testPosition = new Position(Vector.of(BigInteger.ZERO, BigInteger.ZERO));
+    testPosition = new Position(Vector.of(FlexInteger.ZERO, FlexInteger.ZERO));
   }
 
   @Test
@@ -39,22 +39,21 @@ class SingleEntityModelTest {
     // Given: entity born at tick 1, momentum cost=3
     // nextPossibleAction = 1 + 3 = 4
     // So at tick 1, 2, 3 the entity should WAIT
-    BigInteger startOfLife = BigInteger.ONE;
-    BigInteger momentumCost = BigInteger.valueOf(3);
-    Momentum momentum = new Momentum(momentumCost, Vector.of(BigInteger.ONE, BigInteger.ZERO));
+    FlexInteger startOfLife = FlexInteger.ONE;
+    FlexInteger momentumCost = FlexInteger.of(3);
+    Momentum momentum = new Momentum(momentumCost, Vector.of(FlexInteger.ONE, FlexInteger.ZERO));
 
     SingleEntityModel entity = new SingleEntityModel(
         testSubstrateModel,
         testIdentity,
         startOfLife,
         testPosition,
-        BigInteger.ZERO,  // initialEnergy doesn't affect timing
-        BigInteger.ZERO,
+        FlexInteger.ZERO,  // initialEnergy doesn't affect timing
         momentum
     );
 
     // When: check at tick 2 (before nextPossibleAction=4)
-    List<TickAction<EntityModelUpdate>> actions = entity.onTick(BigInteger.valueOf(2)).toList();
+    List<TickAction<EntityModelUpdate>> actions = entity.onTick(FlexInteger.of(2)).toList();
 
     // Then
     assertEquals(1, actions.size());
@@ -67,9 +66,9 @@ class SingleEntityModelTest {
     // Given: entity born at tick 1, momentum cost=3
     // nextPossibleAction = 1 + 3 = 4
     // At tick 4, entity should move
-    BigInteger startOfLife = BigInteger.ONE;
-    BigInteger momentumCost = BigInteger.valueOf(3);
-    Vector momentumVector = Vector.of(BigInteger.ONE, BigInteger.ZERO);
+    FlexInteger startOfLife = FlexInteger.ONE;
+    FlexInteger momentumCost = FlexInteger.of(3);
+    Vector momentumVector = Vector.of(FlexInteger.ONE, FlexInteger.ZERO);
     Momentum momentum = new Momentum(momentumCost, momentumVector);
 
     SingleEntityModel entity = new SingleEntityModel(
@@ -77,13 +76,12 @@ class SingleEntityModelTest {
         testIdentity,
         startOfLife,
         testPosition,
-        BigInteger.ZERO,
-        BigInteger.ZERO,
+        FlexInteger.ZERO,
         momentum
     );
 
     // When: tick at nextPossibleAction time (tick 4)
-    BigInteger currentTick = BigInteger.valueOf(4);
+    FlexInteger currentTick = FlexInteger.of(4);
     List<TickAction<EntityModelUpdate>> actions = entity.onTick(currentTick).toList();
 
     // Then
@@ -97,7 +95,7 @@ class SingleEntityModelTest {
     EntityModel updatedEntity = updatedEntities.getFirst();
     assertEquals(testIdentity, updatedEntity.getIdentity());
     // Energy = tickCount - startOfLife = 4 - 1 = 3
-    assertEquals(BigInteger.valueOf(3), updatedEntity.getEnergy().value());
+    assertEquals(FlexInteger.of(3), updatedEntity.getEnergy(FlexInteger.of(4)));
 
     // Verify position was updated by momentum vector
     Position expectedPosition = testPosition.offset(momentumVector);
@@ -111,9 +109,9 @@ class SingleEntityModelTest {
     // endOfLife = startOfLife + completeDivisionThreshold
     // For 2D space with cost=1, completeDivisionThreshold is ~8-10 (depends on directional penalties)
     // Use tick 1000 to ensure we're past endOfLife
-    BigInteger startOfLife = BigInteger.ONE;
-    BigInteger momentumCost = BigInteger.ONE;
-    Vector momentumVector = Vector.of(BigInteger.ONE, BigInteger.ZERO);
+    FlexInteger startOfLife = FlexInteger.ONE;
+    FlexInteger momentumCost = FlexInteger.ONE;
+    Vector momentumVector = Vector.of(FlexInteger.ONE, FlexInteger.ZERO);
     Momentum momentum = new Momentum(momentumCost, momentumVector);
 
     SingleEntityModel entity = new SingleEntityModel(
@@ -121,13 +119,12 @@ class SingleEntityModelTest {
         testIdentity,
         startOfLife,
         testPosition,
-        BigInteger.ZERO,
-        BigInteger.ZERO,
+        FlexInteger.ZERO,
         momentum
     );
 
     // When: tick far past endOfLife
-    BigInteger currentTick = BigInteger.valueOf(1000);
+    FlexInteger currentTick = FlexInteger.of(1000);
     List<TickAction<EntityModelUpdate>> actions = entity.onTick(currentTick).toList();
 
     // Then
@@ -143,8 +140,11 @@ class SingleEntityModelTest {
     // Verify all children have different identities (not the parent's)
     updatedEntities.forEach(child -> {
       assertNotEquals(testIdentity, child.getIdentity());
-      assertEquals(BigInteger.ONE, child.getGeneration()); // generation 0 + 1 = 1
-      assertEquals(BigInteger.ONE, child.getEnergy().value());
+      assertEquals(FlexInteger.ONE, child.getGeneration()); // generation 0 + 1 = 1
+      // Children are born at currentTick, so energy at currentTick = currentTick - currentTick = 0
+      assertEquals(FlexInteger.ZERO, child.getEnergy(currentTick));
+      // Energy at next tick should be 1
+      assertEquals(FlexInteger.ONE, child.getEnergy(currentTick.add(FlexInteger.ONE)));
     });
   }
 
@@ -154,22 +154,21 @@ class SingleEntityModelTest {
     // Given: entity born at tick 1, cost=2
     // nextPossibleAction = 1 + 2 = 3
     // At tick 1, entity should WAIT
-    BigInteger startOfLife = BigInteger.ONE;
-    BigInteger momentumCost = BigInteger.valueOf(2);
-    Momentum momentum = new Momentum(momentumCost, Vector.of(BigInteger.ONE, BigInteger.ZERO));
+    FlexInteger startOfLife = FlexInteger.ONE;
+    FlexInteger momentumCost = FlexInteger.of(2);
+    Momentum momentum = new Momentum(momentumCost, Vector.of(FlexInteger.ONE, FlexInteger.ZERO));
 
     SingleEntityModel entity = new SingleEntityModel(
         testSubstrateModel,
         testIdentity,
         startOfLife,
         testPosition,
-        BigInteger.ZERO,
-        BigInteger.ZERO,
+        FlexInteger.ZERO,
         momentum
     );
 
     // When: tick before nextPossibleAction (tick 1 < 3)
-    List<TickAction<EntityModelUpdate>> actions = entity.onTick(BigInteger.ONE).toList();
+    List<TickAction<EntityModelUpdate>> actions = entity.onTick(FlexInteger.ONE).toList();
 
     // Then
     assertEquals(1, actions.size());
@@ -181,10 +180,10 @@ class SingleEntityModelTest {
   void testOnTick_GenerationIncrementDuringDivision() {
     // Given: parent with generation=5, and momentum vector [1, 0]
     // Use tick far past endOfLife to trigger division
-    BigInteger parentGeneration = BigInteger.valueOf(5);
-    BigInteger parentMomentumCost = BigInteger.valueOf(15);
-    BigInteger startOfLife = BigInteger.ONE;
-    Vector parentMomentumVector = Vector.of(BigInteger.ONE, BigInteger.ZERO);
+    FlexInteger parentGeneration = FlexInteger.of(5);
+    FlexInteger parentMomentumCost = FlexInteger.of(15);
+    FlexInteger startOfLife = FlexInteger.ONE;
+    Vector parentMomentumVector = Vector.of(FlexInteger.ONE, FlexInteger.ZERO);
     Momentum parentMomentum = new Momentum(parentMomentumCost, parentMomentumVector);
 
     SingleEntityModel entity = new SingleEntityModel(
@@ -192,18 +191,17 @@ class SingleEntityModelTest {
         testIdentity,
         startOfLife,
         testPosition,
-        BigInteger.ZERO,
         parentGeneration,
         parentMomentum
     );
 
     // When: tick far past endOfLife to trigger division
-    BigInteger currentTick = BigInteger.valueOf(10000);
+    FlexInteger currentTick = FlexInteger.of(10000);
     List<TickAction<EntityModelUpdate>> actions = entity.onTick(currentTick).toList();
     List<EntityModel> children = actions.getFirst().action().update(testSubstrateModel).toList();
 
     // Then: all children should have incremented generation
-    children.forEach(child -> assertEquals(BigInteger.valueOf(6), child.getGeneration()));
+    children.forEach(child -> assertEquals(FlexInteger.of(6), child.getGeneration()));
 
     // Should create 8 child entities (for 2D space)
     assertEquals(8, children.size());
@@ -212,13 +210,13 @@ class SingleEntityModelTest {
     EntityModel leadingChild = children.stream()
         .filter(child -> {
           Vector vector = child.getMomentum().vector();
-          return vector.get(0).equals(BigInteger.ONE) && vector.get(1).equals(BigInteger.ZERO);
+          return vector.get(0).equals(FlexInteger.ONE) && vector.get(1).equals(FlexInteger.ZERO);
         })
         .findFirst()
         .orElseThrow(() -> new AssertionError("Leading child not found"));
 
     // The leading entity's momentum cost should be lowest (the least directional change)
-    BigInteger leadingCost = leadingChild.getMomentum().cost();
+    FlexInteger leadingCost = leadingChild.getMomentum().cost();
 
     // Verify that at least some other children have higher momentum costs
     // (due to directional penalty from Utils.computeEnergyCost)
@@ -231,7 +229,7 @@ class SingleEntityModelTest {
 
     // Verify all children have valid momentum costs (positive values)
     children.forEach(child ->
-        assertTrue(child.getMomentum().cost().compareTo(BigInteger.ZERO) > 0,
+        assertTrue(child.getMomentum().cost().compareTo(FlexInteger.ZERO) > 0,
             "Child momentum cost must be positive")
     );
 
@@ -239,12 +237,12 @@ class SingleEntityModelTest {
     EntityModel oppositeChild = children.stream()
         .filter(child -> {
           Vector vector = child.getMomentum().vector();
-          return vector.get(0).equals(BigInteger.valueOf(-1)) && vector.get(1).equals(BigInteger.ZERO);
+          return vector.get(0).equals(FlexInteger.of(-1)) && vector.get(1).equals(FlexInteger.ZERO);
         })
         .findFirst()
         .orElseThrow(() -> new AssertionError("Opposite direction child not found"));
 
-    BigInteger oppositeCost = oppositeChild.getMomentum().cost();
+    FlexInteger oppositeCost = oppositeChild.getMomentum().cost();
     assertTrue(oppositeCost.compareTo(leadingCost) >= 0,
         "Opposite direction should have higher or equal cost than leading direction");
   }
@@ -255,22 +253,21 @@ class SingleEntityModelTest {
     // Given: entity born at tick 1, cost=3
     // nextPossibleAction = 1 + 3 = 4
     // At tick 4, entity moves (but doesn't divide)
-    BigInteger startOfLife = BigInteger.ONE;
-    BigInteger momentumCost = BigInteger.valueOf(3);
-    Momentum momentum = new Momentum(momentumCost, Vector.of(BigInteger.ONE, BigInteger.ZERO));
+    FlexInteger startOfLife = FlexInteger.ONE;
+    FlexInteger momentumCost = FlexInteger.of(3);
+    Momentum momentum = new Momentum(momentumCost, Vector.of(FlexInteger.ONE, FlexInteger.ZERO));
 
     SingleEntityModel entity = new SingleEntityModel(
         testSubstrateModel,
         testIdentity,
         startOfLife,
         testPosition,
-        BigInteger.ZERO,
-        BigInteger.ZERO,
+        FlexInteger.ZERO,
         momentum
     );
 
     // When: tick at nextPossibleAction (move, not divide)
-    BigInteger currentTick = BigInteger.valueOf(4);
+    FlexInteger currentTick = FlexInteger.of(4);
     List<TickAction<EntityModelUpdate>> actions = entity.onTick(currentTick).toList();
     List<EntityModel> updatedEntities = actions.getFirst().action().update(testSubstrateModel).toList();
 

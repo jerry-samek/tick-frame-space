@@ -7,10 +7,9 @@ import eu.jerrysamek.tickspace.model.exportimport.BinarySnapshotWriter;
 import eu.jerrysamek.tickspace.model.exportimport.SnapshotManager;
 import eu.jerrysamek.tickspace.model.substrate.SubstrateModel;
 import eu.jerrysamek.tickspace.model.ticktime.TickTimeModel;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
 import java.io.IOException;
-import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.nio.file.Path;
 import java.util.Collection;
 import java.util.LinkedList;
@@ -18,7 +17,7 @@ import java.util.Queue;
 
 public class LocalApp {
 
-  private record Snapshot(BigInteger tick, Collection<EntityModel> entities) {
+  private record Snapshot(FlexInteger tick, Collection<EntityModel> entities) {
   }
 
   static void main(String[] args) {
@@ -46,9 +45,9 @@ public class LocalApp {
                 .createSnapshot(snapshot.tick, entitiesRegistry, substrate.getDimensionalSize().getDimensionCount());
 
             var totalEnergyBalance = snapshot.entities.stream().map(entityModel -> entityModel
-                    .getEnergy().normalized(snapshot.tick)
-                    .subtract(new BigDecimal(entityModel.getMomentum().totalCost())))
-                .reduce(BigDecimal.ZERO, BigDecimal::add);
+                    .getEnergy(snapshot.tick).divide(snapshot.tick)
+                    .subtract(entityModel.getMomentum().totalCost()))
+                .reduce(FlexInteger.ZERO, FlexInteger::add);
 
             System.out.println(" - total energy balance: " + totalEnergyBalance);
 
@@ -73,7 +72,7 @@ public class LocalApp {
       System.out.println(" - entities: " + count);
       var snapshot = entitiesRegistry.snapshot();
 
-      if (tick.remainder(BigInteger.valueOf(100)).equals(BigInteger.ZERO)) {
+      if (tick.remainder(FlexInteger.of(100)).equals(FlexInteger.ZERO)) {
         System.out.println(" - preparing new snapshot ...");
 
         synchronized (snapshots) {

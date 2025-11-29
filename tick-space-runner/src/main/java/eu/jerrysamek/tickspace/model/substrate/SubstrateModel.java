@@ -3,12 +3,13 @@ package eu.jerrysamek.tickspace.model.substrate;
 import eu.jerrysamek.tickspace.model.entity.EntitiesRegistry;
 import eu.jerrysamek.tickspace.model.ticktime.TickTimeConsumer;
 import eu.jerrysamek.tickspace.model.ticktime.TickTimeUpdate;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
-import java.math.BigInteger;
 import java.util.stream.Stream;
 
-import static java.math.BigInteger.ONE;
-import static java.math.BigInteger.ZERO;
+import static eu.jerrysamek.tickspace.model.util.FlexInteger.ONE;
+import static eu.jerrysamek.tickspace.model.util.FlexInteger.ZERO;
+
 
 /**
  * Represents the substrate model that manages dimensional sizes.
@@ -20,7 +21,7 @@ public class SubstrateModel implements TickTimeConsumer<TickTimeUpdate> {
    * Cached metadata for each offset to optimize cost calculations.
    * Stores precomputed magnitudes to avoid repeated expensive calculations.
    */
-  public record OffsetMetadata(Vector offset, BigInteger magnitude) {}
+  public record OffsetMetadata(Vector offset, FlexInteger magnitude) {}
 
   private final DimensionalSize dimensionalSize;
   private final EntitiesRegistry registry;
@@ -51,7 +52,7 @@ public class SubstrateModel implements TickTimeConsumer<TickTimeUpdate> {
    * Called when a tick occurs. Increments all dimensions by 1.
    */
   @Override
-  public Stream<TickAction<TickTimeUpdate>> onTick(BigInteger tickCount) {
+  public Stream<TickAction<TickTimeUpdate>> onTick(FlexInteger tickCount) {
     return Stream.concat(
         dimensionalSize
             .onTick(tickCount)
@@ -116,7 +117,7 @@ public class SubstrateModel implements TickTimeConsumer<TickTimeUpdate> {
 
     // Iterate through all base-3 combinations
     for (var i = 0; i < totalCombinations; i++) {
-      var components = new BigInteger[dimensionCount];
+      var components = new FlexInteger[dimensionCount];
       var value = i;
       var isZeroVector = true;
 

@@ -5,8 +5,8 @@ import eu.jerrysamek.tickspace.model.substrate.Position;
 import eu.jerrysamek.tickspace.model.substrate.SubstrateModelUpdate;
 import eu.jerrysamek.tickspace.model.substrate.Vector;
 import eu.jerrysamek.tickspace.model.ticktime.TickTimeConsumer;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
-import java.math.BigInteger;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Map;
@@ -23,16 +23,16 @@ public class EntitiesRegistry implements TickTimeConsumer<SubstrateModelUpdate> 
   private final Map<Position, EntityModel> entities = new ConcurrentHashMap<>();
 
   // Event-driven scheduling: track which entities need to act on which tick
-  private final Map<BigInteger, Set<Position>> tickSchedule = new ConcurrentHashMap<>();
+  private final Map<FlexInteger, Set<Position>> tickSchedule = new ConcurrentHashMap<>();
 
   @Override
-  public Stream<TickAction<SubstrateModelUpdate>> onTick(BigInteger tickCount) {
-    if (tickCount.equals(BigInteger.ONE)) { // seed ... TODO
+  public Stream<TickAction<SubstrateModelUpdate>> onTick(FlexInteger tickCount) {
+    if (tickCount.equals(FlexInteger.ONE)) { // seed ... TODO
       return Stream.of(new TickAction<>(TickActionType.UPDATE, model -> {
         int dimensionCount = model.getDimensionalSize().getDimensionCount();
         var position = new Position(Vector.zero(dimensionCount));
-        var momentum = new Momentum(BigInteger.ONE, Vector.zero(dimensionCount));
-        var seedEntity = new SingleEntityModel(model, UUID.randomUUID(), BigInteger.ONE, position, BigInteger.ONE, BigInteger.ZERO, momentum);
+        var momentum = new Momentum(FlexInteger.ONE, Vector.zero(dimensionCount));
+        var seedEntity = new SingleEntityModel(model, UUID.randomUUID(), FlexInteger.ONE, position, FlexInteger.ONE, momentum);
         entities.put(position, seedEntity);
 
         // Schedule the seed entity for its first action
@@ -62,11 +62,11 @@ public class EntitiesRegistry implements TickTimeConsumer<SubstrateModelUpdate> 
                       .update(substrate)
                       .forEach(updatedEntity -> {
                         // Validation
-                        if (updatedEntity.getEnergy().value().compareTo(BigInteger.ZERO) < 0) {
+                        if (updatedEntity.getEnergy(tickCount).compareTo(FlexInteger.ZERO) < 0) {
                           throw new ModelBreakingException("Energy is too low! " + originalEntity + " => " + updatedEntity);
                         }
 
-                        if (updatedEntity.getMomentum().cost().compareTo(BigInteger.ONE) < 0) {
+                        if (updatedEntity.getMomentum().cost().compareTo(FlexInteger.ONE) < 0) {
                           throw new ModelBreakingException("Momentum is too low! " + originalEntity + " => " + updatedEntity);
                         }
 
@@ -79,7 +79,7 @@ public class EntitiesRegistry implements TickTimeConsumer<SubstrateModelUpdate> 
                             return updatedEntity;
                           } else {
                             // Collision with a waiting entity - merge
-                            return CollidingEntityModel.naive(substrate, updatedEntity, collidingEntity);
+                            return CollidingEntityModel.naive(tickCount, substrate, updatedEntity, collidingEntity);
                           }
                         });
 

@@ -2,6 +2,7 @@ package eu.jerrysamek.tickspace.model.exportimport;
 
 import eu.jerrysamek.tickspace.model.entity.EntitiesRegistry;
 import eu.jerrysamek.tickspace.model.substrate.SubstrateModel;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -33,8 +34,8 @@ public class SnapshotManager {
    * @param dimensionCount number of dimensions
    * @return snapshot
    */
-  public SimulationSnapshot createSnapshot(BigInteger tickCount, EntitiesRegistry registry,
-                                            int dimensionCount) {
+  public SimulationSnapshot createSnapshot(FlexInteger tickCount, EntitiesRegistry registry,
+                                           int dimensionCount) {
     return new SimulationSnapshot(
         tickCount,
         dimensionCount,
@@ -64,7 +65,7 @@ public class SnapshotManager {
    * @param registry the entities registry to populate
    * @return the tick count from the snapshot
    */
-  public BigInteger restore(SimulationSnapshot snapshot, EntitiesRegistry registry) {
+  public FlexInteger restore(SimulationSnapshot snapshot, EntitiesRegistry registry) {
     // Clear current state
     registry.destroy();
 

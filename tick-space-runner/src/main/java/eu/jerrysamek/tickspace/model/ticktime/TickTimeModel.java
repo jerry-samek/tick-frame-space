@@ -2,8 +2,8 @@ package eu.jerrysamek.tickspace.model.ticktime;
 
 import eu.jerrysamek.tickspace.model.ModelBreakingException;
 import eu.jerrysamek.tickspace.model.substrate.SubstrateModel;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
-import java.math.BigInteger;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -19,15 +19,15 @@ public class TickTimeModel implements AutoCloseable {
   private final ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
 
   private final TickTimeConsumer<TickTimeUpdate> consumer;
-  private BigInteger tickCount = BigInteger.ZERO;
-  private final BiConsumer<TickTimeModel, BigInteger> afterTick;
+  private FlexInteger tickCount = FlexInteger.ZERO;
+  private final BiConsumer<TickTimeModel, FlexInteger> afterTick;
 
   /**
    * Creates a TickTimeModel with the associated TickTimeConsumer.
    *
    * @param consumer the consumer to update on each tick
    */
-  public TickTimeModel(final TickTimeConsumer<TickTimeUpdate> consumer, final BiConsumer<TickTimeModel, BigInteger> afterTick) {
+  public TickTimeModel(final TickTimeConsumer<TickTimeUpdate> consumer, final BiConsumer<TickTimeModel, FlexInteger> afterTick) {
     if (consumer == null) {
       throw new IllegalArgumentException("TickTimeConsumer cannot be null");
     }
@@ -48,7 +48,7 @@ public class TickTimeModel implements AutoCloseable {
     var tickTaskExecutor = Executors.newWorkStealingPool(threadNumber);
 
     executor.scheduleWithFixedDelay(() -> {
-      tickCount = tickCount.add(BigInteger.ONE);
+      tickCount = tickCount.add(FlexInteger.ONE);
       try {
         var start = System.nanoTime();
 
@@ -105,7 +105,7 @@ public class TickTimeModel implements AutoCloseable {
    *
    * @return the tick count
    */
-  public BigInteger getTickCount() {
+  public FlexInteger getTickCount() {
     return tickCount;
   }
 

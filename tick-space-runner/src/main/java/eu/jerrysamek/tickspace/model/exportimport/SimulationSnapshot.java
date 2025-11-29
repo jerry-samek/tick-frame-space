@@ -1,8 +1,8 @@
 package eu.jerrysamek.tickspace.model.exportimport;
 
 import eu.jerrysamek.tickspace.model.entity.EntityModel;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
-import java.math.BigInteger;
 import java.util.Collection;
 
 /**
@@ -10,7 +10,7 @@ import java.util.Collection;
  * Can be serialized to/from binary format for save/load functionality.
  */
 public record SimulationSnapshot(
-    BigInteger tickCount,
+    FlexInteger tickCount,
     int dimensionCount,
     Collection<EntityModel> entities) {
 

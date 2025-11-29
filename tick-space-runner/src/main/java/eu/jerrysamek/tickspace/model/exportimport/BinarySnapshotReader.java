@@ -6,9 +6,13 @@ import eu.jerrysamek.tickspace.model.entity.SingleEntityModel;
 import eu.jerrysamek.tickspace.model.substrate.Position;
 import eu.jerrysamek.tickspace.model.substrate.SubstrateModel;
 import eu.jerrysamek.tickspace.model.substrate.Vector;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
-import java.io.*;
-import java.math.BigInteger;
+import java.io.BufferedInputStream;
+import java.io.DataInput;
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -47,7 +51,7 @@ public class BinarySnapshotReader {
    * Reads snapshot from input stream.
    */
   public SimulationSnapshot readSnapshot(DataInput in, SubstrateModel substrateModel) throws IOException {
-    // Read and validate header
+    // Read and validate the header
     SnapshotHeader header = readHeader(in);
 
     // Read entities
@@ -57,7 +61,7 @@ public class BinarySnapshotReader {
     }
 
     return new SimulationSnapshot(
-        BigInteger.valueOf(header.tickCount),
+        FlexInteger.of(header.tickCount),
         header.dimensionCount,
         entities
     );
@@ -85,32 +89,32 @@ public class BinarySnapshotReader {
   }
 
   private EntityModel readEntity(DataInput in, int dimensionCount, long currentTick,
-                                   SubstrateModel substrateModel) throws IOException {
+                                 SubstrateModel substrateModel) throws IOException {
     // Read position vector
-    BigInteger[] posComponents = new BigInteger[dimensionCount];
+    FlexInteger[] posComponents = new FlexInteger[dimensionCount];
     for (int i = 0; i < dimensionCount; i++) {
       posComponents[i] = BinarySnapshotFormat.readBigInteger(in);
     }
     Position position = new Position(Vector.of(posComponents));
 
     // Read energy
-    BigInteger energy = BinarySnapshotFormat.readBigInteger(in);
+    FlexInteger energy = BinarySnapshotFormat.readBigInteger(in);
 
     // Read generation
-    BigInteger generation = BinarySnapshotFormat.readBigInteger(in);
+    FlexInteger generation = BinarySnapshotFormat.readBigInteger(in);
 
     // Read momentum cost
-    BigInteger momentumCost = BinarySnapshotFormat.readBigInteger(in);
+    FlexInteger momentumCost = BinarySnapshotFormat.readBigInteger(in);
 
     // Read momentum vector
-    BigInteger[] momComponents = new BigInteger[dimensionCount];
+    FlexInteger[] momComponents = new FlexInteger[dimensionCount];
     for (int i = 0; i < dimensionCount; i++) {
       momComponents[i] = BinarySnapshotFormat.readBigInteger(in);
     }
     Momentum momentum = new Momentum(momentumCost, Vector.of(momComponents));
 
     // Read birth tick
-    BigInteger birthTick = BinarySnapshotFormat.readBigInteger(in);
+    FlexInteger birthTick = BinarySnapshotFormat.readBigInteger(in);
 
     // Reconstruct entity
     return new SingleEntityModel(
@@ -118,11 +122,11 @@ public class BinarySnapshotReader {
         UUID.randomUUID(), // Generate new UUID
         birthTick,
         position,
-        energy,
         generation,
         momentum
     );
   }
 
-  private record SnapshotHeader(long tickCount, int entityCount, int dimensionCount) {}
+  private record SnapshotHeader(long tickCount, int entityCount, int dimensionCount) {
+  }
 }

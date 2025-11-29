@@ -1,5 +1,7 @@
 package eu.jerrysamek.tickspace.model.exportimport;
 
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
+
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
@@ -88,8 +90,8 @@ public class BinarySnapshotFormat {
   /**
    * Reads a BigInteger from variable-length encoded long.
    */
-  public static BigInteger readBigInteger(DataInput in) throws IOException {
-    return BigInteger.valueOf(readVarLong(in));
+  public static FlexInteger readBigInteger(DataInput in) throws IOException {
+    return FlexInteger.of(readVarLong(in));
   }
 
   /**

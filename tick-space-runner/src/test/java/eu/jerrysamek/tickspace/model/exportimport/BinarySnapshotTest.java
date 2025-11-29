@@ -6,17 +6,18 @@ import eu.jerrysamek.tickspace.model.entity.SingleEntityModel;
 import eu.jerrysamek.tickspace.model.substrate.Position;
 import eu.jerrysamek.tickspace.model.substrate.SubstrateModel;
 import eu.jerrysamek.tickspace.model.substrate.Vector;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 
 import java.io.IOException;
-import java.math.BigInteger;
 import java.nio.file.Path;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class BinarySnapshotTest {
 
@@ -38,20 +39,19 @@ class BinarySnapshotTest {
   @DisplayName("Should save and load snapshot with single entity")
   void testSaveAndLoadSingleEntity() throws IOException {
     // Given: Create a simple entity
-    var position = new Position(Vector.of(BigInteger.valueOf(10), BigInteger.valueOf(20), BigInteger.valueOf(30)));
-    var momentum = new Momentum(BigInteger.valueOf(5), Vector.of(BigInteger.ONE, BigInteger.ZERO, BigInteger.ZERO));
+    var position = new Position(Vector.of(FlexInteger.of(10), FlexInteger.of(20), FlexInteger.of(30)));
+    var momentum = new Momentum(FlexInteger.of(5), Vector.of(FlexInteger.ONE, FlexInteger.ZERO, FlexInteger.ZERO));
     var entity = new SingleEntityModel(
         substrateModel,
         UUID.randomUUID(),
-        BigInteger.valueOf(100),
+        FlexInteger.of(950),
         position,
-        BigInteger.valueOf(50),
-        BigInteger.ZERO,
+        FlexInteger.ZERO,
         momentum
     );
 
     registry.addEntity(position, entity);
-    BigInteger tickCount = BigInteger.valueOf(1000);
+    FlexInteger tickCount = FlexInteger.of(1000);
 
     // When: Save snapshot
     var snapshot = snapshotManager.createSnapshot(tickCount, registry, 3);
@@ -73,8 +73,8 @@ class BinarySnapshotTest {
 
     var loadedEntity = loadedSnapshot.entities().iterator().next();
     assertEquals(position, loadedEntity.getPosition());
-    assertEquals(BigInteger.valueOf(50), loadedEntity.getEnergy().value());
-    assertEquals(BigInteger.valueOf(5), loadedEntity.getMomentum().cost());
+    assertEquals(FlexInteger.of(50), loadedEntity.getEnergy(loadedSnapshot.tickCount()));
+    assertEquals(FlexInteger.of(5), loadedEntity.getMomentum().cost());
   }
 
   @Test
@@ -83,25 +83,24 @@ class BinarySnapshotTest {
     // Given: Create multiple entities
     for (int i = 0; i < 10; i++) {
       var position = new Position(Vector.of(
-          BigInteger.valueOf(i),
-          BigInteger.valueOf(i * 2),
-          BigInteger.valueOf(i * 3)
+          FlexInteger.of(i),
+          FlexInteger.of(i * 2),
+          FlexInteger.of(i * 3)
       ));
-      var momentum = new Momentum(BigInteger.valueOf(i + 1), Vector.of(BigInteger.ONE, BigInteger.ZERO, BigInteger.ZERO));
+      var momentum = new Momentum(FlexInteger.of(i + 1), Vector.of(FlexInteger.ONE, FlexInteger.ZERO, FlexInteger.ZERO));
       var entity = new SingleEntityModel(
           substrateModel,
           UUID.randomUUID(),
-          BigInteger.valueOf(i),
+          FlexInteger.of(100 - i * 10),
           position,
-          BigInteger.valueOf(i * 10),
-          BigInteger.ZERO,
+          FlexInteger.ZERO,
           momentum
       );
       registry.addEntity(position, entity);
     }
 
     // When: Save and load
-    var snapshot = snapshotManager.createSnapshot(BigInteger.valueOf(500), registry, 3);
+    var snapshot = snapshotManager.createSnapshot(FlexInteger.of(500), registry, 3);
     Path snapshotFile = tempDir.resolve("multi_snapshot.bin");
     snapshotManager.save(snapshot, snapshotFile);
 
@@ -109,7 +108,7 @@ class BinarySnapshotTest {
 
     // Then: All entities loaded
     assertEquals(10, loadedSnapshot.entityCount());
-    assertEquals(BigInteger.valueOf(500), loadedSnapshot.tickCount());
+    assertEquals(FlexInteger.of(500), loadedSnapshot.tickCount());
   }
 
   @Test

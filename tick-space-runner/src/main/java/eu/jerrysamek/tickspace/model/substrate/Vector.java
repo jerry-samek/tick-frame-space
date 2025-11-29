@@ -1,10 +1,8 @@
 package eu.jerrysamek.tickspace.model.substrate;
 
-import java.math.BigInteger;
-import java.util.Arrays;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
-import static java.math.BigInteger.ONE;
-import static java.math.BigInteger.ZERO;
+import java.util.Arrays;
 
 /**
  * Immutable vector class for N-dimensional integer vectors.
@@ -17,12 +15,12 @@ import static java.math.BigInteger.ZERO;
  */
 public final class Vector {
 
-  private final BigInteger[] components;
+  private final FlexInteger[] components;
   private final int dimensions;
   private final int hash;
 
   // Private constructor - use factory methods
-  private Vector(BigInteger[] components) {
+  private Vector(FlexInteger[] components) {
     this.components = components.clone(); // Defensive copy for immutability
     this.dimensions = components.length;
     this.hash = computeSpatialHash(components);
@@ -32,7 +30,7 @@ public final class Vector {
    * Better hash function for spatial coordinates.
    * Uses long values and prime mixing to reduce collisions.
    */
-  private static int computeSpatialHash(BigInteger[] components) {
+  private static int computeSpatialHash(FlexInteger[] components) {
     // For small values (fit in long), use optimized spatial hashing
     long hash = 0x517cc1b727220a95L; // Random prime seed
 
@@ -64,19 +62,33 @@ public final class Vector {
    * Factory: Creates a zero vector of specified dimensions.
    */
   public static Vector zero(int dimensions) {
-    var components = new BigInteger[dimensions];
-    Arrays.fill(components, ZERO);
+    var components = new FlexInteger[dimensions];
+    Arrays.fill(components, FlexInteger.ZERO);
     return new Vector(components);
   }
 
   /**
    * Factory: Creates a vector from components.
    */
-  public static Vector of(BigInteger... components) {
+  public static Vector of(FlexInteger... components) {
     if (components == null || components.length == 0) {
       throw new IllegalArgumentException("Vector must have at least one component");
     }
     return new Vector(components);
+  }
+
+  /**
+   * Factory: Creates a vector from long components (convenience method).
+   */
+  public static Vector of(long... components) {
+    if (components == null || components.length == 0) {
+      throw new IllegalArgumentException("Vector must have at least one component");
+    }
+    var flexComponents = new FlexInteger[components.length];
+    for (int i = 0; i < components.length; i++) {
+      flexComponents[i] = FlexInteger.of(components[i]);
+    }
+    return new Vector(flexComponents);
   }
 
   /**
@@ -89,7 +101,7 @@ public final class Vector {
   /**
    * Gets a component by index.
    */
-  public BigInteger get(int index) {
+  public FlexInteger get(int index) {
     return components[index];
   }
 
@@ -97,16 +109,16 @@ public final class Vector {
    * Returns a defensive copy of components array.
    * Use sparingly - prefer vector methods.
    */
-  public BigInteger[] toArray() {
+  public FlexInteger[] toArray() {
     return components.clone();
   }
 
   /**
    * Computes the dot product with another vector.
    */
-  public BigInteger dot(Vector other) {
+  public FlexInteger dot(Vector other) {
     var minLength = Math.min(dimensions, other.dimensions);
-    var result = ZERO;
+    var result = FlexInteger.ZERO;
     for (var i = 0; i < minLength; i++) {
       result = result.add(components[i].multiply(other.components[i]));
     }
@@ -116,8 +128,8 @@ public final class Vector {
   /**
    * Computes the squared magnitude (more efficient than magnitude).
    */
-  public BigInteger magnitudeSquared() {
-    var result = ZERO;
+  public FlexInteger magnitudeSquared() {
+    var result = FlexInteger.ZERO;
     for (var component : components) {
       result = result.add(component.multiply(component));
     }
@@ -127,7 +139,7 @@ public final class Vector {
   /**
    * Computes the Euclidean magnitude.
    */
-  public BigInteger magnitude() {
+  public FlexInteger magnitude() {
     return sqrt(magnitudeSquared());
   }
 
@@ -138,7 +150,7 @@ public final class Vector {
     if (dimensions != other.dimensions) {
       throw new IllegalArgumentException("Vectors must have same dimensions: " + dimensions + " vs " + other.dimensions);
     }
-    var result = new BigInteger[dimensions];
+    var result = new FlexInteger[dimensions];
     for (var i = 0; i < dimensions; i++) {
       result[i] = components[i].add(other.components[i]);
     }
@@ -152,7 +164,7 @@ public final class Vector {
     if (dimensions != other.dimensions) {
       throw new IllegalArgumentException("Vectors must have same dimensions: " + dimensions + " vs " + other.dimensions);
     }
-    var result = new BigInteger[dimensions];
+    var result = new FlexInteger[dimensions];
     for (var i = 0; i < dimensions; i++) {
       result[i] = components[i].subtract(other.components[i]);
     }
@@ -162,8 +174,8 @@ public final class Vector {
   /**
    * Multiplies by a scalar.
    */
-  public Vector scale(BigInteger scalar) {
-    var result = new BigInteger[dimensions];
+  public Vector scale(FlexInteger scalar) {
+    var result = new FlexInteger[dimensions];
     for (var i = 0; i < dimensions; i++) {
       result[i] = components[i].multiply(scalar);
     }
@@ -173,8 +185,8 @@ public final class Vector {
   /**
    * Finds the maximum absolute component value.
    */
-  public BigInteger maxComponent() {
-    var max = ZERO;
+  public FlexInteger maxComponent() {
+    var max = FlexInteger.ZERO;
     for (var component : components) {
       var abs = component.abs();
       if (abs.compareTo(max) > 0) {
@@ -190,11 +202,11 @@ public final class Vector {
   public Vector normalizeMaxComponent() {
     var max = maxComponent();
 
-    if (max.compareTo(ZERO) == 0) {
+    if (max.compareTo(FlexInteger.ZERO) == 0) {
       return Vector.zero(dimensions);
     }
 
-    var result = new BigInteger[dimensions];
+    var result = new FlexInteger[dimensions];
     for (int i = 0; i < dimensions; i++) {
       result[i] = components[i].divide(max);
     }
@@ -206,7 +218,7 @@ public final class Vector {
    */
   public boolean isZero() {
     for (var component : components) {
-      if (!component.equals(ZERO)) {
+      if (!component.equals(FlexInteger.ZERO)) {
         return false;
       }
     }
@@ -219,8 +231,8 @@ public final class Vector {
    *
    * @return sum of all components
    */
-  public BigInteger sumComponents() {
-    var sum = ZERO;
+  public FlexInteger sumComponents() {
+    var sum = FlexInteger.ZERO;
     for (var component : components) {
       sum = sum.add(component);
     }
@@ -230,18 +242,18 @@ public final class Vector {
   /**
    * Integer square root (floor) - utility method.
    */
-  private static BigInteger sqrt(BigInteger x) {
-    if (x.compareTo(ZERO) < 0) {
+  private static FlexInteger sqrt(FlexInteger x) {
+    if (x.compareTo(FlexInteger.ZERO) < 0) {
       throw new IllegalArgumentException("Cannot take square root of negative number: " + x);
     }
-    if (x.equals(ZERO) || x.equals(ONE)) {
+    if (x.equals(FlexInteger.ZERO) || x.equals(FlexInteger.ONE)) {
       return x;
     }
 
-    var r = ZERO;
-    var bit = ONE.shiftLeft(x.bitLength() / 2 + 1);
+    var r = FlexInteger.ZERO;
+    var bit = FlexInteger.ONE.shiftLeft(x.bitLength() / 2 + 1);
 
-    while (bit.compareTo(ZERO) > 0) {
+    while (bit.compareTo(FlexInteger.ZERO) > 0) {
       var t = r.add(bit);
       if (t.multiply(t).compareTo(x) <= 0) {
         r = t;

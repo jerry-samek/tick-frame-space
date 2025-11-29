@@ -1,6 +1,7 @@
 package eu.jerrysamek.tickspace.model.ticktime;
 
-import java.math.BigInteger;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
+
 import java.util.stream.Stream;
 
 /**
@@ -19,5 +20,5 @@ public interface TickTimeConsumer<E> {
   /**
    * Called when a tick occurs.
    */
-  Stream<TickAction<E>> onTick(BigInteger tickCount);
+  Stream<TickAction<E>> onTick(FlexInteger tickCount);
 }
