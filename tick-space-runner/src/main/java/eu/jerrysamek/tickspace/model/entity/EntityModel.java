@@ -12,9 +12,13 @@ public interface EntityModel extends TickTimeConsumer<EntityModelUpdate> {
 
   EnergyState getEnergy();
 
+  BigInteger tickOfBirth();
+
   Position getPosition();
 
   BigInteger getGeneration();
 
   Momentum getMomentum();
+
+  BigInteger getNextPossibleAction();
 }

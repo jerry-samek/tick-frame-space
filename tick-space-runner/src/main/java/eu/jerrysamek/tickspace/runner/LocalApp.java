@@ -48,6 +48,15 @@ public class LocalApp {
 
           var snapshot = snapshots.poll();
           if (snapshot != null) {
+            var totalEnergyBalance = snapshot.entities.stream().map(entityModel -> entityModel
+                    .getEnergy().normalized(snapshot.tick)
+                    .subtract(new BigDecimal(entityModel.getMomentum().totalCost())))
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+
+            System.out.println(" - total energy balance: " + totalEnergyBalance);
+
+            System.out.println(" - total energy loss by annihilation: " + CollidingEntityModel.totalEnergyLoss);
+
             try (OutputStream fileOutputStream = Files.newOutputStream(Path.of("W:\\data\\snapshots\\time-frame." + snapshot.tick + ".json"))) {
               mapper.writeValue(fileOutputStream, snapshot.entities);
             } catch (IOException e) {
@@ -59,23 +68,13 @@ public class LocalApp {
       }
     });
 
-    new TickTimeModel(substrate, (model, tick) -> {
+    new TickTimeModel(substrate, (_, tick) -> {
       // after tick processing
       System.out.println("====== tick " + tick + " ======");
       System.out.println(" - dimensional bounds: " + substrate.getDimensionalSize());
       var count = entitiesRegistry.count();
       System.out.println(" - entities: " + count);
       var snapshot = entitiesRegistry.snapshot();
-
-      var totalEnergyBalance = snapshot.stream().map(entityModel -> entityModel
-              .getEnergy().normalized(tick)
-              .subtract(new BigDecimal(entityModel.getMomentum().totalCost())))
-          .reduce(BigDecimal.ZERO, BigDecimal::add);
-
-      System.out.println(" - total energy balance: " + totalEnergyBalance);
-
-      System.out.println(" - total energy loss by annihilation: " + CollidingEntityModel.totalEnergyLoss);
-
 
       if (tick.remainder(BigInteger.valueOf(100)).equals(BigInteger.ZERO)) {
         System.out.println(" - preparing new snapshot ...");

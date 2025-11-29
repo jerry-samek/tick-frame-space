@@ -37,6 +37,7 @@ public class CollidingEntityModel implements EntityModel {
         return new SingleEntityModel(
             substrateModel,
             UUID.randomUUID(),
+            entity1.tickOfBirth().min(entity2.tickOfBirth()),
             entity1.getPosition(),
             newEnergy,
             entity1.getGeneration().max(entity2.getGeneration()).add(ONE),
@@ -87,6 +88,14 @@ public class CollidingEntityModel implements EntityModel {
   }
 
   @Override
+  public BigInteger tickOfBirth() {
+    return entities
+        .stream()
+        .map(EntityModel::tickOfBirth)
+        .reduce(ZERO, BigInteger::min); // the oldest entity
+  }
+
+  @Override
   public Position getPosition() {
     return position;
   }
@@ -124,6 +133,12 @@ public class CollidingEntityModel implements EntityModel {
   }
 
   @Override
+  public BigInteger getNextPossibleAction() {
+    // Colliding entities should act immediately
+    return tickOfBirth();
+  }
+
+  @Override
   public Stream<TickAction<EntityModelUpdate>> onTick(BigInteger tickCount) {
     var resolvedMomentum = getMomentum();
     var resolvedEnergy = getEnergy();
@@ -138,8 +153,9 @@ public class CollidingEntityModel implements EntityModel {
             .reduce(ZERO, BigInteger::add)
             .add(resolvedMomentum.cost());
 
+
         return Stream.of(
-            new SingleEntityModel(substrateModel, UUID.randomUUID(), position, resolvedEnergy.value()
+            new SingleEntityModel(substrateModel, UUID.randomUUID(), tickCount, position, resolvedEnergy.value()
                 .subtract(resolvedMomentum.cost()), getGeneration().add(ONE), new Momentum(total, resolvedMomentum.vector())));
       }
 
@@ -169,6 +185,7 @@ public class CollidingEntityModel implements EntityModel {
               return new SingleEntityModel(
                   substrateModel,
                   UUID.randomUUID(),
+                  tickCount,
                   position.offset(offset),
                   newEnergy,
                   generation.add(ONE),
@@ -190,7 +207,7 @@ public class CollidingEntityModel implements EntityModel {
             entityModel.getEnergy().value(),
             resolvedEnergy.value());
 
-        return new SingleEntityModel(substrateModel, UUID.randomUUID(), position.offset(newMomentum.vector()), perChildEnergy, generation, newMomentum);
+        return new SingleEntityModel(substrateModel, UUID.randomUUID(), tickCount, position.offset(newMomentum.vector()), perChildEnergy, generation, newMomentum);
       });
     }));
   }

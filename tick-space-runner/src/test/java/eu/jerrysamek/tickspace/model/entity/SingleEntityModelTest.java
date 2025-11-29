@@ -34,26 +34,27 @@ class SingleEntityModelTest {
   }
 
   @Test
-  @DisplayName("onTick should return WAIT action when energy is not divisible by momentum cost")
+  @DisplayName("onTick should return WAIT action when current tick is before nextPossibleAction")
   void testOnTick_WaitWhenEnergyNotDivisible() {
-    // Given: entity with energy=5, momentum cost=3
-    // After increase: energy=6, which is divisible by 3
-    // So we need energy=4 to get 5 after increase (5 % 3 = 2, not divisible)
-    BigInteger initialEnergy = BigInteger.valueOf(4);
+    // Given: entity born at tick 1, momentum cost=3
+    // nextPossibleAction = 1 + 3 = 4
+    // So at tick 1, 2, 3 the entity should WAIT
+    BigInteger startOfLife = BigInteger.ONE;
     BigInteger momentumCost = BigInteger.valueOf(3);
     Momentum momentum = new Momentum(momentumCost, Vector.of(BigInteger.ONE, BigInteger.ZERO));
 
     SingleEntityModel entity = new SingleEntityModel(
         testSubstrateModel,
         testIdentity,
+        startOfLife,
         testPosition,
-        initialEnergy,
+        BigInteger.ZERO,  // initialEnergy doesn't affect timing
         BigInteger.ZERO,
         momentum
     );
 
-    // When
-    List<TickAction<EntityModelUpdate>> actions = entity.onTick(BigInteger.ONE).toList();
+    // When: check at tick 2 (before nextPossibleAction=4)
+    List<TickAction<EntityModelUpdate>> actions = entity.onTick(BigInteger.valueOf(2)).toList();
 
     // Then
     assertEquals(1, actions.size());
@@ -61,11 +62,12 @@ class SingleEntityModelTest {
   }
 
   @Test
-  @DisplayName("onTick should return UPDATE action with movement when energy is divisible by momentum cost")
+  @DisplayName("onTick should return UPDATE action with movement when tick reaches nextPossibleAction")
   void testOnTick_UpdateWithMovementWhenEnergyDivisible() {
-    // Given: entity with energy that will be divisible after increase
-    // Energy = 2, cost = 3, after increase = 3 (divisible by 3)
-    BigInteger initialEnergy = BigInteger.valueOf(2);
+    // Given: entity born at tick 1, momentum cost=3
+    // nextPossibleAction = 1 + 3 = 4
+    // At tick 4, entity should move
+    BigInteger startOfLife = BigInteger.ONE;
     BigInteger momentumCost = BigInteger.valueOf(3);
     Vector momentumVector = Vector.of(BigInteger.ONE, BigInteger.ZERO);
     Momentum momentum = new Momentum(momentumCost, momentumVector);
@@ -73,14 +75,16 @@ class SingleEntityModelTest {
     SingleEntityModel entity = new SingleEntityModel(
         testSubstrateModel,
         testIdentity,
+        startOfLife,
         testPosition,
-        initialEnergy,
+        BigInteger.ZERO,
         BigInteger.ZERO,
         momentum
     );
 
-    // When
-    List<TickAction<EntityModelUpdate>> actions = entity.onTick(BigInteger.ONE).toList();
+    // When: tick at nextPossibleAction time (tick 4)
+    BigInteger currentTick = BigInteger.valueOf(4);
+    List<TickAction<EntityModelUpdate>> actions = entity.onTick(currentTick).toList();
 
     // Then
     assertEquals(1, actions.size());
@@ -92,6 +96,7 @@ class SingleEntityModelTest {
 
     EntityModel updatedEntity = updatedEntities.getFirst();
     assertEquals(testIdentity, updatedEntity.getIdentity());
+    // Energy = tickCount - startOfLife = 4 - 1 = 3
     assertEquals(BigInteger.valueOf(3), updatedEntity.getEnergy().value());
 
     // Verify position was updated by momentum vector
@@ -100,13 +105,13 @@ class SingleEntityModelTest {
   }
 
   @Test
-  @DisplayName("onTick should return UPDATE action with division when energy exceeds threshold")
+  @DisplayName("onTick should return UPDATE action with division when tick reaches endOfLife")
   void testOnTick_UpdateWithDivisionWhenEnergyExceedsThreshold() {
-    // Given: entity with very high energy that exceeds the division threshold
-    // We need to calculate what the division threshold would be
-    // a Division threshold = sum of all child energy thresholds
-    // For simplicity, let's use a high energy value
-    BigInteger initialEnergy = BigInteger.valueOf(1000);
+    // Given: entity born at tick 1, momentum cost=1
+    // endOfLife = startOfLife + completeDivisionThreshold
+    // For 2D space with cost=1, completeDivisionThreshold is ~8-10 (depends on directional penalties)
+    // Use tick 1000 to ensure we're past endOfLife
+    BigInteger startOfLife = BigInteger.ONE;
     BigInteger momentumCost = BigInteger.ONE;
     Vector momentumVector = Vector.of(BigInteger.ONE, BigInteger.ZERO);
     Momentum momentum = new Momentum(momentumCost, momentumVector);
@@ -114,14 +119,16 @@ class SingleEntityModelTest {
     SingleEntityModel entity = new SingleEntityModel(
         testSubstrateModel,
         testIdentity,
+        startOfLife,
         testPosition,
-        initialEnergy,
+        BigInteger.ZERO,
         BigInteger.ZERO,
         momentum
     );
 
-    // When
-    List<TickAction<EntityModelUpdate>> actions = entity.onTick(BigInteger.ONE).toList();
+    // When: tick far past endOfLife
+    BigInteger currentTick = BigInteger.valueOf(1000);
+    List<TickAction<EntityModelUpdate>> actions = entity.onTick(currentTick).toList();
 
     // Then
     assertEquals(1, actions.size());
@@ -136,30 +143,32 @@ class SingleEntityModelTest {
     // Verify all children have different identities (not the parent's)
     updatedEntities.forEach(child -> {
       assertNotEquals(testIdentity, child.getIdentity());
-      assertEquals(BigInteger.ONE, child.getGeneration()); // generation + 1
+      assertEquals(BigInteger.ONE, child.getGeneration()); // generation 0 + 1 = 1
       assertEquals(BigInteger.ONE, child.getEnergy().value());
     });
   }
 
   @Test
-  @DisplayName("onTick should maintain entity state when energy stays below movement threshold")
+  @DisplayName("onTick should maintain entity state when tick is before nextPossibleAction")
   void testOnTick_MaintainStateWhenBelowThreshold() {
-    // Given: entity with energy=0, cost=2
-    // After increase: energy=1, which is not divisible by 2
-    BigInteger initialEnergy = BigInteger.ZERO;
+    // Given: entity born at tick 1, cost=2
+    // nextPossibleAction = 1 + 2 = 3
+    // At tick 1, entity should WAIT
+    BigInteger startOfLife = BigInteger.ONE;
     BigInteger momentumCost = BigInteger.valueOf(2);
     Momentum momentum = new Momentum(momentumCost, Vector.of(BigInteger.ONE, BigInteger.ZERO));
 
     SingleEntityModel entity = new SingleEntityModel(
         testSubstrateModel,
         testIdentity,
+        startOfLife,
         testPosition,
-        initialEnergy,
+        BigInteger.ZERO,
         BigInteger.ZERO,
         momentum
     );
 
-    // When
+    // When: tick before nextPossibleAction (tick 1 < 3)
     List<TickAction<EntityModelUpdate>> actions = entity.onTick(BigInteger.ONE).toList();
 
     // Then
@@ -170,25 +179,27 @@ class SingleEntityModelTest {
   @Test
   @DisplayName("onTick should correctly update generation and momentum during division")
   void testOnTick_GenerationIncrementDuringDivision() {
-    // Given: parent with generation=5, high energy, and momentum vector [1, 0]
-    // Energy must be set so that (initialEnergy + 1) % momentumCost == 0
+    // Given: parent with generation=5, and momentum vector [1, 0]
+    // Use tick far past endOfLife to trigger division
     BigInteger parentGeneration = BigInteger.valueOf(5);
     BigInteger parentMomentumCost = BigInteger.valueOf(15);
-    BigInteger initialEnergy = BigInteger.valueOf(1004); // 1004 + 1 = 1005, which is divisible by 15
+    BigInteger startOfLife = BigInteger.ONE;
     Vector parentMomentumVector = Vector.of(BigInteger.ONE, BigInteger.ZERO);
     Momentum parentMomentum = new Momentum(parentMomentumCost, parentMomentumVector);
 
     SingleEntityModel entity = new SingleEntityModel(
         testSubstrateModel,
         testIdentity,
+        startOfLife,
         testPosition,
-        initialEnergy,
+        BigInteger.ZERO,
         parentGeneration,
         parentMomentum
     );
 
-    // When
-    List<TickAction<EntityModelUpdate>> actions = entity.onTick(BigInteger.ONE).toList();
+    // When: tick far past endOfLife to trigger division
+    BigInteger currentTick = BigInteger.valueOf(10000);
+    List<TickAction<EntityModelUpdate>> actions = entity.onTick(currentTick).toList();
     List<EntityModel> children = actions.getFirst().action().update(testSubstrateModel).toList();
 
     // Then: all children should have incremented generation
@@ -241,22 +252,26 @@ class SingleEntityModelTest {
   @Test
   @DisplayName("Entity should maintain identity across non-division updates")
   void testOnTick_IdentityPreservedDuringMovement() {
-    // Given
-    BigInteger initialEnergy = BigInteger.valueOf(2);
+    // Given: entity born at tick 1, cost=3
+    // nextPossibleAction = 1 + 3 = 4
+    // At tick 4, entity moves (but doesn't divide)
+    BigInteger startOfLife = BigInteger.ONE;
     BigInteger momentumCost = BigInteger.valueOf(3);
     Momentum momentum = new Momentum(momentumCost, Vector.of(BigInteger.ONE, BigInteger.ZERO));
 
     SingleEntityModel entity = new SingleEntityModel(
         testSubstrateModel,
         testIdentity,
+        startOfLife,
         testPosition,
-        initialEnergy,
+        BigInteger.ZERO,
         BigInteger.ZERO,
         momentum
     );
 
-    // When
-    List<TickAction<EntityModelUpdate>> actions = entity.onTick(BigInteger.ONE).toList();
+    // When: tick at nextPossibleAction (move, not divide)
+    BigInteger currentTick = BigInteger.valueOf(4);
+    List<TickAction<EntityModelUpdate>> actions = entity.onTick(currentTick).toList();
     List<EntityModel> updatedEntities = actions.getFirst().action().update(testSubstrateModel).toList();
 
     // Then

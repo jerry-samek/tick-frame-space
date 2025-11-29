@@ -1,12 +1,14 @@
 package eu.jerrysamek.tickspace.model.ticktime;
 
 import eu.jerrysamek.tickspace.model.ModelBreakingException;
+import eu.jerrysamek.tickspace.model.substrate.SubstrateModel;
 
 import java.math.BigInteger;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.function.BiConsumer;
+import java.util.stream.Gatherers;
 
 /**
  * Simple tick-based time model that fires updates to TimeTickConsumers.
@@ -42,7 +44,8 @@ public class TickTimeModel implements AutoCloseable {
    * This fires an update to the consumer, incrementing all dimensions by 1.
    */
   public void start() {
-    var tickTaskExecutor = Executors.newWorkStealingPool(Runtime.getRuntime().availableProcessors() * 2);
+    var threadNumber = Runtime.getRuntime().availableProcessors() * 2;
+    var tickTaskExecutor = Executors.newWorkStealingPool(threadNumber);
 
     executor.scheduleWithFixedDelay(() -> {
       tickCount = tickCount.add(BigInteger.ONE);
@@ -52,22 +55,33 @@ public class TickTimeModel implements AutoCloseable {
         var timeUpdateStream = consumer.onTick(tickCount);
 
         var tickUpdate = System.nanoTime();
+
+        // Batch actions before submitting to reduce executor overhead
+        // Instead of 3.2M individual tasks, submit ~320 batch tasks
+        var BATCH_SIZE = 1_000;
+
         timeUpdateStream
             .filter(action -> action.type() == TickTimeConsumer.TickActionType.UPDATE)
+            .parallel()
             .map(TickTimeConsumer.TickAction::action)
-            .map(tickTaskExecutor::submit)
-            .toList()
-            .forEach(future -> {
-              try {
-                future.get();
-              } catch (Exception e) {
-                throw new ModelBreakingException("Issue during tick processing!", e);
+            .gather(Gatherers.windowFixed(BATCH_SIZE))
+            .map(batch ->  // Submit one task per batch that executes all actions sequentially
+                tickTaskExecutor.submit(() -> batch.forEach(Runnable::run)))
+            .gather(Gatherers.windowFixed(threadNumber))
+            .forEach(futures -> {
+              // Wait for all batch tasks to complete
+              for (var future : futures) {
+                try {
+                  future.get();
+                } catch (Exception e) {
+                  throw new ModelBreakingException("Issue during tick processing!", e);
+                }
               }
             });
 
         // CRITICAL: Flip buffers AFTER all futures complete
         // This ensures double-buffering works correctly for EntitiesRegistry
-        if (consumer instanceof eu.jerrysamek.tickspace.model.substrate.SubstrateModel substrate) {
+        if (consumer instanceof SubstrateModel substrate) {
           substrate.flip();
         }
 

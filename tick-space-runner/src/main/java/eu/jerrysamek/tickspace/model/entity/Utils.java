@@ -25,6 +25,34 @@ public class Utils {
     return baseNorm.add(rotationPenalty);
   }
 
+  /**
+   * Optimized version that uses precomputed offset magnitude.
+   * Avoids expensive magnitude calculation by using cached value.
+   *
+   * @param parentMomentum     Parent entity's momentum vector
+   * @param childOffset        Child offset direction
+   * @param childOffsetMagnitude Precomputed magnitude of childOffset (cached)
+   * @param momentumCost       Parent momentum cost
+   * @param depth              Entity generation (depth in lineage tree)
+   * @return Energy cost for this child direction
+   */
+  public static BigInteger computeEnergyCostOptimized(
+      Vector parentMomentum,
+      Vector childOffset,
+      BigInteger childOffsetMagnitude,
+      BigInteger momentumCost,
+      BigInteger depth) {
+    // --- Base spatial norm (optimized: use cached magnitude) ---
+    // baseNorm = |childOffset × momentumCost| = |childOffset| × momentumCost
+    var baseNorm = childOffsetMagnitude.multiply(momentumCost);
+
+    // --- Directional change penalty ---
+    var rotationPenalty = directionalPenalty(parentMomentum, childOffset, depth);
+
+    // --- Final cost ---
+    return baseNorm.add(rotationPenalty);
+  }
+
   // Penalty based on an angle between parent momentum and child offset
   private static BigInteger directionalPenalty(Vector parent, Vector child, BigInteger depth) {
     // Dot product and magnitudes

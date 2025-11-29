@@ -19,11 +19,13 @@ public final class Vector {
 
   private final BigInteger[] components;
   private final int dimensions;
+  private final int hash;
 
   // Private constructor - use factory methods
   private Vector(BigInteger[] components) {
     this.components = components.clone(); // Defensive copy for immutability
     this.dimensions = components.length;
+    this.hash = Arrays.hashCode(components);
   }
 
   /**
@@ -227,7 +229,7 @@ public final class Vector {
 
   @Override
   public int hashCode() {
-    return Arrays.hashCode(components);
+    return hash;
   }
 
   @Override

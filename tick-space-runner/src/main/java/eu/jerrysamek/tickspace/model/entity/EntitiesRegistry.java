@@ -8,16 +8,22 @@ import eu.jerrysamek.tickspace.model.ticktime.TickTimeConsumer;
 
 import java.math.BigInteger;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Map;
+import java.util.Objects;
+import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Stream;
 
 public class EntitiesRegistry implements TickTimeConsumer<SubstrateModelUpdate> {
 
-  // Double-buffering: read from 'entities', write to 'nextEntities', then swap
-  private Map<Position, EntityModel> entities = new ConcurrentHashMap<>();
-  private Map<Position, EntityModel> nextEntities;
+  // Single entity map - no double-buffering needed with event-driven scheduling!
+  // Only entities in currentTickEntities are modified; waiting entities stay untouched
+  private final Map<Position, EntityModel> entities = new ConcurrentHashMap<>();
+
+  // Event-driven scheduling: track which entities need to act on which tick
+  private final Map<BigInteger, Set<Position>> tickSchedule = new ConcurrentHashMap<>();
 
   @Override
   public Stream<TickAction<SubstrateModelUpdate>> onTick(BigInteger tickCount) {
@@ -26,76 +32,83 @@ public class EntitiesRegistry implements TickTimeConsumer<SubstrateModelUpdate> 
         int dimensionCount = model.getDimensionalSize().getDimensionCount();
         var position = new Position(Vector.zero(dimensionCount));
         var momentum = new Momentum(BigInteger.ONE, Vector.zero(dimensionCount));
-        entities.put(position, new SingleEntityModel(model, UUID.randomUUID(), position, BigInteger.ONE, BigInteger.ZERO, momentum));
+        var seedEntity = new SingleEntityModel(model, UUID.randomUUID(), BigInteger.ONE, position, BigInteger.ONE, BigInteger.ZERO, momentum);
+        entities.put(position, seedEntity);
+
+        // Schedule the seed entity for its first action
+        scheduleEntity(seedEntity);
       }));
     }
 
-    // Pre-allocate the next tick's map - assume 50% max growth per tick to avoid resizing
-    int currentSize = entities.size();
-    int nextCapacity = Math.max(1024, (int) (currentSize * 1.5));
-    nextEntities = new ConcurrentHashMap<>(nextCapacity);
+    // Get and remove entities scheduled for this tick (train has left the station!)
+    var currentTickEntities = tickSchedule.remove(tickCount);
+    if (currentTickEntities == null) {
+      currentTickEntities = Collections.emptySet();
+    }
 
-    // Process all entities from the current tick's immutable snapshot
-    return entities.values()
-        .stream()
-        .flatMap(originalEntity ->
-            originalEntity
-                .onTick(tickCount)
-                .map(tickAction -> {
-                  if (tickAction.type() == TickActionType.WAIT) {
-                    // WAIT: entity stays at same position - copy to next map
-                    return new TickAction<>(TickActionType.UPDATE,
-                        substrate ->
-                            nextEntities.put(originalEntity.getPosition(), originalEntity)
-                    );
-                  } else {
-                    // UPDATE: process entity movement/division
-                    return new TickAction<>(TickActionType.UPDATE,
-                        substrate -> tickAction.action()
-                            .update(substrate)
-                            .forEach(updatedEntity -> {
-                              // Validation
-                              if (updatedEntity.getEnergy().value().compareTo(BigInteger.ZERO) < 0) {
-                                throw new ModelBreakingException("Energy is too low! " + originalEntity + " => " + updatedEntity);
-                              }
+    // No need to copy waiting entities - they stay in place!
+    // Only process entities are scheduled to act this tick
+    return currentTickEntities.stream()
+        .map(entities::get)
+        .filter(Objects::nonNull)  // Safety check
+        .flatMap(originalEntity -> {
+          // Remove entity from the old position (will be replaced or removed)
+          entities.remove(originalEntity.getPosition());
 
-                              if (updatedEntity.getMomentum().cost().compareTo(BigInteger.ONE) < 0) {
-                                throw new ModelBreakingException("Momentum is too low! " + originalEntity + " => " + updatedEntity);
-                              }
+          return originalEntity
+              .onTick(tickCount)
+              .map(tickAction -> new TickAction<>(TickActionType.UPDATE,
+                  substrate -> tickAction.action()
+                      .update(substrate)
+                      .forEach(updatedEntity -> {
+                        // Validation
+                        if (updatedEntity.getEnergy().value().compareTo(BigInteger.ZERO) < 0) {
+                          throw new ModelBreakingException("Energy is too low! " + originalEntity + " => " + updatedEntity);
+                        }
 
-                              var newPosition = updatedEntity.getPosition();
+                        if (updatedEntity.getMomentum().cost().compareTo(BigInteger.ONE) < 0) {
+                          throw new ModelBreakingException("Momentum is too low! " + originalEntity + " => " + updatedEntity);
+                        }
 
-                              // Write to nextEntities - collision handling via compute()
-                              nextEntities.compute(newPosition, (_, collidingEntity) -> {
-                                if (collidingEntity == null || updatedEntity.getIdentity().equals(collidingEntity.getIdentity())) {
-                                  return updatedEntity;
-                                } else {
-                                  return CollidingEntityModel.naive(substrate, updatedEntity, collidingEntity);
-                                }
-                              });
-                            })
-                    );
-                  }
-                })
-        );
+                        var newPosition = updatedEntity.getPosition();
+
+                        // Write to entities in-place - collision handling via compute()
+                        var nextEntity = entities.compute(newPosition, (_, collidingEntity) -> {
+                          if (collidingEntity == null || updatedEntity.getIdentity().equals(collidingEntity.getIdentity())) {
+                            // No collision or same entity
+                            return updatedEntity;
+                          } else {
+                            // Collision with a waiting entity - merge
+                            return CollidingEntityModel.naive(substrate, updatedEntity, collidingEntity);
+                          }
+                        });
+
+                        // Schedule for next action
+                        scheduleEntity(nextEntity);
+                      })
+              ));
+        });
+  }
+
+  private void scheduleEntity(EntityModel entity) {
+    if (entity == null) return;
+    var nextTick = entity.getNextPossibleAction();
+    tickSchedule.computeIfAbsent(nextTick, _ -> ConcurrentHashMap.newKeySet())
+        .add(entity.getPosition());
   }
 
   /**
-   * Flips the entity buffers after all tick actions have completed.
-   * MUST be called by TickTimeModel after all futures have completed.
-   * Thread-safe: single-threaded execution guaranteed by TickTimeModel.
+   * No-op now that we use event-driven scheduling with single buffer.
+   * Kept for compatibility with TickTimeModel.
+   * Schedule cleanup happens automatically via remove() in onTick().
    */
   public void flip() {
-    if (nextEntities != null) {
-      entities = nextEntities;  // Atomic pointer swap
-      nextEntities = null;       // Allow GC of an old map
-    }
+    // Nothing to do! Event-driven scheduling removes entries as processed
   }
 
   public Collection<EntityModel> snapshot() {
-    // Double-buffering optimization: 'entities' is immutable during tick processing
-    // All writes go to 'nextEntities', so we can safely return values() without copying
-    // This eliminates ~24MB allocation per tick for 3M entities!
+    // Event-driven optimization: only scheduled entities are modified during tick
+    // Waiting entities remain untouched, so safe to return values() without copying
     return entities.values();
   }
 

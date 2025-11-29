@@ -33,6 +33,7 @@ class CollidingEntityModelTest {
     var entity1 = new SingleEntityModel(
         substrateModel,
         UUID.randomUUID(),
+        BigInteger.ONE,
         testPosition,
         BigInteger.valueOf(100),
         BigInteger.ONE,
@@ -42,6 +43,7 @@ class CollidingEntityModelTest {
     var entity2 = new SingleEntityModel(
         substrateModel,
         UUID.randomUUID(),
+        BigInteger.ONE,
         testPosition,
         BigInteger.valueOf(100),
         BigInteger.ONE,
@@ -66,6 +68,7 @@ class CollidingEntityModelTest {
     var entity1 = new SingleEntityModel(
         substrateModel,
         UUID.randomUUID(),
+        BigInteger.ONE,
         testPosition,
         BigInteger.valueOf(100),
         BigInteger.ONE,
@@ -75,6 +78,7 @@ class CollidingEntityModelTest {
     var entity2 = new SingleEntityModel(
         substrateModel,
         UUID.randomUUID(),
+        BigInteger.ONE,
         testPosition,
         BigInteger.valueOf(100),
         BigInteger.ONE,
@@ -116,6 +120,7 @@ class CollidingEntityModelTest {
     var entity1 = new SingleEntityModel(
         substrateModel,
         UUID.randomUUID(),
+        BigInteger.ONE,
         testPosition,
         BigInteger.valueOf(500),
         BigInteger.ONE,
@@ -125,6 +130,7 @@ class CollidingEntityModelTest {
     var entity2 = new SingleEntityModel(
         substrateModel,
         UUID.randomUUID(),
+        BigInteger.ONE,
         testPosition,
         BigInteger.valueOf(300),
         BigInteger.ONE,
@@ -160,6 +166,7 @@ class CollidingEntityModelTest {
     var entity1 = new SingleEntityModel(
         substrateModel,
         UUID.randomUUID(),
+        BigInteger.ONE,
         testPosition,
         energy1,
         BigInteger.ONE,
@@ -169,6 +176,7 @@ class CollidingEntityModelTest {
     var entity2 = new SingleEntityModel(
         substrateModel,
         UUID.randomUUID(),
+        BigInteger.ONE,
         testPosition,
         energy2,
         BigInteger.ONE,
@@ -200,6 +208,7 @@ class CollidingEntityModelTest {
     var heavy = new SingleEntityModel(
         substrateModel,
         UUID.randomUUID(),
+        BigInteger.ONE,
         testPosition,
         BigInteger.valueOf(9000),
         BigInteger.ONE,
@@ -209,6 +218,7 @@ class CollidingEntityModelTest {
     var light = new SingleEntityModel(
         substrateModel,
         UUID.randomUUID(),
+        BigInteger.ONE,
         testPosition,
         BigInteger.valueOf(1000),
         BigInteger.ONE,
@@ -237,6 +247,7 @@ class CollidingEntityModelTest {
     var entity1 = new SingleEntityModel(
         substrateModel,
         UUID.randomUUID(),
+        BigInteger.ONE,
         testPosition,
         BigInteger.valueOf(1000),
         BigInteger.ONE,
@@ -246,6 +257,7 @@ class CollidingEntityModelTest {
     var entity2 = new SingleEntityModel(
         substrateModel,
         UUID.randomUUID(),
+        BigInteger.ONE,
         testPosition,
         BigInteger.valueOf(1000),
         BigInteger.ONE,
@@ -275,6 +287,7 @@ class CollidingEntityModelTest {
     var entity1 = new SingleEntityModel(
         substrateModel,
         UUID.randomUUID(),
+        BigInteger.ONE,
         testPosition,
         BigInteger.valueOf(500),
         BigInteger.valueOf(5),
@@ -284,6 +297,7 @@ class CollidingEntityModelTest {
     var entity2 = new SingleEntityModel(
         substrateModel,
         UUID.randomUUID(),
+        BigInteger.ONE,
         testPosition,
         BigInteger.valueOf(500),
         BigInteger.valueOf(3),

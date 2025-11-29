@@ -16,9 +16,16 @@ import static java.math.BigInteger.ZERO;
  */
 public class SubstrateModel implements TickTimeConsumer<TickTimeUpdate> {
 
+  /**
+   * Cached metadata for each offset to optimize cost calculations.
+   * Stores precomputed magnitudes to avoid repeated expensive calculations.
+   */
+  public record OffsetMetadata(Vector offset, BigInteger magnitude) {}
+
   private final DimensionalSize dimensionalSize;
   private final EntitiesRegistry registry;
   private final Vector[] offsets;
+  private final OffsetMetadata[] offsetMetadata;
 
   /**
    * Creates a SubstrateModel with the specified number of dimensions.
@@ -29,6 +36,15 @@ public class SubstrateModel implements TickTimeConsumer<TickTimeUpdate> {
     this.dimensionalSize = new DimensionalSize(dimensionCount);
     this.registry = registry;
     this.offsets = generateOffsets(dimensionCount);
+
+    // Precompute offset metadata for performance optimization
+    this.offsetMetadata = new OffsetMetadata[offsets.length];
+    for (int i = 0; i < offsets.length; i++) {
+      this.offsetMetadata[i] = new OffsetMetadata(
+          offsets[i],
+          offsets[i].magnitude()  // Cache the magnitude
+      );
+    }
   }
 
   /**
@@ -63,6 +79,16 @@ public class SubstrateModel implements TickTimeConsumer<TickTimeUpdate> {
    */
   public Vector[] getOffsets() {
     return offsets;
+  }
+
+  /**
+   * Gets precomputed metadata for all offsets (includes cached magnitudes).
+   * Use this for optimized cost calculations.
+   *
+   * @return the offset metadata array
+   */
+  public OffsetMetadata[] getOffsetMetadata() {
+    return offsetMetadata;
   }
 
   /**

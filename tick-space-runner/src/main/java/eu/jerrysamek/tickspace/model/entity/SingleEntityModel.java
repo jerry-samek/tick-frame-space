@@ -21,34 +21,58 @@ public class SingleEntityModel implements EntityModel {
   private final Momentum momentum;
 
   private final List<BigInteger> childEnergyThresholds;
+  private final BigInteger startOfLife;
   private final BigInteger completeDivisionThreshold;
+  private final BigInteger nextPossibleAction;
+  private final BigInteger endOfLife;
 
-  public SingleEntityModel(SubstrateModel model, UUID identity, Position position, BigInteger initialEnergy, BigInteger generation, Momentum momentum) {
-    // Optimize: use array-based loop instead of Stream to reduce allocation overhead
-    var offsets = model.getOffsets();
-    var thresholdsArray = new BigInteger[offsets.length];
+  public SingleEntityModel(SubstrateModel model, UUID identity, BigInteger startOfLife, Position position, BigInteger initialEnergy, BigInteger generation, Momentum momentum) {
+    // Optimize: use cached offset metadata to avoid expensive magnitude calculations
+    var offsetMetadata = model.getOffsetMetadata();
+    var thresholdsArray = new BigInteger[offsetMetadata.length];
     var divisionThreshold = ZERO;
 
-    for (int i = 0; i < offsets.length; i++) {
-      var cost = Utils.computeEnergyCost(momentum.vector(), offsets[i], momentum.cost(), generation);
+    for (int i = 0; i < offsetMetadata.length; i++) {
+      var metadata = offsetMetadata[i];
+      // Use an optimized version with precomputed magnitude
+      var cost = Utils.computeEnergyCostOptimized(
+          momentum.vector(),
+          metadata.offset(),
+          metadata.magnitude(),  // Use cached magnitude
+          momentum.cost(),
+          generation
+      );
       thresholdsArray[i] = cost;
       divisionThreshold = divisionThreshold.add(cost);
     }
 
-    this(identity, position, initialEnergy, generation, momentum,
+    this(identity, startOfLife, position, initialEnergy, generation, momentum,
         List.of(thresholdsArray),
-        divisionThreshold
+        divisionThreshold,
+        startOfLife.add(momentum.cost()),
+        divisionThreshold.add(startOfLife)
     );
   }
 
-  private SingleEntityModel(UUID identity, Position position, BigInteger energyState, BigInteger generation, Momentum momentum, List<BigInteger> childEnergyThresholds, BigInteger completeDivisionThreshold) {
+  private SingleEntityModel(
+      UUID identity,
+      BigInteger startOfLife,
+      Position position,
+      BigInteger energyState,
+      BigInteger generation,
+      Momentum momentum,
+      List<BigInteger> childEnergyThresholds,
+      BigInteger completeDivisionThreshold, BigInteger nextPossibleAction, BigInteger endOfLife) {
     this.identity = identity;
+    this.startOfLife = startOfLife;
     this.energyState = new EnergyState(energyState);
     this.position = position;
     this.generation = generation;
     this.momentum = momentum;
     this.childEnergyThresholds = childEnergyThresholds;
     this.completeDivisionThreshold = completeDivisionThreshold;
+    this.nextPossibleAction = nextPossibleAction;
+    this.endOfLife = endOfLife;
   }
 
   @Override
@@ -59,6 +83,11 @@ public class SingleEntityModel implements EntityModel {
   @Override
   public EnergyState getEnergy() {
     return energyState;
+  }
+
+  @Override
+  public BigInteger tickOfBirth() {
+    return startOfLife;
   }
 
   @Override
@@ -77,16 +106,19 @@ public class SingleEntityModel implements EntityModel {
   }
 
   @Override
-  public Stream<TickAction<EntityModelUpdate>> onTick(BigInteger tickCount) {
-    var newEnergy = energyState.increase();
+  public BigInteger getNextPossibleAction() {
+    return nextPossibleAction;
+  }
 
-    if (newEnergy.remainder(momentum.cost()).compareTo(ZERO) != 0) {
+  @Override
+  public Stream<TickAction<EntityModelUpdate>> onTick(BigInteger tickCount) {
+    if (tickCount.compareTo(nextPossibleAction) < 0) {
       return Stream.of(new TickAction<>(TickActionType.WAIT, _ -> Stream.empty()));
     }
 
     return Stream
         .of(new TickAction<>(TickActionType.UPDATE, substrateModel -> {
-              if (newEnergy.compareTo(completeDivisionThreshold) >= 0) {
+              if (tickCount.compareTo(endOfLife) >= 0) {
                 var offsets = substrateModel.getOffsets();
                 // Create children with matching offset-cost pairs
                 var index = new AtomicInteger(0);
@@ -99,15 +131,14 @@ public class SingleEntityModel implements EntityModel {
                       return new SingleEntityModel(
                           substrateModel,
                           UUID.randomUUID(),
+                          tickCount,
                           newPosition,
                           ONE,
                           generation.add(ONE),
                           new Momentum(momentum.cost().add(childCost), offset));
                     });
-              } else if (newEnergy.remainder(momentum.cost()).compareTo(ZERO) == 0) {
-                return Stream.of(new SingleEntityModel(identity, position.offset(momentum.vector()), newEnergy, generation, momentum, childEnergyThresholds, completeDivisionThreshold));
               } else {
-                return Stream.of(new SingleEntityModel(identity, position, newEnergy, generation, momentum, childEnergyThresholds, completeDivisionThreshold));
+                return Stream.of(new SingleEntityModel(identity, startOfLife, position.offset(momentum.vector()), tickCount.subtract(startOfLife), generation, momentum, childEnergyThresholds, completeDivisionThreshold, nextPossibleAction.add(momentum.cost()), endOfLife));
               }
             })
         );

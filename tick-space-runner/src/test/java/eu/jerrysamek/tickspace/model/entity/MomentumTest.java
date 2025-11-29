@@ -48,14 +48,15 @@ class MomentumTest {
     SingleEntityModel entity = new SingleEntityModel(
         testSubstrateModel,
         testIdentity,
+        BigInteger.ONE,
         testPosition,
         initialEnergy,
         parentGeneration,
         parentMomentum
     );
 
-    // When: entity divides
-    var actions = entity.onTick(BigInteger.ONE).toList();
+    // When: entity divides (use large tick to ensure tickCount >= endOfLife)
+    var actions = entity.onTick(BigInteger.valueOf(10000)).toList();
     List<EntityModel> children = actions.getFirst().action().update(testSubstrateModel).toList();
 
     // Then: 8 children created
@@ -117,6 +118,7 @@ class MomentumTest {
     SingleEntityModel entity = new SingleEntityModel(
         testSubstrateModel,
         testIdentity,
+        BigInteger.ONE,
         testPosition,
         initialEnergy,
         parentGeneration,
@@ -124,7 +126,7 @@ class MomentumTest {
     );
 
     // When
-    var actions = entity.onTick(BigInteger.ONE).toList();
+    var actions = entity.onTick(BigInteger.valueOf(10000)).toList();
     List<EntityModel> children = actions.getFirst().action().update(testSubstrateModel).toList();
 
     // Then: find leading child
@@ -162,6 +164,7 @@ class MomentumTest {
     SingleEntityModel entity = new SingleEntityModel(
         testSubstrateModel,
         testIdentity,
+        BigInteger.ONE,
         testPosition,
         initialEnergy,
         parentGeneration,
@@ -169,7 +172,7 @@ class MomentumTest {
     );
 
     // When
-    var actions = entity.onTick(BigInteger.ONE).toList();
+    var actions = entity.onTick(BigInteger.valueOf(10000)).toList();
     List<EntityModel> children = actions.getFirst().action().update(testSubstrateModel).toList();
 
     // Then: find opposite child [0, -1]
@@ -217,6 +220,7 @@ class MomentumTest {
     SingleEntityModel lowGenEntity = new SingleEntityModel(
         testSubstrateModel,
         UUID.randomUUID(),
+        BigInteger.ONE,
         testPosition,
         lowGenEnergy,
         lowGeneration,
@@ -228,6 +232,7 @@ class MomentumTest {
     SingleEntityModel highGenEntity = new SingleEntityModel(
         testSubstrateModel,
         UUID.randomUUID(),
+        BigInteger.ONE,
         testPosition,
         highGenEnergy,
         highGeneration,
@@ -235,8 +240,8 @@ class MomentumTest {
     );
 
     // When: both divide
-    var lowGenActions = lowGenEntity.onTick(BigInteger.ONE).toList();
-    var highGenActions = highGenEntity.onTick(BigInteger.ONE).toList();
+    var lowGenActions = lowGenEntity.onTick(BigInteger.valueOf(10000)).toList();
+    var highGenActions = highGenEntity.onTick(BigInteger.valueOf(10000)).toList();
 
     List<EntityModel> lowGenChildren = lowGenActions.getFirst().action().update(testSubstrateModel).toList();
     List<EntityModel> highGenChildren = highGenActions.getFirst().action().update(testSubstrateModel).toList();
@@ -276,6 +281,7 @@ class MomentumTest {
     SingleEntityModel entity = new SingleEntityModel(
         testSubstrateModel,
         testIdentity,
+        BigInteger.ONE,
         testPosition,
         initialEnergy,
         parentGeneration,
@@ -283,7 +289,7 @@ class MomentumTest {
     );
 
     // When
-    var actions = entity.onTick(BigInteger.ONE).toList();
+    var actions = entity.onTick(BigInteger.valueOf(10000)).toList();
     List<EntityModel> children = actions.getFirst().action().update(testSubstrateModel).toList();
 
     // Then
