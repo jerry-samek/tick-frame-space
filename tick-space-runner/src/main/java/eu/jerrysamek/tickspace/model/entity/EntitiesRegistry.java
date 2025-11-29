@@ -118,5 +118,15 @@ public class EntitiesRegistry implements TickTimeConsumer<SubstrateModelUpdate> 
 
   public void destroy() {
     entities.clear();
+    tickSchedule.clear();
+  }
+
+  /**
+   * Adds an entity to the registry and schedules it for its next action.
+   * Used for snapshot restoration.
+   */
+  public void addEntity(Position position, EntityModel entity) {
+    entities.put(position, entity);
+    scheduleEntity(entity);
   }
 }

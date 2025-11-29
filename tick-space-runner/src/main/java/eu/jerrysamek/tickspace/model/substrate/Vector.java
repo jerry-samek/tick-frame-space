@@ -25,7 +25,39 @@ public final class Vector {
   private Vector(BigInteger[] components) {
     this.components = components.clone(); // Defensive copy for immutability
     this.dimensions = components.length;
-    this.hash = Arrays.hashCode(components);
+    this.hash = computeSpatialHash(components);
+  }
+
+  /**
+   * Better hash function for spatial coordinates.
+   * Uses long values and prime mixing to reduce collisions.
+   */
+  private static int computeSpatialHash(BigInteger[] components) {
+    // For small values (fit in long), use optimized spatial hashing
+    long hash = 0x517cc1b727220a95L; // Random prime seed
+
+    for (int i = 0; i < components.length; i++) {
+      // Convert to long (safe since values fit in long range)
+      long value = components[i].longValue();
+
+      // Mix using prime multipliers (different per dimension)
+      // These primes are chosen to minimize collisions in 3D space
+      long prime = switch (i % 3) {
+        case 0 -> 73856093L;   // X axis
+        case 1 -> 19349663L;   // Y axis
+        case 2 -> 83492791L;   // Z axis
+        default -> 50331653L;  // Higher dimensions
+      };
+
+      hash ^= value * prime;
+    }
+
+    // Final avalanche mixing
+    hash ^= (hash >>> 32);
+    hash *= 0x27d4eb2d165667c5L;
+    hash ^= (hash >>> 29);
+
+    return (int) hash;
   }
 
   /**

@@ -1,17 +1,14 @@
-import json
 import numpy as np
 import matplotlib.pyplot as plt
 import sys
+from tickspace_snapshot import read_snapshot
 
-snapshot = sys.argv[1]
-
-# Load dataset (replace with your filename)
-with open(snapshot, "r") as f:
-    data = json.load(f)
+# Load snapshot
+snapshot = read_snapshot(sys.argv[1])
 
 # Extract energy and positions
-energies = np.array([e["energy"] for e in data], dtype=float)
-coords = np.array([e["position"] for e in data], dtype=float)
+energies = np.array([e.energy for e in snapshot.entities], dtype=float)
+coords = np.array([e.position for e in snapshot.entities], dtype=float)
 r = np.linalg.norm(coords, axis=1)  # Euclidean radius
 
 # ---- Plot 1: Energy histogram ----

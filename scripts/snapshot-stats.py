@@ -1,11 +1,11 @@
-import json
 import sys
 from collections import defaultdict
+from tickspace_snapshot import read_snapshot
 
-def process_snapshot(json_file, max_entities=None):
+def process_snapshot(snapshot_file, max_entities=None):
     """
-    Stream through a large JSON snapshot of entities and compute shell-wise statistics.
-    Assumes each entity has fields: x, y, z, energy, depth, momentum (list of ints).
+    Process binary snapshot and compute shell-wise statistics.
+    Groups entities by Manhattan radius and computes energy, depth, and momentum stats.
     """
 
     # Aggregates per shell (Manhattan radius)
@@ -18,17 +18,16 @@ def process_snapshot(json_file, max_entities=None):
         "momentum_hist": defaultdict(int)
     })
 
-    with open(json_file, "r") as f:
-        data = json.load(f)
+    snapshot = read_snapshot(snapshot_file)
 
-    for i, e in enumerate(data):
+    for i, entity in enumerate(snapshot.entities):
         if max_entities and i >= max_entities:
             break
 
-        x, y, z = e['position']
-        energy = int(e["energy"])
-        depth = int(e.get("depth", 0))
-        momentum = tuple(e.get("momentum", []))
+        x, y, z = entity.position
+        energy = entity.energy
+        depth = entity.generation
+        momentum = tuple(entity.momentum_vector)
 
         # Manhattan radius
         r = abs(x) + abs(y) + abs(z)

@@ -1,14 +1,13 @@
-import json
 import numpy as np
 import sys
 import matplotlib.pyplot as plt
+from tickspace_snapshot import read_snapshot
 
-# --- 1. Načtení dat z JSON ---
-with open(sys.argv[1], "r") as f:
-    data = json.load(f)
+# --- 1. Načtení dat ze snapshotu ---
+snapshot = read_snapshot(sys.argv[1])
 
-# Očekáváme list bodů: [{"x":..., "y":..., "z":...}, ...]
-points = np.array([entity["position"] for entity in data])
+# Extract position coordinates
+points = np.array([entity.position for entity in snapshot.entities])
 
 # --- 2. Definice pozorovatele ---
 observer_position = np.array([10, 20, 30])  # uprostřed vesmíru

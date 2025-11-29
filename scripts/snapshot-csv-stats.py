@@ -4,18 +4,18 @@ import math
 import sys
 import numpy as np
 from collections import Counter
+from tickspace_snapshot import read_snapshot
 
-# Load frame
-with open(sys.argv[1], "r") as f:
-    data = json.load(f)
+# Load snapshot
+snapshot = read_snapshot(sys.argv[1])
 
-N = len(data)
+N = len(snapshot.entities)
 
-generations = [e["generation"] for e in data]
-energies = [e["energy"] for e in data]
-momentum_costs = [e["momentum"]["cost"] for e in data]
-positions = [e["position"] for e in data]
-momentum_vectors = [e["momentum"]["vector"] for e in data]
+generations = [e.generation for e in snapshot.entities]
+energies = [e.energy for e in snapshot.entities]
+momentum_costs = [e.momentum_cost for e in snapshot.entities]
+positions = [e.position for e in snapshot.entities]
+momentum_vectors = [e.momentum_vector for e in snapshot.entities]
 
 # --- Basic stats ---
 stats = {
