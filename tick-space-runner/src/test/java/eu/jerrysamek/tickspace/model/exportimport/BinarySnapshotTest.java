@@ -1,6 +1,6 @@
 package eu.jerrysamek.tickspace.model.exportimport;
 
-import eu.jerrysamek.tickspace.model.entity.EntitiesRegistry;
+import eu.jerrysamek.tickspace.model.entity.EntitiesRegistryLegacy;
 import eu.jerrysamek.tickspace.model.entity.Momentum;
 import eu.jerrysamek.tickspace.model.entity.SingleEntityModel;
 import eu.jerrysamek.tickspace.model.substrate.Position;
@@ -25,12 +25,12 @@ class BinarySnapshotTest {
   Path tempDir;
 
   private SubstrateModel substrateModel;
-  private EntitiesRegistry registry;
+  private EntitiesRegistryLegacy registry;
   private SnapshotManager snapshotManager;
 
   @BeforeEach
   void setUp() {
-    registry = new EntitiesRegistry();
+    registry = new EntitiesRegistryLegacy();
     substrateModel = new SubstrateModel(3, registry);
     snapshotManager = new SnapshotManager(true);
   }

@@ -29,7 +29,7 @@ class MomentumTest {
 
   @BeforeEach
   void setUp() {
-    EntitiesRegistry registry = new EntitiesRegistry();
+    EntitiesRegistryLegacy registry = new EntitiesRegistryLegacy();
     testSubstrateModel = new SubstrateModel(2, registry);
     testIdentity = UUID.randomUUID();
     testPosition = new Position(Vector.of(FlexInteger.ZERO, FlexInteger.ZERO));

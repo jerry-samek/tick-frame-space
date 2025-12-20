@@ -1,6 +1,6 @@
 package eu.jerrysamek.tickspace.model.substrate;
 
-public record Position(Vector coordinates) {
+public value record Position(Vector coordinates) {
 
   public Position offset(Vector offset) {
     return new Position(coordinates.add(offset));

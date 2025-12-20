@@ -1,7 +1,6 @@
 package eu.jerrysamek.tickspace.model.ticktime;
 
 import eu.jerrysamek.tickspace.model.ModelBreakingException;
-import eu.jerrysamek.tickspace.model.substrate.SubstrateModel;
 import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
 import java.util.concurrent.Executors;
@@ -78,12 +77,6 @@ public class TickTimeModel implements AutoCloseable {
                 }
               }
             });
-
-        // CRITICAL: Flip buffers AFTER all futures complete
-        // This ensures double-buffering works correctly for EntitiesRegistry
-        if (consumer instanceof SubstrateModel substrate) {
-          substrate.flip();
-        }
 
         var tickExecution = System.nanoTime();
 

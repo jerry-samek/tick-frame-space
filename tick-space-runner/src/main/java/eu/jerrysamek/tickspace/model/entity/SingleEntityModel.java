@@ -4,7 +4,7 @@ import eu.jerrysamek.tickspace.model.substrate.Position;
 import eu.jerrysamek.tickspace.model.substrate.SubstrateModel;
 import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
-import java.util.List;
+import java.util.Arrays;
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Stream;
@@ -12,14 +12,14 @@ import java.util.stream.Stream;
 import static eu.jerrysamek.tickspace.model.util.FlexInteger.ONE;
 import static eu.jerrysamek.tickspace.model.util.FlexInteger.ZERO;
 
-public class SingleEntityModel implements EntityModel {
+public value class SingleEntityModel implements EntityModel {
 
   private final UUID identity;
   private final FlexInteger generation;
   private final Position position;
   private final Momentum momentum;
 
-  private final List<FlexInteger> childEnergyThresholds;
+  private final FlexInteger[] childEnergyThresholds;
   private final FlexInteger startOfLife;
   private final FlexInteger completeDivisionThreshold;
   private final FlexInteger nextPossibleAction;
@@ -46,7 +46,7 @@ public class SingleEntityModel implements EntityModel {
     }
 
     this(identity, startOfLife, position, generation, momentum,
-        List.of(thresholdsArray),
+        thresholdsArray,
         divisionThreshold,
         startOfLife.add(momentum.cost()),
         divisionThreshold.add(startOfLife)
@@ -59,7 +59,7 @@ public class SingleEntityModel implements EntityModel {
       Position position,
       FlexInteger generation,
       Momentum momentum,
-      List<FlexInteger> childEnergyThresholds,
+      FlexInteger[] childEnergyThresholds,
       FlexInteger completeDivisionThreshold, FlexInteger nextPossibleAction, FlexInteger endOfLife) {
     this.identity = identity;
     this.startOfLife = startOfLife;
@@ -119,7 +119,7 @@ public class SingleEntityModel implements EntityModel {
                 var offsets = substrateModel.getOffsets();
                 // Create children with matching offset-cost pairs
                 var index = new AtomicInteger(0);
-                return childEnergyThresholds.stream()
+                return Arrays.stream(childEnergyThresholds)
                     .map(childCost -> {
                       var offsetIndex = index.getAndIncrement();
                       var offset = offsets[offsetIndex];
@@ -131,7 +131,7 @@ public class SingleEntityModel implements EntityModel {
                           tickCount,
                           newPosition,
                           generation.add(ONE),
-                          new Momentum(momentum.cost().add(childCost), offset));
+                          new Momentum(childCost, offset));
                     });
               } else {
                 return Stream.of(new SingleEntityModel(identity, startOfLife, position.offset(momentum.vector()), generation, momentum, childEnergyThresholds, completeDivisionThreshold, nextPossibleAction.add(momentum.cost()), endOfLife));

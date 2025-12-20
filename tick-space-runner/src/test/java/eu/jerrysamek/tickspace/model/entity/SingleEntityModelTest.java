@@ -26,7 +26,7 @@ class SingleEntityModelTest {
   @BeforeEach
   void setUp() {
     // Create a real SubstrateModel with 2D space for testing
-    EntitiesRegistry registry = new EntitiesRegistry();
+    EntitiesRegistryLegacy registry = new EntitiesRegistryLegacy();
     testSubstrateModel = new SubstrateModel(2, registry);
 
     testIdentity = UUID.randomUUID();
@@ -141,9 +141,9 @@ class SingleEntityModelTest {
     updatedEntities.forEach(child -> {
       assertNotEquals(testIdentity, child.getIdentity());
       assertEquals(FlexInteger.ONE, child.getGeneration()); // generation 0 + 1 = 1
-      // Children are born at currentTick, so energy at currentTick = currentTick - currentTick = 0
+      // Children were born at currentTick, so energy at currentTick = currentTick - currentTick = 0
       assertEquals(FlexInteger.ZERO, child.getEnergy(currentTick));
-      // Energy at next tick should be 1
+      // Energy at the next tick should be 1
       assertEquals(FlexInteger.ONE, child.getEnergy(currentTick.add(FlexInteger.ONE)));
     });
   }

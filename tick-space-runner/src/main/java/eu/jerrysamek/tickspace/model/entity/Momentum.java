@@ -3,7 +3,7 @@ package eu.jerrysamek.tickspace.model.entity;
 import eu.jerrysamek.tickspace.model.substrate.Vector;
 import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
-public record Momentum(FlexInteger cost, Vector vector) {
+public value record Momentum(FlexInteger cost, Vector vector) {
 
   public FlexInteger totalCost() {
     // Use Vector operations for cleaner code

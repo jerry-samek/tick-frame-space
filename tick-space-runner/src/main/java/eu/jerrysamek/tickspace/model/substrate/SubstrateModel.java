@@ -1,6 +1,5 @@
 package eu.jerrysamek.tickspace.model.substrate;
 
-import eu.jerrysamek.tickspace.model.entity.EntitiesRegistry;
 import eu.jerrysamek.tickspace.model.ticktime.TickTimeConsumer;
 import eu.jerrysamek.tickspace.model.ticktime.TickTimeUpdate;
 import eu.jerrysamek.tickspace.model.util.FlexInteger;
@@ -21,10 +20,11 @@ public class SubstrateModel implements TickTimeConsumer<TickTimeUpdate> {
    * Cached metadata for each offset to optimize cost calculations.
    * Stores precomputed magnitudes to avoid repeated expensive calculations.
    */
-  public record OffsetMetadata(Vector offset, FlexInteger magnitude) {}
+  public record OffsetMetadata(Vector offset, FlexInteger magnitude) {
+  }
 
   private final DimensionalSize dimensionalSize;
-  private final EntitiesRegistry registry;
+  private final TickTimeConsumer<SubstrateModelUpdate> tickTimeConsumer;
   private final Vector[] offsets;
   private final OffsetMetadata[] offsetMetadata;
 
@@ -33,9 +33,9 @@ public class SubstrateModel implements TickTimeConsumer<TickTimeUpdate> {
    *
    * @param dimensionCount the number of dimensions
    */
-  public SubstrateModel(int dimensionCount, EntitiesRegistry registry) {
+  public SubstrateModel(int dimensionCount, TickTimeConsumer<SubstrateModelUpdate> tickTimeConsumer) {
     this.dimensionalSize = new DimensionalSize(dimensionCount);
-    this.registry = registry;
+    this.tickTimeConsumer = tickTimeConsumer;
     this.offsets = generateOffsets(dimensionCount);
 
     // Precompute offset metadata for performance optimization
@@ -57,7 +57,7 @@ public class SubstrateModel implements TickTimeConsumer<TickTimeUpdate> {
         dimensionalSize
             .onTick(tickCount)
             .map(tickAction -> new TickAction<>(tickAction.type(), () -> tickAction.action().run())),
-        registry
+        tickTimeConsumer
             .onTick(tickCount)
             .filter(substrateModelUpdateTickAction -> substrateModelUpdateTickAction.type() == TickActionType.UPDATE)
             .map(TickAction::action)
@@ -147,15 +147,6 @@ public class SubstrateModel implements TickTimeConsumer<TickTimeUpdate> {
     }
 
     return offsets;
-  }
-
-  /**
-   * Flips double-buffered state after all tick actions complete.
-   * Called by TickTimeModel to ensure buffer swap happens AFTER
-   * all parallel entity updates finish.
-   */
-  public void flip() {
-    registry.flip();
   }
 
   @Override

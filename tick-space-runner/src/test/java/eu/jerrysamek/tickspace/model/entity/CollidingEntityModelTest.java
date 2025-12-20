@@ -21,7 +21,7 @@ class CollidingEntityModelTest {
 
   @BeforeEach
   void setUp() {
-    EntitiesRegistry registry = new EntitiesRegistry();
+    EntitiesRegistryLegacy registry = new EntitiesRegistryLegacy();
     substrateModel = new SubstrateModel(3, registry);
     testPosition = new Position(Vector.of(FlexInteger.ZERO, FlexInteger.ZERO, FlexInteger.ZERO));
   }

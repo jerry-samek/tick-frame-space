@@ -1,16 +1,16 @@
 package eu.jerrysamek.tickspace.model.exportimport;
 
 import eu.jerrysamek.tickspace.model.entity.EntitiesRegistry;
+import eu.jerrysamek.tickspace.model.entity.EntitiesRegistryLegacy;
 import eu.jerrysamek.tickspace.model.substrate.SubstrateModel;
 import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
 import java.io.IOException;
-import java.math.BigInteger;
 import java.nio.file.Path;
 
 /**
  * High-level manager for creating and restoring simulation snapshots.
- * Handles coordination between TickTimeModel, SubstrateModel, and EntitiesRegistry.
+ * Handles coordination between TickTimeModel, SubstrateModel, and EntitiesRegistryLegacy.
  */
 public class SnapshotManager {
 
@@ -29,8 +29,8 @@ public class SnapshotManager {
   /**
    * Creates a snapshot of the current simulation state.
    *
-   * @param tickCount current tick
-   * @param registry entities registry
+   * @param tickCount      current tick
+   * @param registry       entities registry
    * @param dimensionCount number of dimensions
    * @return snapshot
    */
@@ -65,7 +65,7 @@ public class SnapshotManager {
    * @param registry the entities registry to populate
    * @return the tick count from the snapshot
    */
-  public FlexInteger restore(SimulationSnapshot snapshot, EntitiesRegistry registry) {
+  public FlexInteger restore(SimulationSnapshot snapshot, EntitiesRegistryLegacy registry) {
     // Clear current state
     registry.destroy();
 

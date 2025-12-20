@@ -5,41 +5,51 @@ from tickspace_snapshot import read_snapshot
 
 # --- 1. Načtení dat ze snapshotu ---
 snapshot = read_snapshot(sys.argv[1])
-
-# Extract position coordinates
 points = np.array([entity.position for entity in snapshot.entities])
 
-# --- 2. Definice pozorovatele ---
-observer_position = np.array([10, 20, 30])  # uprostřed vesmíru
-fov_radius = 100.0                        # poloměr pole vidění
-resolution = (256, 256)                  # rozlišení senzoru (např. 256x256)
+# --- 2. Parametry pozorovatele ---
+observer_position = np.array([0.0, 0.0, 0.0])
+fov_radius = 100.0
+resolution = (256, 256)
 
-# --- 3. Výběr bodů v poli vidění ---
-distances = np.linalg.norm(points - observer_position, axis=1)
-visible_points = points[distances < fov_radius]
+# --- 3. Funkce pro vykreslení ---
+def update_view():
+    pts_obs = points - observer_position
+    x = pts_obs[:, 0]
+    y = pts_obs[:, 1]
 
-# --- 4. Projekce na rovinu XY ---
-# (můžeš změnit na jinou rovinu podle orientace pozorovatele)
-pts_obs = points - observer_position
+    img, _, _ = np.histogram2d(
+        x, y, bins=resolution,
+        range=[[-fov_radius, fov_radius], [-fov_radius, fov_radius]]
+    )
+    ax.clear()
+    ax.imshow(img.T, origin="lower", cmap="inferno",
+              extent=[-fov_radius, fov_radius, -fov_radius, fov_radius])
+    ax.set_title(f"Observer view at {observer_position}")
+    ax.set_xlabel("X axis")
+    ax.set_ylabel("Y axis")
+    plt.draw()
 
-# Project to XY in observer frame
-x = pts_obs[:, 0]
-y = pts_obs[:, 1]
+# --- 4. Ovládání kláves ---
+def on_key(event):
+    global observer_position
+    step = 5.0  # krok posunu
+    if event.key == "up":
+        observer_position[1] += step
+    elif event.key == "down":
+        observer_position[1] -= step
+    elif event.key == "left":
+        observer_position[0] -= step
+    elif event.key == "right":
+        observer_position[0] += step
+    elif event.key == "pageup":
+        observer_position[2] += step
+    elif event.key == "pagedown":
+        observer_position[2] -= step
+    update_view()
 
-#x = visible_points[:, 0]
-#y = visible_points[:, 1]
-
-# --- 5. Rasterizace do obrazu ---
-img, xedges, yedges = np.histogram2d(
-    x, y, bins=resolution, range=[[-fov_radius, fov_radius], [-fov_radius, fov_radius]]
-)
-
-# --- 6. Vizualizace ---
-plt.figure(figsize=(6,6))
-plt.imshow(img.T, origin="lower", cmap="inferno",
-           extent=[-fov_radius, fov_radius, -fov_radius, fov_radius])
-plt.title("Observer view")
-plt.xlabel("X axis")
-plt.ylabel("Y axis")
-plt.colorbar(label="Counts")
+# --- 5. Inicializace ---
+fig, ax = plt.subplots(figsize=(6,6))
+fig.canvas.mpl_connect("key_press_event", on_key)
+update_view()
 plt.show()

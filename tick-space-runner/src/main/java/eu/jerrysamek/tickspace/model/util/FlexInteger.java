@@ -25,7 +25,7 @@ import java.math.BigInteger;
  *
  * @author tick-frame-space optimization
  */
-public final class FlexInteger implements Comparable<FlexInteger> {
+public value class FlexInteger implements Comparable<FlexInteger> {
 
   // Constants - pre-allocated for common values
   public static final FlexInteger ZERO = new FlexInteger(0L, null, false);
@@ -57,7 +57,7 @@ public final class FlexInteger implements Comparable<FlexInteger> {
     if (value == 1L) {
       return ONE;
     }
-    if (value == 10L){
+    if (value == 10L) {
       return TEN;
     }
 
