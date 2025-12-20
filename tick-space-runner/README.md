@@ -218,7 +218,7 @@ Snapshots are exported as JSON arrays of entity objects:
 ## Building and Running
 
 ### Prerequisites
-- Java 25+ (uses virtual threads, pattern matching)
+- Java 26+ (experimental use of project Valhalla)
 - Maven 3.9+
 
 ### Build
@@ -231,7 +231,7 @@ mvn clean package
 mvn exec:java -pl tick-space-runner -Dexec.mainClass="eu.jerrysamek.tickspace.runner.LocalApp"
 ```
 
-**Note:** Ensure output directory exists:
+**Note:** Ensure the output directory exists:
 ```bash
 mkdir -p W:\data\snapshots
 ```

@@ -1,53 +1,75 @@
 package eu.jerrysamek.tickspace.model.entity;
 
+import eu.jerrysamek.tickspace.model.substrate.Vector;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
+
 import java.math.BigInteger;
-import java.util.Arrays;
 
 public class Utils {
+  private Utils() {
+  }
 
   // Compute energy cost for child move relative to parent momentum
-  public static BigInteger computeEnergyCost(BigInteger[] parentMomentum,
-                                             BigInteger[] childOffset,
-                                             BigInteger momentumCost,
-                                             BigInteger depth) {
-    // --- Base spatial norm (your current logic) ---
-    BigInteger normSquared = Arrays.stream(childOffset)
-        .map(c -> c.multiply(momentumCost).pow(2))
-        .reduce(BigInteger.ZERO, BigInteger::add);
-
-    BigInteger baseNorm = sqrt(normSquared);
+  public static FlexInteger computeEnergyCost(
+      Vector parentMomentum,
+      Vector childOffset,
+      FlexInteger momentumCost,
+      FlexInteger depth) {
+    // --- Base spatial norm ---
+    var scaledOffset = childOffset.scale(momentumCost);
+    var baseNorm = scaledOffset.magnitude();
 
     // --- Directional change penalty ---
-    BigInteger rotationPenalty = directionalPenalty(parentMomentum, childOffset, depth);
+    var rotationPenalty = directionalPenalty(parentMomentum, childOffset, depth);
+
+    // --- Final cost ---
+    return baseNorm.add(rotationPenalty);
+  }
+
+  /**
+   * Optimized version that uses precomputed offset magnitude.
+   * Avoids expensive magnitude calculation by using cached value.
+   *
+   * @param parentMomentum     Parent entity's momentum vector
+   * @param childOffset        Child offset direction
+   * @param childOffsetMagnitude Precomputed magnitude of childOffset (cached)
+   * @param momentumCost       Parent momentum cost
+   * @param depth              Entity generation (depth in lineage tree)
+   * @return Energy cost for this child direction
+   */
+  public static FlexInteger computeEnergyCostOptimized(
+      Vector parentMomentum,
+      Vector childOffset,
+      FlexInteger childOffsetMagnitude,
+      FlexInteger momentumCost,
+      FlexInteger depth) {
+    // --- Base spatial norm (optimized: use cached magnitude) ---
+    // baseNorm = |childOffset × momentumCost| = |childOffset| × momentumCost
+    var baseNorm = childOffsetMagnitude.multiply(momentumCost);
+
+    // --- Directional change penalty ---
+    var rotationPenalty = directionalPenalty(parentMomentum, childOffset, depth);
 
     // --- Final cost ---
     return baseNorm.add(rotationPenalty);
   }
 
   // Penalty based on an angle between parent momentum and child offset
-  private static BigInteger directionalPenalty(BigInteger[] parent, BigInteger[] child, BigInteger depth) {
-    // Dot product
-    BigInteger dot = BigInteger.ZERO;
-    for (int i = 0; i < parent.length; i++) {
-      dot = dot.add(parent[i].multiply(child[i]));
-    }
-
-    // Magnitudes
-    BigInteger parentNormSq = Arrays.stream(parent).map(c -> c.pow(2)).reduce(BigInteger.ZERO, BigInteger::add);
-    BigInteger childNormSq = Arrays.stream(child).map(c -> c.pow(2)).reduce(BigInteger.ZERO, BigInteger::add);
-
-    BigInteger parentNorm = sqrt(parentNormSq);
-    BigInteger childNorm = sqrt(childNormSq);
+  private static FlexInteger directionalPenalty(Vector parent, Vector child, FlexInteger depth) {
+    // Dot product and magnitudes
+    var dot = parent.dot(child);
+    var parentNorm = parent.magnitude();
+    var childNorm = child.magnitude();
 
     // Cosine similarity scaled to integer domain
     // cosθ ≈ dot / (|p||c|)
-    BigInteger denom = parentNorm.multiply(childNorm);
+    var denom = parentNorm.multiply(childNorm);
     int angleCategory;
     if (denom.equals(BigInteger.ZERO)) {
       angleCategory = 0; // no penalty if parent momentum is zero
     } else {
       // Compare dot to denom fractions to classify angle
-      int cmp = dot.compareTo(denom); // dot vs |p||c|
+      var cmp = dot.compareTo(denom); // dot vs |p||c|
       if (cmp >= 0) {
         angleCategory = 0; // same direction
       } else if (dot.signum() < 0) {
@@ -58,20 +80,6 @@ public class Utils {
     }
 
     // Depth scaling: older lineages pay more to rotate
-    return BigInteger.valueOf(angleCategory).multiply(depth);
-  }
-
-  // Integer-safe sqrt (floor)
-  private static BigInteger sqrt(BigInteger x) {
-    BigInteger r = BigInteger.ZERO;
-    BigInteger bit = BigInteger.ONE.shiftLeft(x.bitLength() / 2 + 1);
-    while (bit.compareTo(BigInteger.ZERO) > 0) {
-      BigInteger t = r.add(bit);
-      if (t.multiply(t).compareTo(x) <= 0) {
-        r = t;
-      }
-      bit = bit.shiftRight(1);
-    }
-    return r;
+    return FlexInteger.of(angleCategory).multiply(depth);
   }
 }

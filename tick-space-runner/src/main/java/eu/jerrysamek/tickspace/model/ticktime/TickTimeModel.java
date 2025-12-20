@@ -1,10 +1,13 @@
 package eu.jerrysamek.tickspace.model.ticktime;
 
-import java.math.BigInteger;
+import eu.jerrysamek.tickspace.model.ModelBreakingException;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
+
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-import java.util.function.Consumer;
+import java.util.function.BiConsumer;
+import java.util.stream.Gatherers;
 
 /**
  * Simple tick-based time model that fires updates to TimeTickConsumers.
@@ -15,15 +18,15 @@ public class TickTimeModel implements AutoCloseable {
   private final ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
 
   private final TickTimeConsumer<TickTimeUpdate> consumer;
-  private BigInteger tickCount = BigInteger.ZERO;
-  private final Consumer<BigInteger> afterTick;
+  private FlexInteger tickCount = FlexInteger.ZERO;
+  private final BiConsumer<TickTimeModel, FlexInteger> afterTick;
 
   /**
    * Creates a TickTimeModel with the associated TickTimeConsumer.
    *
    * @param consumer the consumer to update on each tick
    */
-  public TickTimeModel(final TickTimeConsumer<TickTimeUpdate> consumer, final Consumer<BigInteger> afterTick) {
+  public TickTimeModel(final TickTimeConsumer<TickTimeUpdate> consumer, final BiConsumer<TickTimeModel, FlexInteger> afterTick) {
     if (consumer == null) {
       throw new IllegalArgumentException("TickTimeConsumer cannot be null");
     }
@@ -31,29 +34,47 @@ public class TickTimeModel implements AutoCloseable {
     this.afterTick = afterTick;
   }
 
+  public void stop() {
+    executor.shutdownNow();
+  }
+
   /**
    * Starts tick updates
    * This fires an update to the consumer, incrementing all dimensions by 1.
    */
   public void start() {
-    var tickTaskExecutor = Executors.newWorkStealingPool(Runtime.getRuntime().availableProcessors() * 2);
+    var threadNumber = Runtime.getRuntime().availableProcessors() * 2;
+    var tickTaskExecutor = Executors.newWorkStealingPool(threadNumber);
 
     executor.scheduleWithFixedDelay(() -> {
-      tickCount = tickCount.add(BigInteger.ONE);
+      tickCount = tickCount.add(FlexInteger.ONE);
       try {
         var start = System.nanoTime();
 
         var timeUpdateStream = consumer.onTick(tickCount);
 
         var tickUpdate = System.nanoTime();
+
+        // Batch actions before submitting to reduce executor overhead
+        // Instead of 3.2M individual tasks, submit ~320 batch tasks
+        var BATCH_SIZE = 1_000;
+
         timeUpdateStream
-            .map(tickTaskExecutor::submit)
-            .toList()
-            .forEach(future -> {
-              try {
-                future.get();
-              } catch (Exception e) {
-                throw new RuntimeException(e);
+            .filter(action -> action.type() == TickTimeConsumer.TickActionType.UPDATE)
+            .parallel()
+            .map(TickTimeConsumer.TickAction::action)
+            .gather(Gatherers.windowFixed(BATCH_SIZE))
+            .map(batch ->  // Submit one task per batch that executes all actions sequentially
+                tickTaskExecutor.submit(() -> batch.forEach(Runnable::run)))
+            .gather(Gatherers.windowFixed(threadNumber))
+            .forEach(futures -> {
+              // Wait for all batch tasks to complete
+              for (var future : futures) {
+                try {
+                  future.get();
+                } catch (Exception e) {
+                  throw new ModelBreakingException("Issue during tick processing!", e);
+                }
               }
             });
 
@@ -63,7 +84,7 @@ public class TickTimeModel implements AutoCloseable {
         final double executionMs = (tickExecution - tickUpdate) / 1_000_000.0;
         final double totalMs = (tickExecution - start) / 1_000_000.0;
 
-        afterTick.accept(tickCount);
+        afterTick.accept(this, tickCount);
 
         System.out.printf(" - statistics: update=%.2f ms, execution=%.2f ms, total=%.2f ms%n", updateMs, executionMs, totalMs);
       } catch (Exception e) {
@@ -77,7 +98,7 @@ public class TickTimeModel implements AutoCloseable {
    *
    * @return the tick count
    */
-  public BigInteger getTickCount() {
+  public FlexInteger getTickCount() {
     return tickCount;
   }
 

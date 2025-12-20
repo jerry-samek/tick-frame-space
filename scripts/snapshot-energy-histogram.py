@@ -1,24 +1,21 @@
-import json
 import numpy as np
 import matplotlib.pyplot as plt
 import sys
+from tickspace_snapshot import read_snapshot
 
-snapshot = sys.argv[1]
-
-# Load dataset (replace with your filename)
-with open(snapshot, "r") as f:
-    data = json.load(f)
+# Load snapshot
+snapshot = read_snapshot(sys.argv[1])
 
 # Extract energy and positions
-energies = np.array([e["energy"] for e in data], dtype=float)
-coords = np.array([e["position"]["coordinates"] for e in data], dtype=float)
+energies = np.array([e.energy for e in snapshot.entities], dtype=float)
+coords = np.array([e.position for e in snapshot.entities], dtype=float)
 r = np.linalg.norm(coords, axis=1)  # Euclidean radius
 
 # ---- Plot 1: Energy histogram ----
 plt.figure(figsize=(7, 4))
 bins = np.linspace(energies.min(), energies.max(), 25)
 plt.hist(energies, bins=bins, color="#8bd3c7", edgecolor="#1b1f23")
-plt.title("Energy distribution at step 8800")
+plt.title("Energy distribution")
 plt.xlabel("Energy")
 plt.ylabel("Count")
 plt.tight_layout()
@@ -34,7 +31,7 @@ centers = 0.5 * (edges[1:] + edges[:-1])
 
 plt.plot(centers, counts, color="#e07a5f", lw=2)
 plt.fill_between(centers, counts, step="mid", alpha=0.25, color="#e07a5f")
-plt.title("Radial density at step 8800")
+plt.title("Radial density")
 plt.xlabel("Radius from origin")
 plt.ylabel("Entities per shell")
 plt.tight_layout()

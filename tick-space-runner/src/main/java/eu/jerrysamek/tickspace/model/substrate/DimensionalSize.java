@@ -1,8 +1,8 @@
 package eu.jerrysamek.tickspace.model.substrate;
 
 import eu.jerrysamek.tickspace.model.ticktime.TickTimeConsumer;
+import eu.jerrysamek.tickspace.model.util.FlexInteger;
 
-import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
@@ -11,7 +11,7 @@ import java.util.stream.Stream;
  * Each dimension's length is stored independently in an array.
  */
 public class DimensionalSize implements TickTimeConsumer<DimensionalSizeUpdate> {
-  private final BigInteger[] dimensions;
+  private final FlexInteger[] dimensions;
 
   /**
    * Creates a DimensionalSize with the specified number of dimensions.
@@ -24,9 +24,9 @@ public class DimensionalSize implements TickTimeConsumer<DimensionalSizeUpdate> 
       throw new IllegalArgumentException("Dimension count must be positive");
     }
 
-    this.dimensions = new BigInteger[dimensionCount];
+    this.dimensions = new FlexInteger[dimensionCount];
 
-    Arrays.fill(this.dimensions, BigInteger.ZERO);
+    Arrays.fill(this.dimensions, FlexInteger.ZERO);
   }
 
   /**
@@ -44,13 +44,13 @@ public class DimensionalSize implements TickTimeConsumer<DimensionalSizeUpdate> 
    * @param index the dimension index
    * @return the length of the dimension
    */
-  public BigInteger getDimensionSize(int index) {
+  public FlexInteger getDimensionSize(int index) {
     return dimensions[index];
   }
 
   @Override
-  public Stream<DimensionalSizeUpdate> onTick(BigInteger tickCount) {
-    return Stream.of(() -> Arrays.fill(dimensions, tickCount));
+  public Stream<TickAction<DimensionalSizeUpdate>> onTick(FlexInteger tickCount) {
+    return Stream.of(new TickAction<>(TickActionType.UPDATE, () -> Arrays.fill(dimensions, tickCount)));
   }
 
   @Override

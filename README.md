@@ -1,4 +1,5 @@
 # Tick-Frame Space: Dimensional Physics Experiments
+*Coherence over Orthodoxy: a model is valid if it is internally consistent, falsifiable, and explanatory, regardless of its alignment with current physical dogma.*
 
 Welcome to the Tick-Frame Space project. My pet project on "garden leave." This repository contains a "working" **Java substrate model**, theoretical documentation, and experimental validation of discrete tick-frame physics. However, don't take it too seriously and feel free to correct me if I'm wrong (I definitely am). I'm an engineer, not a scientist. And I have plenty of spare memory-time to just think about crazy stuff.
 
@@ -10,7 +11,7 @@ This is an exploration of how far the current Java can be pushed before collapsi
 - **Entities are collision patterns** that persist through temporal renewal
 - **Everything is deterministic** at the substrate layer (no randomness, no infinity)
 - **Everything is natural numbers** (BigInteger) - no fractions allowed
-- **Energy is a function of time** (linear, not conserved from initial state)
+- **Energy is a function of time** (linear, not conserved from the initial state)
 
 Every programmer is welcome to propose suggestions, optimizations, or tweaks. If you want to rewrite this model in another language, you are more than welcome.
 
@@ -65,7 +66,7 @@ python scripts/snapshot-energy-histogram.py W:\data\snapshots\time-frame.5000.js
 
 ## 🧩 Substrate Model Implementation
 
-The **tick-space-runner** module contains the operational Java implementation of tick-frame physics.
+The **tick-space-runner** module contains the operational Java (26) implementation of tick-frame physics.
 
 ### Core Components
 
