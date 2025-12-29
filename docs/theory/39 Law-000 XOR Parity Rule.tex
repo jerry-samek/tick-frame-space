@@ -1,0 +1,296 @@
+\section{Law-000: XOR Parity Rule}
+
+\subsection{Status}
+Draft 1
+
+\subsection{Purpose}
+Define the minimal, parameter-free evolution rule for a discrete substrate represented as a graph without coordinates, geometry, or physical constants.
+
+\subsection{1. Substrate: Coordinate-Free Graph}
+
+The substrate consists of:
+
+\begin{itemize}
+    \item A set of nodes \(N\), finite or countably infinite.
+    \item A set of edges \(E \subseteq N \times N\), representing adjacency only.
+    \item Binary node states:
+    \[
+        S_t : N \rightarrow \{0,1\}
+    \]
+    where \(S_t(n)\) is the state of node \(n\) at tick \(t\).
+    \item A global discrete tick index \(t \in \mathbb{Z}_{\ge 0}\).
+\end{itemize}
+
+Edges are assumed symmetric:
+\[
+    (n,m) \in E \Rightarrow (m,n) \in E.
+\]
+
+The substrate contains no coordinates, distances, metrics, or physical parameters.
+
+\subsection{2. Local Quantities}
+
+For a node \(n \in N\):
+
+\paragraph{Neighbors}
+\[
+    \mathrm{Nbr}(n) = \{ m \in N \mid (n,m) \in E \}.
+\]
+
+\paragraph{Active Neighbor Count}
+\[
+    K_t(n) = \sum_{m \in \mathrm{Nbr}(n)} S_t(m).
+\]
+
+\paragraph{Parity}
+\[
+    P_t(n) = K_t(n) \bmod 2.
+\]
+
+\subsection{3. Evolution Rule (Law-000)}
+
+The state update rule is:
+
+\[
+    S_{t+1}(n) = S_t(n) \oplus P_t(n),
+\]
+
+where \(\oplus\) denotes logical XOR.
+
+\subsubsection{Verbal Description}
+
+\begin{itemize}
+    \item Count active neighbors of node \(n\).
+    \item Compute parity (even/odd).
+    \item If parity is even, the node keeps its state.
+    \item If parity is odd, the node flips its state.
+\end{itemize}
+
+\subsubsection{Properties}
+
+\begin{itemize}
+    \item Binary
+    \item Local
+    \item Deterministic
+    \item Parameter-free
+    \item Coordinate-free
+    \item Iterative
+\end{itemize}
+
+\subsection{4. Global Evolution}
+
+The rule is applied synchronously:
+
+\[
+    S_{t+1}(n) = S_t(n) \oplus \left( \sum_{m \in \mathrm{Nbr}(n)} S_t(m) \bmod 2 \right).
+\]
+
+This produces a trajectory:
+\[
+    S_0 \rightarrow S_1 \rightarrow S_2 \rightarrow \dots
+\]
+
+\subsection{5. Worked Examples}
+
+\subsubsection{Example 1: 3-Node Line}
+
+Graph: \(0 - 1 - 2\)
+
+Initial state:
+\[
+    S_0 = (0,1,0)
+\]
+
+Evolution:
+\[
+    S_1 = (1,1,1)
+\]
+\[
+    S_2 = (0,1,0)
+\]
+
+Period: 2.
+
+\subsubsection{Example 2: 4-Node Cycle}
+
+Graph: \(0 - 1 - 2 - 3 - 0\)
+
+Initial:
+\[
+    S_0 = (1,0,0,0)
+\]
+
+Evolution:
+\[
+    S_1 = (1,1,0,1)
+\]
+\[
+    S_2 = (0,1,1,1)
+\]
+\[
+    S_3 = (0,0,1,0)
+\]
+\[
+    S_4 = (1,0,0,0)
+\]
+
+Period: 4.
+
+\subsection{6. Interpretation}
+
+Law-000 defines only the substrate and its evolution.
+It does \emph{not} define space, time, geometry, motion, or entities.
+These emerge from:
+
+\begin{itemize}
+    \item the graph structure,
+    \item the iteration of the rule,
+    \item the observer's sampling process.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Validation Suite for Law-000}
+
+\subsection{Purpose}
+Provide tools for evaluating whether Law-000 (or any candidate base law) produces coherent emergent structure.
+
+Includes:
+
+\begin{enumerate}
+    \item Search criteria for a base law.
+    \item Deterministic test vectors.
+    \item Emergent \(\pi\) Probe.
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{1. Search for Base Law}
+
+A candidate rule \(R\) is viable if it satisfies:
+
+\paragraph{Minimality}
+Binary, local, parameter-free, coordinate-free.
+
+\paragraph{Determinism}
+Same input → same evolution.
+
+\paragraph{Universality}
+Same rule for all nodes.
+
+\paragraph{Emergent Richness}
+Non-trivial dynamics, oscillations, propagating patterns.
+
+\paragraph{Geometric Coherence}
+Stable effective dimension and measurable invariants.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{2. Test Vectors}
+
+\subsubsection{Test Vector A: 3-Node Line}
+
+\[
+    S_0 = (0,1,0)
+\]
+\[
+    S_1 = (1,1,1)
+\]
+\[
+    S_2 = (0,1,0)
+\]
+
+\subsubsection{Test Vector B: 4-Node Cycle}
+
+\[
+    S_0 = (1,0,0,0)
+\]
+\[
+    S_1 = (1,1,0,1)
+\]
+\[
+    S_2 = (0,1,1,1)
+\]
+\[
+    S_3 = (0,0,1,0)
+\]
+\[
+    S_4 = (1,0,0,0)
+\]
+
+\subsubsection{Test Vector C: 5-Node Star}
+
+Initial:
+\[
+    S_0 = (1,0,0,0,0)
+\]
+
+Evolution:
+\[
+    S_1 = (1,1,1,1,1)
+\]
+\[
+    S_2 = (0,1,1,1,1)
+\]
+\[
+    S_3 = (0,0,0,0,0)
+\]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Emergent \texorpdfstring{$\pi$}{pi} Probe}
+
+\subsection{Purpose}
+A coordinate-free geometric diagnostic for detecting whether a rule produces coherent effective geometry.
+
+\subsection{1. Definitions}
+
+Graph distance:
+\[
+    d(n,m) = \text{minimum number of edges in a path from } n \text{ to } m.
+\]
+
+Ball:
+\[
+    B(r) = \{ m \mid d(n,m) \le r \}.
+\]
+
+Sphere:
+\[
+    S(r) = \{ m \mid d(n,m) = r \}.
+\]
+
+\subsection{2. Effective Dimension}
+
+Estimate:
+\[
+    |B(r)| \sim r^{d_{\text{eff}}}
+\]
+
+Thus:
+\[
+    d_{\text{eff}} \approx \frac{\Delta \log |B(r)|}{\Delta \log r}.
+\]
+
+\subsection{3. Emergent \texorpdfstring{$\pi$}{pi}}
+
+Define:
+\[
+    V(r) = |B(r)|, \quad A(r) = |S(r)|.
+\]
+
+Estimate:
+\[
+    \pi_{\text{eff}}(r) = \frac{A(r)}{4 r^2}
+\]
+
+or:
+\[
+    \pi_{\text{eff}}(r) = \frac{3 V(r)}{4 r^3}.
+\]
+
+\subsection{4. Validation Criteria}
+
+A rule is geometrically coherent if:
+
+\begin{itemize}
+    \item \(d_{\text{eff}}\) stabilizes,
+    \item \(\pi_{\text{eff}}\) stabilizes,
+    \item variance across sample nodes is low,
+    \item variance across ticks is low
