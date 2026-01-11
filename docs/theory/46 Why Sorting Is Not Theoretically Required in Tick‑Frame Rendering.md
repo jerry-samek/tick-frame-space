@@ -32,53 +32,94 @@ Temporal lag is not arbitrary — it is governed by the rules of time.
 
 For any two entities A and B:
 
-If A.lag < B.lag, then A is always in front of B.
+> If `A.lag < B.lag`, then A is always in front of B.
 
+Since:
+
+```
 lag ∈ {0, 1, 2, ..., MAX_HISTORY}
+```
 
 we can simply iterate through time:
 
+```python
+for lag in range(MAX_HISTORY):
+    for entity in entities_at_lag[lag]:
+        render(entity)
+```
+
 This is:
-• 	O(n)
-• 	stable
-• 	physically correct
-• 	aligned with how time actually works
+- O(n)
+- stable
+- physically correct
+- aligned with how time actually works
+
 Rendering becomes a temporal sweep, not a depth sort.
 
-5. Temporal Ordering Is Known Before Rendering
-   Temporal lag is computed as:
+---
+
+## 3. Temporal Ordering Is Known Before Rendering
+
+Temporal lag is computed as:
+
+```
+temporal_lag = current_tick - entity.last_update_tick
+```
 
 This means:
-• 	the renderer already knows the correct order,
-• 	no computation is needed to determine it,
-• 	sorting is redundant.
+- the renderer already knows the correct order,
+- no computation is needed to determine it,
+- sorting is redundant.
+
 In classical 3D, depth must be computed.
 In tick‑frame, depth is given.
 
-6. Temporal Z‑Buffer Eliminates Sorting Entirely
-   A pixel can store:
+---
+
+## 4. Temporal Z‑Buffer Eliminates Sorting Entirely
+
+A pixel can store:
+
+```python
+pixel = (color, temporal_lag)
+```
 
 When drawing an entity:
 
+```python
+if entity.lag < pixel.lag:
+    pixel = (entity.color, entity.lag)
+```
+
 This is:
-• 	O(1) per pixel
-• 	identical in spirit to a traditional Z‑buffer
-• 	but uses temporal lag instead of geometric depth
+- O(1) per pixel
+- identical in spirit to a traditional Z‑buffer
+- but uses temporal lag instead of geometric depth
+
 This removes sorting completely.
 
-7. Sorting Is Only Needed If Z Is Spatial
-   Sorting is required when:
-   • 	z is geometric,
-   • 	z is continuous,
-   • 	z is arbitrary,
-   • 	z is not monotonic.
-   But in tick‑frame:
-   • 	z = temporal lag,
-   • 	lag is discrete,
-   • 	lag is monotonic,
-   • 	lag is bounded,
-   • 	lag is physical.
-   Therefore:
+---
+
+## 5. Sorting Is Only Needed If Z Is Spatial
+
+Sorting is required when:
+- z is geometric,
+- z is continuous,
+- z is arbitrary,
+- z is not monotonic.
+
+But in tick‑frame:
+- z = temporal lag,
+- lag is discrete,
+- lag is monotonic,
+- lag is bounded,
+- lag is physical.
+
+Therefore:
+
+> **Sorting is unnecessary when depth is temporal rather than spatial.**
+
+---
 
 
 ## Conclusion
