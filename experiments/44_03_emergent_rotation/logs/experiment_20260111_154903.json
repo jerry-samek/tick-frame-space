@@ -1,0 +1,1393 @@
+{
+  "session_start": "2026-01-11T15:49:03.238393",
+  "session_end": "2026-01-11T15:50:02.274224",
+  "total_events": 42,
+  "events": [
+    {
+      "tick": 231,
+      "timestamp": "2026-01-11T15:49:11.109312",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 231,
+        "direction": "forward",
+        "success": false,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1231,
+            "temporal_lag": 0
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 1231,
+            "temporal_lag": 0
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 1231,
+            "temporal_lag": 0
+          }
+        ]
+      }
+    },
+    {
+      "tick": 283,
+      "timestamp": "2026-01-11T15:49:12.859844",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 283,
+        "direction": "forward",
+        "success": false,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1283,
+            "temporal_lag": 0
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 1278,
+            "temporal_lag": 1
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 1278,
+            "temporal_lag": 1
+          }
+        ]
+      }
+    },
+    {
+      "tick": 319,
+      "timestamp": "2026-01-11T15:49:14.074399",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 319,
+        "direction": "forward",
+        "success": false,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1319,
+            "temporal_lag": 0
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 1304,
+            "temporal_lag": 3
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 1304,
+            "temporal_lag": 3
+          }
+        ]
+      }
+    },
+    {
+      "tick": 328,
+      "timestamp": "2026-01-11T15:49:14.376745",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 328,
+        "direction": "forward",
+        "success": false,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1328,
+            "temporal_lag": 0
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 1303,
+            "temporal_lag": 5
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 1303,
+            "temporal_lag": 5
+          }
+        ]
+      }
+    },
+    {
+      "tick": 334,
+      "timestamp": "2026-01-11T15:49:14.580442",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 334,
+        "direction": "forward",
+        "success": false,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1334,
+            "temporal_lag": 0
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 1294,
+            "temporal_lag": 8
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 1294,
+            "temporal_lag": 8
+          }
+        ]
+      }
+    },
+    {
+      "tick": 341,
+      "timestamp": "2026-01-11T15:49:14.817549",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 341,
+        "direction": "forward",
+        "success": false,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1341,
+            "temporal_lag": 0
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 1281,
+            "temporal_lag": 12
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 1281,
+            "temporal_lag": 12
+          }
+        ]
+      }
+    },
+    {
+      "tick": 349,
+      "timestamp": "2026-01-11T15:49:15.086095",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 349,
+        "direction": "forward",
+        "success": false,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1349,
+            "temporal_lag": 0
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 1269,
+            "temporal_lag": 16
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 1269,
+            "temporal_lag": 16
+          }
+        ]
+      }
+    },
+    {
+      "tick": 356,
+      "timestamp": "2026-01-11T15:49:15.325671",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 356,
+        "direction": "forward",
+        "success": false,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1356,
+            "temporal_lag": 0
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 1251,
+            "temporal_lag": 21
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 1251,
+            "temporal_lag": 21
+          }
+        ]
+      }
+    },
+    {
+      "tick": 369,
+      "timestamp": "2026-01-11T15:49:15.764284",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 369,
+        "direction": "forward",
+        "success": false,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1369,
+            "temporal_lag": 0
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 1239,
+            "temporal_lag": 26
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 1239,
+            "temporal_lag": 26
+          }
+        ]
+      }
+    },
+    {
+      "tick": 376,
+      "timestamp": "2026-01-11T15:49:15.999041",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 376,
+        "direction": "forward",
+        "success": false,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1376,
+            "temporal_lag": 0
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 1216,
+            "temporal_lag": 32
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 1216,
+            "temporal_lag": 32
+          }
+        ]
+      }
+    },
+    {
+      "tick": 382,
+      "timestamp": "2026-01-11T15:49:16.200656",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 382,
+        "direction": "forward",
+        "success": false,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1382,
+            "temporal_lag": 0
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 1192,
+            "temporal_lag": 38
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 1192,
+            "temporal_lag": 38
+          }
+        ]
+      }
+    },
+    {
+      "tick": 390,
+      "timestamp": "2026-01-11T15:49:16.471771",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 390,
+        "direction": "forward",
+        "success": false,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1390,
+            "temporal_lag": 0
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 1170,
+            "temporal_lag": 44
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 1170,
+            "temporal_lag": 44
+          }
+        ]
+      }
+    },
+    {
+      "tick": 472,
+      "timestamp": "2026-01-11T15:49:19.228814",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 472,
+        "direction": "backward",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1407,
+            "temporal_lag": 13
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 1102,
+            "temporal_lag": 41
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 1102,
+            "temporal_lag": 41
+          }
+        ]
+      }
+    },
+    {
+      "tick": 486,
+      "timestamp": "2026-01-11T15:49:19.698336",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 486,
+        "direction": "backward",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1361,
+            "temporal_lag": 25
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 966,
+            "temporal_lag": 38
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 966,
+            "temporal_lag": 38
+          }
+        ]
+      }
+    },
+    {
+      "tick": 497,
+      "timestamp": "2026-01-11T15:49:20.069042",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 497,
+        "direction": "backward",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1317,
+            "temporal_lag": 36
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 877,
+            "temporal_lag": 36
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 877,
+            "temporal_lag": 36
+          }
+        ]
+      }
+    },
+    {
+      "tick": 514,
+      "timestamp": "2026-01-11T15:49:20.641170",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 514,
+        "direction": "backward",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1284,
+            "temporal_lag": 46
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 794,
+            "temporal_lag": 34
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 794,
+            "temporal_lag": 34
+          }
+        ]
+      }
+    },
+    {
+      "tick": 530,
+      "timestamp": "2026-01-11T15:49:21.179800",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 530,
+        "direction": "backward",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1255,
+            "temporal_lag": 55
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 710,
+            "temporal_lag": 32
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 710,
+            "temporal_lag": 32
+          }
+        ]
+      }
+    },
+    {
+      "tick": 549,
+      "timestamp": "2026-01-11T15:49:21.818382",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 549,
+        "direction": "backward",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1234,
+            "temporal_lag": 63
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 629,
+            "temporal_lag": 30
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 629,
+            "temporal_lag": 30
+          }
+        ]
+      }
+    },
+    {
+      "tick": 571,
+      "timestamp": "2026-01-11T15:49:22.555219",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 571,
+        "direction": "backward",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1221,
+            "temporal_lag": 70
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 601,
+            "temporal_lag": 29
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 601,
+            "temporal_lag": 29
+          }
+        ]
+      }
+    },
+    {
+      "tick": 582,
+      "timestamp": "2026-01-11T15:49:22.923269",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 582,
+        "direction": "backward",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1207,
+            "temporal_lag": 75
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 562,
+            "temporal_lag": 28
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 562,
+            "temporal_lag": 28
+          }
+        ]
+      }
+    },
+    {
+      "tick": 589,
+      "timestamp": "2026-01-11T15:49:23.163666",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 589,
+        "direction": "backward",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1194,
+            "temporal_lag": 79
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 519,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 519,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 594,
+      "timestamp": "2026-01-11T15:49:23.333604",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 594,
+        "direction": "backward",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1189,
+            "temporal_lag": 81
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 524,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 524,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 599,
+      "timestamp": "2026-01-11T15:49:23.502105",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 599,
+        "direction": "backward",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1189,
+            "temporal_lag": 82
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 529,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 529,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 605,
+      "timestamp": "2026-01-11T15:49:23.704074",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 605,
+        "direction": "backward",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1195,
+            "temporal_lag": 82
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 535,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 535,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 611,
+      "timestamp": "2026-01-11T15:49:23.907552",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 611,
+        "direction": "backward",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1196,
+            "temporal_lag": 83
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 541,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 541,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 618,
+      "timestamp": "2026-01-11T15:49:24.142820",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 618,
+        "direction": "backward",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1193,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 548,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 548,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 848,
+      "timestamp": "2026-01-11T15:49:31.902541",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 848,
+        "direction": "z_cw",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 1423,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.0961894323342,
+            "y": 325.00000000000006,
+            "energy": 778,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676657,
+            "y": 324.99999999999994,
+            "energy": 778,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 867,
+      "timestamp": "2026-01-11T15:49:32.543400",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 867,
+        "direction": "z_cw",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 586.0174963544706,
+            "y": 549.3002916302106,
+            "energy": 1309,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 477.6934064785772,
+            "y": 313.2406508193578,
+            "energy": 662,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 736.2890971669522,
+            "y": 337.45905755043185,
+            "energy": 660,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 887,
+      "timestamp": "2026-01-11T15:49:33.214434",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 887,
+        "direction": "z_cw",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 570.1996003807409,
+            "y": 547.0099866761863,
+            "energy": 1177,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 487.5858167380404,
+            "y": 300.68710354870035,
+            "energy": 525,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 742.2145828812186,
+            "y": 352.30290977511333,
+            "energy": 525,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 897,
+      "timestamp": "2026-01-11T15:49:33.548752",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 897,
+        "direction": "z_ccw",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 556.6348264767921,
+            "y": 543.546331246623,
+            "energy": 1054,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 497.36781728197275,
+            "y": 290.6714924660698,
+            "energy": 397,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 745.9973562412354,
+            "y": 365.78217628730715,
+            "energy": 399,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 919,
+      "timestamp": "2026-01-11T15:49:34.289776",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 919,
+        "direction": "z_ccw",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 570.1996003807409,
+            "y": 547.0099866761863,
+            "energy": 943,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 487.5858167380404,
+            "y": 300.6871035487003,
+            "energy": 282,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 742.2145828812186,
+            "y": 352.3029097751134,
+            "energy": 286,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 957,
+      "timestamp": "2026-01-11T15:49:35.569423",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 957,
+        "direction": "z_ccw",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 584.0423954718458,
+            "y": 549.1021205308167,
+            "energy": 841,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 478.8525781262607,
+            "y": 311.62924882966416,
+            "energy": 187,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 737.1050264018936,
+            "y": 339.26863063951913,
+            "energy": 189,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 967,
+      "timestamp": "2026-01-11T15:49:35.905870",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 967,
+        "direction": "z_ccw",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 600.0,
+            "y": 550.0,
+            "energy": 699,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 470.09618943233414,
+            "y": 324.99999999999994,
+            "energy": 44,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 729.9038105676656,
+            "y": 324.99999999999994,
+            "energy": 43,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 978,
+      "timestamp": "2026-01-11T15:49:36.273198",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 978,
+        "direction": "z_ccw",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 613.9825036455294,
+            "y": 549.3002916302106,
+            "energy": 577,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 468.271821832538,
+            "y": 328.5597307286948,
+            "energy": 15,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 727.7331771258818,
+            "y": 321.6401859483878,
+            "energy": 14,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 991,
+      "timestamp": "2026-01-11T15:49:36.711352",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 991,
+        "direction": "z_ccw",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 629.8336635607889,
+            "y": 547.3415165535293,
+            "energy": 438,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 467.47527486946336,
+            "y": 330.3942641668246,
+            "energy": 9,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 726.5421935419993,
+            "y": 320.0334631649175,
+            "energy": 7,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 1010,
+      "timestamp": "2026-01-11T15:49:37.347773",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 1010,
+        "direction": "z_ccw",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 643.5636631390336,
+            "y": 544.6052578703276,
+            "energy": 324,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 466.7945065352153,
+            "y": 332.2748370782229,
+            "energy": 9,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 725.2526894634663,
+            "y": 318.5046795859088,
+            "energy": 6,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 1049,
+      "timestamp": "2026-01-11T15:49:38.664394",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 1049,
+        "direction": "z_ccw",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 658.9163560033494,
+            "y": 540.4295029781861,
+            "energy": 208,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 465.66592985286286,
+            "y": 336.1123251462239,
+            "energy": 10,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 722.4892207736376,
+            "y": 315.61275275413436,
+            "energy": 5,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 1064,
+      "timestamp": "2026-01-11T15:49:39.168508",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 1064,
+        "direction": "z_ccw",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 672.0986901782594,
+            "y": 535.7150501254162,
+            "energy": 90,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 465.2230801618212,
+            "y": 338.0626800244818,
+            "energy": 5,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 721.0180542524855,
+            "y": 314.2578841010756,
+            "energy": 0,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 1130,
+      "timestamp": "2026-01-11T15:49:41.394692",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 1130,
+        "direction": "z_ccw",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 686.6291353028346,
+            "y": 529.3586079503386,
+            "energy": 3,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 464.2589321019998,
+            "y": 343.98470826814486,
+            "energy": 11,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 716.3569923175525,
+            "y": 310.47972295592604,
+            "energy": 9,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 1145,
+      "timestamp": "2026-01-11T15:49:41.899445",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 1145,
+        "direction": "z_ccw",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 686.6291353028346,
+            "y": 529.3586079503386,
+            "energy": 18,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 464.0639995074869,
+            "y": 345.9751859202667,
+            "energy": 6,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 714.7240799564605,
+            "y": 309.32490815649146,
+            "energy": 5,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 1180,
+      "timestamp": "2026-01-11T15:49:43.079808",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 1180,
+        "direction": "z_cw",
+        "success": true,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 690.045604311983,
+            "y": 527.2782859777758,
+            "energy": 15,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 463.9151288026041,
+            "y": 349.97241464942744,
+            "energy": 1,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 711.3208189015573,
+            "y": 307.22304845799147,
+            "energy": 2,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    },
+    {
+      "tick": 1221,
+      "timestamp": "2026-01-11T15:49:44.463257",
+      "event_type": "rotation_attempt",
+      "data": {
+        "tick": 1221,
+        "direction": "backward",
+        "success": false,
+        "vertex_states": [
+          {
+            "role": "vertex_0",
+            "x": 693.601833957785,
+            "y": 525.4471031069738,
+            "energy": 18,
+            "temporal_lag": 85
+          },
+          {
+            "role": "vertex_1",
+            "x": 463.5135874648492,
+            "y": 353.95220918609306,
+            "energy": 4,
+            "temporal_lag": 27
+          },
+          {
+            "role": "vertex_2",
+            "x": 708.0629735815536,
+            "y": 304.9021770977197,
+            "energy": 3,
+            "temporal_lag": 27
+          }
+        ]
+      }
+    }
+  ]
+}

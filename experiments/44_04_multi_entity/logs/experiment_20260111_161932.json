@@ -1,0 +1,1513 @@
+{
+  "session_start": "2026-01-11T16:19:32.257084",
+  "session_end": "2026-01-11T16:21:47.001651",
+  "total_events": 109,
+  "events": [
+    {
+      "tick": 0,
+      "timestamp": "2026-01-11T16:19:32.257097",
+      "event_type": "pattern_change",
+      "data": {
+        "tick": 0,
+        "pattern": "grid",
+        "entity_count": 100
+      }
+    },
+    {
+      "tick": 213,
+      "timestamp": "2026-01-11T16:19:39.466702",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 213,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 27.0,
+        "avg_lag_after": 32.0
+      }
+    },
+    {
+      "tick": 227,
+      "timestamp": "2026-01-11T16:19:39.941621",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 227,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 32.0,
+        "avg_lag_after": 37.0
+      }
+    },
+    {
+      "tick": 244,
+      "timestamp": "2026-01-11T16:19:40.517135",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 244,
+        "direction": "forward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 37.0,
+        "avg_lag_after": 32.0
+      }
+    },
+    {
+      "tick": 251,
+      "timestamp": "2026-01-11T16:19:40.754213",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 251,
+        "direction": "forward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 32.0,
+        "avg_lag_after": 27.0
+      }
+    },
+    {
+      "tick": 256,
+      "timestamp": "2026-01-11T16:19:40.924121",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 256,
+        "direction": "forward",
+        "successes": 99,
+        "failures": 1,
+        "success_rate": 0.99,
+        "avg_lag_before": 27.0,
+        "avg_lag_after": 22.09
+      }
+    },
+    {
+      "tick": 264,
+      "timestamp": "2026-01-11T16:19:41.196091",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 264,
+        "direction": "forward",
+        "successes": 97,
+        "failures": 3,
+        "success_rate": 0.97,
+        "avg_lag_before": 22.09,
+        "avg_lag_after": 17.4
+      }
+    },
+    {
+      "tick": 270,
+      "timestamp": "2026-01-11T16:19:41.397743",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 270,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 17.4,
+        "avg_lag_after": 17.4
+      }
+    },
+    {
+      "tick": 554,
+      "timestamp": "2026-01-11T16:19:51.168647",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 554,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 17.4,
+        "avg_lag_after": 22.4
+      }
+    },
+    {
+      "tick": 565,
+      "timestamp": "2026-01-11T16:19:51.543347",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 565,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 22.4,
+        "avg_lag_after": 27.4
+      }
+    },
+    {
+      "tick": 572,
+      "timestamp": "2026-01-11T16:19:51.777410",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 572,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 27.4,
+        "avg_lag_after": 32.4
+      }
+    },
+    {
+      "tick": 578,
+      "timestamp": "2026-01-11T16:19:51.984520",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 578,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 32.4,
+        "avg_lag_after": 37.4
+      }
+    },
+    {
+      "tick": 584,
+      "timestamp": "2026-01-11T16:19:52.180777",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 584,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 37.4,
+        "avg_lag_after": 42.4
+      }
+    },
+    {
+      "tick": 588,
+      "timestamp": "2026-01-11T16:19:52.315729",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 588,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 42.4,
+        "avg_lag_after": 47.4
+      }
+    },
+    {
+      "tick": 605,
+      "timestamp": "2026-01-11T16:19:52.893070",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 605,
+        "direction": "forward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 47.4,
+        "avg_lag_after": 42.4
+      }
+    },
+    {
+      "tick": 610,
+      "timestamp": "2026-01-11T16:19:53.063583",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 610,
+        "direction": "forward",
+        "successes": 3,
+        "failures": 97,
+        "success_rate": 0.03,
+        "avg_lag_before": 42.4,
+        "avg_lag_after": 42.25
+      }
+    },
+    {
+      "tick": 615,
+      "timestamp": "2026-01-11T16:19:53.231491",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 615,
+        "direction": "forward",
+        "successes": 1,
+        "failures": 99,
+        "success_rate": 0.01,
+        "avg_lag_before": 42.25,
+        "avg_lag_after": 42.2
+      }
+    },
+    {
+      "tick": 620,
+      "timestamp": "2026-01-11T16:19:53.398286",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 620,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 42.2,
+        "avg_lag_after": 42.2
+      }
+    },
+    {
+      "tick": 629,
+      "timestamp": "2026-01-11T16:19:53.702015",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 629,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 42.2,
+        "avg_lag_after": 42.2
+      }
+    },
+    {
+      "tick": 643,
+      "timestamp": "2026-01-11T16:19:54.173436",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 643,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 42.2,
+        "avg_lag_after": 47.2
+      }
+    },
+    {
+      "tick": 650,
+      "timestamp": "2026-01-11T16:19:54.408609",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 650,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 47.2,
+        "avg_lag_after": 52.2
+      }
+    },
+    {
+      "tick": 656,
+      "timestamp": "2026-01-11T16:19:54.611439",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 656,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 52.2,
+        "avg_lag_after": 57.2
+      }
+    },
+    {
+      "tick": 660,
+      "timestamp": "2026-01-11T16:19:54.746015",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 660,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 57.2,
+        "avg_lag_after": 62.2
+      }
+    },
+    {
+      "tick": 670,
+      "timestamp": "2026-01-11T16:19:55.082762",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 670,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 62.2,
+        "avg_lag_after": 67.2
+      }
+    },
+    {
+      "tick": 675,
+      "timestamp": "2026-01-11T16:19:55.252805",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 675,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 67.2,
+        "avg_lag_after": 72.2
+      }
+    },
+    {
+      "tick": 685,
+      "timestamp": "2026-01-11T16:19:55.588831",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 685,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 72.2,
+        "avg_lag_after": 72.2
+      }
+    },
+    {
+      "tick": 692,
+      "timestamp": "2026-01-11T16:19:55.822834",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 692,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 72.2,
+        "avg_lag_after": 72.2
+      }
+    },
+    {
+      "tick": 703,
+      "timestamp": "2026-01-11T16:19:56.196110",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 703,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 72.2,
+        "avg_lag_after": 72.2
+      }
+    },
+    {
+      "tick": 709,
+      "timestamp": "2026-01-11T16:19:56.398341",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 709,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 72.2,
+        "avg_lag_after": 72.2
+      }
+    },
+    {
+      "tick": 824,
+      "timestamp": "2026-01-11T16:20:00.272560",
+      "event_type": "pattern_change",
+      "data": {
+        "tick": 824,
+        "pattern": "grid",
+        "entity_count": 100
+      }
+    },
+    {
+      "tick": 1077,
+      "timestamp": "2026-01-11T16:20:08.794991",
+      "event_type": "pattern_change",
+      "data": {
+        "tick": 1077,
+        "pattern": "random",
+        "entity_count": 100
+      }
+    },
+    {
+      "tick": 1184,
+      "timestamp": "2026-01-11T16:20:12.395523",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1184,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 23.59,
+        "avg_lag_after": 28.59
+      }
+    },
+    {
+      "tick": 1194,
+      "timestamp": "2026-01-11T16:20:12.732208",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1194,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 28.59,
+        "avg_lag_after": 33.59
+      }
+    },
+    {
+      "tick": 1199,
+      "timestamp": "2026-01-11T16:20:12.899311",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1199,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 33.59,
+        "avg_lag_after": 38.59
+      }
+    },
+    {
+      "tick": 1204,
+      "timestamp": "2026-01-11T16:20:13.066893",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1204,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 38.59,
+        "avg_lag_after": 43.59
+      }
+    },
+    {
+      "tick": 1210,
+      "timestamp": "2026-01-11T16:20:13.271909",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1210,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 43.59,
+        "avg_lag_after": 48.59
+      }
+    },
+    {
+      "tick": 1221,
+      "timestamp": "2026-01-11T16:20:13.643408",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1221,
+        "direction": "forward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 48.59,
+        "avg_lag_after": 43.59
+      }
+    },
+    {
+      "tick": 1227,
+      "timestamp": "2026-01-11T16:20:13.843758",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1227,
+        "direction": "forward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 43.59,
+        "avg_lag_after": 38.59
+      }
+    },
+    {
+      "tick": 1232,
+      "timestamp": "2026-01-11T16:20:14.010808",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1232,
+        "direction": "forward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 38.59,
+        "avg_lag_after": 33.59
+      }
+    },
+    {
+      "tick": 1237,
+      "timestamp": "2026-01-11T16:20:14.179418",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1237,
+        "direction": "forward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 33.59,
+        "avg_lag_after": 28.59
+      }
+    },
+    {
+      "tick": 1243,
+      "timestamp": "2026-01-11T16:20:14.382266",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1243,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 28.59,
+        "avg_lag_after": 28.59
+      }
+    },
+    {
+      "tick": 1351,
+      "timestamp": "2026-01-11T16:20:18.005920",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1351,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 28.59,
+        "avg_lag_after": 33.59
+      }
+    },
+    {
+      "tick": 1358,
+      "timestamp": "2026-01-11T16:20:18.239694",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1358,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 33.59,
+        "avg_lag_after": 38.59
+      }
+    },
+    {
+      "tick": 1363,
+      "timestamp": "2026-01-11T16:20:18.406437",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1363,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 38.59,
+        "avg_lag_after": 43.59
+      }
+    },
+    {
+      "tick": 1369,
+      "timestamp": "2026-01-11T16:20:18.605230",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1369,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 43.59,
+        "avg_lag_after": 48.59
+      }
+    },
+    {
+      "tick": 1374,
+      "timestamp": "2026-01-11T16:20:18.773730",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1374,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 48.59,
+        "avg_lag_after": 53.59
+      }
+    },
+    {
+      "tick": 1382,
+      "timestamp": "2026-01-11T16:20:19.042829",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1382,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 53.59,
+        "avg_lag_after": 58.59
+      }
+    },
+    {
+      "tick": 1393,
+      "timestamp": "2026-01-11T16:20:19.416309",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1393,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 58.59,
+        "avg_lag_after": 58.59
+      }
+    },
+    {
+      "tick": 1399,
+      "timestamp": "2026-01-11T16:20:19.618801",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1399,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 58.59,
+        "avg_lag_after": 58.59
+      }
+    },
+    {
+      "tick": 1405,
+      "timestamp": "2026-01-11T16:20:19.823075",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1405,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 58.59,
+        "avg_lag_after": 58.59
+      }
+    },
+    {
+      "tick": 1411,
+      "timestamp": "2026-01-11T16:20:20.026266",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1411,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 58.59,
+        "avg_lag_after": 58.59
+      }
+    },
+    {
+      "tick": 1416,
+      "timestamp": "2026-01-11T16:20:20.193057",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1416,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 58.59,
+        "avg_lag_after": 58.59
+      }
+    },
+    {
+      "tick": 1445,
+      "timestamp": "2026-01-11T16:20:21.170732",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1445,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 58.59,
+        "avg_lag_after": 63.59
+      }
+    },
+    {
+      "tick": 1451,
+      "timestamp": "2026-01-11T16:20:21.373948",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1451,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 63.59,
+        "avg_lag_after": 68.59
+      }
+    },
+    {
+      "tick": 1462,
+      "timestamp": "2026-01-11T16:20:21.746557",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1462,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 68.59,
+        "avg_lag_after": 73.59
+      }
+    },
+    {
+      "tick": 1468,
+      "timestamp": "2026-01-11T16:20:21.949250",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1468,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 73.59,
+        "avg_lag_after": 78.59
+      }
+    },
+    {
+      "tick": 1473,
+      "timestamp": "2026-01-11T16:20:22.119115",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1473,
+        "direction": "backward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 78.59,
+        "avg_lag_after": 78.59
+      }
+    },
+    {
+      "tick": 1479,
+      "timestamp": "2026-01-11T16:20:22.323079",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1479,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 78.59,
+        "avg_lag_after": 83.59
+      }
+    },
+    {
+      "tick": 1485,
+      "timestamp": "2026-01-11T16:20:22.526417",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1485,
+        "direction": "backward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 83.59,
+        "avg_lag_after": 83.59
+      }
+    },
+    {
+      "tick": 1491,
+      "timestamp": "2026-01-11T16:20:22.725715",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1491,
+        "direction": "backward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 83.59,
+        "avg_lag_after": 83.59
+      }
+    },
+    {
+      "tick": 1496,
+      "timestamp": "2026-01-11T16:20:22.894987",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1496,
+        "direction": "backward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 83.59,
+        "avg_lag_after": 83.59
+      }
+    },
+    {
+      "tick": 1502,
+      "timestamp": "2026-01-11T16:20:23.096647",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1502,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 83.59,
+        "avg_lag_after": 88.59
+      }
+    },
+    {
+      "tick": 1509,
+      "timestamp": "2026-01-11T16:20:23.334744",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1509,
+        "direction": "backward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 88.59,
+        "avg_lag_after": 88.59
+      }
+    },
+    {
+      "tick": 1554,
+      "timestamp": "2026-01-11T16:20:24.852982",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1554,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 88.59,
+        "avg_lag_after": 93.59
+      }
+    },
+    {
+      "tick": 1558,
+      "timestamp": "2026-01-11T16:20:24.987547",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1558,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 93.59,
+        "avg_lag_after": 98.59
+      }
+    },
+    {
+      "tick": 1563,
+      "timestamp": "2026-01-11T16:20:25.158605",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1563,
+        "direction": "backward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 98.59,
+        "avg_lag_after": 98.59
+      }
+    },
+    {
+      "tick": 1568,
+      "timestamp": "2026-01-11T16:20:25.328122",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1568,
+        "direction": "backward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 98.59,
+        "avg_lag_after": 98.59
+      }
+    },
+    {
+      "tick": 1574,
+      "timestamp": "2026-01-11T16:20:25.528954",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1574,
+        "direction": "backward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 98.59,
+        "avg_lag_after": 98.59
+      }
+    },
+    {
+      "tick": 1816,
+      "timestamp": "2026-01-11T16:20:33.701198",
+      "event_type": "pattern_change",
+      "data": {
+        "tick": 1816,
+        "pattern": "shells",
+        "entity_count": 96
+      }
+    },
+    {
+      "tick": 1889,
+      "timestamp": "2026-01-11T16:20:36.172959",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1889,
+        "direction": "backward",
+        "successes": 96,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 28.0,
+        "avg_lag_after": 33.0
+      }
+    },
+    {
+      "tick": 1899,
+      "timestamp": "2026-01-11T16:20:36.509632",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1899,
+        "direction": "backward",
+        "successes": 96,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 33.0,
+        "avg_lag_after": 38.0
+      }
+    },
+    {
+      "tick": 1904,
+      "timestamp": "2026-01-11T16:20:36.682438",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1904,
+        "direction": "backward",
+        "successes": 96,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 38.0,
+        "avg_lag_after": 43.0
+      }
+    },
+    {
+      "tick": 1910,
+      "timestamp": "2026-01-11T16:20:36.882642",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1910,
+        "direction": "backward",
+        "successes": 96,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 43.0,
+        "avg_lag_after": 48.0
+      }
+    },
+    {
+      "tick": 1919,
+      "timestamp": "2026-01-11T16:20:37.186643",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1919,
+        "direction": "forward",
+        "successes": 96,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 48.0,
+        "avg_lag_after": 43.0
+      }
+    },
+    {
+      "tick": 1951,
+      "timestamp": "2026-01-11T16:20:38.260756",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1951,
+        "direction": "forward",
+        "successes": 96,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 43.0,
+        "avg_lag_after": 38.0
+      }
+    },
+    {
+      "tick": 1956,
+      "timestamp": "2026-01-11T16:20:38.430383",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1956,
+        "direction": "forward",
+        "successes": 96,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 38.0,
+        "avg_lag_after": 33.0
+      }
+    },
+    {
+      "tick": 1961,
+      "timestamp": "2026-01-11T16:20:38.597547",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1961,
+        "direction": "forward",
+        "successes": 96,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 33.0,
+        "avg_lag_after": 28.0
+      }
+    },
+    {
+      "tick": 1966,
+      "timestamp": "2026-01-11T16:20:38.764708",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1966,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 96,
+        "success_rate": 0.0,
+        "avg_lag_before": 28.0,
+        "avg_lag_after": 28.0
+      }
+    },
+    {
+      "tick": 1972,
+      "timestamp": "2026-01-11T16:20:38.968659",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 1972,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 96,
+        "success_rate": 0.0,
+        "avg_lag_before": 28.0,
+        "avg_lag_after": 28.0
+      }
+    },
+    {
+      "tick": 2057,
+      "timestamp": "2026-01-11T16:20:41.834282",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2057,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 96,
+        "success_rate": 0.0,
+        "avg_lag_before": 28.0,
+        "avg_lag_after": 28.0
+      }
+    },
+    {
+      "tick": 2062,
+      "timestamp": "2026-01-11T16:20:42.003926",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2062,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 96,
+        "success_rate": 0.0,
+        "avg_lag_before": 28.0,
+        "avg_lag_after": 28.0
+      }
+    },
+    {
+      "tick": 2068,
+      "timestamp": "2026-01-11T16:20:42.204038",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2068,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 96,
+        "success_rate": 0.0,
+        "avg_lag_before": 28.0,
+        "avg_lag_after": 28.0
+      }
+    },
+    {
+      "tick": 2077,
+      "timestamp": "2026-01-11T16:20:42.506589",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2077,
+        "direction": "backward",
+        "successes": 96,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 28.0,
+        "avg_lag_after": 33.0
+      }
+    },
+    {
+      "tick": 2089,
+      "timestamp": "2026-01-11T16:20:42.912262",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2089,
+        "direction": "backward",
+        "successes": 96,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 33.0,
+        "avg_lag_after": 38.0
+      }
+    },
+    {
+      "tick": 2094,
+      "timestamp": "2026-01-11T16:20:43.079619",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2094,
+        "direction": "backward",
+        "successes": 96,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 38.0,
+        "avg_lag_after": 43.0
+      }
+    },
+    {
+      "tick": 2099,
+      "timestamp": "2026-01-11T16:20:43.252460",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2099,
+        "direction": "backward",
+        "successes": 96,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 43.0,
+        "avg_lag_after": 48.0
+      }
+    },
+    {
+      "tick": 2105,
+      "timestamp": "2026-01-11T16:20:43.457668",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2105,
+        "direction": "backward",
+        "successes": 96,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 48.0,
+        "avg_lag_after": 53.0
+      }
+    },
+    {
+      "tick": 2109,
+      "timestamp": "2026-01-11T16:20:43.594644",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2109,
+        "direction": "backward",
+        "successes": 96,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 53.0,
+        "avg_lag_after": 58.0
+      }
+    },
+    {
+      "tick": 2114,
+      "timestamp": "2026-01-11T16:20:43.762438",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2114,
+        "direction": "backward",
+        "successes": 96,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 58.0,
+        "avg_lag_after": 63.0
+      }
+    },
+    {
+      "tick": 2119,
+      "timestamp": "2026-01-11T16:20:43.931094",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2119,
+        "direction": "backward",
+        "successes": 96,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 63.0,
+        "avg_lag_after": 68.0
+      }
+    },
+    {
+      "tick": 2124,
+      "timestamp": "2026-01-11T16:20:44.100478",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2124,
+        "direction": "backward",
+        "successes": 0,
+        "failures": 96,
+        "success_rate": 0.0,
+        "avg_lag_before": 68.0,
+        "avg_lag_after": 68.0
+      }
+    },
+    {
+      "tick": 2129,
+      "timestamp": "2026-01-11T16:20:44.271543",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2129,
+        "direction": "backward",
+        "successes": 0,
+        "failures": 96,
+        "success_rate": 0.0,
+        "avg_lag_before": 68.0,
+        "avg_lag_after": 68.0
+      }
+    },
+    {
+      "tick": 2135,
+      "timestamp": "2026-01-11T16:20:44.471846",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2135,
+        "direction": "backward",
+        "successes": 0,
+        "failures": 96,
+        "success_rate": 0.0,
+        "avg_lag_before": 68.0,
+        "avg_lag_after": 68.0
+      }
+    },
+    {
+      "tick": 2400,
+      "timestamp": "2026-01-11T16:20:53.415303",
+      "event_type": "pattern_change",
+      "data": {
+        "tick": 2400,
+        "pattern": "wave",
+        "entity_count": 100
+      }
+    },
+    {
+      "tick": 2494,
+      "timestamp": "2026-01-11T16:20:56.587490",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2494,
+        "direction": "forward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 19.999999999999996,
+        "avg_lag_after": 14.999999999999995
+      }
+    },
+    {
+      "tick": 2578,
+      "timestamp": "2026-01-11T16:20:59.417278",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2578,
+        "direction": "forward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 19.999999999999993,
+        "avg_lag_after": 14.999999999999993
+      }
+    },
+    {
+      "tick": 2587,
+      "timestamp": "2026-01-11T16:20:59.721128",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2587,
+        "direction": "forward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 19.999999999999996,
+        "avg_lag_after": 14.999999999999995
+      }
+    },
+    {
+      "tick": 2592,
+      "timestamp": "2026-01-11T16:20:59.888364",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2592,
+        "direction": "forward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 19.999999999999996,
+        "avg_lag_after": 14.999999999999998
+      }
+    },
+    {
+      "tick": 2597,
+      "timestamp": "2026-01-11T16:21:00.052785",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2597,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 20.0,
+        "avg_lag_after": 20.0
+      }
+    },
+    {
+      "tick": 2603,
+      "timestamp": "2026-01-11T16:21:00.252426",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2603,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 20.000000000000004,
+        "avg_lag_after": 20.000000000000004
+      }
+    },
+    {
+      "tick": 2609,
+      "timestamp": "2026-01-11T16:21:00.454099",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2609,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 20.000000000000004,
+        "avg_lag_after": 20.000000000000004
+      }
+    },
+    {
+      "tick": 2614,
+      "timestamp": "2026-01-11T16:21:00.622868",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2614,
+        "direction": "forward",
+        "successes": 0,
+        "failures": 100,
+        "success_rate": 0.0,
+        "avg_lag_before": 20.000000000000004,
+        "avg_lag_after": 20.000000000000004
+      }
+    },
+    {
+      "tick": 2626,
+      "timestamp": "2026-01-11T16:21:01.025851",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2626,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 20.000000000000007,
+        "avg_lag_after": 25.000000000000004
+      }
+    },
+    {
+      "tick": 2631,
+      "timestamp": "2026-01-11T16:21:01.192824",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2631,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 20.000000000000004,
+        "avg_lag_after": 25.000000000000004
+      }
+    },
+    {
+      "tick": 2642,
+      "timestamp": "2026-01-11T16:21:01.562857",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2642,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 20.000000000000007,
+        "avg_lag_after": 25.000000000000004
+      }
+    },
+    {
+      "tick": 2648,
+      "timestamp": "2026-01-11T16:21:01.765843",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2648,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 20.000000000000004,
+        "avg_lag_after": 25.000000000000004
+      }
+    },
+    {
+      "tick": 2653,
+      "timestamp": "2026-01-11T16:21:01.935612",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2653,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 20.000000000000004,
+        "avg_lag_after": 25.000000000000004
+      }
+    },
+    {
+      "tick": 2658,
+      "timestamp": "2026-01-11T16:21:02.105712",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2658,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 20.0,
+        "avg_lag_after": 25.0
+      }
+    },
+    {
+      "tick": 2663,
+      "timestamp": "2026-01-11T16:21:02.275124",
+      "event_type": "force_attempt",
+      "data": {
+        "tick": 2663,
+        "direction": "backward",
+        "successes": 100,
+        "failures": 0,
+        "success_rate": 1.0,
+        "avg_lag_before": 20.0,
+        "avg_lag_after": 25.0
+      }
+    }
+  ]
+}
