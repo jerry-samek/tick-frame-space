@@ -86,8 +86,12 @@ The **tick-space-runner** module contains the operational Java (26) implementati
 
 ### Theoretical Implementation
 
-The substrate model implements these theoretical principles:
+**Note:** The current Java implementation is based on the earlier **Chapter 15** model ("Minimal Model Recommendation" and dimensional experiments). The theoretical framework has since evolved to Chapter 49's refined ontology, but the Java codebase has not yet been updated to reflect these newer concepts.
 
+**Current Theoretical Framework (Chapter 49):**
+- **Temporal Ontology of the Tick-Frame Universe** (Doc 49) - unified framework establishing temporal primacy, tick-stream as absolute substrate, space as emergent visualization, and temporal integrity laws
+
+**Implemented Principles (Chapter 15 basis):**
 - **Temporal Surfing Principle** (Doc 28) - entities persist through continual renewal
 - **Collision Persistence Principle** (Doc 30) - particles as collision patterns
 - **Imbalance Theory** (Doc 29) - matter-antimatter asymmetry from expansion geometry
@@ -157,6 +161,7 @@ Python scripts for analyzing JSON snapshots from LocalApp:
     - [48 Observer Model in the Tick‑Frame Universe](docs/theory/48%20Observer%20Model%20in%20the%20Tick‑Frame%20Universe.md) - Cognitive formalization: identity, memory, dreams, death
 
 - **Key Principles**
+    - [49 Temporal Ontology of the Tick-Frame Universe](docs/theory/49%20Temporal%20Ontology%20of%20the%20Tick‑Frame%20Universe.md) - Unified framework: temporal primacy, absolute tick-stream, emergent space
     - [28 Temporal Surfing Principle](docs/theory/28%20Temporal%20Surfing%20Principle.md) - Persistence through continual renewal
     - [30 Collision Persistence Principle](docs/theory/30%20Collision%20Persistence%20Principle%20in%20Tick-Frame.md) - Entities as collision patterns
     - [37 Observer‑Relative Big Bang Principle](docs/theory/37%20Observer‑Relative%20Big%20Bang%20Principle.md) - Big Bang as observer event
