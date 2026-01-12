@@ -575,3 +575,416 @@ Experimentally validated (Section 8), theoretically extended (collision framewor
 - Formalize consciousness-collision correlation
 - Investigate 2D critical behavior from dimensional experiments
 - Draft technical paper integrating collision theory with dimensional optimality
+
+---
+
+## 12. Energy and Conservation Framework (2025-11 to 2026-01)
+
+### Overview
+Development of energy mechanics, conservation principles, and observer-relative cosmology to complete the physical formalization of tick-frame theory.
+
+### 12.1 Energy Principles (Docs 31-34)
+
+#### Energy Constant Principle (Doc 31)
+**Statement:** In a closed tick-frame universe, normalized energy minus momentum costs remains approximately zero.
+
+**Formalization:**
+```
+E_constant(t) = Σ E_entity(t) / t - Σ(momentum costs)
+```
+
+**Key insights:**
+- Zero-sum conservation law at normalized level
+- Momentum as expenditure (collisions and movements are costs)
+- Temporal normalization principle — entities with different raw energies can be equivalent surfers if normalized values match
+- Persistence defined by normalized renewal, not raw magnitude
+
+#### Planck Cube Ledger Principle (Doc 32)
+**Concept:** Space is quantized into Planck-scale cubes, each maintaining a ledger of state transitions.
+
+**Implications:**
+- Discrete spatial units enable audit trail of all changes
+- Energy distribution trackable at Planck granularity
+- Provides substrate for collision detection and persistence
+
+#### Persistence-Survival Axioms (Doc 33)
+**Statement:** Survival in tick-frame requires continuous renewal. Static entities decay; dynamic patterns persist.
+
+**Axioms:**
+- Existence = presence in current tick
+- Persistence = renewal function across ticks
+- Death = failure to generate next tick state
+
+#### Relative Decay Principle (Doc 34)
+**Statement:** Decay rates are relative to observer's tick rate and horizon. What appears stable to one observer may be decaying to another.
+
+**Formalization:**
+- Decay = loss of renewal capacity relative to observer's buffer
+- Observer-dependent lifetimes
+- Explains varied perception of stability
+
+### 12.2 Observer-Relative Cosmology (Docs 35-38)
+
+#### Observer Sleep Principle (Doc 35)
+**Statement:** When an observer's buffer stops advancing, the observer experiences "sleep" — a gap in continuous existence.
+
+**Implications:**
+- Sleep = buffer suspension
+- Dreams = non-causal buffer traversal
+- Unconsciousness = tick-stream disconnection
+
+#### Tick-Frame Alcubierre Metric (Doc 36)
+**Concept:** FTL-like effects achievable by manipulating tick-space geometry around observer.
+
+**Mechanism:**
+- Contract tick-space ahead of observer
+- Expand tick-space behind observer
+- Observer surfs compressed tick gradient
+- Analogous to Alcubierre warp drive but in discrete substrate
+
+#### Observer-Relative Big Bang Principle (Doc 37)
+**Statement:** The Big Bang is not a substrate event but an observer event — the earliest tick for which the observer has coherent internal state.
+
+**Consequences:**
+- Each observer has a different Big Bang
+- Big Bangs occur at creation or rehydration
+- Universes begin when observers begin sampling
+- No substrate-level cosmology exists
+- The universe begins when the observer begins
+
+**Substrate vs Observer:**
+- Substrate: no Big Bang, no geometry, no history
+- Observer: creates geometry, history, causal structure, universe
+
+#### Observer-Separated Multiverse Principle (Doc 38)
+**Statement:** Multiple independent observers create separate branches of reality through their commit decisions.
+
+**Formalization:**
+- Cardinality 1 observer: single timeline, no branching
+- Cardinality >1 observers: separate branches emerge
+- Each commit defines independent horizon of reality
+- Multiverse is observer plurality, not substrate property
+
+### 12.3 Ternary Logic and Void Mechanics (Docs 39-43)
+
+#### Law-000 XOR Parity Rule (Doc 39_0)
+**Statement:** Base substrate operates on XOR parity switching to generate alternation patterns.
+
+**Mechanism:**
+- Binary state flips via XOR
+- Generates temporal oscillation
+- Foundation for more complex operators
+
+#### Dimension Definition via Latency (Doc 40)
+**Statement:** Dimension is not a substrate property but an observer property — the minimal number of independent parameters needed to explain all measured latencies between events.
+
+**Formalization:**
+Given events E = {E₁, E₂, ..., Eₙ} with arrival times tᵢ:
+
+1. Build causal latency matrix: L_ij = t_j - t_i
+2. Seek smallest d such that coordinates Xᵢ ∈ ℝ^d can reproduce L
+3. Where: L_ij = (1/c) · ||X_j - X_i||
+4. Dimension d = minimal number of independent causal directions
+
+**Interpretation:**
+- Dimension = rank of latent space explaining latencies
+- Dimension is subjective — different observers may reconstruct different dimensions
+- Observers in 1D, 2D, 3D, 4D, 5D+ all valid depending on detected causal gradients
+
+#### Why 3D Emerges as Natural Equilibrium (Doc 40_01)
+**Finding:** 3D achieves optimal balance between complexity and stability (validated experimentally in Section 8).
+
+**Evidence:**
+- SPBI = 2.23 (minimal for universe-like behavior)
+- SLF = 0.9987 (high stability)
+- GPN = 1.000 (perfect configuration neutrality)
+- 2-5× lower computational cost than 4D-5D
+
+**Goldilocks principle:** 3D balances predictability with non-triviality.
+
+#### Ternary XOR Tickstream and Sampler (Doc 41)
+**Extension:** XOR logic generalized to ternary states {-1, 0, +1}.
+
+**Operations:**
+- Ternary XOR creates richer oscillation patterns
+- Enables void (0) as distinct state from presence/anti-presence
+
+#### Temporal Choice Reconstruction Principle (Doc 42)
+**Statement:** Past choices are not stored but reconstructed from current tick state via inverse propagation.
+
+**Implications:**
+- Memory = reconstruction, not retrieval
+- History is computed, not remembered
+- Aligns with neuroscience: memories are reconstructions
+
+#### Void Asymmetry Principle (Doc 43)
+**Statement:** Matter-antimatter asymmetry arises from the stabilizing role of void (0) in ternary state space.
+
+**Trinary states:**
+- +1 = Presence (matter)
+- -1 = Anti-presence (antimatter)
+- 0 = Void (buffer/stabilizer)
+
+**Collision dynamics:**
+- (1) + (-1) → 0 (annihilation absorbed into void)
+- (1) + (1) → 1 (presence reinforces)
+- (-1) + (-1) → -1 (anti-presence reinforces)
+- 0 + 1 → 1 (void allows presence)
+- 0 + (-1) → -1 (void allows anti-presence)
+- 0 + 0 → 0 (void remains void)
+
+**Emergent asymmetry:**
+- Symmetric rules yield asymmetric outcomes
+- Presence (1) dominates over time
+- Void (0) acts as reservoir, breaking perfect cancellation
+- Explains why matter persisted after Big Bang
+
+**Operator bias:**
+- NAND: seeds alternation and void islands
+- OR: favors presence (stabilizing surplus)
+- XOR: amplifies difference (bursts of -1)
+- AND: compresses entropy (increasing 0)
+
+### 12.4 Free Will and Consciousness (Doc 44, 44_01)
+
+#### Fallible Commit Principle (Doc 44)
+**Statement:** Every commit (decision boundary) is an irreversible choice that closes the observer's buffer. Since the commit occurs only after visualization, it is always at least one buffer behind the substrate.
+
+**Mechanism:**
+- Buffer closure: commit fixes a tick sequence belonging to the past
+- New buffer: window reopens to collect further ticks
+- Visualization: runs on closed buffer, may reveal decision was "wrong"
+
+**Consequences:**
+- Irreversibility: fallible commits cannot be corrected
+- Lag of reality: observer always reconstructs past, never live stream
+- Cardinality 1: no branching if single main observer
+- Cardinality >1: separate reality branches emerge
+
+**Philosophical layer:** Reality is inherently risky — every decision may lead to deviation.
+
+#### Extended Summary of Principles (Doc 44_01)
+**Consolidated doctrines after Fallible Commit:**
+
+1. **Unbalance Principle ("Life"):** Life is the consequence of trying to balance what cannot be balanced. Persistence arises from endless attempt to equilibrate trinary states.
+
+2. **Operator Manipulation Principle ("Free Will"):** Free will is conscious manipulation of the operator at commit points. Agents cannot control all switches at once — free will is exercised in fragments but is real.
+
+3. **Consciousness from Tick One Principle:** Consciousness is not emergent but fundamental. From the first tick, substrate carries capacity to commit operators. Complexity is visible trace, not origin.
+
+4. **Emission Principle (Live vs. Static):** Live entities emit operator changes; static entities follow operators passively. The act of emitting operator commits is the signature of vitality.
+
+5. **Path-Phase Commit Principle:** Operators must be chosen before circles emerge, while universe is still path-like. Circles are consequences, not causes, of operator choice.
+
+6. **Equilibrium-Driven Operator Switching:** Operators may only be changed at commit boundaries when buffer shows sustained imbalance among (+1, 0, -1). Operator changes tied to measurable lean, not arbitrary choice.
+
+**Observer interaction requirement:** Multiple instances of main observer must interact to agree on final operator during commit, ensuring alignment and coherence across instances.
+
+### 12.5 Rendering Theory and Validation (Docs 45-46)
+
+#### Tick-Frame Rendering vs Classical 3D Engines (Doc 45)
+**Comparison:** Tick-frame rendering operates on temporal buffers, not spatial scene graphs.
+
+**Key differences:**
+- Classical: spatial depth sorting, z-buffering, view frustum culling
+- Tick-frame: temporal bucketing, tick-depth ordering, horizon culling
+- Classical: 3D coordinates projected to 2D screen
+- Tick-frame: 2D+time buffer projected to observed 3D space
+
+#### Why Sorting Is Not Theoretically Required (Doc 46)
+**Theoretical claim:** In tick-frame rendering, temporal bucketing by tick-depth eliminates need for spatial sorting.
+
+**Mechanism:**
+- Events naturally ordered by arrival tick
+- Observer reconstructs 3D from temporal sequence
+- Bucketing by tick-depth provides implicit depth ordering
+- No z-buffer or painter's algorithm needed
+
+#### Experimental Validation: Bucketing Eliminates Sorting (Doc 46_01)
+**Result:** Experimental tests validated that bucketing by tick-depth produces correct visual ordering without explicit sorting.
+
+**Implications:**
+- Rendering complexity reduced from O(n log n) to O(n)
+- Aligns with substrate's temporal-first ontology
+- Demonstrates computational advantage of tick-frame approach
+
+### 12.6 Physical Formalization (Docs 47-48)
+
+#### Tick-Frame Universe: Physical Formalization (Doc 47)
+**Complete axiomatic system for tick-frame physics:**
+
+**Axiom 1 — Existence:** To exist means to be present in the current tick. Anything not represented in active tick is not part of reality.
+
+**Axiom 2 — Causality:** Tick n+1 is deterministic transformation of tick n within local causal region. No information propagates faster than one spatial unit per tick.
+
+**Axiom 3 — Granularity:** Planck-scale discretization:
+- 1 tick = 1 Planck time (≈ 5.4×10⁻⁴⁴ s)
+- 1 spatial unit = 1 Planck length
+- Light travels exactly one spatial unit per tick
+
+**Derived quantities:**
+- Number of ticks in universe: N_universe ≈ 10⁶¹
+- Ticks for 100-year human lifetime: N_obs ≈ 10⁵³
+- Computational cost of existence: P ≈ 10⁴⁹ - 10⁵⁵ ops/s (depending on observer complexity)
+- Planetary computational capacity: P_Earth ≈ 10²² ops/s
+- Gap: Earth operates at 10⁻²⁷ to 10⁻³³ of required throughput
+
+**Interpretation:** Model provides:
+- Discrete temporal substrate (tick-stream)
+- Local deterministic causality
+- Emergent spatial structure
+- Computable definition of existence
+- Measurable upper bound on simulation cost
+- Bridge between physics and computation
+
+#### Observer Model in Tick-Frame Universe (Doc 48)
+**Complete cognitive formalization:**
+
+**Axiom 1 — Identity:** Observer is a function mapping tick n → tick n+1 within its causal region. Identity = continuous process of state propagation, not stored entity.
+
+**Axiom 2 — Existence Buffer:** Each observer has sliding window over tick-stream:
+- Current tick = conscious presence
+- Past ticks within buffer = accessible memory
+- Future ticks = do not exist
+
+**Buffer size determines:**
+- Memory capacity
+- Stability of identity
+- Temporal coherence
+
+**Memory as Addressing:** If buffer spans observer's entire lifetime:
+- No memory stored in brain
+- All past tick-states exist in buffer
+- Brain acts as indexing mechanism, not storage device
+- Memory = addressing historical ticks
+
+**Cognitive phenomena explained:**
+- **Forgetting:** Old ticks fall out of buffer window → loss of indexability, not loss of data
+- **Trauma:** Extremely high signal strength → high indexing priority → low activation threshold → disproportionately easy to re-address
+- **Déjà vu:** Current tick pattern matches distant tick → indexing mechanism jumps to old tick → "I have already experienced this" → index collision
+- **Dreams:** Causal filter weakens during sleep → indexing becomes non-linear → ticks accessed without strict temporal order → free traversal of buffer
+- **Death:** Observer can no longer generate tick n+1 → trajectory ends → buffer remains but no process traverses it → identity ceases because continuity ceases
+
+**Integration:** Cognitive layer directly integrated into tick-frame physics.
+
+### 12.7 Implications for Foundation Theory
+
+**Phase transition complete:**
+- From meta-critical ToE framework (Phases 1-6) to complete physical formalization
+- From "does it work?" to "how does reality work?"
+- From validation to ontology
+
+**Substrate vs Visualization refinement:**
+- Substrate: deterministic tick-stream, no geometry, no history, no Big Bang
+- Visualization: observer creates geometry, history, dimensionality, cosmology
+- Observer perceives universe; substrate processes ticks
+- Dimension is observer property (minimal parameters for latency explanation)
+- Big Bang is observer event (first coherent tick), not substrate event
+
+**Consciousness and free will:**
+- Consciousness fundamental from tick one, not emergent
+- Free will = bounded operator manipulation at commit points
+- Life = endless attempt to balance unbalanceable (trinary states)
+- Emission of operator changes = signature of vitality
+
+**Energy and persistence:**
+- Normalized energy conservation (Energy Constant Principle)
+- Persistence = normalized renewal, not raw magnitude
+- Void (0) breaks perfect matter-antimatter cancellation
+- Momentum as expenditure, not property
+
+**Rendering and computation:**
+- Temporal bucketing eliminates sorting requirement
+- O(n) rendering complexity via tick-depth ordering
+- Computational cost of Planck-scale observer: 10⁴⁹-10⁵⁵ ops/s
+- Earth's capacity: 10²² ops/s → compression essential
+
+**Falsifiability progress:**
+- Physical formalization creates testable predictions
+- Observer model yields cognitive predictions (trauma, déjà vu, dreams)
+- Rendering theory experimentally validated (bucketing tests)
+- Dimensional optimality validated (3D via SPBI)
+- Void asymmetry testable via ternary state simulations
+
+### 12.8 Status Update
+
+**Phase 8 (Physical Formalization):** COMPLETED
+- Energy principles formalized (Docs 31-34) ✅
+- Observer-relative cosmology defined (Docs 35-38) ✅
+- Ternary logic and void mechanics established (Docs 39-43) ✅
+- Free will and consciousness principles integrated (Docs 44, 44_01) ✅
+- Rendering theory developed and validated (Docs 45-46) ✅
+- Complete physical formalization achieved (Docs 47-48) ✅
+
+**Phase 9 (Integration and Synthesis):** IN PROGRESS
+- Cross-theory consistency verification ⚙️
+- Unified mathematical formalism ⏳
+- Comprehensive technical paper ⏳
+
+**New documentation artifacts:**
+- 18 additional theory documents (31-48)
+- Complete physical axiom system
+- Observer cognitive model
+- Ternary state mechanics
+- Rendering validation
+
+### 12.9 Acceptance Criteria Update
+
+✅ **Formal definitions:** Extended with:
+- Energy constant operator
+- Observer buffer formalism
+- Ternary state collision rules
+- Dimensional latency matrix
+- Rendering bucket operators
+
+✅ **Differential predictions:**
+- Observer phenomena (trauma indexing, déjà vu as collision, dreams as non-causal traversal) → testable via cognitive neuroscience
+- Void asymmetry (matter surplus from symmetric rules) → testable via ternary state simulations
+- Dimensional emergence (3D optimal, not exclusive) → experimentally validated
+- Rendering efficiency (bucketing vs sorting) → experimentally validated
+
+✅ **Operationalized disproof:** Multiple theories tested and refined:
+- Dimensional closure (FALSIFIED → revised to "3D optimal, not exclusive")
+- Configuration independence (VALIDATED at d≥3)
+- Geometry/phase effects (FALSIFIED at d≥3 → theory refined)
+
+✅ **Public artifacts:**
+- 48 theory documents
+- Java substrate implementation
+- Python dimensional experiments (3,960 runs)
+- Rendering validation experiments
+- Full reproducibility
+
+**Theory status (2026-01):**
+Experimentally validated (Section 8), theoretically complete (Sections 10-12), operationally implemented (Java substrate), physically formalized (axiomatic system), cognitively integrated (observer model), ready for comprehensive synthesis and technical paper.
+
+---
+
+## 13. Current Status (Updated 2026-01-12)
+
+**Completed:**
+- Foundational principles (Closure, Consciousness, Disproof, Origin Paradox)
+- Experimental validation (1D-5D, 3,960 simulations, dimensional phase transition)
+- Collision theory framework (Temporal Surfing, Imbalance, Collision Persistence)
+- Horizon boundaries and length definition (temporal invariance)
+- Java implementation (tick-time substrate with collision models)
+- **Energy and conservation framework (Energy Constant, Planck Cube Ledger, Persistence-Survival, Relative Decay)**
+- **Observer-relative cosmology (Sleep, Alcubierre, Observer Big Bang, Multiverse)**
+- **Ternary logic and void mechanics (XOR, Dimension Definition, Void Asymmetry)**
+- **Free will and consciousness principles (Fallible Commit, Operator Manipulation, Consciousness from Tick One)**
+- **Rendering theory (Temporal Bucketing, Sorting Elimination) — experimentally validated**
+- **Physical formalization (Complete axiomatic system, Planck-scale granularity)**
+- **Observer cognitive model (Memory as Indexing, Trauma, Déjà Vu, Dreams, Death)**
+
+**In Progress:**
+- Integration and synthesis across all 48 theory documents
+- Unified mathematical formalism
+- Anisotropy and chaos in Java entity emergence
+- Collision dynamics tuning (persistence vs. dissolution)
+
+**Next Steps:**
+- Complete cross-theory consistency verification
+- Draft comprehensive technical paper integrating all phases
+- Refine Java EntityModel to reduce over-coherence
+- Initiate red-team critique protocol
+- Formalize quantum-classical correspondence mapping

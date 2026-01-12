@@ -92,12 +92,28 @@ The substrate model implements these theoretical principles:
 - **Collision Persistence Principle** (Doc 30) - particles as collision patterns
 - **Imbalance Theory** (Doc 29) - matter-antimatter asymmetry from expansion geometry
 - **Horizon Boundaries** (Doc 26) - observable limits in causal cones
+- **Void Asymmetry Principle** (Doc 43) - matter surplus via ternary state stabilization
+- **Observer-Relative Big Bang** (Doc 37) - Big Bang as observer event, not substrate event
+- **Fallible Commit Principle** (Doc 44) - irreversible decisions with inherent lag
+- **Physical Formalization** (Docs 47-48) - complete Planck-scale axioms and observer model
 
 ### Current Status
 
-**Phase 7 (Operational Substrate):** IN PROGRESS
+**Phase 8 (Physical Formalization):** COMPLETED (2026-01)
+**Phase 9 (Integration & Synthesis):** IN PROGRESS
 
-**Observations:**
+**Theory achievements:**
+- ✅ **48 theoretical documents** covering foundation through physical formalization
+- ✅ **Complete axiomatic system** at Planck scale (Docs 47-48)
+- ✅ **Observer cognitive model** explaining memory, consciousness, trauma, déjà vu, dreams, death
+- ✅ **Experimental validation** (3,960 dimensional simulations, 99.9% success rate)
+- ✅ **Dimensional phase transition** discovered at d=3
+- ✅ **3D optimality validated** (SPBI = 2.23, minimal sufficient dimension)
+- ✅ **Void asymmetry** explains matter-antimatter surplus from symmetric rules
+- ✅ **Rendering theory** validated (O(n) temporal bucketing eliminates sorting)
+- ✅ **Free will & consciousness** formalized (bounded operator manipulation)
+
+**Implementation observations:**
 - ✅ Entities exhibit temporal surfing behavior
 - ✅ Collision patterns create composite structures
 - ✅ Expansion follows dimensional growth rules
@@ -128,18 +144,39 @@ Python scripts for analyzing JSON snapshots from LocalApp:
 
 ## 📚 Documentation
 
-- **Theory & Model**
-    - [Computational Gravity Model](docs/model/01%20Computational%20Gravity%20-%20A%20Physics-Inspired%20Model%20for%20Tick-Based%20Resource%20Allocation.md)
-    - [Rendering Pipeline](docs/model/03%20Rendering%20pipeline.md)
-    - [Tick‑Frame Engine Documentation](docs/model/04%20Tick‑Frame%20Engine%20Documentation.md)
-    - [Meta-Critical Theory Log](docs/theory/00%20Meta-Critical%20Theory%20Development%20Log.md)
+### Theory (48 Documents)
 
-- **Experiment Analysis & Validation**
-    - [SPBI Executive Summary](experiments/15_minimal-model/v6-gpu/SPBI_EXECUTIVE_SUMMARY.md)
-    - [SPBI Analysis Report](experiments/15_minimal-model/v6-gpu/SPBI_ANALYSIS_REPORT.md)
-    - [Validation Summary](experiments/15_minimal-model/v6-gpu/VALIDATION_SUMMARY.md)
-    - [Theoretical Implications](experiments/15_minimal-model/v6-gpu/THEORETICAL_IMPLICATIONS.md)
-    - [5D Analysis Summary](experiments/15_minimal-model/v6-gpu/5D_ANALYSIS_SUMMARY.md)
+- **Foundation & Overview**
+    - [00 Meta-Critical Theory Development Log](docs/theory/00%20Meta-Critical%20Theory%20Development%20Log.md) - Complete development history through Phase 8
+    - [97 Meta-Critical Theory — Integrated Spec](docs/theory/97%20Meta-Critical%20Theory%20—%20Integrated%20Spec.md) - Comprehensive integration
+    - [99 Closure Improvement Plan](docs/theory/99%20Closure%20Improvement%20Plan.md) - Development roadmap and status
+    - [Theory README](docs/theory/README.md) - Full index of all 48 documents
+
+- **Physical Formalization**
+    - [47 Tick‑Frame Universe - Physical Formalization](docs/theory/47%20Tick‑Frame%20Universe%20-%20Physical%20Formalization.md) - Complete axiomatic system at Planck scale
+    - [48 Observer Model in the Tick‑Frame Universe](docs/theory/48%20Observer%20Model%20in%20the%20Tick‑Frame%20Universe.md) - Cognitive formalization: identity, memory, dreams, death
+
+- **Key Principles**
+    - [28 Temporal Surfing Principle](docs/theory/28%20Temporal%20Surfing%20Principle.md) - Persistence through continual renewal
+    - [30 Collision Persistence Principle](docs/theory/30%20Collision%20Persistence%20Principle%20in%20Tick-Frame.md) - Entities as collision patterns
+    - [37 Observer‑Relative Big Bang Principle](docs/theory/37%20Observer‑Relative%20Big%20Bang%20Principle.md) - Big Bang as observer event
+    - [40 Dimension Definition in Tick‑Frame Space](docs/theory/40%20Dimension%20Definition%20in%20Tick‑Frame%20Space.md) - Dimension as observer property
+    - [43 Void Asymmetry Principle](docs/theory/43%20Void%20Asymmetry%20Principle.md) - Matter surplus via void stabilization
+    - [44 Fallible Commit Principle](docs/theory/44%20Fallible%20Commit%20Principle.md) - Irreversible decisions with inherent lag
+
+### Model & Implementation
+
+- [Computational Gravity Model](docs/model/01%20Computational%20Gravity%20-%20A%20Physics-Inspired%20Model%20for%20Tick-Based%20Resource%20Allocation.md)
+- [Rendering Pipeline](docs/model/03%20Rendering%20pipeline.md)
+- [Tick‑Frame Engine Documentation](docs/model/04%20Tick‑Frame%20Engine%20Documentation.md)
+
+### Experimental Validation (3,960 Simulations)
+
+- [SPBI Executive Summary](experiments/15_minimal-model/v6-gpu/SPBI_EXECUTIVE_SUMMARY.md) - 3D optimality validation
+- [SPBI Analysis Report](experiments/15_minimal-model/v6-gpu/SPBI_ANALYSIS_REPORT.md) - Dimensional scaling analysis
+- [Validation Summary](experiments/15_minimal-model/v6-gpu/VALIDATION_SUMMARY.md) - Hypothesis testing results
+- [Theoretical Implications](experiments/15_minimal-model/v6-gpu/THEORETICAL_IMPLICATIONS.md) - Impact on foundation theory
+- [5D Analysis Summary](experiments/15_minimal-model/v6-gpu/5D_ANALYSIS_SUMMARY.md) - High-dimensional behavior
 
 ---
 
@@ -181,19 +218,78 @@ Python scripts for analyzing JSON snapshots from LocalApp:
 
 ---
 
-## Scientific Note (Optional)
+## 🔬 Scientific Status
 
-While primarily a modeling framework, the tick‑frame universe can be read as a speculative physics analogy:
-- **Matter–antimatter asymmetry:** Structural necessity of expansion.
-- **Energy distribution:** Emerges as a function of time, always less than 100% after expansion.
-- **Edge generation:** Even if energy appears at boundaries, imbalance persists due to parity constraints.
+**Theory Development:** 48 documents spanning foundation to complete physical formalization
 
-⚠️ **Speculation disclaimer:** The model does not define matter emergence. Physics parallels are exploratory, not predictive.
+**Experimental Validation:**
+- **3,960 simulations** across 1D-5D dimensions (99.9% success rate)
+- **Dimensional phase transition** discovered at d=3
+- **3D optimality validated** via SPBI framework (minimal sufficient dimension)
+- **Rendering theory validated** (O(n) temporal bucketing experimentally confirmed)
+- **45% hypothesis validation rate** with falsification leading to theory refinement
+
+**Key Scientific Contributions:**
+- **Void Asymmetry Principle:** Matter-antimatter asymmetry arises from ternary state stabilization ({-1, 0, +1}), not CP violation. Symmetric rules yield asymmetric outcomes.
+- **Observer-Relative Cosmology:** Big Bang, dimensions, and multiverse are observer properties, not substrate events.
+- **Dimensional Determinism Emergence:** Probabilistic behavior decreases exponentially with dimension: CV(d) ≈ 80% × exp(-0.82×d). Free will perception may be dimensional artifact.
+- **Consciousness from Tick One:** Consciousness fundamental, not emergent. Free will = bounded operator manipulation at commit points.
+- **Memory as Indexing:** Brain is indexing mechanism, not storage device. Explains trauma (high indexing priority), déjà vu (index collision), dreams (non-causal traversal).
+
+**Computational Insights:**
+- **Planck-scale observer cost:** 10⁴⁹-10⁵⁵ ops/s
+- **Earth's capacity:** 10²² ops/s (gap of 10⁻²⁷ to 10⁻³³)
+- **Implication:** Compression essential; Planck-scale simulation computationally extreme
+
+**Defined Limitations:**
+1. Quantum-classical correspondence conceptually mapped but not mathematically rigorous
+2. Lorentz invariance recovery not yet demonstrated
+3. Matter emergence mechanism (void asymmetry) lacks defined dynamics
+4. Consciousness predictions testable in principle but not yet empirically validated
+
+⚠️ **Speculation disclaimer:** This is a speculative computational model exploring discrete physics. Physics parallels are exploratory and falsifiable, not predictive of experimental outcomes without further validation.
 
 ---
 
 ## 📝 Further Reading
 
-- [Tick‑Frame Engine Documentation](docs/model/04%20Tick‑Frame%20Engine%20Documentation.md)
-- [Meta-Critical Theory Log](docs/theory/00%20Meta-Critical%20Theory%20Development%20Log.md)
-- [SPBI Test Framework](experiments/15_minimal-model/v7/Stability–Probability%20Balance%20Test%20Framework.md)
+### Quick Start Paths
+
+1. **Theory Overview:** Start with [00 Meta-Critical Theory Development Log](docs/theory/00%20Meta-Critical%20Theory%20Development%20Log.md) for complete history
+2. **Physical Formalization:** Jump to [47 Tick‑Frame Universe](docs/theory/47%20Tick‑Frame%20Universe%20-%20Physical%20Formalization.md) and [48 Observer Model](docs/theory/48%20Observer%20Model%20in%20the%20Tick‑Frame%20Universe.md)
+3. **Experimental Validation:** See [SPBI Executive Summary](experiments/15_minimal-model/v6-gpu/SPBI_EXECUTIVE_SUMMARY.md) for dimensional optimality results
+4. **Implementation:** Read [Tick‑Frame Engine Documentation](docs/model/04%20Tick‑Frame%20Engine%20Documentation.md)
+5. **Integrated Spec:** Review [97 Meta-Critical Theory — Integrated Spec](docs/theory/97%20Meta-Critical%20Theory%20—%20Integrated%20Spec.md)
+
+### All 48 Theory Documents
+
+See [docs/theory/README.md](docs/theory/README.md) for complete index organized by topic:
+- Foundation (Docs 01-08)
+- Core Equations (Docs 09-15)
+- Physical Quantities (Docs 16-25)
+- Collision Theory (Docs 26-30)
+- Energy & Conservation (Docs 31-34)
+- Observer Cosmology (Docs 35-38)
+- Ternary Logic (Docs 39-43)
+- Free Will & Consciousness (Doc 44)
+- Rendering Theory (Docs 45-46)
+- Physical Formalization (Docs 47-48)
+- Meta-Documents (Docs 97-99)
+
+---
+
+## 🤖 AI-Assisted Development
+
+This project represents a novel approach to theoretical physics development: **AI as a tool for materialization, not invention.**
+
+**The theory itself** — the core ideas, principles, and conceptual framework — **originates from human thought** during a period of "garden leave" exploration. The tick-frame universe, discrete time substrate, collision persistence, void asymmetry, and observer-relative cosmology are all products of human speculation and insight.
+
+**AI's role** has been to help **materialize** these ideas:
+- **Claude (Anthropic)** - Theory formalization, mathematical expression, documentation synthesis, experimental design, cross-consistency verification
+- **GitHub Copilot** - Code implementation, Java substrate development, pattern completion, refactoring support
+
+**This distinction matters:** AI is being used as an advanced tool for expression and implementation — much like using LaTeX for typesetting or MATLAB for simulations — not as the source of theoretical creativity. The human provides the vision; AI helps make it concrete, testable, and reproducible.
+
+Without Claude and Copilot, this theory would still exist as scattered thoughts. With them, it has become 48 formalized documents, 3,960 validation experiments, a working Java implementation, and a falsifiable framework. This collaboration demonstrates how AI can amplify human theoretical work without replacing human creativity.
+
+**Acknowledgment:** This project would not have been possible in its current form without the assistance of Claude (Anthropic) and GitHub Copilot. They served as tireless partners in the work of bringing speculative ideas into rigorous form.
