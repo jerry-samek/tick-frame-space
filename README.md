@@ -187,6 +187,8 @@ Python scripts for analyzing JSON snapshots from LocalApp:
 
 ## 🧪 Experiments
 
+### Dimensional Physics Experiments (15 Series)
+
 - **v6-gpu: Dimensional Sweeps**
     - [1D](experiments/15_minimal-model/v6-gpu/v6_gpu_1d.py)
     - [2D](experiments/15_minimal-model/v6-gpu/v6_gpu_2d.py)
@@ -206,6 +208,25 @@ Python scripts for analyzing JSON snapshots from LocalApp:
     - [4D](experiments/15_minimal-model/v7-final/v7_final_4d.py)
     - [5D](experiments/15_minimal-model/v7-final/v7_final_5d.py)
     - [Experiment Plan](experiments/15_minimal-model/v7-final/Experiment%20Plan%20-%20SPBI%20and%20LHB%20validation.md)
+
+### Temporal Rendering Experiments (44 Series)
+
+- **44_05: Double Buffer Rendering**
+    - [README](experiments/44_05_double_buffer_rendering/README.md) - O(n) bucketing vs O(n log n) sorting
+    - [RESULTS](experiments/44_05_double_buffer_rendering/RESULTS.md) - 2.78× speedup validation
+    - [Interactive Demo](experiments/44_05_double_buffer_rendering/double_buffer_rendering.py)
+    - [Benchmark](experiments/44_05_double_buffer_rendering/benchmark_sorting_vs_bucketing.py)
+    - **Status:** ✅ Validated - Theory Doc 46 confirmed (sorting not required)
+
+### Theory Validation Experiments (49 Series)
+
+- **49: Temporal Ontology - Dynamic Sliding Window**
+    - [README](experiments/49_sliding_window_rendering/README.md) - Dynamic temporal memory with holographic horizon
+    - [RESULTS](experiments/49_sliding_window_rendering/RESULTS.md) - Performance validated and documented
+    - [Interactive Demo](experiments/49_sliding_window_rendering/sliding_window_rendering.py)
+    - [Benchmark](experiments/49_sliding_window_rendering/benchmark_sliding_vs_double.py)
+    - **Status:** ✅ Validated - Implements Theory Doc 49 existence buffer
+    - **Performance:** 120 FPS @ 6.6k entities | 75 FPS @ 10k entities
 
 ---
 
