@@ -1,0 +1,236 @@
+{
+  "metrics": {
+    "baseline_3d": {
+      "dimension": "3D",
+      "n_configs": 5,
+      "mean_commit_rate": 50.874199999999995,
+      "mean_max_salience": 4.822366397938831,
+      "mean_final_psi": 4.855877389299109,
+      "std_commit_rate": 32.603928777066116,
+      "std_max_salience": 4.951516991695498,
+      "std_final_psi": 4.911507264754908,
+      "cv_commit_rate": 0.6408735425238357,
+      "cv_max_salience": 1.0267815804729952,
+      "cv_final_psi": 1.0114561944208869,
+      "rho": 1.5027976272081007
+    },
+    "baseline_4d": {
+      "dimension": "4D",
+      "n_configs": 5,
+      "mean_commit_rate": 71.5276,
+      "mean_max_salience": 25.690087916056314,
+      "mean_final_psi": 25.86853688557943,
+      "std_commit_rate": 26.120495263298515,
+      "std_max_salience": 26.643255484850776,
+      "std_final_psi": 26.435394724213076,
+      "cv_commit_rate": 0.36518064723685,
+      "cv_max_salience": 1.03710254211309,
+      "cv_final_psi": 1.021913022802215,
+      "rho": 1.532031251475981
+    },
+    "baseline_5d": {
+      "dimension": "5D",
+      "n_configs": 5,
+      "mean_commit_rate": 72.3,
+      "mean_max_salience": 27.774384053548168,
+      "mean_final_psi": 27.772604539659284,
+      "std_commit_rate": 25.78593624439493,
+      "std_max_salience": 28.76201938266519,
+      "std_final_psi": 28.759407446521312,
+      "cv_commit_rate": 0.35665195358775836,
+      "cv_max_salience": 1.0355592162624703,
+      "cv_final_psi": 1.035531521915882,
+      "rho": 1.571451220364424
+    },
+    "variant_a_2d_t": {
+      "dimension": "2D+t (physics)",
+      "n_configs": 180,
+      "mean_commit_rate": 99.24269444444445,
+      "mean_max_salience": 8078.788298502035,
+      "mean_final_psi": 8078.788298502035,
+      "std_commit_rate": 4.406345782156034,
+      "std_max_salience": 17175.588139375777,
+      "std_final_psi": 17175.588139375777,
+      "cv_commit_rate": 0.04439969921033012,
+      "cv_max_salience": 2.126010424429672,
+      "cv_final_psi": 2.126010424429672,
+      "rho": 1.99880597614466
+    },
+    "variant_a_3d_t": {
+      "dimension": "3D+t (physics)",
+      "n_configs": 180,
+      "mean_commit_rate": 80.17447777777777,
+      "mean_max_salience": 76.0325257727814,
+      "mean_final_psi": 76.04178335011133,
+      "std_commit_rate": 17.335825837840847,
+      "std_max_salience": 137.6517951634708,
+      "std_final_psi": 137.64387903828037,
+      "cv_commit_rate": 0.21622623955083467,
+      "cv_max_salience": 1.8104330188219036,
+      "cv_final_psi": 1.810108508430699,
+      "rho": 2.0017411370465483
+    },
+    "variant_a_4d_t": {
+      "dimension": "4D+t (physics)",
+      "n_configs": 180,
+      "mean_commit_rate": 89.59313888888887,
+      "mean_max_salience": 332.92180347476517,
+      "mean_final_psi": 332.91612175623493,
+      "std_commit_rate": 9.005283644445353,
+      "std_max_salience": 603.7768618734868,
+      "std_final_psi": 603.7715547884926,
+      "cv_commit_rate": 0.10051309459771775,
+      "cv_max_salience": 1.8135695997431178,
+      "cv_final_psi": 1.8135846098513102,
+      "rho": 2.00109986917187
+    },
+    "variant_b_2d": {
+      "dimension": "2D+t (rendering)",
+      "n_configs": 180,
+      "mean_commit_rate": 91.72103888888887,
+      "mean_max_salience": 957.5687097415555,
+      "mean_final_psi": 957.5687097415555,
+      "std_commit_rate": 11.189470902446258,
+      "std_max_salience": 2035.8095765954458,
+      "std_final_psi": 2035.8095765954458,
+      "cv_commit_rate": 0.12199459402112982,
+      "cv_max_salience": 2.1260193194333845,
+      "cv_final_psi": 2.1260193194333845,
+      "rho": 1.9988043337256045
+    },
+    "variant_b_3d": {
+      "dimension": "3D+t (rendering)",
+      "n_configs": 180,
+      "mean_commit_rate": 54.05723888888889,
+      "mean_max_salience": 9.181108749983725,
+      "mean_final_psi": 9.324074892834288,
+      "std_commit_rate": 28.585648958202917,
+      "std_max_salience": 16.6221066212236,
+      "std_final_psi": 16.54847524908811,
+      "cv_commit_rate": 0.5288033489272148,
+      "cv_max_salience": 1.8104683294654436,
+      "cv_final_psi": 1.7748114895351064,
+      "rho": 2.0017414639970497
+    },
+    "variant_b_4d": {
+      "dimension": "4D+t (rendering)",
+      "n_configs": 180,
+      "mean_commit_rate": 75.95418333333333,
+      "mean_max_salience": 48.645679936267705,
+      "mean_final_psi": 48.66505756943314,
+      "std_commit_rate": 20.18320315517516,
+      "std_max_salience": 88.22408929882879,
+      "std_final_psi": 88.21231456263338,
+      "cv_commit_rate": 0.26572865732225626,
+      "cv_max_salience": 1.8136058415549756,
+      "cv_final_psi": 1.8126417386186378,
+      "rho": 2.001099723815267
+    }
+  },
+  "comparisons": [
+    {
+      "test": "2D+t (physics) vs 3D",
+      "baseline_dim": 3,
+      "variant_label": "2D+t (physics)",
+      "passes": [],
+      "fails": [
+        "mean_commit_rate: 95.1% (FAIL)",
+        "mean_max_salience: 167427.5% (FAIL)",
+        "cv_commit_rate: 93.1% (FAIL)",
+        "cv_max_salience: 107.1% (FAIL)",
+        "rho: 33.0% (FAIL)"
+      ],
+      "warnings": [],
+      "pass_rate": 0.0,
+      "verdict": "FAIL"
+    },
+    {
+      "test": "3D+t (physics) vs 4D",
+      "baseline_dim": 4,
+      "variant_label": "3D+t (physics)",
+      "passes": [],
+      "fails": [
+        "mean_commit_rate: 12.1% (FAIL)",
+        "mean_max_salience: 196.0% (FAIL)",
+        "cv_commit_rate: 40.8% (FAIL)",
+        "cv_max_salience: 74.6% (FAIL)",
+        "rho: 30.7% (FAIL)"
+      ],
+      "warnings": [],
+      "pass_rate": 0.0,
+      "verdict": "FAIL"
+    },
+    {
+      "test": "4D+t (physics) vs 5D",
+      "baseline_dim": 5,
+      "variant_label": "4D+t (physics)",
+      "passes": [],
+      "fails": [
+        "mean_commit_rate: 23.9% (FAIL)",
+        "mean_max_salience: 1098.7% (FAIL)",
+        "cv_commit_rate: 71.8% (FAIL)",
+        "cv_max_salience: 75.1% (FAIL)",
+        "rho: 27.3% (FAIL)"
+      ],
+      "warnings": [],
+      "pass_rate": 0.0,
+      "verdict": "FAIL"
+    },
+    {
+      "test": "2D+t (rendering) vs 3D",
+      "baseline_dim": 3,
+      "variant_label": "2D+t (rendering)",
+      "passes": [],
+      "fails": [
+        "mean_commit_rate: 80.3% (FAIL)",
+        "mean_max_salience: 19756.8% (FAIL)",
+        "cv_commit_rate: 81.0% (FAIL)",
+        "cv_max_salience: 107.1% (FAIL)",
+        "rho: 33.0% (FAIL)"
+      ],
+      "warnings": [],
+      "pass_rate": 0.0,
+      "verdict": "FAIL"
+    },
+    {
+      "test": "3D+t (rendering) vs 4D",
+      "baseline_dim": 4,
+      "variant_label": "3D+t (rendering)",
+      "passes": [],
+      "fails": [
+        "mean_commit_rate: 24.4% (FAIL)",
+        "mean_max_salience: 64.3% (FAIL)",
+        "cv_commit_rate: 44.8% (FAIL)",
+        "cv_max_salience: 74.6% (FAIL)",
+        "rho: 30.7% (FAIL)"
+      ],
+      "warnings": [],
+      "pass_rate": 0.0,
+      "verdict": "FAIL"
+    },
+    {
+      "test": "4D+t (rendering) vs 5D",
+      "baseline_dim": 5,
+      "variant_label": "4D+t (rendering)",
+      "passes": [
+        "mean_commit_rate: 5.1% (PASS)"
+      ],
+      "fails": [
+        "mean_max_salience: 75.1% (FAIL)",
+        "cv_commit_rate: 25.5% (FAIL)",
+        "cv_max_salience: 75.1% (FAIL)",
+        "rho: 27.3% (FAIL)"
+      ],
+      "warnings": [],
+      "pass_rate": 0.2,
+      "verdict": "FAIL"
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 6,
+    "inconclusive": 0,
+    "conclusion": "GENERATOR DISTINCTION CONFIRMED",
+    "explanation": "Time exhibits qualitatively different behavior from spatial dimensions."
+  }
+}

@@ -120,7 +120,7 @@ Physics is the fossil record of stable causal patterns.
 
 ---
 
-## 10. A universe is simple.
+## 10. The universe is simple.
 Understanding it is hard.
 
 Because simplicity at the root  
