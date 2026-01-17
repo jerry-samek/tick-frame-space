@@ -1,0 +1,231 @@
+Configuration: baseline
+
+Field Parameters:
+  alpha=0.012, gamma=0.0005, scale=0.75
+  R=1.2, E_max=15.0, D=0.01
+
+Entity Configuration:
+  Planet: 700 entities at r<10.0
+  Mobile: 5 per velocity × 4 velocities = 20 total
+  Velocities: 0.1c, 0.5c, 0.9c, 0.99c
+
+Simulation:
+  Grid: 100×100
+  Duration: 5000 ticks
+  Speed of light: c = 1.0
+
+*** DIVERGENCE MODE ENABLED ***
+Allowing gamma -> infinity (black hole test)
+
+Creating entities...
+  Planet: 7000 entities (BLACK HOLE CANDIDATE)
+  Test entities: 36
+    Distances: [10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 50.0, 60.0]
+    Velocities: [0.0, 0.1, 0.3, 0.5] (including stationary!)
+    Gradient coupling: 0.01
+
+======================================================================
+EXPERIMENT 52 (V11) - baseline
+======================================================================
+
+Testing: BLACK HOLE EVENT HORIZON formation
+Planet mass: 10× baseline (SUPERMASSIVE)
+Simulating 5000 ticks...
+
+Tick 100/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.9, v=1.000c, gamma_eff=2417.63
+Tick 200/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.5, v=1.000c, gamma_eff=40.51
+Tick 300/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.6, v=1.000c, gamma_eff=10788.55
+Tick 400/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=3.3, v=1.000c, gamma_eff=9669.83
+Tick 500/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.2, v=1.000c, gamma_eff=171.08
+Tick 600/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.5, v=1.000c, gamma_eff=121.53
+Tick 700/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.8, v=1.000c, gamma_eff=30126.78
+Tick 800/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=3.3, v=1.000c, gamma_eff=19337.78
+Tick 900/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.7, v=1.000c, gamma_eff=252.01
+Tick 1000/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.3, v=1.000c, gamma_eff=35952.77
+Tick 1100/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.8, v=1.000c, gamma_eff=47333.93
+Tick 1200/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.6, v=1.000c, gamma_eff=410.60
+Tick 1300/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.7, v=1.000c, gamma_eff=364.01
+Tick 1400/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.3, v=1.000c, gamma_eff=50326.64
+Tick 1500/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.9, v=1.000c, gamma_eff=36252.21
+Tick 1600/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.0, v=1.000c, gamma_eff=547.47
+Tick 1700/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.1, v=1.000c, gamma_eff=476.01
+Tick 1800/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.1, v=1.000c, gamma_eff=64696.37
+Tick 1900/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.9, v=1.000c, gamma_eff=45915.03
+Tick 2000/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.2, v=1.000c, gamma_eff=684.33
+Tick 2100/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.5, v=1.000c, gamma_eff=425.35
+Tick 2200/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.6, v=1.000c, gamma_eff=79061.98
+Tick 2300/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.9, v=1.000c, gamma_eff=55575.98
+Tick 2400/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.2, v=1.000c, gamma_eff=821.20
+Tick 2500/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.5, v=1.000c, gamma_eff=506.37
+Tick 2600/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.8, v=1.000c, gamma_eff=111808.03
+Tick 2700/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.9, v=1.000c, gamma_eff=65235.06
+Tick 2800/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.7, v=1.000c, gamma_eff=784.02
+Tick 2900/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.3, v=1.000c, gamma_eff=104191.85
+Tick 3000/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.8, v=1.000c, gamma_eff=128987.08
+Tick 3100/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.6, v=1.000c, gamma_eff=1060.71
+Tick 3200/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.7, v=1.000c, gamma_eff=896.02
+Tick 3300/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.3, v=1.000c, gamma_eff=118546.10
+Tick 3400/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=3.2, v=1.000c, gamma_eff=146160.22
+Tick 3500/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.0, v=1.000c, gamma_eff=1197.57
+Tick 3600/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.1, v=1.000c, gamma_eff=1008.02
+Tick 3700/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.1, v=1.000c, gamma_eff=132896.23
+Tick 3800/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=3.3, v=1.000c, gamma_eff=91787.91
+Tick 3900/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.2, v=1.000c, gamma_eff=1334.44
+Tick 4000/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.5, v=1.000c, gamma_eff=810.18
+Tick 4100/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.6, v=1.000c, gamma_eff=147242.24
+Tick 4200/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=3.3, v=1.000c, gamma_eff=101439.99
+Tick 4300/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.2, v=1.000c, gamma_eff=1471.30
+Tick 4400/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.5, v=1.000c, gamma_eff=891.20
+Tick 4500/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.8, v=1.000c, gamma_eff=193355.92
+Tick 4600/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=3.3, v=1.000c, gamma_eff=111090.21
+Tick 4700/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.7, v=1.000c, gamma_eff=1316.02
+Tick 4800/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=1.3, v=1.000c, gamma_eff=172337.83
+Tick 4900/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.8, v=1.000c, gamma_eff=210506.93
+Tick 5000/5000
+  Field: L_max=589.22, gamma_max=1000000.00
+  Closest entity: r=2.6, v=1.000c, gamma_eff=1710.81
+
+Simulation complete!
+  Elapsed time: 36.8s
+
+======================================================================
+EXPERIMENT 52 RESULTS - BLACK HOLE HORIZON TEST
+======================================================================
+
+Question: Do event horizons form naturally at extreme mass?
+
+Total test entities: 36
+  Collapsed (inside horizon): 0
+  Orbiting (outside horizon): 27
+  Escaping: 0
+
+[INCONCLUSIVE] No clear horizon boundary detected
+   Either all entities collapsed or all orbited
+
+Gamma Profile (time dilation vs distance):
+   r=10: gamma= 87.41
+   r=15: gamma=  5.42
+   r=20: gamma=  9.57
+   r=25: gamma=  9.06
+   r=30: gamma=  2.51
+   r=35: gamma=  1.60
+   r=40: gamma=  1.29
+   r=50: gamma=  1.59
+   r=60: gamma=  1.97
+
+
+Orbiting Entity Details (OUTSIDE HORIZON):
+  Entity mobile_8:
+    Orbital distance: 19.8
+    Orbital velocity: 0.095c
+  Entity mobile_9:
+    Orbital distance: 22.7
+    Orbital velocity: 0.217c
+  Entity mobile_10:
+    Orbital distance: 22.8
+    Orbital velocity: 0.458c
+  Entity mobile_12:
+    Orbital distance: 22.9
+    Orbital velocity: 0.725c
+  Entity mobile_13:
+    Orbital distance: 23.1
+    Orbital velocity: 0.349c
+

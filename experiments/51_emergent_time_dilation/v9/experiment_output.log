@@ -1,0 +1,295 @@
+Output directory: W:\workspace\tick-frame-space\experiments\51_emergent_time_dilation\v9\results_v9
+
+======================================================================
+LOADING CONFIGURATION
+======================================================================
+Configuration: baseline
+
+Field Parameters:
+  alpha=0.012, gamma=0.0005, scale=0.75
+  R=1.2, E_max=15.0, D=0.01
+
+Entity Configuration:
+  Planet: 700 entities at r<10.0
+  Mobile: 5 per velocity × 4 velocities = 20 total
+  Velocities: 0.1c, 0.5c, 0.9c, 0.99c
+
+Simulation:
+  Grid: 100×100
+  Duration: 5000 ticks
+  Speed of light: c = 1.0
+
+======================================================================
+RUNNING EXPERIMENT
+======================================================================
+Creating entities...
+  Planet: 700 entities
+  Mobile: 80 entities
+    Velocities: [0.1, 0.5, 0.9, 0.99]
+
+======================================================================
+EXPERIMENT 51i (V9) - baseline
+======================================================================
+
+Simulating 5000 ticks...
+
+Tick 100/5000
+  Field: L_max=71.57, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=24.0, gamma_eff=4.162
+Tick 200/5000
+  Field: L_max=71.99, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=48.3, gamma_eff=4.142
+Tick 300/5000
+  Field: L_max=72.01, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=70.0, gamma_eff=4.286
+Tick 400/5000
+  Field: L_max=71.99, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=91.8, gamma_eff=4.357
+Tick 500/5000
+  Field: L_max=72.01, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=113.0, gamma_eff=4.427
+Tick 600/5000
+  Field: L_max=72.01, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=129.3, gamma_eff=4.640
+Tick 700/5000
+  Field: L_max=71.99, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=147.9, gamma_eff=4.732
+Tick 800/5000
+  Field: L_max=71.99, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=165.4, gamma_eff=4.837
+Tick 900/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=182.5, gamma_eff=4.932
+Tick 1000/5000
+  Field: L_max=71.99, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=198.2, gamma_eff=5.044
+Tick 1100/5000
+  Field: L_max=71.99, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=212.3, gamma_eff=5.181
+Tick 1200/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=229.0, gamma_eff=5.240
+Tick 1300/5000
+  Field: L_max=71.99, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=242.9, gamma_eff=5.353
+Tick 1400/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=258.7, gamma_eff=5.411
+Tick 1500/5000
+  Field: L_max=72.02, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=275.0, gamma_eff=5.455
+Tick 1600/5000
+  Field: L_max=72.05, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=290.5, gamma_eff=5.507
+Tick 1700/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=307.0, gamma_eff=5.538
+Tick 1800/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=322.9, gamma_eff=5.574
+Tick 1900/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=339.0, gamma_eff=5.604
+Tick 2000/5000
+  Field: L_max=72.27, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=354.3, gamma_eff=5.645
+Tick 2100/5000
+  Field: L_max=71.99, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=368.5, gamma_eff=5.699
+Tick 2200/5000
+  Field: L_max=72.26, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=384.0, gamma_eff=5.729
+Tick 2300/5000
+  Field: L_max=72.01, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=398.9, gamma_eff=5.766
+Tick 2400/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=414.2, gamma_eff=5.795
+Tick 2500/5000
+  Field: L_max=71.99, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=430.4, gamma_eff=5.808
+Tick 2600/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=445.6, gamma_eff=5.835
+Tick 2700/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=460.5, gamma_eff=5.863
+Tick 2800/5000
+  Field: L_max=72.20, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=475.8, gamma_eff=5.885
+Tick 2900/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=490.4, gamma_eff=5.914
+Tick 3000/5000
+  Field: L_max=72.03, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=504.6, gamma_eff=5.945
+Tick 3100/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=517.6, gamma_eff=5.989
+Tick 3200/5000
+  Field: L_max=72.06, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=532.7, gamma_eff=6.007
+Tick 3300/5000
+  Field: L_max=72.08, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=547.8, gamma_eff=6.025
+Tick 3400/5000
+  Field: L_max=72.01, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=563.6, gamma_eff=6.033
+Tick 3500/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=580.3, gamma_eff=6.032
+Tick 3600/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=595.5, gamma_eff=6.045
+Tick 3700/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=611.0, gamma_eff=6.056
+Tick 3800/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=626.5, gamma_eff=6.065
+Tick 3900/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=642.4, gamma_eff=6.071
+Tick 4000/5000
+  Field: L_max=72.32, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=657.5, gamma_eff=6.084
+Tick 4100/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=671.6, gamma_eff=6.105
+Tick 4200/5000
+  Field: L_max=72.13, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=688.0, gamma_eff=6.105
+Tick 4300/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=703.7, gamma_eff=6.111
+Tick 4400/5000
+  Field: L_max=71.99, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=719.6, gamma_eff=6.115
+Tick 4500/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=735.4, gamma_eff=6.119
+Tick 4600/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=749.1, gamma_eff=6.140
+Tick 4700/5000
+  Field: L_max=72.02, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=764.3, gamma_eff=6.149
+Tick 4800/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=779.5, gamma_eff=6.158
+Tick 4900/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=795.3, gamma_eff=6.161
+Tick 5000/5000
+  Field: L_max=72.00, E_min=15.00, gamma_max=10.00
+  Sample entity: tau=809.9, gamma_eff=6.173
+
+Simulation complete!
+  Elapsed time: 64.1s
+
+======================================================================
+EXPERIMENT RESULTS
+======================================================================
+
+Configuration: baseline
+Total ticks simulated: 5000
+Elapsed time: 64.1s
+
+Final Field Statistics:
+  Load:   mean=3.805, max=71.998
+  Energy: mean=15.000, min=15.000
+  Gamma:  mean=3.687, max=10.000, min=2.434
+
+Time Dilation by Velocity Regime:
+Regime       Count  Avg v/c    g_SR       g_eff      Status
+----------------------------------------------------------------------
+slow         20     1.005      1.005      5.430      OK
+moderate     20     1.155      1.155      4.296      OK
+fast         20     2.294      2.294      7.575      OK
+ultra        20     7.089      7.089      21.955      WARN
+
+Sample Entity Detail (slow regime):
+  ID: mobile_0
+  Position: (65.0, 50.0)
+  Speed: 0.100c
+  g_SR: 1.005
+  Proper time: 809.9
+  Coordinate time: 5000
+  g_eff (measured): 6.173
+
+======================================================================
+VALIDATION
+======================================================================
+======================================================================
+VALIDATION REPORT
+======================================================================
+
+Overall Status: FAIL
+
+Success Criteria:
+  FAIL 1 Gravitational Gradient
+  PASS 2 Velocity Effects Match Sr
+  FAIL 3 Effects Multiply
+  PASS 4 Stable Equilibrium
+  FAIL 5 Smooth Fields
+
+Velocity Regime Analysis:
+Regime       Count  g_eff    g_grav   g_SR     Error    Pass
+----------------------------------------------------------------------
+slow         20     5.430    5.887    1.005    9.07%    PASS
+moderate     20     4.296    4.100    1.155    10.33%   PASS
+fast         20     7.575    3.732    2.294    13.21%   PASS
+ultra        20     21.955   3.563    7.089    15.30%   FAIL
+
+Gravitational Gradient:
+  Monotonic: No
+  Strength: 0.557
+  Range: 4.270 - 4.827
+
+Distance   Count    g_grav     g_eff     
+----------------------------------------
+30.0       4        4.827      11.618    
+40.0       72       4.270      9.631     
+52.5       4        4.721      11.293    
+
+
+Analysis exported to results_v9\baseline_analysis.csv
+
+======================================================================
+GENERATING VISUALIZATIONS
+======================================================================
+Creating summary dashboard...
+Saved: results_v9\baseline_dashboard.png
+Creating gamma field plot...
+Saved: results_v9\baseline_gamma_field.png
+Creating load/energy fields plot...
+Saved: results_v9\baseline_fields.png
+Creating trajectory plot...
+Saved: results_v9\baseline_trajectories.png
+Creating gamma vs distance plot...
+Saved: results_v9\baseline_gamma_distance.png
+Creating gamma vs velocity plot...
+Saved: results_v9\baseline_gamma_velocity.png
+Creating animation (this may take a while)...
+Animation saved: results_v9\baseline_animation.gif
+
+======================================================================
+PIPELINE COMPLETE
+======================================================================
+
+Results saved to: W:\workspace\tick-frame-space\experiments\51_emergent_time_dilation\v9\results_v9
+
+Traceback (most recent call last):
+  File "W:\workspace\tick-frame-space\experiments\51_emergent_time_dilation\v9\run_analysis.py", line 274, in <module>
+    main()
+    ~~~~^^
+  File "W:\workspace\tick-frame-space\experiments\51_emergent_time_dilation\v9\run_analysis.py", line 270, in main
+    run_full_pipeline(config_name, output_dir)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "W:\workspace\tick-frame-space\experiments\51_emergent_time_dilation\v9\run_analysis.py", line 164, in run_full_pipeline
+    print("\u2717 EXPERIMENT FAILED SOME CRITERIA")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "W:\tools\python\Lib\encodings\cp1250.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2717' in position 0: character maps to <undefined>

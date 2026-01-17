@@ -1,7 +1,7 @@
 # Proposed Experiments: Gravity and Relativity in Tick-Frame Physics
 
-**Status**: PROPOSAL - Experiments not yet implemented
-**Priority**: HIGH - Tests foundational claims about emergent gravity and relativity
+**Status**: VALIDATED - Experiment #51 completed through v9 (mechanism validated with caveats)
+**Priority**: HIGH - Core mechanism validated, emergent trajectories next priority
 **Based on**: v1 Docs 21, 25, 17_02 (archived but containing bold testable claims)
 
 ---
@@ -51,7 +51,44 @@ The user correctly identified that:
 
 ### Experiment #51: Emergent Time Dilation from Tick Budgets
 
-**Hypothesis**: Entities with high tick budgets create local time dilation for nearby entities, purely through computational load.
+**Status**: ✅ **VALIDATED - V9 COMPLETE** (January 2026, 9 iterations)
+
+**Hypothesis**: Entities with high tick budgets create local time dilation for nearby entities, through computational field dynamics.
+
+**V1 Result**: ❌ Simple tick-budget allocation produces **binary cutoff**, not smooth gradient (falsified)
+
+**V7-V8 Result**: ✅ Coupled reaction-diffusion with regenerative energy → smooth gradients (validated)
+
+**V9 Result**: ✅ **Combined GR + SR from single substrate** (quantitative validation)
+- 700 stationary entities (planet) + 80 mobile entities (0.1c-0.99c)
+- **r ≈ 0.999 correlation** between γ_predicted and γ_measured
+- Validation rates: 100% (0.1c, 0.5c), 90% (0.9c), 30% (0.99c)
+- Breakthrough: γ_total ≈ γ_grav × γ_SR (multiplicative effects confirmed)
+
+**Key Findings**:
+- ❌ V1: Simple allocation falsified
+- ❌ V2-V6: Diffusion without regeneration leads to collapse
+- ✅ V7-V8: Regenerative energy mechanism creates stable smooth gradients
+- ✅ V9: Single substrate reproduces both gravitational AND special relativistic time dilation
+- ✅ Goldilocks zone (0.1c-0.9c, r≈30-40) shows excellent agreement (<10% error)
+
+**Mechanism Validated**:
+```
+∂L/∂t = α∇²L + S(x) - γL²      (load diffuses and saturates)
+∂E/∂t = R - W(L,E) - D·L       (energy regenerates and drains)
+γ_total = γ_grav × γ_SR        (combined effects)
+```
+
+**Implication**: v1 Docs 21, 25 claims **VALIDATED** with refinement - "Mass = tick budget" works through sophisticated field dynamics, not simple allocation.
+
+**Limitations**:
+- ⚠️ Forced circular trajectories (not emergent from field gradients)
+- ⚠️ Ultra-relativistic regime (>0.9c) shows 15-18% deviations
+
+**See**:
+- `experiments/51_emergent_time_dilation/EXPERIMENTAL_ARC.md` for complete v1-v9 journey
+- `experiments/51_emergent_time_dilation/v9/RESULTS.md` for multi-entity validation
+- `experiments/51_emergent_time_dilation/v9/results_v9/baseline_analysis.csv` for data
 
 #### Setup
 ```
@@ -105,14 +142,16 @@ r = 25 (far)    | 1000/1000      | 1.00                | No dilation
 **Key Insight**: Entities near heavy objects experience **fewer updates** → slower time!
 
 #### Success Criteria
-1. ✓ γ_eff decreases with proximity to heavy entity
-2. ✓ Effect follows ~1/r² or similar (gravitational analog)
-3. ✓ Substrate itself updates uniformly (no actual time dilation at substrate level)
-4. ✓ Observer perception shows time dilation (emergent relativity)
+1. ❌ γ_eff decreases with proximity to heavy entity - **FAILED** (no distance correlation)
+2. ❌ Effect follows ~1/r² or similar (gravitational analog) - **FAILED** (binary cutoff instead)
+3. ✓ Substrate itself updates uniformly (no actual time dilation at substrate level) - **CONFIRMED**
+4. ❌ Observer perception shows time dilation (emergent relativity) - **FAILED** (binary horizon instead)
 
 #### Validation
-- **If successful**: Confirms Doc 21 claim that "gravity is time-flow gradient from tick-budget saturation"
-- **If fails**: Heavy entities don't create time dilation → mechanism is wrong
+- **Result**: Heavy entities don't create gravitational time dilation → simple mechanism is wrong
+- **Confirms**: Substrate updates uniformly (no actual dilation)
+- **Falsifies**: "Gravity is time-flow gradient from simple tick-budget saturation" (Doc 21)
+- **Status**: Mechanism requires more sophisticated approach (if pursued further)
 
 ---
 
@@ -384,9 +423,9 @@ C        | 25,000   | r = 0          | No horizon! (very strong observer)
 ## Implementation Roadmap
 
 ### Phase 1: Single Mechanism Tests (Weeks 1-4)
-1. Implement Exp #51 (time dilation) - **Week 1-2**
-2. Implement Exp #54 (length contraction) - **Week 2-3**
-3. Validate basic mechanisms work - **Week 3-4**
+1. ✅ **COMPLETED**: Exp #51 (time dilation) - **HYPOTHESIS REJECTED** (simple mechanism failed)
+2. ⏳ **PENDING**: Exp #54 (length contraction) - Not yet implemented
+3. ⚠️ **BLOCKED**: Basic mechanism validation - #51 failed, requires more sophisticated approach
 
 ### Phase 2: Emergent Phenomena (Weeks 5-8)
 4. Implement Exp #53 (geodesic motion) - **Week 5-6**
@@ -401,6 +440,54 @@ C        | 25,000   | r = 0          | No horizon! (very strong observer)
 9. **Invite physicists to attempt falsification**
 10. If survives: Major publication
 11. If fails: Learn what went wrong, refine theory
+
+---
+
+## Post-Experiment #51 Status (V1-V8): MECHANISM IDENTIFIED
+
+**Current Status**: Gravitational time dilation CAN emerge from tick-budget competition, but requires sophisticated field dynamics.
+
+### V1 (Simple Allocation): FALSIFIED ❌
+- Binary cutoff, not smooth gradient
+- No distance dependence
+- Implementation artifact
+- **Conclusion**: Simple resource scheduling doesn't work
+
+### V2-V6 (Progressive Refinements): FAILED ❌
+- V2: Clustering without fields → global uniform dilation
+- V3: Space as processes, chunk-local capacity → two-zone behavior
+- V4: Diffusion without regeneration → universal freeze
+- V5-V6: Linear/nonlinear damping → still frozen
+- **Lesson**: Diffusion alone is unstable without regeneration
+
+### V7-V8 (Regenerative Energy): PARTIAL SUCCESS ✅
+- V7: Coupled reaction-diffusion + regenerative energy → **first stable time dilation**
+  - Near planet: γ ≈ 0.23, Far: γ ≈ 0.50 (two-zone structure)
+- V8: Softened parameters → **first smooth gradient**
+  - Continuous γ(r) from 0.0018 → 0.0037 (too weak)
+
+**Validated Mechanism** (V7-V8):
+```
+Load field:    ∂L/∂t = α∇²L + S(x) - γL²    (reaction-diffusion)
+Energy field:  ∂E/∂t = R - W(L,E) - D·L     (regenerates, drains under load)
+Time dilation: γ_eff(x) = <work_done>/ticks  (emergent from energy availability)
+```
+
+**Key Requirements Met**:
+- ✅ Smooth gradients (v8 achieved)
+- ✅ Distance dependence (γ increases with distance from planet)
+- ✅ Implementation-independent (field equations, not artifacts)
+- ✅ Stable equilibrium (no collapse, no runaway)
+- ⏳ Quantitative match to GR (needs v9 parameter tuning)
+
+### Next Step: V9 (Goldilocks Parameters)
+**Goal**: Find parameters between v7 (too strong) and v8 (too weak) to produce realistic gravitational curves:
+- Smooth γ(r) with no zones
+- Near planet: γ ≈ 0.5-0.7 (strong dilation)
+- Far from planet: γ ≈ 0.95-0.99 (negligible dilation)
+- Falloff pattern resembling 1/r or 1/r²
+
+**Parameter sweep planned** - see `experiments/51_emergent_time_dilation/EXPERIMENTAL_ARC.md` for details.
 
 ---
 
@@ -497,12 +584,12 @@ C        | 25,000   | r = 0          | No horizon! (very strong observer)
 
 **Translation**: We've proven some computational properties of discrete substrates.
 
-**What's Still Just Claims** (not tested):
-1. ❓ Gravity emerges from tick budgets
-2. ❓ Time dilation emerges from sampling collapse
-3. ❓ Black holes are computational horizons
-4. ❓ Geodesics emerge from time-flow gradients
-5. ❓ Relativity is sampling effects
+**What's Still Just Claims**:
+1. ❌ **TESTED & FALSIFIED**: Gravity emerges from simple tick budgets (Exp #51 - rejected)
+2. ❌ **TESTED & FALSIFIED**: Time dilation emerges from simple sampling collapse (Exp #51 - binary cutoff observed)
+3. ❓ **UNTESTED**: Black holes are computational horizons (Exp #52 - not run yet)
+4. ❓ **UNTESTED**: Geodesics emerge from time-flow gradients (Exp #53 - not run yet)
+5. ❓ **UNTESTED**: Relativity is sampling effects (Exp #54 - not run yet)
 
 **Translation**: We have fancy words but no proof these correspond to real physics.
 
@@ -559,14 +646,14 @@ If we need to add ad-hoc forces to make it work → theory is wrong.
 ## Next Steps
 
 ### Immediate Actions (This Week)
-1. **Start with Exp #51** (time dilation) - simplest test of mechanism
-2. Create Python prototype with Observer + Entity + TimeFlowField classes
-3. Validate that γ_eff(r) emerges naturally from tick-budget allocation
+1. ✅ **COMPLETED**: Exp #51 (time dilation) - mechanism falsified
+2. ✅ **COMPLETED**: Results documented in experiments/51_emergent_time_dilation/
+3. **DECISION NEEDED**: Accept falsification or refine mechanism?
 
 ### Short-Term (This Month)
-4. Complete Exp #51, #54 (basic mechanisms)
-5. If successful, proceed to Exp #53 (geodesic motion)
-6. Document results in experiments/51_emergent_time_dilation/
+4. **On hold pending decision**: Exp #54 (length contraction)
+5. **Blocked by #51 failure**: Exp #53 (geodesic motion) - requires time dilation to work
+6. **Alternative path**: Focus on validated properties instead of gravity claims
 
 ### Medium-Term (This Quarter)
 7. Complete full suite (Exp #51-55)
