@@ -835,7 +835,7 @@ From CLAUDE.md:
 
 ## References
 
-### All V2 Chapters
+### All Chapters
 - **Ch1**: Temporal Ontology
 - **Ch2**: Dimensional Framework
 - **Ch3**: Entity Dynamics
@@ -844,10 +844,10 @@ From CLAUDE.md:
 - **Ch8**: Integration & Falsification (this chapter)
 
 ### Reference Documents
-- **REFERENCE_doc15**: Minimal Model (Java basis)
-- **REFERENCE_doc49**: Temporal Ontology (theoretical apex)
-- **REFERENCE_doc50_01**: Dimensional Equivalence Rejection (smoking gun)
-- **REFERENCE_doc46_01**: Bucketing Validation (rendering performance)
+- **REFERENCE_doc015**: Minimal Model (Java basis)
+- **REFERENCE_doc049**: Temporal Ontology (theoretical apex)
+- **REFERENCE_doc050_01**: Dimensional Equivalence Rejection (smoking gun)
+- **REFERENCE_doc046_01**: Bucketing Validation (rendering performance)
 
 ### Key Experiments
 - **Experiment #15**: 3D optimality (3,960 simulations)
@@ -855,9 +855,9 @@ From CLAUDE.md:
 - **Experiment #50**: rho=2.0 signature (1,095 configs)
 - **Experiment #46_01**: O(n) bucketing (performance benchmark)
 
-### V1 Archive
-- **docs/theory/v1/**: Complete 76-document archive
-- **docs/theory/v1/README.md**: Archive guide
+### Raw Archive
+- **docs/theory/raw/**: Complete 76-document archive
+- **docs/theory/raw/README.md**: Archive guide
 
 ---
 

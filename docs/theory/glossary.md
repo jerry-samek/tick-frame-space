@@ -359,16 +359,16 @@ For readers unfamiliar with Greek letters commonly used in physics:
 
 Terms marked with chapter/document references can be found at:
 
-- **Ch1** - v2_ch01_temporal_ontology.md
-- **Ch2** - v2_ch02_dimensional_framework.md
-- **Ch3** - v2_ch03_entity_dynamics.md
-- **Ch4** - v2_ch04_observer_consciousness.md
-- **Ch5** - v2_ch05_free_will_ternary_logic.md
-- **Ch6** - v2_ch06_rendering_theory.md
-- **Ch7** - v2_ch07_physical_formalization.md
-- **Ch8** - v2_ch08_integration_falsification.md
+- **Ch1** - ch001_temporal_ontology.md
+- **Ch2** - ch002_dimensional_framework.md
+- **Ch3** - ch003_entity_dynamics.md
+- **Ch4** - ch004_observer_consciousness.md
+- **Ch5** - ch005_free_will_ternary_logic.md
+- **Ch6** - ch006_rendering_theory.md
+- **Ch7** - ch007_physical_formalization.md
+- **Ch8** - ch008_integration_falsification.md
 - **REFERENCE_doc[N]** - docs/theory/REFERENCE_doc[N]_*.md
-- **v1/[N]** - docs/theory/v1/[N] [Title].md
+- **raw/[N]** - docs/theory/raw/[N]_[title].md
 
 ---
 

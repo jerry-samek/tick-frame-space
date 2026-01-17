@@ -1,7 +1,9 @@
 # Experiment 52 (V11): Black Hole Event Horizons
 
+⚠️ **IMPORTANT NOTE (January 2026)**: This experiment uses a **ghost particle approximation** (no collision physics). The stable c-speed ring result requires validation with realistic entity-entity interactions. See Section "Limitations" in RESULTS.md and `docs/theory/raw/052_black_hole_behavior_tick_frame.md` for details.
+
 **Date**: January 2026
-**Status**: Running
+**Status**: Complete (3 iterations)
 **Based on**: Experiment 53 v10 (validated gradient-following geodesics)
 
 ---

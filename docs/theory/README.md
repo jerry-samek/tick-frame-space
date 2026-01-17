@@ -2,7 +2,7 @@
 
 **Consolidated theoretical framework** - January 2026
 
-This directory contains the v2 consolidated theory of tick-frame physics, synthesizing 76 v1 documents (archived in `v1/`) into a coherent framework with experimental validation.
+This directory contains the v2 consolidated theory of tick-frame physics, synthesizing 76 raw documents (archived in `raw/`) into a coherent framework with experimental validation.
 
 ---
 
@@ -55,10 +55,10 @@ This directory contains the v2 consolidated theory of tick-frame physics, synthe
 
 Critical docs preserved at top level for permanent access:
 
-- **[REFERENCE_doc15_minimal_model.md](REFERENCE_doc15_minimal_model.md)**: Java implementation basis (Chapter 15 model)
-- **[REFERENCE_doc49_temporal_ontology.md](REFERENCE_doc49_temporal_ontology.md)**: Theoretical constitution (12 ontological principles)
-- **[REFERENCE_doc50_01_dimensional_equivalence_rejection.md](REFERENCE_doc50_01_dimensional_equivalence_rejection.md)**: Smoking gun evidence (rho=2.0 signature)
-- **[REFERENCE_doc46_01_bucketing_validation.md](REFERENCE_doc46_01_bucketing_validation.md)**: O(n) rendering validation (2.78× speedup)
+- **[REFERENCE_doc015_minimal_model.md](REFERENCE_doc015_minimal_model.md)**: Java implementation basis (Chapter 15 model)
+- **[REFERENCE_doc049_temporal_ontology.md](REFERENCE_doc049_temporal_ontology.md)**: Theoretical constitution (12 ontological principles)
+- **[REFERENCE_doc050_01_dimensional_equivalence_rejection.md](REFERENCE_doc050_01_dimensional_equivalence_rejection.md)**: Smoking gun evidence (rho=2.0 signature)
+- **[REFERENCE_doc046_01_bucketing_validation.md](REFERENCE_doc046_01_bucketing_validation.md)**: O(n) rendering validation (2.78× speedup)
 
 **Why preserved?**:
 - **Doc 15**: Current Java implementation uses this model
@@ -72,7 +72,7 @@ Essential reference materials for navigation and lookup:
 
 - **[glossary.md](glossary.md)**: Comprehensive glossary of terms, symbols, and acronyms (85+ terms, 20+ symbols)
 - **[quick_reference.md](quick_reference.md)**: One-page formula sheet with core principles, experimental results, and falsification criteria
-- **[v1_to_v2_mapping.md](v1_to_v2_mapping.md)**: Complete traceability table mapping 76 v1 documents to v2 chapters
+- **[raw_to_current_mapping.md](raw_to_current_mapping.md)**: Complete traceability table mapping 76 raw documents to current chapters
 - **[experiment_index.md](experiment_index.md)**: Comprehensive cross-reference of all computational experiments with results and theory connections
 - **[open_questions.md](open_questions.md)**: Consolidated list of unresolved questions, research priorities, and future directions (35+ active questions)
 - **[proposed_experiments_gravity_relativity.md](proposed_experiments_gravity_relativity.md)**: Detailed experimental proposals to test emergent gravity and relativity mechanisms from v1 documents (HIGH PRIORITY)
@@ -87,7 +87,7 @@ Essential reference materials for navigation and lookup:
 
 ### V2 Chapters (Consolidated Framework)
 
-#### **[Chapter 1: Temporal Ontology](v2_ch01_temporal_ontology.md)** (~20 pages)
+#### **[Chapter 1: Temporal Ontology](ch001_temporal_ontology.md)** (~20 pages)
 
 **Status**: Experimentally validated
 
@@ -106,7 +106,7 @@ Essential reference materials for navigation and lookup:
 
 ---
 
-#### **[Chapter 2: Dimensional Framework](v2_ch02_dimensional_framework.md)** (~25 pages)
+#### **[Chapter 2: Dimensional Framework](ch002_dimensional_framework.md)** (~25 pages)
 
 **Status**: Experimentally validated
 
@@ -125,7 +125,7 @@ Essential reference materials for navigation and lookup:
 
 ---
 
-#### **[Chapter 3: Entity Dynamics](v2_ch03_entity_dynamics.md)** (~28 pages)
+#### **[Chapter 3: Entity Dynamics](ch003_entity_dynamics.md)** (~28 pages)
 
 **Status**: Partially validated (over-coherence challenge)
 
@@ -144,7 +144,7 @@ Essential reference materials for navigation and lookup:
 
 ---
 
-#### **[Chapter 4: Observer & Consciousness](v2_ch04_observer_consciousness.md)** (~26 pages)
+#### **[Chapter 4: Observer & Consciousness](ch004_observer_consciousness.md)** (~26 pages)
 
 **Status**: Speculative framework (no experimental validation)
 
@@ -163,7 +163,7 @@ Essential reference materials for navigation and lookup:
 
 ---
 
-#### **[Chapter 5: Free Will & Ternary Logic](v2_ch05_free_will_ternary_logic.md)** (~25 pages)
+#### **[Chapter 5: Free Will & Ternary Logic](ch005_free_will_ternary_logic.md)** (~25 pages)
 
 **Status**: Philosophical framework (highly speculative)
 
@@ -182,7 +182,7 @@ Essential reference materials for navigation and lookup:
 
 ---
 
-#### **[Chapter 6: Rendering Theory](v2_ch06_rendering_theory.md)** (~25 pages)
+#### **[Chapter 6: Rendering Theory](ch006_rendering_theory.md)** (~25 pages)
 
 **Status**: Experimentally validated
 
@@ -201,7 +201,7 @@ Essential reference materials for navigation and lookup:
 
 ---
 
-#### **[Chapter 7: Physical Formalization](v2_ch07_physical_formalization.md)** (~20 pages)
+#### **[Chapter 7: Physical Formalization](ch007_physical_formalization.md)** (~20 pages)
 
 **Status**: Analytical framework (derivations partial)
 
@@ -221,7 +221,7 @@ Essential reference materials for navigation and lookup:
 
 ---
 
-#### **[Chapter 8: Integration & Falsification](v2_ch08_integration_falsification.md)** (~22 pages)
+#### **[Chapter 8: Integration & Falsification](ch008_integration_falsification.md)** (~22 pages)
 
 **Status**: Framework synthesis
 
@@ -248,16 +248,16 @@ Essential reference materials for navigation and lookup:
 
 1. **Ch1 (Temporal Ontology)** - Foundation
 2. **Ch2 (Dimensional Framework)** - Structure
-3. **REFERENCE_doc50_01** - Evidence (smoking gun)
+3. **REFERENCE_doc050_01** - Evidence (smoking gun)
 4. **Ch8 §2-3** - What's validated vs speculative
-5. **v1/README.md** - Historical context (if curious)
+5. **raw/README.md** - Historical context (if curious)
 
 **Time**: 2-3 hours
 **Outcome**: Understand core framework and evidence.
 
 ### Path 2: For Implementers (Code Focus)
 
-1. **REFERENCE_doc15** - Current Java model
+1. **REFERENCE_doc015** - Current Java model
 2. **Ch3 (Entity Dynamics)** - Implementation patterns
 3. **Ch6 (Rendering Theory)** - Visualization & performance
 4. **Ch8 §4** - Implementation gaps
@@ -271,14 +271,14 @@ Essential reference materials for navigation and lookup:
 1. **All chapters in order** (Ch1 → Ch2 → Ch3 → Ch4 → Ch5 → Ch6 → Ch7 → Ch8)
 2. **All 4 reference docs**
 3. **Experimental reports** (`../../experiments/*/EXPERIMENT_RESULTS.md`)
-4. **v1 archive** (selected docs for deep dives)
+4. **raw archive** (selected docs for deep dives)
 
 **Time**: 10-15 hours
 **Outcome**: Complete understanding of framework, experiments, gaps, and philosophical implications.
 
 ### Path 4: For Skeptics (Evidence First)
 
-1. **REFERENCE_doc50_01** - rho=2.0 signature (smoking gun)
+1. **REFERENCE_doc050_01** - rho=2.0 signature (smoking gun)
 2. **Ch6 §5** - Rotation asymmetry (v <= c validation)
 3. **Ch8 §5** - Falsification criteria
 4. **Ch8 §11** - Framework assessment (strengths & weaknesses)
@@ -311,7 +311,7 @@ Essential reference materials for navigation and lookup:
 
 ### Q5: How does this relate to the Java code?
 
-**A**: Java implements the **Doc 15 model** (see REFERENCE_doc15). Theory has evolved to **Doc 49** (see REFERENCE_doc49). There's a gap (ontological refinement), but code is functionally correct. See Ch8 §4 for details.
+**A**: Java implements the **Doc 15 model** (see REFERENCE_doc015). Theory has evolved to **Doc 49** (see REFERENCE_doc049). There's a gap (ontological refinement), but code is functionally correct. See Ch8 §4 for details.
 
 ### Q6: Is time travel possible in this framework?
 
@@ -355,21 +355,21 @@ Essential reference materials for navigation and lookup:
 - Experimental validation required clear framework
 - Implementation needed theoretical guidance
 
-**V1 status**: Fully archived in `v1/` subdirectory with complete README. Nothing deleted.
+**Raw status**: Fully archived in `raw/` subdirectory with complete README. Nothing deleted.
 
-### V1 (2024-2026) - Archived
+### Raw (2024-2026) - Archived
 
-**Location**: `v1/` subdirectory
+**Location**: `raw/` subdirectory
 
 **Contents**: 76 original theory documents in chronological order
 
 **Key docs** (preserved as references):
-- v1/15: Minimal Model Recommendation
-- v1/46: Why Sorting Is Not Required
-- v1/49: Temporal Ontology
-- v1/50: Dimensional Equivalence Test Specification
+- raw/015: Minimal Model Recommendation
+- raw/046: Why Sorting Is Not Required
+- raw/049: Temporal Ontology
+- raw/050: Dimensional Equivalence Test Specification
 
-**See**: `v1/README.md` for complete archive guide.
+**See**: `raw/README.md` for complete archive guide.
 
 ---
 
@@ -421,15 +421,15 @@ If referencing this work:
 
 **Specific chapters**:
 > [Chapter Title], Tick-Frame Physics Theory v2, January 2026.
-> docs/theory/v2_ch[N]_[name].md
+> docs/theory/ch[N]_[name].md
 
 **Experiments**:
 > Experiment #[N]: [Title], Tick-Frame Space Project, [Date].
 > experiments/[N]_[name]/EXPERIMENT_RESULTS.md
 
-**Original v1 docs**:
-> Theory Document [N]: [Title], Tick-Frame Physics v1, [Date].
-> docs/theory/v1/[N] [Title].md
+**Original raw docs**:
+> Theory Document [N]: [Title], Tick-Frame Physics (raw), [Date].
+> docs/theory/raw/[N]_[Title].md
 
 ---
 

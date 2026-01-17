@@ -1,17 +1,17 @@
-# V1 to V2 Mapping - Traceability Document
+# Raw to Current Mapping - Traceability Document
 
-**Complete mapping of 76 v1 documents to v2 consolidated framework**
+**Complete mapping of 76 raw documents to current consolidated framework**
 
-This document provides full traceability between the original v1 theory documents (chronological development) and the consolidated v2 chapters (topic-based organization).
+This document provides full traceability between the original raw theory documents (chronological development) and the current chapters (topic-based organization).
 
 ---
 
 ## Overview
 
-- **Total v1 documents**: 76 (including README and meta-docs)
-- **V2 chapters**: 7 core + 1 synthesis
-- **Reference documents**: 4 (preserved critical v1 docs)
-- **Archive location**: `docs/theory/v1/`
+- **Total raw documents**: 76 (including README and meta-docs)
+- **Current chapters**: 7 core + 1 synthesis
+- **Reference documents**: 4 (preserved critical raw docs)
+- **Archive location**: `docs/theory/raw/`
 
 ### Status Legend
 - **PRESERVED** - Kept as REFERENCE document at v2 root level
