@@ -1,25 +1,28 @@
 # Constant Behavior Dashboard
+
 ### *Side‑panel overview of driftable constants in the tick‑frame universe (with equations)*
 
-This dashboard summarizes the major physical and mathematical constants, their classical equations, and how they behave under the tick‑frame ontology.
+This dashboard summarizes the major physical and mathematical constants, their classical equations, and how they behave
+under the tick‑frame ontology.
 
 ---
 
 # ✅ Legend
 
-| Symbol | Meaning |
-|--------|---------|
-| 🟢 | Highly stable (observer sees no drift) |
-| 🟡 | Slowly drifting (detectable only at large horizons) |
-| 🟠 | Moderately drifting (epoch‑dependent) |
-| 🔴 | Strongly drifting (observer‑dependent) |
-| ⚫ | Not a substrate quantity (pure reconstruction) |
+| Symbol | Meaning                                             |
+|--------|-----------------------------------------------------|
+| 🟢     | Highly stable (observer sees no drift)              |
+| 🟡     | Slowly drifting (detectable only at large horizons) |
+| 🟠     | Moderately drifting (epoch‑dependent)               |
+| 🔴     | Strongly drifting (observer‑dependent)              |
+| ⚫      | Not a substrate quantity (pure reconstruction)      |
 
 ---
 
 # 1. Physical Constants
 
 ## **1.1 Speed of Light — \(c\)**
+
 **Equation:**  
 \[
 c = \frac{1}{\sqrt{\epsilon_0 \mu_0}}
@@ -36,6 +39,7 @@ c(t) = 1 \;\text{step/tick}
 ---
 
 ## **1.2 Planck Constant — \(h\)**
+
 **Equation:**  
 \[
 E = h \nu
@@ -52,6 +56,7 @@ h(t) = E_0(t)\,T(t)
 ---
 
 ## **1.3 Reduced Planck Constant — \(\hbar\)**
+
 **Equation:**  
 \[
 \hbar = \frac{h}{2\pi}
@@ -68,6 +73,7 @@ h(t) = E_0(t)\,T(t)
 ---
 
 ## **1.4 Gravitational Constant — \(G\)**
+
 **Equation:**  
 \[
 F = G \frac{m_1 m_2}{r^2}
@@ -84,6 +90,7 @@ G(t) = \frac{F(t)\,r(t)^2}{m_1(t)m_2(t)}
 ---
 
 ## **1.5 Cosmological Constant — \(\Lambda\)**
+
 **Equation:**  
 \[
 H^2 = \frac{8\pi G}{3}\rho + \frac{\Lambda}{3}
@@ -100,6 +107,7 @@ H^2 = \frac{8\pi G}{3}\rho + \frac{\Lambda}{3}
 ---
 
 ## **1.6 Fine‑Structure Constant — \(\alpha\)**
+
 **Equation:**  
 \[
 \alpha = \frac{e^2}{4\pi \epsilon_0 \hbar c}
@@ -116,6 +124,7 @@ H^2 = \frac{8\pi G}{3}\rho + \frac{\Lambda}{3}
 ---
 
 ## **1.7 Vacuum Permittivity — \(\epsilon_0\)**
+
 **Equation:**  
 \[
 F = \frac{1}{4\pi \epsilon_0} \frac{q_1 q_2}{r^2}
@@ -132,6 +141,7 @@ F = \frac{1}{4\pi \epsilon_0} \frac{q_1 q_2}{r^2}
 ---
 
 ## **1.8 Vacuum Permeability — \(\mu_0\)**
+
 **Equation:**  
 \[
 c = \frac{1}{\sqrt{\epsilon_0 \mu_0}}
@@ -148,6 +158,7 @@ c = \frac{1}{\sqrt{\epsilon_0 \mu_0}}
 ---
 
 ## **1.9 Boltzmann Constant — \(k_B\)**
+
 **Equation:**  
 \[
 E = k_B T
@@ -164,6 +175,7 @@ k_B(t) = \frac{E_{\text{avg}}(t)}{T_{\text{stat}}(t)}
 ---
 
 ## **1.10 Electron Charge — \(e\)**
+
 **Equation:**  
 \[
 F = \frac{1}{4\pi \epsilon_0} \frac{e^2}{r^2}
@@ -180,6 +192,7 @@ e(t) = r(t)\sqrt{4\pi(t)\,\epsilon_0(t)\,F(t)}
 ---
 
 ## **1.11 Particle Masses — \(m_e, m_p, ...\)**
+
 **Equation:**  
 \[
 E = mc^2
@@ -198,6 +211,7 @@ m(t) = \frac{E(t)}{c(t)^2}
 # 2. Mathematical Constants
 
 ## **2.1 π (Pi)**
+
 **Equation:**  
 \[
 \pi = \frac{O}{D}
@@ -214,6 +228,7 @@ m(t) = \frac{E(t)}{c(t)^2}
 ---
 
 ## **2.2 Euler’s Number — \(e\)**
+
 **Equation:**  
 \[
 e = \lim_{n\to\infty} \left(1 + \frac{1}{n}\right)^n
@@ -230,6 +245,7 @@ e(t) = \left(1 + \frac{1}{n(t)}\right)^{n(t)}
 ---
 
 ## **2.3 Golden Ratio — \(\phi\)**
+
 **Equation:**  
 \[
 \phi = \frac{1 + \sqrt{5}}{2}
@@ -248,6 +264,7 @@ e(t) = \left(1 + \frac{1}{n(t)}\right)^{n(t)}
 # 3. Geometric & Structural Constants
 
 ## **3.1 Dimensionality (3D)**
+
 **Equation:**  
 \[
 D = 3
@@ -264,6 +281,7 @@ D(t) = \arg\min_D \;\text{ReconstructionError}(t, D)
 ---
 
 ## **3.2 Curvature Constants**
+
 **Equation:**  
 \[
 R_{\mu\nu} - \frac{1}{2} R g_{\mu\nu} = 8\pi G T_{\mu\nu}
@@ -280,6 +298,7 @@ R_{\mu\nu} - \frac{1}{2} R g_{\mu\nu} = 8\pi G T_{\mu\nu}
 ---
 
 ## **3.3 Scaling Exponents**
+
 **Equation:**  
 \[
 \xi \sim |T - T_c|^{-\nu}
@@ -297,27 +316,29 @@ R_{\mu\nu} - \frac{1}{2} R g_{\mu\nu} = 8\pi G T_{\mu\nu}
 
 # ✅ Summary Table (with equations)
 
-| Constant | Equation | Drift | Stability |
-|----------|----------|--------|-----------|
-| \(c\) | \(c = 1/\sqrt{\epsilon_0\mu_0}\) | 🟡 | High |
-| \(h\) | \(E = h\nu\) | 🟡 | High |
-| \(\hbar\) | \(h/2\pi\) | 🟠 | Medium |
-| \(G\) | \(F = G m_1 m_2 / r^2\) | 🟠 | Medium |
-| \(\Lambda\) | \(H^2 = \frac{8\pi G}{3}\rho + \Lambda/3\) | 🔴 | Low |
-| \(\alpha\) | \(e^2 / (4\pi\epsilon_0\hbar c)\) | 🟠 | Medium |
-| \(\epsilon_0\) | Coulomb law | 🟠 | Medium |
-| \(\mu_0\) | \(c = 1/\sqrt{\epsilon_0\mu_0}\) | 🟠 | Medium |
-| \(k_B\) | \(E = k_B T\) | 🟡 | High |
-| \(e\) | Coulomb force | 🟡 | High |
-| Masses | \(E = mc^2\) | 🟠 | Medium |
-| π | \(O/D\) | 🔴 | Low |
-| \(e\) (Euler) | \((1 + 1/n)^n\) | 🟠 | Medium |
-| \(\phi\) | \((1+\sqrt{5})/2\) | 🟠 | Medium |
-| Dimensionality | \(D = 3\) | ⚫ | Observer‑fixed |
-| Curvature | Einstein tensor | 🟠 | Medium |
-| Scaling exponents | \(\xi \sim |T-T_c|^{-\nu}\) | 🟠 | Medium |
+| Constant          | Equation                                   | Drift | Stability      |
+|-------------------|--------------------------------------------|-------|----------------|
+| \(c\)             | \(c = 1/\sqrt{\epsilon_0\mu_0}\)           | 🟡    | High           |
+| \(h\)             | \(E = h\nu\)                               | 🟡    | High           |
+| \(\hbar\)         | \(h/2\pi\)                                 | 🟠    | Medium         |
+| \(G\)             | \(F = G m_1 m_2 / r^2\)                    | 🟠    | Medium         |
+| \(\Lambda\)       | \(H^2 = \frac{8\pi G}{3}\rho + \Lambda/3\) | 🔴    | Low            |
+| \(\alpha\)        | \(e^2 / (4\pi\epsilon_0\hbar c)\)          | 🟠    | Medium         |
+| \(\epsilon_0\)    | Coulomb law                                | 🟠    | Medium         |
+| \(\mu_0\)         | \(c = 1/\sqrt{\epsilon_0\mu_0}\)           | 🟠    | Medium         |
+| \(k_B\)           | \(E = k_B T\)                              | 🟡    | High           |
+| \(e\)             | Coulomb force                              | 🟡    | High           |
+| Masses            | \(E = mc^2\)                               | 🟠    | Medium         |
+| π                 | \(O/D\)                                    | 🔴    | Low            |
+| \(e\) (Euler)     | \((1 + 1/n)^n\)                            | 🟠    | Medium         |
+| \(\phi\)          | \((1+\sqrt{5})/2\)                         | 🟠    | Medium         |
+| Dimensionality    | \(D = 3\)                                  | ⚫     | Observer‑fixed |
+| Curvature         | Einstein tensor                            | 🟠    | Medium         |
+| Scaling exponents | \(\xi \sim                                 | T-T_c | ^{-\nu}\)      | 🟠 | Medium |
 
 ---
 
 # ✅ Closing Note
-This dashboard now includes **classical equations, tick‑dependent equations, drift behavior, stability ratings, and original notes**, making it a complete and consistent reference to the tick‑frame universe.
+
+This dashboard now includes **classical equations, tick‑dependent equations, drift behavior, stability ratings, and
+original notes**, making it a complete and consistent reference to the tick‑frame universe.

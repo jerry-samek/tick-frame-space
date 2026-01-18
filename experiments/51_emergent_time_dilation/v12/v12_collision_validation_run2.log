@@ -1,0 +1,356 @@
+Configuration: baseline
+
+Field Parameters:
+  alpha=0.012, gamma=0.0005, scale=0.75
+  R=1.2, E_max=15.0, D=0.01
+
+Entity Configuration:
+  Planet: 700 entities at r<10.0
+  Mobile: 5 per velocity × 4 velocities = 20 total
+  Velocities: 0.1c, 0.5c, 0.9c, 0.99c
+
+Simulation:
+  Grid: 100×100
+  Duration: 5000 ticks
+  Speed of light: c = 1.0
+
+*** DIVERGENCE MODE ENABLED ***
+Allowing gamma -> infinity (black hole test)
+
+*** MASS MULTIPLIER: 100x ***
+Planet entities: 70000
+
+Creating entities...
+  Planet: 70000 entities (BLACK HOLE with COLLISIONS)
+  Test entities: 36
+    Distances: [10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 50.0, 60.0]
+    Velocities: [0.0, 0.1, 0.3, 0.5]
+    Gradient coupling: 0.01
+
+  [V12] Collision physics: ENABLED (elastic scattering)
+
+[DEBUG] Computing initial momentum from 36 entities...
+[DEBUG] Initial momentum result: [1.9195139  0.30892856], type: <class 'numpy.ndarray'>
+[DEBUG] Initial energy result: 1.5749999999999995, type: <class 'numpy.float64'>
+[DEBUG run() start] self.initial_momentum = [1.9195139  0.30892856], type = <class 'numpy.ndarray'>
+[DEBUG run() start] self.initial_energy = 1.5749999999999995, type = <class 'numpy.float64'>
+======================================================================
+EXPERIMENT 52 (V12) - baseline
+======================================================================
+
+Testing: C-RING STABILITY with COLLISION PHYSICS
+Planet mass: 100× baseline (SUPERMASSIVE)
+Collision model: Elastic scattering (minimal framework)
+Simulating 5000 ticks...
+
+Initial momentum: 1.944215
+Initial kinetic energy: 1.575000
+
+[WARNING] Tick 1: Momentum not conserved! Error = 1.33e-01
+[WARNING] Tick 1: Energy not conserved! Error = 1.41e-01
+Tick 100/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=6.0, v=1.000c, gamma_eff=120597.70
+  Collisions: 43 detected, 32 resolved
+  Conservation: dp=1.51e+00, dE=1.23e+00
+Tick 200/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=2.7, v=1.000c, gamma_eff=457156.67
+  Collisions: 81 detected, 59 resolved
+  Conservation: dp=4.11e+00, dE=2.21e+00
+[WARNING] Tick 3: Momentum not conserved! Error = 2.52e-01
+[WARNING] Tick 3: Energy not conserved! Error = 2.83e-01
+[WARNING] Tick 3: Momentum not conserved! Error = 2.88e-01
+[WARNING] Tick 3: Energy not conserved! Error = 3.29e-01
+[WARNING] Tick 3: Momentum not conserved! Error = 3.64e-05
+[WARNING] Tick 3: Energy not conserved! Error = 2.00e-04
+Tick 300/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=2.7, v=1.000c, gamma_eff=684171.14
+  Collisions: 140 detected, 100 resolved
+  Conservation: dp=4.45e+00, dE=2.62e+00
+[WARNING] Tick 4: Momentum not conserved! Error = 3.00e-01
+[WARNING] Tick 4: Energy not conserved! Error = 3.44e-01
+[WARNING] Tick 4: Momentum not conserved! Error = 2.22e-05
+[WARNING] Tick 4: Energy not conserved! Error = 2.00e-04
+Tick 400/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=2.1, v=1.000c, gamma_eff=476484.79
+  Collisions: 177 detected, 133 resolved
+  Conservation: dp=3.65e+00, dE=2.52e+00
+Tick 500/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=4.5, v=1.000c, gamma_eff=151.64
+  Collisions: 197 detected, 146 resolved
+  Conservation: dp=2.48e+00, dE=2.37e+00
+Tick 600/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=1.5, v=1.000c, gamma_eff=138.39
+  Collisions: 236 detected, 170 resolved
+  Conservation: dp=2.31e+00, dE=2.46e+00
+Tick 700/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=0.4, v=1.000c, gamma_eff=808880.75
+  Collisions: 251 detected, 176 resolved
+  Conservation: dp=4.24e+00, dE=3.12e+00
+[WARNING] Tick 8: Momentum not conserved! Error = 3.54e-01
+[WARNING] Tick 8: Energy not conserved! Error = 4.17e-01
+[WARNING] Tick 8: Momentum not conserved! Error = 2.91e-01
+[WARNING] Tick 8: Energy not conserved! Error = 3.33e-01
+[WARNING] Tick 8: Momentum not conserved! Error = 1.27e-01
+[WARNING] Tick 8: Energy not conserved! Error = 1.35e-01
+[WARNING] Tick 8: Energy not conserved! Error = 2.00e-04
+Tick 800/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=1.3, v=1.000c, gamma_eff=942710.76
+  Collisions: 291 detected, 200 resolved
+  Conservation: dp=1.90e+00, dE=3.16e+00
+Tick 900/5000
+  Field: L_max=1622.05, gamma_max=1000000.00
+  Closest entity: r=2.1, v=1.000c, gamma_eff=134.67
+  Collisions: 322 detected, 214 resolved
+  Conservation: dp=3.15e+00, dE=3.30e+00
+Tick 1000/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=3.0, v=1.000c, gamma_eff=303.28
+  Collisions: 398 detected, 266 resolved
+  Conservation: dp=4.22e+00, dE=3.09e+00
+Tick 1100/5000
+  Field: L_max=1622.05, gamma_max=1000000.00
+  Closest entity: r=0.4, v=1.000c, gamma_eff=66.74
+  Collisions: 484 detected, 320 resolved
+  Conservation: dp=3.81e+00, dE=3.10e+00
+Tick 1200/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=0.7, v=1.000c, gamma_eff=1407432.13
+  Collisions: 556 detected, 368 resolved
+  Conservation: dp=3.34e+00, dE=3.32e+00
+Tick 1300/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=2.6, v=1.000c, gamma_eff=2087606.58
+  Collisions: 629 detected, 410 resolved
+  Conservation: dp=4.43e+00, dE=3.36e+00
+Tick 1400/5000
+  Field: L_max=1622.05, gamma_max=1000000.00
+  Closest entity: r=2.6, v=1.000c, gamma_eff=209.48
+  Collisions: 704 detected, 456 resolved
+  Conservation: dp=6.83e-01, dE=2.87e+00
+Tick 1500/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=0.4, v=1.000c, gamma_eff=91.01
+  Collisions: 811 detected, 534 resolved
+  Conservation: dp=5.99e+00, dE=3.07e+00
+Tick 1600/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=0.7, v=1.000c, gamma_eff=1867813.44
+  Collisions: 954 detected, 633 resolved
+  Conservation: dp=1.02e+00, dE=3.40e+00
+Tick 1700/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=2.6, v=1.000c, gamma_eff=2712523.43
+  Collisions: 1036 detected, 688 resolved
+  Conservation: dp=1.86e+00, dE=3.25e+00
+Tick 1800/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=2.1, v=1.000c, gamma_eff=269.33
+  Collisions: 1117 detected, 733 resolved
+  Conservation: dp=4.91e+00, dE=3.13e+00
+Tick 1900/5000
+  Field: L_max=1622.05, gamma_max=1000000.00
+  Closest entity: r=1.9, v=1.000c, gamma_eff=115.28
+  Collisions: 1214 detected, 797 resolved
+  Conservation: dp=1.45e+00, dE=3.11e+00
+Tick 2000/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=1.3, v=1.000c, gamma_eff=2323915.20
+  Collisions: 1313 detected, 862 resolved
+  Conservation: dp=5.25e+00, dE=3.34e+00
+Tick 2100/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=2.8, v=1.000c, gamma_eff=278527.38
+  Collisions: 1434 detected, 943 resolved
+  Conservation: dp=5.22e+00, dE=3.51e+00
+Tick 2200/5000
+  Field: L_max=1622.05, gamma_max=1000000.00
+  Closest entity: r=1.3, v=1.000c, gamma_eff=329.18
+  Collisions: 1566 detected, 1043 resolved
+  Conservation: dp=2.83e+00, dE=3.13e+00
+Tick 2300/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=2.2, v=1.000c, gamma_eff=139.55
+  Collisions: 1644 detected, 1089 resolved
+  Conservation: dp=4.21e+00, dE=3.30e+00
+Tick 2400/5000
+  Field: L_max=1622.05, gamma_max=1000000.00
+  Closest entity: r=0.1, v=1.000c, gamma_eff=553.53
+  Collisions: 1701 detected, 1123 resolved
+  Conservation: dp=1.44e+00, dE=3.21e+00
+Tick 2500/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=2.7, v=1.000c, gamma_eff=2888114.66
+  Collisions: 1829 detected, 1212 resolved
+  Conservation: dp=1.99e+00, dE=3.03e+00
+Tick 2600/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=1.3, v=1.000c, gamma_eff=389.03
+  Collisions: 1933 detected, 1288 resolved
+  Conservation: dp=2.57e+00, dE=3.22e+00
+Tick 2700/5000
+  Field: L_max=1622.05, gamma_max=1000000.00
+  Closest entity: r=3.0, v=1.000c, gamma_eff=818.85
+  Collisions: 2023 detected, 1349 resolved
+  Conservation: dp=1.83e+00, dE=3.27e+00
+Tick 2800/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=0.1, v=1.000c, gamma_eff=645.78
+  Collisions: 2101 detected, 1396 resolved
+  Conservation: dp=5.33e+00, dE=3.09e+00
+Tick 2900/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=1.3, v=1.000c, gamma_eff=3334802.94
+  Collisions: 2237 detected, 1492 resolved
+  Conservation: dp=1.71e+00, dE=3.30e+00
+Tick 3000/5000
+  Field: L_max=1622.05, gamma_max=1000000.00
+  Closest entity: r=2.1, v=1.000c, gamma_eff=448.88
+  Collisions: 2311 detected, 1537 resolved
+  Conservation: dp=1.58e+00, dE=3.26e+00
+Tick 3100/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=3.0, v=1.000c, gamma_eff=940.15
+  Collisions: 2359 detected, 1562 resolved
+  Conservation: dp=3.69e+00, dE=3.30e+00
+Tick 3200/5000
+  Field: L_max=1622.05, gamma_max=1000000.00
+  Closest entity: r=0.4, v=1.000c, gamma_eff=194.16
+  Collisions: 2428 detected, 1607 resolved
+  Conservation: dp=3.16e+00, dE=3.20e+00
+Tick 3300/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=0.7, v=1.000c, gamma_eff=3777400.74
+  Collisions: 2479 detected, 1635 resolved
+  Conservation: dp=4.72e+00, dE=3.69e+00
+Tick 3400/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=2.5, v=1.000c, gamma_eff=5281777.42
+  Collisions: 2575 detected, 1699 resolved
+  Conservation: dp=3.94e+00, dE=3.37e+00
+Tick 3500/5000
+  Field: L_max=1622.05, gamma_max=1000000.00
+  Closest entity: r=2.6, v=1.000c, gamma_eff=523.70
+  Collisions: 2677 detected, 1778 resolved
+  Conservation: dp=2.19e+00, dE=3.41e+00
+Tick 3600/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=0.4, v=1.000c, gamma_eff=218.43
+  Collisions: 2806 detected, 1906 resolved
+  Conservation: dp=5.95e+00, dE=3.22e+00
+Tick 3700/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=0.7, v=1.000c, gamma_eff=4215964.00
+  Collisions: 2948 detected, 2053 resolved
+  Conservation: dp=9.00e-01, dE=3.30e+00
+Tick 3800/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=2.5, v=1.000c, gamma_eff=5866708.12
+  Collisions: 3050 detected, 2131 resolved
+  Conservation: dp=2.08e+00, dE=3.12e+00
+Tick 3900/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=2.1, v=1.000c, gamma_eff=583.55
+  Collisions: 3198 detected, 2270 resolved
+  Conservation: dp=3.27e+00, dE=3.04e+00
+Tick 4000/5000
+  Field: L_max=1622.05, gamma_max=1000000.00
+  Closest entity: r=1.9, v=1.000c, gamma_eff=242.70
+  Collisions: 3275 detected, 2356 resolved
+  Conservation: dp=2.66e+00, dE=3.58e+00
+Tick 4100/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=1.3, v=1.000c, gamma_eff=4650547.63
+  Collisions: 3376 detected, 2467 resolved
+  Conservation: dp=4.66e+00, dE=3.12e+00
+Tick 4200/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=2.8, v=1.000c, gamma_eff=555507.51
+  Collisions: 3486 detected, 2559 resolved
+  Conservation: dp=2.80e+00, dE=3.10e+00
+Tick 4300/5000
+  Field: L_max=1622.05, gamma_max=1000000.00
+  Closest entity: r=1.3, v=1.000c, gamma_eff=643.40
+  Collisions: 3584 detected, 2646 resolved
+  Conservation: dp=1.86e+00, dE=3.11e+00
+Tick 4400/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=2.2, v=1.000c, gamma_eff=266.97
+  Collisions: 3709 detected, 2764 resolved
+  Conservation: dp=5.08e+00, dE=3.51e+00
+Tick 4500/5000
+  Field: L_max=1622.05, gamma_max=1000000.00
+  Closest entity: r=0.1, v=1.000c, gamma_eff=1037.86
+  Collisions: 3805 detected, 2850 resolved
+  Conservation: dp=3.11e+00, dE=3.53e+00
+Tick 4600/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=2.7, v=1.000c, gamma_eff=5188262.88
+  Collisions: 3916 detected, 2954 resolved
+  Conservation: dp=9.50e-01, dE=3.23e+00
+Tick 4700/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=1.2, v=1.000c, gamma_eff=703.25
+  Collisions: 4020 detected, 3025 resolved
+  Conservation: dp=3.69e+00, dE=3.59e+00
+Tick 4800/5000
+  Field: L_max=1622.05, gamma_max=1000000.00
+  Closest entity: r=3.0, v=1.000c, gamma_eff=1455.72
+  Collisions: 4132 detected, 3143 resolved
+  Conservation: dp=3.25e-01, dE=3.32e+00
+Tick 4900/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=0.1, v=1.000c, gamma_eff=1130.12
+  Collisions: 4248 detected, 3230 resolved
+  Conservation: dp=6.39e+00, dE=3.16e+00
+Tick 5000/5000
+  Field: L_max=1622.06, gamma_max=1000000.00
+  Closest entity: r=1.3, v=1.000c, gamma_eff=5614088.03
+  Collisions: 4346 detected, 3296 resolved
+  Conservation: dp=3.05e+00, dE=3.62e+00
+
+Simulation complete!
+  Elapsed time: 455.2s
+
+======================================================================
+EXPERIMENT 52 V12 RESULTS - C-RING COLLISION VALIDATION
+======================================================================
+
+Critical Question: Does c-ring survive with collision physics?
+
+Collision Statistics:
+  Total collisions detected: 4346
+  Total collisions resolved: 3296
+
+Conservation Laws:
+  Initial momentum: 1.944215
+  Final momentum:   2.857978
+  Momentum drift:   3.05e+00
+  Initial energy:   1.575000
+  Final energy:     5.190026
+  Energy drift:     3.62e+00
+
+C-Speed Entities (v > 0.9c): 8
+
+[FAILURE] C-RING DISPERSED WITH COLLISIONS
+Traceback (most recent call last):
+  File "W:\workspace\tick-frame-space\experiments\51_emergent_time_dilation\v12\experiment_52_v12.py", line 518, in <module>
+    main()
+    ~~~~^^
+  File "W:\workspace\tick-frame-space\experiments\51_emergent_time_dilation\v12\experiment_52_v12.py", line 514, in main
+    experiment.print_results()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "W:\workspace\tick-frame-space\experiments\51_emergent_time_dilation\v12\experiment_52_v12.py", line 472, in print_results
+    print("  No entities found at r \u2248 10.1 with v \u2248 c")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "W:\tools\python\Lib\encodings\cp1250.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2248' in position 25: character maps to <undefined>

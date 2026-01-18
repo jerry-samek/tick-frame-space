@@ -2,7 +2,8 @@
 
 ## 1. Why Three Values?
 
-We begin with binary logic: 0 (absence) and 1 (presence). This is sufficient for oscillation, but it lacks symmetry. To restore balance, we introduce a third value:
+We begin with binary logic: 0 (absence) and 1 (presence). This is sufficient for oscillation, but it lacks symmetry. To
+restore balance, we introduce a third value:
 
 * **+1** → presence, affirmation
 * **0** → neutral horizon, nothingness
@@ -40,7 +41,8 @@ Thus, three values are not arbitrary — they emerge from the need for symmetry 
 
 ## 3. Sampler (grouping into cycles)
 
-* **Purpose:** detect when the tickstream has covered all three states, then emit a “Forget” pulse and toggle orientation.
+* **Purpose:** detect when the tickstream has covered all three states, then emit a “Forget” pulse and toggle
+  orientation.
 * **Mechanism:**
     * Track coverage of states or edges
     * When {−1, 0, +1} (or all required edges) are seen → Forget = 1

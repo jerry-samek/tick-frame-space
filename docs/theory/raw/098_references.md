@@ -1,6 +1,7 @@
 # References
 
-This document collects the key sources referenced in the development of the foundational framework, particularly regarding collapse models, relativity, and discrete spacetime.
+This document collects the key sources referenced in the development of the foundational framework, particularly
+regarding collapse models, relativity, and discrete spacetime.
 
 ---
 
@@ -43,5 +44,7 @@ This document collects the key sources referenced in the development of the foun
 
 ## Notes
 
-- These sources were used to ground discussion of **relativity compatibility**, **continuous vs. discrete time**, and **collapse events as epistemic vs. ontological phenomena**.  
-- They provide the scientific backdrop for the **Temporal Dynamics Principle** and **Temporal Synchronization Principle** within the ToE framework.
+- These sources were used to ground discussion of **relativity compatibility**, **continuous vs. discrete time**, and *
+  *collapse events as epistemic vs. ontological phenomena**.
+- They provide the scientific backdrop for the **Temporal Dynamics Principle** and **Temporal Synchronization Principle
+  ** within the ToE framework.

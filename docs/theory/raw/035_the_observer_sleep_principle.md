@@ -1,4 +1,5 @@
 # The Observer Sleep Principle
+
 *(Sampling Buffer Saturation and Coherence Preservation)*
 
 ---

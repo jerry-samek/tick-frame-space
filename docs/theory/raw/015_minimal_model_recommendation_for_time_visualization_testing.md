@@ -1,6 +1,7 @@
 # Minimal Model Recommendation for Time–Visualization Testing
 
 ## 1. Goals
+
 - Provide a **continuous root evolution** to preserve relativity compatibility.
 - Implement **discrete commits** via PoF thresholding to exercise tick rules.
 - Generate **observable artefacts** to embed “past” into the present tick.
@@ -11,6 +12,7 @@
 ## 2. Core Minimal Model
 
 ### Root Substrate
+
 - **State:** \(x(t)\in\mathbb{R}^{d}\) with small dimension (e.g., \(d=2\) or \(4\)).
 - **Dynamics:**  
   \[
@@ -20,6 +22,7 @@
 - **Reason:** Linear flow ensures analytic solutions and controlled complexity.
 
 ### Tick Generator and PoF
+
 - **Clock:**  
   \[
   \dot{\Theta}(t)=\omega_P\,F(x(t))
@@ -32,6 +35,7 @@
 - **Reason:** Directly tests temporal rules and stability guards.
 
 ### Artefact Field (Seeing the Past)
+
 - **Carrier equation (scalar wave):**  
   \[
   \partial_{tt}\mathcal{A}-c^2\nabla^2 \mathcal{A}+\gamma\,\partial_t\mathcal{A}=J(x,t)
@@ -44,6 +48,7 @@
 - **Reason:** Wave equation provides causal propagation; artefacts are easy to tag and observe.
 
 ### Agent Refresh and Observation
+
 - **Subset refresh:**  
   \[
   r_a(t)=\frac{1}{M}\,\omega_P F(x(t)),\quad M\in\mathbb{N}^+
@@ -62,6 +67,7 @@
 ---
 
 ## 3. Modulation Choices for \(F(x)\)
+
 - **Constant baseline:** \(F(x)\equiv 1\) → pure Planck ticks.
 - **Energy-coupled:**  
   \[
@@ -81,6 +87,7 @@
 ## 4. Starter Configuration and Outputs
 
 ### Parameters
+
 - Linear flow:  
   \[
   A=\begin{bmatrix}-\lambda & 0\\ 0 & -\lambda\end{bmatrix},\quad b=0,\quad \lambda>0
@@ -90,6 +97,7 @@
 - Emission: \(x_n=x(t_n),\ q_n=\alpha_0+\alpha_1\|x_n\|\).
 
 ### Logged Outputs
+
 - **Root commits:** \((n, t_n, \Theta(t_n), x(t_n), F(x_n), \text{Mode}=\text{COMMIT})\).
 - **Artefacts:** \((n, q_n, x_n, \text{Tag}_n)\) and \(\mathcal{A}(x,t_n)\) snapshots.
 - **Agent frames:** \((k, t_k, \Psi(t_k), S, M, \text{Mode})\).
@@ -97,6 +105,7 @@
 ---
 
 ## 5. Why This Is the Simplest That Works
+
 - **Few moving parts:** Linear ODE + scalar wave + thresholding.
 - **Direct tests:** Time commits, embedded memory, agent synchronization.
 - **Extensible knobs:** Swap \(F(x)\) from constant to energy/velocity/curvature to reproduce dilation effects.
@@ -105,10 +114,12 @@
 ---
 
 ## 6. Next Step
+
 Convert this specification into a **pseudo‑code simulation** with discrete time‑stepping and test cases:
-- Baseline (constant \(F(x)\)).  
-- High‑energy modulation.  
-- Boosted observer (velocity proxy).  
-- High‑density proxy (curvature).  
+
+- Baseline (constant \(F(x)\)).
+- High‑energy modulation.
+- Boosted observer (velocity proxy).
+- High‑density proxy (curvature).
 
 This validates the full time–visualization pipeline.

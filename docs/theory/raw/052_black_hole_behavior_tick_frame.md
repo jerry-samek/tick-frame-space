@@ -1,4 +1,5 @@
 # **Black Hole Behavior in the Tick‑Frame Universe**
+
 ### *A Strong‑Field Analysis of Emergent Time‑Gradient Gravity*
 
 **Author:** Tom  
@@ -8,9 +9,15 @@
 
 ## **Abstract**
 
-This paper investigates the strong‑field behavior of the tick‑frame universe, a discrete computational ontology in which gravity emerges from gradients in local time‑flow (γ) rather than from spacetime curvature. Previous work demonstrated that geodesics and orbital mechanics arise naturally from entities following ∇γ, with no force laws or geometric assumptions. Here we extend the analysis to extreme mass configurations to test whether the tick‑frame model reproduces general relativity’s predictions for black holes, including event horizons, singularities, and the absence of stable orbits inside the Schwarzschild radius.
+This paper investigates the strong‑field behavior of the tick‑frame universe, a discrete computational ontology in which
+gravity emerges from gradients in local time‑flow (γ) rather than from spacetime curvature. Previous work demonstrated
+that geodesics and orbital mechanics arise naturally from entities following ∇γ, with no force laws or geometric
+assumptions. Here we extend the analysis to extreme mass configurations to test whether the tick‑frame model reproduces
+general relativity’s predictions for black holes, including event horizons, singularities, and the absence of stable
+orbits inside the Schwarzschild radius.
 
-Across three iterations—10×, 10× (uncapped), and 100× mass—we find that the tick‑frame universe **does not produce GR‑style black holes**. Instead, it exhibits a distinct strong‑field regime characterized by:
+Across three iterations—10×, 10× (uncapped), and 100× mass—we find that the tick‑frame universe **does not produce
+GR‑style black holes**. Instead, it exhibits a distinct strong‑field regime characterized by:
 
 - finite load saturation
 - finite γ everywhere except a localized divergent core
@@ -20,7 +27,9 @@ Across three iterations—10×, 10× (uncapped), and 100× mass—we find that t
 - no event horizon
 - no singularity
 
-These results constitute a **distinctive, falsifiable prediction** of the tick‑frame ontology. While the model reproduces GR in weak fields, it diverges sharply in the strong‑field limit. This paper summarizes the mechanism, results, and implications for future observational tests.
+These results constitute a **distinctive, falsifiable prediction** of the tick‑frame ontology. While the model
+reproduces GR in weak fields, it diverges sharply in the strong‑field limit. This paper summarizes the mechanism,
+results, and implications for future observational tests.
 
 ---
 
@@ -63,7 +72,8 @@ This paper tests whether the tick‑frame universe reproduces these features.
 
 ## **2. Methods**
 
-We simulate a central “planet” composed of many stationary entities, which generate a load field L(x,y) and corresponding γ(x,y). Mobile test entities follow the gradient‑following rule:
+We simulate a central “planet” composed of many stationary entities, which generate a load field L(x,y) and
+corresponding γ(x,y). Mobile test entities follow the gradient‑following rule:
 
 \[
 \mathbf{v}_{t+1} = \text{clamp}_c\left(\mathbf{v}_t + k \nabla \gamma \, dt\right),
@@ -74,16 +84,19 @@ We simulate a central “planet” composed of many stationary entities, which g
 Three iterations were performed:
 
 ### **Iteration 1 — 10× mass, γ capped at 10**
+
 - Planet: 7,000 entities
 - γ capped at 10
 - 36 test entities
 
 ### **Iteration 2 — 10× mass, γ uncapped**
+
 - Same mass
 - γ allowed to reach ~1,000,000
 - capacity_min = 1e‑6
 
 ### **Iteration 3 — 100× mass, γ uncapped**
+
 - Planet: 70,000 entities
 - scale = 75.0
 - γ diverges inside r ≈ 10
@@ -134,14 +147,14 @@ This produces the **stable last orbit**.
 
 ## **4. Comparison with General Relativity**
 
-| Feature | GR Prediction | Tick‑Frame Result |
-|--------|---------------|-------------------|
-| Event horizon | Sharp boundary at r_s | ❌ None |
-| γ at horizon | → ∞ | Finite except core |
-| Photon sphere | Unstable at 1.5 r_s | **Stable c‑ring at r≈10.1** |
-| Orbits inside r_s | Impossible | **Stable orbits everywhere** |
-| Collapse | Mandatory | ❌ None |
-| Singularity | Yes | ❌ None |
+| Feature           | GR Prediction         | Tick‑Frame Result            |
+|-------------------|-----------------------|------------------------------|
+| Event horizon     | Sharp boundary at r_s | ❌ None                       |
+| γ at horizon      | → ∞                   | Finite except core           |
+| Photon sphere     | Unstable at 1.5 r_s   | **Stable c‑ring at r≈10.1**  |
+| Orbits inside r_s | Impossible            | **Stable orbits everywhere** |
+| Collapse          | Mandatory             | ❌ None                       |
+| Singularity       | Yes                   | ❌ None                       |
 
 The tick‑frame universe **matches GR in weak fields** but **diverges in strong fields**.
 
@@ -149,13 +162,13 @@ The tick‑frame universe **matches GR in weak fields** but **diverges in strong
 
 ## **4.5 Srovnání teorií silného gravitačního pole**
 
-| Teorie | Event horizon | Singularita | Stabilní orbity uvnitř | Photon sphere | Pozorovací stav | Distinktivní predikce |
-|-------|---------------|-------------|-------------------------|----------------|------------------|------------------------|
-| **General Relativity (Schwarzschild/Kerr)** | Ano (ostrý) | Ano | Ne (uvnitř r_s) | Ano, **nestabilní** | Silná podpora (EHT, LIGO) | Ostrý stín, kolaps do singularity |
-| **Gravastar / BH mimickers** | Ne (povrch místo horizontu) | Ne | Možné (model‑dependent) | Nejasné | Teoretické návrhy | Hladký vnitřek, žádný horizont |
-| **Loop Quantum Gravity / Planck star** | Ne (kvantové korekce) | Ne | Možné (remnant) | Modifikovaná | Teoretické | Kvantový „odraz", Planck‑remnant |
-| **Emergent gravity (Verlinde)** | Model‑dependent | Ne v některých řešeních | Záleží na řešení | Záleží | Konceptuální | Gravitace jako emergentní jev, modifikované stíny |
-| **Tick‑frame (naše)** | **Ne** | **Ne** | **Ano (všechny r > jádro)** | **Ano, stabilní c‑kroužek** | Simulační důkazy | **Žádný horizont, žádná singularita, stabilní c‑kroužek** |
+| Teorie                                      | Event horizon               | Singularita             | Stabilní orbity uvnitř      | Photon sphere               | Pozorovací stav           | Distinktivní predikce                                     |
+|---------------------------------------------|-----------------------------|-------------------------|-----------------------------|-----------------------------|---------------------------|-----------------------------------------------------------|
+| **General Relativity (Schwarzschild/Kerr)** | Ano (ostrý)                 | Ano                     | Ne (uvnitř r_s)             | Ano, **nestabilní**         | Silná podpora (EHT, LIGO) | Ostrý stín, kolaps do singularity                         |
+| **Gravastar / BH mimickers**                | Ne (povrch místo horizontu) | Ne                      | Možné (model‑dependent)     | Nejasné                     | Teoretické návrhy         | Hladký vnitřek, žádný horizont                            |
+| **Loop Quantum Gravity / Planck star**      | Ne (kvantové korekce)       | Ne                      | Možné (remnant)             | Modifikovaná                | Teoretické                | Kvantový „odraz", Planck‑remnant                          |
+| **Emergent gravity (Verlinde)**             | Model‑dependent             | Ne v některých řešeních | Záleží na řešení            | Záleží                      | Konceptuální              | Gravitace jako emergentní jev, modifikované stíny         |
+| **Tick‑frame (naše)**                       | **Ne**                      | **Ne**                  | **Ano (všechny r > jádro)** | **Ano, stabilní c‑kroužek** | Simulační důkazy          | **Žádný horizont, žádná singularita, stabilní c‑kroužek** |
 
 *Poznámka: Tick‑frame výsledky vyžadují validaci s kolizní fyzikou (viz Sekce 6.5)*
 
@@ -261,15 +274,18 @@ With realistic collision physics, the ring would likely exhibit:
 ### Validation Plan
 
 **Planned experiments**:
+
 - **v11b**: Hard-sphere collision detection + elastic scattering
 - **v11c**: Soft repulsion force (Pauli-like exclusion)
 - **v11d**: Inelastic collisions (energy dissipation)
 
 **Key question**: Does the c-speed ring survive with realistic collision physics?
+
 - If **YES** → Validated distinctive prediction (testable, falsifiable)
 - If **NO** → Artifact of ghost particle approximation
 
-**Recommendation**: Treat c-ring as **suggestive result requiring validation**, not definitive prediction until collision physics is tested.
+**Recommendation**: Treat c-ring as **suggestive result requiring validation**, not definitive prediction until
+collision physics is tested.
 
 ---
 
@@ -290,4 +306,5 @@ However, in the strong‑field regime, it diverges sharply from general relativi
 - a stable c‑speed ring instead of a photon sphere
 
 This constitutes a **distinctive, testable alternative** to GR’s black hole predictions.  
-Future work will explore observer‑dependent horizons, length contraction, and the behavior of multi‑body strong‑field systems.
+Future work will explore observer‑dependent horizons, length contraction, and the behavior of multi‑body strong‑field
+systems.

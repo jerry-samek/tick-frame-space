@@ -2,10 +2,13 @@
 
 ## Overview
 
-In classical 3D graphics, sorting objects by depth is necessary because the z‑coordinate is a **geometric** value that can change arbitrarily. In tick‑frame physics, the z‑coordinate is not geometric at all — it is **temporal lag**, a physical quantity with strict rules.  
+In classical 3D graphics, sorting objects by depth is necessary because the z‑coordinate is a **geometric** value that
+can change arbitrarily. In tick‑frame physics, the z‑coordinate is not geometric at all — it is **temporal lag**, a
+physical quantity with strict rules.  
 Because of this, depth ordering emerges naturally from the physics itself, and explicit sorting becomes unnecessary.
 
-This document formalizes the reasons why **sorting is not a fundamental requirement** in a temporal‑lag‑based rendering model.
+This document formalizes the reasons why **sorting is not a fundamental requirement** in a temporal‑lag‑based rendering
+model.
 
 ---
 
@@ -49,6 +52,7 @@ for lag in range(MAX_HISTORY):
 ```
 
 This is:
+
 - O(n)
 - stable
 - physically correct
@@ -67,6 +71,7 @@ temporal_lag = current_tick - entity.last_update_tick
 ```
 
 This means:
+
 - the renderer already knows the correct order,
 - no computation is needed to determine it,
 - sorting is redundant.
@@ -92,6 +97,7 @@ if entity.lag < pixel.lag:
 ```
 
 This is:
+
 - O(1) per pixel
 - identical in spirit to a traditional Z‑buffer
 - but uses temporal lag instead of geometric depth
@@ -103,12 +109,14 @@ This removes sorting completely.
 ## 5. Sorting Is Only Needed If Z Is Spatial
 
 Sorting is required when:
+
 - z is geometric,
 - z is continuous,
 - z is arbitrary,
 - z is not monotonic.
 
 But in tick‑frame:
+
 - z = temporal lag,
 - lag is discrete,
 - lag is monotonic,
@@ -120,7 +128,6 @@ Therefore:
 > **Sorting is unnecessary when depth is temporal rather than spatial.**
 
 ---
-
 
 ## Conclusion
 
@@ -173,11 +180,12 @@ Benchmarks comparing sorting vs bucketing:
 
 | Entities | Sorting Time | Bucketing Time | Speedup |
 |----------|--------------|----------------|---------|
-| 1,000 | 0.090ms | 0.046ms | 1.93× |
-| 10,000 | 1.151ms | 0.463ms | 2.48× |
-| 100,000 | 14.689ms | 5.276ms | 2.78× |
+| 1,000    | 0.090ms      | 0.046ms        | 1.93×   |
+| 10,000   | 1.151ms      | 0.463ms        | 2.48×   |
+| 100,000  | 14.689ms     | 5.276ms        | 2.78×   |
 
 **Frame budget achievable:**
+
 - **148,000 entities @ 120 FPS** (8.33ms budget)
 - **297,000 entities @ 60 FPS** (16.67ms budget)
 
@@ -206,6 +214,7 @@ GPU Thread (Rendering):
 ```
 
 **Benefits:**
+
 - CPU never blocks (always has free buffer)
 - GPU never blocks (always has stable buffer)
 - Zero synchronization overhead (atomic pointer swap)
@@ -228,6 +237,7 @@ Measured speedup: ~2.78×
 ```
 
 The measured speedup is lower than theoretical due to:
+
 - Python's highly optimized TimSort
 - Cache effects
 - Constant factors
@@ -241,11 +251,13 @@ But the O(n) scaling is validated - bucketing maintains constant per-entity cost
 ### 1. Discreteness Enables Natural Indexing
 
 Continuous depth requires comparison-based sorting:
+
 ```
 z ∈ ℝ → must compare all pairs → O(n log n)
 ```
 
 Discrete temporal lag enables direct indexing:
+
 ```
 lag ∈ {0, 1, 2, ..., k} → bucket by value → O(n)
 ```
@@ -274,7 +286,8 @@ for lag in range(MAX_HISTORY):
 
 In classical 3D, objects can have any Z value at any time. The renderer must discover the ordering through sorting.
 
-In tick-frame, temporal lag increases monotonically. The ordering is given by the physics - the renderer simply observes it.
+In tick-frame, temporal lag increases monotonically. The ordering is given by the physics - the renderer simply observes
+it.
 
 **Nature doesn't sort time. Time flows in order. Our rendering should too.**
 
@@ -285,6 +298,7 @@ In tick-frame, temporal lag increases monotonically. The ordering is given by th
 **Theory Document 46 claims:** Sorting is not required for temporal rendering.
 
 **Experiment 44_05 validates:**
+
 - ✓ Bucketing achieves O(n) organization (2.78× faster than sorting @ 100k entities)
 - ✓ Frame budgets are achievable (297k entities @ 60 FPS)
 - ✓ Visual quality is identical (correctness test passed)

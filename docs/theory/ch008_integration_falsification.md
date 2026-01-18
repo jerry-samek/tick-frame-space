@@ -8,19 +8,25 @@
 
 ## Abstract
 
-This chapter synthesizes the tick-frame physics framework developed across Chapters 1-7, distinguishes validated from speculative components, identifies implementation gaps, and establishes falsification criteria.
+This chapter synthesizes the tick-frame physics framework developed across Chapters 1-7, distinguishes validated from
+speculative components, identifies implementation gaps, and establishes falsification criteria.
 
 **Framework status**:
-- **Experimentally validated** (5 major results): Temporal ontology, 3D optimality, O(n) rendering, sample rate limit, rho=2.0 signature
-- **Computationally implemented** (partial): Java tick-space-runner realizes core patterns but lags theoretical refinements
+
+- **Experimentally validated** (5 major results): Temporal ontology, 3D optimality, O(n) rendering, sample rate limit,
+  rho=2.0 signature
+- **Computationally implemented** (partial): Java tick-space-runner realizes core patterns but lags theoretical
+  refinements
 - **Analytically formalized** (partial): Mathematical foundations established, full derivations pending
 
 **Key gaps**:
+
 - Theory → Implementation: Doc 49 ontology not fully reflected in Java (Doc 15 model used)
 - Implementation → Experiments: Over-coherence problem (structures too uniform)
 - Formalization → Physics: Relativity compatibility, QFT formulation incomplete
 
 **Falsification criteria** (testable predictions):
+
 1. Planck-scale dispersion in cosmic rays
 2. Rotation asymmetry in simulated systems
 3. rho=2.0 signature when time treated as dimension
@@ -60,30 +66,36 @@ Layer 6 (Synthesis): Integration & Testing
 ### Cross-Chapter Dependencies
 
 **Ch1 (Temporal Ontology)** provides:
+
 - **For Ch2**: Time as substrate (not dimension) → dimensional closure is spatial only
 - **For Ch3**: Entities as processes → TickTimeConsumer<E> pattern
 - **For Ch6**: Sample rate limit → rotation asymmetry prediction
 - **For Ch7**: Tick-stream as generator → E(t) linear growth
 
 **Ch2 (Dimensional Framework)** provides:
+
 - **For Ch3**: 3D optimal → substrate dimensionality choice
 - **For Ch6**: Dimensional scaling laws → rendering performance expectations
 - **For Ch7**: rho ≈ 1.5 empirical law → surface-area law validation
 
 **Ch3 (Entity Dynamics)** provides:
+
 - **For Ch6**: Lag tracking → depth coordinate for rendering
 - **For Ch7**: Cost function → momentum formalization
 - **For implementation**: Collision persistence → naive vs full models
 
 **Ch6 (Rendering Theory)** provides:
+
 - **For Ch7**: v <= c validation → sample rate limit empirical evidence
 - **For implementation**: O(n) bucketing → performance targets
 
 **Ch7 (Physical Formalization)** provides:
+
 - **For all chapters**: Mathematical rigor, falsifiable predictions
 - **For implementation**: Planck-scale parameters, cost function formulas
 
 **Cyclic dependencies** (resolved):
+
 - Ch1 ↔ Ch7: Time ontology ↔ Planck discretization (mutual support)
 - Ch3 ↔ Ch6: Entity lag ↔ Rendering depth (implemented consistently)
 
@@ -96,6 +108,7 @@ Layer 6 (Synthesis): Integration & Testing
 **Test**: 3,960 dimensional simulations (1D-5D, 180 configs each)
 
 **Result**:
+
 - **3D Goldilocks zone**: SPBI=2.23 (optimal balance)
 - **rho ≈ 1.5**: Sub-quadratic scaling in spatial dimensions
 - **Configuration independence**: H2 falsified (physics independent of geometry @ d>=3)
@@ -103,26 +116,30 @@ Layer 6 (Synthesis): Integration & Testing
 
 **Status**: ✓ **VALIDATED**
 
-**Falsification**: If future experiments show d=2 or d=4 more stable than d=3 (SPBI > 2.23), framework requires revision.
+**Falsification**: If future experiments show d=2 or d=4 more stable than d=3 (SPBI > 2.23), framework requires
+revision.
 
 ### Experiment #44: Rotation Asymmetry (Chapter 6)
 
 **Test**: Can entities rotate freely in temporal dimension (lag as coordinate)?
 
 **Result**:
+
 - **Rotation asymmetry**: 933× difference (forward 0%, backward 93%)
 - **Kinematic constraint**: v <= 1 tick/tick enforced
 - **Time ≠ spatial dimension**: Cannot "speed up" toward present
 
 **Status**: ✓ **VALIDATED**
 
-**Falsification**: If entities CAN rotate forward (toward present) without energy cost, temporal primacy (Ch1) is falsified.
+**Falsification**: If entities CAN rotate forward (toward present) without energy cost, temporal primacy (Ch1) is
+falsified.
 
 ### Experiment #50: rho=2.0 Signature (Chapter 1)
 
 **Test**: Does (n spatial + time) behave like (n+1) spatial dimensions?
 
 **Result**:
+
 - **Dimensional equivalence rejected**: 0/6 tests passed (1,095 configs)
 - **rho=2.0 signature**: ALL (n+t) systems show quadratic scaling
 - **Smoking gun evidence**: Time is fundamentally different (ratchet effect)
@@ -136,6 +153,7 @@ Layer 6 (Synthesis): Integration & Testing
 **Test**: Is temporal rendering computationally superior to sorting?
 
 **Result**:
+
 - **2.78× speedup** @ 100k entities (bucketing vs sorting)
 - **O(n) complexity confirmed**: Linear growth observed
 - **297k entities @ 60 FPS**: Game-scale real-time rendering
@@ -147,6 +165,7 @@ Layer 6 (Synthesis): Integration & Testing
 ### Convergent Evidence: Sample Rate Limit
 
 **Multiple validations of v <= c**:
+
 1. **Ch1 §5**: Theoretical derivation (causal readability requires v <= 1 tick/tick)
 2. **Ch6 §6**: Experimental validation (Exp 44, rotation asymmetry)
 3. **Ch7 §2**: Formal derivation (c = l_planck / t_planck as structural constant)
@@ -168,6 +187,7 @@ Layer 6 (Synthesis): Integration & Testing
 **Status**: ⚠ **NOT YET VALIDATED**
 
 **Evidence against** (current):
+
 - Over-coherence problem: Structures too uniform
 - Expected asymmetry not observed at predicted scale
 
@@ -175,7 +195,8 @@ Layer 6 (Synthesis): Integration & Testing
 
 **Test**: Increase lambda parameter, measure asymmetry, compare to Doc 29 predictions.
 
-**Falsification**: If asymmetry does NOT increase with lambda, or if perfectly symmetric outcomes persist, Doc 29 is falsified.
+**Falsification**: If asymmetry does NOT increase with lambda, or if perfectly symmetric outcomes persist, Doc 29 is
+falsified.
 
 ### Time Dilation from Tick-Rate Modulation (Chapter 7 §9)
 
@@ -203,7 +224,8 @@ Layer 6 (Synthesis): Integration & Testing
 
 ### Consciousness and Observer Effects (Chapters 4-5, Not Written)
 
-**Note**: Chapters 4 (Observer & Consciousness) and 5 (Free Will & Ternary Logic) were planned but not prioritized for v2.
+**Note**: Chapters 4 (Observer & Consciousness) and 5 (Free Will & Ternary Logic) were planned but not prioritized for
+v2.
 
 **Status**: ⚠ **DEFERRED** (speculative topics moved to future work)
 
@@ -216,11 +238,13 @@ Layer 6 (Synthesis): Integration & Testing
 ### Gap 1: Theory (Doc 49) vs Implementation (Doc 15)
 
 **Doc 15 model** (current Java):
+
 - Time = discrete tick counter (BigInteger tickCount)
 - Space = N-dimensional coordinates (Position record)
 - Entities = objects with state (EntityModel)
 
 **Doc 49 ontology** (theoretical apex):
+
 - Time = primary substrate (tick-stream generates existence)
 - Space = emergent visualization (from temporal gradients)
 - Entities = temporal processes (not objects in time)
@@ -230,6 +254,7 @@ Layer 6 (Synthesis): Integration & Testing
 **Impact**: Ontological mismatch, but computational correctness preserved.
 
 **Resolution path**:
+
 1. **Emphasize TickTimeConsumer pattern**: Already reflects process ontology
 2. **Treat Position as derived**: Document that position emerges from tick evolution
 3. **Add explicit tick-stream representation**: Make substrate more visible
@@ -240,11 +265,13 @@ Layer 6 (Synthesis): Integration & Testing
 ### Gap 2: Expansion Coupling (lambda parameter)
 
 **Theory** (Doc 29, Ch3 §4):
+
 - Expansion should affect entity costs
 - Later generations (farther from origin) experience higher costs
 - Asymmetry should emerge
 
 **Implementation** (Ch3 §11):
+
 - generation parameter exists in cost function
 - Over-coherence suggests lambda ≈ 0 (insufficient coupling)
 - Expected asymmetry not observed
@@ -252,6 +279,7 @@ Layer 6 (Synthesis): Integration & Testing
 **Gap**: Expansion not sufficiently coupled to entity dynamics.
 
 **Resolution path**:
+
 1. Extract current lambda value from Java code
 2. Parameterize lambda as tunable constant
 3. Run experiments sweeping lambda values
@@ -263,10 +291,12 @@ Layer 6 (Synthesis): Integration & Testing
 ### Gap 3: Collision Dynamics (Naive vs Full)
 
 **Theory** (Doc 30, Ch3 §3):
+
 - Collisions are persistent entities
 - Can evolve over multiple ticks (merge/explode/bounce/annihilate)
 
 **Implementation** (Ch3 §7):
+
 - Naive model used (instant resolution)
 - Full model implemented but not active
 - Reason: Parameter tuning challenges
@@ -274,6 +304,7 @@ Layer 6 (Synthesis): Integration & Testing
 **Gap**: Rich collision dynamics not realized.
 
 **Resolution path**:
+
 1. Implement parameter tuning UI/config
 2. Test full model with varying thresholds
 3. Identify stable parameter regime
@@ -284,17 +315,20 @@ Layer 6 (Synthesis): Integration & Testing
 ### Gap 4: Energy Conservation Tracking
 
 **Theory** (Ch3 §5, Ch7 §3):
+
 - Energy injected: E_tick per tick per entity
 - Energy expended: Movement, division, collisions
 - Energy lost: Annihilation
 
 **Implementation** (Ch3 §5):
+
 - totalEnergyLoss tracked atomically
 - No comprehensive energy balance accounting
 
 **Gap**: Full energy audit not implemented.
 
 **Resolution path**:
+
 1. Track total energy in system each tick
 2. Log energy injection, expenditure, loss
 3. Compute energy balance: Delta_E = injection - expenditure - loss
@@ -305,15 +339,18 @@ Layer 6 (Synthesis): Integration & Testing
 ### Gap 5: Relativistic Effects
 
 **Theory** (Ch7 §9):
+
 - Time dilation, length contraction from tick-rate modulation
 - Lorentz transforms from discrete symmetries
 
 **Implementation**:
+
 - None (no velocity-dependent tick-rate modulation)
 
 **Gap**: Relativity not implemented.
 
 **Resolution path**:
+
 1. **Phase 1**: Implement tick-skipping for fast entities
 2. **Phase 2**: Measure effective time dilation
 3. **Phase 3**: Compare to gamma = 1/sqrt(1 - v²/c²)
@@ -328,15 +365,18 @@ Layer 6 (Synthesis): Integration & Testing
 ### Criterion 1: Planck-Scale Dispersion (Observational)
 
 **Prediction** (Ch7 §4):
+
 - High-frequency waves on discrete lattice show dispersion
 - omega(k) = (2/Delta_t) × sin(k × Delta_x / 2)
 - Deviation from linear: omega ≈ c×k - (c×Delta_x²/24)×k³
 
 **Observable consequence**:
+
 - Ultra-high-energy cosmic rays (E > 10^20 eV) should show frequency-dependent speed
 - Lower energy photons arrive earlier than predicted by continuous dispersion
 
 **Falsification test**:
+
 - Compare arrival times of gamma-ray bursts at different energies
 - If NO dispersion observed → discrete lattice may be wrong, or Delta_x << l_planck
 
@@ -345,11 +385,13 @@ Layer 6 (Synthesis): Integration & Testing
 ### Criterion 2: 3D Optimality (Computational)
 
 **Prediction** (Ch2):
+
 - 3D spatial dimensions are optimal (SPBI = 2.23)
 - 4D and 5D more stable but less balanced
 - 2D and 6D+ unstable
 
 **Falsification test**:
+
 - Run Experiment #15 protocol on different substrate implementations
 - If 2D or 4D shows higher SPBI → framework requires revision
 
@@ -358,11 +400,13 @@ Layer 6 (Synthesis): Integration & Testing
 ### Criterion 3: Rotation Asymmetry (Computational)
 
 **Prediction** (Ch6 §5):
+
 - Forward pitch (toward present) impossible (0% success)
 - Backward pitch (away from present) possible (energy-limited)
 - Asymmetry magnitude: >>100× difference
 
 **Falsification test**:
+
 - Implement lag-based 3D rendering in different frameworks
 - Attempt forward/backward rotation
 - If forward rotation succeeds → temporal ontology falsified
@@ -372,11 +416,13 @@ Layer 6 (Synthesis): Integration & Testing
 ### Criterion 4: rho=2.0 Signature (Computational)
 
 **Prediction** (Ch1 §9):
+
 - (n spatial + time) systems show rho = 2.0 (quadratic scaling)
 - Pure spatial systems show rho ≈ 1.5 (sub-quadratic)
 - Universal signature across all parameters
 
 **Falsification test**:
+
 - Implement (3D+time) dynamics in alternative frameworks
 - Measure S(N) scaling exponent
 - If rho ≠ 2.0 → ratchet effect hypothesis falsified
@@ -386,11 +432,13 @@ Layer 6 (Synthesis): Integration & Testing
 ### Criterion 5: O(n) Rendering Advantage (Computational)
 
 **Prediction** (Ch6 §3):
+
 - Bucketing outperforms sorting
 - Speedup grows with n (asymptotic advantage)
 - 2-3× @ 100k entities, ~20× @ 1M entities
 
 **Falsification test**:
+
 - Benchmark bucketing vs sorting at large n
 - If bucketing does NOT show O(n) → discrete time advantage not realized
 
@@ -399,11 +447,13 @@ Layer 6 (Synthesis): Integration & Testing
 ### Criterion 6: Energy Balance (Implementation)
 
 **Prediction** (Ch7 §3):
+
 - Energy injected: E_tick × N_entities per tick
 - Energy expended/lost: Tracked in implementation
 - Balance: Delta_E = 0 (if conserved) or systematic gain/loss
 
 **Falsification test**:
+
 - Implement full energy accounting
 - Measure Delta_E over time
 - If energy is NOT conserved and NOT systematically increasing → framework energy model is incomplete
@@ -417,12 +467,14 @@ Layer 6 (Synthesis): Integration & Testing
 ### Phase 1: Documentation & Code Hygiene (Current)
 
 **Goals**:
+
 - ✓ Consolidate v1 docs → v2 chapters
 - ✓ Archive v1 with complete README
 - ✓ Create reference docs (15, 49, 50_01, 46_01)
 - Document implementation gaps in CLAUDE.md
 
 **Deliverables**:
+
 - docs/theory/README.md (v2 overview)
 - Updated CLAUDE.md (Ch15 → Ch49 gap explanation)
 - Cross-references between theory, experiments, code
@@ -432,12 +484,14 @@ Layer 6 (Synthesis): Integration & Testing
 ### Phase 2: Expansion Coupling & Asymmetry (Next Priority)
 
 **Goals**:
+
 - Extract and parameterize lambda (expansion coupling constant)
 - Run parameter sweeps: lambda in [0, 0.1, 0.5, 1.0, 2.0]
 - Measure asymmetry metrics (directional distribution, energy variance)
 - Validate or falsify Doc 29 (Imbalance Theory)
 
 **Deliverables**:
+
 - Parameterized cost function in Java
 - Experiment #29_validation (asymmetry measurement)
 - Doc 29 status update (validated or falsified)
@@ -447,12 +501,14 @@ Layer 6 (Synthesis): Integration & Testing
 ### Phase 3: Collision Dynamics Tuning (Medium Priority)
 
 **Goals**:
+
 - Tune full collision model parameters (merge cost, explosion threshold, annihilation threshold)
 - Test stability across parameter ranges
 - Switch from naive to full model when stable
 - Document parameter choices
 
 **Deliverables**:
+
 - Collision parameter configuration file
 - Experiment #30_validation (collision dynamics)
 - Updated EntitiesRegistry using full model
@@ -462,12 +518,14 @@ Layer 6 (Synthesis): Integration & Testing
 ### Phase 4: Energy Balance Validation (Ongoing)
 
 **Goals**:
+
 - Complete feature/#3-total-energy-balance implementation
 - Implement full energy accounting (injection, expenditure, loss)
 - Verify conservation or document systematic behavior
 - Publish energy balance results
 
 **Deliverables**:
+
 - EnergyBalanceTracker component
 - Experiment #energy_conservation
 - Doc 03_energy_mechanics (formal treatment)
@@ -477,12 +535,14 @@ Layer 6 (Synthesis): Integration & Testing
 ### Phase 5: Relativity Compatibility (Long-Term)
 
 **Goals**:
+
 - Implement tick-rate modulation for moving entities
 - Measure effective time dilation
 - Compare to Lorentz gamma factor
 - Derive discrete Lorentz transforms analytically
 
 **Deliverables**:
+
 - TimeRateModulator component
 - Experiment #relativity_emergence
 - Doc 07_relativity_compatibility (analytical derivation)
@@ -492,12 +552,14 @@ Layer 6 (Synthesis): Integration & Testing
 ### Phase 6: Observational Predictions (Long-Term Research)
 
 **Goals**:
+
 - Formalize Planck-scale dispersion predictions
 - Identify observable signatures in cosmic rays, gamma-ray bursts
 - Publish predictions for experimental tests
 - Engage with experimental physics community
 
 **Deliverables**:
+
 - Doc 08_observational_predictions (formal predictions)
 - Publication: "Testable Predictions of Tick-Frame Physics"
 - Outreach to astroparticle physics experiments
@@ -516,7 +578,8 @@ Layer 6 (Synthesis): Integration & Testing
 
 **Claim** (Ch2): 3D spatial dimensions are optimal.
 
-**Consistency**: ✓ Compatible. Space being emergent doesn't preclude dimensional optimality. 3D optimality is a property of emergent structure.
+**Consistency**: ✓ Compatible. Space being emergent doesn't preclude dimensional optimality. 3D optimality is a property
+of emergent structure.
 
 **Check 2: Entity Dynamics ↔ Rendering**
 
@@ -544,7 +607,8 @@ Layer 6 (Synthesis): Integration & Testing
 
 **Potential inconsistency**: Energy not conserved (tick-stream injects energy).
 
-**Resolution**: This IS consistent if tick-stream is external energy source (Ch1 §2: substrate generates existence). Universe is **open system** at substrate level.
+**Resolution**: This IS consistent if tick-stream is external energy source (Ch1 §2: substrate generates existence).
+Universe is **open system** at substrate level.
 
 ### External Consistency (Compatibility with Known Physics)
 
@@ -588,7 +652,8 @@ Layer 6 (Synthesis): Integration & Testing
 
 **Gap 3**: Gravitational constant G not derived from substrate parameters (Ch7 §8 speculative).
 
-**Resolution**: These are **known open questions**, not contradictions. Framework is internally consistent but not yet complete.
+**Resolution**: These are **known open questions**, not contradictions. Framework is internally consistent but not yet
+complete.
 
 ---
 
@@ -596,24 +661,24 @@ Layer 6 (Synthesis): Integration & Testing
 
 ### Tick-Frame vs Minkowski Spacetime
 
-| Property | Minkowski (Relativity) | Tick-Frame |
-|----------|------------------------|------------|
-| Time | Coordinate with metric signature | Substrate (generator) |
-| Space | Coordinates | Emergent from time |
-| Symmetry | Lorentz invariance | Causal asymmetry (v <= c) |
-| Ontology | 4D manifold | Tick-stream + entities |
-| Evidence | rho=1.5 (if spacetime) | rho=2.0 (time+space) |
+| Property | Minkowski (Relativity)           | Tick-Frame                |
+|----------|----------------------------------|---------------------------|
+| Time     | Coordinate with metric signature | Substrate (generator)     |
+| Space    | Coordinates                      | Emergent from time        |
+| Symmetry | Lorentz invariance               | Causal asymmetry (v <= c) |
+| Ontology | 4D manifold                      | Tick-stream + entities    |
+| Evidence | rho=1.5 (if spacetime)           | rho=2.0 (time+space)      |
 
 **Key distinction**: Experiment 50 (rho=2.0 signature) shows time+space ≠ spacetime. Tick-frame is NOT Minkowski-like.
 
 ### Tick-Frame vs Loop Quantum Gravity
 
-| Property | LQG | Tick-Frame |
-|----------|-----|------------|
-| Discretization | Spin networks (space) | Tick-lattice (time+space) |
-| Time | Continuous or emergent | Discrete and fundamental |
-| Background | Background-independent | Tick-stream is background |
-| Evidence | None yet | Computational (Exp 44, 50, 46_01) |
+| Property       | LQG                    | Tick-Frame                        |
+|----------------|------------------------|-----------------------------------|
+| Discretization | Spin networks (space)  | Tick-lattice (time+space)         |
+| Time           | Continuous or emergent | Discrete and fundamental          |
+| Background     | Background-independent | Tick-stream is background         |
+| Evidence       | None yet               | Computational (Exp 44, 50, 46_01) |
 
 **Similarity**: Both discrete at Planck scale.
 
@@ -621,12 +686,12 @@ Layer 6 (Synthesis): Integration & Testing
 
 ### Tick-Frame vs Causal Set Theory
 
-| Property | Causal Sets | Tick-Frame |
-|----------|-------------|------------|
-| Elements | Events (spacetime points) | Ticks (time instants) |
-| Structure | Partial order (causality) | Total order (tick sequence) |
+| Property  | Causal Sets                     | Tick-Frame                  |
+|-----------|---------------------------------|-----------------------------|
+| Elements  | Events (spacetime points)       | Ticks (time instants)       |
+| Structure | Partial order (causality)       | Total order (tick sequence) |
 | Emergence | Spacetime from causal relations | Space from tick differences |
-| Evidence | None yet | Computational (Exp 44, 50) |
+| Evidence  | None yet                        | Computational (Exp 44, 50)  |
 
 **Similarity**: Both causal structure as primary.
 
@@ -634,18 +699,19 @@ Layer 6 (Synthesis): Integration & Testing
 
 ### Tick-Frame vs Cellular Automata (e.g., Wolfram Physics)
 
-| Property | CA / Wolfram | Tick-Frame |
-|----------|--------------|------------|
-| Update | Discrete rules on lattice | Tick propagation to entities |
-| Determinism | Fully deterministic | Deterministic at substrate |
-| Emergence | Complexity from simple rules | Physics from tick structure |
-| Evidence | Computational universality | Experimental (Exp 15, 44, 50) |
+| Property    | CA / Wolfram                 | Tick-Frame                    |
+|-------------|------------------------------|-------------------------------|
+| Update      | Discrete rules on lattice    | Tick propagation to entities  |
+| Determinism | Fully deterministic          | Deterministic at substrate    |
+| Emergence   | Complexity from simple rules | Physics from tick structure   |
+| Evidence    | Computational universality   | Experimental (Exp 15, 44, 50) |
 
 **Similarity**: Discrete, deterministic, emergent complexity.
 
 **Difference**: Wolfram seeks one universal rule, tick-frame has layered principles (ontology → dynamics → physics).
 
-**Tick-frame advantage**: Experimentally validated predictions (rho=2.0, v <= c, O(n) rendering). Wolfram Physics model still seeking experimental signatures.
+**Tick-frame advantage**: Experimentally validated predictions (rho=2.0, v <= c, O(n) rendering). Wolfram Physics model
+still seeking experimental signatures.
 
 ---
 
@@ -654,12 +720,14 @@ Layer 6 (Synthesis): Integration & Testing
 ### Criteria for Framework Success
 
 **Tier 1: Computational Validation (Achieved)**
+
 - ✓ 3D optimality (Exp 15)
 - ✓ Rotation asymmetry (Exp 44)
 - ✓ rho=2.0 signature (Exp 50)
 - ✓ O(n) rendering (Exp 46_01)
 
 **Tier 2: Implementation Completeness (Partial)**
+
 - ✓ TickTimeConsumer pattern implemented
 - ✓ Bucketing rendering validated
 - ⚠ Expansion coupling partial
@@ -667,6 +735,7 @@ Layer 6 (Synthesis): Integration & Testing
 - ⚠ Energy balance tracking in progress
 
 **Tier 3: Analytical Rigor (Partial)**
+
 - ✓ Planck-scale axioms established
 - ✓ Discrete wave equation derived
 - ⚠ Lorentz transforms speculative
@@ -674,12 +743,14 @@ Layer 6 (Synthesis): Integration & Testing
 - ⚠ G derivation speculative
 
 **Tier 4: Experimental Physics (Not Yet)**
+
 - ☐ Planck-scale dispersion observed
 - ☐ Cosmological signatures identified
 - ☐ High-energy deviations measured
 - ☐ Peer-reviewed publication
 
 **Tier 5: Paradigm Shift (Aspirational)**
+
 - ☐ Framework adopted by physics community
 - ☐ Experimental programs designed around predictions
 - ☐ Textbooks include tick-frame as alternative framework
@@ -689,19 +760,23 @@ Layer 6 (Synthesis): Integration & Testing
 ### What Would Constitute "Success"?
 
 **Minimal success**:
+
 - All Tier 2 items complete (implementation matches theory)
 - Asymmetry validated (Doc 29)
 - Energy balance verified (Ch3 §5)
 
 **Moderate success**:
+
 - Tier 3 analytical rigor complete (Lorentz derivation, QFT formulation)
 - At least one Tier 4 experimental prediction tested (even if null result)
 
 **Major success**:
+
 - Tier 4: Observable signature detected (Planck-scale dispersion, cosmological anomaly)
 - Peer-reviewed publication in physics journal
 
 **Paradigm shift** (unlikely but possible):
+
 - Multiple experimental confirmations
 - Framework explains existing anomalies (cosmological tensions, quantum interpretations)
 - Community adoption
@@ -713,53 +788,53 @@ Layer 6 (Synthesis): Integration & Testing
 ### High Priority (Next 6 Months)
 
 1. **Phase 2: Expansion Coupling** (Gap 2)
-   - Extract lambda parameter
-   - Validate Imbalance Theory (Doc 29)
-   - Resolve over-coherence problem
+    - Extract lambda parameter
+    - Validate Imbalance Theory (Doc 29)
+    - Resolve over-coherence problem
 
 2. **Phase 4: Energy Balance** (Gap 4)
-   - Complete feature/#3 branch
-   - Verify conservation or document behavior
-   - Publish energy mechanics formalization
+    - Complete feature/#3 branch
+    - Verify conservation or document behavior
+    - Publish energy mechanics formalization
 
 3. **v2 README.md** (Documentation)
-   - Reading order for chapters
-   - Summary of validated vs speculative components
-   - Comparison to alternative frameworks
+    - Reading order for chapters
+    - Summary of validated vs speculative components
+    - Comparison to alternative frameworks
 
 ### Medium Priority (6-12 Months)
 
 4. **Phase 3: Collision Dynamics** (Gap 3)
-   - Tune full model parameters
-   - Switch from naive to full collision model
-   - Validate Doc 30 (Collision Persistence)
+    - Tune full model parameters
+    - Switch from naive to full collision model
+    - Validate Doc 30 (Collision Persistence)
 
 5. **Analytical Derivations** (Ch7 completeness)
-   - rho ≈ 1.5 from surface-area law + corrections
-   - Exact cost function formalization
-   - Collision cross-section calculations
+    - rho ≈ 1.5 from surface-area law + corrections
+    - Exact cost function formalization
+    - Collision cross-section calculations
 
 6. **Lorentz Transform Derivation** (Ch7 §9)
-   - Discrete symmetry analysis
-   - Tick-rate modulation implementation
-   - Time dilation measurement
+    - Discrete symmetry analysis
+    - Tick-rate modulation implementation
+    - Time dilation measurement
 
 ### Low Priority (12+ Months)
 
 7. **Phase 5: Relativity Compatibility** (Gap 5)
-   - Full special relativity emergent behavior
-   - General relativity weak-field limit
-   - Cosmological expansion comparison
+    - Full special relativity emergent behavior
+    - General relativity weak-field limit
+    - Cosmological expansion comparison
 
 8. **Phase 6: Observational Predictions** (Experimental)
-   - Formalize Planck-scale dispersion
-   - Identify cosmological signatures
-   - Publish testable predictions
+    - Formalize Planck-scale dispersion
+    - Identify cosmological signatures
+    - Publish testable predictions
 
 9. **Quantum Field Theory** (Ch7 §10)
-   - Gauge symmetries on tick-lattice
-   - Renormalization in discrete theory
-   - Fermion formulation
+    - Gauge symmetries on tick-lattice
+    - Renormalization in discrete theory
+    - Fermion formulation
 
 ---
 
@@ -785,6 +860,7 @@ Layer 6 (Synthesis): Integration & Testing
 ### Overall Assessment
 
 **Tick-frame physics is**:
+
 - ✓ A coherent theoretical framework
 - ✓ Computationally implemented (partially)
 - ✓ Experimentally validated (in simulation)
@@ -792,13 +868,17 @@ Layer 6 (Synthesis): Integration & Testing
 - ☐ Not yet tested against observational physics
 
 **Status**: **Promising research framework** with validated computational predictions, requiring:
+
 1. Completion of implementation gaps (Phases 2-4)
 2. Full analytical formalization (Ch7 completeness)
 3. Experimental physics predictions and tests (Phase 6)
 
-**Verdict**: Framework is **internally consistent and computationally validated**, but **not yet a complete physical theory**. It demonstrates that discrete time at Planck scale can produce emergent physics matching key observations (3D space, speed of light limit, temporal asymmetry).
+**Verdict**: Framework is **internally consistent and computationally validated**, but **not yet a complete physical
+theory**. It demonstrates that discrete time at Planck scale can produce emergent physics matching key observations (3D
+space, speed of light limit, temporal asymmetry).
 
-**Next milestone**: Validate Imbalance Theory (Doc 29) via expansion coupling experiments. Success would elevate from "computational model" to "predictive theory."
+**Next milestone**: Validate Imbalance Theory (Doc 29) via expansion coupling experiments. Success would elevate from "
+computational model" to "predictive theory."
 
 ---
 
@@ -807,7 +887,8 @@ Layer 6 (Synthesis): Integration & Testing
 ### Context
 
 From CLAUDE.md:
-> "Exploring computational physics on 'garden leave' - don't take it too seriously, but feel free to correct assumptions."
+> "Exploring computational physics on 'garden leave' - don't take it too seriously, but feel free to correct
+> assumptions."
 
 **Interpretation**: This is a speculative research project, not a claim to replace established physics.
 
@@ -819,11 +900,13 @@ From CLAUDE.md:
 
 **Status**: Successful computational exploration. Many predictions validated in simulation. Formalization progressing.
 
-**Future**: If observational predictions pan out (Planck-scale dispersion, etc.), framework gains credibility. If not, remains interesting computational model.
+**Future**: If observational predictions pan out (Planck-scale dispersion, etc.), framework gains credibility. If not,
+remains interesting computational model.
 
 ### Contribution
 
 **Even if tick-frame doesn't match reality**, it demonstrates:
+
 1. Discrete time CAN produce emergent 3D space (Exp 15)
 2. Temporal asymmetry CAN be computationally detected (Exp 44, 50)
 3. O(n) rendering CAN outperform sorting (Exp 46_01)
@@ -836,6 +919,7 @@ From CLAUDE.md:
 ## References
 
 ### All Chapters
+
 - **Ch1**: Temporal Ontology
 - **Ch2**: Dimensional Framework
 - **Ch3**: Entity Dynamics
@@ -844,18 +928,21 @@ From CLAUDE.md:
 - **Ch8**: Integration & Falsification (this chapter)
 
 ### Reference Documents
+
 - **REFERENCE_doc015**: Minimal Model (Java basis)
 - **REFERENCE_doc049**: Temporal Ontology (theoretical apex)
 - **REFERENCE_doc050_01**: Dimensional Equivalence Rejection (smoking gun)
 - **REFERENCE_doc046_01**: Bucketing Validation (rendering performance)
 
 ### Key Experiments
+
 - **Experiment #15**: 3D optimality (3,960 simulations)
 - **Experiment #44**: Rotation asymmetry (kinematic validation)
 - **Experiment #50**: rho=2.0 signature (1,095 configs)
 - **Experiment #46_01**: O(n) bucketing (performance benchmark)
 
 ### Raw Archive
+
 - **docs/theory/raw/**: Complete 76-document archive
 - **docs/theory/raw/README.md**: Archive guide
 

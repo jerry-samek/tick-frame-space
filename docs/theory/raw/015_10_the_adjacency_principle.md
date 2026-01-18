@@ -1,10 +1,12 @@
-# The Adjacency Principle  
+# The Adjacency Principle
+
 ### *A philosophical foundation for the tick‑frame universe*
 
 The Substrate Law defines **how** the universe updates.  
 The Adjacency Principle explains **why** this update rule is sufficient to generate everything we observe.
 
-It is the philosophical core of the tick‑frame model — the bridge between a bare, memoryless substrate and the rich, structured world reconstructed by an observer.
+It is the philosophical core of the tick‑frame model — the bridge between a bare, memoryless substrate and the rich,
+structured world reconstructed by an observer.
 
 ---
 
@@ -15,10 +17,10 @@ It is the philosophical core of the tick‑frame model — the bridge between a 
 
 This principle asserts that:
 
-- adjacency is the only primitive relation  
-- ticks are the only primitive temporal structure  
-- everything else is emergent  
-- the observer plays an essential role in reconstruction  
+- adjacency is the only primitive relation
+- ticks are the only primitive temporal structure
+- everything else is emergent
+- the observer plays an essential role in reconstruction
 
 It is the philosophical counterpart to the Substrate Law.
 
@@ -28,13 +30,13 @@ It is the philosophical counterpart to the Substrate Law.
 
 Adjacency is the minimal relation that can:
 
-- encode connectivity  
-- encode influence  
-- encode locality  
-- encode propagation  
-- encode structure  
-- encode identity  
-- encode change  
+- encode connectivity
+- encode influence
+- encode locality
+- encode propagation
+- encode structure
+- encode identity
+- encode change
 
 No other primitive is required.
 
@@ -46,11 +48,11 @@ Adjacency is the **proto‑geometry**, **proto‑interaction**, and **proto‑ca
 
 Ticks provide:
 
-- ordering  
-- causality  
-- update synchronization  
-- temporal direction  
-- the possibility of change  
+- ordering
+- causality
+- update synchronization
+- temporal direction
+- the possibility of change
 
 Ticks are not time — they are **the minimal temporal scaffold** from which time is reconstructed.
 
@@ -60,17 +62,17 @@ Ticks are not time — they are **the minimal temporal scaffold** from which tim
 
 The substrate does not contain:
 
-- space  
-- time  
-- forces  
-- fields  
-- particles  
-- constants  
-- geometry  
-- energy  
-- mass  
-- momentum  
-- curvature  
+- space
+- time
+- forces
+- fields
+- particles
+- constants
+- geometry
+- energy
+- mass
+- momentum
+- curvature
 
 These are **observer‑level compressions** of adjacency evolution.
 
@@ -88,12 +90,12 @@ The Adjacency Principle implies:
 The substrate only updates adjacency.  
 The observer:
 
-- embeds adjacency into space  
-- interprets bias as force  
-- interprets stability as mass  
-- interprets repetition as particle identity  
-- interprets drift as cosmology  
-- interprets patterns as laws  
+- embeds adjacency into space
+- interprets bias as force
+- interprets stability as mass
+- interprets repetition as particle identity
+- interprets drift as cosmology
+- interprets patterns as laws
 
 The observer is the compression engine.
 
@@ -103,19 +105,19 @@ The observer is the compression engine.
 
 Even though the substrate is discrete:
 
-- adjacency networks can approximate smooth manifolds  
-- ticks can approximate continuous time  
-- local rules can approximate differential equations  
-- stable patterns can approximate particles  
-- drift can approximate cosmological evolution  
+- adjacency networks can approximate smooth manifolds
+- ticks can approximate continuous time
+- local rules can approximate differential equations
+- stable patterns can approximate particles
+- drift can approximate cosmological evolution
 
 Continuity is a **high‑level illusion** created by:
 
-- scale  
-- averaging  
-- reconstruction  
-- limited resolution  
-- horizon growth  
+- scale
+- averaging
+- reconstruction
+- limited resolution
+- horizon growth
 
 The universe looks smooth because the observer smooths it.
 
@@ -125,10 +127,10 @@ The universe looks smooth because the observer smooths it.
 
 Under the Adjacency Principle:
 
-- gravity = adjacency deviation  
-- electromagnetism = adjacency rotation  
-- strong force = adjacency locking  
-- weak force = adjacency reconfiguration  
+- gravity = adjacency deviation
+- electromagnetism = adjacency rotation
+- strong force = adjacency locking
+- weak force = adjacency reconfiguration
 
 Forces are not fundamental.  
 They are **interpretations of adjacency patterns**.
@@ -164,21 +166,21 @@ x = f(A(t))
 
 The substrate does not contain:
 
-- coordinates  
-- distances  
-- angles  
-- curvature  
-- dimensions  
+- coordinates
+- distances
+- angles
+- curvature
+- dimensions
 
 These are **interpretations**, not primitives.
 
 This aligns with:
 
-- causal set theory  
-- loop quantum gravity  
-- emergent gravity  
-- holography  
-- renormalization group flow  
+- causal set theory
+- loop quantum gravity
+- emergent gravity
+- holography
+- renormalization group flow
 
 Modern physics has been hinting at this for decades.
 
@@ -192,11 +194,11 @@ The observer is the **reconstruction engine**.
 The substrate generates raw adjacency transitions.  
 The observer:
 
-- compresses  
-- embeds  
-- interprets  
-- stabilizes  
-- assigns meaning  
+- compresses
+- embeds
+- interprets
+- stabilizes
+- assigns meaning
 
 Without the observer, there is no geometry, no physics, no world — only adjacency.
 

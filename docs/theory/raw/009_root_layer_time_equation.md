@@ -1,6 +1,8 @@
 # Root Layer Time Equation
 
-This document defines a continuous root-layer model whose visualization emits ticks that, at baseline, coincide with Planck-time intervals. It formalizes the generator, clock, and Point‑of‑Failure (PoF) guard that produce discrete collapse events in visualization while preserving a continuous substrate.
+This document defines a continuous root-layer model whose visualization emits ticks that, at baseline, coincide with
+Planck-time intervals. It formalizes the generator, clock, and Point‑of‑Failure (PoF) guard that produce discrete
+collapse events in visualization while preserving a continuous substrate.
 
 ---
 
@@ -16,7 +18,8 @@ This document defines a continuous root-layer model whose visualization emits ti
   \[
   \dot{\Theta}(t)=\omega_{P}\,F\big(x(t)\big), \quad \omega_{P}=\frac{1}{t_{P}}=\sqrt{\frac{c^{5}}{\hbar G}}
   \]  
-  Accumulates a dimensionless progress variable \(\Theta\) modulated by the current state via \(F(x)\). Baseline \(F(x)=1\) yields Planck ticks.
+  Accumulates a dimensionless progress variable \(\Theta\) modulated by the current state via \(F(x)\). Baseline \(F(x)
+  =1\) yields Planck ticks.
 
 - **PoF guard and visualization collapse:**  
   \[
@@ -29,6 +32,7 @@ This document defines a continuous root-layer model whose visualization emits ti
 ## 2. Formal Specification
 
 ### State space and generator
+
 - **State:**  
   \[
   x(t)\in\mathcal{X}
@@ -42,6 +46,7 @@ This document defines a continuous root-layer model whose visualization emits ti
   Smooth flow with Lipschitz continuity to ensure existence and uniqueness.
 
 ### Planck‑scaled clock
+
 - **Clock accumulation:**  
   \[
   \Theta(t)=\Theta(t_{0})+\int_{t_{0}}^{t}\omega_{P}\,F\big(x(\tau)\big)\,d\tau
@@ -49,6 +54,7 @@ This document defines a continuous root-layer model whose visualization emits ti
   Dimensionless progress; \(F:\mathcal{X}\to\mathbb{R}_{+}\) bounded and measurable.
 
 ### Collapse emission rule
+
 - **Threshold crossing:**  
   \[
   \text{If }\Theta(t^{-})<n \text{ and }\Theta(t)\ge n,\ \text{emit collapse at } t=t_{n}
@@ -75,10 +81,12 @@ This document defines a continuous root-layer model whose visualization emits ti
   \[
   t_{\text{eff}}(x)=\frac{t_{P}}{F(x)}
   \]  
-  State-dependent minimal safe interval; larger \(F(x)\) compresses time between collapses while keeping the root continuous.
+  State-dependent minimal safe interval; larger \(F(x)\) compresses time between collapses while keeping the root
+  continuous.
 
 - **Failure prevention:**  
-  If evolution attempts \( \Delta t < t_{\text{eff}}(x)\), the PoF guard defers collapse until the threshold is satisfied.
+  If evolution attempts \( \Delta t < t_{\text{eff}}(x)\), the PoF guard defers collapse until the threshold is
+  satisfied.
 
 ---
 
@@ -88,10 +96,12 @@ This document defines a continuous root-layer model whose visualization emits ti
   \(x(t)\) evolves smoothly; visualization emits discrete events at \(\Theta\) threshold crossings.
 
 - **Relativity alignment (epistemic discreteness):**  
-  Discreteness is in perception; root remains continuous and Lorentz‑compatible via invariance of \(c\) embedded in \(\omega_{P}\).
+  Discreteness is in perception; root remains continuous and Lorentz‑compatible via invariance of \(c\) embedded in
+  \(\omega_{P}\).
 
 - **Planck baseline:**  
-  With \(F(x)=1\), ticks coincide with Planck time; the model recovers the known scale without asserting ontological discreteness.
+  With \(F(x)=1\), ticks coincide with Planck time; the model recovers the known scale without asserting ontological
+  discreteness.
 
 - **Auditability:**  
   Each collapse event is a version increment \(n\), enabling persistent logs and traceability.
@@ -104,10 +114,10 @@ This document defines a continuous root-layer model whose visualization emits ti
   Can be curvature‑driven, information‑flow–driven, or hybrid; must remain continuous.
 
 - **Design of \(F(x)\):**  
-  Map local state to modulation. Examples:  
-  - \(F(x)=f(\text{energy density})\)  
-  - \(F(x)=f(\text{curvature invariants})\)  
-  - \(F(x)=f(\text{information flux})\)
+  Map local state to modulation. Examples:
+    - \(F(x)=f(\text{energy density})\)
+    - \(F(x)=f(\text{curvature invariants})\)
+    - \(F(x)=f(\text{information flux})\)
 
 - **Debugger enforcement:**  
   Monitor \(\Theta\); emit collapse only at integer crossings; ensure no premature updates below \(t_{\text{eff}}(x)\).
@@ -123,4 +133,5 @@ This document defines a continuous root-layer model whose visualization emits ti
   \[
   \Phi(x)\ \text{continuous},\quad F(x)\equiv 1
   \]  
-  Yields uniform visualization ticks with \(\Delta t = t_{P}\) while preserving a fully continuous root evolution of \(x(t)\).
+  Yields uniform visualization ticks with \(\Delta t = t_{P}\) while preserving a fully continuous root evolution of
+  \(x(t)\).

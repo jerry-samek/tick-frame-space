@@ -1,11 +1,15 @@
 # Void Asymmetry Principle
 
 ## Definition
-Presence - Anti-Presence asymmetry arises not from imbalance between **1 (Presence)** and **−1 (Anti‑Presence)** alone, but from the stabilizing role of **0 (Void)**. The void absorbs annihilation events, preventing perfect cancellation and leaving a surplus of presence.
+
+Presence - Anti-Presence asymmetry arises not from imbalance between **1 (Presence)** and **−1 (Anti‑Presence)** alone,
+but from the stabilizing role of **0 (Void)**. The void absorbs annihilation events, preventing perfect cancellation and
+leaving a surplus of presence.
 
 ---
 
 ## Trinary States
+
 - **1 = Presence (matter)**
 - **−1 = Anti‑Presence (antimatter)**
 - **0 = Void (buffer/stabilizer)**
@@ -13,6 +17,7 @@ Presence - Anti-Presence asymmetry arises not from imbalance between **1 (Presen
 ---
 
 ## Collision Dynamics
+
 - `1 + (-1) → 0` (annihilation absorbed into void)
 - `1 + 1 → 1` (presence reinforces itself)
 - `(-1) + (-1) → -1` (anti‑presence reinforces itself)
@@ -23,6 +28,7 @@ Presence - Anti-Presence asymmetry arises not from imbalance between **1 (Presen
 ---
 
 ## Operator Bias
+
 - **NAND:** Seeds alternation and void islands.
 - **OR:** Favors presence (1), stabilizing surplus.
 - **XOR:** Amplifies difference, producing bursts of −1.
@@ -31,12 +37,14 @@ Presence - Anti-Presence asymmetry arises not from imbalance between **1 (Presen
 ---
 
 ## Phase Flips
+
 - At operator boundaries, phase flips ensure −1 appears regularly.
 - Void (0) absorbs imbalance, preventing perfect symmetry.
 
 ---
 
 ## Emergent Asymmetry
+
 - Symmetric rules still yield asymmetric outcomes.
 - Presence (1) dominates over time.
 - Void (0) acts as a reservoir, breaking perfect cancellation.

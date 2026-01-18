@@ -9,9 +9,10 @@
 \begin{document}
 
     \begin{center}
-    {\LARGE \textbf{Constants Dictionary}}\\[6pt]
-    {\large Mapping simulated constants to physical-like values}
+        {\LARGE \textbf{Constants Dictionary}}\\[6pt]
+        {\large Mapping simulated constants to physical-like values}
     \end{center}
+
 
     \section*{Reference Tick}
     We anchor the mapping at tick $t^\ast = 3760$, where the simulation is cooled and stable.
@@ -38,6 +39,7 @@
         \Lambda_{\text{real}} \approx 1.1 \times 10^{-52}.
     \]
 
+
     \section*{Scaling Factors}
     We define linear scaling factors:
     \[
@@ -60,6 +62,7 @@
         s_h \approx 2.7 \times 10^{-36},\quad
         s_\Lambda \approx 9.2 \times 10^{-48}.
     \]
+
 
     \section*{Mapping Formulas}
     For any tick $t$, the UI computes:
@@ -84,11 +87,13 @@
         \item remain intuitive for users.
     \end{itemize}
 
+
     \section*{Angular Pipe (UI Layer)}
     A simple UI mapping can be implemented as:
     \[
         \text{value}_{\text{phys}} = s_{\text{type}} \cdot \text{value}_{\text{sim}}.
     \]
+
 
     \section*{Notes}
     \begin{itemize}

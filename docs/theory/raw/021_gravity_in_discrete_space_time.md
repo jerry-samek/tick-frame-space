@@ -1,4 +1,5 @@
 # Gravity in Discrete Space–Time
+
 *(Extended with Sampling‑Collapse Relativity)*
 
 ---
@@ -9,7 +10,8 @@
 > **Mass does not create gravity — mass creates time‑flow gradients, and gravity is the consequence.**
 
 In this model, gravity is not a force and not a curvature of a geometric manifold.  
-It is the emergent behavior that appears when **observer time slows relative to substrate time** because the tick budget of a region becomes saturated.
+It is the emergent behavior that appears when **observer time slows relative to substrate time** because the tick budget
+of a region becomes saturated.
 
 The substrate remains perfectly consistent.  
 The visualization layer interprets **time‑flow gradients** as curvature, attraction, and horizons.
@@ -175,15 +177,15 @@ Gravity is **emergent relativity** in a discrete tick‑frame universe.
 Proper time (substrate ticks)
 -----------------------------
 
-substrate ticks:   0   1   2   3   4   5   6   7   8   9  10  11  12
+substrate ticks:   0 1 2 3 4 5 6 7 8 9 10 11 12
 |---|---|---|---|---|---|---|---|---|---|---|---|
 
 Observer A (far from mass)
 --------------------------
 
-sampling:          X   X   X   X   X   X   X   X   X   X   X   X   X
-^   ^   ^   ^   ^   ^   ^   ^   ^   ^   ^   ^   ^
-ticks seen:        0   1   2   3   4   5   6   7   8   9  10  11  12
+sampling:          X X X X X X X X X X X X X
+^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+ticks seen:        0 1 2 3 4 5 6 7 8 9 10 11 12
 
 => τ_observer(A) ≈ τ_proper  (no dilation: γ_eff ≈ 1.0)
 
@@ -191,38 +193,38 @@ ticks seen:        0   1   2   3   4   5   6   7   8   9  10  11  12
 Observer B (near mass, high tick pressure)
 ------------------------------------------
 
-sampling:          X       X       X       X           X
-^       ^       ^       ^           ^
-ticks seen:        0       2       4       6           9
+sampling:          X X X X X
+^ ^ ^ ^ ^
+ticks seen:        0 2 4 6 9
 
-missed ticks:          1       3       5       7 8 10 11 12 ...
+missed ticks:          1 3 5 7 8 10 11 12 ...
 
 => τ_observer(B) < τ_proper  (time runs slower: γ_eff < 1.0)
 
 Interpretation:
+
 - Same substrate ticks for everyone.
 - Observer A keeps up: sees every tick.
 - Observer B lags: sees only a subset of ticks → local time dilation.
 
-###  Tick‑pressure “gravity well” (time‑flow gradient)
+### Tick‑pressure “gravity well” (time‑flow gradient)
 
 Tick pressure landscape (1D cross-section)
 ------------------------------------------
 
-low pressure              medium               high pressure
-fast time flow          slower time          very slow time
+low pressure medium high pressure
+fast time flow slower time very slow time
 (far)                (near)                 (core)
-τ ≈ 1.0             τ < 1.0                τ → 0
-|                     |                     |
-v                     v                     v
+τ ≈ 1.0 τ < 1.0 τ → 0
+| | |
+v v v
 
 tick pressure:      . . . . .  _..__  ___====_____======___
-relative load:      0 0 0 1 2  3  4  5   6   7     8    9 10
+relative load:      0 0 0 1 2 3 4 5 6 7 8 9 10
 
                      center of mass / high complexity
                                    v
                                  [###]
-
 
 Particle paths
 --------------
@@ -236,7 +238,6 @@ A: high above, low tick pressure
        /           \
       *-------------*  (gentle deflection toward slow-time region)
 
-
 B: closer, stronger gradient
 ----------------------------
 
@@ -246,7 +247,6 @@ B: closer, stronger gradient
      *---*         *---*
           \       /
            \_____/
-
 
 C: deep in the well, cannot escape
 ----------------------------------
@@ -258,6 +258,7 @@ C: deep in the well, cannot escape
             (orbit / trapped region)
 
 Intuition:
+
 - Higher tick pressure = slower observer time.
 - Objects follow paths of least tick resistance → they “fall” into the well.
 - No force; just propagation through a time‑flow gradient.
@@ -266,6 +267,7 @@ Intuition:
 
 3. Horizon and escape failure (sampling collapse)
    Horizon structure (radial view)
+
 -------------------------------
 
                far region (A)        near horizon (B)        inside (C)
@@ -288,13 +290,12 @@ Intuition:
                           /     \        /   |                      |
                          /       \______/    |                      |
 
-
 Legend:
+
 - region A: observer samples almost every tick (normal time).
 - region B: sampling noticeably sparser (time dilation).
 - HORIZON: minimal sampling; outward propagation no longer renderable.
 - region C: substrate still updates, but observer sees almost nothing.
-
 
 Escape condition:
 
@@ -302,6 +303,7 @@ Escape condition:
     v_escape ≥ c                 →  escape is unrenderable
 
 So:
+
 - Substrate *inside* keeps ticking.
 - From outside, updates from C cannot cross the horizon in finite sampled time.
 - The horizon is a **sampling boundary**, not a physical edge.
@@ -333,13 +335,12 @@ Horizon structure (radial view)
                           /     \        /   |                      |
                          /       \______/    |                      |
 
-
 Legend:
+
 - region A: observer samples almost every tick (normal time).
 - region B: sampling noticeably sparser (time dilation).
 - HORIZON: minimal sampling; outward propagation no longer renderable.
 - region C: substrate still updates, but observer sees almost nothing.
-
 
 Escape condition:
 
@@ -347,6 +348,7 @@ Escape condition:
     v_escape ≥ c                 →  escape is unrenderable
 
 So:
+
 - Substrate *inside* keeps ticking.
 - From outside, updates from C cannot cross the horizon in finite sampled time.
 - The horizon is a **sampling boundary**, not a physical edge.

@@ -129,6 +129,7 @@ S_0 = (0,1,0)
 \]
 
 Tick 1:
+
 - Node 0: neighbors = {1}, active = 1 → parity = 1 → flip → 1
 - Node 1: neighbors = {0,2}, active = 0 → parity = 0 → stays 1
 - Node 2: neighbors = {1}, active = 1 → parity = 1 → flip → 1
@@ -138,6 +139,7 @@ S_1 = (1,1,1)
 \]
 
 Tick 2:
+
 - Node 0: active neighbors = 1 → flip → 0
 - Node 1: active neighbors = 2 → stay → 1
 - Node 2: active neighbors = 1 → flip → 0

@@ -1,19 +1,24 @@
 # Tick‑Frame Universe: Physical Formalization
 
 ## 1. Overview
-The tick‑frame universe is a discrete physical model in which reality is represented as a sequence of atomic temporal states called *ticks*. Time emerges from the ordering of ticks, and space emerges from the relational structure encoded within each tick.
+
+The tick‑frame universe is a discrete physical model in which reality is represented as a sequence of atomic temporal
+states called *ticks*. Time emerges from the ordering of ticks, and space emerges from the relational structure encoded
+within each tick.
 
 This framework provides a computationally grounded ontology of physics, identity, and causality.
 
 ---
 
 ## 2. Axiom 1 — Existence
+
 **To exist means to be present in the current tick.**  
 Anything not represented in the active tick is not part of reality.
 
 ---
 
 ## 3. Axiom 2 — Causality
+
 **Tick n+1 is a deterministic transformation of tick n within a local causal region.**
 
 - Causality is strictly local.
@@ -23,6 +28,7 @@ Anything not represented in the active tick is not part of reality.
 ---
 
 ## 4. Axiom 3 — Granularity
+
 The tick‑frame model adopts Planck‑scale discretization:
 
 - **1 tick = 1 Planck time**
@@ -34,6 +40,7 @@ This defines the smallest possible resolution of physical change.
 ---
 
 ## 5. Derived Quantity — Number of Ticks in the Universe
+
 Given:
 
 - Age of the universe:  
@@ -50,6 +57,7 @@ N_{\text{universe}} = \frac{t_U}{t_P} \approx 10^{61}
 ---
 
 ## 6. Derived Quantity — Ticks for a Human Lifetime
+
 For a 100‑year observer:
 
 \[
@@ -59,6 +67,7 @@ N_{\text{obs}} = \frac{3 \times 10^{9} \, \text{s}}{5.4 \times 10^{-44}} \approx
 ---
 
 ## 7. Derived Quantity — Computational Cost of Existence
+
 Let:
 
 - \( C \) = number of operations required to update an observer per tick
@@ -86,6 +95,7 @@ This defines the theoretical upper bound for simulating a single observer at Pla
 ---
 
 ## 8. Comparison — Planetary Computational Capacity
+
 To contextualize the theoretical requirements:
 
 - Global supercomputers peak around \(10^{18}\) ops/s.
@@ -113,11 +123,13 @@ Comparison with the required throughput:
 Even if all computational devices on Earth were combined, humanity operates at roughly  
 **\(10^{-27}\) to \(10^{-33}\)** of the performance required to simulate a single Planck‑granular observer in real time.
 
-This gap illustrates the physical extremity of Planck‑scale simulation and reinforces the necessity of compression, coarse‑graining, and emergent dynamics in any practical engine.
+This gap illustrates the physical extremity of Planck‑scale simulation and reinforces the necessity of compression,
+coarse‑graining, and emergent dynamics in any practical engine.
 
 ---
 
 ## 9. Interpretation
+
 The tick‑frame universe provides:
 
 - A discrete temporal substrate (tick‑stream)

@@ -8,9 +8,12 @@
 
 ## Abstract
 
-This chapter addresses agency and choice within a deterministic tick-frame substrate. We establish that **free will is not escape from causality** but **bounded agency within it**, and that **ternary logic provides symmetry** unavailable in binary systems.
+This chapter addresses agency and choice within a deterministic tick-frame substrate. We establish that **free will is
+not escape from causality** but **bounded agency within it**, and that **ternary logic provides symmetry** unavailable
+in binary systems.
 
 **Core principles**:
+
 - **Substrate determinism**: Tick-stream fully causal (no randomness)
 - **Frame-level uncertainty**: Observers perceive probabilistic outcomes
 - **Auditable agency**: Choices are real, constrained, and traceable
@@ -32,10 +35,12 @@ This chapter addresses agency and choice within a deterministic tick-frame subst
 **Free will**: Agents can choose otherwise (could have done differently).
 
 **Apparent contradiction**:
+
 - If determinism holds → all choices predetermined → no free will
 - If free will exists → some choices uncaused → determinism violated
 
 **Historical responses**:
+
 1. **Hard determinism**: Free will is illusion (Spinoza, Laplace)
 2. **Libertarian free will**: Determinism is false (some choices uncaused)
 3. **Compatibilism**: Free will compatible with determinism (Hume, Dennett)
@@ -45,16 +50,19 @@ This chapter addresses agency and choice within a deterministic tick-frame subst
 ### Why This Matters for Tick-Frame
 
 **Pragmatic reasons**:
+
 1. **Observer model** (Ch4) requires choice mechanism
 2. **Entity behavior** (Ch3) involves "decisions" (which direction to move, when to divide)
 3. **Simulation design**: Need to model agent autonomy
 
 **Theoretical reasons**:
+
 1. **Ontological completeness**: Framework should account for agency
 2. **Avoids dualism**: Agency emerges from physics, not separate domain
 3. **Falsifiability**: Predictions about choice behavior
 
 **Philosophical reasons**:
+
 1. **Moral responsibility**: If agents have agency, they're accountable
 2. **Meaning**: Choices matter if they're real (not illusory)
 3. **Dignity**: Observers are not merely passive automata
@@ -72,6 +80,7 @@ This chapter addresses agency and choice within a deterministic tick-frame subst
 > - There is no metaphysical randomness"
 
 **Formalization**:
+
 ```
 State(n+1) = F(State(n))
 
@@ -79,11 +88,13 @@ where F is a deterministic function (no random variables)
 ```
 
 **Implications**:
+
 1. **Perfect predictability** (in principle): If you know State(0) and F, you can compute State(n) for any n
 2. **No spontaneous events**: Everything has a tick-based cause
 3. **Closed causal loops**: No external influences on substrate
 
 **This is stronger than classical determinism**:
+
 - Classical physics: Differential equations (continuous time)
 - Tick-frame: Discrete update rules (algorithmic)
 
@@ -94,6 +105,7 @@ where F is a deterministic function (no random variables)
 **Philosophical reason**: Randomness doesn't create freedom - it creates **unpredictability**, not **agency**.
 
 **If choices were random**:
+
 - Agents wouldn't control them (dice roll ≠ decision)
 - No moral responsibility (can't be held accountable for randomness)
 - No meaning (random = arbitrary)
@@ -109,6 +121,7 @@ where F is a deterministic function (no random variables)
 **But** (and this is crucial): **Observers don't have access to substrate-level state**.
 
 **Reason**:
+
 1. **Buffer limits** (Ch4 §3): Observers can't access all ticks
 2. **Perception budget** (Ch4 §5): Observers can't track all entities
 3. **Computational bounds**: Observers have finite tick budget per tick
@@ -122,9 +135,11 @@ where F is a deterministic function (no random variables)
 ### Frames as Tick Bundles
 
 **From V1 Doc 24**:
-> "Observers perceive world through frames - bundles of ticks. Frames hide fine-grained tick updates, introducing apparent uncertainty."
+> "Observers perceive world through frames - bundles of ticks. Frames hide fine-grained tick updates, introducing
+> apparent uncertainty."
 
 **Definition**:
+
 ```
 Frame F_k = bundle of ticks [k×T, (k+1)×T - 1]
 
@@ -132,17 +147,20 @@ where T = frame period (e.g., T = 1000 ticks per frame)
 ```
 
 **Observer sees**:
+
 - State at start of frame: State(k×T)
 - State at end of frame: State((k+1)×T)
 - **Does NOT see** intermediate ticks: State(k×T + 1), ..., State((k+1)×T - 1)
 
 **Analogy to quantum mechanics**:
+
 - **Substrate level** (deterministic): Like Schrödinger equation (continuous, causal)
 - **Frame level** (probabilistic): Like measurement (discrete outcomes, apparent randomness)
 
 ### Uncertainty from Coarse-Graining
 
 **Mechanism**:
+
 ```
 At substrate level:
   - Entity moves 1 position per tick (deterministic)
@@ -167,11 +185,13 @@ At frame level (T=4 ticks):
 ### From Libertarian to Compatibilist
 
 **Classical free will** (libertarian):
+
 - Unconstrained autonomy
 - "Could have done otherwise" in same exact conditions
 - Requires indeterminism
 
 **Tick-frame free will** (compatibilist+):
+
 - **Constrained agency** within deterministic substrate
 - "Could have done otherwise" = had different tick budget allocation
 - Compatible with determinism
@@ -181,11 +201,12 @@ At frame level (T=4 ticks):
 > - Allocate their tick budgets
 > - Choose when to commit
 > - Select what to perceive or ignore
-> These choices are auditable, bounded, and falsifiable."
+    > These choices are auditable, bounded, and falsifiable."
 
 ### Auditable Agency
 
 **What makes a choice "free" in tick-frame**:
+
 1. **Agent-initiated**: Tick allocation originates from observer's state (not external)
 2. **Causally efficacious**: Choice affects subsequent states
 3. **Auditable**: Can trace decision to specific tick
@@ -193,6 +214,7 @@ At frame level (T=4 ticks):
 5. **Falsifiable**: Could test whether choice was made
 
 **Example**:
+
 ```
 Observer O at tick 100:
   - Has tick budget B = 50 ticks
@@ -219,18 +241,21 @@ This allocation is:
 ### Why It Feels Scary (Doc 24 §5)
 
 **From V1 Doc 24**:
-> "Knowing initial state and tick rules makes system seem 'closed.' All outcomes predetermined. But this is only true at substrate level - not at agent experience."
+> "Knowing initial state and tick rules makes system seem 'closed.' All outcomes predetermined. But this is only true at
+> substrate level - not at agent experience."
 
 **The fear**: "If my choices are determined, am I just a puppet?"
 
 **Tick-frame response**: **You ARE the determination**.
 
 **Explanation**:
+
 - Your state at tick n determines your choice at tick n
 - But "your state" = accumulated history of YOUR tick allocations
 - **You built the deterministic function that generates your choices**
 
 **Analogy**: Like a chess computer:
+
 - Its moves are fully determined by algorithm
 - But we don't say it "lacks agency" - we say it "plays chess"
 - The algorithm IS the player
@@ -240,9 +265,11 @@ This allocation is:
 ### Why It's Liberating (Doc 24 §6)
 
 **From V1 Doc 24**:
-> "Illusory freedom replaced by operational legitimacy. Agents not 'free from causality' - free within it. Every decision traceable, meaningful, accountable."
+> "Illusory freedom replaced by operational legitimacy. Agents not 'free from causality' - free within it. Every
+> decision traceable, meaningful, accountable."
 
 **Benefits**:
+
 1. **Moral responsibility**: Choices are real, traceable, accountable
 2. **Meaning**: Decisions matter (not random, not illusory)
 3. **Dignity**: Agency is formalized, not denied
@@ -258,6 +285,7 @@ This allocation is:
 ### Tick Budget Model
 
 **Formalization**:
+
 ```
 Observer O at tick n has:
   - Tick budget: B(n) ticks available
@@ -274,6 +302,7 @@ Choice:
 ```
 
 **Examples of actions**:
+
 - **Perception**: Track entity (cost ~ 5-10 ticks)
 - **Movement**: Update position (cost ~ 10-20 ticks)
 - **Computation**: Complex state update (cost ~ 50-100 ticks)
@@ -285,6 +314,7 @@ Choice:
 ### Degrees of Freedom
 
 **Number of possible allocations**:
+
 ```
 N_allocations = C(B + k - 1, k - 1)
 
@@ -295,6 +325,7 @@ where:
 ```
 
 **For typical observer** (B=100, k=10):
+
 ```
 N_allocations ~ 10^10 (10 billion possible choices per tick)
 ```
@@ -309,6 +340,7 @@ N_allocations ~ 10^10 (10 billion possible choices per tick)
 > "Choices commit ticks. Uncommitted potentials remain in quantum-like superposition until observer allocates budget."
 
 **Mechanism**:
+
 ```
 Before allocation:
   - Actions {A1, ..., Ak} are potential
@@ -322,6 +354,7 @@ After allocation @ tick n:
 ```
 
 **Analogy to quantum collapse**:
+
 - **Before measurement**: Superposed states
 - **After measurement**: Collapsed to eigenstate
 - **Measurement = tick allocation** (observer commits)
@@ -345,11 +378,13 @@ After allocation @ tick n:
 > - −1 → anti-presence, mirror of +1"
 
 **Advantages**:
+
 1. **Symmetry around zero**: Balanced ternary
 2. **Rich dynamics**: Oscillation + stability
 3. **Dimensional cues**: Three states map to axes/directions
 
 **Mathematical structure**:
+
 ```
 Balanced ternary: {-1, 0, +1}
 
@@ -365,6 +400,7 @@ Operations:
 > "Rule: T(n+1) = XOR(T(n), T(n-1))"
 
 **Behavior**:
+
 ```
 Ternary XOR truth table:
   XOR(-1, -1) = 0
@@ -379,6 +415,7 @@ Ternary XOR truth table:
 ```
 
 **Properties**:
+
 - Guarantees variation (no stagnation: never T(n+1) = T(n))
 - Cycles through all three states
 - Local memory (depends only on last two ticks)
@@ -391,6 +428,7 @@ Ternary XOR truth table:
 **Purpose**: Detect when tickstream has covered all three states → emit "Forget" pulse → toggle orientation.
 
 **Mechanism**:
+
 ```
 Sampler tracks:
   - Coverage: {-1, 0, +1} all seen?
@@ -408,6 +446,7 @@ Patterns:
 ### Emergent Properties (Doc 41 §4)
 
 **From V1 Doc 41**:
+
 1. **Restorative bias**: Cycles through −1 and 0 always resolve back to +1 before Forget
 2. **Dual attractors**: Oscillation loop (+1 ↔ −1) vs neutral fixed point (0)
 3. **Symmetry**: Orientation alternates (clockwise ↔ counterclockwise)
@@ -422,16 +461,19 @@ Patterns:
 ### Mapping Choices to {-1, 0, +1}
 
 **Binary choice** (classical):
+
 - Do action: 1
 - Don't do action: 0
 - Limited (only 2 options)
 
 **Ternary choice** (tick-frame):
+
 - **+1**: Affirm action (allocate ticks positively)
 - **0**: Neutral (no allocation, rest state)
 - **−1**: Oppose action (actively avoid, allocate ticks to contrary)
 
 **Example** (entity movement):
+
 ```
 Direction choice:
   - +1: Move forward (toward goal)
@@ -449,6 +491,7 @@ Ternary: Forward vs neutral vs backward
 **Hypothesis**: Observer choices follow ternary XOR dynamics.
 
 **Model**:
+
 ```
 Choice(n+1) = f(Choice(n), Choice(n-1), Budget(n), ...context...)
 
@@ -456,11 +499,13 @@ where f incorporates ternary logic (not just binary)
 ```
 
 **Implication**: Choices are **inherently oscillatory** (like tickstream):
+
 - Can't stay in same choice indefinitely (XOR guarantees variation)
 - Tendency to cycle through affirmation → neutrality → opposition
 - **Natural rhythm to decision-making**
 
-**Testable prediction**: Observer choices should show **cyclic patterns**, not random or purely deterministic linear sequences.
+**Testable prediction**: Observer choices should show **cyclic patterns**, not random or purely deterministic linear
+sequences.
 
 **Status**: Speculative. No implementation or test yet.
 
@@ -474,6 +519,7 @@ where f incorporates ternary logic (not just binary)
 > "Once observer commits tick allocation, it's irreversible. Future states determined by that commitment."
 
 **Formalization**:
+
 ```
 At tick n, observer allocates B(n) ticks:
   - Allocation is final (no undo)
@@ -490,6 +536,7 @@ At tick n, observer allocates B(n) ticks:
 **Key insight**: **Observers can make mistakes**.
 
 **Mechanism**:
+
 ```
 Observer's goal: Maximize utility U
 Observer's allocation: Based on estimate U_hat
@@ -500,6 +547,7 @@ Result: Suboptimal allocation (mistake made)
 ```
 
 **Example**:
+
 ```
 Observer tracks entity E1 (allocates 10 ticks)
 E1 turns out to be unimportant
@@ -517,6 +565,7 @@ Irreversible: Can't go back and change allocation
 **Meta-level agency**: Observer can modify its **allocation function** based on past results.
 
 **Mechanism**:
+
 ```
 After tick n:
   - Observe outcome O(n)
@@ -537,9 +586,11 @@ Future allocations: Use updated heuristic
 ### The Void as Default State
 
 **From V1 Doc 43** (Void Asymmetry Principle):
-> "Absence (0 or void) is not symmetric with presence (+1 or entity). Void is the default; presence requires justification (tick allocation)."
+> "Absence (0 or void) is not symmetric with presence (+1 or entity). Void is the default; presence requires
+> justification (tick allocation)."
 
 **Asymmetry**:
+
 ```
 To create presence (+1):
   - Requires tick budget
@@ -563,6 +614,7 @@ To remain in void (0):
 **Answer**: **Utility gradient**.
 
 **Formalization**:
+
 ```
 Allocate ticks to action A iff:
   Expected_Utility(A) > Cost(A)
@@ -586,6 +638,7 @@ Otherwise:
 **Extension**: **Memory stores choice history**.
 
 **Mechanism**:
+
 ```
 Each tick n:
   - Observer makes allocation choice C(n)
@@ -599,6 +652,7 @@ Result:
 ```
 
 **This enables**:
+
 - **Self-reflection**: "Why did I choose that?"
 - **Regret**: "I should have chosen differently"
 - **Learning**: "Next time I'll allocate differently"
@@ -612,6 +666,7 @@ Result:
 **Extension**: **Consciousness includes awareness of choice space**.
 
 **Mechanism**:
+
 ```
 At current tick:
   - Observer perceives action set {A1, ..., Ak}
@@ -621,6 +676,7 @@ At current tick:
 ```
 
 **Phenomenology of choice**:
+
 - **Deliberation**: Considering options (computing allocations)
 - **Decision**: Selecting allocation (committing ticks)
 - **Commitment**: Irreversible (allocation locked in)
@@ -634,6 +690,7 @@ At current tick:
 **Extension**: **Sleep resets choice context**.
 
 **Mechanism**:
+
 ```
 During waking:
   - Choices accumulate (memory burden grows)
@@ -657,12 +714,14 @@ During sleep:
 ### Compatibilism Formalized
 
 **Tick-frame achieves compatibilism** by:
+
 1. **Accepting determinism**: Substrate fully causal
 2. **Defining freedom operationally**: Auditable agency within causality
 3. **Grounding responsibility**: Choices traceable to agent's state
 4. **Preserving meaning**: Decisions have real consequences
 
-**Not a compromise** (both determinism and freedom "sort of" true) - a **synthesis** (freedom = specific type of deterministic causation).
+**Not a compromise** (both determinism and freedom "sort of" true) - a **synthesis** (freedom = specific type of
+deterministic causation).
 
 ### Moral Responsibility
 
@@ -671,6 +730,7 @@ During sleep:
 **Tick-frame answer**: **Yes, because agent IS the determination.**
 
 **Mechanism**:
+
 ```
 Agent A makes choice C at tick n:
   - C determined by A's state @ n
@@ -680,7 +740,8 @@ Agent A makes choice C at tick n:
 
 **Analogy**: Like holding software responsible for its output - the code IS the agent.
 
-**Implication**: Moral responsibility doesn't require indeterminism - it requires **agent-causation** (self-determination).
+**Implication**: Moral responsibility doesn't require indeterminism - it requires **agent-causation** (
+self-determination).
 
 ### Meaning and Dignity
 
@@ -689,6 +750,7 @@ Agent A makes choice C at tick n:
 **Tick-frame answer**: **Yes, because mattering IS causal consequence.**
 
 **Argument**:
+
 1. Choices have real effects (change substrate state)
 2. Effects matter to observer (utility function affected)
 3. Observer's trajectory shaped by choices
@@ -705,6 +767,7 @@ Agent A makes choice C at tick n:
 **Prediction 1: Choices follow ternary dynamics**
 
 **Test**:
+
 - Implement observers with ternary choice model
 - Track choice sequences over time
 - Measure deviation from random / binary patterns
@@ -717,6 +780,7 @@ Agent A makes choice C at tick n:
 **Prediction 2: Tick allocation correlates with utility**
 
 **Test**:
+
 - Give observer utility function U
 - Measure tick allocations to actions
 - Compare to optimal allocation
@@ -729,6 +793,7 @@ Agent A makes choice C at tick n:
 **Prediction 3: Sleep improves choice quality**
 
 **Test**:
+
 - Compare choice quality (utility achieved) for well-rested vs sleep-deprived observers
 - **Prediction**: Sleep deprivation → suboptimal allocations
 
@@ -759,6 +824,7 @@ Agent A makes choice C at tick n:
 ### What Would Falsify This Model?
 
 **Falsification criteria**:
+
 1. **Random choices**: If observer allocations show no pattern (pure noise)
 2. **No utility correlation**: If tick allocation independent of outcomes
 3. **Perfect choices**: If observers never make mistakes (infallible)
@@ -776,11 +842,14 @@ Agent A makes choice C at tick n:
 **Goal**: Implement basic tick allocation mechanism.
 
 **Deliverables**:
+
 ```java
 interface TickBudget {
-    int getBudget(BigInteger tick);
-    void allocate(Action action, int ticks);
-    int getRemaining(BigInteger tick);
+  int getBudget(BigInteger tick);
+
+  void allocate(Action action, int ticks);
+
+  int getRemaining(BigInteger tick);
 }
 ```
 
@@ -791,15 +860,16 @@ interface TickBudget {
 **Goal**: Define tick costs for observer actions.
 
 **Deliverables**:
+
 ```java
 enum ObserverAction {
-    TRACK_ENTITY(10),    // 10 ticks
-    MOVE(20),            // 20 ticks
-    COMPUTE(50),         // 50 ticks
-    INDEX_MEMORY(10),    // 10 ticks
-    REST(5);             // 5 ticks
+  TRACK_ENTITY(10),    // 10 ticks
+  MOVE(20),            // 20 ticks
+  COMPUTE(50),         // 50 ticks
+  INDEX_MEMORY(10),    // 10 ticks
+  REST(5);             // 5 ticks
 
-    private final int cost;
+  private final int cost;
 }
 ```
 
@@ -810,17 +880,18 @@ enum ObserverAction {
 **Goal**: Implement ternary logic for choices.
 
 **Deliverables**:
+
 ```java
 enum TernaryChoice {
-    AFFIRM(+1),
-    NEUTRAL(0),
-    OPPOSE(-1);
+  AFFIRM(+1),
+  NEUTRAL(0),
+  OPPOSE(-1);
 
-    private final int value;
+  private final int value;
 }
 
 interface TernaryChoiceModel {
-    TernaryChoice decide(Action action, BigInteger tick);
+  TernaryChoice decide(Action action, BigInteger tick);
 }
 ```
 
@@ -831,11 +902,14 @@ interface TernaryChoiceModel {
 **Goal**: Log all allocations for analysis.
 
 **Deliverables**:
+
 ```java
 interface ChoiceHistory {
-    void record(BigInteger tick, Map<Action, Integer> allocation);
-    List<Allocation> getHistory(BigInteger fromTick, BigInteger toTick);
-    Statistics analyzePatterns();
+  void record(BigInteger tick, Map<Action, Integer> allocation);
+
+  List<Allocation> getHistory(BigInteger fromTick, BigInteger toTick);
+
+  Statistics analyzePatterns();
 }
 ```
 
@@ -846,13 +920,14 @@ interface ChoiceHistory {
 **Goal**: Implement utility-maximizing allocation strategy.
 
 **Deliverables**:
+
 ```java
 interface UtilityFunction {
-    double evaluate(ObserverState state);
+  double evaluate(ObserverState state);
 }
 
 interface AllocationOptimizer {
-    Map<Action, Integer> optimize(UtilityFunction utility, int budget);
+  Map<Action, Integer> optimize(UtilityFunction utility, int budget);
 }
 ```
 
@@ -893,6 +968,7 @@ interface AllocationOptimizer {
 This chapter establishes **free will as auditable agency** within tick-frame physics:
 
 **Core principles**:
+
 - **Substrate determinism**: Fully causal tick-stream (no randomness)
 - **Frame uncertainty**: Observers experience probabilistic outcomes (epistemic)
 - **Choice as allocation**: Free will = how observer spends tick budget
@@ -900,32 +976,38 @@ This chapter establishes **free will as auditable agency** within tick-frame phy
 - **Fallible commits**: Choices binding, irreversible, consequential
 
 **Integration**:
+
 - Consistent with observer model (Ch4)
 - Compatible with temporal ontology (Ch1 determinism)
 - Extends entity dynamics (Ch3 agency)
 
 **Status**:
+
 - ✓ Philosophically coherent
 - ✓ Integrates with framework
 - ⚠ Extremely speculative
 - ☐ No experimental validation
 - ☐ Falsification criteria weak
 
-**Key insight**: **Freedom doesn't require escape from causality** - it IS causal agency. Observers are free not because uncaused, but because they're **self-caused** (choices determined by self-built function).
+**Key insight**: **Freedom doesn't require escape from causality** - it IS causal agency. Observers are free not because
+uncaused, but because they're **self-caused** (choices determined by self-built function).
 
 **Next steps**:
+
 1. Implement tick budget model (Phase 1)
 2. Test ternary vs binary choice performance
 3. Measure utility correlation with allocations
 4. Explore moral implications (separate work)
 
-**Caveat**: This chapter is **highly speculative philosophy**, not validated science. Treat as **conceptual exploration**, not established theory.
+**Caveat**: This chapter is **highly speculative philosophy**, not validated science. Treat as **conceptual exploration
+**, not established theory.
 
 ---
 
 ## References
 
 ### V1 Theory Documents
+
 - **Doc 24**: Free Will in Tick-Frame Substrates (primary source)
 - **Doc 41**: Ternary XOR Tickstream and Sampler (ternary logic)
 - **Doc 42**: Temporal Choice Reconstruction Principle (commit dynamics)
@@ -933,10 +1015,12 @@ This chapter establishes **free will as auditable agency** within tick-frame phy
 - **Doc 44**: Fallible Commit Principle (irreversibility)
 
 ### V2 Chapters
+
 - **Ch1**: Temporal Ontology (substrate determinism)
 - **Ch4**: Observer & Consciousness (agency as temporal trajectory)
 
 ### Philosophical References
+
 - **Compatibilism**: Hume, Dennett (freedom within determinism)
 - **Determinism**: Laplace (clockwork universe), Spinoza (necessity)
 - **Agency**: Frankfurt (hierarchical will), Fischer (guidance control)

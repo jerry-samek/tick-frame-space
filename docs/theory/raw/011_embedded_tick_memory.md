@@ -1,13 +1,17 @@
 # Embedded Tick Memory
 
 ## 1. Definition
+
 Embedded tick memory is a layer of information transferred from past closures (PoF) to the current tick.
-It is not a reactivatable state, but a **data imprint of the past** that is part of the current tick and can be observed by agents.
+It is not a reactivatable state, but a **data imprint of the past** that is part of the current tick and can be observed
+by agents.
 
 ---
 
 ## 2. Tick Structure
+
 Each tick \(n\) contains:
+
 - **Current state:** \(x(t_n)\)
 - **Work accumulator:** \(\Theta(t_n)\)
 - **Complexity modulator:** \(F(x(t_n))\)
@@ -20,6 +24,7 @@ Each tick \(n\) contains:
 ---
 
 ## 3. Embedded Memory Contents
+
 \[
 \text{Log}_n = \{(t_{n-k}, \text{artifacts}_{n-k}) \mid k \geq 1\}
 \]
@@ -31,6 +36,7 @@ Each tick \(n\) contains:
 ---
 
 ## 4. Transfer Mechanism
+
 1. **Commit (PoF):** tick closure writes state to the log.
 2. **Artifact propagation:** part of the state is embedded into subsequent ticks as a signal.
 3. **Current tick:** contains its own state + artifacts from past ticks.
@@ -39,6 +45,7 @@ Each tick \(n\) contains:
 ---
 
 ## 5. Audit Rules
+
 - History is not reactivatable, only readable.
 - Each artifact carries a timestamp (TickID of origin).
 - Embedded memory is immutable.
@@ -47,6 +54,7 @@ Each tick \(n\) contains:
 ---
 
 ## 6. Diagram (text visualization)
+
     ┌───────────────────────────────┐
     │           Tick n              │
     │   Current state x(t_n)        │
@@ -67,10 +75,10 @@ Each tick \(n\) contains:
     │  → interprets as the past     │
     └───────────────────────────────┘
 
-
 ---
 
 ## 7. Summary
+
 - Root tick is the only active state.
 - History is embedded in the log, not reactivatable.
 - Artifacts from past ticks are part of the current tick.

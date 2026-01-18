@@ -11,15 +11,19 @@ In the substrate‑tick universe, the substrate provides:
 - No history
 - No spatial structure
 
-All geometry is reconstructed inside the observer. This makes warp‑like effects possible without touching the substrate, by modifying how the observer maps ticks to spatial coordinates.
+All geometry is reconstructed inside the observer. This makes warp‑like effects possible without touching the substrate,
+by modifying how the observer maps ticks to spatial coordinates.
 
 ## 2. Core Principle
 
-Warp travel is achieved by altering the observer's internal geometry reconstruction per tick, not by exceeding causal propagation limits in the substrate. The substrate remains untouched, causality remains intact, and only the observer's coordinate mapping changes.
+Warp travel is achieved by altering the observer's internal geometry reconstruction per tick, not by exceeding causal
+propagation limits in the substrate. The substrate remains untouched, causality remains intact, and only the observer's
+coordinate mapping changes.
 
 ## 3. Observer‑Condition Warp Principle
 
-A human‑level observer cannot modify the substrate or renderer, but it can modify the conditions under which its universe is reconstructed.
+A human‑level observer cannot modify the substrate or renderer, but it can modify the conditions under which its
+universe is reconstructed.
 
 ### 3.1 Sampling Rate
 
@@ -57,9 +61,11 @@ For a position `x`, warp center `c`, and warp strength `s`:
 dx = x - c
 
 if dx > 0:
-    x' = c + dx * (1 - s)  # compress space in front
+    x
+    ' = c + dx * (1 - s)  # compress space in front
 else:
-    x' = c + dx * (1 + s)  # stretch space behind
+    x
+    ' = c + dx * (1 + s)  # stretch space behind
 ```
 
 This is a coordinate transform, not a physical force.
@@ -74,8 +80,11 @@ This is a coordinate transform, not a physical force.
 
 ## 5. Interpretation
 
-The warp bubble is not a physical object. It is a geometry transform inside the observer's universe. The observer stays locally causal, never exceeds propagation per tick, but experiences compressed or expanded space, enabling effective super‑distance travel.
+The warp bubble is not a physical object. It is a geometry transform inside the observer's universe. The observer stays
+locally causal, never exceeds propagation per tick, but experiences compressed or expanded space, enabling effective
+super‑distance travel.
 
 ## 6. Summary
 
-The Tick‑Frame Alcubierre Metric provides warp‑like travel without thrust, exotic energy, or substrate modification. Warp is achieved by manipulating the observer's internal metric reconstruction rather than pushing through space.
+The Tick‑Frame Alcubierre Metric provides warp‑like travel without thrust, exotic energy, or substrate modification.
+Warp is achieved by manipulating the observer's internal metric reconstruction rather than pushing through space.

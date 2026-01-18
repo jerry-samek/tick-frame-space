@@ -1,4 +1,5 @@
 # Extended Relativity in a Tick‑Frame Universe
+
 *(Supplement to the basic relativity chapter; integrates with the Infinity Removal Principle)*
 
 ---

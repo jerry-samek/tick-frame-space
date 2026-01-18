@@ -7,11 +7,12 @@
 ## Overview
 
 This document consolidates open questions from across the tick-frame physics framework, organized by:
+
 - **Priority** (Critical / High / Medium / Low)
 - **Type** (Theoretical / Experimental / Implementation)
 - **Status** (Active / Speculative / Deferred)
 
-**Total Open Questions**: 35+
+**Total Open Questions**: 32+ (down from 35+ - 3 answered in January 2026)
 
 **Research Areas**: 8 major domains
 
@@ -20,92 +21,103 @@ This document consolidates open questions from across the tick-frame physics fra
 ## TLDR: Top Questions at a Glance
 
 ### 🔥 Currently Active (Being Worked On)
+
 - **Q7.1**: Why is the simulation "over-coherent"? (structures too uniform)
-  - *Issue*: Need chaotic emergence, but getting stable patterns
-  - *Fix*: Tune expansion coupling λ, improve collision model
-  - *Status*: Mentioned in CLAUDE.md as current priority
+    - *Issue*: Need chaotic emergence, but getting stable patterns
+    - *Fix*: Tune expansion coupling λ, improve collision model
+    - *Status*: Mentioned in CLAUDE.md as current priority
 
 ### ⚡ Ready to Execute (Can Do Now)
+
 - **Q9.1**: Does sliding window implement existence buffer correctly?
-  - *Test*: Run Experiment #49 (already designed, awaiting execution)
-  - *Validates*: Ch4 §3 observer memory model
+    - *Test*: Run Experiment #49 (already designed, awaiting execution)
+    - *Validates*: Ch4 §3 observer memory model
 
 - **🚀 NEW: Gravity/Relativity Experiments** (Experiments #51-55)
-  - *Test*: Emergent time dilation, black holes, geodesics from computational load
-  - *Based on*: Bold claims in archived v1 Docs 21, 25, 17_02
-  - *See*: [proposed_experiments_gravity_relativity.md](proposed_experiments_gravity_relativity.md)
-  - *Priority*: **HIGH** - Tests foundational mechanisms
+    - *Test*: Emergent time dilation, black holes, geodesics from computational load
+    - *Based on*: Bold claims in archived v1 Docs 21, 25, 17_02
+    - *See*: [proposed_experiments_gravity_relativity.md](proposed_experiments_gravity_relativity.md)
+    - *Priority*: **HIGH** - Tests foundational mechanisms
 
 ### 🎯 Critical Theoretical Questions
+
 1. **Q1.2**: Why exactly ρ=2.0 for temporal systems?
-   - *Status*: Empirically confirmed (Exp #50), mechanism understood qualitatively
-   - *Need*: Analytical derivation from discrete wave equation
+    - *Status*: Empirically confirmed (Exp #50), mechanism understood qualitatively
+    - *Need*: Analytical derivation from discrete wave equation
 
 2. **Q1.1**: Why ρ≈1.5 for spatial dimensions?
-   - *Status*: Measured across 3D-5D, but no proof
-   - *Hypotheses*: Surface-area law, diffusion scaling, percolation theory
+    - *Status*: Measured across 3D-5D, but no proof
+    - *Hypotheses*: Surface-area law, diffusion scaling, percolation theory
 
 3. **Q2.1**: Can Lorentz transforms emerge from discrete symmetries?
-   - *Stakes*: Determines if tick-frame is compatible with relativity
-   - *Challenge*: Exp #50 shows tick-frame ≠ Minkowski spacetime
+    - *Stakes*: Determines if tick-frame is compatible with relativity
+    - *Challenge*: Exp #50 shows tick-frame ≠ Minkowski spacetime
 
 ### 🔬 High-Impact Experiments Needed
+
 - **Q5.1**: Does expansion coupling create matter-antimatter imbalance?
-  - *Prediction*: Asymmetry from geometry even with symmetric initial conditions
-  - *Problem*: Not observed yet (relates to Q7.1 over-coherence)
+    - *Prediction*: Asymmetry from geometry even with symmetric initial conditions
+    - *Problem*: Not observed yet (relates to Q7.1 over-coherence)
 
 - **Q1.4**: Can we measure ρ in real physical systems?
-  - *If yes*: Direct empirical connection to real physics
-  - *Difficulty*: Requires experimental physics access
+    - *If yes*: Direct empirical connection to real physics
+    - *Difficulty*: Requires experimental physics access
 
 ### 🏗️ Implementation Gaps
+
 - **Q6.3**: How to implement the observer model?
-  - *Status*: Fully theoretical (Ch4), no code exists
-  - *Blocks*: Sleep mechanism, selective perception, temporal indexing
+    - *Status*: Fully theoretical (Ch4), no code exists
+    - *Blocks*: Sleep mechanism, selective perception, temporal indexing
 
 - **Q7.2**: Should Java update from Ch15 to Doc 49 ontology?
-  - *Trade-off*: Better theory alignment vs major refactoring risk
+    - *Trade-off*: Better theory alignment vs major refactoring risk
 
 ### 🧠 Deep Physics Mysteries
+
 - **Q4.1**: Can quantum mechanics emerge from discrete substrate?
-  - *If yes*: Unifies QM with tick-frame
-  - *Challenge*: Requires proof that continuous QM is low-energy limit
+    - *If yes*: Unifies QM with tick-frame
+    - *Challenge*: Requires proof that continuous QM is low-energy limit
 
 - **Q3.1**: Can we derive G from expansion rate λ?
-  - *If yes*: Gravity is emergent, not fundamental
-  - *Formula*: G ∝ λ × (l_planck)³ / (t_planck)²?
+    - *If yes*: Gravity is emergent, not fundamental
+    - *Formula*: G ∝ λ × (l_planck)³ / (t_planck)²?
 
 - **Q3.4**: ✅ **VALIDATED** - How does gravity emerge from tick budgets?
-  - *Answer*: Coupled reaction-diffusion + regenerative energy creates unified GR+SR
-  - *Status*: V9 complete - r ≈ 0.999 correlation, 100% pass (0.1c-0.5c), 90% pass (0.9c)
-  - *See*: Exp #51 v9/RESULTS.md, EXPERIMENTAL_ARC.md
+    - *Answer*: Coupled reaction-diffusion + regenerative energy creates unified GR+SR
+    - *Status*: V9 complete - r ≈ 0.999 correlation, 100% pass (0.1c-0.5c), 90% pass (0.9c)
+    - *See*: Exp #51 v9/RESULTS.md, EXPERIMENTAL_ARC.md
 
 ### 🤔 Philosophical Questions
+
 - **Q6.1**: Can qualia emerge from self-referential indexing?
-  - *Stakes*: Naturalistic explanation for consciousness
-  - *Status*: Highly speculative (Ch4 marked as speculative)
+    - *Stakes*: Naturalistic explanation for consciousness
+    - *Status*: Highly speculative (Ch4 marked as speculative)
 
 - **Q8.1**: Can we measure "choice" as tick budget allocation?
-  - *If yes*: Computational measure of free will
-  - *Requires*: Observer implementation (Q6.3)
+    - *If yes*: Computational measure of free will
+    - *Requires*: Observer implementation (Q6.3)
 
 ---
 
 ## Quick Navigation by Urgency
 
 **Do This Week**:
+
 - Run Experiment #49 (Q9.1)
 - Tune λ parameter to fix over-coherence (Q7.1, Q5.1)
 
 **Do This Month**:
+
 - Derive ρ=2.0 analytically (Q1.2)
 - Test ternary logic dynamics (Q8.2)
 
 **Do This Quarter**:
+
 - Implement observer model (Q6.3)
 - Attempt Lorentz transform derivation (Q2.1)
 
 **Long-Term Research**:
+
 - QM emergence (Q4.1)
 - Gravity derivation (Q3.1)
 - Real-world ρ measurement (Q1.4)
@@ -115,38 +127,48 @@ This document consolidates open questions from across the tick-frame physics fra
 ## Quick Stats
 
 **By Difficulty**:
+
 - 3 questions are low-hanging fruit (can do quickly)
 - 13 questions need focused effort (weeks-months)
 - 11 questions need deep expertise (months-years)
 - 8 questions may require new physics/philosophy (years-decades)
 
 **By Impact**:
+
 - 4 questions are foundational (could change framework)
 - 8 questions validate core predictions
 - 12 questions extend to new domains
 - 11 questions are refinements
 
-**Already Answered**: 5 major questions fully resolved
+**Already Answered**: 8 major questions fully resolved (3 NEW in January 2026!)
+
 - Time ≠ dimension (Exp #50) - ✓ Complete
 - Sorting unnecessary (Exp #44_05) - ✓ Complete
 - 3D optimal (Exp #15) - ✓ Complete
 - Rotation asymmetry (Exp #44_03) - ✓ Complete
 - Gravity from tick budgets (Exp #51 v1-v9) - ✓ Complete (r ≈ 0.999 validation)
+- **Geodesics without force laws (Exp #53 v10)** - ✓ **NEW** (100% orbital success)
+- **Collision physics (Exp #55)** - ✓ **NEW** (three regimes + emergent Pauli exclusion!)
+- **Matter-antimatter asymmetry (Doc 061 + Exp #55)** - ✓ **NEW** (pattern diversity explanation)
 
 ---
 
 ## Priority Classification
 
 ### Critical (Foundational)
+
 Questions that could invalidate or fundamentally alter the framework if answered differently.
 
 ### High Priority (Validation)
+
 Questions whose answers would significantly strengthen or clarify core predictions.
 
 ### Medium Priority (Extension)
+
 Questions that extend the framework into new domains without challenging foundations.
 
 ### Low Priority (Refinement)
+
 Questions about details, optimizations, or minor theoretical points.
 
 ---
@@ -162,11 +184,13 @@ Questions about details, optimizations, or minor theoretical points.
 **Question**: Can we derive ρ ≈ 1.5 from first principles?
 
 **Hypotheses**:
+
 - **Surface-area hypothesis**: ρ ≈ 1.5 emerges from (d-1)-dimensional surface area law with corrections
 - **Diffusion hypothesis**: Related to random walk scaling on d-dimensional lattice
 - **Percolation hypothesis**: Critical exponent from percolation theory
 
 **Implications**:
+
 - If derivable: Confirms dimensional framework is not ad-hoc
 - If not derivable: May require new physical principle
 
@@ -175,6 +199,7 @@ Questions about details, optimizations, or minor theoretical points.
 **Related**: Ch2 §3, Ch7 §6, QUICK_REFERENCE
 
 **Proposed Approach**:
+
 1. Analytical: Solve wave equation on d-dimensional lattice with multiple sources
 2. Numerical: Vary lattice structure to test surface-area hypothesis
 3. Statistical mechanics: Connect to known critical exponents
@@ -183,16 +208,19 @@ Questions about details, optimizations, or minor theoretical points.
 
 #### Q1.2: Why exactly ρ = 2.0 for temporal systems?
 
-**Current Status**: **SMOKING GUN** - Experiment #50 shows ρ = 2.000 ± 0.002 universally across all (n+t) systems tested.
+**Current Status**: **SMOKING GUN** - Experiment #50 shows ρ = 2.000 ± 0.002 universally across all (n+t) systems
+tested.
 
 **Question**: Why is the convergence so precise? What is the analytical mechanism?
 
 **Hypotheses**:
+
 - **Ratchet effect**: Temporal accumulation creates quadratic scaling
 - **Coherence amplification**: Sources interfere constructively along time axis
 - **Causal coupling**: Each tick couples to previous tick, creating chain effect
 
 **Implications**:
+
 - ρ=2.0 is the **signature of temporal generators**
 - Could enable detection of "temporal vs spatial" character in unknown systems
 - May relate to fundamental constants
@@ -202,6 +230,7 @@ Questions about details, optimizations, or minor theoretical points.
 **Related**: Ch1 §9, REFERENCE_doc50_01, EXPERIMENT_INDEX #50
 
 **Proposed Approach**:
+
 1. Derive from discrete wave equation with temporal coupling term
 2. Show quadratic scaling emerges from ∑(n=0 to T) contributions
 3. Connect to known physics (energy-time uncertainty relation?)
@@ -229,6 +258,7 @@ Questions about details, optimizations, or minor theoretical points.
 **Current Status**: Only computational experiments. No physical measurements yet.
 
 **Question**: Could we measure ρ in:
+
 - Multi-particle physics experiments?
 - Cosmological observations (CMB, large-scale structure)?
 - Condensed matter systems with known dimensionality?
@@ -259,7 +289,8 @@ Questions about details, optimizations, or minor theoretical points.
 
 ## II. Relativity and Lorentz Transforms
 
-**🚀 NEW: See [proposed_experiments_gravity_relativity.md](proposed_experiments_gravity_relativity.md) for detailed experimental proposals testing emergent relativity mechanisms from v1 documents (Experiments #51-55).**
+**🚀 NEW: See [proposed_experiments_gravity_relativity.md](proposed_experiments_gravity_relativity.md) for detailed
+experimental proposals testing emergent relativity mechanisms from v1 documents (Experiments #51-55).**
 
 ### Critical Questions
 
@@ -270,11 +301,13 @@ Questions about details, optimizations, or minor theoretical points.
 **Question**: Does tick-frame physics naturally produce Lorentz-like effects, or are they fundamentally incompatible?
 
 **Sub-questions**:
+
 - Can time dilation emerge from differential tick rates?
 - Can length contraction emerge from spatial lattice effects?
 - What role does v ≤ c constraint play?
 
 **Implications**:
+
 - If YES: Tick-frame could be compatible with relativity
 - If NO: Tick-frame and relativity are fundamentally different ontologies
 
@@ -282,7 +315,8 @@ Questions about details, optimizations, or minor theoretical points.
 
 **Related**: Ch7 §9, Ch8 §8 (Minkowski vs Tick-Frame)
 
-**Note**: Experiment #50 shows tick-frame spacetime ≠ Minkowski spacetime (ρ=2.0 vs ρ=1.5), suggesting fundamental difference.
+**Note**: Experiment #50 shows tick-frame spacetime ≠ Minkowski spacetime (ρ=2.0 vs ρ=1.5), suggesting fundamental
+difference.
 
 ---
 
@@ -293,6 +327,7 @@ Questions about details, optimizations, or minor theoretical points.
 **Question**: Can tick-frame accommodate relative simultaneity, or is absolute tick-stream required?
 
 **Hypotheses**:
+
 - **Global tick-stream**: Preferred reference frame (violates relativity)
 - **Emergent relativity**: Apparent relative simultaneity from observer limitations
 - **Hybrid**: Absolute substrate, relative frame physics
@@ -323,7 +358,8 @@ Questions about details, optimizations, or minor theoretical points.
 
 ## III. Gravity and Expansion
 
-**🚀 NEW: See [proposed_experiments_gravity_relativity.md](proposed_experiments_gravity_relativity.md) for experimental proposals testing emergent gravity as time-flow gradients (Experiments #51-53, #55).**
+**🚀 NEW: See [proposed_experiments_gravity_relativity.md](proposed_experiments_gravity_relativity.md) for experimental
+proposals testing emergent gravity as time-flow gradients (Experiments #51-53, #55).**
 
 ### High Priority Questions
 
@@ -334,11 +370,13 @@ Questions about details, optimizations, or minor theoretical points.
 **Question**: Can we derive G = 6.674×10⁻¹¹ m³/(kg·s²) from tick-frame parameters?
 
 **Proposed Relationship**:
+
 ```
 G ∝ λ × (l_planck)³ / (t_planck)² ?
 ```
 
 **Implications**:
+
 - If YES: Gravity is emergent from substrate expansion
 - Provides explanation for why G has its specific value
 
@@ -355,6 +393,7 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 **Question**: What value of λ produces realistic physics?
 
 **Sub-questions**:
+
 - Should λ be constant or time-varying?
 - Does λ relate to cosmological expansion (Hubble constant)?
 - What range of λ is stable?
@@ -373,7 +412,8 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 
 **Question**: Does substrate expansion create apparent accelerating expansion?
 
-**Speculation**: If space expands by fixed Δx per tick, but observers measure in non-expanding units, would this appear as accelerating expansion?
+**Speculation**: If space expands by fixed Δx per tick, but observers measure in non-expanding units, would this appear
+as accelerating expansion?
 
 **Difficulty**: Very High (requires cosmology expertise)
 
@@ -390,14 +430,16 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 **Question**: Can we make this concrete? What is the metric?
 
 **Answer from Exp #51**:
+
 - ✅ Time dilation DOES emerge from tick-budget competition (quantitatively validated)
 - ❌ Simple resource allocation doesn't work (v1 falsified)
 - ✅ **Requires coupled field dynamics** (v7-v9 validated):
-  - Load field L(x,t): Reaction-diffusion with saturation
-  - Energy field E(x,t): Local regeneration with load drainage
-  - γ_eff(x) = <work_done> / substrate_ticks
+    - Load field L(x,t): Reaction-diffusion with saturation
+    - Energy field E(x,t): Local regeneration with load drainage
+    - γ_eff(x) = <work_done> / substrate_ticks
 
 **Validated Mechanism** (V7-V9):
+
 ```
 ∂L/∂t = α∇²L + S(x) - γL²       (load diffuses and saturates)
 ∂E/∂t = R - W(L,E) - D·L        (energy regenerates and drains)
@@ -407,16 +449,18 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 ```
 
 **Key Findings**:
+
 - V7: Two-zone time dilation (γ: 0.23 → 0.50)
 - V8: First smooth gradient (γ: 0.0018 → 0.0037, but too weak)
 - V9: **Combined GR+SR validated** (r ≈ 0.999 correlation)
-  - 100% validation at 0.1c, 0.5c
-  - 90% validation at 0.9c
-  - Goldilocks zone confirmed
+    - 100% validation at 0.1c, 0.5c
+    - 90% validation at 0.9c
+    - Goldilocks zone confirmed
 - Regenerative energy essential to prevent collapse
 - Space must be represented as computational field
 
 **Remaining Questions**:
+
 - Can we implement emergent trajectories (replace forced circular orbits)?
 - Does gradient create geodesic motion? (Exp #53)
 - Can ultra-relativistic regime (>0.9c) be improved?
@@ -424,6 +468,7 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 **Difficulty**: Medium → **VALIDATED**
 
 **Related**:
+
 - Ch4 §6, Ch7 §9 (original speculation)
 - Exp #51 v1-v8 (experimental validation)
 - `experiments/51_emergent_time_dilation/EXPERIMENTAL_ARC.md` (full journey)
@@ -441,6 +486,7 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 **Question**: Can we derive quantum behavior from tick-frame as a low-energy approximation?
 
 **Sub-questions**:
+
 - Does uncertainty principle emerge from sampling limits?
 - Does superposition emerge from observer limitations?
 - Does entanglement emerge from shared causal history?
@@ -476,6 +522,7 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 **Question**: Are there quantum phenomena unique to discrete time that don't exist in continuous theories?
 
 **Examples**:
+
 - Temporal aliasing of quantum states?
 - Nyquist-like limit on quantum frequencies?
 - Discrete-time quantum walks?
@@ -501,6 +548,7 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 **Current Problem**: "Over-coherence" - structures are too uniform (Ch8 §4).
 
 **Hypotheses**:
+
 - λ is too small (≈ 0) in current implementation
 - Collision model is too naive
 - Need chaotic initial conditions
@@ -522,6 +570,7 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 **Question**: Is this correct, or should energy be conserved from initial conditions?
 
 **Implications**:
+
 - Linear growth: Energy is a function of existence duration
 - Conservation: Energy is an initial property
 
@@ -543,7 +592,8 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 
 **Question**: Does rest energy emerge from tick-rate?
 
-**Speculation**: If each tick contributes E_planck, and entity persists T ticks, then E = T × E_planck. Connection to mass?
+**Speculation**: If each tick contributes E_planck, and entity persists T ticks, then E = T × E_planck. Connection to
+mass?
 
 **Difficulty**: High (requires relativistic physics connection)
 
@@ -562,6 +612,7 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 **Question**: Is subjective experience an inevitable consequence of self-referential temporal processes?
 
 **Sub-questions**:
+
 - What is the minimal complexity for qualia?
 - Do simpler observers (e.g., thermostats) have any qualia?
 - Can we test this computationally?
@@ -599,6 +650,7 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 **Question**: What are the practical steps to implement TickTimeConsumer<ObserverState>?
 
 **Sub-questions**:
+
 - How to represent selective perception?
 - How to implement historical indexing?
 - What is the buffer structure?
@@ -621,6 +673,7 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 **Question**: Can we derive quantitative predictions about these phenomena?
 
 **Examples**:
+
 - Trauma: High-salience ticks should have measurably lower activation thresholds
 - Déjà vu: Should correlate with similar spatial patterns at different times
 - Dreams: Should show higher entropy than waking state
@@ -642,12 +695,14 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 **Question**: What parameters need adjustment to create realistic chaos?
 
 **Hypotheses**:
+
 1. **Expansion coupling λ ≈ 0**: Need to increase to create imbalance
 2. **Collision model too naive**: Need full collision dynamics from Doc 30
 3. **Initial conditions too ordered**: Need chaotic seeding
 4. **Energy model wrong**: Linear growth creates too much stability
 
 **Proposed Tests**:
+
 1. Sweep λ from 0 to 0.1
 2. Implement full collision model
 3. Randomize initial conditions
@@ -668,11 +723,13 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 **Question**: What are the practical benefits and costs of updating?
 
 **Benefits**:
+
 - Aligns implementation with current theory
 - May resolve over-coherence
 - Cleaner conceptual model
 
 **Costs**:
+
 - Major refactoring
 - Risk of introducing new bugs
 - Existing experiments may break
@@ -692,6 +749,7 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 **Question**: What optimizations are needed to reach 1M?
 
 **Proposed Techniques**:
+
 1. GPU compute shaders for bucketing
 2. Spatial hashing for collision detection
 3. Instanced rendering
@@ -705,21 +763,65 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 
 ### Medium Priority Questions
 
-#### Q7.4: Should collision dynamics use naive or full model?
+#### Q7.4: ✅ **RESOLVED** - Should collision dynamics use naive or full model?
 
-**Current Status**: Naive model active, full model (Doc 30) not implemented.
+**Status**: **Full model validated** by Experiment #55.
 
-**Question**: Is full collision persistence model necessary for realistic behavior?
+**Answer**: Full collision model with pattern overlap is necessary and validated.
 
-**Trade-off**:
-- Naive: Simple, fast, may be sufficient
-- Full (Doc 30): Complex, slower, more theoretically correct
+- ✅ Three-regime framework works (merge/explode/excite)
+- ✅ Pattern structure (type, energy, mode, phase) required for realistic physics
+- ✅ Pauli exclusion emerged from pattern overlap + cell capacity
+- Full model is theoretically correct AND produces emergent physics
 
-**Proposed Test**: Implement both, compare emergent behavior.
+**Related**: Ch3 §3, Exp #55, Doc 053
 
-**Difficulty**: Medium (implementation work)
+---
 
-**Related**: Ch3 §3, CLAUDE.md
+#### Q7.5: Is cell capacity E_max universal or scenario-dependent?
+
+**Current Status**: Experiment #55 used E_max = 20.0 for all test cases. Needs broader validation.
+
+**Question**: Can a single E_max value work across all collision scenarios (particles, atoms, molecules, black holes)?
+
+**Sub-questions**:
+
+- Should E_max be constant across all cells?
+- Does E_max scale with spatial dimension or energy density?
+- Is E_max a fundamental constant (like Planck energy)?
+
+**Implications**:
+
+- If universal: Strong evidence for fundamental physics
+- If scenario-dependent: May be artifact of computational limits
+
+**Proposed Test**: Test Exp #55 collision framework with varied E_max values, measure outcome distributions.
+
+**Difficulty**: Medium (requires parameter sweep)
+
+**Related**: Exp #55, Doc 053, honest_status.md (Failure Mode 5 - Overfitting)
+
+---
+
+#### Q7.6: Can γ-well binding create stable composite objects?
+
+**Current Status**: Experiment #56 structures implemented (H atom, He nucleus, H2 molecule), binding validation pending.
+
+**Question**: Do γ-wells from time-flow minima naturally hold multi-particle composites together?
+
+**Sub-questions**:
+
+- What minimum γ-gradient strength is required for binding?
+- Can orbital dynamics maintain stability over 1000+ ticks?
+- Do composite objects dissolve under external perturbation?
+
+**Proposed Test**: Run Exp #56 Phase 3b validation (long-duration stability test).
+
+**Difficulty**: Medium (requires completion of Exp #56)
+
+**Related**: Exp #56, Doc 054, Ch3 §4
+
+**Status**: **NEXT IMMEDIATE PRIORITY** (Exp #56 Phase 3b)
 
 ---
 
@@ -782,6 +884,7 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 **Question**: Does dynamic window correctly implement Ch4 §3 existence buffer concept?
 
 **Sub-questions**:
+
 - Does window size correlate with "memory capacity"?
 - Does holographic horizon preserve meaningful information?
 - Can temporal playback simulate "observer navigation"?
@@ -843,11 +946,13 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 ## Questions by Difficulty
 
 ### Low Difficulty (Can be addressed quickly)
+
 - Q1.5: Configuration independence at d < 3
 - Q8.3: Void asymmetry observation
 - Q9.1: Run Experiment #49 (already designed)
 
 ### Medium Difficulty (Require focused effort)
+
 - Q3.2: Determine correct λ value
 - Q5.2: Refine energy model
 - Q6.2: Implement observer sleep mechanism
@@ -856,6 +961,7 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 - Q8.2: Ternary logic dynamics
 
 ### High Difficulty (Require deep expertise)
+
 - Q1.1: Derive ρ ≈ 1.5 analytically
 - Q1.2: Derive ρ = 2.0 analytically
 - Q2.3: Predict Lorentz violations
@@ -865,6 +971,7 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 - Q7.2: Update Java to Doc 49
 
 ### Very High Difficulty (Require new physics/philosophy)
+
 - Q2.1: Derive Lorentz transforms
 - Q2.2: Reconcile with relativity
 - Q3.3: Explain dark energy
@@ -879,26 +986,31 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 ## Questions by Status
 
 ### Active Investigation
+
 - Q7.1: Over-coherence (mentioned in CLAUDE.md as current work)
 - Q5.1: Imbalance theory (part of over-coherence problem)
 
 ### Ready to Test
+
 - Q9.1: Experiment #49 (implementation complete, awaiting execution)
 - Q1.5: Low-dimensional configuration tests (easy extension of #15)
 - Q8.2: Ternary logic (can use existing tick-engine framework)
 
 ### Requires Implementation
+
 - Q6.3: Observer model (no code exists yet)
 - Q7.4: Full collision model (theoretical basis exists in Doc 30)
 - Q3.2: Expansion coupling (λ parameter exists but ≈ 0)
 
 ### Requires Theory Development
+
 - Q1.1, Q1.2: Analytical derivations of ρ
 - Q2.1: Lorentz transform derivation
 - Q3.1: Gravitational constant derivation
 - Q4.1: QM emergence proof
 
 ### Deferred (Speculative)
+
 - Q6.1: Qualia emergence (philosophy of mind)
 - Q6.4: Psychological predictions (requires neuroscience data)
 - Q3.3: Dark energy connection (requires cosmology)
@@ -908,6 +1020,7 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 ## Connections to Existing Documentation
 
 **QUICK_REFERENCE** lists 5 open questions:
+
 1. Lorentz transforms (Q2.1)
 2. ρ≈1.5 derivation (Q1.1)
 3. Imbalance validation (Q5.1)
@@ -915,6 +1028,7 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 5. Gravity mechanism (Q3.1)
 
 **EXPERIMENT_INDEX** proposes future experiments:
+
 - 44_06: GPU bucketing (addresses Q7.3)
 - 44_07: Z-buffer hybrid
 - 44_08: Java integration (addresses Q7.2)
@@ -923,11 +1037,13 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 - Observer implementation (addresses Q6.3)
 
 **CLAUDE.md** mentions current work:
+
 - Over-coherence (Q7.1) ← **ACTIVE**
 - Collision dynamics tuning (Q7.4)
 - Performance scaling (Q7.3)
 
 **Theory Chapters** ending sections:
+
 - Ch1: Dimensional equivalence (validated by Exp #50)
 - Ch2: Dimensional closure (Q1.3)
 - Ch3: Imbalance theory (Q5.1), energy model (Q5.2)
@@ -968,32 +1084,42 @@ G ∝ λ × (l_planck)³ / (t_planck)² ?
 Questions that were once open but have been resolved:
 
 ### ✓ Does time behave like a spatial dimension?
+
 **Status**: **NO** - Decisively answered by Experiment #50.
+
 - All (n+t) systems show ρ=2.0 (temporal) vs ρ=1.5 (spatial)
 - 0% pass rate across all dimensional equivalence tests
 - See: REFERENCE_doc50_01
 
 ### ✓ Is sorting required for temporal rendering?
+
 **Status**: **NO** - Confirmed by Experiment #44_05.
+
 - O(n) bucketing achieves 13-16× speedup vs O(n log n) sorting
 - Discrete lag values enable counting sort
 - See: REFERENCE_doc46_01, EXPERIMENT_INDEX #44_05
 
 ### ✓ Is 3D optimal for substrate physics?
+
 **Status**: **YES** - Validated by Experiment #15.
+
 - 3D achieves maximum SPBI = 2.23
 - 4D-5D show diminishing returns
 - See: REFERENCE_doc15, Ch2
 
 ### ✓ Does temporal surfing create rotation asymmetry?
+
 **Status**: **YES** - Validated by Experiment #44_03.
+
 - Forward pitch: 0% success (violates v ≤ c)
 - Backward pitch: 93% success (energy-limited)
 - Asymmetry ratio: 933×
 - See: EXPERIMENT_INDEX #44_03, Ch6 §5
 
 ### ✅ Can gravity emerge from tick-budget competition?
+
 **Status**: **VALIDATED** - Answered by Experiment #51 (v1-v9).
+
 - ❌ Simple resource allocation doesn't work (v1 falsified)
 - ✅ Sophisticated field dynamics DO work (v7-v9 validated)
 - Requires coupled reaction-diffusion load field + regenerative energy
@@ -1002,6 +1128,43 @@ Questions that were once open but have been resolved:
 - V9: **Combined GR+SR validated** (r ≈ 0.999, 100% pass at 0.1c-0.5c, 90% at 0.9c)
 - Breakthrough: Single substrate reproduces both gravitational AND special relativistic time dilation
 - See: EXPERIMENTAL_ARC.md, experiment_index #51, v9/RESULTS.md, honest_status.md
+
+### ✅ Do geodesics emerge without programming force laws?
+
+**Status**: **VALIDATED** - Answered by Experiment #53 (v10).
+
+- ✅ **100% orbital success** - All 18 test entities achieved stable orbits
+- ✅ Gradient-following mechanism: entities seek faster proper time (higher γ)
+- ✅ Self-stabilization: too fast → larger radius → weaker gradient → slows down
+- Circular orbits: 78% (14/18 entities, e < 0.1)
+- Elliptical orbits: 22% (4/18 entities, 0.1 < e < 0.5)
+- NO force laws programmed - orbits emerged purely from time-flow gradients
+- See: experiments/51_emergent_time_dilation/v10/RESULTS.md, honest_status.md
+
+### ✅ How does particle collision physics work in tick-frame?
+
+**Status**: **VALIDATED** - Answered by Experiment #55.
+
+- ✅ Three collision regimes: Merge (fusion), Explosion (annihilation), Excitation (redistribution)
+- ✅ Pattern overlap algorithm validated (6/6 test cases passed)
+- ✅ Energy conservation exact (ratio 1.000)
+- ✅ **Pauli exclusion EMERGED** - NOT predicted or programmed!
+  - Identical particles have moderate overlap (k_type = 0.5)
+  - If E_total + E_overlap > E_max → explosion (rejection)
+  - If E_total + E_overlap ≤ E_max → excitation (forced to different modes)
+  - Emergence validates computational basis for quantum mechanics
+- See: experiments/55_collision_physics/, docs/theory/raw/053_tick_frame_collision_physics.md
+
+### ✅ Why didn't matter and antimatter completely annihilate in early universe?
+
+**Status**: **EXPLAINED** - Framework provided by Doc 061 + validated by Exp #55.
+
+- ✅ Annihilation requires precise multi-dimensional pattern matching (type, mode, phase, energy, timing, position)
+- ✅ Pattern mismatch → merge, excitation, or scattering instead
+- ✅ Pattern diversity prevents global annihilation
+- ✅ No CP violation or baryogenesis needed - emerges naturally from pattern structure
+- Residual matter is natural emergent outcome, not paradox
+- See: docs/theory/raw/061_matter-antimatter_asymetry.md, Exp #55 validation
 
 ---
 
@@ -1019,9 +1182,10 @@ Questions that were once open but have been resolved:
 
 ---
 
-**Document Version**: 1.0
-**Last Updated**: January 2026
-**Total Questions**: 35 active + 4 answered
+**Document Version**: 1.1
+**Last Updated**: January 18, 2026
+**Total Questions**: 32 active + 8 answered (3 new answers in Jan 2026)
 **Status**: Living document (will evolve with research)
+**Major Update**: Added Exp #55 (collision physics + emergent Pauli exclusion), Exp #53 (geodesics), Doc 061 (matter-antimatter asymmetry)
 
 **For specific question details, see cross-referenced theory chapters and experiments**

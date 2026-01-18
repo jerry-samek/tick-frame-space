@@ -1,0 +1,77 @@
+Configuration: baseline
+
+Field Parameters:
+  alpha=0.012, gamma=0.0005, scale=0.75
+  R=1.2, E_max=15.0, D=0.01
+
+Entity Configuration:
+  Planet: 700 entities at r<10.0
+  Mobile: 5 per velocity × 4 velocities = 20 total
+  Velocities: 0.1c, 0.5c, 0.9c, 0.99c
+
+Simulation:
+  Grid: 100×100
+  Duration: 5000 ticks
+  Speed of light: c = 1.0
+
+*** DIVERGENCE MODE ENABLED ***
+Allowing gamma -> infinity (black hole test)
+
+*** MASS MULTIPLIER: 100x ***
+Planet entities: 70000
+
+Creating entities...
+  Planet: 70000 entities (BLACK HOLE with COLLISIONS)
+  Test entities: 36
+    Distances: [10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 50.0, 60.0]
+    Velocities: [0.0, 0.1, 0.3, 0.5]
+    Gradient coupling: 0.01
+
+  [V12] Collision physics: ENABLED (elastic scattering)
+
+[DEBUG] Computing initial momentum from 36 entities...
+[DEBUG] Initial momentum result: [-1.91463799  1.21167135], type: <class 'numpy.ndarray'>
+[DEBUG] Initial energy result: 1.5749999999999995, type: <class 'numpy.float64'>
+[DEBUG run() start] self.initial_momentum = [-1.91463799  1.21167135], type = <class 'numpy.ndarray'>
+[DEBUG run() start] self.initial_energy = 1.5749999999999995, type = <class 'numpy.float64'>
+======================================================================
+EXPERIMENT 52 (V12) - baseline
+======================================================================
+
+Testing: C-RING STABILITY with COLLISION PHYSICS
+Planet mass: 100× baseline (SUPERMASSIVE)
+Collision model: Elastic scattering (minimal framework)
+Simulating 5000 ticks...
+
+Initial momentum: 2.265830
+Initial kinetic energy: 1.575000
+
+[WARNING] Tick 1: Momentum not conserved! Error = 1.92e-03
+[WARNING] Tick 1: Energy not conserved! Error = 1.92e-03
+[WARNING] Tick 1: Momentum not conserved! Error = 1.38e-03
+[WARNING] Tick 1: Energy not conserved! Error = 1.38e-03
+[WARNING] Tick 1: Momentum not conserved! Error = 3.36e-04
+[WARNING] Tick 1: Energy not conserved! Error = 3.36e-04
+[WARNING] Tick 1: Momentum not conserved! Error = 9.55e-06
+[WARNING] Tick 1: Energy not conserved! Error = 9.54e-06
+Tick 100/5000
+  Field: L_max=1617.11, gamma_max=1000000.00
+  Closest entity: r=5.5, v=1.000c, gamma_eff=50392.25
+  Collisions: 127 detected, 29 resolved
+Traceback (most recent call last):
+  File "W:\workspace\tick-frame-space\experiments\51_emergent_time_dilation\v12\experiment_52_v12.py", line 518, in <module>
+    main()
+    ~~~~^^
+  File "W:\workspace\tick-frame-space\experiments\51_emergent_time_dilation\v12\experiment_52_v12.py", line 513, in main
+    experiment.run()
+    ~~~~~~~~~~~~~~^^
+  File "W:\workspace\tick-frame-space\experiments\51_emergent_time_dilation\v12\experiment_52_v12.py", line 269, in run
+    self._print_progress(tick + 1)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "W:\workspace\tick-frame-space\experiments\51_emergent_time_dilation\v12\experiment_52_v12.py", line 311, in _print_progress
+    print(f"  Conservation: \u0394p={momentum_drift:.2e}, \u0394E={energy_drift:.2e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "W:\tools\python\Lib\encodings\cp1250.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u0394' in position 16: character maps to <undefined>

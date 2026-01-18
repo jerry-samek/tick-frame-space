@@ -1,9 +1,12 @@
 # Temporal Ontology of the Tick‑Frame Universe
-A unified theoretical framework describing the nature of entities, time, space, causality, identity, and perception in a discretized temporal substrate.
+
+A unified theoretical framework describing the nature of entities, time, space, causality, identity, and perception in a
+discretized temporal substrate.
 
 ---
 
 # 1. Temporal Primacy
+
 **Entities are fundamentally temporal processes.**  
 They do not exist *in* time; they exist *as* time.
 
@@ -15,6 +18,7 @@ They do not exist *in* time; they exist *as* time.
 ---
 
 # 2. Tick‑Stream as Absolute Temporal Substrate
+
 The tick‑stream is the fundamental, immutable sequence of universal states.
 
 - It is strictly ordered: tick n → tick n+1.
@@ -27,6 +31,7 @@ This defines the **absolute temporal axis** of the universe.
 ---
 
 # 3. Existence Buffer
+
 Entities do not access the entire tick‑stream.  
 They operate within a **finite temporal buffer**:
 
@@ -39,6 +44,7 @@ The buffer is not time; it is **temporal addressability**.
 ---
 
 # 4. Space as Emergent Visualization
+
 Space is not fundamental.  
 It emerges from **differences between successive ticks**.
 
@@ -51,6 +57,7 @@ Space is a *visualization* of temporal gradients.
 ---
 
 # 5. Sample Rate Limit (Speed of Light)
+
 There exists a maximum rate at which change can propagate:
 
 - This is the **sample rate** of the universe.
@@ -68,6 +75,7 @@ This is a **hard physical limit**, not a perceptual one.
 ---
 
 # 6. Tick Limit (Frame Generation Limit)
+
 Tick‑rate defines how often the universe updates.
 
 - It is the smallest temporal granularity.
@@ -85,6 +93,7 @@ This is a **representational limit**, not a physical one.
 ---
 
 # 7. Causal Readability
+
 For the universe to remain coherent:
 
 **Every state in tick n+1 must be derivable from tick n.**
@@ -101,6 +110,7 @@ This is the foundation of **causal stability**.
 ---
 
 # 8. Synchrony Requirement
+
 Stable perception requires:
 
 \[
@@ -118,6 +128,7 @@ This is the **Sampling Synchrony Principle**.
 ---
 
 # 9. Identity Continuity
+
 Identity is not a property of objects but of trajectories.
 
 - An entity exists only as a continuous chain of states.
@@ -129,6 +140,7 @@ Identity is therefore **temporal, not spatial**.
 ---
 
 # 10. Temporal Aliasing
+
 When a process evolves faster than the observer’s sampling capacity:
 
 - intermediate states are lost,
@@ -145,9 +157,11 @@ Temporal aliasing is the root of:
 ---
 
 # 11. Temporal Integrity Law
+
 Combining all principles:
 
 **A physically valid process must:**
+
 1. evolve no faster than the universal sample rate,
 2. be representable at the universal tick‑rate,
 3. maintain causal readability between ticks,
@@ -158,6 +172,7 @@ Violation of any of these conditions results in non‑physical behavior.
 ---
 
 # 12. Summary
+
 The Temporal Ontology establishes:
 
 - Time as the primary dimension of existence

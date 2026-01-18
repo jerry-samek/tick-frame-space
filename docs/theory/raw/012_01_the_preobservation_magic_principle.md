@@ -1,7 +1,9 @@
-# The Pre‑Observation Magic Principle  
+# The Pre‑Observation Magic Principle
+
 ### *A lighthearted note on stateless universes (for your laugh… and maybe your concern)*
 
-## 🧭 Overview  
+## 🧭 Overview
+
 While formalizing the tick‑frame universe, an unexpected realization emerged:  
 the substrate itself is **perfectly stateless**.  
 Only the visualization layer — the observer’s reconstruction — ever accumulates “state.”
@@ -19,20 +21,21 @@ And yes — it is unintentionally hilarious.
 
 ---
 
-## ✅ Substrate Layer: No State, No Magic  
+## ✅ Substrate Layer: No State, No Magic
+
 The substrate contains:
 
-- no persistent positions  
-- no stored history  
-- no objects  
-- no fields  
-- no trajectories  
-- no memory  
+- no persistent positions
+- no stored history
+- no objects
+- no fields
+- no trajectories
+- no memory
 
 It only contains:
 
-- the current tick  
-- the local update rules  
+- the current tick
+- the local update rules
 
 Everything else is derived.
 
@@ -40,21 +43,22 @@ There is **no magic** here — just pure, deterministic tick‑to‑tick generat
 
 ---
 
-## ✅ Visualization Layer: State, Reconstruction, and… “Magic”  
+## ✅ Visualization Layer: State, Reconstruction, and… “Magic”
+
 The visualization layer is where:
 
-- continuity is reconstructed  
-- positions are computed  
-- motion is inferred  
-- objects are identified  
-- history is manufactured  
+- continuity is reconstructed
+- positions are computed
+- motion is inferred
+- objects are identified
+- history is manufactured
 
 Before observation, this layer has:
 
-- no stored frames  
-- no continuity  
-- no narrative  
-- no constraints  
+- no stored frames
+- no continuity
+- no narrative
+- no constraints
 
 From the observer’s perspective, this looks like:
 
@@ -64,7 +68,8 @@ Which is, in the most literal computational sense, indistinguishable from “mag
 
 ---
 
-## ✅ The Joke That Became a Principle  
+## ✅ The Joke That Became a Principle
+
 Originally, the idea was a joke:
 
 > “Before humans observed physics, magic existed.”
@@ -83,27 +88,31 @@ Magic existed in the observer.**
 
 ---
 
-## ✅ Formal Statement  
+## ✅ Formal Statement
+
 **Pre‑Observation Magic Principle**  
-*Before observation, the visualization layer contains no stored state; therefore, any reconstruction is possible, giving the literal appearance of “magic,” even though the substrate remains fully deterministic.*
+*Before observation, the visualization layer contains no stored state; therefore, any reconstruction is possible, giving
+the literal appearance of “magic,” even though the substrate remains fully deterministic.*
 
 ---
 
-## ✅ Why This Matters  
+## ✅ Why This Matters
+
 This principle clarifies:
 
-- why the substrate must remain stateless  
-- why the visualization layer is the only source of “history”  
-- why continuity is emergent, not fundamental  
-- why early‑universe behavior appears unconstrained  
-- why your Java model shouldn’t accumulate heap until rendering  
-- why your earlier intuition (“magic before observation”) wasn’t wrong — just mislocated  
+- why the substrate must remain stateless
+- why the visualization layer is the only source of “history”
+- why continuity is emergent, not fundamental
+- why early‑universe behavior appears unconstrained
+- why your Java model shouldn’t accumulate heap until rendering
+- why your earlier intuition (“magic before observation”) wasn’t wrong — just mislocated
 
 It’s a humorous insight, but also a deeply clarifying one.
 
 ---
 
-## ✅ Closing Note  
+## ✅ Closing Note
+
 This document is not proposing supernatural physics.  
 It’s simply acknowledging — with a wink — that in a stateless generative universe,  
 the observer is the one who brings order, continuity, and narrative to the world.

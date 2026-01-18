@@ -3,7 +3,8 @@
 **Original**: v1/49 Temporal Ontology of the Tick-Frame Universe
 **Status**: **THEORETICAL FOUNDATION** (constitution of tick-frame physics)
 **Date**: Current theoretical framework
-**Note**: This document represents the **ontological apex** of tick-frame theory. It refines and supersedes earlier frameworks (including Chapter 15 model) by establishing time as the primary substrate from which space emerges.
+**Note**: This document represents the **ontological apex** of tick-frame theory. It refines and supersedes earlier
+frameworks (including Chapter 15 model) by establishing time as the primary substrate from which space emerges.
 
 ---
 
@@ -13,12 +14,16 @@ This is the **constitution of tick-frame physics**:
 
 1. **Theoretical Foundation**: Defines fundamental ontology (what exists, how it exists)
 2. **Experimentally Validated**: **Experiment 50** proves time ≠ dimension (ρ=2.0 signature)
-3. **Convergent Evidence**: Experiment 44 (rotation asymmetry) + Experiment 50 (dynamic constraints) both support this ontology
+3. **Convergent Evidence**: Experiment 44 (rotation asymmetry) + Experiment 50 (dynamic constraints) both support this
+   ontology
 4. **Unifying Framework**: Reconciles discrete time, emergent space, and causal structure
 
 **Cited extensively in**: v2 Ch1 (Temporal Ontology)
 
-**Gap Note**: The current Java implementation (tick-space-runner) is based on the earlier **Chapter 15 model** (see REFERENCE_doc15), which treats time as a tick counter and space as coordinates. This document (Doc 49) refines that model ontologically: time is the primary substrate, space is emergent. Future implementation will align with this framework.
+**Gap Note**: The current Java implementation (tick-space-runner) is based on the earlier **Chapter 15 model** (see
+REFERENCE_doc15), which treats time as a tick counter and space as coordinates. This document (Doc 49) refines that
+model ontologically: time is the primary substrate, space is emergent. Future implementation will align with this
+framework.
 
 ---
 
@@ -38,7 +43,8 @@ They do not exist *in* time; they exist *as* time.
 - Existence is presence in the current tick.
 - Time is not an external dimension but the intrinsic structure of being.
 
-**Experimental validation**: Experiment 50 shows time exhibits fundamentally different behavior from spatial dimensions (ρ=2.0 vs ρ=1.5), supporting temporal primacy.
+**Experimental validation**: Experiment 50 shows time exhibits fundamentally different behavior from spatial
+dimensions (ρ=2.0 vs ρ=1.5), supporting temporal primacy.
 
 ---
 
@@ -53,7 +59,8 @@ The tick-stream is the fundamental, immutable sequence of universal states.
 
 This defines the **absolute temporal axis** of the universe.
 
-**Experimental validation**: Experiment 44 shows temporal velocity constraint (v ≤ 1 tick/tick) - entities cannot "speed up" past the tick-stream, only "fall behind" (rotation asymmetry: 933×).
+**Experimental validation**: Experiment 44 shows temporal velocity constraint (v ≤ 1 tick/tick) - entities cannot "speed
+up" past the tick-stream, only "fall behind" (rotation asymmetry: 933×).
 
 ---
 
@@ -81,7 +88,9 @@ It emerges from **differences between successive ticks**.
 
 Space is a *visualization* of temporal gradients.
 
-**Experimental validation**: Experiment 50 decisively rejects dimensional equivalence (n spatial + time ≠ n+1 spatial). Time and space have fundamentally different properties:
+**Experimental validation**: Experiment 50 decisively rejects dimensional equivalence (n spatial + time ≠ n+1 spatial).
+Time and space have fundamentally different properties:
+
 - **Space**: Energy dilutes (ρ ≈ 1.5, sub-quadratic scaling)
 - **Time**: Energy accumulates (ρ = 2.0, quadratic scaling)
 
@@ -105,7 +114,8 @@ Exceeding this limit causes:
 
 This is a **hard physical limit**, not a perceptual one.
 
-**Experimental validation**: Experiment 44 shows v ≤ 1 tick/tick is a hard constraint (forward pitch: 0% success, physically impossible). This is analogous to the speed of light barrier in relativity.
+**Experimental validation**: Experiment 44 shows v ≤ 1 tick/tick is a hard constraint (forward pitch: 0% success,
+physically impossible). This is analogous to the speed of light barrier in relativity.
 
 ---
 
@@ -142,7 +152,10 @@ If a process evolves faster than tick-rate:
 
 This is the foundation of **causal stability**.
 
-**Experimental validation**: Experiment 50 shows the "ratchet effect" - temporal ordering creates accumulation rather than dilution. Energy in (n+t) systems accumulates along the time axis because ∂²A/∂t² couples successive ticks unidirectionally (tick n influences n+1, but not vice versa). This validates causal readability as fundamental constraint.
+**Experimental validation**: Experiment 50 shows the "ratchet effect" - temporal ordering creates accumulation rather
+than dilution. Energy in (n+t) systems accumulates along the time axis because ∂²A/∂t² couples successive ticks
+unidirectionally (tick n influences n+1, but not vice versa). This validates causal readability as fundamental
+constraint.
 
 ---
 
@@ -174,7 +187,8 @@ Identity is not a property of objects but of trajectories.
 
 Identity is therefore **temporal, not spatial**.
 
-**Implementation note**: In the Java implementation, this is reflected in the `TickTimeConsumer<E>` pattern - entities exist as temporal processes responding to ticks, not as static objects with positions.
+**Implementation note**: In the Java implementation, this is reflected in the `TickTimeConsumer<E>` pattern - entities
+exist as temporal processes responding to ticks, not as static objects with positions.
 
 ---
 
@@ -200,6 +214,7 @@ Temporal aliasing is the root of:
 Combining all principles:
 
 **A physically valid process must:**
+
 1. evolve no faster than the universal sample rate,
 2. be representable at the universal tick-rate,
 3. maintain causal readability between ticks,
@@ -207,7 +222,8 @@ Combining all principles:
 
 Violation of any of these conditions results in non-physical behavior.
 
-**Experimental validation**: Experiment 44's sparse temporal sampling (entities at different lag offsets) would violate temporal integrity if taken to extreme. Current experiments maintain continuity while testing rendering limits.
+**Experimental validation**: Experiment 44's sparse temporal sampling (entities at different lag offsets) would violate
+temporal integrity if taken to extreme. Current experiments maintain continuity while testing rendering limits.
 
 ---
 
@@ -237,12 +253,15 @@ This ontology forms the conceptual backbone of the tick-frame universe model.
 **Result**: **0/6 tests passed** (0% success rate, 1,095 configurations)
 
 **Key finding - ρ=2.0 Signature**:
+
 - **Pure spatial dimensions**: ρ ≈ 1.5 (sub-quadratic, energy dilutes)
 - **ALL (n+t) systems**: ρ = 2.0 (quadratic, energy accumulates)
 
-**Interpretation**: Time acts as **coherence amplifier** (ratchet effect) rather than **dilution dimension** (surface-area law). This is the **mathematical fingerprint** of temporal causality described in this document.
+**Interpretation**: Time acts as **coherence amplifier** (ratchet effect) rather than **dilution dimension** (
+surface-area law). This is the **mathematical fingerprint** of temporal causality described in this document.
 
 **Validates**:
+
 - ✓ Time as primary substrate (not just another coordinate)
 - ✓ Causal readability (unidirectional coupling creates accumulation)
 - ✓ Space ≠ time ontologically (fundamentally different scaling laws)
@@ -256,13 +275,16 @@ This ontology forms the conceptual backbone of the tick-frame universe model.
 **Result**: **Rotation asymmetry: 933×** (forward 0%, backward 93%)
 
 **Key finding**:
+
 - **Forward pitch** (toward viewer/future): **PHYSICALLY IMPOSSIBLE** (v > 1 tick/tick)
 - **Backward pitch** (away from viewer/past): 93% success (energy-limited)
 - **Z-axis rotation** (spatial plane): 100% success (unconstrained)
 
-**Interpretation**: Temporal velocity constraint v ≤ 1 tick/tick is a **hard physical limit** (§5 Sample Rate Limit), analogous to speed of light. Entities can "fall behind" (slow down) but not "catch up" (speed up) past the tick-stream.
+**Interpretation**: Temporal velocity constraint v ≤ 1 tick/tick is a **hard physical limit** (§5 Sample Rate Limit),
+analogous to speed of light. Entities can "fall behind" (slow down) but not "catch up" (speed up) past the tick-stream.
 
 **Validates**:
+
 - ✓ Tick-stream as absolute substrate (§2)
 - ✓ Sample rate limit (§5)
 - ✓ Causal ordering is unidirectional
@@ -277,13 +299,16 @@ This ontology forms the conceptual backbone of the tick-frame universe model.
 **Result**: **3D is Goldilocks zone** (not exclusive, but optimal)
 
 **Key finding**:
+
 - 3D: SPBI=2.23 (universe-like balance)
 - ρ=2.0 phase transition @ d=3 (configuration-dependent → universal)
 - Dimensional scaling laws: CV(d) ≈ 80%×exp(-0.82×d)
 
-**Interpretation**: 3D is optimal for **spatial** dimensions. The stability closure at 4D-5D refers to spatial dimensions only, NOT spacetime (3D+time ≠ 4D).
+**Interpretation**: 3D is optimal for **spatial** dimensions. The stability closure at 4D-5D refers to spatial
+dimensions only, NOT spacetime (3D+time ≠ 4D).
 
 **Validates**:
+
 - ✓ Space as emergent (dimensional properties are observer-relative)
 - ✓ 3D optimality doesn't imply time is 4th dimension
 - ✓ Dimensional closure is about space, not spacetime
@@ -297,31 +322,36 @@ This ontology forms the conceptual backbone of the tick-frame universe model.
 ### Tick-Frame vs Minkowski Spacetime
 
 **Minkowski spacetime (relativity)**:
+
 - 4D manifold with metric signature (-,+,+,+)
 - Time is a coordinate with special metric properties
 - Lorentz transformations treat space and time symmetrically (via metric)
 - Coordinate-based approach
 
 **Tick-frame universe (this ontology)**:
+
 - Time is the **substrate** (tick-stream is fundamental)
 - Space is **emergent visualization** (from tick differences)
 - NOT a coordinate transformation
 - NO symmetry between space and time (causal asymmetry)
 - Process-based approach (entities are temporal processes)
 
-**Experimental evidence**: The ρ=2.0 signature (Exp 50) and rotation asymmetry (Exp 44) prove space and time are fundamentally different, supporting tick-frame ontology over Minkowski-style spacetime.
+**Experimental evidence**: The ρ=2.0 signature (Exp 50) and rotation asymmetry (Exp 44) prove space and time are
+fundamentally different, supporting tick-frame ontology over Minkowski-style spacetime.
 
 ### Relativity Compatibility
 
 **Question**: How does this ontology relate to special/general relativity?
 
-**Answer**: Relativistic effects must emerge from **discrete causal structure** of the tick-stream, not from treating time as a pseudo-spatial coordinate:
+**Answer**: Relativistic effects must emerge from **discrete causal structure** of the tick-stream, not from treating
+time as a pseudo-spatial coordinate:
 
 - **Time dilation**: Sample rate varies with energy/velocity (tick-rate modulation)
 - **Length contraction**: Spatial perception depends on temporal sampling rate
 - **Lorentz invariance**: Must emerge from discrete symmetries, not continuous transformations
 
-**Open question**: Deriving Lorentz transformations from tick-frame axioms is ongoing work. The v ≤ 1 tick/tick constraint is analogous to the speed of light limit, suggesting a path to compatibility.
+**Open question**: Deriving Lorentz transformations from tick-frame axioms is ongoing work. The v ≤ 1 tick/tick
+constraint is analogous to the speed of light limit, suggesting a path to compatibility.
 
 ---
 
@@ -330,6 +360,7 @@ This ontology forms the conceptual backbone of the tick-frame universe model.
 ### Current Java Status (Chapter 15 Model)
 
 The tick-space-runner implements an **earlier model** where:
+
 - Time = discrete tick counter (`BigInteger tickCount`)
 - Space = N-dimensional coordinates (`Position` record)
 - Entities = objects with state (`EntityModel`)
@@ -340,7 +371,8 @@ The tick-space-runner implements an **earlier model** where:
 
 To implement this ontology:
 
-1. **Emphasize temporal process pattern**: The `TickTimeConsumer<E>` interface already reflects this (entities respond to ticks)
+1. **Emphasize temporal process pattern**: The `TickTimeConsumer<E>` interface already reflects this (entities respond
+   to ticks)
 
 2. **Treat Position as derived**: Position should be understood as emergent from temporal evolution, not fundamental
 
@@ -361,6 +393,7 @@ To implement this ontology:
 **Full specification**: See v1/49 for complete original document
 
 **Related theory**:
+
 - **Doc 15**: Minimal Model (current Java implementation basis)
 - **Doc 28**: Temporal Surfing Principle
 - **Doc 29**: Imbalance Theory
@@ -368,11 +401,13 @@ To implement this ontology:
 - **Doc 50**: Test Specification - Dimensional Equivalence
 
 **Experiments**:
+
 - **Experiment #50**: Dimensional equivalence rejection (ρ=2.0 signature validates this ontology)
 - **Experiment #44**: Rotation asymmetry (kinematic validation)
 - **Experiment #15**: 3D optimality (dimensional framework)
 
 **V2 Chapters**:
+
 - **Ch1**: Temporal Ontology (expands this document)
 - **Ch2**: Dimensional Framework (3D optimality)
 - **Ch3**: Entity Dynamics (temporal processes)
