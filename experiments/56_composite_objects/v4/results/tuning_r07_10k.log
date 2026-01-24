@@ -1,0 +1,156 @@
+======================================================================
+Experiment 56 V4: Quantization Study
+======================================================================
+
+Testing Doc 070_01 §4 hypothesis:
+  'Collision dynamics drive system toward stable orbital levels,
+   quantized energy states, and robust equilibrium distributions.'
+
+Additional hypothesis: Collisions naturally eject excess fragments,
+  creating self-regulating fragment count.
+======================================================================
+
+Using configuration: quantization
+
+Configuration:
+  Fragments: 50
+  Total ticks: 10,000
+  Expected runtime: ~45 seconds (0 minutes)
+  Snapshots: 100
+  Detailed snapshots: 10
+
+Physics (V3 scaled baseline):
+  Proton mass: 100.0
+  Electron mass: 0.1
+  Coupling constant: 0.001
+  Jitter strength: 0.0005
+  Collision radius: 0.7
+  Restitution: 0.8
+
+Proton created:
+  Mass: 100.0
+  Energy: 1000.0
+Initialized 50 electron fragments:
+  Mean radius: 2.0200
+  RMS radius: 2.0730
+  Total mass: 0.100000
+  Total energy: 50.0000
+
+Initial state:
+  tick: 0
+  cloud_radius_mean: 2.019999
+  cloud_radius_rms: 2.073012
+  cloud_radius_std: 0.465816
+  total_kinetic_energy: 0.000138
+  angular_momentum: 0.002073
+  total_collisions: 0
+  total_potential_energy: -0.000836
+  total_energy: -0.000698
+  fragment_ke_mean: 0.000003
+  fragment_ke_std: 0.000001
+
+Running 10,000 ticks...
+Progress reports every 1,000 ticks...
+Detailed snapshots every 1,000 ticks...
+
+[   1000/  10000] ( 10.0%) 3.5s elapsed, ETA: 31.7s
+  r_rms=2.0373, KE=0.000007, L_z=0.001827
+  collisions=37872 total (37.87/tick)
+  PE=-0.000998, E_total=-0.000991
+
+[   2000/  10000] ( 20.0%) 7.8s elapsed, ETA: 31.2s
+  r_rms=2.0282, KE=0.000007, L_z=0.001865
+  collisions=76430 total (38.22/tick)
+  PE=-0.000993, E_total=-0.000986
+
+[   3000/  10000] ( 30.0%) 11.9s elapsed, ETA: 27.7s
+  r_rms=1.9972, KE=0.000005, L_z=0.001703
+  collisions=115402 total (38.47/tick)
+  PE=-0.000995, E_total=-0.000990
+
+[   4000/  10000] ( 40.0%) 16.0s elapsed, ETA: 24.0s
+  r_rms=2.0153, KE=0.000004, L_z=0.001351
+  collisions=155558 total (38.89/tick)
+  PE=-0.000998, E_total=-0.000993
+
+[   5000/  10000] ( 50.0%) 20.0s elapsed, ETA: 20.0s
+  r_rms=1.9978, KE=0.000004, L_z=0.001181
+  collisions=198256 total (39.65/tick)
+  PE=-0.001000, E_total=-0.000996
+
+[   6000/  10000] ( 60.0%) 24.0s elapsed, ETA: 16.0s
+  r_rms=1.9986, KE=0.000004, L_z=0.001233
+  collisions=243236 total (40.54/tick)
+  PE=-0.000998, E_total=-0.000994
+
+[   7000/  10000] ( 70.0%) 27.8s elapsed, ETA: 11.9s
+  r_rms=2.0186, KE=0.000007, L_z=0.001828
+  collisions=282686 total (40.38/tick)
+  PE=-0.000995, E_total=-0.000989
+
+[   8000/  10000] ( 80.0%) 31.2s elapsed, ETA: 7.8s
+  r_rms=2.0032, KE=0.000005, L_z=0.001491
+  collisions=325986 total (40.75/tick)
+  PE=-0.001000, E_total=-0.000995
+
+[   9000/  10000] ( 90.0%) 34.6s elapsed, ETA: 3.8s
+  r_rms=2.0654, KE=0.000003, L_z=0.000896
+  collisions=370820 total (41.20/tick)
+  PE=-0.001000, E_total=-0.000997
+
+[  10000/  10000] (100.0%) 38.1s elapsed, ETA: 0.0s
+  r_rms=2.0387, KE=0.000002, L_z=0.000758
+  collisions=419576 total (41.96/tick)
+  PE=-0.001000, E_total=-0.000998
+
+
+Final state:
+  tick: 10000
+  cloud_radius_mean: 1.886006
+  cloud_radius_rms: 2.038708
+  cloud_radius_std: 0.774153
+  total_kinetic_energy: 0.000002
+  angular_momentum: 0.000758
+  total_collisions: 419576
+  total_potential_energy: -0.001000
+  total_energy: -0.000998
+  fragment_ke_mean: 0.000000
+  fragment_ke_std: 0.000000
+  velocity_mean: 0.005678
+  velocity_std: 0.003272
+
+======================================================================
+QUANTIZATION STUDY RESULTS
+======================================================================
+
+Cloud radius:
+  Initial: 2.4209
+  Final: 2.0387
+  Drift: 15.79%
+  Mean: 2.0166
+  Std: 0.0513
+
+Stability:
+  Cloud stable: True
+  Escaped fragments: 0/50
+
+Collisions:
+  Total: 419576
+  Average per tick: 41.96
+
+Energy conservation:
+  Initial total energy: -0.000972
+  Final total energy: -0.000998
+  Drift: 2.64%
+
+======================================================================
+[FAIL] Cloud radius drift = 15.79% >= 10.0%
+[PASS] No fragments escaped
+[PASS] Cloud did not collapse
+======================================================================
+XXX VALIDATION FAILED XXX
+Cloud unstable - check parameters
+======================================================================
+
+Results saved to: results\exp56a_v4_50frags_10k.json
+File size: 0.35 MB

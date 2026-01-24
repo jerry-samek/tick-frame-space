@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "<string>", line 32, in <module>
+    stats = hydrogen.electron_cloud.compute_statistics()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FragmentedElectronCloud' object has no attribute 'compute_statistics'. Did you mean: 'update_statistics'?
+======================================================================
+QUICK TEST: Pattern-Based Collision Detection
+======================================================================
+
+Config:
+  Ticks: 10000
+  Fragments: 50
+  Pattern overlap threshold: 0.01
+  Jitter strength: 0.0005
+  Restitution: 0.8
+
+
+Proton created:
+  Mass: 100.0
+  Energy: 1000.0
+Initialized 50 electron fragments:
+  Mean radius: 2.0013
+  RMS radius: 2.0646
+  Total mass: 0.100000
+  Total energy: 50.0000
+Running simulation...

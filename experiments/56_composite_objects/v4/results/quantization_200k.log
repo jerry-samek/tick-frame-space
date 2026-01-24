@@ -1,0 +1,710 @@
+Configuration selected: quantization_200k
+(Use: python experiment_56a_v4_quantization.py [quantization|high_resolution|ultra_long|high_res_ultra_long])
+
+======================================================================
+Experiment 56 V4: Quantization Study
+======================================================================
+
+Testing Doc 070_01 §4 hypothesis:
+  'Collision dynamics drive system toward stable orbital levels,
+   quantized energy states, and robust equilibrium distributions.'
+
+Additional hypothesis: Collisions naturally eject excess fragments,
+  creating self-regulating fragment count.
+======================================================================
+
+Using configuration: quantization_200k
+
+Configuration:
+  Fragments: 50
+  Total ticks: 200,000
+  Expected runtime: ~900 seconds (15 minutes)
+  Snapshots: 1000
+  Detailed snapshots: 100
+
+Physics (V3 scaled baseline):
+  Proton mass: 100.0
+  Electron mass: 0.1
+  Coupling constant: 0.001
+  Jitter strength: 0.0005
+  Collision radius: 0.5
+  Restitution: 0.8
+
+Proton created:
+  Mass: 100.0
+  Energy: 1000.0
+Initialized 50 electron fragments:
+  Mean radius: 1.9022
+  RMS radius: 1.9595
+  Total mass: 0.100000
+  Total energy: 50.0000
+
+Initial state:
+  tick: 0
+  cloud_radius_mean: 1.902217
+  cloud_radius_rms: 1.959526
+  cloud_radius_std: 0.470440
+  total_kinetic_energy: 0.000118
+  angular_momentum: -0.000282
+  total_collisions: 0
+  total_potential_energy: -0.000893
+  total_energy: -0.000775
+  fragment_ke_mean: 0.000002
+  fragment_ke_std: 0.000001
+
+Running 200,000 ticks...
+Progress reports every 1,000 ticks...
+Detailed snapshots every 2,000 ticks...
+
+[   1000/ 200000] (  0.5%) 3.1s elapsed, ETA: 616.3s
+  r_rms=1.8616, KE=0.000010, L_z=0.000191
+  collisions=5694 total (5.69/tick)
+  PE=-0.001000, E_total=-0.000990
+
+[   2000/ 200000] (  1.0%) 6.2s elapsed, ETA: 610.2s
+  r_rms=1.7473, KE=0.000005, L_z=-0.000133
+  collisions=10844 total (5.42/tick)
+  PE=-0.001000, E_total=-0.000995
+
+[   3000/ 200000] (  1.5%) 9.2s elapsed, ETA: 605.9s
+  r_rms=1.8881, KE=0.000008, L_z=-0.000070
+  collisions=16228 total (5.41/tick)
+  PE=-0.000998, E_total=-0.000989
+
+[   4000/ 200000] (  2.0%) 12.3s elapsed, ETA: 600.7s
+  r_rms=1.8206, KE=0.000006, L_z=-0.000048
+  collisions=21402 total (5.35/tick)
+  PE=-0.001000, E_total=-0.000994
+
+[   5000/ 200000] (  2.5%) 15.3s elapsed, ETA: 598.4s
+  r_rms=1.8410, KE=0.000007, L_z=-0.000514
+  collisions=27016 total (5.40/tick)
+  PE=-0.001000, E_total=-0.000993
+
+[   6000/ 200000] (  3.0%) 18.4s elapsed, ETA: 595.2s
+  r_rms=1.7593, KE=0.000004, L_z=0.000049
+  collisions=32416 total (5.40/tick)
+  PE=-0.001000, E_total=-0.000996
+
+[   7000/ 200000] (  3.5%) 21.5s elapsed, ETA: 592.0s
+  r_rms=1.8728, KE=0.000009, L_z=0.000589
+  collisions=37836 total (5.41/tick)
+  PE=-0.001000, E_total=-0.000991
+
+[   8000/ 200000] (  4.0%) 24.5s elapsed, ETA: 589.0s
+  r_rms=1.8761, KE=0.000007, L_z=-0.000410
+  collisions=43530 total (5.44/tick)
+  PE=-0.001000, E_total=-0.000993
+
+[   9000/ 200000] (  4.5%) 27.6s elapsed, ETA: 585.6s
+  r_rms=1.7955, KE=0.000010, L_z=-0.000889
+  collisions=49000 total (5.44/tick)
+  PE=-0.001000, E_total=-0.000990
+
+[  10000/ 200000] (  5.0%) 30.7s elapsed, ETA: 582.4s
+  r_rms=1.8118, KE=0.000012, L_z=-0.001232
+  collisions=54036 total (5.40/tick)
+  PE=-0.001000, E_total=-0.000988
+
+[  11000/ 200000] (  5.5%) 33.8s elapsed, ETA: 580.0s
+  r_rms=1.9590, KE=0.000010, L_z=-0.001255
+  collisions=58702 total (5.34/tick)
+  PE=-0.000998, E_total=-0.000988
+
+[  12000/ 200000] (  6.0%) 36.8s elapsed, ETA: 576.0s
+  r_rms=2.0272, KE=0.000009, L_z=-0.001268
+  collisions=63670 total (5.31/tick)
+  PE=-0.001000, E_total=-0.000991
+
+[  13000/ 200000] (  6.5%) 39.9s elapsed, ETA: 573.8s
+  r_rms=1.8193, KE=0.000013, L_z=-0.001562
+  collisions=68444 total (5.26/tick)
+  PE=-0.000998, E_total=-0.000984
+
+[  14000/ 200000] (  7.0%) 42.9s elapsed, ETA: 570.0s
+  r_rms=1.9972, KE=0.000017, L_z=-0.002052
+  collisions=73592 total (5.26/tick)
+  PE=-0.000998, E_total=-0.000980
+
+[  15000/ 200000] (  7.5%) 46.0s elapsed, ETA: 567.7s
+  r_rms=1.8509, KE=0.000019, L_z=-0.002271
+  collisions=78422 total (5.23/tick)
+  PE=-0.000998, E_total=-0.000979
+
+[  16000/ 200000] (  8.0%) 49.1s elapsed, ETA: 564.4s
+  r_rms=1.9537, KE=0.000015, L_z=-0.002121
+  collisions=83378 total (5.21/tick)
+  PE=-0.001000, E_total=-0.000985
+
+[  17000/ 200000] (  8.5%) 52.2s elapsed, ETA: 561.4s
+  r_rms=1.8373, KE=0.000015, L_z=-0.002240
+  collisions=87958 total (5.17/tick)
+  PE=-0.001000, E_total=-0.000985
+
+[  18000/ 200000] (  9.0%) 55.2s elapsed, ETA: 558.4s
+  r_rms=1.9125, KE=0.000012, L_z=-0.001754
+  collisions=92432 total (5.14/tick)
+  PE=-0.001000, E_total=-0.000988
+
+[  19000/ 200000] (  9.5%) 58.3s elapsed, ETA: 555.3s
+  r_rms=1.9012, KE=0.000019, L_z=-0.002285
+  collisions=97154 total (5.11/tick)
+  PE=-0.001000, E_total=-0.000981
+
+[  20000/ 200000] ( 10.0%) 61.5s elapsed, ETA: 553.3s
+  r_rms=1.9446, KE=0.000020, L_z=-0.002564
+  collisions=101770 total (5.09/tick)
+  PE=-0.000998, E_total=-0.000978
+
+[  21000/ 200000] ( 10.5%) 64.6s elapsed, ETA: 551.0s
+  r_rms=1.9450, KE=0.000015, L_z=-0.002183
+  collisions=106302 total (5.06/tick)
+  PE=-0.001000, E_total=-0.000985
+
+[  22000/ 200000] ( 11.0%) 67.7s elapsed, ETA: 547.8s
+  r_rms=1.8541, KE=0.000012, L_z=-0.001786
+  collisions=110862 total (5.04/tick)
+  PE=-0.001000, E_total=-0.000988
+
+[  23000/ 200000] ( 11.5%) 70.8s elapsed, ETA: 544.6s
+  r_rms=1.8515, KE=0.000009, L_z=-0.001453
+  collisions=116032 total (5.04/tick)
+  PE=-0.001000, E_total=-0.000991
+
+[  24000/ 200000] ( 12.0%) 73.8s elapsed, ETA: 541.4s
+  r_rms=1.7298, KE=0.000011, L_z=-0.001770
+  collisions=121076 total (5.04/tick)
+  PE=-0.001000, E_total=-0.000989
+
+[  25000/ 200000] ( 12.5%) 76.9s elapsed, ETA: 538.4s
+  r_rms=1.8526, KE=0.000010, L_z=-0.001348
+  collisions=126074 total (5.04/tick)
+  PE=-0.001000, E_total=-0.000990
+
+[  26000/ 200000] ( 13.0%) 79.9s elapsed, ETA: 534.7s
+  r_rms=1.8103, KE=0.000011, L_z=-0.001182
+  collisions=131080 total (5.04/tick)
+  PE=-0.000998, E_total=-0.000986
+
+[  27000/ 200000] ( 13.5%) 83.0s elapsed, ETA: 531.9s
+  r_rms=1.8308, KE=0.000011, L_z=-0.001147
+  collisions=135804 total (5.03/tick)
+  PE=-0.000998, E_total=-0.000987
+
+[  28000/ 200000] ( 14.0%) 86.2s elapsed, ETA: 529.6s
+  r_rms=1.9057, KE=0.000008, L_z=-0.000950
+  collisions=141062 total (5.04/tick)
+  PE=-0.001000, E_total=-0.000992
+
+[  29000/ 200000] ( 14.5%) 89.4s elapsed, ETA: 527.3s
+  r_rms=1.7789, KE=0.000007, L_z=-0.000196
+  collisions=146232 total (5.04/tick)
+  PE=-0.001000, E_total=-0.000993
+
+[  30000/ 200000] ( 15.0%) 92.7s elapsed, ETA: 525.0s
+  r_rms=1.7253, KE=0.000008, L_z=-0.000245
+  collisions=151832 total (5.06/tick)
+  PE=-0.001000, E_total=-0.000992
+
+[  31000/ 200000] ( 15.5%) 95.7s elapsed, ETA: 521.8s
+  r_rms=1.9215, KE=0.000008, L_z=0.000199
+  collisions=157208 total (5.07/tick)
+  PE=-0.001000, E_total=-0.000992
+
+[  32000/ 200000] ( 16.0%) 98.7s elapsed, ETA: 518.4s
+  r_rms=1.7169, KE=0.000005, L_z=-0.000076
+  collisions=162622 total (5.08/tick)
+  PE=-0.001000, E_total=-0.000995
+
+[  33000/ 200000] ( 16.5%) 101.9s elapsed, ETA: 515.8s
+  r_rms=1.7944, KE=0.000007, L_z=0.000468
+  collisions=168234 total (5.10/tick)
+  PE=-0.001000, E_total=-0.000993
+
+[  34000/ 200000] ( 17.0%) 104.9s elapsed, ETA: 512.3s
+  r_rms=1.8553, KE=0.000005, L_z=0.000105
+  collisions=173596 total (5.11/tick)
+  PE=-0.001000, E_total=-0.000995
+
+[  35000/ 200000] ( 17.5%) 108.0s elapsed, ETA: 509.2s
+  r_rms=1.7929, KE=0.000006, L_z=-0.000093
+  collisions=178810 total (5.11/tick)
+  PE=-0.001000, E_total=-0.000994
+
+[  36000/ 200000] ( 18.0%) 111.1s elapsed, ETA: 505.9s
+  r_rms=1.8705, KE=0.000008, L_z=-0.000668
+  collisions=184028 total (5.11/tick)
+  PE=-0.001000, E_total=-0.000992
+
+[  37000/ 200000] ( 18.5%) 114.2s elapsed, ETA: 503.0s
+  r_rms=1.8553, KE=0.000007, L_z=-0.000600
+  collisions=189200 total (5.11/tick)
+  PE=-0.001000, E_total=-0.000993
+
+[  38000/ 200000] ( 19.0%) 117.4s elapsed, ETA: 500.5s
+  r_rms=1.8535, KE=0.000010, L_z=-0.001034
+  collisions=194270 total (5.11/tick)
+  PE=-0.001000, E_total=-0.000990
+
+[  39000/ 200000] ( 19.5%) 120.6s elapsed, ETA: 498.0s
+  r_rms=1.9454, KE=0.000015, L_z=-0.001828
+  collisions=199318 total (5.11/tick)
+  PE=-0.001000, E_total=-0.000985
+
+[  40000/ 200000] ( 20.0%) 123.9s elapsed, ETA: 495.7s
+  r_rms=1.8805, KE=0.000017, L_z=-0.002288
+  collisions=204066 total (5.10/tick)
+  PE=-0.000998, E_total=-0.000981
+
+[  41000/ 200000] ( 20.5%) 127.2s elapsed, ETA: 493.4s
+  r_rms=1.8916, KE=0.000012, L_z=-0.001840
+  collisions=208650 total (5.09/tick)
+  PE=-0.000998, E_total=-0.000986
+
+[  42000/ 200000] ( 21.0%) 130.4s elapsed, ETA: 490.6s
+  r_rms=1.9493, KE=0.000018, L_z=-0.002451
+  collisions=213458 total (5.08/tick)
+  PE=-0.000998, E_total=-0.000980
+
+[  43000/ 200000] ( 21.5%) 133.6s elapsed, ETA: 487.7s
+  r_rms=1.9136, KE=0.000011, L_z=-0.002037
+  collisions=218256 total (5.08/tick)
+  PE=-0.001000, E_total=-0.000989
+
+[  44000/ 200000] ( 22.0%) 136.8s elapsed, ETA: 484.9s
+  r_rms=1.8707, KE=0.000023, L_z=-0.002678
+  collisions=222728 total (5.06/tick)
+  PE=-0.000998, E_total=-0.000975
+
+[  45000/ 200000] ( 22.5%) 140.1s elapsed, ETA: 482.6s
+  r_rms=1.9340, KE=0.000023, L_z=-0.003242
+  collisions=227432 total (5.05/tick)
+  PE=-0.001000, E_total=-0.000977
+
+[  46000/ 200000] ( 23.0%) 143.4s elapsed, ETA: 479.9s
+  r_rms=1.9387, KE=0.000024, L_z=-0.002943
+  collisions=231990 total (5.04/tick)
+  PE=-0.001000, E_total=-0.000976
+
+[  47000/ 200000] ( 23.5%) 146.6s elapsed, ETA: 477.1s
+  r_rms=1.9549, KE=0.000019, L_z=-0.002661
+  collisions=236550 total (5.03/tick)
+  PE=-0.001000, E_total=-0.000981
+
+[  48000/ 200000] ( 24.0%) 149.7s elapsed, ETA: 473.9s
+  r_rms=1.8409, KE=0.000012, L_z=-0.002084
+  collisions=241358 total (5.03/tick)
+  PE=-0.001000, E_total=-0.000988
+
+[  49000/ 200000] ( 24.5%) 152.7s elapsed, ETA: 470.5s
+  r_rms=1.9667, KE=0.000018, L_z=-0.002638
+  collisions=246072 total (5.02/tick)
+  PE=-0.000998, E_total=-0.000980
+
+[  50000/ 200000] ( 25.0%) 155.8s elapsed, ETA: 467.3s
+  r_rms=1.9993, KE=0.000024, L_z=-0.003085
+  collisions=250494 total (5.01/tick)
+  PE=-0.000998, E_total=-0.000973
+
+[  51000/ 200000] ( 25.5%) 159.0s elapsed, ETA: 464.6s
+  r_rms=2.0801, KE=0.000027, L_z=-0.003310
+  collisions=254772 total (5.00/tick)
+  PE=-0.001000, E_total=-0.000973
+
+[  52000/ 200000] ( 26.0%) 162.4s elapsed, ETA: 462.1s
+  r_rms=1.9180, KE=0.000025, L_z=-0.003071
+  collisions=258992 total (4.98/tick)
+  PE=-0.001000, E_total=-0.000975
+
+[  53000/ 200000] ( 26.5%) 165.6s elapsed, ETA: 459.2s
+  r_rms=1.9613, KE=0.000025, L_z=-0.003207
+  collisions=263330 total (4.97/tick)
+  PE=-0.001000, E_total=-0.000975
+
+[  54000/ 200000] ( 27.0%) 168.8s elapsed, ETA: 456.3s
+  r_rms=2.0630, KE=0.000027, L_z=-0.003258
+  collisions=267808 total (4.96/tick)
+  PE=-0.000995, E_total=-0.000968
+
+[  55000/ 200000] ( 27.5%) 171.9s elapsed, ETA: 453.1s
+  r_rms=1.8334, KE=0.000021, L_z=-0.002699
+  collisions=272644 total (4.96/tick)
+  PE=-0.001000, E_total=-0.000979
+
+[  56000/ 200000] ( 28.0%) 174.9s elapsed, ETA: 449.8s
+  r_rms=1.9315, KE=0.000020, L_z=-0.002598
+  collisions=277124 total (4.95/tick)
+  PE=-0.000998, E_total=-0.000978
+
+[  57000/ 200000] ( 28.5%) 178.0s elapsed, ETA: 446.6s
+  r_rms=1.9642, KE=0.000016, L_z=-0.002382
+  collisions=281518 total (4.94/tick)
+  PE=-0.000998, E_total=-0.000982
+
+[  58000/ 200000] ( 29.0%) 181.0s elapsed, ETA: 443.1s
+  r_rms=1.9146, KE=0.000011, L_z=-0.001941
+  collisions=286276 total (4.94/tick)
+  PE=-0.001000, E_total=-0.000989
+
+[  59000/ 200000] ( 29.5%) 184.0s elapsed, ETA: 439.6s
+  r_rms=1.8919, KE=0.000018, L_z=-0.002104
+  collisions=291260 total (4.94/tick)
+  PE=-0.000998, E_total=-0.000980
+
+[  60000/ 200000] ( 30.0%) 187.0s elapsed, ETA: 436.2s
+  r_rms=1.8704, KE=0.000015, L_z=-0.002101
+  collisions=296132 total (4.94/tick)
+  PE=-0.001000, E_total=-0.000985
+
+[  61000/ 200000] ( 30.5%) 190.0s elapsed, ETA: 432.9s
+  r_rms=1.9518, KE=0.000012, L_z=-0.001776
+  collisions=300824 total (4.93/tick)
+  PE=-0.001000, E_total=-0.000988
+
+[  62000/ 200000] ( 31.0%) 193.0s elapsed, ETA: 429.6s
+  r_rms=1.8240, KE=0.000019, L_z=-0.002018
+  collisions=305464 total (4.93/tick)
+  PE=-0.000998, E_total=-0.000979
+
+[  63000/ 200000] ( 31.5%) 196.0s elapsed, ETA: 426.1s
+  r_rms=1.9629, KE=0.000014, L_z=-0.002211
+  collisions=310214 total (4.92/tick)
+  PE=-0.001000, E_total=-0.000986
+
+[  64000/ 200000] ( 32.0%) 198.9s elapsed, ETA: 422.8s
+  r_rms=1.7858, KE=0.000015, L_z=-0.001672
+  collisions=315128 total (4.92/tick)
+  PE=-0.000995, E_total=-0.000981
+
+[  65000/ 200000] ( 32.5%) 201.9s elapsed, ETA: 419.4s
+  r_rms=1.9226, KE=0.000015, L_z=-0.002116
+  collisions=320056 total (4.92/tick)
+  PE=-0.001000, E_total=-0.000985
+
+[  66000/ 200000] ( 33.0%) 204.9s elapsed, ETA: 416.0s
+  r_rms=1.9635, KE=0.000020, L_z=-0.002942
+  collisions=324544 total (4.92/tick)
+  PE=-0.000998, E_total=-0.000978
+
+[  67000/ 200000] ( 33.5%) 207.8s elapsed, ETA: 412.6s
+  r_rms=1.9128, KE=0.000017, L_z=-0.002396
+  collisions=329496 total (4.92/tick)
+  PE=-0.001000, E_total=-0.000983
+
+[  68000/ 200000] ( 34.0%) 210.8s elapsed, ETA: 409.2s
+  r_rms=1.8423, KE=0.000010, L_z=-0.001430
+  collisions=334436 total (4.92/tick)
+  PE=-0.001000, E_total=-0.000990
+
+[  69000/ 200000] ( 34.5%) 213.7s elapsed, ETA: 405.7s
+  r_rms=1.8543, KE=0.000008, L_z=-0.001310
+  collisions=339444 total (4.92/tick)
+  PE=-0.000998, E_total=-0.000989
+
+[  70000/ 200000] ( 35.0%) 216.7s elapsed, ETA: 402.4s
+  r_rms=1.9159, KE=0.000014, L_z=-0.001745
+  collisions=344242 total (4.92/tick)
+  PE=-0.000998, E_total=-0.000983
+
+[  71000/ 200000] ( 35.5%) 219.6s elapsed, ETA: 399.0s
+  r_rms=1.7858, KE=0.000012, L_z=-0.001624
+  collisions=349428 total (4.92/tick)
+  PE=-0.001000, E_total=-0.000988
+
+[  72000/ 200000] ( 36.0%) 222.5s elapsed, ETA: 395.6s
+  r_rms=1.8493, KE=0.000010, L_z=-0.001273
+  collisions=354258 total (4.92/tick)
+  PE=-0.001000, E_total=-0.000990
+
+[  73000/ 200000] ( 36.5%) 225.5s elapsed, ETA: 392.3s
+  r_rms=1.8791, KE=0.000012, L_z=-0.001239
+  collisions=359294 total (4.92/tick)
+  PE=-0.001000, E_total=-0.000988
+
+[  74000/ 200000] ( 37.0%) 228.4s elapsed, ETA: 389.0s
+  r_rms=1.8329, KE=0.000008, L_z=-0.000826
+  collisions=364210 total (4.92/tick)
+  PE=-0.001000, E_total=-0.000992
+
+[  75000/ 200000] ( 37.5%) 231.4s elapsed, ETA: 385.6s
+  r_rms=1.8109, KE=0.000012, L_z=-0.001183
+  collisions=369322 total (4.92/tick)
+  PE=-0.001000, E_total=-0.000988
+
+[  76000/ 200000] ( 38.0%) 234.3s elapsed, ETA: 382.3s
+  r_rms=1.7622, KE=0.000008, L_z=-0.001216
+  collisions=374480 total (4.93/tick)
+  PE=-0.001000, E_total=-0.000992
+
+[  77000/ 200000] ( 38.5%) 237.3s elapsed, ETA: 379.1s
+  r_rms=1.7301, KE=0.000010, L_z=-0.000985
+  collisions=379366 total (4.93/tick)
+  PE=-0.001000, E_total=-0.000990
+
+[  78000/ 200000] ( 39.0%) 240.5s elapsed, ETA: 376.2s
+  r_rms=1.8411, KE=0.000015, L_z=-0.001743
+  collisions=384426 total (4.93/tick)
+  PE=-0.001000, E_total=-0.000985
+
+[  79000/ 200000] ( 39.5%) 243.5s elapsed, ETA: 373.0s
+  r_rms=2.0092, KE=0.000016, L_z=-0.002014
+  collisions=389206 total (4.93/tick)
+  PE=-0.001000, E_total=-0.000984
+
+[  80000/ 200000] ( 40.0%) 246.6s elapsed, ETA: 369.9s
+  r_rms=1.9339, KE=0.000016, L_z=-0.002194
+  collisions=394248 total (4.93/tick)
+  PE=-0.001000, E_total=-0.000984
+
+[  81000/ 200000] ( 40.5%) 249.8s elapsed, ETA: 366.9s
+  r_rms=2.0521, KE=0.000017, L_z=-0.002632
+  collisions=399018 total (4.93/tick)
+  PE=-0.001000, E_total=-0.000983
+
+[  82000/ 200000] ( 41.0%) 252.8s elapsed, ETA: 363.7s
+  r_rms=1.7702, KE=0.000019, L_z=-0.002493
+  collisions=403824 total (4.92/tick)
+  PE=-0.000998, E_total=-0.000978
+
+[  83000/ 200000] ( 41.5%) 255.8s elapsed, ETA: 360.6s
+  r_rms=1.9309, KE=0.000016, L_z=-0.002472
+  collisions=408542 total (4.92/tick)
+  PE=-0.000992, E_total=-0.000976
+
+[  84000/ 200000] ( 42.0%) 258.8s elapsed, ETA: 357.4s
+  r_rms=1.8971, KE=0.000019, L_z=-0.002447
+  collisions=413154 total (4.92/tick)
+  PE=-0.000998, E_total=-0.000978
+
+[  85000/ 200000] ( 42.5%) 261.8s elapsed, ETA: 354.2s
+  r_rms=1.8443, KE=0.000019, L_z=-0.002600
+  collisions=417888 total (4.92/tick)
+  PE=-0.001000, E_total=-0.000981
+
+[  86000/ 200000] ( 43.0%) 264.9s elapsed, ETA: 351.1s
+  r_rms=2.0123, KE=0.000021, L_z=-0.003082
+  collisions=422372 total (4.91/tick)
+  PE=-0.000995, E_total=-0.000975
+
+[  87000/ 200000] ( 43.5%) 268.0s elapsed, ETA: 348.2s
+  r_rms=1.9128, KE=0.000020, L_z=-0.002793
+  collisions=426588 total (4.90/tick)
+  PE=-0.001000, E_total=-0.000980
+
+[  88000/ 200000] ( 44.0%) 271.0s elapsed, ETA: 344.9s
+  r_rms=2.0182, KE=0.000015, L_z=-0.002049
+  collisions=431304 total (4.90/tick)
+  PE=-0.001000, E_total=-0.000985
+
+[  89000/ 200000] ( 44.5%) 274.0s elapsed, ETA: 341.7s
+  r_rms=1.8322, KE=0.000014, L_z=-0.001739
+  collisions=436016 total (4.90/tick)
+  PE=-0.001000, E_total=-0.000986
+
+[  90000/ 200000] ( 45.0%) 276.9s elapsed, ETA: 338.5s
+  r_rms=1.9678, KE=0.000021, L_z=-0.002496
+  collisions=440720 total (4.90/tick)
+  PE=-0.001000, E_total=-0.000979
+
+[  91000/ 200000] ( 45.5%) 279.9s elapsed, ETA: 335.3s
+  r_rms=1.9746, KE=0.000022, L_z=-0.002928
+  collisions=445182 total (4.89/tick)
+  PE=-0.001000, E_total=-0.000978
+
+[  92000/ 200000] ( 46.0%) 284.3s elapsed, ETA: 333.8s
+  r_rms=1.9309, KE=0.000020, L_z=-0.002420
+  collisions=449788 total (4.89/tick)
+  PE=-0.000998, E_total=-0.000978
+
+[  93000/ 200000] ( 46.5%) 287.6s elapsed, ETA: 330.8s
+  r_rms=1.8649, KE=0.000014, L_z=-0.001885
+  collisions=454800 total (4.89/tick)
+  PE=-0.001000, E_total=-0.000986
+
+[  94000/ 200000] ( 47.0%) 290.7s elapsed, ETA: 327.8s
+  r_rms=1.8972, KE=0.000014, L_z=-0.001961
+  collisions=459512 total (4.89/tick)
+  PE=-0.001000, E_total=-0.000986
+
+[  95000/ 200000] ( 47.5%) 293.7s elapsed, ETA: 324.6s
+  r_rms=1.8991, KE=0.000011, L_z=-0.001359
+  collisions=464506 total (4.89/tick)
+  PE=-0.001000, E_total=-0.000989
+
+[  96000/ 200000] ( 48.0%) 296.6s elapsed, ETA: 321.3s
+  r_rms=1.9351, KE=0.000013, L_z=-0.001382
+  collisions=469414 total (4.89/tick)
+  PE=-0.001000, E_total=-0.000987
+
+[  97000/ 200000] ( 48.5%) 299.6s elapsed, ETA: 318.1s
+  r_rms=1.8760, KE=0.000015, L_z=-0.001805
+  collisions=474456 total (4.89/tick)
+  PE=-0.001000, E_total=-0.000985
+
+[  98000/ 200000] ( 49.0%) 302.8s elapsed, ETA: 315.2s
+  r_rms=1.8784, KE=0.000014, L_z=-0.001837
+  collisions=479326 total (4.89/tick)
+  PE=-0.000998, E_total=-0.000983
+
+[  99000/ 200000] ( 49.5%) 306.1s elapsed, ETA: 312.2s
+  r_rms=1.9691, KE=0.000021, L_z=-0.002923
+  collisions=483950 total (4.89/tick)
+  PE=-0.001000, E_total=-0.000979
+
+[ 100000/ 200000] ( 50.0%) 309.2s elapsed, ETA: 309.2s
+  r_rms=2.0210, KE=0.000022, L_z=-0.002696
+  collisions=488352 total (4.88/tick)
+  PE=-0.001000, E_total=-0.000978
+
+[ 101000/ 200000] ( 50.5%) 312.3s elapsed, ETA: 306.1s
+  r_rms=1.9864, KE=0.000030, L_z=-0.003461
+  collisions=493118 total (4.88/tick)
+  PE=-0.001000, E_total=-0.000970
+
+[ 102000/ 200000] ( 51.0%) 315.4s elapsed, ETA: 303.1s
+  r_rms=2.0686, KE=0.000026, L_z=-0.003748
+  collisions=497488 total (4.88/tick)
+  PE=-0.001000, E_total=-0.000974
+
+[ 103000/ 200000] ( 51.5%) 318.6s elapsed, ETA: 300.1s
+  r_rms=2.0364, KE=0.000032, L_z=-0.003825
+  collisions=501946 total (4.87/tick)
+  PE=-0.000995, E_total=-0.000963
+
+[ 104000/ 200000] ( 52.0%) 321.8s elapsed, ETA: 297.1s
+  r_rms=2.0422, KE=0.000029, L_z=-0.003799
+  collisions=506474 total (4.87/tick)
+  PE=-0.000998, E_total=-0.000968
+
+[ 105000/ 200000] ( 52.5%) 324.9s elapsed, ETA: 294.0s
+  r_rms=1.9818, KE=0.000041, L_z=-0.004491
+  collisions=510974 total (4.87/tick)
+  PE=-0.000991, E_total=-0.000949
+
+[ 106000/ 200000] ( 53.0%) 328.0s elapsed, ETA: 290.9s
+  r_rms=1.9906, KE=0.000028, L_z=-0.003601
+  collisions=515198 total (4.86/tick)
+  PE=-0.000998, E_total=-0.000969
+
+[ 107000/ 200000] ( 53.5%) 331.1s elapsed, ETA: 287.8s
+  r_rms=1.8846, KE=0.000017, L_z=-0.002698
+  collisions=519678 total (4.86/tick)
+  PE=-0.001000, E_total=-0.000983
+
+[ 108000/ 200000] ( 54.0%) 334.2s elapsed, ETA: 284.7s
+  r_rms=1.9515, KE=0.000021, L_z=-0.002613
+  collisions=524200 total (4.85/tick)
+  PE=-0.001000, E_total=-0.000979
+
+[ 109000/ 200000] ( 54.5%) 337.4s elapsed, ETA: 281.7s
+  r_rms=1.8667, KE=0.000013, L_z=-0.002189
+  collisions=529044 total (4.85/tick)
+  PE=-0.000998, E_total=-0.000985
+
+[ 110000/ 200000] ( 55.0%) 340.6s elapsed, ETA: 278.7s
+  r_rms=1.8099, KE=0.000017, L_z=-0.002527
+  collisions=533728 total (4.85/tick)
+  PE=-0.001000, E_total=-0.000983
+
+[ 111000/ 200000] ( 55.5%) 343.9s elapsed, ETA: 275.7s
+  r_rms=1.9241, KE=0.000024, L_z=-0.003147
+  collisions=538302 total (4.85/tick)
+  PE=-0.000998, E_total=-0.000973
+
+[ 112000/ 200000] ( 56.0%) 347.2s elapsed, ETA: 272.8s
+  r_rms=1.9095, KE=0.000022, L_z=-0.002856
+  collisions=542628 total (4.84/tick)
+  PE=-0.001000, E_total=-0.000978
+
+[ 113000/ 200000] ( 56.5%) 350.5s elapsed, ETA: 269.8s
+  r_rms=1.9249, KE=0.000019, L_z=-0.002560
+  collisions=547546 total (4.85/tick)
+  PE=-0.001000, E_total=-0.000981
+
+[ 114000/ 200000] ( 57.0%) 353.7s elapsed, ETA: 266.9s
+  r_rms=1.9293, KE=0.000017, L_z=-0.002599
+  collisions=552046 total (4.84/tick)
+  PE=-0.001000, E_total=-0.000983
+
+[ 115000/ 200000] ( 57.5%) 357.0s elapsed, ETA: 263.9s
+  r_rms=1.9213, KE=0.000019, L_z=-0.002466
+  collisions=556778 total (4.84/tick)
+  PE=-0.001000, E_total=-0.000981
+
+[ 116000/ 200000] ( 58.0%) 360.3s elapsed, ETA: 260.9s
+  r_rms=1.8911, KE=0.000015, L_z=-0.002017
+  collisions=561746 total (4.84/tick)
+  PE=-0.001000, E_total=-0.000985
+
+[ 117000/ 200000] ( 58.5%) 363.5s elapsed, ETA: 257.9s
+  r_rms=1.8581, KE=0.000013, L_z=-0.001838
+  collisions=566620 total (4.84/tick)
+  PE=-0.001000, E_total=-0.000987
+
+[ 118000/ 200000] ( 59.0%) 366.9s elapsed, ETA: 254.9s
+  r_rms=1.9062, KE=0.000011, L_z=-0.001699
+  collisions=571550 total (4.84/tick)
+  PE=-0.001000, E_total=-0.000989
+
+[ 119000/ 200000] ( 59.5%) 370.2s elapsed, ETA: 252.0s
+  r_rms=1.8389, KE=0.000012, L_z=-0.001769
+  collisions=576570 total (4.85/tick)
+  PE=-0.000998, E_total=-0.000986
+
+[ 120000/ 200000] ( 60.0%) 373.4s elapsed, ETA: 248.9s
+  r_rms=1.8320, KE=0.000010, L_z=-0.001380
+  collisions=581518 total (4.85/tick)
+  PE=-0.001000, E_total=-0.000990
+
+[ 121000/ 200000] ( 60.5%) 376.6s elapsed, ETA: 245.9s
+  r_rms=1.8676, KE=0.000008, L_z=-0.001360
+  collisions=586366 total (4.85/tick)
+  PE=-0.001000, E_total=-0.000992
+
+[ 122000/ 200000] ( 61.0%) 379.7s elapsed, ETA: 242.8s
+  r_rms=1.7492, KE=0.000009, L_z=-0.000674
+  collisions=591488 total (4.85/tick)
+  PE=-0.000998, E_total=-0.000988
+
+[ 123000/ 200000] ( 61.5%) 383.2s elapsed, ETA: 239.9s
+  r_rms=1.9079, KE=0.000006, L_z=-0.000473
+  collisions=596602 total (4.85/tick)
+  PE=-0.001000, E_total=-0.000994
+
+[ 124000/ 200000] ( 62.0%) 386.4s elapsed, ETA: 236.8s
+  r_rms=1.8027, KE=0.000006, L_z=-0.000218
+  collisions=601944 total (4.85/tick)
+  PE=-0.001000, E_total=-0.000994
+
+[ 125000/ 200000] ( 62.5%) 389.5s elapsed, ETA: 233.7s
+  r_rms=1.7599, KE=0.000009, L_z=-0.000341
+  collisions=607004 total (4.86/tick)
+  PE=-0.001000, E_total=-0.000991
+
+[ 126000/ 200000] ( 63.0%) 392.7s elapsed, ETA: 230.6s
+  r_rms=1.8222, KE=0.000006, L_z=0.000009
+  collisions=612728 total (4.86/tick)
+  PE=-0.001000, E_total=-0.000994
+
+[ 127000/ 200000] ( 63.5%) 395.8s elapsed, ETA: 227.5s
+  r_rms=1.8565, KE=0.000007, L_z=0.000065
+  collisions=617790 total (4.86/tick)
+  PE=-0.001000, E_total=-0.000993
+
+[ 128000/ 200000] ( 64.0%) 398.9s elapsed, ETA: 224.4s
+  r_rms=1.7238, KE=0.000007, L_z=0.000405
+  collisions=622700 total (4.86/tick)
+  PE=-0.001000, E_total=-0.000993
+
+[ 129000/ 200000] ( 64.5%) 402.1s elapsed, ETA: 221.3s
+  r_rms=1.8458, KE=0.000007, L_z=0.000343
+  collisions=628110 total (4.87/tick)
+  PE=-0.001000, E_total=-0.000993
+
+[ 130000/ 200000] ( 65.0%) 405.4s elapsed, ETA: 218.3s
+  r_rms=1.8057, KE=0.000009, L_z=0.000886
+  collisions=633238 total (4.87/tick)
+  PE=-0.001000, E_total=-0.000991
+
+[ 131000/ 200000] ( 65.5%) 408.7s elapsed, ETA: 215.3s
+  r_rms=1.8561, KE=0.000013, L_z=0.001680

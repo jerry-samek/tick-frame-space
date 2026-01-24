@@ -1,0 +1,13 @@
+,0
+n_fragments,100.0
+num_ticks,200000.0
+proton_mass,100.0
+proton_energy,1000.0
+electron_total_mass,0.1
+electron_total_energy,50.0
+coupling_constant,0.001
+jitter_strength,0.001
+collision_radius,0.5
+restitution,0.8
+radial_bins,150.0
+energy_histogram_bins,75.0

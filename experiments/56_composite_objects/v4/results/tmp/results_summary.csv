@@ -1,0 +1,8 @@
+,0
+cloud_radius_initial,1.9888671874742279
+cloud_radius_final,19333.2622513921
+cloud_radius_mean,4151.2266644971005
+cloud_radius_std,5643.562790193492
+cloud_radius_drift_percent,971974.0717706985
+n_escaped,70
+success,False

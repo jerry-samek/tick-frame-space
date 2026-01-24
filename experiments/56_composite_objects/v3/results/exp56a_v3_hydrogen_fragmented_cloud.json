@@ -1,0 +1,830 @@
+{
+  "config": {
+    "n_fragments": 50,
+    "num_ticks": 10000,
+    "proton_mass": 100.0,
+    "proton_energy": 1000.0,
+    "electron_total_mass": 0.1,
+    "coupling_constant": 0.001,
+    "jitter_strength": 0.001,
+    "collision_radius": 0.5,
+    "restitution": 0.8
+  },
+  "results": {
+    "cloud_radius_initial": 2.13642235696018,
+    "cloud_radius_final": 2.0630769055651155,
+    "cloud_radius_drift_percent": 3.4330969789805335,
+    "n_escaped": 0,
+    "success": true
+  },
+  "snapshots": [
+    {
+      "tick": 1,
+      "cloud_radius_mean": 2.0905748072499906,
+      "cloud_radius_rms": 2.13642235696018,
+      "total_kinetic_energy": 0.0001146775780350128,
+      "angular_momentum": -0.001494094105769555,
+      "total_collisions": 58
+    },
+    {
+      "tick": 101,
+      "cloud_radius_mean": 2.017449573644478,
+      "cloud_radius_rms": 2.189027302350638,
+      "total_kinetic_energy": 4.02702401440339e-05,
+      "angular_momentum": -0.0021268782365817507,
+      "total_collisions": 630
+    },
+    {
+      "tick": 201,
+      "cloud_radius_mean": 1.8224129160590448,
+      "cloud_radius_rms": 1.9352158229282652,
+      "total_kinetic_energy": 3.230697513234109e-05,
+      "angular_momentum": -0.002572043959740733,
+      "total_collisions": 1192
+    },
+    {
+      "tick": 301,
+      "cloud_radius_mean": 1.8692097619148047,
+      "cloud_radius_rms": 2.004962523649527,
+      "total_kinetic_energy": 3.0095209737846647e-05,
+      "angular_momentum": -0.0028333273786988215,
+      "total_collisions": 1710
+    },
+    {
+      "tick": 401,
+      "cloud_radius_mean": 1.9192553935939392,
+      "cloud_radius_rms": 2.090734631609999,
+      "total_kinetic_energy": 2.787428888735159e-05,
+      "angular_momentum": -0.0027573541128608414,
+      "total_collisions": 2188
+    },
+    {
+      "tick": 501,
+      "cloud_radius_mean": 1.8982076366563134,
+      "cloud_radius_rms": 2.030211141438082,
+      "total_kinetic_energy": 2.447163302539083e-05,
+      "angular_momentum": -0.002539701298942925,
+      "total_collisions": 2740
+    },
+    {
+      "tick": 601,
+      "cloud_radius_mean": 1.7381896867954,
+      "cloud_radius_rms": 1.8846209000109801,
+      "total_kinetic_energy": 2.2656381285744352e-05,
+      "angular_momentum": -0.0022189118763111916,
+      "total_collisions": 3188
+    },
+    {
+      "tick": 701,
+      "cloud_radius_mean": 1.8521825395730043,
+      "cloud_radius_rms": 1.9809269675103203,
+      "total_kinetic_energy": 3.2624859945259504e-05,
+      "angular_momentum": -0.0021616057013304274,
+      "total_collisions": 3692
+    },
+    {
+      "tick": 801,
+      "cloud_radius_mean": 1.9855289409557295,
+      "cloud_radius_rms": 2.091497281100699,
+      "total_kinetic_energy": 2.1788157655955055e-05,
+      "angular_momentum": -0.0024455069574544526,
+      "total_collisions": 4198
+    },
+    {
+      "tick": 901,
+      "cloud_radius_mean": 1.6871481998932814,
+      "cloud_radius_rms": 1.8220191189631876,
+      "total_kinetic_energy": 2.0445667734648456e-05,
+      "angular_momentum": -0.0019141735425719031,
+      "total_collisions": 4790
+    },
+    {
+      "tick": 1001,
+      "cloud_radius_mean": 1.6774552288970745,
+      "cloud_radius_rms": 1.8175648662014174,
+      "total_kinetic_energy": 1.570218323146141e-05,
+      "angular_momentum": -0.0013303373505293063,
+      "total_collisions": 5374
+    },
+    {
+      "tick": 1101,
+      "cloud_radius_mean": 1.8773995456311607,
+      "cloud_radius_rms": 2.041321196501879,
+      "total_kinetic_energy": 1.8521288926640985e-05,
+      "angular_momentum": -0.0011783256778973917,
+      "total_collisions": 5848
+    },
+    {
+      "tick": 1201,
+      "cloud_radius_mean": 1.7289121352553811,
+      "cloud_radius_rms": 1.8488060892592297,
+      "total_kinetic_energy": 1.3787896176516502e-05,
+      "angular_momentum": -0.0006885339086476102,
+      "total_collisions": 6500
+    },
+    {
+      "tick": 1301,
+      "cloud_radius_mean": 1.7062347302067478,
+      "cloud_radius_rms": 1.8523353482756744,
+      "total_kinetic_energy": 1.747384112591287e-05,
+      "angular_momentum": -0.0009168534774141155,
+      "total_collisions": 7102
+    },
+    {
+      "tick": 1401,
+      "cloud_radius_mean": 2.0367533503141115,
+      "cloud_radius_rms": 2.1863346407649487,
+      "total_kinetic_energy": 1.856104112006843e-05,
+      "angular_momentum": -0.0005347311441559956,
+      "total_collisions": 7706
+    },
+    {
+      "tick": 1501,
+      "cloud_radius_mean": 1.7282044955552742,
+      "cloud_radius_rms": 1.870544857002046,
+      "total_kinetic_energy": 1.79646637366008e-05,
+      "angular_momentum": -0.0008684492065804093,
+      "total_collisions": 8216
+    },
+    {
+      "tick": 1601,
+      "cloud_radius_mean": 1.6938432335234086,
+      "cloud_radius_rms": 1.8108215222449104,
+      "total_kinetic_energy": 1.731909945262064e-05,
+      "angular_momentum": -0.0015035176752752973,
+      "total_collisions": 8862
+    },
+    {
+      "tick": 1701,
+      "cloud_radius_mean": 1.9044729359198047,
+      "cloud_radius_rms": 2.0793731696871647,
+      "total_kinetic_energy": 1.740271618456213e-05,
+      "angular_momentum": -0.001540733315723673,
+      "total_collisions": 9442
+    },
+    {
+      "tick": 1801,
+      "cloud_radius_mean": 1.802632422921592,
+      "cloud_radius_rms": 1.9486510361127012,
+      "total_kinetic_energy": 1.5158551609507987e-05,
+      "angular_momentum": -0.0015458054239513713,
+      "total_collisions": 9896
+    },
+    {
+      "tick": 1901,
+      "cloud_radius_mean": 1.6787587055208137,
+      "cloud_radius_rms": 1.8016098318467275,
+      "total_kinetic_energy": 2.109026674601199e-05,
+      "angular_momentum": -0.001978627566997317,
+      "total_collisions": 10418
+    },
+    {
+      "tick": 2001,
+      "cloud_radius_mean": 1.7662925819443196,
+      "cloud_radius_rms": 1.9094831184522834,
+      "total_kinetic_energy": 2.424507753445531e-05,
+      "angular_momentum": -0.002137451974808141,
+      "total_collisions": 11006
+    },
+    {
+      "tick": 2101,
+      "cloud_radius_mean": 1.948715505597673,
+      "cloud_radius_rms": 2.07881378848729,
+      "total_kinetic_energy": 2.3072667670613196e-05,
+      "angular_momentum": -0.0022037557251830893,
+      "total_collisions": 11574
+    },
+    {
+      "tick": 2201,
+      "cloud_radius_mean": 1.9243250252108308,
+      "cloud_radius_rms": 2.058565503376862,
+      "total_kinetic_energy": 2.2820256152850082e-05,
+      "angular_momentum": -0.0018736853096024846,
+      "total_collisions": 12156
+    },
+    {
+      "tick": 2301,
+      "cloud_radius_mean": 1.8290056606809564,
+      "cloud_radius_rms": 1.9576828305686071,
+      "total_kinetic_energy": 1.6183876568978733e-05,
+      "angular_momentum": -0.0013396936194194512,
+      "total_collisions": 12656
+    },
+    {
+      "tick": 2401,
+      "cloud_radius_mean": 1.8664357124086572,
+      "cloud_radius_rms": 2.013823680339708,
+      "total_kinetic_energy": 1.884926337045758e-05,
+      "angular_momentum": -0.0013546467179066822,
+      "total_collisions": 13166
+    },
+    {
+      "tick": 2501,
+      "cloud_radius_mean": 1.7853962116458235,
+      "cloud_radius_rms": 1.947186258180222,
+      "total_kinetic_energy": 1.7967868094880115e-05,
+      "angular_momentum": -0.0016081091475080103,
+      "total_collisions": 13686
+    },
+    {
+      "tick": 2601,
+      "cloud_radius_mean": 1.7050725512806522,
+      "cloud_radius_rms": 1.845398445729476,
+      "total_kinetic_energy": 1.853089691201002e-05,
+      "angular_momentum": -0.002025533389313672,
+      "total_collisions": 14298
+    },
+    {
+      "tick": 2701,
+      "cloud_radius_mean": 1.795961994702095,
+      "cloud_radius_rms": 1.9339709774019007,
+      "total_kinetic_energy": 1.3354715860372006e-05,
+      "angular_momentum": -0.001826119830682124,
+      "total_collisions": 14960
+    },
+    {
+      "tick": 2801,
+      "cloud_radius_mean": 1.8749117135537097,
+      "cloud_radius_rms": 2.0249428725072987,
+      "total_kinetic_energy": 1.4425965108515252e-05,
+      "angular_momentum": -0.0020292924315256267,
+      "total_collisions": 15498
+    },
+    {
+      "tick": 2901,
+      "cloud_radius_mean": 1.6558764717475767,
+      "cloud_radius_rms": 1.774108156825178,
+      "total_kinetic_energy": 1.9236715205956603e-05,
+      "angular_momentum": -0.0020748111777254925,
+      "total_collisions": 15920
+    },
+    {
+      "tick": 3001,
+      "cloud_radius_mean": 1.758331019017335,
+      "cloud_radius_rms": 1.897619053526017,
+      "total_kinetic_energy": 2.164756211480258e-05,
+      "angular_momentum": -0.002131688796460611,
+      "total_collisions": 16428
+    },
+    {
+      "tick": 3101,
+      "cloud_radius_mean": 1.9889165229781838,
+      "cloud_radius_rms": 2.1389972279428644,
+      "total_kinetic_energy": 2.1755027936273924e-05,
+      "angular_momentum": -0.0019421377227686848,
+      "total_collisions": 16884
+    },
+    {
+      "tick": 3201,
+      "cloud_radius_mean": 1.8450492954286677,
+      "cloud_radius_rms": 1.9980898219583625,
+      "total_kinetic_energy": 1.9945387424955008e-05,
+      "angular_momentum": -0.0019046762000868487,
+      "total_collisions": 17402
+    },
+    {
+      "tick": 3301,
+      "cloud_radius_mean": 1.7221327368689356,
+      "cloud_radius_rms": 1.8494673053679715,
+      "total_kinetic_energy": 2.0068573875173332e-05,
+      "angular_momentum": -0.002131448296093623,
+      "total_collisions": 17894
+    },
+    {
+      "tick": 3401,
+      "cloud_radius_mean": 1.8933271972778742,
+      "cloud_radius_rms": 2.03124031632875,
+      "total_kinetic_energy": 1.931849657915933e-05,
+      "angular_momentum": -0.0021183527549108157,
+      "total_collisions": 18394
+    },
+    {
+      "tick": 3501,
+      "cloud_radius_mean": 1.9344666845104361,
+      "cloud_radius_rms": 2.074707778895497,
+      "total_kinetic_energy": 1.7060296634904017e-05,
+      "angular_momentum": -0.0020140615018757447,
+      "total_collisions": 18944
+    },
+    {
+      "tick": 3601,
+      "cloud_radius_mean": 1.8423835027138054,
+      "cloud_radius_rms": 1.990932198678191,
+      "total_kinetic_energy": 1.9423402035815924e-05,
+      "angular_momentum": -0.001895783977552509,
+      "total_collisions": 19396
+    },
+    {
+      "tick": 3701,
+      "cloud_radius_mean": 1.7812871657382434,
+      "cloud_radius_rms": 1.9071960082102897,
+      "total_kinetic_energy": 1.3575374424604732e-05,
+      "angular_momentum": -0.0011471981016734757,
+      "total_collisions": 19948
+    },
+    {
+      "tick": 3801,
+      "cloud_radius_mean": 1.8094976137510104,
+      "cloud_radius_rms": 1.9344145414396101,
+      "total_kinetic_energy": 2.0686551189731435e-05,
+      "angular_momentum": -0.0012425510719748525,
+      "total_collisions": 20524
+    },
+    {
+      "tick": 3901,
+      "cloud_radius_mean": 1.8727228106005962,
+      "cloud_radius_rms": 2.0199701784644635,
+      "total_kinetic_energy": 1.6194268593663466e-05,
+      "angular_momentum": -0.0013708040630386773,
+      "total_collisions": 21046
+    },
+    {
+      "tick": 4001,
+      "cloud_radius_mean": 1.8551220013751744,
+      "cloud_radius_rms": 1.9920795027398002,
+      "total_kinetic_energy": 1.957562201522422e-05,
+      "angular_momentum": -0.0015645942113413156,
+      "total_collisions": 21604
+    },
+    {
+      "tick": 4101,
+      "cloud_radius_mean": 1.7312476221243074,
+      "cloud_radius_rms": 1.868504280906086,
+      "total_kinetic_energy": 1.958111035536296e-05,
+      "angular_momentum": -0.0017360039749773324,
+      "total_collisions": 22256
+    },
+    {
+      "tick": 4201,
+      "cloud_radius_mean": 1.8606881210712833,
+      "cloud_radius_rms": 2.0006861480125027,
+      "total_kinetic_energy": 2.002169150239654e-05,
+      "angular_momentum": -0.002116399206720735,
+      "total_collisions": 22766
+    },
+    {
+      "tick": 4301,
+      "cloud_radius_mean": 1.7342015152710661,
+      "cloud_radius_rms": 1.8799589316227785,
+      "total_kinetic_energy": 1.7190319710844184e-05,
+      "angular_momentum": -0.0019110853883473084,
+      "total_collisions": 23262
+    },
+    {
+      "tick": 4401,
+      "cloud_radius_mean": 1.8084392116443866,
+      "cloud_radius_rms": 1.9557262914117932,
+      "total_kinetic_energy": 1.8379195230598738e-05,
+      "angular_momentum": -0.0018200885164703882,
+      "total_collisions": 23690
+    },
+    {
+      "tick": 4501,
+      "cloud_radius_mean": 1.7788397108019474,
+      "cloud_radius_rms": 1.933049441517488,
+      "total_kinetic_energy": 2.0543372286816622e-05,
+      "angular_momentum": -0.0017732893558631163,
+      "total_collisions": 24204
+    },
+    {
+      "tick": 4601,
+      "cloud_radius_mean": 1.8317000471624396,
+      "cloud_radius_rms": 1.9838011911835887,
+      "total_kinetic_energy": 1.9577927679974294e-05,
+      "angular_momentum": -0.0019525273102879782,
+      "total_collisions": 24706
+    },
+    {
+      "tick": 4701,
+      "cloud_radius_mean": 1.8152541868126206,
+      "cloud_radius_rms": 1.959690865486453,
+      "total_kinetic_energy": 2.1390540533926423e-05,
+      "angular_momentum": -0.0021288599354432067,
+      "total_collisions": 25182
+    },
+    {
+      "tick": 4801,
+      "cloud_radius_mean": 1.7814560256399228,
+      "cloud_radius_rms": 1.9085016162636064,
+      "total_kinetic_energy": 2.0568485093068924e-05,
+      "angular_momentum": -0.0015608441831158637,
+      "total_collisions": 25662
+    },
+    {
+      "tick": 4901,
+      "cloud_radius_mean": 1.8324930969643212,
+      "cloud_radius_rms": 1.9555346530351856,
+      "total_kinetic_energy": 1.562720159920555e-05,
+      "angular_momentum": -0.0012029558856169883,
+      "total_collisions": 26146
+    },
+    {
+      "tick": 5001,
+      "cloud_radius_mean": 1.781199435478687,
+      "cloud_radius_rms": 1.9157019874292895,
+      "total_kinetic_energy": 1.511375744055909e-05,
+      "angular_momentum": -0.000993909622970401,
+      "total_collisions": 26656
+    },
+    {
+      "tick": 5101,
+      "cloud_radius_mean": 1.8144437583171404,
+      "cloud_radius_rms": 1.9515537600219446,
+      "total_kinetic_energy": 1.501035893549508e-05,
+      "angular_momentum": -0.0010428917285464324,
+      "total_collisions": 27172
+    },
+    {
+      "tick": 5201,
+      "cloud_radius_mean": 1.7080111958844768,
+      "cloud_radius_rms": 1.8444521938341119,
+      "total_kinetic_energy": 1.6988933838083156e-05,
+      "angular_momentum": -0.0009830721194758016,
+      "total_collisions": 27744
+    },
+    {
+      "tick": 5301,
+      "cloud_radius_mean": 1.6974715099061646,
+      "cloud_radius_rms": 1.8376156991294263,
+      "total_kinetic_energy": 1.44373485592013e-05,
+      "angular_momentum": -0.0007008091344964621,
+      "total_collisions": 28390
+    },
+    {
+      "tick": 5401,
+      "cloud_radius_mean": 1.7923793215718349,
+      "cloud_radius_rms": 1.937988230526292,
+      "total_kinetic_energy": 1.4653533077851149e-05,
+      "angular_momentum": -0.0009231398065003812,
+      "total_collisions": 29066
+    },
+    {
+      "tick": 5501,
+      "cloud_radius_mean": 1.8299592446521613,
+      "cloud_radius_rms": 1.9847464733494118,
+      "total_kinetic_energy": 1.4433494133972743e-05,
+      "angular_momentum": -0.0009944837535763688,
+      "total_collisions": 29802
+    },
+    {
+      "tick": 5601,
+      "cloud_radius_mean": 1.8394491021686434,
+      "cloud_radius_rms": 1.9802354588793099,
+      "total_kinetic_energy": 9.927347684116466e-06,
+      "angular_momentum": -0.0010823828495294477,
+      "total_collisions": 30368
+    },
+    {
+      "tick": 5701,
+      "cloud_radius_mean": 1.7725477750406708,
+      "cloud_radius_rms": 1.8976842060683272,
+      "total_kinetic_energy": 1.7649717484409006e-05,
+      "angular_momentum": -0.0009397906078789559,
+      "total_collisions": 30844
+    },
+    {
+      "tick": 5801,
+      "cloud_radius_mean": 1.6940959799740483,
+      "cloud_radius_rms": 1.8325346304500751,
+      "total_kinetic_energy": 1.1965775542287372e-05,
+      "angular_momentum": -0.0006892453218138002,
+      "total_collisions": 31440
+    },
+    {
+      "tick": 5901,
+      "cloud_radius_mean": 1.7728145183127284,
+      "cloud_radius_rms": 1.9313581163264142,
+      "total_kinetic_energy": 1.6488653000754163e-05,
+      "angular_momentum": -0.0012356499284402152,
+      "total_collisions": 32024
+    },
+    {
+      "tick": 6001,
+      "cloud_radius_mean": 1.8018515362398873,
+      "cloud_radius_rms": 1.9397238890315247,
+      "total_kinetic_energy": 2.0432858200712152e-05,
+      "angular_momentum": -0.0017334530763345377,
+      "total_collisions": 32508
+    },
+    {
+      "tick": 6101,
+      "cloud_radius_mean": 1.778712955851329,
+      "cloud_radius_rms": 1.903932579306092,
+      "total_kinetic_energy": 2.2614381629716453e-05,
+      "angular_momentum": -0.001882596636797641,
+      "total_collisions": 32916
+    },
+    {
+      "tick": 6201,
+      "cloud_radius_mean": 1.846797833687892,
+      "cloud_radius_rms": 1.9881303212532193,
+      "total_kinetic_energy": 1.7058806022073116e-05,
+      "angular_momentum": -0.0018606631188993754,
+      "total_collisions": 33438
+    },
+    {
+      "tick": 6301,
+      "cloud_radius_mean": 1.8375509928986784,
+      "cloud_radius_rms": 1.977257249520009,
+      "total_kinetic_energy": 1.87473778421764e-05,
+      "angular_momentum": -0.0021468112898749567,
+      "total_collisions": 33830
+    },
+    {
+      "tick": 6401,
+      "cloud_radius_mean": 1.7544356885870962,
+      "cloud_radius_rms": 1.8785094862987892,
+      "total_kinetic_energy": 2.0169031706048014e-05,
+      "angular_momentum": -0.0024934136871396467,
+      "total_collisions": 34352
+    },
+    {
+      "tick": 6501,
+      "cloud_radius_mean": 1.832042162750791,
+      "cloud_radius_rms": 1.952938575225015,
+      "total_kinetic_energy": 1.6362077830130165e-05,
+      "angular_momentum": -0.002192208736155673,
+      "total_collisions": 34912
+    },
+    {
+      "tick": 6601,
+      "cloud_radius_mean": 1.7494005505178065,
+      "cloud_radius_rms": 1.8842145903738114,
+      "total_kinetic_energy": 2.134894566485598e-05,
+      "angular_momentum": -0.002132801565324879,
+      "total_collisions": 35508
+    },
+    {
+      "tick": 6701,
+      "cloud_radius_mean": 1.8686314873742296,
+      "cloud_radius_rms": 1.9910212278761372,
+      "total_kinetic_energy": 2.342497047078416e-05,
+      "angular_momentum": -0.0024064114622083764,
+      "total_collisions": 36086
+    },
+    {
+      "tick": 6801,
+      "cloud_radius_mean": 1.8685408496887104,
+      "cloud_radius_rms": 1.9940434565664162,
+      "total_kinetic_energy": 2.349364852304584e-05,
+      "angular_momentum": -0.0026798297875298156,
+      "total_collisions": 36544
+    },
+    {
+      "tick": 6901,
+      "cloud_radius_mean": 1.7939696603994824,
+      "cloud_radius_rms": 1.918583576485129,
+      "total_kinetic_energy": 2.7239082580365958e-05,
+      "angular_momentum": -0.0026738158082069154,
+      "total_collisions": 37008
+    },
+    {
+      "tick": 7001,
+      "cloud_radius_mean": 1.938730455954723,
+      "cloud_radius_rms": 2.044584232744193,
+      "total_kinetic_energy": 2.589526891589555e-05,
+      "angular_momentum": -0.002407075675451286,
+      "total_collisions": 37500
+    },
+    {
+      "tick": 7101,
+      "cloud_radius_mean": 1.8963173942275324,
+      "cloud_radius_rms": 2.061705389305976,
+      "total_kinetic_energy": 1.9434599658577277e-05,
+      "angular_momentum": -0.002579207085985331,
+      "total_collisions": 38040
+    },
+    {
+      "tick": 7201,
+      "cloud_radius_mean": 1.830981578014925,
+      "cloud_radius_rms": 1.9748056930000473,
+      "total_kinetic_energy": 2.6044933247595522e-05,
+      "angular_momentum": -0.0022908771133951637,
+      "total_collisions": 38554
+    },
+    {
+      "tick": 7301,
+      "cloud_radius_mean": 1.7686008803705633,
+      "cloud_radius_rms": 1.9117925472942678,
+      "total_kinetic_energy": 1.5174280055955888e-05,
+      "angular_momentum": -0.0018063551516535137,
+      "total_collisions": 39086
+    },
+    {
+      "tick": 7401,
+      "cloud_radius_mean": 1.675233299811128,
+      "cloud_radius_rms": 1.807977211810356,
+      "total_kinetic_energy": 2.0253878464035297e-05,
+      "angular_momentum": -0.0014127235164770344,
+      "total_collisions": 39664
+    },
+    {
+      "tick": 7501,
+      "cloud_radius_mean": 1.8733264761540638,
+      "cloud_radius_rms": 2.013176930849328,
+      "total_kinetic_energy": 1.6959004398334552e-05,
+      "angular_momentum": -0.0015355352218007449,
+      "total_collisions": 40148
+    },
+    {
+      "tick": 7601,
+      "cloud_radius_mean": 1.8824977005118992,
+      "cloud_radius_rms": 2.024336942511465,
+      "total_kinetic_energy": 2.005115770549593e-05,
+      "angular_momentum": -0.001590333749623923,
+      "total_collisions": 40608
+    },
+    {
+      "tick": 7701,
+      "cloud_radius_mean": 1.8926307246970528,
+      "cloud_radius_rms": 2.0215479047575973,
+      "total_kinetic_energy": 1.686820562183737e-05,
+      "angular_momentum": -0.0016828577279408567,
+      "total_collisions": 41090
+    },
+    {
+      "tick": 7801,
+      "cloud_radius_mean": 1.8333484672040847,
+      "cloud_radius_rms": 1.9748448610457727,
+      "total_kinetic_energy": 1.9665726085905822e-05,
+      "angular_momentum": -0.001843715107814593,
+      "total_collisions": 41532
+    },
+    {
+      "tick": 7901,
+      "cloud_radius_mean": 1.7599443315770715,
+      "cloud_radius_rms": 1.894670228869315,
+      "total_kinetic_energy": 1.489184134323276e-05,
+      "angular_momentum": -0.0017132146001694912,
+      "total_collisions": 42078
+    },
+    {
+      "tick": 8001,
+      "cloud_radius_mean": 1.7747827307651196,
+      "cloud_radius_rms": 1.915580533488477,
+      "total_kinetic_energy": 2.1329414469190663e-05,
+      "angular_momentum": -0.001770946173755655,
+      "total_collisions": 42598
+    },
+    {
+      "tick": 8101,
+      "cloud_radius_mean": 1.8234429937811538,
+      "cloud_radius_rms": 1.9705430779001458,
+      "total_kinetic_energy": 2.1577575658252156e-05,
+      "angular_momentum": -0.002236511491464215,
+      "total_collisions": 43116
+    },
+    {
+      "tick": 8201,
+      "cloud_radius_mean": 1.8382326485555651,
+      "cloud_radius_rms": 1.9784547897042468,
+      "total_kinetic_energy": 2.0769239444811723e-05,
+      "angular_momentum": -0.0022032179391857235,
+      "total_collisions": 43548
+    },
+    {
+      "tick": 8301,
+      "cloud_radius_mean": 1.7335970557123064,
+      "cloud_radius_rms": 1.8611299198526159,
+      "total_kinetic_energy": 2.1113149425194053e-05,
+      "angular_momentum": -0.0020935625143178693,
+      "total_collisions": 43990
+    },
+    {
+      "tick": 8401,
+      "cloud_radius_mean": 1.8921463256126732,
+      "cloud_radius_rms": 2.0196416047631023,
+      "total_kinetic_energy": 1.8153318382535624e-05,
+      "angular_momentum": -0.002104149909585582,
+      "total_collisions": 44452
+    },
+    {
+      "tick": 8501,
+      "cloud_radius_mean": 1.8228274644827476,
+      "cloud_radius_rms": 1.970897353481744,
+      "total_kinetic_energy": 2.1596581116714053e-05,
+      "angular_momentum": -0.001742559693576289,
+      "total_collisions": 44948
+    },
+    {
+      "tick": 8601,
+      "cloud_radius_mean": 1.903834570092724,
+      "cloud_radius_rms": 2.0634598057465143,
+      "total_kinetic_energy": 1.7350945870761044e-05,
+      "angular_momentum": -0.002248288639275492,
+      "total_collisions": 45460
+    },
+    {
+      "tick": 8701,
+      "cloud_radius_mean": 1.8438612174835969,
+      "cloud_radius_rms": 1.9669449546393096,
+      "total_kinetic_energy": 2.127409764621888e-05,
+      "angular_momentum": -0.002244069937934381,
+      "total_collisions": 45922
+    },
+    {
+      "tick": 8801,
+      "cloud_radius_mean": 1.83429314725329,
+      "cloud_radius_rms": 1.960369260909564,
+      "total_kinetic_energy": 3.052968916102469e-05,
+      "angular_momentum": -0.002864976500689978,
+      "total_collisions": 46370
+    },
+    {
+      "tick": 8901,
+      "cloud_radius_mean": 1.9762798753653663,
+      "cloud_radius_rms": 2.1208439185141033,
+      "total_kinetic_energy": 3.0355625175488103e-05,
+      "angular_momentum": -0.0028836584130136488,
+      "total_collisions": 46818
+    },
+    {
+      "tick": 9001,
+      "cloud_radius_mean": 1.8133057955925589,
+      "cloud_radius_rms": 1.952356660695207,
+      "total_kinetic_energy": 2.703712081650135e-05,
+      "angular_momentum": -0.0030622652729357215,
+      "total_collisions": 47298
+    },
+    {
+      "tick": 9101,
+      "cloud_radius_mean": 1.8068867275771894,
+      "cloud_radius_rms": 1.9271262356527172,
+      "total_kinetic_energy": 2.7515675976546924e-05,
+      "angular_momentum": -0.0030579921761319296,
+      "total_collisions": 47746
+    },
+    {
+      "tick": 9201,
+      "cloud_radius_mean": 1.880611480235752,
+      "cloud_radius_rms": 2.0188942978290623,
+      "total_kinetic_energy": 2.8253731499177348e-05,
+      "angular_momentum": -0.0028311954799230916,
+      "total_collisions": 48208
+    },
+    {
+      "tick": 9301,
+      "cloud_radius_mean": 1.8638923152034084,
+      "cloud_radius_rms": 1.9873651151676197,
+      "total_kinetic_energy": 2.1482574944382975e-05,
+      "angular_momentum": -0.002711242642179986,
+      "total_collisions": 48672
+    },
+    {
+      "tick": 9401,
+      "cloud_radius_mean": 1.7829852743259318,
+      "cloud_radius_rms": 1.900282218560109,
+      "total_kinetic_energy": 2.2864848720157633e-05,
+      "angular_momentum": -0.002650363120346345,
+      "total_collisions": 49082
+    },
+    {
+      "tick": 9501,
+      "cloud_radius_mean": 1.7015405951805898,
+      "cloud_radius_rms": 1.8541351805280222,
+      "total_kinetic_energy": 2.1466224389457252e-05,
+      "angular_momentum": -0.002495844380008177,
+      "total_collisions": 49700
+    },
+    {
+      "tick": 9601,
+      "cloud_radius_mean": 1.9275983216947175,
+      "cloud_radius_rms": 2.0593531592262337,
+      "total_kinetic_energy": 2.350019242784605e-05,
+      "angular_momentum": -0.0026106264778570556,
+      "total_collisions": 50214
+    },
+    {
+      "tick": 9701,
+      "cloud_radius_mean": 1.831175252922419,
+      "cloud_radius_rms": 1.9750275856818618,
+      "total_kinetic_energy": 2.2931034292695217e-05,
+      "angular_momentum": -0.002484071082614824,
+      "total_collisions": 50684
+    },
+    {
+      "tick": 9801,
+      "cloud_radius_mean": 1.8060439462409343,
+      "cloud_radius_rms": 1.9427716949320906,
+      "total_kinetic_energy": 2.5204409637017393e-05,
+      "angular_momentum": -0.0029670678423759974,
+      "total_collisions": 51212
+    },
+    {
+      "tick": 9901,
+      "cloud_radius_mean": 1.9648435274731961,
+      "cloud_radius_rms": 2.104875381663884,
+      "total_kinetic_energy": 2.849474616182543e-05,
+      "angular_momentum": -0.003031747793883374,
+      "total_collisions": 51722
+    },
+    {
+      "tick": 10000,
+      "cloud_radius_mean": 1.938513439689604,
+      "cloud_radius_rms": 2.0630769055651155,
+      "total_kinetic_energy": 3.0989129094399854e-05,
+      "angular_momentum": -0.002757629572502708,
+      "total_collisions": 52162
+    }
+  ]
+}

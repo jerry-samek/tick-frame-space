@@ -1,0 +1,2440 @@
+{
+  "config": {
+    "num_ticks": 10000,
+    "coupling_constant": 0.05,
+    "field_update_interval": 5,
+    "orbital_radius_initial": 2.0
+  },
+  "results": {
+    "orbital_drift_percent": 106899.46175691989,
+    "binding_energy_final": -2.4956217648896435,
+    "electron_distance_final": 2050.3523025918225,
+    "success": false
+  },
+  "snapshots": [
+    {
+      "tick": 1,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        51.91557430973144,
+        50.05
+      ],
+      "electron_relative_position": [
+        1.9155743097314408,
+        0.05
+      ],
+      "electron_velocity": [
+        -0.0844256902685592,
+        0.05
+      ],
+      "electron_speed": 0.09812082947734743,
+      "electron_distance": 1.9162267444389471,
+      "binding_energy": -0.5570905925053752,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 4.640420741490956
+    },
+    {
+      "tick": 101,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        50.61738606336634,
+        51.65266285312335
+      ],
+      "electron_relative_position": [
+        0.6173860633663423,
+        1.6526628531233494
+      ],
+      "electron_velocity": [
+        0.010441582272812902,
+        0.1899239748153046
+      ],
+      "electron_speed": 0.1902107853146198,
+      "electron_distance": 1.7642165562460859,
+      "binding_energy": -1.7382561649645327,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 7.064912635073932
+    },
+    {
+      "tick": 201,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        50.63508306185229,
+        49.410499725289455
+      ],
+      "electron_relative_position": [
+        0.6350830618522902,
+        -0.5895002747105458
+      ],
+      "electron_velocity": [
+        -0.3286579904632776,
+        0.4625284365279423
+      ],
+      "electron_speed": 0.5674051720704902,
+      "electron_distance": 0.8665108593292348,
+      "binding_energy": -2.1271090171865676,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 7.386150621100179
+    },
+    {
+      "tick": 301,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        54.86529874874669,
+        49.16681712094734
+      ],
+      "electron_relative_position": [
+        4.8652987487466905,
+        -0.8331828790526561
+      ],
+      "electron_velocity": [
+        0.14882367342175068,
+        -0.004932345973391273
+      ],
+      "electron_speed": 0.14890538542156603,
+      "electron_distance": 4.936124555205489,
+      "binding_energy": -2.2844648587938963,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 2.432867127712978
+    },
+    {
+      "tick": 401,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        50.03095879179994,
+        49.673694999108264
+      ],
+      "electron_relative_position": [
+        0.030958791799938185,
+        -0.3263050008917354
+      ],
+      "electron_velocity": [
+        0.2798092653304418,
+        0.28091656428439893
+      ],
+      "electron_speed": 0.3964938096037723,
+      "electron_distance": 0.3277703470368657,
+      "binding_energy": -2.3611039133771223,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 7.535874576374684
+    },
+    {
+      "tick": 501,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        52.53223509452451,
+        45.69258350762937
+      ],
+      "electron_relative_position": [
+        2.532235094524512,
+        -4.307416492370627
+      ],
+      "electron_velocity": [
+        0.03986561684064445,
+        -0.028321941992272472
+      ],
+      "electron_speed": 0.048901940700740304,
+      "electron_distance": 4.996603987979039,
+      "binding_energy": -2.403482590745374,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 2.0656549725884843
+    },
+    {
+      "tick": 601,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        54.948412258546455,
+        46.53214919781944
+      ],
+      "electron_relative_position": [
+        4.948412258546453,
+        -3.4678508021805596
+      ],
+      "electron_velocity": [
+        0.1731640412387856,
+        -0.10114498008008914
+      ],
+      "electron_speed": 0.20053950277576105,
+      "electron_distance": 6.042580000853705,
+      "binding_energy": -2.4290435462989866,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 2.0160267990992757
+    },
+    {
+      "tick": 701,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        45.30184903615324,
+        51.54064222119661
+      ],
+      "electron_relative_position": [
+        -4.69815096384676,
+        1.5406422211966104
+      ],
+      "electron_velocity": [
+        0.12632783807409156,
+        -0.06271105448007999
+      ],
+      "electron_speed": 0.14103687115955693,
+      "electron_distance": 4.944309955173509,
+      "binding_energy": -2.445487816282262,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 2.2239141567789202
+    },
+    {
+      "tick": 801,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        75.91933200355888,
+        47.068619180922035
+      ],
+      "electron_relative_position": [
+        25.91933200355887,
+        -2.931380819077966
+      ],
+      "electron_velocity": [
+        0.23089695579682537,
+        -0.022255469675186944
+      ],
+      "electron_speed": 0.23196704534632565,
+      "electron_distance": 26.084569481154357,
+      "binding_energy": -2.45657253330004,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.04351544072508
+    },
+    {
+      "tick": 901,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        98.58663257537168,
+        44.88958059929183
+      ],
+      "electron_relative_position": [
+        48.58663257537169,
+        -5.110419400708171
+      ],
+      "electron_velocity": [
+        0.223295520232471,
+        -0.021428399201614736
+      ],
+      "electron_speed": 0.2243213446113268,
+      "electron_distance": 48.85465434802813,
+      "binding_energy": -2.4643882685512803,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0372819098088815
+    },
+    {
+      "tick": 1001,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        121.00418808042224,
+        42.73752937368552
+      ],
+      "electron_relative_position": [
+        71.00418808042224,
+        -7.262470626314485
+      ],
+      "electron_velocity": [
+        0.22434073629487047,
+        -0.021537715576652305
+      ],
+      "electron_speed": 0.22537222356267728,
+      "electron_distance": 71.37463278054786,
+      "binding_energy": -2.470182209154004,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0364671471708988
+    },
+    {
+      "tick": 1101,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        143.4377534648293,
+        40.583809337454035
+      ],
+      "electron_relative_position": [
+        93.4377534648293,
+        -9.416190662545963
+      ],
+      "electron_velocity": [
+        0.2243258383601451,
+        -0.021536207688170002
+      ],
+      "electron_speed": 0.22535724971158558,
+      "electron_distance": 93.91101330061153,
+      "binding_energy": -2.4745647774768837,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.3086716345475753
+    },
+    {
+      "tick": 1201,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        165.8691570510585,
+        38.43030711068185
+      ],
+      "electron_relative_position": [
+        115.86915705105848,
+        -11.569692889318146
+      ],
+      "electron_velocity": [
+        0.22430260736720226,
+        -0.021533877910342884
+      ],
+      "electron_speed": 0.225333902397271,
+      "electron_distance": 116.44534919556038,
+      "binding_energy": -2.4779532268880398,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.1135579555797228
+    },
+    {
+      "tick": 1301,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        188.29826794040258,
+        36.27703387616232
+      ],
+      "electron_relative_position": [
+        138.29826794040258,
+        -13.722966123837676
+      ],
+      "electron_velocity": [
+        0.22427983839341592,
+        -0.02153161184792177
+      ],
+      "electron_speed": 0.22531102107652506,
+      "electron_distance": 138.9774467838267,
+      "binding_energy": -2.4806258539345554,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0342634843755958
+    },
+    {
+      "tick": 1401,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        210.70490589589502,
+        34.125986589882885
+      ],
+      "electron_relative_position": [
+        160.70490589589502,
+        -15.874013410117119
+      ],
+      "electron_velocity": [
+        0.22389831087420195,
+        -0.02149383536279388
+      ],
+      "electron_speed": 0.224927629629896,
+      "electron_distance": 161.48699972676764,
+      "binding_energy": -2.482753226959564,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.038118300987084
+    },
+    {
+      "tick": 1501,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        233.08863996649697,
+        31.977204676619262
+      ],
+      "electron_relative_position": [
+        183.08863996649697,
+        -18.022795323380738
+      ],
+      "electron_velocity": [
+        0.22379270711447713,
+        -0.021483420030370407
+      ],
+      "electron_speed": 0.22482151385894425,
+      "electron_distance": 183.97356124196222,
+      "binding_energy": -2.484472028157582,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.063421167220291
+    },
+    {
+      "tick": 1601,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        255.46477998485398,
+        29.829170575274123
+      ],
+      "electron_relative_position": [
+        205.46477998485398,
+        -20.170829424725877
+      ],
+      "electron_velocity": [
+        0.2237335400441475,
+        -0.021477603476108508
+      ],
+      "electron_speed": 0.22476206172698074,
+      "electron_distance": 206.4525082770995,
+      "binding_energy": -2.485880418092295,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.1063468226215392
+    },
+    {
+      "tick": 1701,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        277.835633800124,
+        27.681655493268508
+      ],
+      "electron_relative_position": [
+        227.83563380012401,
+        -22.318344506731492
+      ],
+      "electron_velocity": [
+        0.22368498862334732,
+        -0.021472842309522473
+      ],
+      "electron_speed": 0.22471327751665374,
+      "electron_distance": 228.92615519119994,
+      "binding_energy": -2.487048312999614,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0425931217994087
+    },
+    {
+      "tick": 1801,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        300.1944302495677,
+        25.53532037517705
+      ],
+      "electron_relative_position": [
+        250.1944302495677,
+        -24.46467962482295
+      ],
+      "electron_velocity": [
+        0.22290858852022336,
+        -0.02139690799043273
+      ],
+      "electron_speed": 0.22393317420076306,
+      "electron_distance": 251.3876955561887,
+      "binding_energy": -2.4880269986876122,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0335060279946209
+    },
+    {
+      "tick": 1901,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        322.54427400337835,
+        23.389862672374353
+      ],
+      "electron_relative_position": [
+        272.54427400337835,
+        -26.610137327625647
+      ],
+      "electron_velocity": [
+        0.2235670922720974,
+        -0.021461287523604124
+      ],
+      "electron_speed": 0.2245948165233813,
+      "electron_distance": 273.84024667791925,
+      "binding_energy": -2.488854923606137,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0404878281810181
+    },
+    {
+      "tick": 2001,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        344.8994245203191,
+        21.243886023527534
+      ],
+      "electron_relative_position": [
+        294.8994245203191,
+        -28.756113976472466
+      ],
+      "electron_velocity": [
+        0.2235304632509004,
+        -0.02145771389262427
+      ],
+      "electron_speed": 0.22455801363269104,
+      "electron_distance": 296.29813477887984,
+      "binding_energy": -2.48956098906208,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.06180187197495
+    },
+    {
+      "tick": 2101,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        367.2500198319483,
+        19.098353546867457
+      ],
+      "electron_relative_position": [
+        317.2500198319483,
+        -30.901646453132543
+      ],
+      "electron_velocity": [
+        0.22348192801126712,
+        -0.021452983774985373
+      ],
+      "electron_speed": 0.22450924849654405,
+      "electron_distance": 318.75144993691555,
+      "binding_energy": -2.490167375878316,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0432139382302972
+    },
+    {
+      "tick": 2201,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        389.59589614831094,
+        16.953280733501927
+      ],
+      "electron_relative_position": [
+        339.59589614831094,
+        -33.04671926649807
+      ],
+      "electron_velocity": [
+        0.2234366051458484,
+        -0.021448571218696786
+      ],
+      "electron_speed": 0.2244637113798693,
+      "electron_distance": 341.20002686848244,
+      "binding_energy": -2.4906915138158037,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.037683075114071
+    },
+    {
+      "tick": 2301,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        411.9421609279673,
+        14.808170417671313
+      ],
+      "electron_relative_position": [
+        361.9421609279673,
+        -35.19182958232869
+      ],
+      "electron_velocity": [
+        0.2235396285079131,
+        -0.021458590210752602
+      ],
+      "electron_speed": 0.22456722068745652,
+      "electron_distance": 363.64899659776074,
+      "binding_energy": -2.4911472829683805,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0381366328675148
+    },
+    {
+      "tick": 2401,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        434.29190362111336,
+        12.66272162237781
+      ],
+      "electron_relative_position": [
+        384.29190362111336,
+        -37.33727837762219
+      ],
+      "electron_velocity": [
+        0.22345806161164966,
+        -0.02145066230759149
+      ],
+      "electron_speed": 0.22448526947813333,
+      "electron_distance": 386.10146275996823,
+      "binding_energy": -2.49154583112984,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0384137316018935
+    },
+    {
+      "tick": 2501,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        456.6345261658967,
+        10.517964642448398
+      ],
+      "electron_relative_position": [
+        406.6345261658967,
+        -39.4820353575516
+      ],
+      "electron_velocity": [
+        0.2233985881020238,
+        -0.02144488574665092
+      ],
+      "electron_speed": 0.22442551613099745,
+      "electron_distance": 408.5467769865995,
+      "binding_energy": -2.4918961781899016,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.043723152849947
+    },
+    {
+      "tick": 2601,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        478.97205827288934,
+        8.373701935256797
+      ],
+      "electron_relative_position": [
+        428.97205827288934,
+        -41.6262980647432
+      ],
+      "electron_velocity": [
+        0.22335463822088325,
+        -0.021440619656570823
+      ],
+      "electron_speed": 0.22438135971162884,
+      "electron_distance": 430.9869783061363,
+      "binding_energy": -2.492205665372655,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0389249361674686
+    },
+    {
+      "tick": 2701,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        501.29505471306135,
+        6.230849275781409
+      ],
+      "electron_relative_position": [
+        451.29505471306135,
+        -43.76915072421859
+      ],
+      "electron_velocity": [
+        0.222829688228717,
+        -0.021389700837849582
+      ],
+      "electron_speed": 0.22385394626416555,
+      "electron_distance": 453.4125769799338,
+      "binding_energy": -2.492480299667104,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0339394539971891
+    },
+    {
+      "tick": 2801,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        523.6055562794384,
+        4.089209020469696
+      ],
+      "electron_relative_position": [
+        473.6055562794383,
+        -45.910790979530304
+      ],
+      "electron_velocity": [
+        0.2231360077500462,
+        -0.021419407938351547
+      ],
+      "electron_speed": 0.22416170277515782,
+      "electron_distance": 475.8256231721053,
+      "binding_energy": -2.4927250277557924,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0386790045678338
+    },
+    {
+      "tick": 2901,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        545.9183845652624,
+        1.947343099622259
+      ],
+      "electron_relative_position": [
+        495.91838456526233,
+        -48.05265690037774
+      ],
+      "electron_velocity": [
+        0.2231212929400822,
+        -0.02141798180385997
+      ],
+      "electron_speed": 0.22414691902367173,
+      "electron_distance": 498.2410079319092,
+      "binding_energy": -2.4929439526896613,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0405161773796356
+    },
+    {
+      "tick": 3001,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        568.2301841230519,
+        -0.1944231351704886
+      ],
+      "electron_relative_position": [
+        518.2301841230519,
+        -50.19442313517049
+      ],
+      "electron_velocity": [
+        0.22311422379812007,
+        -0.021417296978908696
+      ],
+      "electron_speed": 0.22413981679059253,
+      "electron_distance": 520.6553599552058,
+      "binding_energy": -2.4931405025022912,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.036138056723709
+    },
+    {
+      "tick": 3101,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        590.5410525343005,
+        -2.3360991843613306
+      ],
+      "electron_relative_position": [
+        540.5410525343005,
+        -52.33609918436133
+      ],
+      "electron_velocity": [
+        0.2231022952490642,
+        -0.021416141841842998
+      ],
+      "electron_speed": 0.2241278324456616,
+      "electron_distance": 543.0687771845522,
+      "binding_energy": -2.493317560688018,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.037498816145464
+    },
+    {
+      "tick": 3201,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        612.8504273054759,
+        -4.477630619878951
+      ],
+      "electron_relative_position": [
+        562.8504273054759,
+        -54.47763061987895
+      ],
+      "electron_velocity": [
+        0.22308435416881436,
+        -0.021414405068828947
+      ],
+      "electron_speed": 0.22410980750375226,
+      "electron_distance": 565.4806944148605,
+      "binding_energy": -2.493477567394628,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.038337652346119
+    },
+    {
+      "tick": 3301,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        635.1576951733017,
+        -6.618958133534342
+      ],
+      "electron_relative_position": [
+        585.1576951733017,
+        -56.61895813353434
+      ],
+      "electron_velocity": [
+        0.22306019280949638,
+        -0.021412066903141753
+      ],
+      "electron_speed": 0.22408553327975975,
+      "electron_distance": 587.8904954501795,
+      "binding_energy": -2.493622598484459,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0393821983237947
+    },
+    {
+      "tick": 3401,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        657.4622236562172,
+        -8.760020591154799
+      ],
+      "electron_relative_position": [
+        607.4622236562172,
+        -58.7600205911548
+      ],
+      "electron_velocity": [
+        0.22302957601725093,
+        -0.021409104916736754
+      ],
+      "electron_speed": 0.22405477355274214,
+      "electron_distance": 610.297544800263,
+      "binding_energy": -2.4937544281346447,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0473384913170871
+    },
+    {
+      "tick": 3501,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        679.763347639958,
+        -10.900753732988179
+      ],
+      "electron_relative_position": [
+        629.763347639958,
+        -60.90075373298818
+      ],
+      "electron_velocity": [
+        0.22299209347728097,
+        -0.021405479724695274
+      ],
+      "electron_speed": 0.2240171161220159,
+      "electron_distance": 632.701174201481,
+      "binding_energy": -2.4938745791695633,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0417227196398333
+    },
+    {
+      "tick": 3601,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        702.0603571356061,
+        -13.041088989054842
+      ],
+      "electron_relative_position": [
+        652.0603571356061,
+        -63.04108898905484
+      ],
+      "electron_velocity": [
+        0.22294728809416617,
+        -0.021401147418183886
+      ],
+      "electron_speed": 0.223972101788053,
+      "electron_distance": 655.1006703162042,
+      "binding_energy": -2.4939843640230426,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0344268396980638
+    },
+    {
+      "tick": 3701,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        724.3525001078834,
+        -15.180953752801543
+      ],
+      "electron_relative_position": [
+        674.3525001078834,
+        -65.18095375280154
+      ],
+      "electron_velocity": [
+        0.22289478729973997,
+        -0.021396072262528248
+      ],
+      "electron_speed": 0.22391935627287707,
+      "electron_distance": 677.4952775731192,
+      "binding_energy": -2.494084918327842,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.043827789464533
+    },
+    {
+      "tick": 3801,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        746.6389928179365,
+        -17.320272380849346
+      ],
+      "electron_relative_position": [
+        696.6389928179365,
+        -67.32027238084935
+      ],
+      "electron_velocity": [
+        0.22283432584071902,
+        -0.021390228891902577
+      ],
+      "electron_speed": 0.2238586131131338,
+      "electron_distance": 699.884208557259,
+      "binding_energy": -2.4941772285770876,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0741808128690657
+    },
+    {
+      "tick": 3901,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        768.9190292652745,
+        -19.45896710481884
+      ],
+      "electron_relative_position": [
+        718.9190292652745,
+        -69.45896710481884
+      ],
+      "electron_velocity": [
+        0.22276571718452307,
+        -0.021383599537923247
+      ],
+      "electron_speed": 0.22378968493193152,
+      "electron_distance": 722.2666534950876,
+      "binding_energy": -2.4942621549762327,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0658900457628404
+    },
+    {
+      "tick": 4001,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        791.191787442116,
+        -21.59695863450378
+      ],
+      "electron_relative_position": [
+        741.191787442116,
+        -71.59695863450378
+      ],
+      "electron_velocity": [
+        0.22268882307930815,
+        -0.02137617108394213
+      ],
+      "electron_speed": 0.22371243285668627,
+      "electron_distance": 744.6417865372248,
+      "binding_energy": -2.4943404504081954,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.039224631799537
+    },
+    {
+      "tick": 4101,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        813.4564331214648,
+        -23.734166522468243
+      ],
+      "electron_relative_position": [
+        763.4564331214648,
+        -73.73416652246824
+      ],
+      "electron_velocity": [
+        0.22260353499386465,
+        -0.02136793327030913
+      ],
+      "electron_speed": 0.22362674787245176,
+      "electron_distance": 767.0087695634991,
+      "binding_energy": -2.494412776248895,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0467422753268278
+    },
+    {
+      "tick": 4201,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        835.7121223472467,
+        -25.870509403173017
+      ],
+      "electron_relative_position": [
+        785.7121223472467,
+        -75.87050940317302
+      ],
+      "electron_velocity": [
+        0.22250976592977706,
+        -0.02135887790319238
+      ],
+      "electron_speed": 0.2235325425959443,
+      "electron_distance": 789.3667546841024,
+      "binding_energy": -2.494479716059709,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.097841675262285
+    },
+    {
+      "tick": 4301,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        857.9580034480394,
+        -28.005905186087844
+      ],
+      "electron_relative_position": [
+        807.9580034480394,
+        -78.00590518608784
+      ],
+      "electron_velocity": [
+        0.22240744835319803,
+        -0.021348998655013152
+      ],
+      "electron_speed": 0.22342974919771139,
+      "electron_distance": 811.7148862621918,
+      "binding_energy": -2.4945417883818304,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.142758029612026
+    },
+    {
+      "tick": 4401,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        880.1932190084044,
+        -30.14027124472986
+      ],
+      "electron_relative_position": [
+        830.1932190084044,
+        -80.14027124472986
+      ],
+      "electron_velocity": [
+        0.22229653495922164,
+        -0.021338291138482894
+      ],
+      "electron_speed": 0.22331832017008166,
+      "electron_distance": 834.0523028939585,
+      "binding_energy": -2.4945994562374083,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.065330727965983
+    },
+    {
+      "tick": 4501,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        902.4169079733111,
+        -32.27352461857285
+      ],
+      "electron_relative_position": [
+        852.4169079733111,
+        -82.27352461857285
+      ],
+      "electron_velocity": [
+        0.22217700033122653,
+        -0.021326753066940634
+      ],
+      "electron_speed": 0.2231982299942365,
+      "electron_distance": 856.3781395224561,
+      "binding_energy": -2.4946531506726273,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0426257033661748
+    },
+    {
+      "tick": 4601,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        924.6282079196314,
+        -34.405582231091415
+      ],
+      "electron_relative_position": [
+        874.6282079196314,
+        -84.40558223109142
+      ],
+      "electron_velocity": [
+        0.22204884251767587,
+        -0.02131438440658824
+      ],
+      "electron_speed": 0.22306947672434127,
+      "electron_distance": 878.6915297193183,
+      "binding_energy": -2.4947033276130486,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.093434458910068
+    },
+    {
+      "tick": 4701,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        946.8262574620968,
+        -36.53636112078374
+      ],
+      "electron_relative_position": [
+        896.8262574620968,
+        -86.53636112078374
+      ],
+      "electron_velocity": [
+        0.2219120841112681,
+        -0.021301187480592735
+      ],
+      "electron_speed": 0.22293208307170567,
+      "electron_distance": 900.9916081015948,
+      "binding_energy": -2.4947503620328653,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.3031770918515586
+    },
+    {
+      "tick": 4801,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        969.0101987362725,
+        -38.665778679617915
+      ],
+      "electron_relative_position": [
+        919.0101987362725,
+        -88.66577867961792
+      ],
+      "electron_velocity": [
+        0.2217667727115923,
+        -0.02128716701364184
+      ],
+      "electron_speed": 0.22278609686957968,
+      "electron_distance": 923.27751282599,
+      "binding_energy": -2.49479493213346,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.1523477434930927
+    },
+    {
+      "tick": 4901,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        991.1791798973024,
+        -40.79375289299239
+      ],
+      "electron_relative_position": [
+        941.1791798973024,
+        -90.79375289299239
+      ],
+      "electron_velocity": [
+        0.22161298079453887,
+        -0.021272330119248416
+      ],
+      "electron_speed": 0.22263159094194818,
+      "electron_distance": 945.5483880989658,
+      "binding_energy": -2.494840689315336,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0555421520708363
+    },
+    {
+      "tick": 5001,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1013.33235757901,
+        -42.92020257586161
+      ],
+      "electron_relative_position": [
+        963.33235757901,
+        -92.92020257586161
+      ],
+      "electron_velocity": [
+        0.22145080507113027,
+        -0.021256686237820743
+      ],
+      "electron_speed": 0.22246866245937852,
+      "electron_distance": 967.8033866470362,
+      "binding_energy": -2.4948837485921245,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0650788557897544
+    },
+    {
+      "tick": 5101,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1035.4688992673127,
+        -45.04504760059089
+      ],
+      "electron_relative_position": [
+        985.4688992673126,
+        -95.04504760059089
+      ],
+      "electron_velocity": [
+        0.22128036543604573,
+        -0.021240247035200884
+      ],
+      "electron_speed": 0.222297431882661,
+      "electron_distance": 990.0416721009916,
+      "binding_energy": -2.4949218565169504,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.2686126068570494
+    },
+    {
+      "tick": 5201,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1057.5879855519456,
+        -47.16820911307231
+      ],
+      "electron_relative_position": [
+        1007.5879855519455,
+        -97.16820911307231
+      ],
+      "electron_velocity": [
+        0.2211018036039988,
+        -0.021223026271156825
+      ],
+      "electron_speed": 0.22211804159285997,
+      "electron_distance": 1012.2624212578818,
+      "binding_energy": -2.4952271843142952,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.762981556544433
+    },
+    {
+      "tick": 5301,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1079.6888122298044,
+        -49.289609734534096
+      ],
+      "electron_relative_position": [
+        1029.6888122298044,
+        -99.2896097345341
+      ],
+      "electron_velocity": [
+        0.2209152815216832,
+        -0.02120503964629829
+      ],
+      "electron_speed": 0.22193065429589853,
+      "electron_distance": 1034.4648261939415,
+      "binding_energy": -2.4951100222048117,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.1069805207863463
+    },
+    {
+      "tick": 5401,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1101.7705922413631,
+        -51.4091737472619
+      ],
+      "electron_relative_position": [
+        1051.7705922413631,
+        -101.4091737472619
+      ],
+      "electron_velocity": [
+        0.22072097962994158,
+        -0.021186304634618597
+      ],
+      "electron_speed": 0.2217354512766778,
+      "electron_distance": 1056.6480962098262,
+      "binding_energy": -2.4950838438979286,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0565293440958707
+    },
+    {
+      "tick": 5501,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1123.8325574283815,
+        -53.52682726310286
+      ],
+      "electron_relative_position": [
+        1073.8325574283815,
+        -103.52682726310286
+      ],
+      "electron_velocity": [
+        0.2205190950377847,
+        -0.021166840307604108
+      ],
+      "electron_speed": 0.2215326305646442,
+      "electron_distance": 1078.8114595963202,
+      "binding_energy": -2.4950855601763418,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.1195404428923734
+    },
+    {
+      "tick": 5601,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1145.8739601067136,
+        -55.642498374162585
+      ],
+      "electron_relative_position": [
+        1095.8739601067136,
+        -105.64249837416259
+      ],
+      "electron_velocity": [
+        0.22030983965803888,
+        -0.021146667154706287
+      ],
+      "electron_speed": 0.22132240506081333,
+      "electron_distance": 1100.9541652142952,
+      "binding_energy": -2.4950981492180695,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.8396905407497008
+    },
+    {
+      "tick": 5701,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1167.8940744524514,
+        -57.75611728552802
+      ],
+      "electron_relative_position": [
+        1117.8940744524514,
+        -107.75611728552802
+      ],
+      "electron_velocity": [
+        0.22009343834410353,
+        -0.021125806903976994
+      ],
+      "electron_speed": 0.22110500066591396,
+      "electron_distance": 1123.0754838871496,
+      "binding_energy": -2.4952288633076716,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.2167683492074275
+    },
+    {
+      "tick": 5801,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1189.8921977031125,
+        -59.86761643019139
+      ],
+      "electron_relative_position": [
+        1139.8921977031125,
+        -109.86761643019139
+      ],
+      "electron_velocity": [
+        0.21987012705855266,
+        -0.021104282345822623
+      ],
+      "electron_speed": 0.2208806544405288,
+      "electron_distance": 1145.1747096074396,
+      "binding_energy": -2.495209761696925,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0695361425357068
+    },
+    {
+      "tick": 5901,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1211.8676511783308,
+        -61.976930566603315
+      ],
+      "electron_relative_position": [
+        1161.8676511783308,
+        -111.97693056660331
+      ],
+      "electron_velocity": [
+        0.21964015109697071,
+        -0.021082117162124513
+      ],
+      "electron_speed": 0.22064961282072912,
+      "electron_distance": 1167.2511605621855,
+      "binding_energy": -2.495200750813873,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.068159158426531
+    },
+    {
+      "tick": 6001,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1233.819781126454,
+        -64.08399685948127
+      ],
+      "electron_relative_position": [
+        1183.819781126454,
+        -114.08399685948127
+      ],
+      "electron_velocity": [
+        0.21940376338419768,
+        -0.021059335762373437
+      ],
+      "electron_speed": 0.22041212990645814,
+      "electron_distance": 1189.3041799832874,
+      "binding_energy": -2.4952031248958546,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.1658485732687998
+    },
+    {
+      "tick": 6101,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1255.747959404928,
+        -66.18875494463424
+      ],
+      "electron_relative_position": [
+        1205.747959404928,
+        -116.18875494463424
+      ],
+      "electron_velocity": [
+        0.21916122285444495,
+        -0.021035963127915763
+      ],
+      "electron_speed": 0.22016846583417596,
+      "electron_distance": 1211.3331368309596,
+      "binding_energy": -2.4952116427356,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.2493403336060942
+    },
+    {
+      "tick": 6201,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1277.6515840032114,
+        -68.2911469786477
+      ],
+      "electron_relative_position": [
+        1227.6515840032114,
+        -118.2911469786477
+      ],
+      "electron_velocity": [
+        0.218912792921317,
+        -0.02101202466488614
+      ],
+      "electron_speed": 0.21991888523982928,
+      "electron_distance": 1233.337426318977,
+      "binding_energy": -2.4952239942163317,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0938897382752564
+    },
+    {
+      "tick": 6301,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1299.530079417272,
+        -70.39111767430408
+      ],
+      "electron_relative_position": [
+        1249.530079417272,
+        -120.39111767430408
+      ],
+      "electron_velocity": [
+        0.21865874003751745,
+        -0.02098754606579949
+      ],
+      "electron_speed": 0.21966365581192235,
+      "electron_distance": 1255.3164702908196,
+      "binding_energy": -2.495239962527686,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0561174159234326
+    },
+    {
+      "tick": 6401,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1321.3828968837715,
+        -72.48861432252251
+      ],
+      "electron_relative_position": [
+        1271.3828968837715,
+        -122.48861432252251
+      ],
+      "electron_velocity": [
+        0.21839933232138709,
+        -0.020962553177595187
+      ],
+      "electron_speed": 0.21940304691173088,
+      "electron_distance": 1277.2697174548618,
+      "binding_energy": -2.495256370769971,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0760326694549007
+    },
+    {
+      "tick": 6501,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1343.2095144783802,
+        -74.58358680124437
+      ],
+      "electron_relative_position": [
+        1293.2095144783802,
+        -124.58358680124437
+      ],
+      "electron_velocity": [
+        0.21813483820850582,
+        -0.020937071872105927
+      ],
+      "electron_speed": 0.21913732821869655,
+      "electron_distance": 1299.1966434830683,
+      "binding_energy": -2.495271654036151,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.1356246919994926
+    },
+    {
+      "tick": 6601,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1365.0094370800387,
+        -76.67598757144287
+      ],
+      "electron_relative_position": [
+        1315.0094370800387,
+        -126.67598757144287
+      ],
+      "electron_velocity": [
+        0.2178655250999879,
+        -0.020911127916216264
+      ],
+      "electron_speed": 0.21886676837250058,
+      "electron_distance": 1321.0967509750224,
+      "binding_energy": -2.4952857980211745,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.1030531514226796
+    },
+    {
+      "tick": 6701,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1386.7821961766608,
+        -78.76577165789567
+      ],
+      "electron_relative_position": [
+        1336.7821961766608,
+        -128.76577165789567
+      ],
+      "electron_velocity": [
+        0.217591657324951,
+        -0.020884746775965034
+      ],
+      "electron_speed": 0.21859163292613715,
+      "electron_distance": 1342.9695692626656,
+      "binding_energy": -2.495299101790524,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0607539070747039
+    },
+    {
+      "tick": 6801,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1408.527349391799,
+        -80.8528966031163
+      ],
+      "electron_relative_position": [
+        1358.527349391799,
+        -130.8528966031163
+      ],
+      "electron_velocity": [
+        0.2173134928051933,
+        -0.02085795329566691
+      ],
+      "electron_speed": 0.21831218099519098,
+      "electron_distance": 1364.8146539347138,
+      "binding_energy": -2.495311821470701,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0536482997973264
+    },
+    {
+      "tick": 6901,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1430.2444797451556,
+        -82.93732239569175
+      ],
+      "electron_relative_position": [
+        1380.2444797451556,
+        -132.93732239569175
+      ],
+      "electron_velocity": [
+        0.21703128148756554,
+        -0.020830771547350416
+      ],
+      "electron_speed": 0.21802866368299562,
+      "electron_distance": 1386.6315860936932,
+      "binding_energy": -2.4953241552876384,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0744333616018915
+    },
+    {
+      "tick": 7001,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1451.9331942029644,
+        -85.01901133026803
+      ],
+      "electron_relative_position": [
+        1401.9331942029644,
+        -135.01901133026803
+      ],
+      "electron_velocity": [
+        0.21674524280385288,
+        -0.020803222660332403
+      ],
+      "electron_speed": 0.2177413014362606,
+      "electron_distance": 1408.4199708995643,
+      "binding_energy": -2.4953362013298097,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0848422639760473
+    },
+    {
+      "tick": 7101,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1473.5931171750453,
+        -87.09792738091261
+      ],
+      "electron_relative_position": [
+        1423.5931171750453,
+        -137.0979273809126
+      ],
+      "electron_velocity": [
+        0.21645550570754596,
+        -0.020775319047187688
+      ],
+      "electron_speed": 0.21745022380448795,
+      "electron_distance": 1430.1794310366458,
+      "binding_energy": -2.4953479580248255,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0656415118350089
+    },
+    {
+      "tick": 7201,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1495.2238853226222,
+        -89.17403570084579
+      ],
+      "electron_relative_position": [
+        1445.2238853226222,
+        -139.1740357008458
+      ],
+      "electron_velocity": [
+        0.21616221609036196,
+        -0.020747074750041714
+      ],
+      "electron_speed": 0.21715557735361107,
+      "electron_distance": 1451.9096014973784,
+      "binding_energy": -2.4953593868857453,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0455683127664845
+    },
+    {
+      "tick": 7301,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1516.8251477129722,
+        -91.24730263721216
+      ],
+      "electron_relative_position": [
+        1466.8251477129722,
+        -141.24730263721216
+      ],
+      "electron_velocity": [
+        0.21586514258953177,
+        -0.020718467481657555
+      ],
+      "electron_speed": 0.21685712964988582,
+      "electron_distance": 1473.6101297376695,
+      "binding_energy": -2.495370455835273,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0535295345200346
+    },
+    {
+      "tick": 7401,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1538.3963392087846,
+        -93.31767390986468
+      ],
+      "electron_relative_position": [
+        1488.3963392087846,
+        -143.31767390986468
+      ],
+      "electron_velocity": [
+        0.21556051128015224,
+        -0.020689133836396215
+      ],
+      "electron_speed": 0.2165510893121089,
+      "electron_distance": 1495.2804480180453,
+      "binding_energy": -2.495381151585123,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.064724699617586
+    },
+    {
+      "tick": 7501,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1559.936811320854,
+        -95.38508721322319
+      ],
+      "electron_relative_position": [
+        1509.936811320854,
+        -145.3850872132232
+      ],
+      "electron_velocity": [
+        0.21525176058381695,
+        -0.020659404917739647
+      ],
+      "electron_speed": 0.21624091066675608,
+      "electron_distance": 1516.9199048617515,
+      "binding_energy": -2.495391478061905,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0686324758679138
+    },
+    {
+      "tick": 7601,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1581.446362629046,
+        -97.44952328988458
+      ],
+      "electron_relative_position": [
+        1531.446362629046,
+        -147.44952328988458
+      ],
+      "electron_velocity": [
+        0.2149423267202132,
+        -0.020629611575476915
+      ],
+      "electron_speed": 0.2159300458242297,
+      "electron_distance": 1538.5282979289493,
+      "binding_energy": -2.4954014502954625,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0536735793332976
+    },
+    {
+      "tick": 7701,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1602.92983226683,
+        -99.51144817169538
+      ],
+      "electron_relative_position": [
+        1552.92983226683,
+        -149.51144817169538
+      ],
+      "electron_velocity": [
+        0.21523914367529745,
+        -0.020658187773558837
+      ],
+      "electron_speed": 0.2162282351871812,
+      "electron_distance": 1560.1104887406798,
+      "binding_energy": -2.4954110873849555,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0479383660259785
+    },
+    {
+      "tick": 7801,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1624.472727192683,
+        -101.57909433319557
+      ],
+      "electron_relative_position": [
+        1574.472727192683,
+        -151.57909433319557
+      ],
+      "electron_velocity": [
+        0.21542152095827707,
+        -0.020675746543275225
+      ],
+      "electron_speed": 0.21641145576678508,
+      "electron_distance": 1581.7523796449418,
+      "binding_energy": -2.495420407624498,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0586535010016187
+    },
+    {
+      "tick": 7901,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1646.003723187742,
+        -103.64559497302139
+      ],
+      "electron_relative_position": [
+        1596.003723187742,
+        -153.6455949730214
+      ],
+      "electron_velocity": [
+        0.21518568848811281,
+        -0.020653042758320656
+      ],
+      "electron_speed": 0.21617453297111608,
+      "electron_distance": 1603.3823166306122,
+      "binding_energy": -2.495429426676657,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0680694978239278
+    },
+    {
+      "tick": 8001,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1667.5081641445931,
+        -105.70953919003546
+      ],
+      "electron_relative_position": [
+        1617.5081641445931,
+        -155.70953919003546
+      ],
+      "electron_velocity": [
+        0.21490245033347927,
+        -0.02062577627228178
+      ],
+      "electron_speed": 0.21588998542352014,
+      "electron_distance": 1624.9855758341935,
+      "binding_energy": -2.4954381577190805,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0671622116260249
+    },
+    {
+      "tick": 8101,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1688.9834967351437,
+        -107.77068128866833
+      ],
+      "electron_relative_position": [
+        1638.9834967351437,
+        -157.77068128866833
+      ],
+      "electron_velocity": [
+        0.21460582961130756,
+        -0.020597222616056184
+      ],
+      "electron_speed": 0.21559199354951228,
+      "electron_distance": 1646.5595921327747,
+      "binding_energy": -2.4954466122998196,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0541683199316598
+    },
+    {
+      "tick": 8201,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1710.428840371866,
+        -109.82893661174813
+      ],
+      "electron_relative_position": [
+        1660.428840371866,
+        -159.82893661174813
+      ],
+      "electron_velocity": [
+        0.21430337065904304,
+        -0.020568108078091212
+      ],
+      "electron_speed": 0.21528813656525347,
+      "electron_distance": 1668.1034808779405,
+      "binding_energy": -2.4954548011630817,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.053275949118742
+    },
+    {
+      "tick": 8301,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1731.843757107953,
+        -111.88426311359973
+      ],
+      "electron_relative_position": [
+        1681.843757107953,
+        -161.88426311359973
+      ],
+      "electron_velocity": [
+        0.213997581632024,
+        -0.02053867409776013
+      ],
+      "electron_speed": 0.21498093421987166,
+      "electron_distance": 1689.6168021083445,
+      "binding_energy": -2.495462734749117,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0726801563739203
+    },
+    {
+      "tick": 8401,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1753.2279764711132,
+        -113.9366348690647
+      ],
+      "electron_relative_position": [
+        1703.2279764711132,
+        -163.9366348690647
+      ],
+      "electron_velocity": [
+        0.21368957695681667,
+        -0.020509027937216394
+      ],
+      "electron_speed": 0.2146715060899159,
+      "electron_distance": 1711.0992841112627,
+      "binding_energy": -2.49547042335219,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0842222442685199
+    },
+    {
+      "tick": 8501,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1774.58131086804,
+        -115.98603392931446
+      ],
+      "electron_relative_position": [
+        1724.58131086804,
+        -165.98603392931446
+      ],
+      "electron_velocity": [
+        0.21337998006757392,
+        -0.02047922958967705
+      ],
+      "electron_speed": 0.21436047848944764,
+      "electron_distance": 1732.550738435937,
+      "binding_energy": -2.4954778770688484,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0735431939625073
+    },
+    {
+      "tick": 8601,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1795.9036231517694,
+        -118.03244719947199
+      ],
+      "electron_relative_position": [
+        1745.9036231517694,
+        -168.032447199472
+      ],
+      "electron_velocity": [
+        0.213069204803314,
+        -0.020449318869901215
+      ],
+      "electron_speed": 0.2140482671683176,
+      "electron_distance": 1753.9710273109756,
+      "binding_energy": -2.4954851056924445,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0550407074544506
+    },
+    {
+      "tick": 8701,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1817.1948116940002,
+        -120.07586500146016
+      ],
+      "electron_relative_position": [
+        1767.1948116940002,
+        -170.07586500146016
+      ],
+      "electron_velocity": [
+        0.21275755936617072,
+        -0.020419325422425128
+      ],
+      "electron_speed": 0.21373518175105508,
+      "electron_distance": 1775.3600486476505,
+      "binding_energy": -2.495492118653064,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0653077264174988
+    },
+    {
+      "tick": 8801,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1838.4548023476798,
+        -122.11628030019173
+      ],
+      "electron_relative_position": [
+        1788.4548023476798,
+        -172.11628030019173
+      ],
+      "electron_velocity": [
+        0.21244529068814175,
+        -0.02038927299290346
+      ],
+      "electron_speed": 0.2134214703087489,
+      "electron_distance": 1796.7177279653174,
+      "binding_energy": -2.4954989250788926,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.1106743493887254
+    },
+    {
+      "tick": 8901,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1859.6835435243897,
+        -124.153688229636
+      ],
+      "electron_relative_position": [
+        1809.6835435243897,
+        -174.153688229636
+      ],
+      "electron_velocity": [
+        0.21213260594596692,
+        -0.020359181499490564
+      ],
+      "electron_speed": 0.21310734097340728,
+      "electron_distance": 1818.044013446038,
+      "binding_energy": -2.4955055341890886,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.1274568257602446
+    },
+    {
+      "tick": 9001,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1880.8810028614416,
+        -126.18808577194005
+      ],
+      "electron_relative_position": [
+        1830.8810028614416,
+        -176.18808577194005
+      ],
+      "electron_velocity": [
+        0.21181968421051967,
+        -0.02032906815445571
+      ],
+      "electron_speed": 0.2127929736412196,
+      "electron_distance": 1839.3388725862612,
+      "binding_energy": -2.495511955820902,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0834370313506545
+    },
+    {
+      "tick": 9101,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1902.047164787766,
+        -128.2194715230903
+      ],
+      "electron_relative_position": [
+        1852.047164787766,
+        -178.2194715230903
+      ],
+      "electron_velocity": [
+        0.21150668335432632,
+        -0.020298948129281548
+      ],
+      "electron_speed": 0.2124785269120212,
+      "electron_distance": 1860.602289751459,
+      "binding_energy": -2.495518201216544,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0613027068656649
+    },
+    {
+      "tick": 9201,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1923.182028641767,
+        -130.2478455117205
+      ],
+      "electron_relative_position": [
+        1873.182028641767,
+        -180.2478455117205
+      ],
+      "electron_velocity": [
+        0.21119374445509234,
+        -0.02026883497868771
+      ],
+      "electron_speed": 0.21216414251318746,
+      "electron_distance": 1881.834264285275,
+      "binding_energy": -2.4955242922250385,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0944996333769088
+    },
+    {
+      "tick": 9301,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1944.2856071510728,
+        -132.27320905276898
+      ],
+      "electron_relative_position": [
+        1894.2856071510728,
+        -182.27320905276898
+      ],
+      "electron_velocity": [
+        0.21088099476904767,
+        -0.020238740926957374
+      ],
+      "electron_speed": 0.2118499482867334,
+      "electron_distance": 1903.0348089822485,
+      "binding_energy": -2.4955302660363112,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.208639328711071
+    },
+    {
+      "tick": 9401,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1965.3579251623064,
+        -134.29556462521347
+      ],
+      "electron_relative_position": [
+        1915.3579251623064,
+        -184.29556462521347
+      ],
+      "electron_velocity": [
+        0.21056854983438475,
+        -0.02020867707050658
+      ],
+      "electron_speed": 0.21153606030248315,
+      "electron_distance": 1924.203948811711,
+      "binding_energy": -2.4955361484789504,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.1696523541118498
+    },
+    {
+      "tick": 9501,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        1986.3990185511427,
+        -136.31491576716823
+      ],
+      "electron_relative_position": [
+        1936.3990185511427,
+        -186.31491576716823
+      ],
+      "electron_velocity": [
+        0.21025651501869283,
+        -0.02017865352691733
+      ],
+      "electron_speed": 0.2112225844126645,
+      "electron_distance": 1945.341719822807,
+      "binding_energy": -2.4955422108540093,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0821650081599923
+    },
+    {
+      "tick": 9601,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        2007.4089332672545,
+        -138.33126698397243
+      ],
+      "electron_relative_position": [
+        1957.4089332672545,
+        -188.33126698397243
+      ],
+      "electron_velocity": [
+        0.2099449866967851,
+        -0.020148679548380333
+      ],
+      "electron_speed": 0.2109096174351862,
+      "electron_distance": 1966.4481681850248,
+      "binding_energy": -2.4955491136026495,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.072296734537888
+    },
+    {
+      "tick": 9701,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        2028.3877244834575,
+        -140.3446236663152
+      ],
+      "electron_relative_position": [
+        1978.3877244834575,
+        -190.3446236663152
+      ],
+      "electron_velocity": [
+        0.20963405317485082,
+        -0.020118763610709123
+      ],
+      "electron_speed": 0.21059724808206723,
+      "electron_distance": 1987.5233493334122,
+      "binding_energy": -2.4955562498344994,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.1485509613688742
+    },
+    {
+      "tick": 9801,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        2049.3354558277388,
+        -142.35499201634408
+      ],
+      "electron_relative_position": [
+        1999.3354558277388,
+        -192.35499201634408
+      ],
+      "electron_velocity": [
+        0.2093237954357541,
+        -0.02008891348512952
+      ],
+      "electron_speed": 0.21028555770818513,
+      "electron_distance": 2008.5673271970547,
+      "binding_energy": -2.495563001032294,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.7070535882607465
+    },
+    {
+      "tick": 9901,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        2070.2521986829634,
+        -144.36237898029262
+      ],
+      "electron_relative_position": [
+        2020.2521986829631,
+        -194.36237898029262
+      ],
+      "electron_velocity": [
+        0.20901428775519942,
+        -0.020059136297631907
+      ],
+      "electron_speed": 0.2099746209302931,
+      "electron_distance": 2029.5801734955496,
+      "binding_energy": -2.495611037648184,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.1826804036414067
+    },
+    {
+      "tick": 10000,
+      "proton_position": [
+        50.0,
+        50.0
+      ],
+      "electron_position": [
+        2090.929325944918,
+        -146.34676274797621
+      ],
+      "electron_relative_position": [
+        2040.9293259449182,
+        -196.34676274797621
+      ],
+      "electron_velocity": [
+        0.20870868077092225,
+        -0.02002973513443197
+      ],
+      "electron_speed": 0.20966760293067271,
+      "electron_distance": 2050.3523025918225,
+      "binding_energy": -2.4956217648896435,
+      "gamma_at_proton": 10.0,
+      "gamma_at_electron": 1.0860312611750298
+    }
+  ]
+}
