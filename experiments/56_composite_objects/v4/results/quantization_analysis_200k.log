@@ -1,0 +1,117 @@
+W:\tools\python\Lib\site-packages\scipy\stats\_distn_infrastructure.py:2148: RuntimeWarning: divide by zero encountered in divide
+  x = np.asarray((x - loc)/scale, dtype=dtyp)
+Analyzing 200k validation data: results\exp56a_v4_50frags_200k.json
+Loading results from: results\exp56a_v4_50frags_200k.json
+  Loaded 1001 snapshots
+  Loaded 101 detailed snapshots
+
+======================================================================
+QUANTIZATION ANALYSIS - FULL SUITE
+======================================================================
+
+======================================================================
+RADIAL SHELL ANALYSIS
+======================================================================
+
+Equilibration detected at tick 1600
+Analyzing radial density from equilibrated snapshots...
+
+Shell Detection Results:
+  Number of shells detected: 3
+  Shell radii: [0.9 1.5 1.9]
+  Shell densities: [2.5913016  2.52651906 2.33465954]
+  Prominences: [0.47974097 0.17715717 0.10537801]
+  Shell 1 stability (CV): 0.454
+  Shell 2 stability (CV): 0.381
+  Shell 3 stability (CV): 0.347
+
+======================================================================
+ENERGY LEVEL ANALYSIS
+======================================================================
+
+Analyzing fragment energies from tick 1000 onward...
+  Total fragment energy samples: 5050
+  Energy range: [0.000000, 0.000005]
+
+Energy Gap Detection:
+  Number of gaps detected: 0
+  No discrete energy gaps - continuous distribution
+
+======================================================================
+VELOCITY DISTRIBUTION ANALYSIS
+======================================================================
+
+Analyzing velocities from tick 1000 onward...
+  Total velocity samples: 5050
+  Mean speed: 0.016340
+  Std speed: 0.010807
+
+Maxwell-Boltzmann Fit:
+  Fitted scale parameter: 0.000000
+  KS test statistic: nan
+  p-value: nan
+  [FAIL] MB distribution rejected (p < 0.05)
+  Effective temperature: 0.000000000
+
+======================================================================
+ANGULAR MOMENTUM ANALYSIS
+======================================================================
+
+Angular Momentum Convergence:
+  Initial std: 0.000957
+  Final std: 0.001424
+  Convergence ratio: 1.488
+  Final mean L: 0.002412
+  Final std L: 0.001413
+  Relative stability: 58.61%
+  [FAIL] Angular momentum not converged
+
+======================================================================
+ENERGY CONSERVATION ANALYSIS
+======================================================================
+
+Total Energy:
+  Initial: -0.000978
+  Final: -0.000992
+  Mean: -0.000979
+  Std: 0.000015
+  Drift: 1.4263%
+  [FAIL] Energy not conserved (drift >= 1%)
+
+======================================================================
+QUANTIZATION HYPOTHESIS SUMMARY
+======================================================================
+
+1. RADIAL SHELL FORMATION:
+   Shells detected: 3
+   Evidence: STRONG
+
+2. ENERGY LEVEL DISCRETIZATION:
+   Energy levels detected: 0
+   Energy gaps detected: 0
+   Evidence: NONE
+
+3. MAXWELL-BOLTZMANN DISTRIBUTION:
+   MB fit: NO
+   p-value: nan
+   Evidence: NONE
+
+4. ANGULAR MOMENTUM QUANTIZATION:
+   Quantized: NO
+   Final L: 0.002412 ± 0.001413
+   Evidence: NONE
+
+5. ENERGY CONSERVATION:
+   Conserved: NO
+   Drift: 1.4263%
+
+======================================================================
+OVERALL VERDICT:
+======================================================================
+
+~~ QUANTIZATION HYPOTHESIS PARTIALLY CONFIRMED ~~
+Found 1/4 strong signatures of quantization
+======================================================================
+
+Analysis results saved to: results\quantization_analysis_200k_results.json
+Verdict: partial
