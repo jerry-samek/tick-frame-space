@@ -1,0 +1,217 @@
+V6 Phase 5: Jitter Sweep to Counteract Gravitational Collapse
+======================================================================
+
+Testing jitter strengths to find stability threshold:
+  1. jitter_0.02: 2% (baseline - known to collapse)
+  2. jitter_0.03: 3% (moderate kinetic resistance)
+  3. jitter_0.04: 4% (strong kinetic resistance)
+  4. jitter_0.05: 5% (very strong kinetic resistance)
+
+Using CORRECTED COM tracking (not static coordinates).
+
+
+======================================================================
+Configuration: jitter_0.02
+======================================================================
+Jitter strength: 0.020
+Gamma modulation: 1.0
+Ticks: 1,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 1,000 ticks...
+
+[   100/  1000] r_mean=  6.98, drift=13.11, r_drift%= 64.5%
+[   200/  1000] r_mean=  2.28, drift=17.55, r_drift%= 88.4%
+[   300/  1000] r_mean=  1.16, drift=18.94, r_drift%= 94.1%
+[   400/  1000] r_mean=  1.26, drift=19.37, r_drift%= 93.6%
+[   500/  1000] r_mean=  1.24, drift=19.49, r_drift%= 93.7%
+[   600/  1000] r_mean=  1.22, drift=19.51, r_drift%= 93.8%
+[   700/  1000] r_mean=  1.22, drift=19.51, r_drift%= 93.8%
+[   800/  1000] r_mean=  1.22, drift=19.51, r_drift%= 93.8%
+[   900/  1000] r_mean=  1.22, drift=19.51, r_drift%= 93.8%
+[  1000/  1000] r_mean=  1.22, drift=19.51, r_drift%= 93.8%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift (COM-tracked):
+  Initial r_mean: 19.69
+  Final r_mean: 1.22
+  Radius drift: 93.81%
+  Mean COM displacement: 19.51 Planck cells
+
+Field coverage:
+  Initial: 0.5%
+  Final: 9.8%
+
+Performance: 0.7 ticks/sec
+Total time: 1357.8 seconds
+======================================================================
+
+======================================================================
+Configuration: jitter_0.03
+======================================================================
+Jitter strength: 0.030
+Gamma modulation: 1.0
+Ticks: 1,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 1,000 ticks...
+
+[   100/  1000] r_mean=  7.64, drift=12.33, r_drift%= 61.2%
+[   200/  1000] r_mean=  3.42, drift=16.44, r_drift%= 82.6%
+[   300/  1000] r_mean=  2.37, drift=17.63, r_drift%= 88.0%
+[   400/  1000] r_mean=  2.12, drift=17.89, r_drift%= 89.2%
+[   500/  1000] r_mean=  2.06, drift=17.94, r_drift%= 89.5%
+[   600/  1000] r_mean=  2.06, drift=17.94, r_drift%= 89.5%
+[   700/  1000] r_mean=  2.06, drift=17.94, r_drift%= 89.5%
+[   800/  1000] r_mean=  2.06, drift=17.94, r_drift%= 89.5%
+[   900/  1000] r_mean=  2.06, drift=17.94, r_drift%= 89.5%
+[  1000/  1000] r_mean=  2.06, drift=17.94, r_drift%= 89.5%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift (COM-tracked):
+  Initial r_mean: 19.69
+  Final r_mean: 2.06
+  Radius drift: 89.52%
+  Mean COM displacement: 17.94 Planck cells
+
+Field coverage:
+  Initial: 0.5%
+  Final: 27.7%
+
+Performance: 0.9 ticks/sec
+Total time: 1141.1 seconds
+======================================================================
+
+======================================================================
+Configuration: jitter_0.04
+======================================================================
+Jitter strength: 0.040
+Gamma modulation: 1.0
+Ticks: 1,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 1,000 ticks...
+
+[   100/  1000] r_mean=  8.70, drift=11.17, r_drift%= 55.8%
+[   200/  1000] r_mean=  5.69, drift=14.18, r_drift%= 71.1%
+[   300/  1000] r_mean=  5.54, drift=14.35, r_drift%= 71.9%
+[   400/  1000] r_mean=  5.54, drift=14.35, r_drift%= 71.9%
+[   500/  1000] r_mean=  5.54, drift=14.35, r_drift%= 71.9%
+[   600/  1000] r_mean=  5.54, drift=14.35, r_drift%= 71.9%
+[   700/  1000] r_mean=  5.54, drift=14.35, r_drift%= 71.9%
+[   800/  1000] r_mean=  5.54, drift=14.35, r_drift%= 71.9%
+[   900/  1000] r_mean=  5.54, drift=14.35, r_drift%= 71.9%
+[  1000/  1000] r_mean=  5.54, drift=14.35, r_drift%= 71.9%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift (COM-tracked):
+  Initial r_mean: 19.69
+  Final r_mean: 5.54
+  Radius drift: 71.89%
+  Mean COM displacement: 14.35 Planck cells
+
+Field coverage:
+  Initial: 0.5%
+  Final: 59.3%
+
+Performance: 0.9 ticks/sec
+Total time: 1134.2 seconds
+======================================================================
+
+======================================================================
+Configuration: jitter_0.05
+======================================================================
+Jitter strength: 0.050
+Gamma modulation: 1.0
+Ticks: 1,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 1,000 ticks...
+
+[   100/  1000] r_mean=  9.76, drift=10.09, r_drift%= 50.4%
+[   200/  1000] r_mean=  7.90, drift=11.97, r_drift%= 59.9%
+[   300/  1000] r_mean=  7.90, drift=11.97, r_drift%= 59.9%
+[   400/  1000] r_mean=  7.90, drift=11.97, r_drift%= 59.9%
+[   500/  1000] r_mean=  7.90, drift=11.97, r_drift%= 59.9%
+[   600/  1000] r_mean=  7.90, drift=11.97, r_drift%= 59.9%
+[   700/  1000] r_mean=  7.90, drift=11.97, r_drift%= 59.9%
+[   800/  1000] r_mean=  7.90, drift=11.97, r_drift%= 59.9%
+[   900/  1000] r_mean=  7.90, drift=11.97, r_drift%= 59.9%
+[  1000/  1000] r_mean=  7.90, drift=11.97, r_drift%= 59.9%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift (COM-tracked):
+  Initial r_mean: 19.69
+  Final r_mean: 7.90
+  Radius drift: 59.87%
+  Mean COM displacement: 11.97 Planck cells
+
+Field coverage:
+  Initial: 0.5%
+  Final: 91.4%
+
+Performance: 1.3 ticks/sec
+Total time: 771.5 seconds
+======================================================================
+
+
+======================================================================
+SUMMARY COMPARISON
+======================================================================
+
+Config            Jitter  Initial r    Final r  r Drift %    COM Drift
+---------------------------------------------------------------------------
+jitter_0.02        0.020      19.69       1.22      93.81        19.51
+jitter_0.03        0.030      19.69       2.06      89.52        17.94
+jitter_0.04        0.040      19.69       5.54      71.89        14.35
+jitter_0.05        0.050      19.69       7.90      59.87        11.97
+
+Best configuration (lowest radius drift): jitter_0.05
+  Jitter strength: 0.050
+  Radius drift: 59.87%
+  Mean COM displacement: 11.97 Planck cells
+
+Stability Analysis:
+  jitter_0.02: UNSTABLE (collapsing) (drift=93.8%)
+  jitter_0.03: UNSTABLE (collapsing) (drift=89.5%)
+  jitter_0.04: UNSTABLE (collapsing) (drift=71.9%)
+  jitter_0.05: UNSTABLE (collapsing) (drift=59.9%)
+
+Results saved to results/jitter_sweep_1k.2-5.json
+======================================================================

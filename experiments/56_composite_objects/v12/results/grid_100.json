@@ -1,0 +1,65 @@
+{
+  "grid_size": 100,
+  "effective_tick": 100,
+  "params": {
+    "gamma_window_size": 50,
+    "gamma_imprint_k": 10.0,
+    "target_gamma_k": 50.0,
+    "n_patterns": 25,
+    "jitter_strength": 0.119
+  },
+  "ratios": {
+    "window_ratio": 2,
+    "imprint_ratio": 10,
+    "window_imprint_ratio": 5.0
+  },
+  "final_stats": {
+    "r_mean": 3.37276832920503,
+    "r_std": 0.7378575726463135,
+    "r_min": 2.23606797749979,
+    "r_max": 6.082762530298219,
+    "total_energy": 1270,
+    "coverage": 0.127,
+    "r_mean_norm": 0.0674553665841006,
+    "r_std_norm": 0.014757151452926269,
+    "energy_density": 0.127
+  },
+  "final_history": {
+    "ticks_in_window": 0,
+    "window_size": 50,
+    "total_commits": 4,
+    "normalization_type": "time_based",
+    "normalization_scale": 1000.0,
+    "accumulator_nonzero": 0,
+    "raw_history_max": 160.0,
+    "raw_history_mean": 2.5,
+    "raw_history_sum": 25000.0,
+    "normalized_max": 32.0,
+    "normalized_mean": 0.5,
+    "effective_norm_factor": 5.0
+  },
+  "stability_metrics": {},
+  "history": [
+    {
+      "tick": 100,
+      "r_mean": 5.780684011901249,
+      "r_std": 3.1786305784959166,
+      "r_mean_norm": 0.11561368023802497,
+      "r_std_norm": 0.06357261156991834,
+      "energy": 1281,
+      "energy_density": 0.1281,
+      "normalized_max": 20.0
+    },
+    {
+      "tick": 200,
+      "r_mean": 3.6778942244725137,
+      "r_std": 1.8201906695705612,
+      "r_mean_norm": 0.07355788448945028,
+      "r_std_norm": 0.03640381339141122,
+      "energy": 1270,
+      "energy_density": 0.127,
+      "normalized_max": 32.0
+    }
+  ],
+  "elapsed_seconds": 58.29981780052185
+}

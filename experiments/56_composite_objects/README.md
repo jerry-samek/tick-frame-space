@@ -523,3 +523,149 @@ Failure or partial results would:
 - Identify which scales work vs which need revision
 
 **Either way → progress toward tick-frame matter physics.**
+
+---
+
+## Version Roadmap (2026-01-22 to 2026-01-24)
+
+### ✅ V1-V3: Development and Initial Validation
+
+**V1**: Initial composite structure (2D, failed)
+**V2**: Single-particle gradient-following (2D, failed)
+**V3**: 50 fragments, 10k ticks (2D, appeared successful but incomplete - 3.43% drift)
+
+### ✅ V4: 200k Tick Quantization Study (COMPLETE - SUCCESS)
+
+**Date**: 2026-01-23 to 2026-01-24
+**Status**: SUCCESS - 2D fragmented cloud STABLE with optimal parameters
+**Key Results**:
+- ✓ 200k tick stability: 6.52% drift, 1.43% energy conservation, 0/50 escapes
+- ✓ Optimal parameters: jitter=0.0005, collision_radius=0.5
+- ✓ "Neutrino vs Electron" breakthrough (collision parameters → particle types)
+- ⚠ Quantization: PARTIAL (3 radial shells detected, no energy gaps)
+
+**Validated Parameters**:
+- `jitter_strength = 0.0005` (0.001 causes runaway - energy balance critical)
+- `collision_radius = 0.5` (electron-like, ~5 collisions/tick)
+
+**Documents**:
+- `v4/PHASE_4_V4_RESULTS.md` - Complete experimental story
+- `v4/ENERGY_DIAGNOSTIC_BREAKTHROUGH.md` - Energy diagnostic success
+- `v4/CHECKLIST.md` - Validated parameters
+- `v4/results/quantization_analysis_200k_results.json` - Quantization analysis
+
+### 🔢 V5: Integer Arithmetic Conversion (PLANNED)
+
+**Date**: 2026-01-24
+**Status**: DESIGN COMPLETE - Ready for implementation
+**Goal**: Convert V4 physics to scaled integer arithmetic (eliminate float drift)
+
+**Scaling Factor**: 10^8 (100 million)
+- Preserves 8 decimal places for all critical parameters
+- Most critical: `jitter_strength = 0.0005` → `50,000` (validated precision)
+- Avoids overflow (max values ~200M vs 64-bit limit ~9×10^18)
+
+**Benefits**:
+- ✓ **Perfect determinism**: Bit-exact results across all platforms
+- ✓ **Zero accumulation errors**: Integer arithmetic is exact
+- ✓ **Improved energy conservation**: Target <0.5% drift (vs 1.43% in V4)
+- ✓ **2-5× faster**: Integer operations outperform float
+- ✓ **Foundation for V6/V7**: Perfect reproducibility for collision experiments
+
+**Implementation Phases**:
+1. Fixed-point utility module (multiply, divide, sqrt)
+2. Fragment dynamics (positions, velocities, energies)
+3. Collision physics (exact energy conservation)
+4. Random number generation (integer Gaussian for jitter)
+5. Validation against V4 200k baseline
+
+**Documents**:
+- `v5/README.md` - Complete design specification and implementation plan
+
+### 🚀 V6: Particle Accelerator Experiments (PLANNED)
+
+**Date**: 2026-01-24
+**Status**: DESIGN PENDING - Awaiting V5 integer foundation
+**Based on**: V5 integer arithmetic for perfect determinism
+**Goal**: Non-equilibrium collision experiments (projectile bombardment)
+
+**Concept**: "Shoot the Stabilized Atom"
+- **Projectile patterns**: High/low speed fragments fired at stable cloud
+- **Variable energies**: Test scattering, excitation, ionization thresholds
+- **Precise targeting**: Control impact parameter, angle, timing
+- **Perfect measurement**: Track every fragment at every tick (deterministic from V5)
+
+**Advantages of Integer Foundation**:
+- ✓ **Perfect repeatability**: Exact collision trajectories guaranteed
+- ✓ **Zero drift**: Million-tick simulations possible
+- ✓ **Faster parameter scans**: 2-5× speedup from integer arithmetic
+- ✓ **Exact energy accounting**: Track energy transfer with zero error
+
+**Comparisons with Real Physics**:
+- Rutherford scattering (alpha particles on gold foil)
+- Deep inelastic scattering (electron structure probes)
+- Ionization cross-sections (energy thresholds)
+- Compton scattering (low vs high energy regimes)
+
+**Documents**:
+- `v6/README.md` - Conceptual overview and experimental design
+
+### ⏸️ V7: Dual-Parameter Collision System (DEFERRED)
+
+**Date**: Planned
+**Status**: DEFERRED - Awaiting V5 integer arithmetic foundation
+**Goal**: Separate collision detection from collision outcome
+
+**Innovation**: Two independent parameters
+1. **`collision_radius`**: Spatial detection (WHEN to check collision)
+2. **`pattern_overlap_threshold`**: Pattern similarity (WHAT happens - merge/explosion/excitation)
+
+**Physics Motivation**:
+- V4 conflates detection with outcome (single parameter does both)
+- Real physics: interaction cross-section ≠ interaction type
+- Enables particle type differentiation (neutrino-like, electron-like, nuclear-like)
+
+**Three Collision Regimes** (from Experiment 55):
+- **High overlap** (> 0.8): Merge (fusion, energy release)
+- **Low overlap** (< 0.2): Explosion (annihilation, scatter)
+- **Medium overlap** (0.2-0.8): Excitation (energy redistribution, elastic)
+
+**Deferral Rationale**: Will implement on V5 integer base for perfect determinism and zero accumulation errors.
+
+**Documents**:
+- `v7/README.md` - Detailed specification (awaiting V5)
+
+### ⏸️ vX_3d: 3D Fragmented Cloud (DEFERRED)
+
+**Date**: Originally planned as V5, renamed 2026-01-24
+**Status**: DEFERRED - Not needed after V4 success
+**Reason**: 2D proven stable with correct parameters (200k validation PASSED)
+
+**Why 3D might still be valuable** (future work):
+- Full angular momentum vector (Lx, Ly, Lz) vs scalar L_z
+- 3D collision phase space (potentially better thermalization)
+- More realistic physics (theory suggests 3D minimum per Doc 015_01)
+- Required for multi-electron atoms (if 2D proves insufficient)
+
+**Current priority**: V6 (integer conversion) → V7 (accelerator) → V5 (dual-parameter) → vX_3d (when/if needed)
+
+**Documents**:
+- `vX_3d/README.md` - 3D implementation plan (deferred)
+
+---
+
+## Current State Summary (2026-01-24)
+
+**Validated Foundation (V4)**:
+- ✅ 2D fragmented electron cloud IS STABLE (200k ticks)
+- ✅ Optimal parameters identified and documented
+- ✅ Shell structure observed (3 radial peaks)
+- ⚠ Full quantization not yet achieved (partial 1/4 signatures)
+
+**Path Forward**:
+1. **Immediate**: V4 quantization analysis complete (shells detected)
+2. **Next**: V5 dual-parameter collision system (enables particle type modeling)
+3. **Future**: V6 particle accelerator (non-equilibrium physics)
+4. **Optional**: vX_3d 3D extension (when/if needed for full quantization)
+
+**Key Lesson**: Energy balance is critical - jitter injection must be less than collision dissipation. The "neutrino vs electron" insight shows collision parameters determine interaction strength, not just detection threshold.

@@ -1,0 +1,24 @@
+Initializing 50 electron fragments...
+  Mean radius: 1.9516
+  RMS radius: 2.0140
+  Total mass: 0.100000
+  Total energy: 50.0000
+
+Running 10k ticks with k=0.000001000...
+
+[ 1000/10000] r_rms=1.2968
+[ 2000/10000] r_rms=1.2154
+[ 3000/10000] r_rms=1.2148
+[ 4000/10000] r_rms=1.2059
+[ 5000/10000] r_rms=1.1945
+[ 6000/10000] r_rms=1.2058
+[ 7000/10000] r_rms=1.1943
+[ 8000/10000] r_rms=1.2051
+[ 9000/10000] r_rms=1.2641
+[10000/10000] r_rms=1.2507
+
+Initial r_rms: 2.0140
+Final r_rms: 1.2507
+Drift: 37.90%
+
+[FAIL] Drift = 37.90% >= 10%

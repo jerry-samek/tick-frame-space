@@ -1,0 +1,45 @@
+{
+  "window_size": 50,
+  "target_gamma_k": 50.0,
+  "coupling": "well=window",
+  "final_stats": {
+    "r_mean": 3.2845611217354285,
+    "r_std": 0.7560808406408029,
+    "r_min": 2.0,
+    "r_max": 6.082762530298219,
+    "total_energy": 1318,
+    "coverage": 0.1318
+  },
+  "final_history": {
+    "ticks_in_window": 0,
+    "window_size": 50,
+    "total_commits": 4,
+    "normalization_type": "time_based",
+    "normalization_scale": 1000.0,
+    "accumulator_nonzero": 0,
+    "raw_history_max": 160.0,
+    "raw_history_mean": 2.5,
+    "raw_history_sum": 25000.0,
+    "normalized_max": 32.0,
+    "normalized_mean": 0.5,
+    "effective_norm_factor": 5.0
+  },
+  "stability_metrics": {},
+  "history": [
+    {
+      "tick": 100,
+      "r_mean": 5.678693313407613,
+      "r_std": 3.025300357362832,
+      "energy": 1287,
+      "normalized_max": 20.0
+    },
+    {
+      "tick": 200,
+      "r_mean": 3.6447332154036745,
+      "r_std": 1.8536234214460032,
+      "energy": 1318,
+      "normalized_max": 32.0
+    }
+  ],
+  "elapsed_seconds": 31.749414443969727
+}

@@ -1,0 +1,219 @@
+V6 Phase 4A: 10k Tick Validation - Configuration Comparison
+======================================================================
+
+Testing three field confinement configurations:
+  1. decay_high: Field decay only (aggressive)
+  2. hybrid_high: Hybrid approach (aggressive creation limit)
+  3. hybrid_strong: Hybrid approach (very aggressive both mechanisms)
+
+
+======================================================================
+Configuration: decay_high
+======================================================================
+Jitter strength: 0.020
+Gamma modulation: 1.0
+Creation sensitivity: 0.0
+Decay threshold: 1.3
+Decay rate: 0.050
+Ticks: 10,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Range: [10.44, 32.39]
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 10,000 ticks...
+
+[    500/  10000] r_mean= 19.69, energy=  1643, coverage=  4.1%
+[   1000/  10000] r_mean= 19.69, energy=  1760, coverage=  4.4%
+[   1500/  10000] r_mean= 19.69, energy=  1759, coverage=  4.4%
+[   2000/  10000] r_mean= 19.69, energy=  1702, coverage=  4.3%
+[   2500/  10000] r_mean= 19.69, energy=  1685, coverage=  4.2%
+[   3000/  10000] r_mean= 19.69, energy=  1691, coverage=  4.2%
+[   3500/  10000] r_mean= 19.69, energy=  1720, coverage=  4.3%
+[   4000/  10000] r_mean= 19.69, energy=  1670, coverage=  4.2%
+[   4500/  10000] r_mean= 19.69, energy=  1687, coverage=  4.2%
+[   5000/  10000] r_mean= 19.69, energy=  1676, coverage=  4.2%
+[   5500/  10000] r_mean= 19.69, energy=  1702, coverage=  4.3%
+[   6000/  10000] r_mean= 19.69, energy=  1720, coverage=  4.3%
+[   6500/  10000] r_mean= 19.69, energy=  1713, coverage=  4.3%
+[   7000/  10000] r_mean= 19.69, energy=  1638, coverage=  4.1%
+[   7500/  10000] r_mean= 19.69, energy=  1682, coverage=  4.2%
+[   8000/  10000] r_mean= 19.69, energy=  1727, coverage=  4.3%
+[   8500/  10000] r_mean= 19.69, energy=  1659, coverage=  4.1%
+[   9000/  10000] r_mean= 19.69, energy=  1711, coverage=  4.3%
+[   9500/  10000] r_mean= 19.69, energy=  1702, coverage=  4.3%
+[  10000/  10000] r_mean= 19.69, energy=  1673, coverage=  4.2%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift:
+  Initial r_mean: 19.69
+  Final r_mean: 19.69
+  Drift: 0.00%
+
+Field coverage:
+  Initial: 0.5%
+  Final: 4.2%
+
+Field energy:
+  Initial: 194
+  Final: 1673
+  Growth: 8.6×
+
+Performance: 1.9 ticks/sec
+Total time: 89.7 minutes
+======================================================================
+
+======================================================================
+Configuration: hybrid_high
+======================================================================
+Jitter strength: 0.020
+Gamma modulation: 1.0
+Creation sensitivity: 2.0
+Decay threshold: 1.3
+Decay rate: 0.020
+Ticks: 10,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Range: [10.44, 32.39]
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 10,000 ticks...
+
+[    500/  10000] r_mean= 19.69, energy=  1211, coverage=  3.0%
+[   1000/  10000] r_mean= 19.69, energy=  1259, coverage=  3.1%
+[   1500/  10000] r_mean= 19.69, energy=  1281, coverage=  3.2%
+[   2000/  10000] r_mean= 19.69, energy=  1244, coverage=  3.1%
+[   2500/  10000] r_mean= 19.69, energy=  1259, coverage=  3.1%
+[   3000/  10000] r_mean= 19.69, energy=  1239, coverage=  3.1%
+[   3500/  10000] r_mean= 19.69, energy=  1263, coverage=  3.2%
+[   4000/  10000] r_mean= 19.69, energy=  1267, coverage=  3.2%
+[   4500/  10000] r_mean= 19.69, energy=  1208, coverage=  3.0%
+[   5000/  10000] r_mean= 19.69, energy=  1263, coverage=  3.2%
+[   5500/  10000] r_mean= 19.69, energy=  1274, coverage=  3.2%
+[   6000/  10000] r_mean= 19.69, energy=  1217, coverage=  3.0%
+[   6500/  10000] r_mean= 19.69, energy=  1230, coverage=  3.1%
+[   7000/  10000] r_mean= 19.69, energy=  1182, coverage=  3.0%
+[   7500/  10000] r_mean= 19.69, energy=  1242, coverage=  3.1%
+[   8000/  10000] r_mean= 19.69, energy=  1254, coverage=  3.1%
+[   8500/  10000] r_mean= 19.69, energy=  1192, coverage=  3.0%
+[   9000/  10000] r_mean= 19.69, energy=  1277, coverage=  3.2%
+[   9500/  10000] r_mean= 19.69, energy=  1231, coverage=  3.1%
+[  10000/  10000] r_mean= 19.69, energy=  1225, coverage=  3.1%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift:
+  Initial r_mean: 19.69
+  Final r_mean: 19.69
+  Drift: 0.00%
+
+Field coverage:
+  Initial: 0.5%
+  Final: 3.1%
+
+Field energy:
+  Initial: 194
+  Final: 1225
+  Growth: 6.3×
+
+Performance: 2.1 ticks/sec
+Total time: 78.3 minutes
+======================================================================
+
+======================================================================
+Configuration: hybrid_strong
+======================================================================
+Jitter strength: 0.020
+Gamma modulation: 1.0
+Creation sensitivity: 2.0
+Decay threshold: 1.5
+Decay rate: 0.050
+Ticks: 10,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Range: [10.44, 32.39]
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 10,000 ticks...
+
+[    500/  10000] r_mean= 19.69, energy=  1140, coverage=  2.9%
+[   1000/  10000] r_mean= 19.69, energy=  1167, coverage=  2.9%
+[   1500/  10000] r_mean= 19.69, energy=  1189, coverage=  3.0%
+[   2000/  10000] r_mean= 19.69, energy=  1153, coverage=  2.9%
+[   2500/  10000] r_mean= 19.69, energy=  1182, coverage=  3.0%
+[   3000/  10000] r_mean= 19.69, energy=  1174, coverage=  2.9%
+[   3500/  10000] r_mean= 19.69, energy=  1160, coverage=  2.9%
+[   4000/  10000] r_mean= 19.69, energy=  1131, coverage=  2.8%
+[   4500/  10000] r_mean= 19.69, energy=  1134, coverage=  2.8%
+[   5000/  10000] r_mean= 19.69, energy=  1129, coverage=  2.8%
+[   5500/  10000] r_mean= 19.69, energy=  1184, coverage=  3.0%
+[   6000/  10000] r_mean= 19.69, energy=  1142, coverage=  2.9%
+[   6500/  10000] r_mean= 19.69, energy=  1153, coverage=  2.9%
+[   7000/  10000] r_mean= 19.69, energy=  1131, coverage=  2.8%
+[   7500/  10000] r_mean= 19.69, energy=  1160, coverage=  2.9%
+[   8000/  10000] r_mean= 19.69, energy=  1158, coverage=  2.9%
+[   8500/  10000] r_mean= 19.69, energy=  1127, coverage=  2.8%
+[   9000/  10000] r_mean= 19.69, energy=  1149, coverage=  2.9%
+[   9500/  10000] r_mean= 19.69, energy=  1157, coverage=  2.9%
+[  10000/  10000] r_mean= 19.69, energy=  1159, coverage=  2.9%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift:
+  Initial r_mean: 19.69
+  Final r_mean: 19.69
+  Drift: 0.00%
+
+Field coverage:
+  Initial: 0.5%
+  Final: 2.9%
+
+Field energy:
+  Initial: 194
+  Final: 1159
+  Growth: 6.0×
+
+Performance: 1.4 ticks/sec
+Total time: 122.3 minutes
+======================================================================
+
+
+======================================================================
+SUMMARY COMPARISON
+======================================================================
+
+Config                 Creation  Decay Thr Decay Rate    Drift %  Final Cov %  Energy Growth
+------------------------------------------------------------------------------------------
+decay_high                  0.0        1.3      0.050       0.00          4.2            8.6×
+hybrid_high                 2.0        1.3      0.020       0.00          3.1            6.3×
+hybrid_strong               2.0        1.5      0.050       0.00          2.9            6.0×
+
+Best configuration (lowest coverage): hybrid_strong
+  Final coverage: 2.9%
+  Drift: 0.00%
+  Energy growth: 6.0×
+  Creation sensitivity: 2.0
+  Decay threshold: 1.5
+  Decay rate: 0.050
+
+Results saved to results/v6_10k_comparison.json
+======================================================================

@@ -1,0 +1,322 @@
+{
+  "config": {
+    "name": "QuickTestConfig",
+    "num_ticks": 500,
+    "n_patterns": 25,
+    "jitter_strength": 0.119,
+    "grid_size": 100
+  },
+  "velocity": {
+    "mean_speed": 0.0,
+    "std_speed": 0.0,
+    "max_speed": 0.0,
+    "min_speed": 0.0,
+    "n_valid": 25
+  },
+  "msd": {
+    "alpha": 0.6161563095867132,
+    "diffusion_coefficient": 0.040631761162487644,
+    "r_squared": 0.4848574430435416,
+    "interpretation": "subdiffusion (weakly trapped)"
+  },
+  "orbital": {
+    "mean_omega": 0.0298319302399703,
+    "std_omega": 0.0,
+    "rotation_coherence": 1.0,
+    "mean_period": 210.6194690265487,
+    "n_rotating": 25,
+    "omega_r_beta": 0.0,
+    "omega_r_fit_r2": 0.0
+  },
+  "identity": {
+    "alive_count": 25,
+    "alive_fraction": 1.0,
+    "mean_lifetime_fraction": 1.0,
+    "total_dissolutions": 0,
+    "total_reformations": 0,
+    "mean_coherence": 0.42010958121690656
+  },
+  "trajectory": {
+    "n_patterns": 25,
+    "mean_trajectory_length": 100.0,
+    "max_trajectory_length": 100,
+    "mean_displacement": 5.576536610881044,
+    "max_displacement": 13.152946437965905
+  },
+  "performance": {
+    "ticks_per_sec": 2.8486444679512344,
+    "elapsed_seconds": 175.52207922935486
+  },
+  "history": [
+    {
+      "tick": 50,
+      "velocity": {
+        "mean_speed": 0.0823110020543559,
+        "std_speed": 0.047083020150982764,
+        "max_speed": 0.21400720017409336,
+        "min_speed": 0.027640616366039712,
+        "n_valid": 25
+      },
+      "orbital": {
+        "mean_omega": 0.04107928162570648,
+        "std_omega": 0.025335247147380894,
+        "rotation_coherence": 1.0,
+        "mean_period": 267.1141674082761,
+        "n_rotating": 25,
+        "omega_r_beta": 0.0,
+        "omega_r_fit_r2": 0.0
+      },
+      "identity": {
+        "alive_count": 25,
+        "alive_fraction": 1.0,
+        "mean_lifetime_fraction": 1.0,
+        "total_dissolutions": 0,
+        "total_reformations": 0,
+        "mean_coherence": 0.4233214634604645
+      }
+    },
+    {
+      "tick": 100,
+      "velocity": {
+        "mean_speed": 0.0,
+        "std_speed": 0.0,
+        "max_speed": 0.0,
+        "min_speed": 0.0,
+        "n_valid": 25
+      },
+      "orbital": {
+        "mean_omega": -0.013468589810170618,
+        "std_omega": 0.0075347915067414395,
+        "rotation_coherence": -1.0,
+        "mean_period": 1541.9765378815216,
+        "n_rotating": 25,
+        "omega_r_beta": 0.0,
+        "omega_r_fit_r2": 0.0
+      },
+      "identity": {
+        "alive_count": 25,
+        "alive_fraction": 1.0,
+        "mean_lifetime_fraction": 1.0,
+        "total_dissolutions": 0,
+        "total_reformations": 0,
+        "mean_coherence": 0.4197031309760322
+      }
+    },
+    {
+      "tick": 150,
+      "velocity": {
+        "mean_speed": 0.0012121212121212121,
+        "std_speed": 0.0,
+        "max_speed": 0.0012121212121212121,
+        "min_speed": 0.0012121212121212121,
+        "n_valid": 25
+      },
+      "orbital": {
+        "mean_omega": -0.006542790037423421,
+        "std_omega": 0.0035347081673434756,
+        "rotation_coherence": -1.0,
+        "mean_period": 1965.498165130064,
+        "n_rotating": 25,
+        "omega_r_beta": 0.0,
+        "omega_r_fit_r2": 0.0
+      },
+      "identity": {
+        "alive_count": 25,
+        "alive_fraction": 1.0,
+        "mean_lifetime_fraction": 1.0,
+        "total_dissolutions": 0,
+        "total_reformations": 0,
+        "mean_coherence": 0.41893976527764776
+      }
+    },
+    {
+      "tick": 200,
+      "velocity": {
+        "mean_speed": 0.0,
+        "std_speed": 0.0,
+        "max_speed": 0.0,
+        "min_speed": 0.0,
+        "n_valid": 25
+      },
+      "orbital": {
+        "mean_omega": -0.005664571523561571,
+        "std_omega": 0.0020413496799822936,
+        "rotation_coherence": -1.0,
+        "mean_period": 1303.2193939302774,
+        "n_rotating": 25,
+        "omega_r_beta": 0.0,
+        "omega_r_fit_r2": 0.0
+      },
+      "identity": {
+        "alive_count": 25,
+        "alive_fraction": 1.0,
+        "mean_lifetime_fraction": 1.0,
+        "total_dissolutions": 0,
+        "total_reformations": 0,
+        "mean_coherence": 0.41891297588150267
+      }
+    },
+    {
+      "tick": 250,
+      "velocity": {
+        "mean_speed": 0.0,
+        "std_speed": 0.0,
+        "max_speed": 0.0,
+        "min_speed": 0.0,
+        "n_valid": 25
+      },
+      "orbital": {
+        "mean_omega": -0.004386978327208376,
+        "std_omega": 0.0013270053783692,
+        "rotation_coherence": -1.0,
+        "mean_period": 1590.7165880704604,
+        "n_rotating": 25,
+        "omega_r_beta": 0.0,
+        "omega_r_fit_r2": 0.0
+      },
+      "identity": {
+        "alive_count": 25,
+        "alive_fraction": 1.0,
+        "mean_lifetime_fraction": 1.0,
+        "total_dissolutions": 0,
+        "total_reformations": 0,
+        "mean_coherence": 0.4183517327200282
+      }
+    },
+    {
+      "tick": 300,
+      "velocity": {
+        "mean_speed": 0.008570991287109668,
+        "std_speed": 0.0,
+        "max_speed": 0.008570991287109668,
+        "min_speed": 0.008570991287109668,
+        "n_valid": 25
+      },
+      "orbital": {
+        "mean_omega": 0.0011012545676449214,
+        "std_omega": 0.0,
+        "rotation_coherence": 1.0,
+        "mean_period": 5705.479452054795,
+        "n_rotating": 25,
+        "omega_r_beta": 0.0,
+        "omega_r_fit_r2": 0.0
+      },
+      "identity": {
+        "alive_count": 25,
+        "alive_fraction": 1.0,
+        "mean_lifetime_fraction": 1.0,
+        "total_dissolutions": 0,
+        "total_reformations": 0,
+        "mean_coherence": 0.4187099394222366
+      }
+    },
+    {
+      "tick": 350,
+      "velocity": {
+        "mean_speed": 0.019393939393939394,
+        "std_speed": 0.0,
+        "max_speed": 0.019393939393939394,
+        "min_speed": 0.019393939393939394,
+        "n_valid": 25
+      },
+      "orbital": {
+        "mean_omega": -0.00040731333323853276,
+        "std_omega": 0.0,
+        "rotation_coherence": -1.0,
+        "mean_period": 15425.92592592592,
+        "n_rotating": 25,
+        "omega_r_beta": 0.0,
+        "omega_r_fit_r2": 0.0
+      },
+      "identity": {
+        "alive_count": 25,
+        "alive_fraction": 1.0,
+        "mean_lifetime_fraction": 1.0,
+        "total_dissolutions": 0,
+        "total_reformations": 0,
+        "mean_coherence": 0.4191757047959457
+      }
+    },
+    {
+      "tick": 400,
+      "velocity": {
+        "mean_speed": 0.008484848484848486,
+        "std_speed": 0.0,
+        "max_speed": 0.008484848484848486,
+        "min_speed": 0.008484848484848486,
+        "n_valid": 25
+      },
+      "orbital": {
+        "mean_omega": -0.00013577111107951088,
+        "std_omega": 0.0,
+        "rotation_coherence": -1.0,
+        "mean_period": 46277.777777777774,
+        "n_rotating": 25,
+        "omega_r_beta": 0.0,
+        "omega_r_fit_r2": 0.0
+      },
+      "identity": {
+        "alive_count": 25,
+        "alive_fraction": 1.0,
+        "mean_lifetime_fraction": 1.0,
+        "total_dissolutions": 0,
+        "total_reformations": 0,
+        "mean_coherence": 0.41954740272950614
+      }
+    },
+    {
+      "tick": 450,
+      "velocity": {
+        "mean_speed": 0.0012121212121212121,
+        "std_speed": 0.0,
+        "max_speed": 0.0012121212121212121,
+        "min_speed": 0.0012121212121212121,
+        "n_valid": 25
+      },
+      "orbital": {
+        "mean_omega": 0.012785112959987275,
+        "std_omega": 1.734723475976807e-18,
+        "rotation_coherence": 1.0,
+        "mean_period": 491.4454277286136,
+        "n_rotating": 25,
+        "omega_r_beta": 0.0,
+        "omega_r_fit_r2": 0.0
+      },
+      "identity": {
+        "alive_count": 25,
+        "alive_fraction": 1.0,
+        "mean_lifetime_fraction": 1.0,
+        "total_dissolutions": 0,
+        "total_reformations": 0,
+        "mean_coherence": 0.4198418424267069
+      }
+    },
+    {
+      "tick": 500,
+      "velocity": {
+        "mean_speed": 0.0,
+        "std_speed": 0.0,
+        "max_speed": 0.0,
+        "min_speed": 0.0,
+        "n_valid": 25
+      },
+      "orbital": {
+        "mean_omega": 0.0298319302399703,
+        "std_omega": 0.0,
+        "rotation_coherence": 1.0,
+        "mean_period": 210.6194690265487,
+        "n_rotating": 25,
+        "omega_r_beta": 0.0,
+        "omega_r_fit_r2": 0.0
+      },
+      "identity": {
+        "alive_count": 25,
+        "alive_fraction": 1.0,
+        "mean_lifetime_fraction": 1.0,
+        "total_dissolutions": 0,
+        "total_reformations": 0,
+        "mean_coherence": 0.42010958121690656
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+======================================================================
+V6 10k Tick Validation Experiment
+======================================================================
+
+Configuration:
+  Grid: 200x200 Planck cells
+  Patterns: 50
+  Jitter strength: 0.020
+  Gamma modulation: 1.0
+  Gamma field k: 100.0
+  Ticks: 10,000
+
+Initializing grid and gamma field...
+Initializing 50 patterns...
+
+Initial state:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Range: [10.44, 32.39]
+  Field energy: 194
+  Nonzero cells: 0.5%
+
+Evolving for 10,000 ticks...
+
+[    500/  10000] r_mean= 19.69, r_std= 4.52, energy=  1853, nonzero=  4.6%
+[   1000/  10000] r_mean= 19.69, r_std= 4.52, energy=  3912, nonzero=  9.8%
+[   1500/  10000] r_mean= 19.69, r_std= 4.52, energy=  7145, nonzero= 17.9%
+[   2000/  10000] r_mean= 19.69, r_std= 4.52, energy= 11928, nonzero= 29.8%
+[   2500/  10000] r_mean= 19.69, r_std= 4.52, energy= 18787, nonzero= 47.0%
+[   3000/  10000] r_mean= 19.69, r_std= 4.52, energy= 26346, nonzero= 65.9%
+[   3500/  10000] r_mean= 19.69, r_std= 4.52, energy= 33606, nonzero= 84.0%
+[   4000/  10000] r_mean= 19.69, r_std= 4.52, energy= 37400, nonzero= 93.5%
+[   4500/  10000] r_mean= 19.69, r_std= 4.52, energy= 39476, nonzero= 98.7%
+[   5000/  10000] r_mean= 19.69, r_std= 4.52, energy= 39619, nonzero= 99.0%
+[   5500/  10000] r_mean= 19.69, r_std= 4.52, energy= 39663, nonzero= 99.2%
+[   6000/  10000] r_mean= 19.69, r_std= 4.52, energy= 39638, nonzero= 99.1%
+[   6500/  10000] r_mean= 19.69, r_std= 4.52, energy= 39629, nonzero= 99.1%
+[   7000/  10000] r_mean= 19.69, r_std= 4.52, energy= 39600, nonzero= 99.0%
+[   7500/  10000] r_mean= 19.69, r_std= 4.52, energy= 39650, nonzero= 99.1%
+[   8000/  10000] r_mean= 19.69, r_std= 4.52, energy= 39642, nonzero= 99.1%
+[   8500/  10000] r_mean= 19.69, r_std= 4.52, energy= 39632, nonzero= 99.1%
+[   9000/  10000] r_mean= 19.69, r_std= 4.52, energy= 39615, nonzero= 99.0%
+[   9500/  10000] r_mean= 19.69, r_std= 4.52, energy= 39647, nonzero= 99.1%
+[  10000/  10000] r_mean= 19.69, r_std= 4.52, energy= 39654, nonzero= 99.1%
+
+======================================================================
+FINAL RESULTS
+======================================================================
+
+Cloud radius:
+  Initial: 19.69 Planck cells
+  Final: 19.69 Planck cells
+  Drift: 0.00%
+
+Field energy:
+  Initial: 194
+  Final: 39654
+  Growth: 39460
+
+Grid coverage:
+  Initial: 0.5%
+  Final: 99.1%
+
+Performance: 4.3 ticks/sec
+Total time: 38.5 minutes
+
+VALIDATION: SUCCESS
+  Drift 0.00% < 50.0% threshold
+======================================================================
+
+Results saved to results/v6_validation_10k.json

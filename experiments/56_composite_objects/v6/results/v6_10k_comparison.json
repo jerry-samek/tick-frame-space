@@ -1,0 +1,476 @@
+[
+  {
+    "config_name": "decay_high",
+    "creation_sensitivity": 0.0,
+    "decay_threshold": 1.3,
+    "decay_rate": 0.05,
+    "initial_r_mean": 19.691882950530704,
+    "final_r_mean": 19.691882950530704,
+    "drift_percent": 0.0,
+    "initial_coverage": 0.00485,
+    "final_coverage": 0.041825,
+    "initial_energy": 194,
+    "final_energy": 1673,
+    "energy_growth": 8.623711340206185,
+    "ticks_per_sec": 1.858866792060877,
+    "elapsed_minutes": 89.6603604833285,
+    "history": [
+      {
+        "tick": 500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1643,
+        "field_coverage": 0.041075
+      },
+      {
+        "tick": 1000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1760,
+        "field_coverage": 0.044
+      },
+      {
+        "tick": 1500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1759,
+        "field_coverage": 0.043975
+      },
+      {
+        "tick": 2000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1702,
+        "field_coverage": 0.04255
+      },
+      {
+        "tick": 2500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1685,
+        "field_coverage": 0.042125
+      },
+      {
+        "tick": 3000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1691,
+        "field_coverage": 0.042275
+      },
+      {
+        "tick": 3500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1720,
+        "field_coverage": 0.043
+      },
+      {
+        "tick": 4000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1670,
+        "field_coverage": 0.04175
+      },
+      {
+        "tick": 4500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1687,
+        "field_coverage": 0.042175
+      },
+      {
+        "tick": 5000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1676,
+        "field_coverage": 0.0419
+      },
+      {
+        "tick": 5500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1702,
+        "field_coverage": 0.04255
+      },
+      {
+        "tick": 6000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1720,
+        "field_coverage": 0.043
+      },
+      {
+        "tick": 6500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1713,
+        "field_coverage": 0.042825
+      },
+      {
+        "tick": 7000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1638,
+        "field_coverage": 0.04095
+      },
+      {
+        "tick": 7500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1682,
+        "field_coverage": 0.04205
+      },
+      {
+        "tick": 8000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1727,
+        "field_coverage": 0.043175
+      },
+      {
+        "tick": 8500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1659,
+        "field_coverage": 0.041475
+      },
+      {
+        "tick": 9000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1711,
+        "field_coverage": 0.042775
+      },
+      {
+        "tick": 9500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1702,
+        "field_coverage": 0.04255
+      },
+      {
+        "tick": 10000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1673,
+        "field_coverage": 0.041825
+      }
+    ]
+  },
+  {
+    "config_name": "hybrid_high",
+    "creation_sensitivity": 2.0,
+    "decay_threshold": 1.3,
+    "decay_rate": 0.02,
+    "initial_r_mean": 19.691882950530704,
+    "final_r_mean": 19.691882950530704,
+    "drift_percent": 0.0,
+    "initial_coverage": 0.00485,
+    "final_coverage": 0.030625,
+    "initial_energy": 194,
+    "final_energy": 1225,
+    "energy_growth": 6.314432989690721,
+    "ticks_per_sec": 2.1293952688780884,
+    "elapsed_minutes": 78.26948293844859,
+    "history": [
+      {
+        "tick": 500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1211,
+        "field_coverage": 0.030275
+      },
+      {
+        "tick": 1000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1259,
+        "field_coverage": 0.031475
+      },
+      {
+        "tick": 1500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1281,
+        "field_coverage": 0.032025
+      },
+      {
+        "tick": 2000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1244,
+        "field_coverage": 0.0311
+      },
+      {
+        "tick": 2500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1259,
+        "field_coverage": 0.031475
+      },
+      {
+        "tick": 3000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1239,
+        "field_coverage": 0.030975
+      },
+      {
+        "tick": 3500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1263,
+        "field_coverage": 0.031575
+      },
+      {
+        "tick": 4000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1267,
+        "field_coverage": 0.031675
+      },
+      {
+        "tick": 4500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1208,
+        "field_coverage": 0.0302
+      },
+      {
+        "tick": 5000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1263,
+        "field_coverage": 0.031575
+      },
+      {
+        "tick": 5500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1274,
+        "field_coverage": 0.03185
+      },
+      {
+        "tick": 6000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1217,
+        "field_coverage": 0.030425
+      },
+      {
+        "tick": 6500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1230,
+        "field_coverage": 0.03075
+      },
+      {
+        "tick": 7000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1182,
+        "field_coverage": 0.02955
+      },
+      {
+        "tick": 7500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1242,
+        "field_coverage": 0.03105
+      },
+      {
+        "tick": 8000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1254,
+        "field_coverage": 0.03135
+      },
+      {
+        "tick": 8500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1192,
+        "field_coverage": 0.0298
+      },
+      {
+        "tick": 9000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1277,
+        "field_coverage": 0.031925
+      },
+      {
+        "tick": 9500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1231,
+        "field_coverage": 0.030775
+      },
+      {
+        "tick": 10000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1225,
+        "field_coverage": 0.030625
+      }
+    ]
+  },
+  {
+    "config_name": "hybrid_strong",
+    "creation_sensitivity": 2.0,
+    "decay_threshold": 1.5,
+    "decay_rate": 0.05,
+    "initial_r_mean": 19.691882950530704,
+    "final_r_mean": 19.691882950530704,
+    "drift_percent": 0.0,
+    "initial_coverage": 0.00485,
+    "final_coverage": 0.028975,
+    "initial_energy": 194,
+    "final_energy": 1159,
+    "energy_growth": 5.974226804123711,
+    "ticks_per_sec": 1.3628900925092078,
+    "elapsed_minutes": 122.28914685249329,
+    "history": [
+      {
+        "tick": 500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1140,
+        "field_coverage": 0.0285
+      },
+      {
+        "tick": 1000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1167,
+        "field_coverage": 0.029175
+      },
+      {
+        "tick": 1500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1189,
+        "field_coverage": 0.029725
+      },
+      {
+        "tick": 2000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1153,
+        "field_coverage": 0.028825
+      },
+      {
+        "tick": 2500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1182,
+        "field_coverage": 0.02955
+      },
+      {
+        "tick": 3000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1174,
+        "field_coverage": 0.02935
+      },
+      {
+        "tick": 3500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1160,
+        "field_coverage": 0.029
+      },
+      {
+        "tick": 4000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1131,
+        "field_coverage": 0.028275
+      },
+      {
+        "tick": 4500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1134,
+        "field_coverage": 0.02835
+      },
+      {
+        "tick": 5000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1129,
+        "field_coverage": 0.028225
+      },
+      {
+        "tick": 5500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1184,
+        "field_coverage": 0.0296
+      },
+      {
+        "tick": 6000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1142,
+        "field_coverage": 0.02855
+      },
+      {
+        "tick": 6500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1153,
+        "field_coverage": 0.028825
+      },
+      {
+        "tick": 7000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1131,
+        "field_coverage": 0.028275
+      },
+      {
+        "tick": 7500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1160,
+        "field_coverage": 0.029
+      },
+      {
+        "tick": 8000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1158,
+        "field_coverage": 0.02895
+      },
+      {
+        "tick": 8500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1127,
+        "field_coverage": 0.028175
+      },
+      {
+        "tick": 9000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1149,
+        "field_coverage": 0.028725
+      },
+      {
+        "tick": 9500,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1157,
+        "field_coverage": 0.028925
+      },
+      {
+        "tick": 10000,
+        "r_mean": 19.691882950530704,
+        "r_std": 4.524350324919387,
+        "field_energy": 1159,
+        "field_coverage": 0.028975
+      }
+    ]
+  }
+]

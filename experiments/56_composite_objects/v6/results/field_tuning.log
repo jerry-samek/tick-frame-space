@@ -1,0 +1,595 @@
+V6 Phase 4: Field Confinement Parameter Tuning
+======================================================================
+
+Goal: Reduce field coverage from 99.1% to <20% while maintaining drift <10%
+
+
+======================================================================
+Configuration: baseline
+======================================================================
+Jitter strength: 0.020
+Gamma modulation: 1.0
+Creation sensitivity: 0.0
+Decay threshold: 0.0
+Decay rate: 0.000
+Ticks: 1,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Range: [10.44, 32.39]
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 1,000 ticks...
+
+[   100/  1000] r_mean= 19.69, energy=   944, coverage=  2.4%
+[   200/  1000] r_mean= 19.69, energy=  1270, coverage=  3.2%
+[   300/  1000] r_mean= 19.69, energy=  1442, coverage=  3.6%
+[   400/  1000] r_mean= 19.69, energy=  1594, coverage=  4.0%
+[   500/  1000] r_mean= 19.69, energy=  1853, coverage=  4.6%
+[   600/  1000] r_mean= 19.69, energy=  2169, coverage=  5.4%
+[   700/  1000] r_mean= 19.69, energy=  2563, coverage=  6.4%
+[   800/  1000] r_mean= 19.69, energy=  2888, coverage=  7.2%
+[   900/  1000] r_mean= 19.69, energy=  3383, coverage=  8.5%
+[  1000/  1000] r_mean= 19.69, energy=  3912, coverage=  9.8%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift:
+  Initial r_mean: 19.69
+  Final r_mean: 19.69
+  Drift: 0.00%
+
+Field coverage:
+  Initial: 0.5%
+  Final: 9.8%
+
+Field energy:
+  Initial: 194
+  Final: 3912
+
+Performance: 1.5 ticks/sec
+======================================================================
+
+======================================================================
+Configuration: creation_low
+======================================================================
+Jitter strength: 0.020
+Gamma modulation: 1.0
+Creation sensitivity: 0.5
+Decay threshold: 0.0
+Decay rate: 0.000
+Ticks: 1,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Range: [10.44, 32.39]
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 1,000 ticks...
+
+[   100/  1000] r_mean= 19.69, energy=   944, coverage=  2.4%
+[   200/  1000] r_mean= 19.69, energy=  1270, coverage=  3.2%
+[   300/  1000] r_mean= 19.69, energy=  1442, coverage=  3.6%
+[   400/  1000] r_mean= 19.69, energy=  1594, coverage=  4.0%
+[   500/  1000] r_mean= 19.69, energy=  1853, coverage=  4.6%
+[   600/  1000] r_mean= 19.69, energy=  2169, coverage=  5.4%
+[   700/  1000] r_mean= 19.69, energy=  2563, coverage=  6.4%
+[   800/  1000] r_mean= 19.69, energy=  2888, coverage=  7.2%
+[   900/  1000] r_mean= 19.69, energy=  3383, coverage=  8.5%
+[  1000/  1000] r_mean= 19.69, energy=  3912, coverage=  9.8%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift:
+  Initial r_mean: 19.69
+  Final r_mean: 19.69
+  Drift: 0.00%
+
+Field coverage:
+  Initial: 0.5%
+  Final: 9.8%
+
+Field energy:
+  Initial: 194
+  Final: 3912
+
+Performance: 2.5 ticks/sec
+======================================================================
+
+======================================================================
+Configuration: creation_medium
+======================================================================
+Jitter strength: 0.020
+Gamma modulation: 1.0
+Creation sensitivity: 1.0
+Decay threshold: 0.0
+Decay rate: 0.000
+Ticks: 1,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Range: [10.44, 32.39]
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 1,000 ticks...
+
+[   100/  1000] r_mean= 19.69, energy=   944, coverage=  2.4%
+[   200/  1000] r_mean= 19.69, energy=  1270, coverage=  3.2%
+[   300/  1000] r_mean= 19.69, energy=  1442, coverage=  3.6%
+[   400/  1000] r_mean= 19.69, energy=  1594, coverage=  4.0%
+[   500/  1000] r_mean= 19.69, energy=  1853, coverage=  4.6%
+[   600/  1000] r_mean= 19.69, energy=  2169, coverage=  5.4%
+[   700/  1000] r_mean= 19.69, energy=  2563, coverage=  6.4%
+[   800/  1000] r_mean= 19.69, energy=  2888, coverage=  7.2%
+[   900/  1000] r_mean= 19.69, energy=  3383, coverage=  8.5%
+[  1000/  1000] r_mean= 19.69, energy=  3912, coverage=  9.8%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift:
+  Initial r_mean: 19.69
+  Final r_mean: 19.69
+  Drift: 0.00%
+
+Field coverage:
+  Initial: 0.5%
+  Final: 9.8%
+
+Field energy:
+  Initial: 194
+  Final: 3912
+
+Performance: 2.5 ticks/sec
+======================================================================
+
+======================================================================
+Configuration: creation_high
+======================================================================
+Jitter strength: 0.020
+Gamma modulation: 1.0
+Creation sensitivity: 2.0
+Decay threshold: 0.0
+Decay rate: 0.000
+Ticks: 1,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Range: [10.44, 32.39]
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 1,000 ticks...
+
+[   100/  1000] r_mean= 19.69, energy=   926, coverage=  2.3%
+[   200/  1000] r_mean= 19.69, energy=  1182, coverage=  3.0%
+[   300/  1000] r_mean= 19.69, energy=  1225, coverage=  3.1%
+[   400/  1000] r_mean= 19.69, energy=  1207, coverage=  3.0%
+[   500/  1000] r_mean= 19.69, energy=  1221, coverage=  3.1%
+[   600/  1000] r_mean= 19.69, energy=  1211, coverage=  3.0%
+[   700/  1000] r_mean= 19.69, energy=  1237, coverage=  3.1%
+[   800/  1000] r_mean= 19.69, energy=  1232, coverage=  3.1%
+[   900/  1000] r_mean= 19.69, energy=  1245, coverage=  3.1%
+[  1000/  1000] r_mean= 19.69, energy=  1269, coverage=  3.2%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift:
+  Initial r_mean: 19.69
+  Final r_mean: 19.69
+  Drift: 0.00%
+
+Field coverage:
+  Initial: 0.5%
+  Final: 3.2%
+
+Field energy:
+  Initial: 194
+  Final: 1269
+
+Performance: 2.5 ticks/sec
+======================================================================
+
+======================================================================
+Configuration: decay_low
+======================================================================
+Jitter strength: 0.020
+Gamma modulation: 1.0
+Creation sensitivity: 0.0
+Decay threshold: 1.3
+Decay rate: 0.010
+Ticks: 1,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Range: [10.44, 32.39]
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 1,000 ticks...
+
+[   100/  1000] r_mean= 19.69, energy=   937, coverage=  2.3%
+[   200/  1000] r_mean= 19.69, energy=  1233, coverage=  3.1%
+[   300/  1000] r_mean= 19.69, energy=  1408, coverage=  3.5%
+[   400/  1000] r_mean= 19.69, energy=  1549, coverage=  3.9%
+[   500/  1000] r_mean= 19.69, energy=  1763, coverage=  4.4%
+[   600/  1000] r_mean= 19.69, energy=  1976, coverage=  4.9%
+[   700/  1000] r_mean= 19.69, energy=  2302, coverage=  5.8%
+[   800/  1000] r_mean= 19.69, energy=  2547, coverage=  6.4%
+[   900/  1000] r_mean= 19.69, energy=  2912, coverage=  7.3%
+[  1000/  1000] r_mean= 19.69, energy=  3253, coverage=  8.1%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift:
+  Initial r_mean: 19.69
+  Final r_mean: 19.69
+  Drift: 0.00%
+
+Field coverage:
+  Initial: 0.5%
+  Final: 8.1%
+
+Field energy:
+  Initial: 194
+  Final: 3253
+
+Performance: 2.5 ticks/sec
+======================================================================
+
+======================================================================
+Configuration: decay_medium
+======================================================================
+Jitter strength: 0.020
+Gamma modulation: 1.0
+Creation sensitivity: 0.0
+Decay threshold: 1.3
+Decay rate: 0.020
+Ticks: 1,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Range: [10.44, 32.39]
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 1,000 ticks...
+
+[   100/  1000] r_mean= 19.69, energy=   929, coverage=  2.3%
+[   200/  1000] r_mean= 19.69, energy=  1213, coverage=  3.0%
+[   300/  1000] r_mean= 19.69, energy=  1404, coverage=  3.5%
+[   400/  1000] r_mean= 19.69, energy=  1541, coverage=  3.9%
+[   500/  1000] r_mean= 19.69, energy=  1730, coverage=  4.3%
+[   600/  1000] r_mean= 19.69, energy=  1852, coverage=  4.6%
+[   700/  1000] r_mean= 19.69, energy=  2062, coverage=  5.2%
+[   800/  1000] r_mean= 19.69, energy=  2212, coverage=  5.5%
+[   900/  1000] r_mean= 19.69, energy=  2440, coverage=  6.1%
+[  1000/  1000] r_mean= 19.69, energy=  2644, coverage=  6.6%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift:
+  Initial r_mean: 19.69
+  Final r_mean: 19.69
+  Drift: 0.00%
+
+Field coverage:
+  Initial: 0.5%
+  Final: 6.6%
+
+Field energy:
+  Initial: 194
+  Final: 2644
+
+Performance: 2.5 ticks/sec
+======================================================================
+
+======================================================================
+Configuration: decay_high
+======================================================================
+Jitter strength: 0.020
+Gamma modulation: 1.0
+Creation sensitivity: 0.0
+Decay threshold: 1.3
+Decay rate: 0.050
+Ticks: 1,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Range: [10.44, 32.39]
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 1,000 ticks...
+
+[   100/  1000] r_mean= 19.69, energy=   912, coverage=  2.3%
+[   200/  1000] r_mean= 19.69, energy=  1202, coverage=  3.0%
+[   300/  1000] r_mean= 19.69, energy=  1386, coverage=  3.5%
+[   400/  1000] r_mean= 19.69, energy=  1520, coverage=  3.8%
+[   500/  1000] r_mean= 19.69, energy=  1650, coverage=  4.1%
+[   600/  1000] r_mean= 19.69, energy=  1692, coverage=  4.2%
+[   700/  1000] r_mean= 19.69, energy=  1699, coverage=  4.2%
+[   800/  1000] r_mean= 19.69, energy=  1674, coverage=  4.2%
+[   900/  1000] r_mean= 19.69, energy=  1702, coverage=  4.3%
+[  1000/  1000] r_mean= 19.69, energy=  1720, coverage=  4.3%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift:
+  Initial r_mean: 19.69
+  Final r_mean: 19.69
+  Drift: 0.00%
+
+Field coverage:
+  Initial: 0.5%
+  Final: 4.3%
+
+Field energy:
+  Initial: 194
+  Final: 1720
+
+Performance: 2.5 ticks/sec
+======================================================================
+
+======================================================================
+Configuration: hybrid_low
+======================================================================
+Jitter strength: 0.020
+Gamma modulation: 1.0
+Creation sensitivity: 1.0
+Decay threshold: 1.3
+Decay rate: 0.010
+Ticks: 1,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Range: [10.44, 32.39]
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 1,000 ticks...
+
+[   100/  1000] r_mean= 19.69, energy=   932, coverage=  2.3%
+[   200/  1000] r_mean= 19.69, energy=  1233, coverage=  3.1%
+[   300/  1000] r_mean= 19.69, energy=  1411, coverage=  3.5%
+[   400/  1000] r_mean= 19.69, energy=  1560, coverage=  3.9%
+[   500/  1000] r_mean= 19.69, energy=  1779, coverage=  4.4%
+[   600/  1000] r_mean= 19.69, energy=  2030, coverage=  5.1%
+[   700/  1000] r_mean= 19.69, energy=  2317, coverage=  5.8%
+[   800/  1000] r_mean= 19.69, energy=  2601, coverage=  6.5%
+[   900/  1000] r_mean= 19.69, energy=  3006, coverage=  7.5%
+[  1000/  1000] r_mean= 19.69, energy=  3393, coverage=  8.5%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift:
+  Initial r_mean: 19.69
+  Final r_mean: 19.69
+  Drift: 0.00%
+
+Field coverage:
+  Initial: 0.5%
+  Final: 8.5%
+
+Field energy:
+  Initial: 194
+  Final: 3393
+
+Performance: 2.6 ticks/sec
+======================================================================
+
+======================================================================
+Configuration: hybrid_medium
+======================================================================
+Jitter strength: 0.020
+Gamma modulation: 1.0
+Creation sensitivity: 1.0
+Decay threshold: 1.3
+Decay rate: 0.020
+Ticks: 1,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Range: [10.44, 32.39]
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 1,000 ticks...
+
+[   100/  1000] r_mean= 19.69, energy=   925, coverage=  2.3%
+[   200/  1000] r_mean= 19.69, energy=  1222, coverage=  3.1%
+[   300/  1000] r_mean= 19.69, energy=  1402, coverage=  3.5%
+[   400/  1000] r_mean= 19.69, energy=  1525, coverage=  3.8%
+[   500/  1000] r_mean= 19.69, energy=  1724, coverage=  4.3%
+[   600/  1000] r_mean= 19.69, energy=  1919, coverage=  4.8%
+[   700/  1000] r_mean= 19.69, energy=  2091, coverage=  5.2%
+[   800/  1000] r_mean= 19.69, energy=  2182, coverage=  5.5%
+[   900/  1000] r_mean= 19.69, energy=  2351, coverage=  5.9%
+[  1000/  1000] r_mean= 19.69, energy=  2603, coverage=  6.5%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift:
+  Initial r_mean: 19.69
+  Final r_mean: 19.69
+  Drift: 0.00%
+
+Field coverage:
+  Initial: 0.5%
+  Final: 6.5%
+
+Field energy:
+  Initial: 194
+  Final: 2603
+
+Performance: 2.5 ticks/sec
+======================================================================
+
+======================================================================
+Configuration: hybrid_high
+======================================================================
+Jitter strength: 0.020
+Gamma modulation: 1.0
+Creation sensitivity: 2.0
+Decay threshold: 1.3
+Decay rate: 0.020
+Ticks: 1,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Range: [10.44, 32.39]
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 1,000 ticks...
+
+[   100/  1000] r_mean= 19.69, energy=   912, coverage=  2.3%
+[   200/  1000] r_mean= 19.69, energy=  1166, coverage=  2.9%
+[   300/  1000] r_mean= 19.69, energy=  1216, coverage=  3.0%
+[   400/  1000] r_mean= 19.69, energy=  1201, coverage=  3.0%
+[   500/  1000] r_mean= 19.69, energy=  1213, coverage=  3.0%
+[   600/  1000] r_mean= 19.69, energy=  1208, coverage=  3.0%
+[   700/  1000] r_mean= 19.69, energy=  1224, coverage=  3.1%
+[   800/  1000] r_mean= 19.69, energy=  1228, coverage=  3.1%
+[   900/  1000] r_mean= 19.69, energy=  1237, coverage=  3.1%
+[  1000/  1000] r_mean= 19.69, energy=  1255, coverage=  3.1%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift:
+  Initial r_mean: 19.69
+  Final r_mean: 19.69
+  Drift: 0.00%
+
+Field coverage:
+  Initial: 0.5%
+  Final: 3.1%
+
+Field energy:
+  Initial: 194
+  Final: 1255
+
+Performance: 2.4 ticks/sec
+======================================================================
+
+======================================================================
+Configuration: hybrid_strong
+======================================================================
+Jitter strength: 0.020
+Gamma modulation: 1.0
+Creation sensitivity: 2.0
+Decay threshold: 1.5
+Decay rate: 0.050
+Ticks: 1,000
+
+Initializing gamma field...
+Initializing 50 patterns...
+Initial pattern distribution:
+  Mean radius: 19.69 Planck cells
+  Std radius: 4.52
+  Range: [10.44, 32.39]
+  Field energy: 194
+  Field coverage: 0.5%
+
+Evolving for 1,000 ticks...
+
+[   100/  1000] r_mean= 19.69, energy=   910, coverage=  2.3%
+[   200/  1000] r_mean= 19.69, energy=  1157, coverage=  2.9%
+[   300/  1000] r_mean= 19.69, energy=  1184, coverage=  3.0%
+[   400/  1000] r_mean= 19.69, energy=  1154, coverage=  2.9%
+[   500/  1000] r_mean= 19.69, energy=  1144, coverage=  2.9%
+[   600/  1000] r_mean= 19.69, energy=  1151, coverage=  2.9%
+[   700/  1000] r_mean= 19.69, energy=  1167, coverage=  2.9%
+[   800/  1000] r_mean= 19.69, energy=  1140, coverage=  2.9%
+[   900/  1000] r_mean= 19.69, energy=  1159, coverage=  2.9%
+[  1000/  1000] r_mean= 19.69, energy=  1173, coverage=  2.9%
+
+======================================================================
+RESULTS
+======================================================================
+Pattern drift:
+  Initial r_mean: 19.69
+  Final r_mean: 19.69
+  Drift: 0.00%
+
+Field coverage:
+  Initial: 0.5%
+  Final: 2.9%
+
+Field energy:
+  Initial: 194
+  Final: 1173
+
+Performance: 2.4 ticks/sec
+======================================================================
+
+
+======================================================================
+SUMMARY COMPARISON
+======================================================================
+
+Config                 Creation  Decay Thr Decay Rate    Drift %  Final Cov %
+----------------------------------------------------------------------
+baseline                    0.0        0.0      0.000       0.00          9.8
+creation_low                0.5        0.0      0.000       0.00          9.8
+creation_medium             1.0        0.0      0.000       0.00          9.8
+creation_high               2.0        0.0      0.000       0.00          3.2
+decay_low                   0.0        1.3      0.010       0.00          8.1
+decay_medium                0.0        1.3      0.020       0.00          6.6
+decay_high                  0.0        1.3      0.050       0.00          4.3
+hybrid_low                  1.0        1.3      0.010       0.00          8.5
+hybrid_medium               1.0        1.3      0.020       0.00          6.5
+hybrid_high                 2.0        1.3      0.020       0.00          3.1
+hybrid_strong               2.0        1.5      0.050       0.00          2.9
+
+Best configuration (lowest coverage with drift < 10%): hybrid_strong
+  Final coverage: 2.9%
+  Drift: 0.00%
+  Creation sensitivity: 2.0
+  Decay threshold: 1.5
+  Decay rate: 0.050
+
+Results saved to results/field_tuning_results.json
+======================================================================

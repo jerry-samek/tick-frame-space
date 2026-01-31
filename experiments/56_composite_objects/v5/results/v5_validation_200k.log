@@ -1,0 +1,841 @@
+======================================================================
+V5 Integer Arithmetic Validation Experiment
+======================================================================
+
+Configuration:
+  Fragments: 50
+  Total ticks: 200,000
+  Jitter strength: 0.000500
+  Collision radius: 0.50
+  Restitution: 0.80
+
+Initializing 50 electron fragments...
+  Mean radius: 1.8842
+  RMS radius: 1.9482
+  Total mass: 0.100000
+  Total energy: 50.0000
+
+Running 200,000 ticks...
+Progress reports every 1,000 ticks...
+
+[   1000/ 200000] (  0.5%) 2.2s elapsed, ETA: 434.6s
+  r_rms=16.6413, KE=0.000028, L_z=-0.000731
+  collisions=1184 total (1.14/tick)
+
+[   2000/ 200000] (  1.0%) 5.1s elapsed, ETA: 502.5s
+  r_rms=40.4022, KE=0.000045, L_z=-0.003158
+  collisions=1192 total (0.01/tick)
+
+[   3000/ 200000] (  1.5%) 8.2s elapsed, ETA: 541.1s
+  r_rms=69.5430, KE=0.000067, L_z=0.005094
+  collisions=1193 total (0.00/tick)
+
+[   4000/ 200000] (  2.0%) 11.6s elapsed, ETA: 567.1s
+  r_rms=101.9933, KE=0.000078, L_z=0.004093
+  collisions=1193 total (0.00/tick)
+
+[   5000/ 200000] (  2.5%) 15.0s elapsed, ETA: 585.9s
+  r_rms=137.2486, KE=0.000108, L_z=0.022677
+  collisions=1193 total (0.00/tick)
+
+[   6000/ 200000] (  3.0%) 18.6s elapsed, ETA: 601.7s
+  r_rms=179.7923, KE=0.000142, L_z=-0.051112
+  collisions=1194 total (0.00/tick)
+
+[   7000/ 200000] (  3.5%) 22.2s elapsed, ETA: 612.4s
+  r_rms=227.1965, KE=0.000186, L_z=-0.080547
+  collisions=1194 total (0.00/tick)
+
+[ [   8000/ 200000] (  4.0%) 27.8s elapsed, ETA: 666.9s
+  r_rms=302.7654, KE=0.000189, L_z=-0.121655
+  collisions=1759 total (0.00/tick)
+
+[   9000/ 200000] (  4.5%) 31.8s elapsed, ETA: 674.1s
+  r_rms=357.4217, KE=0.000205, L_z=-0.033038
+  collisions=1759 total (0.00/tick)
+
+[  10000/ 200000] (  5.0%) 35.8s elapsed, ETA: 681.0s
+  r_rms=414.4728, KE=0.000230, L_z=-0.086631
+  collisions=1759 total (0.00/tick)
+
+[  11000/ 200000] (  5.5%) 40.0s elapsed, ETA: 686.8s
+  r_rms=474.2182, KE=0.000247, L_z=0.074173
+  collisions=1759 total (0.00/tick)
+
+[  12000/ 200000] (  6.0%) 44.1s elapsed, ETA: 691.2s
+  r_rms=537.0157, KE=0.000302, L_z=0.032031
+  collisions=1759 total (0.00/tick)
+
+[  13000/ 200000] (  6.5%) 48.3s elapsed, ETA: 694.6s
+  r_rms=605.3344, KE=0.000325, L_z=0.118170
+  collisions=1759 total (0.00/tick)
+
+[  14000/ 200000] (  7.0%) 52.5s elapsed, ETA: 697.8s
+  r_rms=675.5573, KE=0.000374, L_z=0.112208
+  collisions=1759 total (0.00/tick)
+
+[  15000/ 200000] (  7.5%) 56.9s elapsed, ETA: 701.5s
+  r_rms=750.6282, KE=0.000438, L_z=-0.036806
+  collisions=1759 total (0.00/tick)
+
+[  16000/ 200000] (  8.0%) 61.3s elapsed, ETA: 704.6s
+  r_rms=831.6170, KE=0.000480, L_z=-0.289564
+  collisions=1759 total (0.00/tick)
+
+[  17000/ 200000] (  8.5%) 65.6s elapsed, ETA: 706.5s
+  r_rms=915.7768, KE=0.000498, L_z=-0.479202
+  collisions=1759 total (0.00/tick)
+
+[  18000/ 200000] (  9.0%) 70.2s elapsed, ETA: 709.6s
+  r_rms=1000.4611, KE=0.000497, L_z=-0.381453
+  collisions=1759 total (0.00/tick)
+
+[  19000/ 200000] (  9.5%) 74.7s elapsed, ETA: 711.4s
+  r_rms=1085.4189, KE=0.000510, L_z=-0.295054
+  collisions=1759 total (0.00/tick)
+
+[  20000/ 200000] ( 10.0%) 79.2s elapsed, ETA: 713.0s
+  r_rms=1172.4624, KE=0.000508, L_z=-0.503666
+  collisions=1759 total (0.00/tick)
+
+[  21000/ 200000] ( 10.5%) 84.0s elapsed, ETA: 715.7s
+  r_rms=1262.6249, KE=0.000563, L_z=-0.645072
+  collisions=1759 total (0.00/tick)
+
+[  22000/ 200000] ( 11.0%) 88.6s elapsed, ETA: 716.6s
+  r_rms=1357.3157, KE=0.000589, L_z=-0.568557
+  collisions=1759 total (0.00/tick)
+
+[  23000/ 200000] ( 11.5%) 93.2s elapsed, ETA: 717.3s
+  r_rms=1452.2175, KE=0.000597, L_z=-0.577732
+  collisions=1759 total (0.00/tick)
+
+[  24000/ 200000] ( 12.0%) 98.1s elapsed, ETA: 719.5s
+  r_rms=1548.5075, KE=0.000619, L_z=-0.687143
+  collisions=1759 total (0.00/tick)
+
+[  25000/ 200000] ( 12.5%) 102.9s elapsed, ETA: 720.5s
+  r_rms=1647.2272, KE=0.000689, L_z=-0.320156
+  collisions=1759 total (0.00/tick)
+
+[  26000/ 200000] ( 13.0%) 107.8s elapsed, ETA: 721.2s
+  r_rms=1749.3716, KE=0.000691, L_z=-0.110996
+  collisions=1759 total (0.00/tick)
+
+[  27000/ 200000] ( 13.5%) 112.8s elapsed, ETA: 722.8s
+  r_rms=1851.1780, KE=0.000727, L_z=0.563529
+  collisions=1759 total (0.00/tick)
+
+[  28000/ 200000] ( 14.0%) 117.7s elapsed, ETA: 723.0s
+  r_rms=1955.6059, KE=0.000743, L_z=0.398950
+  collisions=1759 total (0.00/tick)
+
+[  29000/ 200000] ( 14.5%) 122.7s elapsed, ETA: 723.4s
+  r_rms=2061.6565, KE=0.000760, L_z=-0.072136
+  collisions=1759 total (0.00/tick)
+
+[  30000/ 200000] ( 15.0%) 127.7s elapsed, ETA: 723.6s
+  r_rms=2168.8753, KE=0.000745, L_z=-0.414006
+  collisions=1759 total (0.00/tick)
+
+[  31000/ 200000] ( 15.5%) 132.9s elapsed, ETA: 724.4s
+  r_rms=2279.1226, KE=0.000773, L_z=-0.699121
+  collisions=1759 total (0.00/tick)
+
+[  32000/ 200000] ( 16.0%) 137.8s elapsed, ETA: 723.3s
+  r_rms=2390.8054, KE=0.000809, L_z=-1.492169
+  collisions=1759 total (0.00/tick)
+
+[  33000/ 200000] ( 16.5%) 142.7s elapsed, ETA: 722.0s
+  r_rms=2504.7107, KE=0.000808, L_z=-0.918022
+  collisions=1761 total (0.00/tick)
+
+[  34000/ 200000] ( 17.0%) 147.7s elapsed, ETA: 721.3s
+  r_rms=2619.8844, KE=0.000816, L_z=-0.785349
+  collisions=1761 total (0.00/tick)
+
+[  35000/ 200000] ( 17.5%) 152.8s elapsed, ETA: 720.3s
+  r_rms=2737.1625, KE=0.000866, L_z=1.065289
+  collisions=1761 total (0.00/tick)
+
+[  36000/ 200000] ( 18.0%) 157.8s elapsed, ETA: 718.7s
+  r_rms=2857.5508, KE=0.000899, L_z=0.536676
+  collisions=1761 total (0.00/tick)
+
+[  37000/ 200000] ( 18.5%) 162.8s elapsed, ETA: 717.2s
+  r_rms=2978.8414, KE=0.000895, L_z=1.005276
+  collisions=1761 total (0.00/tick)
+
+[  38000/ 200000] ( 19.0%) 167.9s elapsed, ETA: 715.8s
+  r_rms=3100.9354, KE=0.000946, L_z=0.763397
+  collisions=1761 total (0.00/tick)
+
+[  39000/ 200000] ( 19.5%) 173.1s elapsed, ETA: 714.5s
+  r_rms=3224.7817, KE=0.001001, L_z=-0.061765
+  collisions=1761 total (0.00/tick)
+
+[  40000/ 200000] ( 20.0%) 178.2s elapsed, ETA: 712.7s
+  r_rms=3350.6661, KE=0.001040, L_z=-1.557923
+  collisions=1761 total (0.00/tick)
+
+[  41000/ 200000] ( 20.5%) 183.3s elapsed, ETA: 710.8s
+  r_rms=3478.1272, KE=0.001009, L_z=-1.267317
+  collisions=1761 total (0.00/tick)
+
+[  42000/ 200000] ( 21.0%) 188.4s elapsed, ETA: 708.7s
+  r_rms=3603.6087, KE=0.001027, L_z=-1.117075
+  collisions=1761 total (0.00/tick)
+
+[  43000/ 200000] ( 21.5%) 193.5s elapsed, ETA: 706.7s
+  r_rms=3731.3166, KE=0.001071, L_z=-2.015616
+  collisions=1761 total (0.00/tick)
+
+[  44000/ 200000] ( 22.0%) 198.7s elapsed, ETA: 704.4s
+  r_rms=3860.2295, KE=0.001064, L_z=-2.101188
+  collisions=1761 total (0.00/tick)
+
+[  45000/ 200000] ( 22.5%) 203.8s elapsed, ETA: 702.1s
+  r_rms=3991.3664, KE=0.001091, L_z=-2.173464
+  collisions=1761 total (0.00/tick)
+
+[  46000/ 200000] ( 23.0%) 209.0s elapsed, ETA: 699.6s
+  r_rms=4123.5859, KE=0.001158, L_z=-3.215327
+  collisions=1761 total (0.00/tick)
+
+[  47000/ 200000] ( 23.5%) 214.1s elapsed, ETA: 697.0s
+  r_rms=4262.0209, KE=0.001260, L_z=-4.632165
+  collisions=1761 total (0.00/tick)
+
+[  48000/ 200000] ( 24.0%) 219.3s elapsed, ETA: 694.4s
+  r_rms=4404.3241, KE=0.001283, L_z=-5.391851
+  collisions=1761 total (0.00/tick)
+
+[  49000/ 200000] ( 24.5%) 224.5s elapsed, ETA: 691.7s
+  r_rms=4548.6970, KE=0.001333, L_z=-5.627973
+  collisions=1761 total (0.00/tick)
+
+[  50000/ 200000] ( 25.0%) 229.7s elapsed, ETA: 689.2s
+  r_rms=4692.3662, KE=0.001288, L_z=-8.333197
+  collisions=1761 total (0.00/tick)
+
+[  51000/ 200000] ( 25.5%) 235.0s elapsed, ETA: 686.4s
+  r_rms=4834.9574, KE=0.001297, L_z=-6.356763
+  collisions=1761 total (0.00/tick)
+
+[  52000/ 200000] ( 26.0%) 240.2s elapsed, ETA: 683.6s
+  r_rms=4978.4195, KE=0.001262, L_z=-6.220598
+  collisions=1761 total (0.00/tick)
+
+[  53000/ 200000] ( 26.5%) 245.5s elapsed, ETA: 681.0s
+  r_rms=5119.7433, KE=0.001249, L_z=-5.071835
+  collisions=1761 total (0.00/tick)
+
+[  54000/ 200000] ( 27.0%) 250.8s elapsed, ETA: 678.0s
+  r_rms=5260.6870, KE=0.001308, L_z=-4.893309
+  collisions=1761 total (0.00/tick)
+
+[  55000/ 200000] ( 27.5%) 256.0s elapsed, ETA: 675.0s
+  r_rms=5403
+  collisions=1197 total (0.00/tick)
+
+[  56000/ 200000] ( 28.0%) 248.8s elapsed, ETA: 639.7s
+  r_rms=5304.5568, KE=0.001442, L_z=2.290900
+  collisions=1197 total (0.00/tick)
+
+[  57000/ 200000] ( 28.5%) 254.1s elapsed, ETA: 637.4s
+  r_rms=5452.6150, KE=0.001427, L_z=2.593654
+  collisions=1197 total (0.00/tick)
+
+[  58000/ 200000] ( 29.0%) 259.4s elapsed, ETA: 635.1s
+  r_rms=5600.0223, KE=0.001376, L_z=3.233489
+  collisions=1197 total (0.00/tick)
+
+[  59000/ 200000] ( 29.5%) 264.7s elapsed, ETA: 632.6s
+  r_rms=5747.3038, KE=0.001443, L_z=2.359303
+  collisions=1197 total (0.00/tick)
+
+[  60000/ 200000] ( 30.0%) 270.0s elapsed, ETA: 630.1s
+  r_rms=5895.5016, KE=0.001438, L_z=3.015558
+  collisions=1197 total (0.00/tick)
+
+[  61000/ 200000] ( 30.5%) 275.5s elapsed, ETA: 627.7s
+  r_rms=6043.3790, KE=0.001434, L_z=3.956982
+  collisions=1197 total (0.00/tick)
+
+[  62000/ 200000] ( 31.0%) 280.9s elapsed, ETA: 625.2s
+  r_rms=6189.3099, KE=0.001424, L_z=4.388346
+  collisions=1197 total (0.00/tick)
+
+[  63000/ 200000] ( 31.5%) 286.3s elapsed, ETA: 622.7s
+  r_rms=6336.9318, KE=0.001450, L_z=2.007480
+  collisions=1197 total (0.00/tick)
+
+[  64000/ 200000] ( 32.0%) 291.8s elapsed, ETA: 620.0s
+  r_rms=6485.6941, KE=0.001411, L_z=0.390275
+  collisions=1197 total (0.00/tick)
+
+[  65000/ 200000] ( 32.5%) 297.2s elapsed, ETA: 617.2s
+  r_rms=6634.1146, KE=0.001455, L_z=0.526685
+  collisions=1197 total (0.00/tick)
+
+[  66000/ 200000] ( 33.0%) 302.8s elapsed, ETA: 614.8s
+  r_rms=6787.3800, KE=0.001520, L_z=-0.015582
+  collisions=1197 total (0.00/tick)
+
+[  67000/ 200000] ( 33.5%) 308.2s elapsed, ETA: 611.8s
+  r_rms=6941.9700, KE=0.001558, L_z=1.275517
+  collisions=1197 total (0.00/tick)
+
+[  68000/ 200000] ( 34.0%) 313.7s elapsed, ETA: 609.0s
+  r_rms=7098.3581, KE=0.001594, L_z=2.043024
+  collisions=1197 total (0.00/tick)
+
+[  69000/ 200000] ( 34.5%) 319.4s elapsed, ETA: 606.4s
+  r_rms=7255.3773, KE=0.001649, L_z=-0.705289
+  collisions=1197 total (0.00/tick)
+
+[  70000/ 200000] ( 35.0%) 324.9s elapsed, ETA: 603.5s
+  r_rms=7415.4912, KE=0.001662, L_z=-2.166826
+  collisions=1197 total (0.00/tick)
+
+[  71000/ 200000] ( 35.5%) 330.7s elapsed, ETA: 600.8s
+  r_rms=7575.1162, KE=0.001641, L_z=-2.373730
+  collisions=1197 total (0.00/tick)
+
+[  72000/ 200000] ( 36.0%) 336.3s elapsed, ET[  72000/ 200000] ( 36.0%) 354.7s elapsed, ETA: 630.6s
+  r_rms=8096.0201, KE=0.001964, L_z=-7.918038
+  collisions=1761 total (0.00/tick)
+
+[  73000/ 200000] ( 36.5%) 361.3s elapsed, ETA: 628.6s
+  r_rms=8270.8220, KE=0.002035, L_z=-7.736361
+  collisions=1761 total (0.00/tick)
+
+[  74000/ 200000] ( 37.0%) 368.1s elapsed, ETA: 626.8s
+  r_rms=8449.4319, KE=0.002093, L_z=-4.578353
+  collisions=1761 total (0.00/tick)
+
+[  75000/ 200000] ( 37.5%) 374.5s elapsed, ETA: 624.2s
+  r_rms=8630.7440, KE=0.002176, L_z=-3.977644
+  collisions=1761 total (0.00/tick)
+
+[  76000/ 200000] ( 38.0%) 381.1s elapsed, ETA: 621.8s
+  r_rms=8813.0156, KE=0.002232, L_z=-4.361912
+  collisions=1761 total (0.00/tick)
+
+[  77000/ 200000] ( 38.5%) 387.4s elapsed, ETA: 618.8s
+  r_rms=8994.8460, KE=0.002261, L_z=-3.427517
+  collisions=1761 total (0.00/tick)
+
+[  78000/ 200000] ( 39.0%) 393.8s elapsed, ETA: 615.9s
+  r_rms=9180.0813, KE=0.002311, L_z=-2.813808
+  collisions=1761 total (0.00/tick)
+
+[  79000/ 200000] ( 39.5%) 400.4s elapsed, ETA: 613.3s
+  r_rms=9367.9669, KE=0.002321, L_z=-3.057243
+  collisions=1761 total (0.00/tick)
+
+[  80000/ 200000] ( 40.0%) 406.9s elapsed, ETA: 610.3s
+  r_rms=9556.2370, KE=0.002357, L_z=-4.301529
+  collisions=1761 total (0.00/tick)
+
+[  81000/ 200000] ( 40.5%) 413.3s elapsed, ETA: 607.2s
+  r_rms=9744.6096, KE=0.002344, L_z=-3.087484
+  collisions=1761 total (0.00/tick)
+
+[  82000/ 200000] ( 41.0%) 420.1s elapsed, ETA: 604.5s
+  r_rms=9930.7764, KE=0.002314, L_z=-2.817121
+  collisions=1761 total (0.00/tick)
+
+[  83000/ 200000] ( 41.5%) 425.8s elapsed, ETA: 600.2s
+  r_rms=10117.5982, KE=0.002293, L_z=-2.181854
+  collisions=1761 total (0.00/tick)
+
+[  84000/ 200000] ( 42.0%) 431.5s elapsed, ETA: 595.9s
+  r_rms=10304.3996, KE=0.002299, L_z=0.132277
+  collisions=1761 total (0.00/tick)
+
+[  85000/ 200000] ( 42.5%) 437.1s elapsed, ETA: 591.4s
+  r_rms=10492.0872, KE=0.002293, L_z=0.018314
+  collisions=1761 total (0.00/tick)
+
+[  86000/ 200000] ( 43.0%) 442.9s elapsed, ETA: 587.1s
+  r_rms=10677.5814, KE=0.002279, L_z=1.552047
+  collisions=1761 total (0.00/tick)
+
+[  87000/ 200000] ( 43.5%) 448.6s elapsed, ETA: 582.7s
+  r_rms=10863.2340, KE=0.002320, L_z=2.976197
+  collisions=1761 total (0.00/tick)
+
+[  88000/ 200000] ( 44.0%) 454.5s elapsed, ETA: 578.4s
+  r_rms=11052.1765, KE=0.002386, L_z=2.006455
+  collisions=1761 total (0.00/tick)
+
+[  89000/ 200000] ( 44.5%) 460.3s elapsed, ETA: 574.1s
+  r_rms=11240.3635, KE=0.002378, L_z=2.784471
+  collisions=1761 total (0.00/tick)
+
+[  90000/ 200000] ( 45.0%) 466.2s elapsed, ETA: 569.8s
+  r_rms=11429.4497, KE=0.002386, L_z=-1.849598
+  collisions=1761 total (0.00/tick)
+
+[  91000/ 200000] ( 45.5%) 472.0s elapsed, ETA: 565.4s
+  r_rms=11619.8345, KE=0.002455, L_z=-1.519639
+  collisions=1761 total (0.00/tick)
+
+[  92000/ 200000] ( 46.0%) 477.8s elapsed, ETA: 560.9s
+  r_rms=11812.0929, KE=0.002470, L_z=-3.701099
+  collisions=1761 total (0.00/tick)
+
+[  93000/ 200000] ( 46.5%) 483.7s elapsed, ETA: 556.5s
+  r_rms=12002.7282, KE=0.002454, L_z=-5.569596
+  collisions=1761 total (0.00/tick)
+
+[  94000/ 200000] ( 47.0%) 489.5s elapsed, ETA: 552.0s
+  r_rms=12193.9043, KE=0.002429, L_z=-2.478213
+  collisions=1761 total (0.00/tick)
+
+[  95000/ 200000] ( 47.5%) 495.2s elapsed, ETA: 547.4s
+  r_rms=12385.3682, KE=0.002495, L_z=-1.450640
+  collisions=1761 total (0.00/tick)
+
+[  96000/ 200000] ( 48.0%) 501.0s elapsed, ETA: 542.7s
+  r_rms=12577.9878, KE=0.002562, L_z=-0.827208
+  collisions=1761 total (0.00/tick)
+
+[  97000/ 200000] ( 48.5%) 506.9s elapsed, ETA: 538.3s
+  r_rms=12773.8762, KE=0.002661, L_z=0.398143
+  collisions=1761 total (0.00/tick)
+
+[  98000/ 200000] ( 49.0%) 512.6s elapsed, ETA: 533.6s
+  r_rms=12968.8244, KE=0.002579, L_z=6.826207
+  collisions=1761 total (0.00/tick)
+
+[  99000/ 200000] ( 49.5%) 518.4s elapsed, ETA: 528.9s
+  r_rms=13162.9183, KE=0.002592, L_z=1.318914
+  collisions=1761 total (0.00/tick)
+
+[ 100000/ 200000] ( 50.0%) 524.2s elapsed, ETA: 524.2s
+  r_rms=13359.2627, KE=0.002673, L_z=-3.594300
+  collisions=1761 total (0.00/tick)
+
+[ 101000/ 200000] ( 50.5%) 530.1s elapsed, ETA: 519.6s
+  r_rms=13557.6931, KE=0.002676, L_z=-3.977013
+  collisions=1761 total (0.00/tick)
+
+[ 102000/ 200000] ( 51.0%) 535.9s elapsed, ETA: 514.9s
+  r_rms=13758.4404, KE=0.002725, L_z=1.703001
+  collisions=1761 total (0.00/tick)
+
+[ 103000/ 200000] ( 51.5%) 541.8s elapsed, ETA: 510.2s
+  r_rms=13959.5766, KE=0.002718, L_z=-0.749209
+  collisions=1761 total (0.00/tick)
+
+[ 104000/ 200000] ( 52.0%) 547.6s elapsed, ETA: 505.5s
+  r_rms=14160.4470, KE=0.002624, L_z=1.834400
+  collisions=1761 total (0.00/tick)
+
+[ 105000/ 200000] ( 52.5%) 553.5s elapsed, ETA: 500.7s
+  r_rms=14357.8620, KE=0.002608, L_z=-5.225275
+  collisions=1761 total (0.00/tick)
+
+[ 106000/ 200000] ( 53.0%) 559.3s elapsed, ETA: 496.0s
+  r_rms=14557.6960, KE=0.002713, L_z=-9.192308
+  collisions=1761 total (0.00/tick)
+
+[ 107000/ 200000] ( 53.5%) 565.1s elapsed, ETA: 491.2s
+  r_rms=14760.2250, KE=0.002679, L_z=-7.044476
+  collisions=1761 total (0.00/tick)
+
+[ 108000/ 200000] ( 54.0%) 571.1s elapsed, ETA: 486.5s
+  r_rms=14961.2796, KE=0.002679, L_z=-6.080720
+  collisions=1761 total (0.00/tick)
+
+[ 109000/ 200000] ( 54.5%) 577.0s elapsed, ETA: 481.7s
+  r_rms=15165.6736, KE=0.002771, L_z=-9.377742
+  collisions=1761 total (0.00/tick)
+
+[ 110000/ 200000] ( 55.0%) 582.9s elapsed, ETA: 476.9s
+  r_rms=15372.0351, KE=0.002788, L_z=-14.657325
+  collisions=1761 total (0.00/tick)
+
+[ 111000/ 200000] ( 55.5%) 588.9s elapsed, ETA: 472.1s
+  r_rms=15578.1182, KE=0.002735, L_z=-16.375656
+  collisions=1761 total (0.00/tick)
+
+[ 112000/ 200000] ( 56.0%) 594.8s elapsed, ETA: 467.3s
+  r_rms=15783.3726, KE=0.002742, L_z=-19.439983
+  collisions=1761 total (0.00/tick)
+
+[ 113000/ 200000] ( 56.5%) 601.1s elap
+  r_rms=15716.2748, KE=0.003393, L_z=-2.750163
+  collisions=1197 total (0.00/tick)
+
+[ 114000/ 200000] ( 57.0%) 579.4s elapsed, ETA: 437.1s
+  r_rms=15941.3134, KE=0.003487, L_z=-2.355750
+  collisions=1197 total (0.00/tick)
+
+[ 115000/ 200000] ( 57.5%) 586.4s elapsed, ETA: 433.4s
+  r_rms=16169.1327, KE=0.003563, L_z=1.454451
+  collisions=1197 total (0.00/tick)
+
+[ 116000/ 200000] ( 58.0%) 592.9s elapsed, ETA: 429.3s
+  r_rms=16398.9833, KE=0.003634, L_z=3.737184
+  collisions=1197 total (0.00/tick)
+
+[ 117000/ 200000] ( 58.5%) 599.5s elapsed, ETA: 425.3s
+  r_rms=16628.4775, KE=0.003598, L_z=1.759330
+  collisions=1197 total (0.00/tick)
+
+[ 118000/ 200000] ( 59.0%) 606.0s elapsed, ETA: 421.1s
+  r_rms=16858.1280, KE=0.003558, L_z=2.871369
+  collisions=1197 total (0.00/tick)
+
+[ 119000/ 200000] ( 59.5%) 612.5s elapsed, ETA: 416.9s
+  r_rms=17088.9969, KE=0.003598, L_z=7.192114
+  collisions=1197 total (0.00/tick)
+
+[ 120000/ 200000] ( 60.0%) 619.3s elapsed, ETA: 412.9s
+  r_rms=17321.5191, KE=0.003625, L_z=8.590384
+  collisions=1197 total (0.00/tick)
+
+[ 121000/ 200000] ( 60.5%) 625.8s elapsed, ETA: 408.6s
+  r_rms=17552.9605, KE=0.003589, L_z=6.980159
+  collisions=1197 total (0.00/tick)
+
+[ 122000/ 200000] ( 61.0%) 632.4s elapsed, ETA: 404.3s
+  r_rms=17784.4096, KE=0.003588, L_z=3.529272
+  collisions=1197 total (0.00/tick)
+
+[ 123000/ 200000] ( 61.5%) 639.2s elapsed, ETA: 400.1s
+  r_rms=18016.1714, KE=0.003612, L_z=6.414024
+  collisions=1197 total (0.00/tick)
+
+[ 124000/ 200000] ( 62.0%) 644.9s elapsed, ETA: 395.3s
+  r_rms=18250.8898, KE=0.003705, L_z=5.623825
+  collisions=1197 total (0.00/tick)
+
+[ 125000/ 200000] ( 62.5%) 650.7s elapsed, ETA: 390.4s
+  r_rms=18489.8136, KE=0.003820, L_z=6.076412
+  collisions=1197 total (0.00/tick)
+
+[ 126000/ 200000] ( 63.0%) 656.4s elapsed, ETA: 385.5s
+  r_rms=18729.6144, KE=0.003709, L_z=5.029889
+  collisions=1197 total (0.00/tick)
+
+[ 127000/ 200000] ( 63.5%) 662.2s elapsed, ETA: 380.6s
+  r_rms=18967.2384, KE=0.003569, L_z=-1.390620
+  collisions=1197 total (0.00/tick)
+
+[ 128000/ 200000] ( 64.0%) 668.0s elapsed, ETA: 375.8s
+  r_rms=19203.3337, KE=0.003587, L_z=-5.863631
+  collisions=1197 total (0.00/tick)
+
+[ 129000/ 200000] ( 64.5%) 673.9s elapsed, ETA: 370.9s
+  r_rms=19440.4604, KE=0.003670, L_z=-3.350045
+  collisions=1197 total (0.00/tick)
+
+[ 130000/ 200000] ( 65.0%) 679.8[ 130000/ 200000] ( 65.0%) 717.5s elapsed, ETA: 386.3s
+  r_rms=19514.2652, KE=0.003236, L_z=-3.795218
+  collisions=1761 total (0.00/tick)
+
+[ 131000/ 200000] ( 65.5%) 724.5s elapsed, ETA: 381.6s
+  r_rms=19732.1794, KE=0.003244, L_z=0.373328
+  collisions=1761 total (0.00/tick)
+
+[ 132000/ 200000] ( 66.0%) 731.7s elapsed, ETA: 376.9s
+  r_rms=19951.8134, KE=0.003314, L_z=-4.675311
+  collisions=1761 total (0.00/tick)
+
+[ 133000/ 200000] ( 66.5%) 739.0s elapsed, ETA: 372.3s
+  r_rms=20171.5788, KE=0.003322, L_z=-5.669655
+  collisions=1761 total (0.00/tick)
+
+[ 134000/ 200000] ( 67.0%) 746.1s elapsed, ETA: 367.5s
+  r_rms=20393.7057, KE=0.003374, L_z=-4.756245
+  collisions=1761 total (0.00/tick)
+
+[ 135000/ 200000] ( 67.5%) 753.4s elapsed, ETA: 362.7s
+  r_rms=20615.8200, KE=0.003357, L_z=-6.115108
+  collisions=1761 total (0.00/tick)
+
+[ 136000/ 200000] ( 68.0%) 760.5s elapsed, ETA: 357.9s
+  r_rms=20840.7552, KE=0.003430, L_z=-7.598691
+  collisions=1761 total (0.00/tick)
+
+[ 137000/ 200000] ( 68.5%) 767.9s elapsed, ETA: 353.1s
+  r_rms=21067.2882, KE=0.003474, L_z=-9.885956
+  collisions=1761 total (0.00/tick)
+
+[ 138000/ 200000] ( 69.0%) 775.3s elapsed, ETA: 348.3s
+  r_rms=21296.8406, KE=0.003533, L_z=-8.819775
+  collisions=1761 total (0.00/tick)
+
+[ 139000/ 200000] ( 69.5%) 782.7s elapsed, ETA: 343.5s
+  r_rms=21529.3715, KE=0.003581, L_z=-8.242692
+  collisions=1761 total (0.00/tick)
+
+[ 140000/ 200000] ( 70.0%) 789.4s elapsed, ETA: 338.3s
+  r_rms=21760.5335, KE=0.003527, L_z=-6.225577
+  collisions=1761 total (0.00/tick)
+
+[ 141000/ 200000] ( 70.5%) 795.5s elapsed, ETA: 332.9s
+  r_rms=21994.7111, KE=0.003644, L_z=-3.566231
+  collisions=1761 total (0.00/tick)
+
+[ 142000/ 200000] ( 71.0%) 801.7s elapsed, ETA: 327.4s
+  r_rms=22231.0460, KE=0.003690, L_z=11.645936
+  collisions=1761 total (0.00/tick)
+
+[ 143000/ 200000] ( 71.5%) 807.8s elapsed, ETA: 322.0s
+  r_rms=22467.5078, KE=0.003757, L_z=7.457017
+  collisions=1761 total (0.00/tick)
+
+[ 144000/ 200000] ( 72.0%) 813.9s elapsed, ETA: 316.5s
+  r_rms=22707.4586, KE=0.003813, L_z=7.496133
+  collisions=1761 total (0.00/tick)
+
+[ 145000/ 200000] ( 72.5%) 820.0s elapsed, ETA: 311.1s
+  r_rms=22948.6352, KE=0.003807, L_z=9.706124
+  collisions=1761 total (0.00/tick)
+
+[ 146000/ 200000] ( 73.0%) 826.1s elapsed, ETA: 305.6s
+  r_rms=23188.0113, KE=0.003715, L_z=4.536075
+  collisions=1761 total (0.00/tick)
+
+[ 147000/ 200000] ( 73.5%) 832.1s elapsed, ETA: 300.0s
+  r_rms=23427.8043, KE=0.003687, L_z=1.762719
+  collisions=1761 total (0.00/tick)
+
+[ 148000/ 200000] ( 74.0%) 838.2s elapsed, ETA: 294.5s
+  r_rms=23666.5917, KE=0.003644, L_z=1.645097
+  collisions=1761 total (0.00/tick)
+
+[ 149000/ 200000] ( 74.5%) 844.4s elapsed, ETA: 289.0s
+  r_rms=23905.1009, KE=0.003642, L_z=-1.593059
+  collisions=1761 total (0.00/tick)
+
+[ 150000/ 200000] ( 75.0%) 850.4s elapsed, ETA: 283.5s
+  r_rms=24144.5999, KE=0.003732, L_z=0.339297
+  collisions=1761 total (0.00/tick)
+
+[ 151000/ 200000] ( 75.5%) 856.6s elapsed, ETA: 278.0s
+  r_rms=24386.9582, KE=0.003820, L_z=1.302920
+  collisions=1761 total (0.00/tick)
+
+[ 152000/ 200000] ( 76.0%) 862.8s elapsed, ETA: 272.5s
+  r_rms=24632.7684, KE=0.003842, L_z=7.610900
+  collisions=1761 total (0.00/tick)
+
+[ 153000/ 200000] ( 76.5%) 868.9s elapsed, ETA: 266.9s
+  r_rms=24881.3759, KE=0.003912, L_z=8.135563
+  collisions=1761 total (0.00/tick)
+
+[ 154000/ 200000] ( 77.0%) 875.0s elapsed, ETA: 261.4s
+  r_rms=25130.1734, KE=0.003982, L_z=8.220126
+  collisions=1761 total (0.00/tick)
+
+[ 155000/ 200000] ( 77.5%) 881.2s elapsed, ETA: 255.8s
+  r_rms=25381.2735, KE=0.004052, L_z=3.340695
+  collisions=1761 total (0.00/tick)
+
+[ 156000/ 200000] ( 78.0%) 887.4s elapsed, ETA: 250.3s
+  r_rms=25633.9438, KE=0.004080, L_z=-3.904651
+  collisions=1761 total (0.00/tick)
+
+[ 157000/ 200000] ( 78.5%) 894.0s elapsed, ETA: 244.9s
+  r_rms=25887.0022, KE=0.003995, L_z=-4.866500
+  collisions=1761 total (0.00/tick)
+
+[ 158000/ 200000] ( 79.0%) 901.7s elapsed, ETA: 239.7s
+  r_rms=26138.6015, KE=0.004051, L_z=-12.968707
+  collisions=1761 total (0.00/tick)
+
+[ 159000/ 200000] ( 79.5%) 908.9s elapsed, ETA: 234.4s
+  r_rms=26392.1387, KE=0.004056, L_z=-14.492732
+  collisions=1761 total (0.00/tick)
+
+[ 160000/ 200000] ( 80.0%) 914.7s elapsed, ETA: 228.7s
+  r_rms=26647.7757, KE=0.004100, L_z=-18.209326
+  collisions=1761 total (0.00/tick)
+
+[ 161000/ 200000] ( 80.5%) 920.6s elapsed, ETA: 223.0s
+  r_rms=26904.5426, KE=0.004120, L_z=-19.639495
+  collisions=1761 total (0.00/tick)
+
+[ 162000/ 200000] ( 81.0%) 926.5s elapsed, ETA: 217.3s
+  r_rms=27161.1790, KE=0.004107, L_z=-31.707304
+  collisions=1761 total (0.00/tick)
+
+[ 163000/ 200000] ( 81.5%) 932.4s elapsed, ETA: 211.6s
+  r_rms=27417.6887, KE=0.004095, L_z=-34.164203
+  collisions=1761 total (0.00/tick)
+
+[ 164000/ 200000] ( 82.0%) 938.3s elapsed, ETA: 206.0s
+  r_rms=27671.0843, KE=0.004070, L_z=-37.868535
+  collisions=1761 total (0.00/tick)
+
+[ 165000/ 200000] ( 82.5%) 944.1s elapsed, ETA: 200.3s
+  r_rms=27923.5819, KE=0.004021, L_z=-38.416609
+  collisions=1761 total (0.00/tick)
+
+[ 166000/ 200000] ( 83.0%) 950.1s elapsed, ETA: 194.6s
+  r_rms=28175.2564, KE=0.003979, L_z=-24.385673
+  collisions=1761 total (0.00/tick)
+
+[ 167000/ 200000] ( 83.5%) 956.0s elapsed, ETA: 188.9s
+  r_rms=28426.7485, KE=0.004034, L_z=-18.325773
+  collisions=1761 total (0.00/tick)
+
+[ 168000/ 200000] ( 84.0%) 961.9s elapsed, ETA: 183.2s
+  r_rms=28679.9914, KE=0.004135, L_z=-31.960414
+  collisions=1761 total (0.00/tick)
+
+[ 169000/ 200000] ( 84.5%) 967.8s elapsed, ETA: 177.5s
+  r_rms=28933.1159, KE=0.004070, L_z=-33.472622
+  collisions=1761 total (0.00/tick)
+
+[ 170000/ 200000] ( 85.0%) 973.8s elapsed, ETA: 171.9s
+  r_rms=29185.5416, KE=0.004105, L_z=-27.281409
+  collisions=1761 total (0.00/tick)
+
+[ 171000/ 200000] ( 85.5%) 979.8s elapsed, ETA: 166.2s
+  r_rms=29438.0318, KE=0.004130, L_z=-31.568340
+  collisions=1761 total (0.00/tick)
+
+[ 172000/ 200000] ( 86.0%) 985.7s elapsed, ETA: 160.5s
+  r_rms=29692.0928, KE=0.004276, L_z=-41.134099
+  collisions=1761 total (0.00/tick)
+
+[ 173000/ 200000] ( 86.5%) 991.8s elapsed, ETA: 154.8s
+  r_rms=29949.1938, KE=0.004437, L_z=-43.426661
+  collisions=1761 total (0.00/tick)
+
+[ 174000/ 200000] ( 87.0%) 997.8s elapsed, ETA: 149.1s
+  r_rms=30213.3165, KE=0.004577, L_z=-38.263813
+  collisions=1761 total (0.00/tick)
+
+[ 175000/ 200000] ( 87.5%) 1003.8s elapsed, ETA: 143.4s
+  r_rms=30480.6944, KE=0.004598, L_z=-28.969724
+  collisions=1761 total (0.00/tick)
+
+[ 176000/ 200000] ( 88.0%) 1009.8s elapsed, ETA: 137.7s
+  r_rms=30749.4379, KE=0.004598, L_z=-39.911701
+  collisions=1761 total (0.00/tick)
+
+[ 177000/ 200000] ( 88.5%) 1015.9s elapsed, ETA: 132.0s
+  r_rms=31019.1183, KE=0.004712, L_z=-43.139093
+  collisions=1761 total (0.00/tick)
+
+[ 178000/ 200000] ( 89.0%) 1021.9s elapsed, ETA: 126.3s
+  r_rms=31288.4635, KE=0.004604, L_z=-33.508830
+  collisions=1761 total (0.00/tick)
+
+[ 179000/ 200000] ( 89.5%) 1028.4s elapsed, ETA: 120.7s
+  r_rms=31556.6755, KE=0.004590, L_z=-26.476845
+  collisions=1761 total (0.00/tick)
+
+[ 180000/ 200000] ( 90.0%) 1034.5s elapsed, ETA: 114.9s
+  r_rms=31827.5627, KE=0.004696, L_z=-21.957317
+  collisions=1761 total (0.00/tick)
+
+[ 181000/ 200000] ( 90.5%) 1040.6s elapsed, ETA: 109.2s
+  r_rms=32100.5535, KE=0.004694, L_z=-41.790877
+  collisions=1761 total (0.00/tick)
+
+[ 182000/ 200000] ( 91.0%) 1046.6s elapsed, ETA: 103.5s
+  r_rms=32374.1835, KE=0.004698, L_z=-47.404381
+  collisions=1761 total (0.00/tick)
+
+[ 183000/ 200000] ( 91.5%) 1052.6s elapsed, ETA: 97.8s
+  r_rms=32650.3618, KE=0.004872, L_z=-49.467777
+  collisions=1761 total (0.00/tick)
+
+[ 184000/ 200000] ( 92.0%) 1058.6s elapsed, ETA: 92.1s
+  r_rms=32927.0378, KE=0.004871, L_z=-46.308888
+  collisions=1761 total (0.00/tick)
+
+[ 185000/ 200000] ( 92.5%) 1064.6s elapsed, ETA: 86.3s
+  r_rms=33203.6933, KE=0.004743, L_z=-45.413755
+  collisions=1761 total (0.00/tick)
+
+[ 186000/ 200000] ( 93.0%) 1070.6s elapsed, ETA: 80.6s
+  r_rms=33482.2032, KE=0.004930, L_z=-56.505987
+  collisions=1761 total (0.00/tick)
+
+[ 187000/ 200000] ( 93.5%) 1076.8s elapsed, ETA: 74.9s
+  r_rms=33762.3336, KE=0.004859, L_z=-53.579918
+  collisions=1761 total (0.00/tick)
+
+[ 188000/ 200000] ( 94.0%) 1082.8s elapsed, ETA: 69.1s
+  r_rms=34042.8749, KE=0.004839, L_z=-59.034798
+  collisions=1761 total (0.00/tick)
+
+[ 189000/ 200000] ( 94.5%) 1089.6s elapsed, ETA: 63.4s
+  r_rms=34321.4338, KE=0.004683, L_z=-35.653106
+  collisions=1761 total (0.00/tick)
+
+[ 190000/ 200000] ( 95.0%) 1096.1s elapsed, ETA: 57.7s
+  r_rms=34599.4530, KE=0.004882, L_z=-25.964660
+  collisions=1761 total (0.00/tick)
+
+[ 191000/ 200000] ( 95.5%) 1102.6s elapsed, ETA: 52.0s
+  r_rms=34881.0669, KE=0.004895, L_z=-10.743982
+  collisions=1761 total (0.00/tick)
+
+[ 192000/ 200000] ( 96.0%) 1108.9s elapsed, ETA: 46.2s
+  r_rms=35162.0586, KE=0.004858, L_z=-12.092160
+  collisions=1761 total (0.00/tick)
+
+[ 193000/ 200000] ( 96.5%) 1115.3s elapsed, ETA: 40.5s
+  r_rms=35442.1615, KE=0.004908, L_z=-17.652062
+  collisions=1761 total (0.00/tick)
+
+[ 194000/ 200000] ( 97.0%) 1122.1s elapsed, ETA: 34.7s
+  r_rms=35724.1968, KE=0.004973, L_z=-10.119210
+  collisions=1761 total (0.00/tick)
+
+[ 195000/ 200000] ( 97.5%) 1128.8s elapsed, ETA: 28.9s
+  r_rms=36009.3742, KE=0.005116, L_z=-12.564806
+  collisions=1761 total (0.00/tick)
+
+[ 196000/ 200000] ( 98.0%) 1135.2s elapsed, ETA: 23.2s
+  r_rms=36295.1188, KE=0.005077, L_z=-23.912504
+  collisions=1761 total (0.00/tick)
+
+[ 197000/ 200000] ( 98.5%) 1141.7s elapsed, ETA: 17.4s
+  r_rms=36582.4646, KE=0.005192, L_z=-25.616127
+  collisions=1761 total (0.00/tick)
+
+[ 198000/ 200000] ( 99.0%) 1148.3s elapsed, ETA: 11.6s
+  r_rms=36873.9880, KE=0.005229, L_z=-40.893857
+  collisions=1761 total (0.00/tick)
+
+[ 199000/ 200000] ( 99.5%) 1154.7s elapsed, ETA: 5.8s
+  r_rms=37168.3028, KE=0.005422, L_z=-31.988987
+  collisions=1761 total (0.00/tick)
+
+[ 200000/ 200000] (100.0%) 1161.4s elapsed, ETA: 0.0s
+  r_rms=37465.7381, KE=0.005570, L_z=-25.718251
+  collisions=1761 total (0.00/tick)
+
+
+======================================================================
+FINAL RESULTS
+======================================================================
+
+Cloud radius:
+  Initial RMS: 2.0042
+  Final RMS: 37465.7381
+  Drift: 1869246.09%
+
+Collisions:
+  Total: 1,761
+  Average per tick: 0.01
+
+Performance:
+  Total time: 1161.4s
+  Ticks per second: 172.2
+
+======================================================================
+[FAIL] Cloud radius drift = 1869246.09% >= 10%
+======================================================================

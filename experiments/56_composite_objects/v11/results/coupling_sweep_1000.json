@@ -1,0 +1,471 @@
+{
+  "all_results": {
+    "window_25": {
+      "window_size": 25,
+      "target_gamma_k": 25.0,
+      "coupling": "well=window",
+      "final_stats": {
+        "r_mean": 3.1622776601683795,
+        "r_std": 0.0,
+        "r_min": 3.1622776601683795,
+        "r_max": 3.1622776601683795,
+        "total_energy": 1354,
+        "coverage": 0.1354
+      },
+      "final_history": {
+        "ticks_in_window": 0,
+        "window_size": 25,
+        "total_commits": 40,
+        "normalization_type": "time_based",
+        "normalization_scale": 1000.0,
+        "accumulator_nonzero": 0,
+        "raw_history_max": 8080.0,
+        "raw_history_mean": 25.0,
+        "raw_history_sum": 250000.0,
+        "normalized_max": 197.0731658935547,
+        "normalized_mean": 0.6097561120986938,
+        "effective_norm_factor": 41.0
+      },
+      "stability_metrics": {
+        "r_mean_avg": 3.302856748552647,
+        "r_mean_std": 0.3693208468219543,
+        "r_std_avg": 0.03668047613350073,
+        "energy_avg": 1322.6666666666667,
+        "energy_std": 28.72668136458199
+      },
+      "history": [
+        {
+          "tick": 100,
+          "r_mean": 6.148195535622897,
+          "r_std": 2.932523086992952,
+          "energy": 1216,
+          "normalized_max": 24.0
+        },
+        {
+          "tick": 200,
+          "r_mean": 4.27512718814832,
+          "r_std": 1.7785633317807477,
+          "energy": 1272,
+          "normalized_max": 31.11111068725586
+        },
+        {
+          "tick": 300,
+          "r_mean": 3.705580695357593,
+          "r_std": 0.8418264133377705,
+          "energy": 1283,
+          "normalized_max": 86.15384674072266
+        },
+        {
+          "tick": 400,
+          "r_mean": 3.582380738204328,
+          "r_std": 0.5353020143270658,
+          "energy": 1376,
+          "normalized_max": 122.35294342041016
+        },
+        {
+          "tick": 500,
+          "r_mean": 3.0449242250247064,
+          "r_std": 0.22008285680100348,
+          "energy": 1286,
+          "normalized_max": 146.6666717529297
+        },
+        {
+          "tick": 600,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "energy": 1314,
+          "normalized_max": 163.1999969482422
+        },
+        {
+          "tick": 700,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "energy": 1297,
+          "normalized_max": 175.1724090576172
+        },
+        {
+          "tick": 800,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "energy": 1319,
+          "normalized_max": 184.242431640625
+        },
+        {
+          "tick": 900,
+          "r_mean": 4.12310562561766,
+          "r_std": 8.881784197001252e-16,
+          "energy": 1366,
+          "normalized_max": 191.35134887695312
+        },
+        {
+          "tick": 1000,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "energy": 1354,
+          "normalized_max": 197.0731658935547
+        }
+      ],
+      "elapsed_seconds": 234.32278609275818
+    },
+    "window_50": {
+      "window_size": 50,
+      "target_gamma_k": 50.0,
+      "coupling": "well=window",
+      "final_stats": {
+        "r_mean": 4.12310562561766,
+        "r_std": 8.881784197001252e-16,
+        "r_min": 4.123105625617661,
+        "r_max": 4.123105625617661,
+        "total_energy": 1375,
+        "coverage": 0.1375
+      },
+      "final_history": {
+        "ticks_in_window": 0,
+        "window_size": 50,
+        "total_commits": 20,
+        "normalization_type": "time_based",
+        "normalization_scale": 1000.0,
+        "accumulator_nonzero": 0,
+        "raw_history_max": 4020.0,
+        "raw_history_mean": 12.5,
+        "raw_history_sum": 125000.0,
+        "normalized_max": 191.42857360839844,
+        "normalized_mean": 0.5952380895614624,
+        "effective_norm_factor": 21.0
+      },
+      "stability_metrics": {
+        "r_mean_avg": 3.295369377715197,
+        "r_mean_std": 0.37488753569165184,
+        "r_std_avg": 1.4802973661668753e-16,
+        "energy_avg": 1310.0,
+        "energy_std": 37.704995248198436
+      },
+      "history": [
+        {
+          "tick": 100,
+          "r_mean": 5.645916833224763,
+          "r_std": 3.1691675740341143,
+          "energy": 1265,
+          "normalized_max": 20.0
+        },
+        {
+          "tick": 200,
+          "r_mean": 3.8674038628761225,
+          "r_std": 1.75590072652495,
+          "energy": 1289,
+          "normalized_max": 28.0
+        },
+        {
+          "tick": 300,
+          "r_mean": 3.578820276987108,
+          "r_std": 0.7155734937977505,
+          "energy": 1339,
+          "normalized_max": 74.28571319580078
+        },
+        {
+          "tick": 400,
+          "r_mean": 3.200710778786351,
+          "r_std": 0.1882830596757795,
+          "energy": 1362,
+          "normalized_max": 113.33333587646484
+        },
+        {
+          "tick": 500,
+          "r_mean": 3.0,
+          "r_std": 0.0,
+          "energy": 1256,
+          "normalized_max": 138.18182373046875
+        },
+        {
+          "tick": 600,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "energy": 1282,
+          "normalized_max": 155.38461303710938
+        },
+        {
+          "tick": 700,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "energy": 1305,
+          "normalized_max": 168.0
+        },
+        {
+          "tick": 800,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "energy": 1334,
+          "normalized_max": 177.64706420898438
+        },
+        {
+          "tick": 900,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "energy": 1308,
+          "normalized_max": 185.26315307617188
+        },
+        {
+          "tick": 1000,
+          "r_mean": 4.12310562561766,
+          "r_std": 8.881784197001252e-16,
+          "energy": 1375,
+          "normalized_max": 191.42857360839844
+        }
+      ],
+      "elapsed_seconds": 222.7707142829895
+    },
+    "window_75": {
+      "window_size": 75,
+      "target_gamma_k": 75.0,
+      "coupling": "well=window",
+      "final_stats": {
+        "r_mean": 3.0,
+        "r_std": 0.0,
+        "r_min": 3.0,
+        "r_max": 3.0,
+        "total_energy": 1403,
+        "coverage": 0.1403
+      },
+      "final_history": {
+        "ticks_in_window": 25,
+        "window_size": 75,
+        "total_commits": 13,
+        "normalization_type": "time_based",
+        "normalization_scale": 1000.0,
+        "accumulator_nonzero": 25,
+        "raw_history_max": 2570.000244140625,
+        "raw_history_mean": 8.125000953674316,
+        "raw_history_sum": 81250.0078125,
+        "normalized_max": 183.57144165039062,
+        "normalized_mean": 0.5803571939468384,
+        "effective_norm_factor": 14.000000953674316
+      },
+      "stability_metrics": {
+        "r_mean_avg": 2.687043938042748,
+        "r_mean_std": 0.42466212957679367,
+        "r_std_avg": 0.12079019914308499,
+        "energy_avg": 1344.0,
+        "energy_std": 30.713731999438515
+      },
+      "history": [
+        {
+          "tick": 100,
+          "r_mean": 5.579635282951054,
+          "r_std": 3.0834510064613823,
+          "energy": 1301,
+          "normalized_max": 15.000000953674316
+        },
+        {
+          "tick": 200,
+          "r_mean": 3.499145844972474,
+          "r_std": 1.8643975851764747,
+          "energy": 1375,
+          "normalized_max": 20.000001907348633
+        },
+        {
+          "tick": 300,
+          "r_mean": 2.5240054715381177,
+          "r_std": 1.014591730522994,
+          "energy": 1335,
+          "normalized_max": 66.66667175292969
+        },
+        {
+          "tick": 400,
+          "r_mean": 2.2914755783066596,
+          "r_std": 0.47868536015232444,
+          "energy": 1414,
+          "normalized_max": 95.5555648803711
+        },
+        {
+          "tick": 500,
+          "r_mean": 2.2514755783066596,
+          "r_std": 0.3617426160804023,
+          "energy": 1302,
+          "normalized_max": 117.14286804199219
+        },
+        {
+          "tick": 600,
+          "r_mean": 2.273116364806534,
+          "r_std": 0.1814992893890538,
+          "energy": 1335,
+          "normalized_max": 146.66668701171875
+        },
+        {
+          "tick": 700,
+          "r_mean": 2.273116364806534,
+          "r_std": 0.1814992893890538,
+          "energy": 1327,
+          "normalized_max": 157.00001525878906
+        },
+        {
+          "tick": 800,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "energy": 1350,
+          "normalized_max": 165.45455932617188
+        },
+        {
+          "tick": 900,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "energy": 1347,
+          "normalized_max": 178.46156311035156
+        },
+        {
+          "tick": 1000,
+          "r_mean": 3.0,
+          "r_std": 0.0,
+          "energy": 1403,
+          "normalized_max": 183.57144165039062
+        }
+      ],
+      "elapsed_seconds": 189.15051221847534
+    },
+    "window_100": {
+      "window_size": 100,
+      "target_gamma_k": 100.0,
+      "coupling": "well=window",
+      "final_stats": {
+        "r_mean": 3.0,
+        "r_std": 0.0,
+        "r_min": 3.0,
+        "r_max": 3.0,
+        "total_energy": 1490,
+        "coverage": 0.149
+      },
+      "final_history": {
+        "ticks_in_window": 0,
+        "window_size": 100,
+        "total_commits": 10,
+        "normalization_type": "time_based",
+        "normalization_scale": 1000.0,
+        "accumulator_nonzero": 0,
+        "raw_history_max": 2000.0,
+        "raw_history_mean": 6.25,
+        "raw_history_sum": 62500.0,
+        "normalized_max": 181.81817626953125,
+        "normalized_mean": 0.5681818127632141,
+        "effective_norm_factor": 11.0
+      },
+      "stability_metrics": {
+        "r_mean_avg": 2.6721265421393547,
+        "r_mean_std": 0.43940081489194943,
+        "r_std_avg": 0.0,
+        "energy_avg": 1401.6666666666667,
+        "energy_std": 46.64999702274612
+      },
+      "history": [
+        {
+          "tick": 100,
+          "r_mean": 4.679739466069042,
+          "r_std": 2.5020069004133143,
+          "energy": 1213,
+          "normalized_max": 15.0
+        },
+        {
+          "tick": 200,
+          "r_mean": 3.017159063342206,
+          "r_std": 1.7136951848248805,
+          "energy": 1347,
+          "normalized_max": 26.66666603088379
+        },
+        {
+          "tick": 300,
+          "r_mean": 2.3955719202885812,
+          "r_std": 0.9493340690846818,
+          "energy": 1393,
+          "normalized_max": 65.0
+        },
+        {
+          "tick": 400,
+          "r_mean": 2.126491106406735,
+          "r_std": 0.3435630573461869,
+          "energy": 1411,
+          "normalized_max": 100.0
+        },
+        {
+          "tick": 500,
+          "r_mean": 2.23606797749979,
+          "r_std": 0.0,
+          "energy": 1403,
+          "normalized_max": 125.0
+        },
+        {
+          "tick": 600,
+          "r_mean": 2.23606797749979,
+          "r_std": 0.0,
+          "energy": 1332,
+          "normalized_max": 142.85714721679688
+        },
+        {
+          "tick": 700,
+          "r_mean": 2.23606797749979,
+          "r_std": 0.0,
+          "energy": 1384,
+          "normalized_max": 156.25
+        },
+        {
+          "tick": 800,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "energy": 1407,
+          "normalized_max": 166.6666717529297
+        },
+        {
+          "tick": 900,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "energy": 1394,
+          "normalized_max": 175.0
+        },
+        {
+          "tick": 1000,
+          "r_mean": 3.0,
+          "r_std": 0.0,
+          "energy": 1490,
+          "normalized_max": 181.81817626953125
+        }
+      ],
+      "elapsed_seconds": 220.6038293838501
+    }
+  },
+  "summary": [
+    {
+      "window_size": 25,
+      "well_k": 25.0,
+      "r_mean": 3.1622776601683795,
+      "r_std": 0.0,
+      "energy": 1354,
+      "drift": 0.3693208468219543,
+      "elapsed": 234.32278609275818
+    },
+    {
+      "window_size": 50,
+      "well_k": 50.0,
+      "r_mean": 4.12310562561766,
+      "r_std": 8.881784197001252e-16,
+      "energy": 1375,
+      "drift": 0.37488753569165184,
+      "elapsed": 222.7707142829895
+    },
+    {
+      "window_size": 75,
+      "well_k": 75.0,
+      "r_mean": 3.0,
+      "r_std": 0.0,
+      "energy": 1403,
+      "drift": 0.42466212957679367,
+      "elapsed": 189.15051221847534
+    },
+    {
+      "window_size": 100,
+      "well_k": 100.0,
+      "r_mean": 3.0,
+      "r_std": 0.0,
+      "energy": 1490,
+      "drift": 0.43940081489194943,
+      "elapsed": 220.6038293838501
+    }
+  ],
+  "coupling_validated": true
+}

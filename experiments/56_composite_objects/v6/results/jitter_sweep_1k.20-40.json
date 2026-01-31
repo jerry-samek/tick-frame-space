@@ -1,0 +1,293 @@
+[
+  {
+    "config_name": "jitter_0.20",
+    "jitter_strength": 0.2,
+    "initial_r_mean": 19.691882950530704,
+    "final_r_mean": 19.38499357442184,
+    "r_drift_percent": 1.5584562272679583,
+    "com_drift_mean": 0.48,
+    "com_drift_max": 3.0,
+    "initial_coverage": 0.00485,
+    "final_coverage": 0.939325,
+    "initial_energy": 194,
+    "final_energy": 37573,
+    "ticks_per_sec": 1.5012069401660881,
+    "elapsed_seconds": 666.1306800842285,
+    "history": [
+      {
+        "tick": 100,
+        "r_mean_current": 19.665394800664775,
+        "com_drift_mean": 0.04,
+        "r_drift_percent": 0.1345130373386466,
+        "field_energy": 35606,
+        "field_coverage": 0.89015
+      },
+      {
+        "tick": 200,
+        "r_mean_current": 19.63305893291432,
+        "com_drift_mean": 0.1,
+        "r_drift_percent": 0.2987221575720315,
+        "field_energy": 36432,
+        "field_coverage": 0.9108
+      },
+      {
+        "tick": 300,
+        "r_mean_current": 19.517119622693798,
+        "com_drift_mean": 0.24,
+        "r_drift_percent": 0.8874891663531677,
+        "field_energy": 36627,
+        "field_coverage": 0.915675
+      },
+      {
+        "tick": 400,
+        "r_mean_current": 19.49359039945275,
+        "com_drift_mean": 0.3,
+        "r_drift_percent": 1.0069760803276109,
+        "field_energy": 36856,
+        "field_coverage": 0.9214
+      },
+      {
+        "tick": 500,
+        "r_mean_current": 19.474566541769534,
+        "com_drift_mean": 0.32,
+        "r_drift_percent": 1.1035836913468664,
+        "field_energy": 37027,
+        "field_coverage": 0.925675
+      },
+      {
+        "tick": 600,
+        "r_mean_current": 19.41273793112506,
+        "com_drift_mean": 0.4,
+        "r_drift_percent": 1.417563876988818,
+        "field_energy": 37180,
+        "field_coverage": 0.9295
+      },
+      {
+        "tick": 700,
+        "r_mean_current": 19.410563658460706,
+        "com_drift_mean": 0.42,
+        "r_drift_percent": 1.4286053435149868,
+        "field_energy": 37314,
+        "field_coverage": 0.93285
+      },
+      {
+        "tick": 800,
+        "r_mean_current": 19.410563658460706,
+        "com_drift_mean": 0.42,
+        "r_drift_percent": 1.4286053435149868,
+        "field_energy": 37569,
+        "field_coverage": 0.939225
+      },
+      {
+        "tick": 900,
+        "r_mean_current": 19.38499357442184,
+        "com_drift_mean": 0.48,
+        "r_drift_percent": 1.5584562272679583,
+        "field_energy": 37534,
+        "field_coverage": 0.93835
+      },
+      {
+        "tick": 1000,
+        "r_mean_current": 19.38499357442184,
+        "com_drift_mean": 0.48,
+        "r_drift_percent": 1.5584562272679583,
+        "field_energy": 37573,
+        "field_coverage": 0.939325
+      }
+    ]
+  },
+  {
+    "config_name": "jitter_0.30",
+    "jitter_strength": 0.3,
+    "initial_r_mean": 19.691882950530704,
+    "final_r_mean": 16.386061408523396,
+    "r_drift_percent": 16.787737111337112,
+    "com_drift_mean": 3.969860364490396,
+    "com_drift_max": 8.06225774829855,
+    "initial_coverage": 0.00485,
+    "final_coverage": 0.673125,
+    "initial_energy": 194,
+    "final_energy": 26925,
+    "ticks_per_sec": 1.3975095797960855,
+    "elapsed_seconds": 715.558601140976,
+    "history": [
+      {
+        "tick": 100,
+        "r_mean_current": 19.424493892324463,
+        "com_drift_mean": 0.4931370849898476,
+        "r_drift_percent": 1.357864348868857,
+        "field_energy": 26812,
+        "field_coverage": 0.6703
+      },
+      {
+        "tick": 200,
+        "r_mean_current": 18.71571943350406,
+        "com_drift_mean": 1.2267124186093776,
+        "r_drift_percent": 4.957187281068706,
+        "field_energy": 26972,
+        "field_coverage": 0.6743
+      },
+      {
+        "tick": 300,
+        "r_mean_current": 18.866037295701144,
+        "com_drift_mean": 1.3062636059228894,
+        "r_drift_percent": 4.193837922479139,
+        "field_energy": 26737,
+        "field_coverage": 0.668425
+      },
+      {
+        "tick": 400,
+        "r_mean_current": 18.571304015904918,
+        "com_drift_mean": 1.6700156204801622,
+        "r_drift_percent": 5.690562641677629,
+        "field_energy": 26826,
+        "field_coverage": 0.67065
+      },
+      {
+        "tick": 500,
+        "r_mean_current": 18.202213023254092,
+        "com_drift_mean": 2.0700178757891545,
+        "r_drift_percent": 7.564893266016822,
+        "field_energy": 27256,
+        "field_coverage": 0.6814
+      },
+      {
+        "tick": 600,
+        "r_mean_current": 17.95424693464831,
+        "com_drift_mean": 2.4005105311653994,
+        "r_drift_percent": 8.824123219946136,
+        "field_energy": 27228,
+        "field_coverage": 0.6807
+      },
+      {
+        "tick": 700,
+        "r_mean_current": 17.357578497047392,
+        "com_drift_mean": 2.7538050477783513,
+        "r_drift_percent": 11.85414548394115,
+        "field_energy": 26992,
+        "field_coverage": 0.6748
+      },
+      {
+        "tick": 800,
+        "r_mean_current": 17.22241193311577,
+        "com_drift_mean": 2.946624438036019,
+        "r_drift_percent": 12.540552996474025,
+        "field_energy": 26826,
+        "field_coverage": 0.67065
+      },
+      {
+        "tick": 900,
+        "r_mean_current": 16.83256949830487,
+        "com_drift_mean": 3.3796850799141134,
+        "r_drift_percent": 14.520264310979842,
+        "field_energy": 26554,
+        "field_coverage": 0.66385
+      },
+      {
+        "tick": 1000,
+        "r_mean_current": 16.60895947180954,
+        "com_drift_mean": 3.611203874263219,
+        "r_drift_percent": 15.655808469235682,
+        "field_energy": 26925,
+        "field_coverage": 0.673125
+      }
+    ]
+  },
+  {
+    "config_name": "jitter_0.40",
+    "jitter_strength": 0.4,
+    "initial_r_mean": 19.691882950530704,
+    "final_r_mean": 14.091213572454809,
+    "r_drift_percent": 28.44151263820586,
+    "com_drift_mean": 5.9299892878568246,
+    "com_drift_max": 11.313708498984761,
+    "initial_coverage": 0.00485,
+    "final_coverage": 0.5938,
+    "initial_energy": 194,
+    "final_energy": 23752,
+    "ticks_per_sec": 1.749963970315187,
+    "elapsed_seconds": 571.4403364658356,
+    "history": [
+      {
+        "tick": 100,
+        "r_mean_current": 19.673070873416417,
+        "com_drift_mean": 0.2,
+        "r_drift_percent": 0.0955321396209092,
+        "field_energy": 23506,
+        "field_coverage": 0.58765
+      },
+      {
+        "tick": 200,
+        "r_mean_current": 19.218892086322242,
+        "com_drift_mean": 0.8171382453169962,
+        "r_drift_percent": 2.4019585399562566,
+        "field_energy": 23648,
+        "field_coverage": 0.5912
+      },
+      {
+        "tick": 300,
+        "r_mean_current": 18.694997865934468,
+        "com_drift_mean": 1.4206905929576563,
+        "r_drift_percent": 5.062416261058316,
+        "field_energy": 23300,
+        "field_coverage": 0.5825
+      },
+      {
+        "tick": 400,
+        "r_mean_current": 18.013379686688435,
+        "com_drift_mean": 1.966192916143902,
+        "r_drift_percent": 8.523833236562243,
+        "field_energy": 23661,
+        "field_coverage": 0.591525
+      },
+      {
+        "tick": 500,
+        "r_mean_current": 17.26352769616229,
+        "com_drift_mean": 2.6005886238157156,
+        "r_drift_percent": 12.331757508760587,
+        "field_energy": 23941,
+        "field_coverage": 0.598525
+      },
+      {
+        "tick": 600,
+        "r_mean_current": 16.364985470003898,
+        "com_drift_mean": 3.525396352511412,
+        "r_drift_percent": 16.894765670121682,
+        "field_energy": 23290,
+        "field_coverage": 0.58225
+      },
+      {
+        "tick": 700,
+        "r_mean_current": 15.994633622568497,
+        "com_drift_mean": 3.925548707821231,
+        "r_drift_percent": 18.775499210767784,
+        "field_energy": 23850,
+        "field_coverage": 0.59625
+      },
+      {
+        "tick": 800,
+        "r_mean_current": 15.626519812639293,
+        "com_drift_mean": 4.315277633412474,
+        "r_drift_percent": 20.64486747206594,
+        "field_energy": 23560,
+        "field_coverage": 0.589
+      },
+      {
+        "tick": 900,
+        "r_mean_current": 15.029376815104317,
+        "com_drift_mean": 4.853153449256448,
+        "r_drift_percent": 23.677299662705593,
+        "field_energy": 23888,
+        "field_coverage": 0.5972
+      },
+      {
+        "tick": 1000,
+        "r_mean_current": 14.53606898089628,
+        "com_drift_mean": 5.396370742950555,
+        "r_drift_percent": 26.182432541299832,
+        "field_energy": 23752,
+        "field_coverage": 0.5938
+      }
+    ]
+  }
+]

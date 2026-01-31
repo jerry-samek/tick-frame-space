@@ -1,0 +1,4407 @@
+{
+  "all_results": {
+    "decay_0.1": {
+      "decay": 0.1,
+      "config": {
+        "num_ticks": 2000,
+        "gamma_window_size": 50,
+        "gamma_imprint_k": 10.0,
+        "n_patterns": 25,
+        "target_gamma_k": 50.0
+      },
+      "final_stats": {
+        "r_mean": 3.1622776601683795,
+        "r_std": 0.0,
+        "r_min": 3.1622776601683795,
+        "r_max": 3.1622776601683795,
+        "total_energy": 1374,
+        "coverage": 0.1374
+      },
+      "final_history": {
+        "ticks_in_window": 0,
+        "window_size": 50,
+        "total_commits": 40,
+        "accumulator_nonzero": 0,
+        "history_max": 2442.095947265625,
+        "history_mean": 6.157618522644043
+      },
+      "stability_metrics": {
+        "r_std_mean": 0.0050671183146815835,
+        "r_std_std": 0.01962486484602414,
+        "r_mean_mean": 3.2389859690113925,
+        "r_mean_std": 0.31789791056106764,
+        "energy_mean": 1342.1875,
+        "energy_std": 42.276203043201505
+      },
+      "history": [
+        {
+          "tick": 100,
+          "r_mean": 5.761467802786878,
+          "r_std": 3.3534294024848865,
+          "r_min": 1.4142135623730951,
+          "r_max": 16.0312195418814,
+          "energy": 1303,
+          "history_max": 57.0,
+          "history_mean": 1.1875
+        },
+        {
+          "tick": 200,
+          "r_mean": 3.3834349013647396,
+          "r_std": 2.105319041909556,
+          "r_min": 0.0,
+          "r_max": 10.04987562112089,
+          "energy": 1283,
+          "history_max": 148.38999938964844,
+          "history_mean": 2.1493749618530273
+        },
+        {
+          "tick": 300,
+          "r_mean": 3.167153845910013,
+          "r_std": 0.8301424674942346,
+          "r_min": 2.0,
+          "r_max": 6.0,
+          "energy": 1344,
+          "history_max": 441.55999755859375,
+          "history_mean": 2.9284937381744385
+        },
+        {
+          "tick": 400,
+          "r_mean": 3.1178932768808227,
+          "r_std": 0.19682864116121251,
+          "r_min": 3.0,
+          "r_max": 4.0,
+          "energy": 1360,
+          "history_max": 813.66357421875,
+          "history_mean": 3.559579610824585
+        },
+        {
+          "tick": 500,
+          "r_mean": 3.0778932768808227,
+          "r_std": 0.08107389303490445,
+          "r_min": 3.0,
+          "r_max": 3.1622776601683795,
+          "energy": 1302,
+          "history_max": 1134.0673828125,
+          "history_mean": 4.070759296417236
+        },
+        {
+          "tick": 600,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1313,
+          "history_max": 1393.5946044921875,
+          "history_mean": 4.484814643859863
+        },
+        {
+          "tick": 700,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1354,
+          "history_max": 1603.8115234375,
+          "history_mean": 4.820199966430664
+        },
+        {
+          "tick": 800,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1316,
+          "history_max": 1774.0872802734375,
+          "history_mean": 5.091861724853516
+        },
+        {
+          "tick": 900,
+          "r_mean": 3.0,
+          "r_std": 0.0,
+          "r_min": 3.0,
+          "r_max": 3.0,
+          "energy": 1360,
+          "history_max": 1912.0106201171875,
+          "history_mean": 5.311907768249512
+        },
+        {
+          "tick": 1000,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1385,
+          "history_max": 2023.728515625,
+          "history_mean": 5.490145206451416
+        },
+        {
+          "tick": 1100,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1360,
+          "history_max": 2114.2197265625,
+          "history_mean": 5.634517192840576
+        },
+        {
+          "tick": 1200,
+          "r_mean": 4.12310562561766,
+          "r_std": 8.881784197001252e-16,
+          "r_min": 4.123105625617661,
+          "r_max": 4.123105625617661,
+          "energy": 1366,
+          "history_max": 2187.51806640625,
+          "history_mean": 5.751459121704102
+        },
+        {
+          "tick": 1300,
+          "r_mean": 4.0,
+          "r_std": 0.0,
+          "r_min": 4.0,
+          "r_max": 4.0,
+          "energy": 1410,
+          "history_max": 2246.889404296875,
+          "history_mean": 5.846181869506836
+        },
+        {
+          "tick": 1400,
+          "r_mean": 3.0,
+          "r_std": 0.0,
+          "r_min": 3.0,
+          "r_max": 3.0,
+          "energy": 1335,
+          "history_max": 2294.98046875,
+          "history_mean": 5.922906875610352
+        },
+        {
+          "tick": 1500,
+          "r_mean": 3.0,
+          "r_std": 0.0,
+          "r_min": 3.0,
+          "r_max": 3.0,
+          "energy": 1309,
+          "history_max": 2333.93408203125,
+          "history_mean": 5.9850544929504395
+        },
+        {
+          "tick": 1600,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1402,
+          "history_max": 2365.486328125,
+          "history_mean": 6.035393714904785
+        },
+        {
+          "tick": 1700,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1350,
+          "history_max": 2391.0439453125,
+          "history_mean": 6.076168060302734
+        },
+        {
+          "tick": 1800,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1295,
+          "history_max": 2411.745361328125,
+          "history_mean": 6.109196662902832
+        },
+        {
+          "tick": 1900,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1244,
+          "history_max": 2428.513671875,
+          "history_mean": 6.13594913482666
+        },
+        {
+          "tick": 2000,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1374,
+          "history_max": 2442.095947265625,
+          "history_mean": 6.157618522644043
+        }
+      ],
+      "commit_history": [
+        {
+          "tick": 49,
+          "commit_number": 1,
+          "history_max": 30.0,
+          "history_mean": 0.625
+        },
+        {
+          "tick": 99,
+          "commit_number": 2,
+          "history_max": 57.0,
+          "history_mean": 1.1875
+        },
+        {
+          "tick": 149,
+          "commit_number": 3,
+          "history_max": 87.0999984741211,
+          "history_mean": 1.693750023841858
+        },
+        {
+          "tick": 199,
+          "commit_number": 4,
+          "history_max": 148.38999938964844,
+          "history_mean": 2.1493749618530273
+        },
+        {
+          "tick": 249,
+          "commit_number": 5,
+          "history_max": 268.3999938964844,
+          "history_mean": 2.5594375133514404
+        },
+        {
+          "tick": 299,
+          "commit_number": 6,
+          "history_max": 441.55999755859375,
+          "history_mean": 2.9284937381744385
+        },
+        {
+          "tick": 349,
+          "commit_number": 7,
+          "history_max": 637.4039916992188,
+          "history_mean": 3.2606441974639893
+        },
+        {
+          "tick": 399,
+          "commit_number": 8,
+          "history_max": 813.66357421875,
+          "history_mean": 3.559579610824585
+        },
+        {
+          "tick": 449,
+          "commit_number": 9,
+          "history_max": 982.2971801757812,
+          "history_mean": 3.8286213874816895
+        },
+        {
+          "tick": 499,
+          "commit_number": 10,
+          "history_max": 1134.0673828125,
+          "history_mean": 4.070759296417236
+        },
+        {
+          "tick": 549,
+          "commit_number": 11,
+          "history_max": 1270.66064453125,
+          "history_mean": 4.2886834144592285
+        },
+        {
+          "tick": 599,
+          "commit_number": 12,
+          "history_max": 1393.5946044921875,
+          "history_mean": 4.484814643859863
+        },
+        {
+          "tick": 649,
+          "commit_number": 13,
+          "history_max": 1504.235107421875,
+          "history_mean": 4.661333084106445
+        },
+        {
+          "tick": 699,
+          "commit_number": 14,
+          "history_max": 1603.8115234375,
+          "history_mean": 4.820199966430664
+        },
+        {
+          "tick": 749,
+          "commit_number": 15,
+          "history_max": 1693.4302978515625,
+          "history_mean": 4.963180065155029
+        },
+        {
+          "tick": 799,
+          "commit_number": 16,
+          "history_max": 1774.0872802734375,
+          "history_mean": 5.091861724853516
+        },
+        {
+          "tick": 849,
+          "commit_number": 17,
+          "history_max": 1846.678466796875,
+          "history_mean": 5.207675457000732
+        },
+        {
+          "tick": 899,
+          "commit_number": 18,
+          "history_max": 1912.0106201171875,
+          "history_mean": 5.311907768249512
+        },
+        {
+          "tick": 949,
+          "commit_number": 19,
+          "history_max": 1970.8095703125,
+          "history_mean": 5.405717372894287
+        },
+        {
+          "tick": 999,
+          "commit_number": 20,
+          "history_max": 2023.728515625,
+          "history_mean": 5.490145206451416
+        },
+        {
+          "tick": 1049,
+          "commit_number": 21,
+          "history_max": 2071.35546875,
+          "history_mean": 5.566130638122559
+        },
+        {
+          "tick": 1099,
+          "commit_number": 22,
+          "history_max": 2114.2197265625,
+          "history_mean": 5.634517192840576
+        },
+        {
+          "tick": 1149,
+          "commit_number": 23,
+          "history_max": 2152.7978515625,
+          "history_mean": 5.696065902709961
+        },
+        {
+          "tick": 1199,
+          "commit_number": 24,
+          "history_max": 2187.51806640625,
+          "history_mean": 5.751459121704102
+        },
+        {
+          "tick": 1249,
+          "commit_number": 25,
+          "history_max": 2218.76611328125,
+          "history_mean": 5.801312446594238
+        },
+        {
+          "tick": 1299,
+          "commit_number": 26,
+          "history_max": 2246.889404296875,
+          "history_mean": 5.846181869506836
+        },
+        {
+          "tick": 1349,
+          "commit_number": 27,
+          "history_max": 2272.200439453125,
+          "history_mean": 5.886563301086426
+        },
+        {
+          "tick": 1399,
+          "commit_number": 28,
+          "history_max": 2294.98046875,
+          "history_mean": 5.922906875610352
+        },
+        {
+          "tick": 1449,
+          "commit_number": 29,
+          "history_max": 2315.482421875,
+          "history_mean": 5.955615520477295
+        },
+        {
+          "tick": 1499,
+          "commit_number": 30,
+          "history_max": 2333.93408203125,
+          "history_mean": 5.9850544929504395
+        },
+        {
+          "tick": 1549,
+          "commit_number": 31,
+          "history_max": 2350.54052734375,
+          "history_mean": 6.0115485191345215
+        },
+        {
+          "tick": 1599,
+          "commit_number": 32,
+          "history_max": 2365.486328125,
+          "history_mean": 6.035393714904785
+        },
+        {
+          "tick": 1649,
+          "commit_number": 33,
+          "history_max": 2378.937744140625,
+          "history_mean": 6.056853771209717
+        },
+        {
+          "tick": 1699,
+          "commit_number": 34,
+          "history_max": 2391.0439453125,
+          "history_mean": 6.076168060302734
+        },
+        {
+          "tick": 1749,
+          "commit_number": 35,
+          "history_max": 2401.939453125,
+          "history_mean": 6.093550682067871
+        },
+        {
+          "tick": 1799,
+          "commit_number": 36,
+          "history_max": 2411.745361328125,
+          "history_mean": 6.109196662902832
+        },
+        {
+          "tick": 1849,
+          "commit_number": 37,
+          "history_max": 2420.57080078125,
+          "history_mean": 6.123276233673096
+        },
+        {
+          "tick": 1899,
+          "commit_number": 38,
+          "history_max": 2428.513671875,
+          "history_mean": 6.13594913482666
+        },
+        {
+          "tick": 1949,
+          "commit_number": 39,
+          "history_max": 2435.662353515625,
+          "history_mean": 6.147353649139404
+        },
+        {
+          "tick": 1999,
+          "commit_number": 40,
+          "history_max": 2442.095947265625,
+          "history_mean": 6.157618522644043
+        }
+      ],
+      "elapsed_seconds": 396.4738702774048
+    },
+    "decay_0.2": {
+      "decay": 0.2,
+      "config": {
+        "num_ticks": 2000,
+        "gamma_window_size": 50,
+        "gamma_imprint_k": 10.0,
+        "n_patterns": 25,
+        "target_gamma_k": 50.0
+      },
+      "final_stats": {
+        "r_mean": 0.0,
+        "r_std": 0.0,
+        "r_min": 0.0,
+        "r_max": 0.0,
+        "total_energy": 969,
+        "coverage": 0.0969
+      },
+      "final_history": {
+        "ticks_in_window": 0,
+        "window_size": 50,
+        "total_commits": 40,
+        "accumulator_nonzero": 0,
+        "history_max": 1249.53466796875,
+        "history_mean": 3.124584674835205
+      },
+      "stability_metrics": {
+        "r_std_mean": 0.004968718300816305,
+        "r_std_std": 0.019243763231057334,
+        "r_mean_mean": 1.9699915251415683,
+        "r_mean_std": 1.159197299981997,
+        "energy_mean": 1127.6875,
+        "energy_std": 167.78547268387095
+      },
+      "history": [
+        {
+          "tick": 100,
+          "r_mean": 5.968604266809457,
+          "r_std": 3.221143136562537,
+          "r_min": 1.4142135623730951,
+          "r_max": 15.033296378372908,
+          "energy": 1302,
+          "history_max": 54.0,
+          "history_mean": 1.125
+        },
+        {
+          "tick": 200,
+          "r_mean": 3.540838576039339,
+          "r_std": 1.9137560394239668,
+          "r_min": 1.0,
+          "r_max": 9.055385138137417,
+          "energy": 1275,
+          "history_max": 119.52000427246094,
+          "history_mean": 1.8450000286102295
+        },
+        {
+          "tick": 300,
+          "r_mean": 3.5622543767510253,
+          "r_std": 0.8187452322414873,
+          "r_min": 2.0,
+          "r_max": 6.082762530298219,
+          "energy": 1335,
+          "history_max": 406.08001708984375,
+          "history_mean": 2.305799961090088
+        },
+        {
+          "tick": 400,
+          "r_mean": 3.1742328333369705,
+          "r_std": 0.2902514767672182,
+          "r_min": 3.0,
+          "r_max": 4.123105625617661,
+          "energy": 1379,
+          "history_max": 695.717041015625,
+          "history_mean": 2.6007120609283447
+        },
+        {
+          "tick": 500,
+          "r_mean": 3.0973665961010277,
+          "r_std": 0.07949949281305999,
+          "r_min": 3.0,
+          "r_max": 3.1622776601683795,
+          "energy": 1289,
+          "history_max": 895.2589721679688,
+          "history_mean": 2.7894558906555176
+        },
+        {
+          "tick": 600,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1315,
+          "history_max": 1022.9657592773438,
+          "history_mean": 2.9102518558502197
+        },
+        {
+          "tick": 700,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1299,
+          "history_max": 1104.697998046875,
+          "history_mean": 2.9875612258911133
+        },
+        {
+          "tick": 800,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1325,
+          "history_max": 1157.0068359375,
+          "history_mean": 3.037039041519165
+        },
+        {
+          "tick": 900,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1314,
+          "history_max": 1190.484375,
+          "history_mean": 3.0687050819396973
+        },
+        {
+          "tick": 1000,
+          "r_mean": 4.12310562561766,
+          "r_std": 8.881784197001252e-16,
+          "r_min": 4.123105625617661,
+          "r_max": 4.123105625617661,
+          "energy": 1343,
+          "history_max": 1211.909912109375,
+          "history_mean": 3.0889713764190674
+        },
+        {
+          "tick": 1100,
+          "r_mean": 2.0,
+          "r_std": 0.0,
+          "r_min": 2.0,
+          "r_max": 2.0,
+          "energy": 1226,
+          "history_max": 1225.622314453125,
+          "history_mean": 3.1019415855407715
+        },
+        {
+          "tick": 1200,
+          "r_mean": 2.23606797749979,
+          "r_std": 0.0,
+          "r_min": 2.23606797749979,
+          "r_max": 2.23606797749979,
+          "energy": 1187,
+          "history_max": 1234.398193359375,
+          "history_mean": 3.110243082046509
+        },
+        {
+          "tick": 1300,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 1084,
+          "history_max": 1240.014892578125,
+          "history_mean": 3.11555552482605
+        },
+        {
+          "tick": 1400,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 995,
+          "history_max": 1243.5654296875,
+          "history_mean": 3.1189558506011963
+        },
+        {
+          "tick": 1500,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 932,
+          "history_max": 1245.8818359375,
+          "history_mean": 3.121131658554077
+        },
+        {
+          "tick": 1600,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 940,
+          "history_max": 1247.364501953125,
+          "history_mean": 3.1225242614746094
+        },
+        {
+          "tick": 1700,
+          "r_mean": 1.4142135623730951,
+          "r_std": 0.0,
+          "r_min": 1.4142135623730951,
+          "r_max": 1.4142135623730951,
+          "energy": 998,
+          "history_max": 1248.2242431640625,
+          "history_mean": 3.12341570854187
+        },
+        {
+          "tick": 1800,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 913,
+          "history_max": 1248.863525390625,
+          "history_mean": 3.12398624420166
+        },
+        {
+          "tick": 1900,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 914,
+          "history_max": 1249.272705078125,
+          "history_mean": 3.1243512630462646
+        },
+        {
+          "tick": 2000,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 969,
+          "history_max": 1249.53466796875,
+          "history_mean": 3.124584674835205
+        }
+      ],
+      "commit_history": [
+        {
+          "tick": 49,
+          "commit_number": 1,
+          "history_max": 30.0,
+          "history_mean": 0.625
+        },
+        {
+          "tick": 99,
+          "commit_number": 2,
+          "history_max": 54.0,
+          "history_mean": 1.125
+        },
+        {
+          "tick": 149,
+          "commit_number": 3,
+          "history_max": 78.80000305175781,
+          "history_mean": 1.524999976158142
+        },
+        {
+          "tick": 199,
+          "commit_number": 4,
+          "history_max": 119.52000427246094,
+          "history_mean": 1.8450000286102295
+        },
+        {
+          "tick": 249,
+          "commit_number": 5,
+          "history_max": 257.6000061035156,
+          "history_mean": 2.1010000705718994
+        },
+        {
+          "tick": 299,
+          "commit_number": 6,
+          "history_max": 406.08001708984375,
+          "history_mean": 2.305799961090088
+        },
+        {
+          "tick": 349,
+          "commit_number": 7,
+          "history_max": 564.864013671875,
+          "history_mean": 2.4696402549743652
+        },
+        {
+          "tick": 399,
+          "commit_number": 8,
+          "history_max": 695.717041015625,
+          "history_mean": 2.6007120609283447
+        },
+        {
+          "tick": 449,
+          "commit_number": 9,
+          "history_max": 806.5736694335938,
+          "history_mean": 2.7055695056915283
+        },
+        {
+          "tick": 499,
+          "commit_number": 10,
+          "history_max": 895.2589721679688,
+          "history_mean": 2.7894558906555176
+        },
+        {
+          "tick": 549,
+          "commit_number": 11,
+          "history_max": 966.2072143554688,
+          "history_mean": 2.85656476020813
+        },
+        {
+          "tick": 599,
+          "commit_number": 12,
+          "history_max": 1022.9657592773438,
+          "history_mean": 2.9102518558502197
+        },
+        {
+          "tick": 649,
+          "commit_number": 13,
+          "history_max": 1068.37255859375,
+          "history_mean": 2.9532012939453125
+        },
+        {
+          "tick": 699,
+          "commit_number": 14,
+          "history_max": 1104.697998046875,
+          "history_mean": 2.9875612258911133
+        },
+        {
+          "tick": 749,
+          "commit_number": 15,
+          "history_max": 1133.7584228515625,
+          "history_mean": 3.0150492191314697
+        },
+        {
+          "tick": 799,
+          "commit_number": 16,
+          "history_max": 1157.0068359375,
+          "history_mean": 3.037039041519165
+        },
+        {
+          "tick": 849,
+          "commit_number": 17,
+          "history_max": 1175.60546875,
+          "history_mean": 3.0546317100524902
+        },
+        {
+          "tick": 899,
+          "commit_number": 18,
+          "history_max": 1190.484375,
+          "history_mean": 3.0687050819396973
+        },
+        {
+          "tick": 949,
+          "commit_number": 19,
+          "history_max": 1202.387451171875,
+          "history_mean": 3.0799641609191895
+        },
+        {
+          "tick": 999,
+          "commit_number": 20,
+          "history_max": 1211.909912109375,
+          "history_mean": 3.0889713764190674
+        },
+        {
+          "tick": 1049,
+          "commit_number": 21,
+          "history_max": 1219.5279541015625,
+          "history_mean": 3.096177339553833
+        },
+        {
+          "tick": 1099,
+          "commit_number": 22,
+          "history_max": 1225.622314453125,
+          "history_mean": 3.1019415855407715
+        },
+        {
+          "tick": 1149,
+          "commit_number": 23,
+          "history_max": 1230.497802734375,
+          "history_mean": 3.106553554534912
+        },
+        {
+          "tick": 1199,
+          "commit_number": 24,
+          "history_max": 1234.398193359375,
+          "history_mean": 3.110243082046509
+        },
+        {
+          "tick": 1249,
+          "commit_number": 25,
+          "history_max": 1237.5185546875,
+          "history_mean": 3.113194227218628
+        },
+        {
+          "tick": 1299,
+          "commit_number": 26,
+          "history_max": 1240.014892578125,
+          "history_mean": 3.11555552482605
+        },
+        {
+          "tick": 1349,
+          "commit_number": 27,
+          "history_max": 1241.956787109375,
+          "history_mean": 3.1174445152282715
+        },
+        {
+          "tick": 1399,
+          "commit_number": 28,
+          "history_max": 1243.5654296875,
+          "history_mean": 3.1189558506011963
+        },
+        {
+          "tick": 1449,
+          "commit_number": 29,
+          "history_max": 1244.852294921875,
+          "history_mean": 3.120164632797241
+        },
+        {
+          "tick": 1499,
+          "commit_number": 30,
+          "history_max": 1245.8818359375,
+          "history_mean": 3.121131658554077
+        },
+        {
+          "tick": 1549,
+          "commit_number": 31,
+          "history_max": 1246.70556640625,
+          "history_mean": 3.121905565261841
+        },
+        {
+          "tick": 1599,
+          "commit_number": 32,
+          "history_max": 1247.364501953125,
+          "history_mean": 3.1225242614746094
+        },
+        {
+          "tick": 1649,
+          "commit_number": 33,
+          "history_max": 1247.7802734375,
+          "history_mean": 3.1230194568634033
+        },
+        {
+          "tick": 1699,
+          "commit_number": 34,
+          "history_max": 1248.2242431640625,
+          "history_mean": 3.12341570854187
+        },
+        {
+          "tick": 1749,
+          "commit_number": 35,
+          "history_max": 1248.579345703125,
+          "history_mean": 3.123732805252075
+        },
+        {
+          "tick": 1799,
+          "commit_number": 36,
+          "history_max": 1248.863525390625,
+          "history_mean": 3.12398624420166
+        },
+        {
+          "tick": 1849,
+          "commit_number": 37,
+          "history_max": 1249.0908203125,
+          "history_mean": 3.1241891384124756
+        },
+        {
+          "tick": 1899,
+          "commit_number": 38,
+          "history_max": 1249.272705078125,
+          "history_mean": 3.1243512630462646
+        },
+        {
+          "tick": 1949,
+          "commit_number": 39,
+          "history_max": 1249.418212890625,
+          "history_mean": 3.124480962753296
+        },
+        {
+          "tick": 1999,
+          "commit_number": 40,
+          "history_max": 1249.53466796875,
+          "history_mean": 3.124584674835205
+        }
+      ],
+      "elapsed_seconds": 586.4518027305603
+    },
+    "decay_0.3": {
+      "decay": 0.3,
+      "config": {
+        "num_ticks": 2000,
+        "gamma_window_size": 50,
+        "gamma_imprint_k": 10.0,
+        "n_patterns": 25,
+        "target_gamma_k": 50.0
+      },
+      "final_stats": {
+        "r_mean": 0.0,
+        "r_std": 0.0,
+        "r_min": 0.0,
+        "r_max": 0.0,
+        "total_energy": 955,
+        "coverage": 0.0955
+      },
+      "final_history": {
+        "ticks_in_window": 0,
+        "window_size": 50,
+        "total_commits": 40,
+        "accumulator_nonzero": 0,
+        "history_max": 833.3306274414062,
+        "history_mean": 2.083331823348999
+      },
+      "stability_metrics": {
+        "r_std_mean": 0.0019874873203264997,
+        "r_std_std": 0.007697505292422939,
+        "r_mean_mean": 0.9573790133706266,
+        "r_mean_std": 1.1804076512222,
+        "energy_mean": 1019.9375,
+        "energy_std": 145.12988525369266
+      },
+      "history": [
+        {
+          "tick": 100,
+          "r_mean": 5.80501949724867,
+          "r_std": 3.1211774439404762,
+          "r_min": 1.4142135623730951,
+          "r_max": 15.033296378372908,
+          "energy": 1293,
+          "history_max": 51.0,
+          "history_mean": 1.0625
+        },
+        {
+          "tick": 200,
+          "r_mean": 3.580254296169934,
+          "r_std": 1.9343679005702954,
+          "r_min": 1.4142135623730951,
+          "r_max": 10.04987562112089,
+          "energy": 1263,
+          "history_max": 110.33000183105469,
+          "history_mean": 1.5831249952316284
+        },
+        {
+          "tick": 300,
+          "r_mean": 3.205437744847147,
+          "r_std": 0.7779260015639288,
+          "r_min": 2.0,
+          "r_max": 6.0,
+          "energy": 1333,
+          "history_max": 390.32000732421875,
+          "history_mean": 1.8382312059402466
+        },
+        {
+          "tick": 400,
+          "r_mean": 3.1957865537616446,
+          "r_std": 0.16415938229743027,
+          "r_min": 3.1622776601683795,
+          "r_max": 4.0,
+          "energy": 1380,
+          "history_max": 601.763427734375,
+          "history_mean": 1.963233232498169
+        },
+        {
+          "tick": 500,
+          "r_mean": 3.155786553761645,
+          "r_std": 0.031799797125223996,
+          "r_min": 3.0,
+          "r_max": 3.1622776601683795,
+          "energy": 1312,
+          "history_max": 719.864013671875,
+          "history_mean": 2.024484395980835
+        },
+        {
+          "tick": 600,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1316,
+          "history_max": 777.7333374023438,
+          "history_mean": 2.054497480392456
+        },
+        {
+          "tick": 700,
+          "r_mean": 3.0,
+          "r_std": 0.0,
+          "r_min": 3.0,
+          "r_max": 3.0,
+          "energy": 1248,
+          "history_max": 806.0892944335938,
+          "history_mean": 2.0692036151885986
+        },
+        {
+          "tick": 800,
+          "r_mean": 2.0,
+          "r_std": 0.0,
+          "r_min": 2.0,
+          "r_max": 2.0,
+          "energy": 1115,
+          "history_max": 819.9837646484375,
+          "history_mean": 2.0764095783233643
+        },
+        {
+          "tick": 900,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 1004,
+          "history_max": 826.7920532226562,
+          "history_mean": 2.0799407958984375
+        },
+        {
+          "tick": 1000,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 1027,
+          "history_max": 830.0933837890625,
+          "history_mean": 2.0816709995269775
+        },
+        {
+          "tick": 1100,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 943,
+          "history_max": 831.7457275390625,
+          "history_mean": 2.0825188159942627
+        },
+        {
+          "tick": 1200,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 1028,
+          "history_max": 832.5277099609375,
+          "history_mean": 2.0829341411590576
+        },
+        {
+          "tick": 1300,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 959,
+          "history_max": 832.9385986328125,
+          "history_mean": 2.0831379890441895
+        },
+        {
+          "tick": 1400,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 923,
+          "history_max": 833.139892578125,
+          "history_mean": 2.083237409591675
+        },
+        {
+          "tick": 1500,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 895,
+          "history_max": 833.238525390625,
+          "history_mean": 2.0832862854003906
+        },
+        {
+          "tick": 1600,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 931,
+          "history_max": 833.286865234375,
+          "history_mean": 2.083310127258301
+        },
+        {
+          "tick": 1700,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 935,
+          "history_max": 833.310546875,
+          "history_mean": 2.0833218097686768
+        },
+        {
+          "tick": 1800,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 867,
+          "history_max": 833.3221435546875,
+          "history_mean": 2.0833277702331543
+        },
+        {
+          "tick": 1900,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 861,
+          "history_max": 833.3278198242188,
+          "history_mean": 2.0833303928375244
+        },
+        {
+          "tick": 2000,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 955,
+          "history_max": 833.3306274414062,
+          "history_mean": 2.083331823348999
+        }
+      ],
+      "commit_history": [
+        {
+          "tick": 49,
+          "commit_number": 1,
+          "history_max": 30.0,
+          "history_mean": 0.625
+        },
+        {
+          "tick": 99,
+          "commit_number": 2,
+          "history_max": 51.0,
+          "history_mean": 1.0625
+        },
+        {
+          "tick": 149,
+          "commit_number": 3,
+          "history_max": 73.80000305175781,
+          "history_mean": 1.368749976158142
+        },
+        {
+          "tick": 199,
+          "commit_number": 4,
+          "history_max": 110.33000183105469,
+          "history_mean": 1.5831249952316284
+        },
+        {
+          "tick": 249,
+          "commit_number": 5,
+          "history_max": 257.6000061035156,
+          "history_mean": 1.7331875562667847
+        },
+        {
+          "tick": 299,
+          "commit_number": 6,
+          "history_max": 390.32000732421875,
+          "history_mean": 1.8382312059402466
+        },
+        {
+          "tick": 349,
+          "commit_number": 7,
+          "history_max": 513.2239990234375,
+          "history_mean": 1.91176176071167
+        },
+        {
+          "tick": 399,
+          "commit_number": 8,
+          "history_max": 601.763427734375,
+          "history_mean": 1.963233232498169
+        },
+        {
+          "tick": 449,
+          "commit_number": 9,
+          "history_max": 671.234375,
+          "history_mean": 1.999263048171997
+        },
+        {
+          "tick": 499,
+          "commit_number": 10,
+          "history_max": 719.864013671875,
+          "history_mean": 2.024484395980835
+        },
+        {
+          "tick": 549,
+          "commit_number": 11,
+          "history_max": 753.90478515625,
+          "history_mean": 2.0421390533447266
+        },
+        {
+          "tick": 599,
+          "commit_number": 12,
+          "history_max": 777.7333374023438,
+          "history_mean": 2.054497480392456
+        },
+        {
+          "tick": 649,
+          "commit_number": 13,
+          "history_max": 794.413330078125,
+          "history_mean": 2.063148021697998
+        },
+        {
+          "tick": 699,
+          "commit_number": 14,
+          "history_max": 806.0892944335938,
+          "history_mean": 2.0692036151885986
+        },
+        {
+          "tick": 749,
+          "commit_number": 15,
+          "history_max": 814.2625122070312,
+          "history_mean": 2.0734424591064453
+        },
+        {
+          "tick": 799,
+          "commit_number": 16,
+          "history_max": 819.9837646484375,
+          "history_mean": 2.0764095783233643
+        },
+        {
+          "tick": 849,
+          "commit_number": 17,
+          "history_max": 823.9886474609375,
+          "history_mean": 2.078486680984497
+        },
+        {
+          "tick": 899,
+          "commit_number": 18,
+          "history_max": 826.7920532226562,
+          "history_mean": 2.0799407958984375
+        },
+        {
+          "tick": 949,
+          "commit_number": 19,
+          "history_max": 828.704833984375,
+          "history_mean": 2.080958604812622
+        },
+        {
+          "tick": 999,
+          "commit_number": 20,
+          "history_max": 830.0933837890625,
+          "history_mean": 2.0816709995269775
+        },
+        {
+          "tick": 1049,
+          "commit_number": 21,
+          "history_max": 831.0653686523438,
+          "history_mean": 2.082169532775879
+        },
+        {
+          "tick": 1099,
+          "commit_number": 22,
+          "history_max": 831.7457275390625,
+          "history_mean": 2.0825188159942627
+        },
+        {
+          "tick": 1149,
+          "commit_number": 23,
+          "history_max": 832.1824951171875,
+          "history_mean": 2.082763195037842
+        },
+        {
+          "tick": 1199,
+          "commit_number": 24,
+          "history_max": 832.5277099609375,
+          "history_mean": 2.0829341411590576
+        },
+        {
+          "tick": 1249,
+          "commit_number": 25,
+          "history_max": 832.7694091796875,
+          "history_mean": 2.0830538272857666
+        },
+        {
+          "tick": 1299,
+          "commit_number": 26,
+          "history_max": 832.9385986328125,
+          "history_mean": 2.0831379890441895
+        },
+        {
+          "tick": 1349,
+          "commit_number": 27,
+          "history_max": 833.0570068359375,
+          "history_mean": 2.0831964015960693
+        },
+        {
+          "tick": 1399,
+          "commit_number": 28,
+          "history_max": 833.139892578125,
+          "history_mean": 2.083237409591675
+        },
+        {
+          "tick": 1449,
+          "commit_number": 29,
+          "history_max": 833.1979370117188,
+          "history_mean": 2.083266019821167
+        },
+        {
+          "tick": 1499,
+          "commit_number": 30,
+          "history_max": 833.238525390625,
+          "history_mean": 2.0832862854003906
+        },
+        {
+          "tick": 1549,
+          "commit_number": 31,
+          "history_max": 833.2669677734375,
+          "history_mean": 2.0833003520965576
+        },
+        {
+          "tick": 1599,
+          "commit_number": 32,
+          "history_max": 833.286865234375,
+          "history_mean": 2.083310127258301
+        },
+        {
+          "tick": 1649,
+          "commit_number": 33,
+          "history_max": 833.30078125,
+          "history_mean": 2.083317279815674
+        },
+        {
+          "tick": 1699,
+          "commit_number": 34,
+          "history_max": 833.310546875,
+          "history_mean": 2.0833218097686768
+        },
+        {
+          "tick": 1749,
+          "commit_number": 35,
+          "history_max": 833.3173828125,
+          "history_mean": 2.0833253860473633
+        },
+        {
+          "tick": 1799,
+          "commit_number": 36,
+          "history_max": 833.3221435546875,
+          "history_mean": 2.0833277702331543
+        },
+        {
+          "tick": 1849,
+          "commit_number": 37,
+          "history_max": 833.3255004882812,
+          "history_mean": 2.083329439163208
+        },
+        {
+          "tick": 1899,
+          "commit_number": 38,
+          "history_max": 833.3278198242188,
+          "history_mean": 2.0833303928375244
+        },
+        {
+          "tick": 1949,
+          "commit_number": 39,
+          "history_max": 833.3294677734375,
+          "history_mean": 2.083331346511841
+        },
+        {
+          "tick": 1999,
+          "commit_number": 40,
+          "history_max": 833.3306274414062,
+          "history_mean": 2.083331823348999
+        }
+      ],
+      "elapsed_seconds": 589.4932415485382
+    },
+    "decay_0.4": {
+      "decay": 0.4,
+      "config": {
+        "num_ticks": 2000,
+        "gamma_window_size": 50,
+        "gamma_imprint_k": 10.0,
+        "n_patterns": 25,
+        "target_gamma_k": 50.0
+      },
+      "final_stats": {
+        "r_mean": 0.0,
+        "r_std": 0.0,
+        "r_min": 0.0,
+        "r_max": 0.0,
+        "total_energy": 956,
+        "coverage": 0.0956
+      },
+      "final_history": {
+        "ticks_in_window": 0,
+        "window_size": 50,
+        "total_commits": 40,
+        "accumulator_nonzero": 0,
+        "history_max": 625.0,
+        "history_mean": 1.5625001192092896
+      },
+      "stability_metrics": {
+        "r_std_mean": 0.0,
+        "r_std_std": 0.0,
+        "r_mean_mean": 0.7281425962420554,
+        "r_mean_std": 0.8844819724210773,
+        "energy_mean": 967.4375,
+        "energy_std": 99.32834989946224
+      },
+      "history": [
+        {
+          "tick": 100,
+          "r_mean": 5.684099389233575,
+          "r_std": 3.054670871520286,
+          "r_min": 1.4142135623730951,
+          "r_max": 15.033296378372908,
+          "energy": 1249,
+          "history_max": 48.0,
+          "history_mean": 1.0
+        },
+        {
+          "tick": 200,
+          "r_mean": 3.6207394535945183,
+          "r_std": 1.7579094997138127,
+          "r_min": 1.0,
+          "r_max": 9.055385138137417,
+          "energy": 1252,
+          "history_max": 117.76000213623047,
+          "history_mean": 1.3600000143051147
+        },
+        {
+          "tick": 300,
+          "r_mean": 3.331052228142164,
+          "r_std": 0.7099936995418525,
+          "r_min": 2.0,
+          "r_max": 6.082762530298219,
+          "energy": 1327,
+          "history_max": 371.3536071777344,
+          "history_mean": 1.4895999431610107
+        },
+        {
+          "tick": 400,
+          "r_mean": 3.135799714718999,
+          "r_std": 0.21624095164479243,
+          "r_min": 3.0,
+          "r_max": 4.123105625617661,
+          "energy": 1357,
+          "history_max": 533.6873168945312,
+          "history_mean": 1.5362560749053955
+        },
+        {
+          "tick": 500,
+          "r_mean": 3.0,
+          "r_std": 0.0,
+          "r_min": 3.0,
+          "r_max": 3.0,
+          "energy": 1237,
+          "history_max": 592.12744140625,
+          "history_mean": 1.553052306175232
+        },
+        {
+          "tick": 600,
+          "r_mean": 2.23606797749979,
+          "r_std": 0.0,
+          "r_min": 2.23606797749979,
+          "r_max": 2.23606797749979,
+          "energy": 1195,
+          "history_max": 613.1658935546875,
+          "history_mean": 1.5590988397598267
+        },
+        {
+          "tick": 700,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 928,
+          "history_max": 620.73974609375,
+          "history_mean": 1.561275601387024
+        },
+        {
+          "tick": 800,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 901,
+          "history_max": 623.1231079101562,
+          "history_mean": 1.5620590448379517
+        },
+        {
+          "tick": 900,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 984,
+          "history_max": 624.2894897460938,
+          "history_mean": 1.5623414516448975
+        },
+        {
+          "tick": 1000,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 948,
+          "history_max": 624.7442626953125,
+          "history_mean": 1.5624430179595947
+        },
+        {
+          "tick": 1100,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 986,
+          "history_max": 624.907958984375,
+          "history_mean": 1.5624796152114868
+        },
+        {
+          "tick": 1200,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 938,
+          "history_max": 624.9669189453125,
+          "history_mean": 1.5624926090240479
+        },
+        {
+          "tick": 1300,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 936,
+          "history_max": 624.9765014648438,
+          "history_mean": 1.5624973773956299
+        },
+        {
+          "tick": 1400,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 916,
+          "history_max": 624.9915771484375,
+          "history_mean": 1.5624990463256836
+        },
+        {
+          "tick": 1500,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 907,
+          "history_max": 624.9970092773438,
+          "history_mean": 1.562499761581421
+        },
+        {
+          "tick": 1600,
+          "r_mean": 1.4142135623730951,
+          "r_std": 0.0,
+          "r_min": 1.4142135623730951,
+          "r_max": 1.4142135623730951,
+          "energy": 921,
+          "history_max": 624.9989624023438,
+          "history_mean": 1.562499761581421
+        },
+        {
+          "tick": 1700,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 969,
+          "history_max": 624.9996337890625,
+          "history_mean": 1.5625
+        },
+        {
+          "tick": 1800,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 888,
+          "history_max": 624.9998779296875,
+          "history_mean": 1.5625
+        },
+        {
+          "tick": 1900,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 869,
+          "history_max": 625.0,
+          "history_mean": 1.5625
+        },
+        {
+          "tick": 2000,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 956,
+          "history_max": 625.0,
+          "history_mean": 1.5625001192092896
+        }
+      ],
+      "commit_history": [
+        {
+          "tick": 49,
+          "commit_number": 1,
+          "history_max": 30.0,
+          "history_mean": 0.625
+        },
+        {
+          "tick": 99,
+          "commit_number": 2,
+          "history_max": 48.0,
+          "history_mean": 1.0
+        },
+        {
+          "tick": 149,
+          "commit_number": 3,
+          "history_max": 79.5999984741211,
+          "history_mean": 1.225000023841858
+        },
+        {
+          "tick": 199,
+          "commit_number": 4,
+          "history_max": 117.76000213623047,
+          "history_mean": 1.3600000143051147
+        },
+        {
+          "tick": 249,
+          "commit_number": 5,
+          "history_max": 252.25601196289062,
+          "history_mean": 1.440999984741211
+        },
+        {
+          "tick": 299,
+          "commit_number": 6,
+          "history_max": 371.3536071777344,
+          "history_mean": 1.4895999431610107
+        },
+        {
+          "tick": 349,
+          "commit_number": 7,
+          "history_max": 472.81219482421875,
+          "history_mean": 1.5187602043151855
+        },
+        {
+          "tick": 399,
+          "commit_number": 8,
+          "history_max": 533.6873168945312,
+          "history_mean": 1.5362560749053955
+        },
+        {
+          "tick": 449,
+          "commit_number": 9,
+          "history_max": 570.21240234375,
+          "history_mean": 1.5467537641525269
+        },
+        {
+          "tick": 499,
+          "commit_number": 10,
+          "history_max": 592.12744140625,
+          "history_mean": 1.553052306175232
+        },
+        {
+          "tick": 549,
+          "commit_number": 11,
+          "history_max": 605.2764892578125,
+          "history_mean": 1.5568314790725708
+        },
+        {
+          "tick": 599,
+          "commit_number": 12,
+          "history_max": 613.1658935546875,
+          "history_mean": 1.5590988397598267
+        },
+        {
+          "tick": 649,
+          "commit_number": 13,
+          "history_max": 617.8995361328125,
+          "history_mean": 1.5604593753814697
+        },
+        {
+          "tick": 699,
+          "commit_number": 14,
+          "history_max": 620.73974609375,
+          "history_mean": 1.561275601387024
+        },
+        {
+          "tick": 749,
+          "commit_number": 15,
+          "history_max": 621.871826171875,
+          "history_mean": 1.5617653131484985
+        },
+        {
+          "tick": 799,
+          "commit_number": 16,
+          "history_max": 623.1231079101562,
+          "history_mean": 1.5620590448379517
+        },
+        {
+          "tick": 849,
+          "commit_number": 17,
+          "history_max": 623.8157958984375,
+          "history_mean": 1.5622355937957764
+        },
+        {
+          "tick": 899,
+          "commit_number": 18,
+          "history_max": 624.2894897460938,
+          "history_mean": 1.5623414516448975
+        },
+        {
+          "tick": 949,
+          "commit_number": 19,
+          "history_max": 624.57373046875,
+          "history_mean": 1.5624048709869385
+        },
+        {
+          "tick": 999,
+          "commit_number": 20,
+          "history_max": 624.7442626953125,
+          "history_mean": 1.5624430179595947
+        },
+        {
+          "tick": 1049,
+          "commit_number": 21,
+          "history_max": 624.8465576171875,
+          "history_mean": 1.562465786933899
+        },
+        {
+          "tick": 1099,
+          "commit_number": 22,
+          "history_max": 624.907958984375,
+          "history_mean": 1.5624796152114868
+        },
+        {
+          "tick": 1149,
+          "commit_number": 23,
+          "history_max": 624.94482421875,
+          "history_mean": 1.5624878406524658
+        },
+        {
+          "tick": 1199,
+          "commit_number": 24,
+          "history_max": 624.9669189453125,
+          "history_mean": 1.5624926090240479
+        },
+        {
+          "tick": 1249,
+          "commit_number": 25,
+          "history_max": 624.9608154296875,
+          "history_mean": 1.5624957084655762
+        },
+        {
+          "tick": 1299,
+          "commit_number": 26,
+          "history_max": 624.9765014648438,
+          "history_mean": 1.5624973773956299
+        },
+        {
+          "tick": 1349,
+          "commit_number": 27,
+          "history_max": 624.9859008789062,
+          "history_mean": 1.5624985694885254
+        },
+        {
+          "tick": 1399,
+          "commit_number": 28,
+          "history_max": 624.9915771484375,
+          "history_mean": 1.5624990463256836
+        },
+        {
+          "tick": 1449,
+          "commit_number": 29,
+          "history_max": 624.9949951171875,
+          "history_mean": 1.5624994039535522
+        },
+        {
+          "tick": 1499,
+          "commit_number": 30,
+          "history_max": 624.9970092773438,
+          "history_mean": 1.562499761581421
+        },
+        {
+          "tick": 1549,
+          "commit_number": 31,
+          "history_max": 624.9982299804688,
+          "history_mean": 1.5624998807907104
+        },
+        {
+          "tick": 1599,
+          "commit_number": 32,
+          "history_max": 624.9989624023438,
+          "history_mean": 1.562499761581421
+        },
+        {
+          "tick": 1649,
+          "commit_number": 33,
+          "history_max": 624.9993896484375,
+          "history_mean": 1.5625
+        },
+        {
+          "tick": 1699,
+          "commit_number": 34,
+          "history_max": 624.9996337890625,
+          "history_mean": 1.5625
+        },
+        {
+          "tick": 1749,
+          "commit_number": 35,
+          "history_max": 624.999755859375,
+          "history_mean": 1.5625
+        },
+        {
+          "tick": 1799,
+          "commit_number": 36,
+          "history_max": 624.9998779296875,
+          "history_mean": 1.5625
+        },
+        {
+          "tick": 1849,
+          "commit_number": 37,
+          "history_max": 624.9999389648438,
+          "history_mean": 1.5625001192092896
+        },
+        {
+          "tick": 1899,
+          "commit_number": 38,
+          "history_max": 625.0,
+          "history_mean": 1.5625
+        },
+        {
+          "tick": 1949,
+          "commit_number": 39,
+          "history_max": 625.0,
+          "history_mean": 1.5625
+        },
+        {
+          "tick": 1999,
+          "commit_number": 40,
+          "history_max": 625.0,
+          "history_mean": 1.5625001192092896
+        }
+      ],
+      "elapsed_seconds": 573.1167013645172
+    },
+    "decay_0.5": {
+      "decay": 0.5,
+      "config": {
+        "num_ticks": 2000,
+        "gamma_window_size": 50,
+        "gamma_imprint_k": 10.0,
+        "n_patterns": 25,
+        "target_gamma_k": 50.0
+      },
+      "final_stats": {
+        "r_mean": 1.0,
+        "r_std": 0.0,
+        "r_min": 1.0,
+        "r_max": 1.0,
+        "total_energy": 963,
+        "coverage": 0.0963
+      },
+      "final_history": {
+        "ticks_in_window": 0,
+        "window_size": 50,
+        "total_commits": 40,
+        "accumulator_nonzero": 0,
+        "history_max": 500.0,
+        "history_mean": 1.25
+      },
+      "stability_metrics": {
+        "r_std_mean": 0.0,
+        "r_std_std": 0.0,
+        "r_mean_mean": 0.5625,
+        "r_mean_std": 0.6091746465505602,
+        "energy_mean": 929.5,
+        "energy_std": 41.453286962555815
+      },
+      "history": [
+        {
+          "tick": 100,
+          "r_mean": 5.808153210055825,
+          "r_std": 3.1217553216929455,
+          "r_min": 1.4142135623730951,
+          "r_max": 15.033296378372908,
+          "energy": 1291,
+          "history_max": 45.0,
+          "history_mean": 0.9375
+        },
+        {
+          "tick": 200,
+          "r_mean": 3.6361455939725413,
+          "r_std": 1.7141893767708607,
+          "r_min": 1.4142135623730951,
+          "r_max": 9.055385138137417,
+          "energy": 1260,
+          "history_max": 108.75,
+          "history_mean": 1.171875
+        },
+        {
+          "tick": 300,
+          "r_mean": 3.3271813646770467,
+          "r_std": 0.7279176921505536,
+          "r_min": 2.0,
+          "r_max": 6.082762530298219,
+          "energy": 1370,
+          "history_max": 357.1875,
+          "history_mean": 1.23046875
+        },
+        {
+          "tick": 400,
+          "r_mean": 3.1747463531594105,
+          "r_std": 0.20244898888615737,
+          "r_min": 3.0,
+          "r_max": 4.123105625617661,
+          "energy": 1398,
+          "history_max": 464.296875,
+          "history_mean": 1.2451171875
+        },
+        {
+          "tick": 500,
+          "r_mean": 2.0,
+          "r_std": 0.0,
+          "r_min": 2.0,
+          "r_max": 2.0,
+          "energy": 1012,
+          "history_max": 491.07421875,
+          "history_mean": 1.248779296875
+        },
+        {
+          "tick": 600,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 939,
+          "history_max": 497.7685546875,
+          "history_mean": 1.24969482421875
+        },
+        {
+          "tick": 700,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 921,
+          "history_max": 499.04296875,
+          "history_mean": 1.2499237060546875
+        },
+        {
+          "tick": 800,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 900,
+          "history_max": 499.7607421875,
+          "history_mean": 1.2499808073043823
+        },
+        {
+          "tick": 900,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 939,
+          "history_max": 499.940185546875,
+          "history_mean": 1.249995231628418
+        },
+        {
+          "tick": 1000,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 967,
+          "history_max": 499.98504638671875,
+          "history_mean": 1.2499988079071045
+        },
+        {
+          "tick": 1100,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 899,
+          "history_max": 499.99627685546875,
+          "history_mean": 1.2499996423721313
+        },
+        {
+          "tick": 1200,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 952,
+          "history_max": 499.99908447265625,
+          "history_mean": 1.249999761581421
+        },
+        {
+          "tick": 1300,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 946,
+          "history_max": 499.999755859375,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1400,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 945,
+          "history_max": 499.99993896484375,
+          "history_mean": 1.2499998807907104
+        },
+        {
+          "tick": 1500,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 888,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1600,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 973,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1700,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 919,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1800,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 847,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1900,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 862,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 2000,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 963,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        }
+      ],
+      "commit_history": [
+        {
+          "tick": 49,
+          "commit_number": 1,
+          "history_max": 30.0,
+          "history_mean": 0.625
+        },
+        {
+          "tick": 99,
+          "commit_number": 2,
+          "history_max": 45.0,
+          "history_mean": 0.9375
+        },
+        {
+          "tick": 149,
+          "commit_number": 3,
+          "history_max": 77.5,
+          "history_mean": 1.09375
+        },
+        {
+          "tick": 199,
+          "commit_number": 4,
+          "history_max": 108.75,
+          "history_mean": 1.171875
+        },
+        {
+          "tick": 249,
+          "commit_number": 5,
+          "history_max": 254.375,
+          "history_mean": 1.2109375
+        },
+        {
+          "tick": 299,
+          "commit_number": 6,
+          "history_max": 357.1875,
+          "history_mean": 1.23046875
+        },
+        {
+          "tick": 349,
+          "commit_number": 7,
+          "history_max": 428.59375,
+          "history_mean": 1.240234375
+        },
+        {
+          "tick": 399,
+          "commit_number": 8,
+          "history_max": 464.296875,
+          "history_mean": 1.2451171875
+        },
+        {
+          "tick": 449,
+          "commit_number": 9,
+          "history_max": 482.1484375,
+          "history_mean": 1.24755859375
+        },
+        {
+          "tick": 499,
+          "commit_number": 10,
+          "history_max": 491.07421875,
+          "history_mean": 1.248779296875
+        },
+        {
+          "tick": 549,
+          "commit_number": 11,
+          "history_max": 495.537109375,
+          "history_mean": 1.2493896484375
+        },
+        {
+          "tick": 599,
+          "commit_number": 12,
+          "history_max": 497.7685546875,
+          "history_mean": 1.24969482421875
+        },
+        {
+          "tick": 649,
+          "commit_number": 13,
+          "history_max": 498.0859375,
+          "history_mean": 1.249847412109375
+        },
+        {
+          "tick": 699,
+          "commit_number": 14,
+          "history_max": 499.04296875,
+          "history_mean": 1.2499237060546875
+        },
+        {
+          "tick": 749,
+          "commit_number": 15,
+          "history_max": 499.521484375,
+          "history_mean": 1.2499619722366333
+        },
+        {
+          "tick": 799,
+          "commit_number": 16,
+          "history_max": 499.7607421875,
+          "history_mean": 1.2499808073043823
+        },
+        {
+          "tick": 849,
+          "commit_number": 17,
+          "history_max": 499.88037109375,
+          "history_mean": 1.249990463256836
+        },
+        {
+          "tick": 899,
+          "commit_number": 18,
+          "history_max": 499.940185546875,
+          "history_mean": 1.249995231628418
+        },
+        {
+          "tick": 949,
+          "commit_number": 19,
+          "history_max": 499.9700927734375,
+          "history_mean": 1.249997615814209
+        },
+        {
+          "tick": 999,
+          "commit_number": 20,
+          "history_max": 499.98504638671875,
+          "history_mean": 1.2499988079071045
+        },
+        {
+          "tick": 1049,
+          "commit_number": 21,
+          "history_max": 499.9925231933594,
+          "history_mean": 1.2499994039535522
+        },
+        {
+          "tick": 1099,
+          "commit_number": 22,
+          "history_max": 499.99627685546875,
+          "history_mean": 1.2499996423721313
+        },
+        {
+          "tick": 1149,
+          "commit_number": 23,
+          "history_max": 499.9981384277344,
+          "history_mean": 1.249999761581421
+        },
+        {
+          "tick": 1199,
+          "commit_number": 24,
+          "history_max": 499.99908447265625,
+          "history_mean": 1.249999761581421
+        },
+        {
+          "tick": 1249,
+          "commit_number": 25,
+          "history_max": 499.9995422363281,
+          "history_mean": 1.2499998807907104
+        },
+        {
+          "tick": 1299,
+          "commit_number": 26,
+          "history_max": 499.999755859375,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1349,
+          "commit_number": 27,
+          "history_max": 499.9998779296875,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1399,
+          "commit_number": 28,
+          "history_max": 499.99993896484375,
+          "history_mean": 1.2499998807907104
+        },
+        {
+          "tick": 1449,
+          "commit_number": 29,
+          "history_max": 499.9999694824219,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1499,
+          "commit_number": 30,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1549,
+          "commit_number": 31,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1599,
+          "commit_number": 32,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1649,
+          "commit_number": 33,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1699,
+          "commit_number": 34,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1749,
+          "commit_number": 35,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1799,
+          "commit_number": 36,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1849,
+          "commit_number": 37,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1899,
+          "commit_number": 38,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1949,
+          "commit_number": 39,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        },
+        {
+          "tick": 1999,
+          "commit_number": 40,
+          "history_max": 500.0,
+          "history_mean": 1.25
+        }
+      ],
+      "elapsed_seconds": 363.5692253112793
+    },
+    "decay_0.6": {
+      "decay": 0.6,
+      "config": {
+        "num_ticks": 2000,
+        "gamma_window_size": 50,
+        "gamma_imprint_k": 10.0,
+        "n_patterns": 25,
+        "target_gamma_k": 50.0
+      },
+      "final_stats": {
+        "r_mean": 0.0,
+        "r_std": 0.0,
+        "r_min": 0.0,
+        "r_max": 0.0,
+        "total_energy": 928,
+        "coverage": 0.0928
+      },
+      "final_history": {
+        "ticks_in_window": 0,
+        "window_size": 50,
+        "total_commits": 40,
+        "accumulator_nonzero": 0,
+        "history_max": 416.66668701171875,
+        "history_mean": 1.0416667461395264
+      },
+      "stability_metrics": {
+        "r_std_mean": 0.012247448713915893,
+        "r_std_std": 0.047434164902525694,
+        "r_mean_mean": 0.49177669529663687,
+        "r_mean_std": 0.5663529658818066,
+        "energy_mean": 916.25,
+        "energy_std": 33.625697018797986
+      },
+      "history": [
+        {
+          "tick": 100,
+          "r_mean": 5.5302498186583,
+          "r_std": 3.3251070574088057,
+          "r_min": 1.4142135623730951,
+          "r_max": 16.0312195418814,
+          "energy": 1215,
+          "history_max": 42.0,
+          "history_mean": 0.875
+        },
+        {
+          "tick": 200,
+          "r_mean": 3.723721244392195,
+          "r_std": 1.9834061848401707,
+          "r_min": 1.0,
+          "r_max": 10.0,
+          "energy": 1314,
+          "history_max": 100.23999786376953,
+          "history_mean": 1.0150001049041748
+        },
+        {
+          "tick": 300,
+          "r_mean": 3.2511588201628583,
+          "r_std": 0.7680926546174318,
+          "r_min": 2.23606797749979,
+          "r_max": 6.0,
+          "energy": 1337,
+          "history_max": 298.8384094238281,
+          "history_mean": 1.0374000072479248
+        },
+        {
+          "tick": 400,
+          "r_mean": 2.04,
+          "r_std": 0.19595917942265428,
+          "r_min": 2.0,
+          "r_max": 3.0,
+          "energy": 1165,
+          "history_max": 397.81414794921875,
+          "history_mean": 1.040984034538269
+        },
+        {
+          "tick": 500,
+          "r_mean": 0.04,
+          "r_std": 0.19595917942265428,
+          "r_min": 0.0,
+          "r_max": 1.0,
+          "energy": 922,
+          "history_max": 413.6502685546875,
+          "history_mean": 1.0415574312210083
+        },
+        {
+          "tick": 600,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 909,
+          "history_max": 415.73699951171875,
+          "history_mean": 1.0416492223739624
+        },
+        {
+          "tick": 700,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 867,
+          "history_max": 416.5179443359375,
+          "history_mean": 1.0416638851165771
+        },
+        {
+          "tick": 800,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 876,
+          "history_max": 416.64288330078125,
+          "history_mean": 1.0416662693023682
+        },
+        {
+          "tick": 900,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 959,
+          "history_max": 416.655517578125,
+          "history_mean": 1.0416666269302368
+        },
+        {
+          "tick": 1000,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 891,
+          "history_max": 416.6649169921875,
+          "history_mean": 1.0416665077209473
+        },
+        {
+          "tick": 1100,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 932,
+          "history_max": 416.6663818359375,
+          "history_mean": 1.0416666269302368
+        },
+        {
+          "tick": 1200,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 915,
+          "history_max": 416.6666259765625,
+          "history_mean": 1.0416666269302368
+        },
+        {
+          "tick": 1300,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 954,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1400,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 962,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1500,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 886,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1600,
+          "r_mean": 1.4142135623730951,
+          "r_std": 0.0,
+          "r_min": 1.4142135623730951,
+          "r_max": 1.4142135623730951,
+          "energy": 933,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1700,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 973,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1800,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 874,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1900,
+          "r_mean": 1.4142135623730951,
+          "r_std": 0.0,
+          "r_min": 1.4142135623730951,
+          "r_max": 1.4142135623730951,
+          "energy": 879,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 2000,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 928,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        }
+      ],
+      "commit_history": [
+        {
+          "tick": 49,
+          "commit_number": 1,
+          "history_max": 30.0,
+          "history_mean": 0.625
+        },
+        {
+          "tick": 99,
+          "commit_number": 2,
+          "history_max": 42.0,
+          "history_mean": 0.875
+        },
+        {
+          "tick": 149,
+          "commit_number": 3,
+          "history_max": 75.5999984741211,
+          "history_mean": 0.9750000238418579
+        },
+        {
+          "tick": 199,
+          "commit_number": 4,
+          "history_max": 100.23999786376953,
+          "history_mean": 1.0150001049041748
+        },
+        {
+          "tick": 249,
+          "commit_number": 5,
+          "history_max": 222.39999389648438,
+          "history_mean": 1.031000018119812
+        },
+        {
+          "tick": 299,
+          "commit_number": 6,
+          "history_max": 298.8384094238281,
+          "history_mean": 1.0374000072479248
+        },
+        {
+          "tick": 349,
+          "commit_number": 7,
+          "history_max": 369.5353698730469,
+          "history_mean": 1.0399600267410278
+        },
+        {
+          "tick": 399,
+          "commit_number": 8,
+          "history_max": 397.81414794921875,
+          "history_mean": 1.040984034538269
+        },
+        {
+          "tick": 449,
+          "commit_number": 9,
+          "history_max": 409.12567138671875,
+          "history_mean": 1.0413936376571655
+        },
+        {
+          "tick": 499,
+          "commit_number": 10,
+          "history_max": 413.6502685546875,
+          "history_mean": 1.0415574312210083
+        },
+        {
+          "tick": 549,
+          "commit_number": 11,
+          "history_max": 414.342529296875,
+          "history_mean": 1.0416229963302612
+        },
+        {
+          "tick": 599,
+          "commit_number": 12,
+          "history_max": 415.73699951171875,
+          "history_mean": 1.0416492223739624
+        },
+        {
+          "tick": 649,
+          "commit_number": 13,
+          "history_max": 416.2947998046875,
+          "history_mean": 1.0416597127914429
+        },
+        {
+          "tick": 699,
+          "commit_number": 14,
+          "history_max": 416.5179443359375,
+          "history_mean": 1.0416638851165771
+        },
+        {
+          "tick": 749,
+          "commit_number": 15,
+          "history_max": 416.607177734375,
+          "history_mean": 1.0416655540466309
+        },
+        {
+          "tick": 799,
+          "commit_number": 16,
+          "history_max": 416.64288330078125,
+          "history_mean": 1.0416662693023682
+        },
+        {
+          "tick": 849,
+          "commit_number": 17,
+          "history_max": 416.6387939453125,
+          "history_mean": 1.0416665077209473
+        },
+        {
+          "tick": 899,
+          "commit_number": 18,
+          "history_max": 416.655517578125,
+          "history_mean": 1.0416666269302368
+        },
+        {
+          "tick": 949,
+          "commit_number": 19,
+          "history_max": 416.6622314453125,
+          "history_mean": 1.0416666269302368
+        },
+        {
+          "tick": 999,
+          "commit_number": 20,
+          "history_max": 416.6649169921875,
+          "history_mean": 1.0416665077209473
+        },
+        {
+          "tick": 1049,
+          "commit_number": 21,
+          "history_max": 416.66595458984375,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1099,
+          "commit_number": 22,
+          "history_max": 416.6663818359375,
+          "history_mean": 1.0416666269302368
+        },
+        {
+          "tick": 1149,
+          "commit_number": 23,
+          "history_max": 416.66656494140625,
+          "history_mean": 1.0416666269302368
+        },
+        {
+          "tick": 1199,
+          "commit_number": 24,
+          "history_max": 416.6666259765625,
+          "history_mean": 1.0416666269302368
+        },
+        {
+          "tick": 1249,
+          "commit_number": 25,
+          "history_max": 416.6666564941406,
+          "history_mean": 1.0416666269302368
+        },
+        {
+          "tick": 1299,
+          "commit_number": 26,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1349,
+          "commit_number": 27,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1399,
+          "commit_number": 28,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1449,
+          "commit_number": 29,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1499,
+          "commit_number": 30,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1549,
+          "commit_number": 31,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1599,
+          "commit_number": 32,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1649,
+          "commit_number": 33,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1699,
+          "commit_number": 34,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1749,
+          "commit_number": 35,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1799,
+          "commit_number": 36,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1849,
+          "commit_number": 37,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1899,
+          "commit_number": 38,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1949,
+          "commit_number": 39,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        },
+        {
+          "tick": 1999,
+          "commit_number": 40,
+          "history_max": 416.66668701171875,
+          "history_mean": 1.0416667461395264
+        }
+      ],
+      "elapsed_seconds": 453.87662863731384
+    },
+    "decay_0.7": {
+      "decay": 0.7,
+      "config": {
+        "num_ticks": 2000,
+        "gamma_window_size": 50,
+        "gamma_imprint_k": 10.0,
+        "n_patterns": 25,
+        "target_gamma_k": 50.0
+      },
+      "final_stats": {
+        "r_mean": 0.0,
+        "r_std": 0.0,
+        "r_min": 0.0,
+        "r_max": 0.0,
+        "total_energy": 955,
+        "coverage": 0.0955
+      },
+      "final_history": {
+        "ticks_in_window": 0,
+        "window_size": 50,
+        "total_commits": 40,
+        "accumulator_nonzero": 0,
+        "history_max": 357.1428527832031,
+        "history_mean": 0.8928571343421936
+      },
+      "stability_metrics": {
+        "r_std_mean": 0.0,
+        "r_std_std": 0.0,
+        "r_mean_mean": 0.4375,
+        "r_mean_std": 0.49607837082461076,
+        "energy_mean": 915.3125,
+        "energy_std": 29.78405351442278
+      },
+      "history": [
+        {
+          "tick": 100,
+          "r_mean": 5.601513267510273,
+          "r_std": 3.030354618506947,
+          "r_min": 1.4142135623730951,
+          "r_max": 14.035668847618199,
+          "energy": 1270,
+          "history_max": 39.0,
+          "history_mean": 0.8125
+        },
+        {
+          "tick": 200,
+          "r_mean": 3.7005761670301576,
+          "r_std": 1.704621961611544,
+          "r_min": 1.4142135623730951,
+          "r_max": 9.0,
+          "energy": 1291,
+          "history_max": 92.16999816894531,
+          "history_mean": 0.8856250047683716
+        },
+        {
+          "tick": 300,
+          "r_mean": 3.0054377448471468,
+          "r_std": 0.6060890708865323,
+          "r_min": 2.0,
+          "r_max": 5.0,
+          "energy": 1245,
+          "history_max": 289.61529541015625,
+          "history_mean": 0.8922062516212463
+        },
+        {
+          "tick": 400,
+          "r_mean": 2.0,
+          "r_std": 0.0,
+          "r_min": 2.0,
+          "r_max": 2.0,
+          "energy": 1016,
+          "history_max": 351.06536865234375,
+          "history_mean": 0.8927984237670898
+        },
+        {
+          "tick": 500,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 898,
+          "history_max": 356.59588623046875,
+          "history_mean": 0.8928519487380981
+        },
+        {
+          "tick": 600,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 879,
+          "history_max": 356.97100830078125,
+          "history_mean": 0.8928567171096802
+        },
+        {
+          "tick": 700,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 872,
+          "history_max": 357.12738037109375,
+          "history_mean": 0.892857015132904
+        },
+        {
+          "tick": 800,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 913,
+          "history_max": 357.1414794921875,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 900,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 917,
+          "history_max": 357.14263916015625,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1000,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 947,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1100,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 931,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928572535514832
+        },
+        {
+          "tick": 1200,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 927,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928572535514832
+        },
+        {
+          "tick": 1300,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 918,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1400,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 928,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1500,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 953,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1600,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 927,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928572535514832
+        },
+        {
+          "tick": 1700,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 948,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1800,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 872,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1900,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 860,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.892857015132904
+        },
+        {
+          "tick": 2000,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 955,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        }
+      ],
+      "commit_history": [
+        {
+          "tick": 49,
+          "commit_number": 1,
+          "history_max": 30.0,
+          "history_mean": 0.625
+        },
+        {
+          "tick": 99,
+          "commit_number": 2,
+          "history_max": 39.0,
+          "history_mean": 0.8125
+        },
+        {
+          "tick": 149,
+          "commit_number": 3,
+          "history_max": 73.9000015258789,
+          "history_mean": 0.8687499761581421
+        },
+        {
+          "tick": 199,
+          "commit_number": 4,
+          "history_max": 92.16999816894531,
+          "history_mean": 0.8856250047683716
+        },
+        {
+          "tick": 249,
+          "commit_number": 5,
+          "history_max": 232.05099487304688,
+          "history_mean": 0.8906874060630798
+        },
+        {
+          "tick": 299,
+          "commit_number": 6,
+          "history_max": 289.61529541015625,
+          "history_mean": 0.8922062516212463
+        },
+        {
+          "tick": 349,
+          "commit_number": 7,
+          "history_max": 336.88458251953125,
+          "history_mean": 0.8926618099212646
+        },
+        {
+          "tick": 399,
+          "commit_number": 8,
+          "history_max": 351.06536865234375,
+          "history_mean": 0.8927984237670898
+        },
+        {
+          "tick": 449,
+          "commit_number": 9,
+          "history_max": 355.3196105957031,
+          "history_mean": 0.8928395509719849
+        },
+        {
+          "tick": 499,
+          "commit_number": 10,
+          "history_max": 356.59588623046875,
+          "history_mean": 0.8928519487380981
+        },
+        {
+          "tick": 549,
+          "commit_number": 11,
+          "history_max": 356.57000732421875,
+          "history_mean": 0.8928554654121399
+        },
+        {
+          "tick": 599,
+          "commit_number": 12,
+          "history_max": 356.97100830078125,
+          "history_mean": 0.8928567171096802
+        },
+        {
+          "tick": 649,
+          "commit_number": 13,
+          "history_max": 357.09130859375,
+          "history_mean": 0.892857015132904
+        },
+        {
+          "tick": 699,
+          "commit_number": 14,
+          "history_max": 357.12738037109375,
+          "history_mean": 0.892857015132904
+        },
+        {
+          "tick": 749,
+          "commit_number": 15,
+          "history_max": 357.1382141113281,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 799,
+          "commit_number": 16,
+          "history_max": 357.1414794921875,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 849,
+          "commit_number": 17,
+          "history_max": 357.14215087890625,
+          "history_mean": 0.8928572535514832
+        },
+        {
+          "tick": 899,
+          "commit_number": 18,
+          "history_max": 357.14263916015625,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 949,
+          "commit_number": 19,
+          "history_max": 357.1427917480469,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 999,
+          "commit_number": 20,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1049,
+          "commit_number": 21,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.892857015132904
+        },
+        {
+          "tick": 1099,
+          "commit_number": 22,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928572535514832
+        },
+        {
+          "tick": 1149,
+          "commit_number": 23,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928572535514832
+        },
+        {
+          "tick": 1199,
+          "commit_number": 24,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928572535514832
+        },
+        {
+          "tick": 1249,
+          "commit_number": 25,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1299,
+          "commit_number": 26,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1349,
+          "commit_number": 27,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1399,
+          "commit_number": 28,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1449,
+          "commit_number": 29,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1499,
+          "commit_number": 30,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1549,
+          "commit_number": 31,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1599,
+          "commit_number": 32,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928572535514832
+        },
+        {
+          "tick": 1649,
+          "commit_number": 33,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1699,
+          "commit_number": 34,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1749,
+          "commit_number": 35,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1799,
+          "commit_number": 36,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1849,
+          "commit_number": 37,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.892857015132904
+        },
+        {
+          "tick": 1899,
+          "commit_number": 38,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.892857015132904
+        },
+        {
+          "tick": 1949,
+          "commit_number": 39,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        },
+        {
+          "tick": 1999,
+          "commit_number": 40,
+          "history_max": 357.1428527832031,
+          "history_mean": 0.8928571343421936
+        }
+      ],
+      "elapsed_seconds": 540.8455278873444
+    },
+    "decay_0.8": {
+      "decay": 0.8,
+      "config": {
+        "num_ticks": 2000,
+        "gamma_window_size": 50,
+        "gamma_imprint_k": 10.0,
+        "n_patterns": 25,
+        "target_gamma_k": 50.0
+      },
+      "final_stats": {
+        "r_mean": 0.0,
+        "r_std": 0.0,
+        "r_min": 0.0,
+        "r_max": 0.0,
+        "total_energy": 969,
+        "coverage": 0.0969
+      },
+      "final_history": {
+        "ticks_in_window": 0,
+        "window_size": 50,
+        "total_commits": 40,
+        "accumulator_nonzero": 0,
+        "history_max": 312.5,
+        "history_mean": 0.78125
+      },
+      "stability_metrics": {
+        "r_std_mean": 0.0,
+        "r_std_std": 0.0,
+        "r_mean_mean": 0.40088834764831843,
+        "r_mean_std": 0.5261069593911498,
+        "energy_mean": 919.3125,
+        "energy_std": 35.124277127792965
+      },
+      "history": [
+        {
+          "tick": 100,
+          "r_mean": 5.697150916630399,
+          "r_std": 2.94999515815491,
+          "r_min": 1.4142135623730951,
+          "r_max": 14.035668847618199,
+          "energy": 1242,
+          "history_max": 36.0,
+          "history_mean": 0.75
+        },
+        {
+          "tick": 200,
+          "r_mean": 3.617254614092628,
+          "r_std": 1.5860230316188964,
+          "r_min": 1.4142135623730951,
+          "r_max": 8.0,
+          "energy": 1247,
+          "history_max": 84.4800033569336,
+          "history_mean": 0.7799999713897705
+        },
+        {
+          "tick": 300,
+          "r_mean": 2.277822432447367,
+          "r_std": 0.50152264778329,
+          "r_min": 1.4142135623730951,
+          "r_max": 3.605551275463989,
+          "energy": 1075,
+          "history_max": 277.4591979980469,
+          "history_mean": 0.7811999917030334
+        },
+        {
+          "tick": 400,
+          "r_mean": 1.165685424949238,
+          "r_std": 0.20292237447091535,
+          "r_min": 1.0,
+          "r_max": 1.4142135623730951,
+          "energy": 947,
+          "history_max": 308.6976013183594,
+          "history_mean": 0.7812479734420776
+        },
+        {
+          "tick": 500,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 870,
+          "history_max": 312.347900390625,
+          "history_mean": 0.7812498807907104
+        },
+        {
+          "tick": 600,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 907,
+          "history_max": 312.4931335449219,
+          "history_mean": 0.7812500596046448
+        },
+        {
+          "tick": 700,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 862,
+          "history_max": 312.4997253417969,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 800,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 892,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 900,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 928,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1000,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 926,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1100,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 935,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1200,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 962,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1300,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 983,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1400,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 939,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1500,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 888,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1600,
+          "r_mean": 1.4142135623730951,
+          "r_std": 0.0,
+          "r_min": 1.4142135623730951,
+          "r_max": 1.4142135623730951,
+          "energy": 946,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1700,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 929,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1800,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 893,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1900,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 880,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 2000,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 969,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        }
+      ],
+      "commit_history": [
+        {
+          "tick": 49,
+          "commit_number": 1,
+          "history_max": 30.0,
+          "history_mean": 0.625
+        },
+        {
+          "tick": 99,
+          "commit_number": 2,
+          "history_max": 36.0,
+          "history_mean": 0.75
+        },
+        {
+          "tick": 149,
+          "commit_number": 3,
+          "history_max": 72.4000015258789,
+          "history_mean": 0.7749999761581421
+        },
+        {
+          "tick": 199,
+          "commit_number": 4,
+          "history_max": 84.4800033569336,
+          "history_mean": 0.7799999713897705
+        },
+        {
+          "tick": 249,
+          "commit_number": 5,
+          "history_max": 237.29600524902344,
+          "history_mean": 0.781000018119812
+        },
+        {
+          "tick": 299,
+          "commit_number": 6,
+          "history_max": 277.4591979980469,
+          "history_mean": 0.7811999917030334
+        },
+        {
+          "tick": 349,
+          "commit_number": 7,
+          "history_max": 293.4880065917969,
+          "history_mean": 0.781239926815033
+        },
+        {
+          "tick": 399,
+          "commit_number": 8,
+          "history_max": 308.6976013183594,
+          "history_mean": 0.7812479734420776
+        },
+        {
+          "tick": 449,
+          "commit_number": 9,
+          "history_max": 311.7395324707031,
+          "history_mean": 0.7812496423721313
+        },
+        {
+          "tick": 499,
+          "commit_number": 10,
+          "history_max": 312.347900390625,
+          "history_mean": 0.7812498807907104
+        },
+        {
+          "tick": 549,
+          "commit_number": 11,
+          "history_max": 312.4657287597656,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 599,
+          "commit_number": 12,
+          "history_max": 312.4931335449219,
+          "history_mean": 0.7812500596046448
+        },
+        {
+          "tick": 649,
+          "commit_number": 13,
+          "history_max": 312.4986267089844,
+          "history_mean": 0.7812498807907104
+        },
+        {
+          "tick": 699,
+          "commit_number": 14,
+          "history_max": 312.4997253417969,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 749,
+          "commit_number": 15,
+          "history_max": 312.49993896484375,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 799,
+          "commit_number": 16,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 849,
+          "commit_number": 17,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 899,
+          "commit_number": 18,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 949,
+          "commit_number": 19,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 999,
+          "commit_number": 20,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1049,
+          "commit_number": 21,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1099,
+          "commit_number": 22,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1149,
+          "commit_number": 23,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1199,
+          "commit_number": 24,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1249,
+          "commit_number": 25,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1299,
+          "commit_number": 26,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1349,
+          "commit_number": 27,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1399,
+          "commit_number": 28,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1449,
+          "commit_number": 29,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1499,
+          "commit_number": 30,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1549,
+          "commit_number": 31,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1599,
+          "commit_number": 32,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1649,
+          "commit_number": 33,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1699,
+          "commit_number": 34,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1749,
+          "commit_number": 35,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1799,
+          "commit_number": 36,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1849,
+          "commit_number": 37,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1899,
+          "commit_number": 38,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1949,
+          "commit_number": 39,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        },
+        {
+          "tick": 1999,
+          "commit_number": 40,
+          "history_max": 312.5,
+          "history_mean": 0.78125
+        }
+      ],
+      "elapsed_seconds": 452.863112449646
+    },
+    "decay_0.9": {
+      "decay": 0.9,
+      "config": {
+        "num_ticks": 2000,
+        "gamma_window_size": 50,
+        "gamma_imprint_k": 10.0,
+        "n_patterns": 25,
+        "target_gamma_k": 50.0
+      },
+      "final_stats": {
+        "r_mean": 0.0,
+        "r_std": 0.0,
+        "r_min": 0.0,
+        "r_max": 0.0,
+        "total_energy": 936,
+        "coverage": 0.0936
+      },
+      "final_history": {
+        "ticks_in_window": 0,
+        "window_size": 50,
+        "total_commits": 40,
+        "accumulator_nonzero": 0,
+        "history_max": 277.77777099609375,
+        "history_mean": 0.6944444179534912
+      },
+      "stability_metrics": {
+        "r_std_mean": 0.0,
+        "r_std_std": 0.0,
+        "r_mean_mean": 0.125,
+        "r_mean_std": 0.33071891388307384,
+        "energy_mean": 909.4375,
+        "energy_std": 30.13919530694209
+      },
+      "history": [
+        {
+          "tick": 100,
+          "r_mean": 5.74185403395659,
+          "r_std": 3.1545383581019335,
+          "r_min": 1.4142135623730951,
+          "r_max": 15.033296378372908,
+          "energy": 1289,
+          "history_max": 33.0,
+          "history_mean": 0.6875
+        },
+        {
+          "tick": 200,
+          "r_mean": 3.658465085593578,
+          "r_std": 1.9737358530190343,
+          "r_min": 1.4142135623730951,
+          "r_max": 10.04987562112089,
+          "energy": 1282,
+          "history_max": 66.11000061035156,
+          "history_mean": 0.6943749785423279
+        },
+        {
+          "tick": 300,
+          "r_mean": 1.88,
+          "r_std": 0.5878775382679629,
+          "r_min": 1.0,
+          "r_max": 4.0,
+          "energy": 932,
+          "history_max": 220.3300018310547,
+          "history_mean": 0.6944437623023987
+        },
+        {
+          "tick": 400,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 931,
+          "history_max": 277.20330810546875,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 500,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 843,
+          "history_max": 277.77203369140625,
+          "history_mean": 0.6944444179534912
+        },
+        {
+          "tick": 600,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 898,
+          "history_max": 277.7777099609375,
+          "history_mean": 0.6944444179534912
+        },
+        {
+          "tick": 700,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 887,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 800,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 910,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 900,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 935,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1000,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 940,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1100,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 918,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1200,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 948,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1300,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 940,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1400,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 919,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1500,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 887,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1600,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 922,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1700,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 932,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1800,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 869,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1900,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 867,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.6944444179534912
+        },
+        {
+          "tick": 2000,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 936,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.6944444179534912
+        }
+      ],
+      "commit_history": [
+        {
+          "tick": 49,
+          "commit_number": 1,
+          "history_max": 30.0,
+          "history_mean": 0.625
+        },
+        {
+          "tick": 99,
+          "commit_number": 2,
+          "history_max": 33.0,
+          "history_mean": 0.6875
+        },
+        {
+          "tick": 149,
+          "commit_number": 3,
+          "history_max": 61.099998474121094,
+          "history_mean": 0.6937500238418579
+        },
+        {
+          "tick": 199,
+          "commit_number": 4,
+          "history_max": 66.11000061035156,
+          "history_mean": 0.6943749785423279
+        },
+        {
+          "tick": 249,
+          "commit_number": 5,
+          "history_max": 203.3000030517578,
+          "history_mean": 0.6944375038146973
+        },
+        {
+          "tick": 299,
+          "commit_number": 6,
+          "history_max": 220.3300018310547,
+          "history_mean": 0.6944437623023987
+        },
+        {
+          "tick": 349,
+          "commit_number": 7,
+          "history_max": 272.0329895019531,
+          "history_mean": 0.6944443583488464
+        },
+        {
+          "tick": 399,
+          "commit_number": 8,
+          "history_max": 277.20330810546875,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 449,
+          "commit_number": 9,
+          "history_max": 277.7203369140625,
+          "history_mean": 0.6944444179534912
+        },
+        {
+          "tick": 499,
+          "commit_number": 10,
+          "history_max": 277.77203369140625,
+          "history_mean": 0.6944444179534912
+        },
+        {
+          "tick": 549,
+          "commit_number": 11,
+          "history_max": 277.777099609375,
+          "history_mean": 0.6944443583488464
+        },
+        {
+          "tick": 599,
+          "commit_number": 12,
+          "history_max": 277.7777099609375,
+          "history_mean": 0.6944444179534912
+        },
+        {
+          "tick": 649,
+          "commit_number": 13,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.6944444179534912
+        },
+        {
+          "tick": 699,
+          "commit_number": 14,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 749,
+          "commit_number": 15,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.6944444179534912
+        },
+        {
+          "tick": 799,
+          "commit_number": 16,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 849,
+          "commit_number": 17,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 899,
+          "commit_number": 18,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 949,
+          "commit_number": 19,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 999,
+          "commit_number": 20,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1049,
+          "commit_number": 21,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1099,
+          "commit_number": 22,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1149,
+          "commit_number": 23,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1199,
+          "commit_number": 24,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1249,
+          "commit_number": 25,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.6944444179534912
+        },
+        {
+          "tick": 1299,
+          "commit_number": 26,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1349,
+          "commit_number": 27,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1399,
+          "commit_number": 28,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1449,
+          "commit_number": 29,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1499,
+          "commit_number": 30,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1549,
+          "commit_number": 31,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1599,
+          "commit_number": 32,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1649,
+          "commit_number": 33,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1699,
+          "commit_number": 34,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1749,
+          "commit_number": 35,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1799,
+          "commit_number": 36,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1849,
+          "commit_number": 37,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.6944444179534912
+        },
+        {
+          "tick": 1899,
+          "commit_number": 38,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.6944444179534912
+        },
+        {
+          "tick": 1949,
+          "commit_number": 39,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.694444477558136
+        },
+        {
+          "tick": 1999,
+          "commit_number": 40,
+          "history_max": 277.77777099609375,
+          "history_mean": 0.6944444179534912
+        }
+      ],
+      "elapsed_seconds": 778.3511881828308
+    }
+  },
+  "summary": [
+    {
+      "decay": 0.1,
+      "r_mean_final": 3.1622776601683795,
+      "r_std_final": 0.0,
+      "energy_final": 1374,
+      "r_std_stability": 0.0050671183146815835,
+      "history_max": 2442.095947265625,
+      "history_mean": 6.157618522644043
+    },
+    {
+      "decay": 0.2,
+      "r_mean_final": 0.0,
+      "r_std_final": 0.0,
+      "energy_final": 969,
+      "r_std_stability": 0.004968718300816305,
+      "history_max": 1249.53466796875,
+      "history_mean": 3.124584674835205
+    },
+    {
+      "decay": 0.3,
+      "r_mean_final": 0.0,
+      "r_std_final": 0.0,
+      "energy_final": 955,
+      "r_std_stability": 0.0019874873203264997,
+      "history_max": 833.3306274414062,
+      "history_mean": 2.083331823348999
+    },
+    {
+      "decay": 0.4,
+      "r_mean_final": 0.0,
+      "r_std_final": 0.0,
+      "energy_final": 956,
+      "r_std_stability": 0.0,
+      "history_max": 625.0,
+      "history_mean": 1.5625001192092896
+    },
+    {
+      "decay": 0.5,
+      "r_mean_final": 1.0,
+      "r_std_final": 0.0,
+      "energy_final": 963,
+      "r_std_stability": 0.0,
+      "history_max": 500.0,
+      "history_mean": 1.25
+    },
+    {
+      "decay": 0.6,
+      "r_mean_final": 0.0,
+      "r_std_final": 0.0,
+      "energy_final": 928,
+      "r_std_stability": 0.012247448713915893,
+      "history_max": 416.66668701171875,
+      "history_mean": 1.0416667461395264
+    },
+    {
+      "decay": 0.7,
+      "r_mean_final": 0.0,
+      "r_std_final": 0.0,
+      "energy_final": 955,
+      "r_std_stability": 0.0,
+      "history_max": 357.1428527832031,
+      "history_mean": 0.8928571343421936
+    },
+    {
+      "decay": 0.8,
+      "r_mean_final": 0.0,
+      "r_std_final": 0.0,
+      "energy_final": 969,
+      "r_std_stability": 0.0,
+      "history_max": 312.5,
+      "history_mean": 0.78125
+    },
+    {
+      "decay": 0.9,
+      "r_mean_final": 0.0,
+      "r_std_final": 0.0,
+      "energy_final": 936,
+      "r_std_stability": 0.0,
+      "history_max": 277.77777099609375,
+      "history_mean": 0.6944444179534912
+    }
+  ],
+  "best_stability": {
+    "decay": 0.4,
+    "r_mean_final": 0.0,
+    "r_std_final": 0.0,
+    "energy_final": 956,
+    "r_std_stability": 0.0,
+    "history_max": 625.0,
+    "history_mean": 1.5625001192092896
+  }
+}

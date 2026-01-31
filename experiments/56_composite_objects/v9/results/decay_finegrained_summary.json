@@ -1,0 +1,30 @@
+{
+  "experiment": "V9 Fine-Grained Decay Scan",
+  "date": "2026-01-30",
+  "decay_values": [0.01, 0.05, 0.08, 0.10, 0.12, 0.14, 0.16, 0.18, 0.20],
+  "num_ticks": 2000,
+  "summary": [
+    {"decay": 0.01, "r_mean": 3.16, "energy": 1401, "hist_max": 7588.3, "state": "STABLE"},
+    {"decay": 0.05, "r_mean": 4.12, "energy": 1382, "hist_max": 4202.6, "state": "STABLE"},
+    {"decay": 0.08, "r_mean": 3.16, "energy": 1399, "hist_max": 2970.0, "state": "STABLE"},
+    {"decay": 0.10, "r_mean": 4.00, "energy": 1384, "hist_max": 2443.2, "state": "STABLE"},
+    {"decay": 0.12, "r_mean": 2.00, "energy": 1148, "hist_max": 2061.7, "state": "MARGINAL"},
+    {"decay": 0.14, "r_mean": 1.00, "energy": 1014, "hist_max": 1777.3, "state": "COLLAPSED"},
+    {"decay": 0.16, "r_mean": 0.00, "energy": 1037, "hist_max": 1559.3, "state": "COLLAPSED"},
+    {"decay": 0.18, "r_mean": 0.00, "energy": 989, "hist_max": 1387.7, "state": "COLLAPSED"},
+    {"decay": 0.20, "r_mean": 0.00, "energy": 952, "hist_max": 1249.6, "state": "COLLAPSED"}
+  ],
+  "critical_threshold": {
+    "lower_bound": 0.12,
+    "upper_bound": 0.14,
+    "estimated": 0.13
+  },
+  "findings": {
+    "stable_range": "decay <= 0.10",
+    "marginal": "decay = 0.12",
+    "collapsed_range": "decay >= 0.14",
+    "energy_stable": "1380-1400",
+    "energy_collapsed": "950-1040",
+    "transition_width": 0.02
+  }
+}

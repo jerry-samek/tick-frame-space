@@ -1,0 +1,1683 @@
+{
+  "all_results": {
+    "global_sum": {
+      "normalization_type": "global_sum",
+      "normalization_scale": 1000.0,
+      "config": {
+        "num_ticks": 2000,
+        "gamma_window_size": 50,
+        "gamma_imprint_k": 10.0,
+        "n_patterns": 25,
+        "target_gamma_k": 50.0,
+        "jitter_strength": 0.119
+      },
+      "final_stats": {
+        "r_mean": 1.0,
+        "r_std": 0.0,
+        "r_min": 1.0,
+        "r_max": 1.0,
+        "total_energy": 1039,
+        "coverage": 0.1039
+      },
+      "final_history": {
+        "ticks_in_window": 0,
+        "window_size": 50,
+        "total_commits": 40,
+        "normalization_type": "global_sum",
+        "normalization_scale": 1000.0,
+        "accumulator_nonzero": 0,
+        "raw_history_max": 8960.0,
+        "raw_history_mean": 25.0,
+        "raw_history_sum": 250000.0,
+        "normalized_max": 35.69721221923828,
+        "normalized_mean": 0.09960159659385681,
+        "effective_norm_factor": 251.0
+      },
+      "stability_metrics": {
+        "r_std_mean": 0.004968718300816249,
+        "r_std_std": 0.019243763231057347,
+        "r_mean_mean": 1.2860047037950064,
+        "r_mean_std": 0.7555110133097148,
+        "energy_mean": 1076.6875,
+        "energy_std": 73.28686678900934
+      },
+      "history": [
+        {
+          "tick": 100,
+          "r_mean": 5.653008542487097,
+          "r_std": 2.8711486235595522,
+          "r_min": 1.4142135623730951,
+          "r_max": 14.035668847618199,
+          "energy": 1240,
+          "raw_history_sum": 12500.0,
+          "normalized_max": 4.44444465637207,
+          "effective_norm_factor": 13.5
+        },
+        {
+          "tick": 200,
+          "r_mean": 3.802301282732932,
+          "r_std": 1.5564398335070653,
+          "r_min": 2.0,
+          "r_max": 9.055385138137417,
+          "energy": 1250,
+          "raw_history_sum": 25000.0,
+          "normalized_max": 6.153846263885498,
+          "effective_norm_factor": 26.0
+        },
+        {
+          "tick": 300,
+          "r_mean": 3.371052228142164,
+          "r_std": 0.6603081667961962,
+          "r_min": 3.0,
+          "r_max": 6.082762530298219,
+          "energy": 1317,
+          "raw_history_sum": 37500.0,
+          "normalized_max": 14.545454978942871,
+          "effective_norm_factor": 38.5
+        },
+        {
+          "tick": 400,
+          "r_mean": 3.135799714718999,
+          "r_std": 0.21624095164479243,
+          "r_min": 3.0,
+          "r_max": 4.123105625617661,
+          "energy": 1360,
+          "raw_history_sum": 50000.0,
+          "normalized_max": 20.784313201904297,
+          "effective_norm_factor": 51.000003814697266
+        },
+        {
+          "tick": 500,
+          "r_mean": 3.0973665961010277,
+          "r_std": 0.07949949281305999,
+          "r_min": 3.0,
+          "r_max": 3.1622776601683795,
+          "energy": 1247,
+          "raw_history_sum": 62500.0,
+          "normalized_max": 24.56692886352539,
+          "effective_norm_factor": 63.50000762939453
+        },
+        {
+          "tick": 600,
+          "r_mean": 2.0,
+          "r_std": 0.0,
+          "r_min": 2.0,
+          "r_max": 2.0,
+          "energy": 1172,
+          "raw_history_sum": 75000.0,
+          "normalized_max": 27.105262756347656,
+          "effective_norm_factor": 75.99999237060547
+        },
+        {
+          "tick": 700,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 1099,
+          "raw_history_sum": 87500.0,
+          "normalized_max": 28.92655372619629,
+          "effective_norm_factor": 88.5
+        },
+        {
+          "tick": 800,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 1124,
+          "raw_history_sum": 100000.0,
+          "normalized_max": 29.702970504760742,
+          "effective_norm_factor": 101.0
+        },
+        {
+          "tick": 900,
+          "r_mean": 1.4142135623730951,
+          "r_std": 0.0,
+          "r_min": 1.4142135623730951,
+          "r_max": 1.4142135623730951,
+          "energy": 1087,
+          "raw_history_sum": 112500.0,
+          "normalized_max": 30.837003707885742,
+          "effective_norm_factor": 113.50000762939453
+        },
+        {
+          "tick": 1000,
+          "r_mean": 2.23606797749979,
+          "r_std": 0.0,
+          "r_min": 2.23606797749979,
+          "r_max": 2.23606797749979,
+          "energy": 1116,
+          "raw_history_sum": 125000.0,
+          "normalized_max": 31.746030807495117,
+          "effective_norm_factor": 126.0
+        },
+        {
+          "tick": 1100,
+          "r_mean": 2.0,
+          "r_std": 0.0,
+          "r_min": 2.0,
+          "r_max": 2.0,
+          "energy": 1099,
+          "raw_history_sum": 137500.0,
+          "normalized_max": 32.49097442626953,
+          "effective_norm_factor": 138.5
+        },
+        {
+          "tick": 1200,
+          "r_mean": 1.4142135623730951,
+          "r_std": 0.0,
+          "r_min": 1.4142135623730951,
+          "r_max": 1.4142135623730951,
+          "energy": 1122,
+          "raw_history_sum": 150000.0,
+          "normalized_max": 33.11258316040039,
+          "effective_norm_factor": 151.0
+        },
+        {
+          "tick": 1300,
+          "r_mean": 1.4142135623730951,
+          "r_std": 0.0,
+          "r_min": 1.4142135623730951,
+          "r_max": 1.4142135623730951,
+          "energy": 1084,
+          "raw_history_sum": 162500.0,
+          "normalized_max": 33.63914489746094,
+          "effective_norm_factor": 163.5
+        },
+        {
+          "tick": 1400,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 1026,
+          "raw_history_sum": 175000.0,
+          "normalized_max": 34.09090805053711,
+          "effective_norm_factor": 176.00001525878906
+        },
+        {
+          "tick": 1500,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 1020,
+          "raw_history_sum": 187500.0,
+          "normalized_max": 34.482757568359375,
+          "effective_norm_factor": 188.5
+        },
+        {
+          "tick": 1600,
+          "r_mean": 0.0,
+          "r_std": 0.0,
+          "r_min": 0.0,
+          "r_max": 0.0,
+          "energy": 1034,
+          "raw_history_sum": 200000.0,
+          "normalized_max": 34.62686538696289,
+          "effective_norm_factor": 201.0
+        },
+        {
+          "tick": 1700,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 1053,
+          "raw_history_sum": 212500.0,
+          "normalized_max": 34.94145202636719,
+          "effective_norm_factor": 213.5
+        },
+        {
+          "tick": 1800,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 967,
+          "raw_history_sum": 225000.0,
+          "normalized_max": 35.22123718261719,
+          "effective_norm_factor": 225.99998474121094
+        },
+        {
+          "tick": 1900,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 938,
+          "raw_history_sum": 237500.0,
+          "normalized_max": 35.47169876098633,
+          "effective_norm_factor": 238.50003051757812
+        },
+        {
+          "tick": 2000,
+          "r_mean": 1.0,
+          "r_std": 0.0,
+          "r_min": 1.0,
+          "r_max": 1.0,
+          "energy": 1039,
+          "raw_history_sum": 250000.0,
+          "normalized_max": 35.69721221923828,
+          "effective_norm_factor": 251.0
+        }
+      ],
+      "commit_history": [
+        {
+          "tick": 49,
+          "commit_number": 1,
+          "raw_history_sum": 6250.0,
+          "normalized_max": 4.137930870056152,
+          "effective_norm_factor": 7.25
+        },
+        {
+          "tick": 99,
+          "commit_number": 2,
+          "raw_history_sum": 12500.0,
+          "normalized_max": 4.44444465637207,
+          "effective_norm_factor": 13.5
+        },
+        {
+          "tick": 149,
+          "commit_number": 3,
+          "raw_history_sum": 18750.0,
+          "normalized_max": 4.556962013244629,
+          "effective_norm_factor": 19.75
+        },
+        {
+          "tick": 199,
+          "commit_number": 4,
+          "raw_history_sum": 25000.0,
+          "normalized_max": 6.153846263885498,
+          "effective_norm_factor": 26.0
+        },
+        {
+          "tick": 249,
+          "commit_number": 5,
+          "raw_history_sum": 31250.0,
+          "normalized_max": 9.922480583190918,
+          "effective_norm_factor": 32.249996185302734
+        },
+        {
+          "tick": 299,
+          "commit_number": 6,
+          "raw_history_sum": 37500.0,
+          "normalized_max": 14.545454978942871,
+          "effective_norm_factor": 38.5
+        },
+        {
+          "tick": 349,
+          "commit_number": 7,
+          "raw_history_sum": 43750.0,
+          "normalized_max": 18.10055923461914,
+          "effective_norm_factor": 44.749996185302734
+        },
+        {
+          "tick": 399,
+          "commit_number": 8,
+          "raw_history_sum": 50000.0,
+          "normalized_max": 20.784313201904297,
+          "effective_norm_factor": 51.000003814697266
+        },
+        {
+          "tick": 449,
+          "commit_number": 9,
+          "raw_history_sum": 56250.0,
+          "normalized_max": 22.882095336914062,
+          "effective_norm_factor": 57.250003814697266
+        },
+        {
+          "tick": 499,
+          "commit_number": 10,
+          "raw_history_sum": 62500.0,
+          "normalized_max": 24.56692886352539,
+          "effective_norm_factor": 63.50000762939453
+        },
+        {
+          "tick": 549,
+          "commit_number": 11,
+          "raw_history_sum": 68750.0,
+          "normalized_max": 25.94982147216797,
+          "effective_norm_factor": 69.75
+        },
+        {
+          "tick": 599,
+          "commit_number": 12,
+          "raw_history_sum": 75000.0,
+          "normalized_max": 27.105262756347656,
+          "effective_norm_factor": 75.99999237060547
+        },
+        {
+          "tick": 649,
+          "commit_number": 13,
+          "raw_history_sum": 81250.0,
+          "normalized_max": 28.085105895996094,
+          "effective_norm_factor": 82.25
+        },
+        {
+          "tick": 699,
+          "commit_number": 14,
+          "raw_history_sum": 87500.0,
+          "normalized_max": 28.92655372619629,
+          "effective_norm_factor": 88.5
+        },
+        {
+          "tick": 749,
+          "commit_number": 15,
+          "raw_history_sum": 93750.0,
+          "normalized_max": 29.023746490478516,
+          "effective_norm_factor": 94.75
+        },
+        {
+          "tick": 799,
+          "commit_number": 16,
+          "raw_history_sum": 100000.0,
+          "normalized_max": 29.702970504760742,
+          "effective_norm_factor": 101.0
+        },
+        {
+          "tick": 849,
+          "commit_number": 17,
+          "raw_history_sum": 106250.0,
+          "normalized_max": 30.303030014038086,
+          "effective_norm_factor": 107.25000762939453
+        },
+        {
+          "tick": 899,
+          "commit_number": 18,
+          "raw_history_sum": 112500.0,
+          "normalized_max": 30.837003707885742,
+          "effective_norm_factor": 113.50000762939453
+        },
+        {
+          "tick": 949,
+          "commit_number": 19,
+          "raw_history_sum": 118750.0,
+          "normalized_max": 31.31524085998535,
+          "effective_norm_factor": 119.75
+        },
+        {
+          "tick": 999,
+          "commit_number": 20,
+          "raw_history_sum": 125000.0,
+          "normalized_max": 31.746030807495117,
+          "effective_norm_factor": 126.0
+        },
+        {
+          "tick": 1049,
+          "commit_number": 21,
+          "raw_history_sum": 131250.0,
+          "normalized_max": 32.136104583740234,
+          "effective_norm_factor": 132.25
+        },
+        {
+          "tick": 1099,
+          "commit_number": 22,
+          "raw_history_sum": 137500.0,
+          "normalized_max": 32.49097442626953,
+          "effective_norm_factor": 138.5
+        },
+        {
+          "tick": 1149,
+          "commit_number": 23,
+          "raw_history_sum": 143750.0,
+          "normalized_max": 32.8151969909668,
+          "effective_norm_factor": 144.75
+        },
+        {
+          "tick": 1199,
+          "commit_number": 24,
+          "raw_history_sum": 150000.0,
+          "normalized_max": 33.11258316040039,
+          "effective_norm_factor": 151.0
+        },
+        {
+          "tick": 1249,
+          "commit_number": 25,
+          "raw_history_sum": 156250.0,
+          "normalized_max": 33.38632583618164,
+          "effective_norm_factor": 157.24998474121094
+        },
+        {
+          "tick": 1299,
+          "commit_number": 26,
+          "raw_history_sum": 162500.0,
+          "normalized_max": 33.63914489746094,
+          "effective_norm_factor": 163.5
+        },
+        {
+          "tick": 1349,
+          "commit_number": 27,
+          "raw_history_sum": 168750.0,
+          "normalized_max": 33.87334442138672,
+          "effective_norm_factor": 169.74998474121094
+        },
+        {
+          "tick": 1399,
+          "commit_number": 28,
+          "raw_history_sum": 175000.0,
+          "normalized_max": 34.09090805053711,
+          "effective_norm_factor": 176.00001525878906
+        },
+        {
+          "tick": 1449,
+          "commit_number": 29,
+          "raw_history_sum": 181250.0,
+          "normalized_max": 34.29355239868164,
+          "effective_norm_factor": 182.25
+        },
+        {
+          "tick": 1499,
+          "commit_number": 30,
+          "raw_history_sum": 187500.0,
+          "normalized_max": 34.482757568359375,
+          "effective_norm_factor": 188.5
+        },
+        {
+          "tick": 1549,
+          "commit_number": 31,
+          "raw_history_sum": 193750.0,
+          "normalized_max": 34.454429626464844,
+          "effective_norm_factor": 194.75
+        },
+        {
+          "tick": 1599,
+          "commit_number": 32,
+          "raw_history_sum": 200000.0,
+          "normalized_max": 34.62686538696289,
+          "effective_norm_factor": 201.0
+        },
+        {
+          "tick": 1649,
+          "commit_number": 33,
+          "raw_history_sum": 206250.0,
+          "normalized_max": 34.788902282714844,
+          "effective_norm_factor": 207.25
+        },
+        {
+          "tick": 1699,
+          "commit_number": 34,
+          "raw_history_sum": 212500.0,
+          "normalized_max": 34.94145202636719,
+          "effective_norm_factor": 213.5
+        },
+        {
+          "tick": 1749,
+          "commit_number": 35,
+          "raw_history_sum": 218750.0,
+          "normalized_max": 35.085323333740234,
+          "effective_norm_factor": 219.74998474121094
+        },
+        {
+          "tick": 1799,
+          "commit_number": 36,
+          "raw_history_sum": 225000.0,
+          "normalized_max": 35.22123718261719,
+          "effective_norm_factor": 225.99998474121094
+        },
+        {
+          "tick": 1849,
+          "commit_number": 37,
+          "raw_history_sum": 231250.0,
+          "normalized_max": 35.34983825683594,
+          "effective_norm_factor": 232.24998474121094
+        },
+        {
+          "tick": 1899,
+          "commit_number": 38,
+          "raw_history_sum": 237500.0,
+          "normalized_max": 35.47169876098633,
+          "effective_norm_factor": 238.50003051757812
+        },
+        {
+          "tick": 1949,
+          "commit_number": 39,
+          "raw_history_sum": 243750.0,
+          "normalized_max": 35.58733367919922,
+          "effective_norm_factor": 244.75
+        },
+        {
+          "tick": 1999,
+          "commit_number": 40,
+          "raw_history_sum": 250000.0,
+          "normalized_max": 35.69721221923828,
+          "effective_norm_factor": 251.0
+        }
+      ],
+      "elapsed_seconds": 166.25110244750977
+    },
+    "time_based": {
+      "normalization_type": "time_based",
+      "normalization_scale": 1000.0,
+      "config": {
+        "num_ticks": 2000,
+        "gamma_window_size": 50,
+        "gamma_imprint_k": 10.0,
+        "n_patterns": 25,
+        "target_gamma_k": 50.0,
+        "jitter_strength": 0.119
+      },
+      "final_stats": {
+        "r_mean": 3.1622776601683795,
+        "r_std": 0.0,
+        "r_min": 3.1622776601683795,
+        "r_max": 3.1622776601683795,
+        "total_energy": 1355,
+        "coverage": 0.1355
+      },
+      "final_history": {
+        "ticks_in_window": 0,
+        "window_size": 50,
+        "total_commits": 40,
+        "normalization_type": "time_based",
+        "normalization_scale": 1000.0,
+        "accumulator_nonzero": 0,
+        "raw_history_max": 9020.0,
+        "raw_history_mean": 25.0,
+        "raw_history_sum": 250000.0,
+        "normalized_max": 220.0,
+        "normalized_mean": 0.6097560524940491,
+        "effective_norm_factor": 41.000003814697266
+      },
+      "stability_metrics": {
+        "r_std_mean": 0.005067118314681639,
+        "r_std_std": 0.01962486484602412,
+        "r_mean_mean": 3.25682242437302,
+        "r_mean_std": 0.3319591617847084,
+        "energy_mean": 1320.5625,
+        "energy_std": 41.268887721260434
+      },
+      "history": [
+        {
+          "tick": 100,
+          "r_mean": 5.665160563886101,
+          "r_std": 3.0961194720794807,
+          "r_min": 1.4142135623730951,
+          "r_max": 15.033296378372908,
+          "energy": 1277,
+          "raw_history_sum": 12500.0,
+          "normalized_max": 20.0,
+          "effective_norm_factor": 3.0
+        },
+        {
+          "tick": 200,
+          "r_mean": 3.6122879415183253,
+          "r_std": 1.7062754254695531,
+          "r_min": 1.4142135623730951,
+          "r_max": 9.0,
+          "energy": 1289,
+          "raw_history_sum": 25000.0,
+          "normalized_max": 32.0,
+          "effective_norm_factor": 5.0
+        },
+        {
+          "tick": 300,
+          "r_mean": 3.362817501905529,
+          "r_std": 0.6414502699959372,
+          "r_min": 3.0,
+          "r_max": 6.0,
+          "energy": 1308,
+          "raw_history_sum": 37500.0,
+          "normalized_max": 74.28571319580078,
+          "effective_norm_factor": 7.000000476837158
+        },
+        {
+          "tick": 400,
+          "r_mean": 3.1178932768808227,
+          "r_std": 0.19682864116121251,
+          "r_min": 3.0,
+          "r_max": 4.0,
+          "energy": 1369,
+          "raw_history_sum": 50000.0,
+          "normalized_max": 113.33333587646484,
+          "effective_norm_factor": 9.0
+        },
+        {
+          "tick": 500,
+          "r_mean": 3.0778932768808227,
+          "r_std": 0.08107389303490445,
+          "r_min": 3.0,
+          "r_max": 3.1622776601683795,
+          "energy": 1273,
+          "raw_history_sum": 62500.0,
+          "normalized_max": 138.18182373046875,
+          "effective_norm_factor": 11.0
+        },
+        {
+          "tick": 600,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1315,
+          "raw_history_sum": 75000.0,
+          "normalized_max": 155.38461303710938,
+          "effective_norm_factor": 13.000000953674316
+        },
+        {
+          "tick": 700,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1328,
+          "raw_history_sum": 87500.0,
+          "normalized_max": 168.0,
+          "effective_norm_factor": 15.000000953674316
+        },
+        {
+          "tick": 800,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1305,
+          "raw_history_sum": 100000.0,
+          "normalized_max": 177.64706420898438,
+          "effective_norm_factor": 17.000001907348633
+        },
+        {
+          "tick": 900,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1295,
+          "raw_history_sum": 112500.0,
+          "normalized_max": 185.26315307617188,
+          "effective_norm_factor": 19.0
+        },
+        {
+          "tick": 1000,
+          "r_mean": 4.12310562561766,
+          "r_std": 8.881784197001252e-16,
+          "r_min": 4.123105625617661,
+          "r_max": 4.123105625617661,
+          "energy": 1365,
+          "raw_history_sum": 125000.0,
+          "normalized_max": 191.42857360839844,
+          "effective_norm_factor": 21.0
+        },
+        {
+          "tick": 1100,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1302,
+          "raw_history_sum": 137500.0,
+          "normalized_max": 196.52174377441406,
+          "effective_norm_factor": 23.0
+        },
+        {
+          "tick": 1200,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1345,
+          "raw_history_sum": 150000.0,
+          "normalized_max": 200.8000030517578,
+          "effective_norm_factor": 25.0
+        },
+        {
+          "tick": 1300,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1371,
+          "raw_history_sum": 162500.0,
+          "normalized_max": 204.44444274902344,
+          "effective_norm_factor": 27.0
+        },
+        {
+          "tick": 1400,
+          "r_mean": 3.0,
+          "r_std": 0.0,
+          "r_min": 3.0,
+          "r_max": 3.0,
+          "energy": 1329,
+          "raw_history_sum": 175000.0,
+          "normalized_max": 207.58621215820312,
+          "effective_norm_factor": 29.000001907348633
+        },
+        {
+          "tick": 1500,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1320,
+          "raw_history_sum": 187500.0,
+          "normalized_max": 210.3225860595703,
+          "effective_norm_factor": 31.0
+        },
+        {
+          "tick": 1600,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1335,
+          "raw_history_sum": 200000.0,
+          "normalized_max": 212.72727966308594,
+          "effective_norm_factor": 33.0
+        },
+        {
+          "tick": 1700,
+          "r_mean": 4.12310562561766,
+          "r_std": 8.881784197001252e-16,
+          "r_min": 4.123105625617661,
+          "r_max": 4.123105625617661,
+          "energy": 1394,
+          "raw_history_sum": 212500.0,
+          "normalized_max": 214.85714721679688,
+          "effective_norm_factor": 35.0
+        },
+        {
+          "tick": 1800,
+          "r_mean": 3.0,
+          "r_std": 0.0,
+          "r_min": 3.0,
+          "r_max": 3.0,
+          "energy": 1274,
+          "raw_history_sum": 225000.0,
+          "normalized_max": 216.7567596435547,
+          "effective_norm_factor": 37.000003814697266
+        },
+        {
+          "tick": 1900,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1223,
+          "raw_history_sum": 237500.0,
+          "normalized_max": 218.46153259277344,
+          "effective_norm_factor": 38.999996185302734
+        },
+        {
+          "tick": 2000,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1355,
+          "raw_history_sum": 250000.0,
+          "normalized_max": 220.0,
+          "effective_norm_factor": 41.000003814697266
+        }
+      ],
+      "commit_history": [
+        {
+          "tick": 49,
+          "commit_number": 1,
+          "raw_history_sum": 6250.0,
+          "normalized_max": 15.0,
+          "effective_norm_factor": 2.0
+        },
+        {
+          "tick": 99,
+          "commit_number": 2,
+          "raw_history_sum": 12500.0,
+          "normalized_max": 20.0,
+          "effective_norm_factor": 3.0
+        },
+        {
+          "tick": 149,
+          "commit_number": 3,
+          "raw_history_sum": 18750.0,
+          "normalized_max": 22.5,
+          "effective_norm_factor": 4.0
+        },
+        {
+          "tick": 199,
+          "commit_number": 4,
+          "raw_history_sum": 25000.0,
+          "normalized_max": 32.0,
+          "effective_norm_factor": 5.0
+        },
+        {
+          "tick": 249,
+          "commit_number": 5,
+          "raw_history_sum": 31250.0,
+          "normalized_max": 50.0,
+          "effective_norm_factor": 6.000000476837158
+        },
+        {
+          "tick": 299,
+          "commit_number": 6,
+          "raw_history_sum": 37500.0,
+          "normalized_max": 74.28571319580078,
+          "effective_norm_factor": 7.000000476837158
+        },
+        {
+          "tick": 349,
+          "commit_number": 7,
+          "raw_history_sum": 43750.0,
+          "normalized_max": 96.25,
+          "effective_norm_factor": 8.0
+        },
+        {
+          "tick": 399,
+          "commit_number": 8,
+          "raw_history_sum": 50000.0,
+          "normalized_max": 113.33333587646484,
+          "effective_norm_factor": 9.0
+        },
+        {
+          "tick": 449,
+          "commit_number": 9,
+          "raw_history_sum": 56250.0,
+          "normalized_max": 127.0,
+          "effective_norm_factor": 10.0
+        },
+        {
+          "tick": 499,
+          "commit_number": 10,
+          "raw_history_sum": 62500.0,
+          "normalized_max": 138.18182373046875,
+          "effective_norm_factor": 11.0
+        },
+        {
+          "tick": 549,
+          "commit_number": 11,
+          "raw_history_sum": 68750.0,
+          "normalized_max": 147.5,
+          "effective_norm_factor": 11.999999046325684
+        },
+        {
+          "tick": 599,
+          "commit_number": 12,
+          "raw_history_sum": 75000.0,
+          "normalized_max": 155.38461303710938,
+          "effective_norm_factor": 13.000000953674316
+        },
+        {
+          "tick": 649,
+          "commit_number": 13,
+          "raw_history_sum": 81250.0,
+          "normalized_max": 162.14285278320312,
+          "effective_norm_factor": 14.0
+        },
+        {
+          "tick": 699,
+          "commit_number": 14,
+          "raw_history_sum": 87500.0,
+          "normalized_max": 168.0,
+          "effective_norm_factor": 15.000000953674316
+        },
+        {
+          "tick": 749,
+          "commit_number": 15,
+          "raw_history_sum": 93750.0,
+          "normalized_max": 173.125,
+          "effective_norm_factor": 16.0
+        },
+        {
+          "tick": 799,
+          "commit_number": 16,
+          "raw_history_sum": 100000.0,
+          "normalized_max": 177.64706420898438,
+          "effective_norm_factor": 17.000001907348633
+        },
+        {
+          "tick": 849,
+          "commit_number": 17,
+          "raw_history_sum": 106250.0,
+          "normalized_max": 181.6666717529297,
+          "effective_norm_factor": 17.999998092651367
+        },
+        {
+          "tick": 899,
+          "commit_number": 18,
+          "raw_history_sum": 112500.0,
+          "normalized_max": 185.26315307617188,
+          "effective_norm_factor": 19.0
+        },
+        {
+          "tick": 949,
+          "commit_number": 19,
+          "raw_history_sum": 118750.0,
+          "normalized_max": 188.5,
+          "effective_norm_factor": 20.0
+        },
+        {
+          "tick": 999,
+          "commit_number": 20,
+          "raw_history_sum": 125000.0,
+          "normalized_max": 191.42857360839844,
+          "effective_norm_factor": 21.0
+        },
+        {
+          "tick": 1049,
+          "commit_number": 21,
+          "raw_history_sum": 131250.0,
+          "normalized_max": 194.09091186523438,
+          "effective_norm_factor": 22.000001907348633
+        },
+        {
+          "tick": 1099,
+          "commit_number": 22,
+          "raw_history_sum": 137500.0,
+          "normalized_max": 196.52174377441406,
+          "effective_norm_factor": 23.0
+        },
+        {
+          "tick": 1149,
+          "commit_number": 23,
+          "raw_history_sum": 143750.0,
+          "normalized_max": 198.75,
+          "effective_norm_factor": 24.0
+        },
+        {
+          "tick": 1199,
+          "commit_number": 24,
+          "raw_history_sum": 150000.0,
+          "normalized_max": 200.8000030517578,
+          "effective_norm_factor": 25.0
+        },
+        {
+          "tick": 1249,
+          "commit_number": 25,
+          "raw_history_sum": 156250.0,
+          "normalized_max": 202.6923065185547,
+          "effective_norm_factor": 25.999998092651367
+        },
+        {
+          "tick": 1299,
+          "commit_number": 26,
+          "raw_history_sum": 162500.0,
+          "normalized_max": 204.44444274902344,
+          "effective_norm_factor": 27.0
+        },
+        {
+          "tick": 1349,
+          "commit_number": 27,
+          "raw_history_sum": 168750.0,
+          "normalized_max": 206.07142639160156,
+          "effective_norm_factor": 28.0
+        },
+        {
+          "tick": 1399,
+          "commit_number": 28,
+          "raw_history_sum": 175000.0,
+          "normalized_max": 207.58621215820312,
+          "effective_norm_factor": 29.000001907348633
+        },
+        {
+          "tick": 1449,
+          "commit_number": 29,
+          "raw_history_sum": 181250.0,
+          "normalized_max": 209.0,
+          "effective_norm_factor": 30.000003814697266
+        },
+        {
+          "tick": 1499,
+          "commit_number": 30,
+          "raw_history_sum": 187500.0,
+          "normalized_max": 210.3225860595703,
+          "effective_norm_factor": 31.0
+        },
+        {
+          "tick": 1549,
+          "commit_number": 31,
+          "raw_history_sum": 193750.0,
+          "normalized_max": 211.5625,
+          "effective_norm_factor": 32.0
+        },
+        {
+          "tick": 1599,
+          "commit_number": 32,
+          "raw_history_sum": 200000.0,
+          "normalized_max": 212.72727966308594,
+          "effective_norm_factor": 33.0
+        },
+        {
+          "tick": 1649,
+          "commit_number": 33,
+          "raw_history_sum": 206250.0,
+          "normalized_max": 213.8235321044922,
+          "effective_norm_factor": 34.0
+        },
+        {
+          "tick": 1699,
+          "commit_number": 34,
+          "raw_history_sum": 212500.0,
+          "normalized_max": 214.85714721679688,
+          "effective_norm_factor": 35.0
+        },
+        {
+          "tick": 1749,
+          "commit_number": 35,
+          "raw_history_sum": 218750.0,
+          "normalized_max": 215.8333282470703,
+          "effective_norm_factor": 36.0
+        },
+        {
+          "tick": 1799,
+          "commit_number": 36,
+          "raw_history_sum": 225000.0,
+          "normalized_max": 216.7567596435547,
+          "effective_norm_factor": 37.000003814697266
+        },
+        {
+          "tick": 1849,
+          "commit_number": 37,
+          "raw_history_sum": 231250.0,
+          "normalized_max": 217.63157653808594,
+          "effective_norm_factor": 37.999996185302734
+        },
+        {
+          "tick": 1899,
+          "commit_number": 38,
+          "raw_history_sum": 237500.0,
+          "normalized_max": 218.46153259277344,
+          "effective_norm_factor": 38.999996185302734
+        },
+        {
+          "tick": 1949,
+          "commit_number": 39,
+          "raw_history_sum": 243750.0,
+          "normalized_max": 219.25,
+          "effective_norm_factor": 40.0
+        },
+        {
+          "tick": 1999,
+          "commit_number": 40,
+          "raw_history_sum": 250000.0,
+          "normalized_max": 220.0,
+          "effective_norm_factor": 41.000003814697266
+        }
+      ],
+      "elapsed_seconds": 163.16018104553223
+    },
+    "local_gamma": {
+      "normalization_type": "local_gamma",
+      "normalization_scale": 1000.0,
+      "config": {
+        "num_ticks": 2000,
+        "gamma_window_size": 50,
+        "gamma_imprint_k": 10.0,
+        "n_patterns": 25,
+        "target_gamma_k": 50.0,
+        "jitter_strength": 0.119
+      },
+      "final_stats": {
+        "r_mean": 3.1622776601683795,
+        "r_std": 0.0,
+        "r_min": 3.1622776601683795,
+        "r_max": 3.1622776601683795,
+        "total_energy": 1376,
+        "coverage": 0.1376
+      },
+      "final_history": {
+        "ticks_in_window": 0,
+        "window_size": 50,
+        "total_commits": 40,
+        "normalization_type": "local_gamma",
+        "normalization_scale": 1000.0,
+        "accumulator_nonzero": 0,
+        "raw_history_max": 9040.0,
+        "raw_history_mean": 25.0,
+        "raw_history_sum": 250000.0,
+        "normalized_max": 36.01593780517578,
+        "normalized_mean": 0.09960159659385681,
+        "effective_norm_factor": 250.99998474121094
+      },
+      "stability_metrics": {
+        "r_std_mean": 0.00503453200681161,
+        "r_std_std": 0.019498658618329112,
+        "r_mean_mean": 3.2665590839831227,
+        "r_mean_std": 0.3266285453644578,
+        "energy_mean": 1334.625,
+        "energy_std": 44.09772528147002
+      },
+      "history": [
+        {
+          "tick": 100,
+          "r_mean": 5.539181973427943,
+          "r_std": 3.130089945233352,
+          "r_min": 1.4142135623730951,
+          "r_max": 15.033296378372908,
+          "energy": 1250,
+          "raw_history_sum": 12500.0,
+          "normalized_max": 4.44444465637207,
+          "effective_norm_factor": 13.5
+        },
+        {
+          "tick": 200,
+          "r_mean": 3.6330325630740687,
+          "r_std": 1.7091150913977284,
+          "r_min": 1.4142135623730951,
+          "r_max": 9.0,
+          "energy": 1297,
+          "raw_history_sum": 25000.0,
+          "normalized_max": 6.153846263885498,
+          "effective_norm_factor": 26.0
+        },
+        {
+          "tick": 300,
+          "r_mean": 3.3114021704740875,
+          "r_std": 0.6889235555411837,
+          "r_min": 2.0,
+          "r_max": 6.0,
+          "energy": 1374,
+          "raw_history_sum": 37500.0,
+          "normalized_max": 14.02597427368164,
+          "effective_norm_factor": 38.5
+        },
+        {
+          "tick": 400,
+          "r_mean": 3.1114021704740873,
+          "r_std": 0.19793062817346146,
+          "r_min": 3.0,
+          "r_max": 4.0,
+          "energy": 1368,
+          "raw_history_sum": 50000.0,
+          "normalized_max": 20.39215660095215,
+          "effective_norm_factor": 51.000003814697266
+        },
+        {
+          "tick": 500,
+          "r_mean": 3.0714021704740873,
+          "r_std": 0.08055251210898398,
+          "r_min": 3.0,
+          "r_max": 3.1622776601683795,
+          "energy": 1309,
+          "raw_history_sum": 62500.0,
+          "normalized_max": 24.251968383789062,
+          "effective_norm_factor": 63.50000762939453
+        },
+        {
+          "tick": 600,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1319,
+          "raw_history_sum": 75000.0,
+          "normalized_max": 26.842105865478516,
+          "effective_norm_factor": 75.99999237060547
+        },
+        {
+          "tick": 700,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1322,
+          "raw_history_sum": 87500.0,
+          "normalized_max": 28.700565338134766,
+          "effective_norm_factor": 88.50000762939453
+        },
+        {
+          "tick": 800,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1365,
+          "raw_history_sum": 100000.0,
+          "normalized_max": 30.099010467529297,
+          "effective_norm_factor": 101.0
+        },
+        {
+          "tick": 900,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1302,
+          "raw_history_sum": 112500.0,
+          "normalized_max": 31.18942642211914,
+          "effective_norm_factor": 113.50000762939453
+        },
+        {
+          "tick": 1000,
+          "r_mean": 4.12310562561766,
+          "r_std": 8.881784197001252e-16,
+          "r_min": 4.123105625617661,
+          "r_max": 4.123105625617661,
+          "energy": 1390,
+          "raw_history_sum": 125000.0,
+          "normalized_max": 32.06349182128906,
+          "effective_norm_factor": 126.0
+        },
+        {
+          "tick": 1100,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1298,
+          "raw_history_sum": 137500.0,
+          "normalized_max": 32.77978515625,
+          "effective_norm_factor": 138.50001525878906
+        },
+        {
+          "tick": 1200,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1376,
+          "raw_history_sum": 150000.0,
+          "normalized_max": 33.37748336791992,
+          "effective_norm_factor": 151.0
+        },
+        {
+          "tick": 1300,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1372,
+          "raw_history_sum": 162500.0,
+          "normalized_max": 33.883792877197266,
+          "effective_norm_factor": 163.5
+        },
+        {
+          "tick": 1400,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1297,
+          "raw_history_sum": 175000.0,
+          "normalized_max": 34.318180084228516,
+          "effective_norm_factor": 175.99998474121094
+        },
+        {
+          "tick": 1500,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1327,
+          "raw_history_sum": 187500.0,
+          "normalized_max": 34.69496154785156,
+          "effective_norm_factor": 188.5
+        },
+        {
+          "tick": 1600,
+          "r_mean": 3.0,
+          "r_std": 0.0,
+          "r_min": 3.0,
+          "r_max": 3.0,
+          "energy": 1371,
+          "raw_history_sum": 200000.0,
+          "normalized_max": 35.02487564086914,
+          "effective_norm_factor": 201.0
+        },
+        {
+          "tick": 1700,
+          "r_mean": 4.12310562561766,
+          "r_std": 8.881784197001252e-16,
+          "r_min": 4.123105625617661,
+          "r_max": 4.123105625617661,
+          "energy": 1405,
+          "raw_history_sum": 212500.0,
+          "normalized_max": 35.316158294677734,
+          "effective_norm_factor": 213.49998474121094
+        },
+        {
+          "tick": 1800,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1281,
+          "raw_history_sum": 225000.0,
+          "normalized_max": 35.57522201538086,
+          "effective_norm_factor": 225.99998474121094
+        },
+        {
+          "tick": 1900,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1244,
+          "raw_history_sum": 237500.0,
+          "normalized_max": 35.80712890625,
+          "effective_norm_factor": 238.50001525878906
+        },
+        {
+          "tick": 2000,
+          "r_mean": 3.1622776601683795,
+          "r_std": 0.0,
+          "r_min": 3.1622776601683795,
+          "r_max": 3.1622776601683795,
+          "energy": 1376,
+          "raw_history_sum": 250000.0,
+          "normalized_max": 36.01593780517578,
+          "effective_norm_factor": 250.99998474121094
+        }
+      ],
+      "commit_history": [
+        {
+          "tick": 49,
+          "commit_number": 1,
+          "raw_history_sum": 6250.0,
+          "normalized_max": 4.137930870056152,
+          "effective_norm_factor": 7.25
+        },
+        {
+          "tick": 99,
+          "commit_number": 2,
+          "raw_history_sum": 12500.0,
+          "normalized_max": 4.44444465637207,
+          "effective_norm_factor": 13.5
+        },
+        {
+          "tick": 149,
+          "commit_number": 3,
+          "raw_history_sum": 18750.0,
+          "normalized_max": 4.556962013244629,
+          "effective_norm_factor": 19.75
+        },
+        {
+          "tick": 199,
+          "commit_number": 4,
+          "raw_history_sum": 25000.0,
+          "normalized_max": 6.153846263885498,
+          "effective_norm_factor": 26.0
+        },
+        {
+          "tick": 249,
+          "commit_number": 5,
+          "raw_history_sum": 31250.0,
+          "normalized_max": 9.61240291595459,
+          "effective_norm_factor": 32.249996185302734
+        },
+        {
+          "tick": 299,
+          "commit_number": 6,
+          "raw_history_sum": 37500.0,
+          "normalized_max": 14.02597427368164,
+          "effective_norm_factor": 38.5
+        },
+        {
+          "tick": 349,
+          "commit_number": 7,
+          "raw_history_sum": 43750.0,
+          "normalized_max": 17.65363121032715,
+          "effective_norm_factor": 44.749996185302734
+        },
+        {
+          "tick": 399,
+          "commit_number": 8,
+          "raw_history_sum": 50000.0,
+          "normalized_max": 20.39215660095215,
+          "effective_norm_factor": 51.000003814697266
+        },
+        {
+          "tick": 449,
+          "commit_number": 9,
+          "raw_history_sum": 56250.0,
+          "normalized_max": 22.532751083374023,
+          "effective_norm_factor": 57.25
+        },
+        {
+          "tick": 499,
+          "commit_number": 10,
+          "raw_history_sum": 62500.0,
+          "normalized_max": 24.251968383789062,
+          "effective_norm_factor": 63.50000762939453
+        },
+        {
+          "tick": 549,
+          "commit_number": 11,
+          "raw_history_sum": 68750.0,
+          "normalized_max": 25.663082122802734,
+          "effective_norm_factor": 69.75000762939453
+        },
+        {
+          "tick": 599,
+          "commit_number": 12,
+          "raw_history_sum": 75000.0,
+          "normalized_max": 26.842105865478516,
+          "effective_norm_factor": 75.99999237060547
+        },
+        {
+          "tick": 649,
+          "commit_number": 13,
+          "raw_history_sum": 81250.0,
+          "normalized_max": 27.84194564819336,
+          "effective_norm_factor": 82.24999237060547
+        },
+        {
+          "tick": 699,
+          "commit_number": 14,
+          "raw_history_sum": 87500.0,
+          "normalized_max": 28.700565338134766,
+          "effective_norm_factor": 88.50000762939453
+        },
+        {
+          "tick": 749,
+          "commit_number": 15,
+          "raw_history_sum": 93750.0,
+          "normalized_max": 29.44590950012207,
+          "effective_norm_factor": 94.75
+        },
+        {
+          "tick": 799,
+          "commit_number": 16,
+          "raw_history_sum": 100000.0,
+          "normalized_max": 30.099010467529297,
+          "effective_norm_factor": 101.0
+        },
+        {
+          "tick": 849,
+          "commit_number": 17,
+          "raw_history_sum": 106250.0,
+          "normalized_max": 30.67599105834961,
+          "effective_norm_factor": 107.25
+        },
+        {
+          "tick": 899,
+          "commit_number": 18,
+          "raw_history_sum": 112500.0,
+          "normalized_max": 31.18942642211914,
+          "effective_norm_factor": 113.50000762939453
+        },
+        {
+          "tick": 949,
+          "commit_number": 19,
+          "raw_history_sum": 118750.0,
+          "normalized_max": 31.649269104003906,
+          "effective_norm_factor": 119.75
+        },
+        {
+          "tick": 999,
+          "commit_number": 20,
+          "raw_history_sum": 125000.0,
+          "normalized_max": 32.06349182128906,
+          "effective_norm_factor": 126.0
+        },
+        {
+          "tick": 1049,
+          "commit_number": 21,
+          "raw_history_sum": 131250.0,
+          "normalized_max": 32.43856430053711,
+          "effective_norm_factor": 132.25001525878906
+        },
+        {
+          "tick": 1099,
+          "commit_number": 22,
+          "raw_history_sum": 137500.0,
+          "normalized_max": 32.77978515625,
+          "effective_norm_factor": 138.50001525878906
+        },
+        {
+          "tick": 1149,
+          "commit_number": 23,
+          "raw_history_sum": 143750.0,
+          "normalized_max": 33.09153747558594,
+          "effective_norm_factor": 144.75
+        },
+        {
+          "tick": 1199,
+          "commit_number": 24,
+          "raw_history_sum": 150000.0,
+          "normalized_max": 33.37748336791992,
+          "effective_norm_factor": 151.0
+        },
+        {
+          "tick": 1249,
+          "commit_number": 25,
+          "raw_history_sum": 156250.0,
+          "normalized_max": 33.64070129394531,
+          "effective_norm_factor": 157.25
+        },
+        {
+          "tick": 1299,
+          "commit_number": 26,
+          "raw_history_sum": 162500.0,
+          "normalized_max": 33.883792877197266,
+          "effective_norm_factor": 163.5
+        },
+        {
+          "tick": 1349,
+          "commit_number": 27,
+          "raw_history_sum": 168750.0,
+          "normalized_max": 34.10898208618164,
+          "effective_norm_factor": 169.75
+        },
+        {
+          "tick": 1399,
+          "commit_number": 28,
+          "raw_history_sum": 175000.0,
+          "normalized_max": 34.318180084228516,
+          "effective_norm_factor": 175.99998474121094
+        },
+        {
+          "tick": 1449,
+          "commit_number": 29,
+          "raw_history_sum": 181250.0,
+          "normalized_max": 34.513031005859375,
+          "effective_norm_factor": 182.25
+        },
+        {
+          "tick": 1499,
+          "commit_number": 30,
+          "raw_history_sum": 187500.0,
+          "normalized_max": 34.69496154785156,
+          "effective_norm_factor": 188.5
+        },
+        {
+          "tick": 1549,
+          "commit_number": 31,
+          "raw_history_sum": 193750.0,
+          "normalized_max": 34.865211486816406,
+          "effective_norm_factor": 194.75
+        },
+        {
+          "tick": 1599,
+          "commit_number": 32,
+          "raw_history_sum": 200000.0,
+          "normalized_max": 35.02487564086914,
+          "effective_norm_factor": 201.0
+        },
+        {
+          "tick": 1649,
+          "commit_number": 33,
+          "raw_history_sum": 206250.0,
+          "normalized_max": 35.17490768432617,
+          "effective_norm_factor": 207.25
+        },
+        {
+          "tick": 1699,
+          "commit_number": 34,
+          "raw_history_sum": 212500.0,
+          "normalized_max": 35.316158294677734,
+          "effective_norm_factor": 213.49998474121094
+        },
+        {
+          "tick": 1749,
+          "commit_number": 35,
+          "raw_history_sum": 218750.0,
+          "normalized_max": 35.44937515258789,
+          "effective_norm_factor": 219.75
+        },
+        {
+          "tick": 1799,
+          "commit_number": 36,
+          "raw_history_sum": 225000.0,
+          "normalized_max": 35.57522201538086,
+          "effective_norm_factor": 225.99998474121094
+        },
+        {
+          "tick": 1849,
+          "commit_number": 37,
+          "raw_history_sum": 231250.0,
+          "normalized_max": 35.69429397583008,
+          "effective_norm_factor": 232.24998474121094
+        },
+        {
+          "tick": 1899,
+          "commit_number": 38,
+          "raw_history_sum": 237500.0,
+          "normalized_max": 35.80712890625,
+          "effective_norm_factor": 238.50001525878906
+        },
+        {
+          "tick": 1949,
+          "commit_number": 39,
+          "raw_history_sum": 243750.0,
+          "normalized_max": 35.91419982910156,
+          "effective_norm_factor": 244.75
+        },
+        {
+          "tick": 1999,
+          "commit_number": 40,
+          "raw_history_sum": 250000.0,
+          "normalized_max": 36.01593780517578,
+          "effective_norm_factor": 250.99998474121094
+        }
+      ],
+      "elapsed_seconds": 163.27107667922974
+    }
+  },
+  "summary": [
+    {
+      "norm_type": "global_sum",
+      "r_mean_final": 1.0,
+      "r_std_final": 0.0,
+      "energy_final": 1039,
+      "r_std_stability": 0.004968718300816249,
+      "normalized_max": 35.69721221923828,
+      "effective_norm_factor": 251.0
+    },
+    {
+      "norm_type": "time_based",
+      "r_mean_final": 3.1622776601683795,
+      "r_std_final": 0.0,
+      "energy_final": 1355,
+      "r_std_stability": 0.005067118314681639,
+      "normalized_max": 220.0,
+      "effective_norm_factor": 41.000003814697266
+    },
+    {
+      "norm_type": "local_gamma",
+      "r_mean_final": 3.1622776601683795,
+      "r_std_final": 0.0,
+      "energy_final": 1376,
+      "r_std_stability": 0.00503453200681161,
+      "normalized_max": 36.01593780517578,
+      "effective_norm_factor": 250.99998474121094
+    }
+  ],
+  "best_stability": {
+    "norm_type": "global_sum",
+    "r_mean_final": 1.0,
+    "r_std_final": 0.0,
+    "energy_final": 1039,
+    "r_std_stability": 0.004968718300816249,
+    "normalized_max": 35.69721221923828,
+    "effective_norm_factor": 251.0
+  }
+}

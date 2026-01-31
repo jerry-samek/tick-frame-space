@@ -1,0 +1,788 @@
+{
+  "all_results": {
+    "grid_50": {
+      "grid_size": 50,
+      "v12c": {
+        "config_name": "V12c",
+        "grid_size": 50,
+        "effective_tick": 50,
+        "n_patterns": 50,
+        "params": {
+          "gamma_window_size": 50,
+          "gamma_imprint_k": 50.0,
+          "target_gamma_k": 50.0,
+          "jitter_strength": 0.119,
+          "ca_survival_threshold": 3,
+          "ca_creation_threshold": 5,
+          "creation_sensitivity": 2.0,
+          "field_decay_threshold": 1.5,
+          "field_decay_rate": 0.05
+        },
+        "final_stats": {
+          "r_mean": 2.23606797749979,
+          "r_std": 0.0,
+          "r_min": 2.23606797749979,
+          "r_max": 2.23606797749979,
+          "total_energy": 805,
+          "coverage": 0.322,
+          "pattern_count": 50,
+          "r_mean_norm": 0.08944271909999159,
+          "r_std_norm": 0.0,
+          "energy_density": 0.322,
+          "pattern_density_2d": 0.02
+        },
+        "stability_metrics": {
+          "r_mean_norm_avg": 0.10866400836327855,
+          "r_mean_norm_std": 0.01746266747704167
+        },
+        "history": [
+          {
+            "tick": 100,
+            "r_mean": 4.068083748321083,
+            "r_std": 2.1519048809475514,
+            "r_mean_norm": 0.16272334993284332,
+            "energy_density": 0.2932,
+            "pattern_count": 50
+          },
+          {
+            "tick": 200,
+            "r_mean": 2.8374951374116266,
+            "r_std": 0.5372349068753547,
+            "r_mean_norm": 0.11349980549646506,
+            "energy_density": 0.3036,
+            "pattern_count": 50
+          },
+          {
+            "tick": 300,
+            "r_mean": 2.2545921711531616,
+            "r_std": 0.12966935557360257,
+            "r_mean_norm": 0.09018368684612646,
+            "energy_density": 0.322,
+            "pattern_count": 50
+          },
+          {
+            "tick": 400,
+            "r_mean": 2.23606797749979,
+            "r_std": 0.0,
+            "r_mean_norm": 0.08944271909999159,
+            "energy_density": 0.3136,
+            "pattern_count": 50
+          },
+          {
+            "tick": 500,
+            "r_mean": 3.162277660168379,
+            "r_std": 4.440892098500626e-16,
+            "r_mean_norm": 0.12649110640673517,
+            "energy_density": 0.3096,
+            "pattern_count": 50
+          },
+          {
+            "tick": 600,
+            "r_mean": 3.162277660168379,
+            "r_std": 4.440892098500626e-16,
+            "r_mean_norm": 0.12649110640673517,
+            "energy_density": 0.3096,
+            "pattern_count": 50
+          },
+          {
+            "tick": 700,
+            "r_mean": 3.162277660168379,
+            "r_std": 4.440892098500626e-16,
+            "r_mean_norm": 0.12649110640673517,
+            "energy_density": 0.3052,
+            "pattern_count": 50
+          },
+          {
+            "tick": 800,
+            "r_mean": 3.162277660168379,
+            "r_std": 4.440892098500626e-16,
+            "r_mean_norm": 0.12649110640673517,
+            "energy_density": 0.3132,
+            "pattern_count": 50
+          },
+          {
+            "tick": 900,
+            "r_mean": 2.23606797749979,
+            "r_std": 0.0,
+            "r_mean_norm": 0.08944271909999159,
+            "energy_density": 0.3076,
+            "pattern_count": 50
+          },
+          {
+            "tick": 1000,
+            "r_mean": 2.23606797749979,
+            "r_std": 0.0,
+            "r_mean_norm": 0.08944271909999159,
+            "energy_density": 0.322,
+            "pattern_count": 50
+          }
+        ],
+        "elapsed_seconds": 33.25661563873291,
+        "num_ticks": 1000
+      },
+      "v12d": {
+        "config_name": "V12d",
+        "grid_size": 50,
+        "effective_tick": 50,
+        "n_patterns": 50,
+        "params": {
+          "gamma_window_size": 50,
+          "gamma_imprint_k": 50.0,
+          "target_gamma_k": 50.0,
+          "jitter_strength": 0.119,
+          "ca_survival_threshold": null,
+          "ca_creation_threshold": null,
+          "creation_sensitivity": 0.0,
+          "field_decay_threshold": 0.0,
+          "field_decay_rate": 0.0
+        },
+        "final_stats": {
+          "r_mean": 9.03768033231905,
+          "r_std": 1.6187446403968169,
+          "r_min": 5.0990195135927845,
+          "r_max": 12.727922061357855,
+          "total_energy": 1647,
+          "coverage": 0.6588,
+          "pattern_count": 50,
+          "r_mean_norm": 0.36150721329276203,
+          "r_std_norm": 0.06474978561587268,
+          "energy_density": 0.6588,
+          "pattern_density_2d": 0.02
+        },
+        "stability_metrics": {
+          "r_mean_norm_avg": 0.3618691311272725,
+          "r_mean_norm_std": 0.000831217961541728
+        },
+        "history": [
+          {
+            "tick": 100,
+            "r_mean": 9.333413338211814,
+            "r_std": 1.9098155560393262,
+            "r_mean_norm": 0.37333653352847257,
+            "energy_density": 0.6644,
+            "pattern_count": 50
+          },
+          {
+            "tick": 200,
+            "r_mean": 9.026154236178256,
+            "r_std": 1.6995704471193058,
+            "r_mean_norm": 0.36104616944713025,
+            "energy_density": 0.6732,
+            "pattern_count": 50
+          },
+          {
+            "tick": 300,
+            "r_mean": 9.093373854896601,
+            "r_std": 1.658478801517502,
+            "r_mean_norm": 0.36373495419586405,
+            "energy_density": 0.6788,
+            "pattern_count": 50
+          },
+          {
+            "tick": 400,
+            "r_mean": 9.074944418647144,
+            "r_std": 1.6448050943698673,
+            "r_mean_norm": 0.36299777674588574,
+            "energy_density": 0.6504,
+            "pattern_count": 50
+          },
+          {
+            "tick": 500,
+            "r_mean": 9.03768033231905,
+            "r_std": 1.6187446403968169,
+            "r_mean_norm": 0.36150721329276203,
+            "energy_density": 0.6736,
+            "pattern_count": 50
+          },
+          {
+            "tick": 600,
+            "r_mean": 9.03768033231905,
+            "r_std": 1.6187446403968169,
+            "r_mean_norm": 0.36150721329276203,
+            "energy_density": 0.6656,
+            "pattern_count": 50
+          },
+          {
+            "tick": 700,
+            "r_mean": 9.03768033231905,
+            "r_std": 1.6187446403968169,
+            "r_mean_norm": 0.36150721329276203,
+            "energy_density": 0.6716,
+            "pattern_count": 50
+          },
+          {
+            "tick": 800,
+            "r_mean": 9.03768033231905,
+            "r_std": 1.6187446403968169,
+            "r_mean_norm": 0.36150721329276203,
+            "energy_density": 0.6712,
+            "pattern_count": 50
+          },
+          {
+            "tick": 900,
+            "r_mean": 9.03768033231905,
+            "r_std": 1.6187446403968169,
+            "r_mean_norm": 0.36150721329276203,
+            "energy_density": 0.6524,
+            "pattern_count": 50
+          },
+          {
+            "tick": 1000,
+            "r_mean": 9.03768033231905,
+            "r_std": 1.6187446403968169,
+            "r_mean_norm": 0.36150721329276203,
+            "energy_density": 0.6588,
+            "pattern_count": 50
+          }
+        ],
+        "elapsed_seconds": 0.8534760475158691,
+        "num_ticks": 1000
+      },
+      "comparison": {
+        "r_diff": 0.27206449419277046,
+        "v12c_stable": true,
+        "v12d_stable": true
+      }
+    },
+    "grid_100": {
+      "grid_size": 100,
+      "v12c": {
+        "config_name": "V12c",
+        "grid_size": 100,
+        "effective_tick": 100,
+        "n_patterns": 100,
+        "params": {
+          "gamma_window_size": 100,
+          "gamma_imprint_k": 100.0,
+          "target_gamma_k": 100.0,
+          "jitter_strength": 0.119,
+          "ca_survival_threshold": 3,
+          "ca_creation_threshold": 5,
+          "creation_sensitivity": 2.0,
+          "field_decay_threshold": 1.5,
+          "field_decay_rate": 0.05
+        },
+        "final_stats": {
+          "r_mean": 3.689418123337438,
+          "r_std": 1.2838200462639837,
+          "r_min": 2.0,
+          "r_max": 5.830951894845301,
+          "total_energy": 1986,
+          "coverage": 0.1986,
+          "pattern_count": 100,
+          "r_mean_norm": 0.07378836246674876,
+          "r_std_norm": 0.025676400925279674,
+          "energy_density": 0.1986,
+          "pattern_density_2d": 0.01
+        },
+        "stability_metrics": {
+          "r_mean_norm_avg": 0.08445249843602237,
+          "r_mean_norm_std": 0.013498526425364834
+        },
+        "history": [
+          {
+            "tick": 100,
+            "r_mean": 7.905574872067876,
+            "r_std": 1.2295877122552015,
+            "r_mean_norm": 0.15811149744135752,
+            "energy_density": 0.1267,
+            "pattern_count": 100
+          },
+          {
+            "tick": 200,
+            "r_mean": 5.896298625380695,
+            "r_std": 1.2898304230920172,
+            "r_mean_norm": 0.11792597250761389,
+            "energy_density": 0.1848,
+            "pattern_count": 100
+          },
+          {
+            "tick": 300,
+            "r_mean": 4.864456101161569,
+            "r_std": 1.3293106634161893,
+            "r_mean_norm": 0.09728912202323137,
+            "energy_density": 0.1865,
+            "pattern_count": 100
+          },
+          {
+            "tick": 400,
+            "r_mean": 4.079004152069283,
+            "r_std": 1.4148233555471008,
+            "r_mean_norm": 0.08158008304138566,
+            "energy_density": 0.194,
+            "pattern_count": 100
+          },
+          {
+            "tick": 500,
+            "r_mean": 4.010998429442356,
+            "r_std": 1.3571630701617814,
+            "r_mean_norm": 0.08021996858884713,
+            "energy_density": 0.1914,
+            "pattern_count": 100
+          },
+          {
+            "tick": 600,
+            "r_mean": 3.9900867980491133,
+            "r_std": 1.3635275369548563,
+            "r_mean_norm": 0.07980173596098226,
+            "energy_density": 0.1908,
+            "pattern_count": 100
+          },
+          {
+            "tick": 700,
+            "r_mean": 3.8793173165848036,
+            "r_std": 1.3604768124614535,
+            "r_mean_norm": 0.07758634633169607,
+            "energy_density": 0.1865,
+            "pattern_count": 100
+          },
+          {
+            "tick": 800,
+            "r_mean": 3.8335435291778004,
+            "r_std": 1.2821637999487498,
+            "r_mean_norm": 0.07667087058355601,
+            "energy_density": 0.1896,
+            "pattern_count": 100
+          },
+          {
+            "tick": 900,
+            "r_mean": 3.7605012210070066,
+            "r_std": 1.2159895422267484,
+            "r_mean_norm": 0.07521002442014013,
+            "energy_density": 0.1895,
+            "pattern_count": 100
+          },
+          {
+            "tick": 1000,
+            "r_mean": 3.689418123337438,
+            "r_std": 1.2838200462639837,
+            "r_mean_norm": 0.07378836246674876,
+            "energy_density": 0.1986,
+            "pattern_count": 100
+          }
+        ],
+        "elapsed_seconds": 157.79872179031372,
+        "num_ticks": 1000
+      },
+      "v12d": {
+        "config_name": "V12d",
+        "grid_size": 100,
+        "effective_tick": 100,
+        "n_patterns": 100,
+        "params": {
+          "gamma_window_size": 100,
+          "gamma_imprint_k": 100.0,
+          "target_gamma_k": 100.0,
+          "jitter_strength": 0.119,
+          "ca_survival_threshold": null,
+          "ca_creation_threshold": null,
+          "creation_sensitivity": 0.0,
+          "field_decay_threshold": 0.0,
+          "field_decay_rate": 0.0
+        },
+        "final_stats": {
+          "r_mean": 17.29471589949248,
+          "r_std": 1.8769128791294678,
+          "r_min": 12.806248474865697,
+          "r_max": 21.633307652783937,
+          "total_energy": 6691,
+          "coverage": 0.6691,
+          "pattern_count": 100,
+          "r_mean_norm": 0.3458943179898496,
+          "r_std_norm": 0.03753825758258936,
+          "energy_density": 0.6691,
+          "pattern_density_2d": 0.01
+        },
+        "stability_metrics": {
+          "r_mean_norm_avg": 0.3371135390915494,
+          "r_mean_norm_std": 0.0017290883133348183
+        },
+        "history": [
+          {
+            "tick": 100,
+            "r_mean": 16.902674483265045,
+            "r_std": 1.8893372681395053,
+            "r_mean_norm": 0.3380534896653009,
+            "energy_density": 0.6653,
+            "pattern_count": 100
+          },
+          {
+            "tick": 200,
+            "r_mean": 16.832994408637024,
+            "r_std": 1.900078745419431,
+            "r_mean_norm": 0.3366598881727405,
+            "energy_density": 0.6694,
+            "pattern_count": 100
+          },
+          {
+            "tick": 300,
+            "r_mean": 16.832994408637024,
+            "r_std": 1.900078745419431,
+            "r_mean_norm": 0.3366598881727405,
+            "energy_density": 0.6656,
+            "pattern_count": 100
+          },
+          {
+            "tick": 400,
+            "r_mean": 16.832994408637024,
+            "r_std": 1.900078745419431,
+            "r_mean_norm": 0.3366598881727405,
+            "energy_density": 0.664,
+            "pattern_count": 100
+          },
+          {
+            "tick": 500,
+            "r_mean": 16.81820369114877,
+            "r_std": 1.9099802624712974,
+            "r_mean_norm": 0.3363640738229754,
+            "energy_density": 0.6619,
+            "pattern_count": 100
+          },
+          {
+            "tick": 600,
+            "r_mean": 16.81820369114877,
+            "r_std": 1.9099802624712974,
+            "r_mean_norm": 0.3363640738229754,
+            "energy_density": 0.6632,
+            "pattern_count": 100
+          },
+          {
+            "tick": 700,
+            "r_mean": 16.81820369114877,
+            "r_std": 1.9099802624712974,
+            "r_mean_norm": 0.3363640738229754,
+            "energy_density": 0.6674,
+            "pattern_count": 100
+          },
+          {
+            "tick": 800,
+            "r_mean": 16.823947963240407,
+            "r_std": 1.9065085707069307,
+            "r_mean_norm": 0.33647895926480814,
+            "energy_density": 0.6689,
+            "pattern_count": 100
+          },
+          {
+            "tick": 900,
+            "r_mean": 16.823947963240407,
+            "r_std": 1.9065085707069307,
+            "r_mean_norm": 0.33647895926480814,
+            "energy_density": 0.6624,
+            "pattern_count": 100
+          },
+          {
+            "tick": 1000,
+            "r_mean": 17.09960236535903,
+            "r_std": 1.8983147648922307,
+            "r_mean_norm": 0.3419920473071806,
+            "energy_density": 0.6691,
+            "pattern_count": 100
+          }
+        ],
+        "elapsed_seconds": 3.21468186378479,
+        "num_ticks": 1000
+      },
+      "comparison": {
+        "r_diff": 0.27210595552310085,
+        "v12c_stable": true,
+        "v12d_stable": true
+      }
+    },
+    "grid_200": {
+      "grid_size": 200,
+      "v12c": {
+        "config_name": "V12c",
+        "grid_size": 200,
+        "effective_tick": 200,
+        "n_patterns": 200,
+        "params": {
+          "gamma_window_size": 200,
+          "gamma_imprint_k": 200.0,
+          "target_gamma_k": 200.0,
+          "jitter_strength": 0.119,
+          "ca_survival_threshold": 3,
+          "ca_creation_threshold": 5,
+          "creation_sensitivity": 2.0,
+          "field_decay_threshold": 1.5,
+          "field_decay_rate": 0.05
+        },
+        "final_stats": {
+          "r_mean": 9.923889482906299,
+          "r_std": 1.2415383727705591,
+          "r_min": 7.615773105863909,
+          "r_max": 15.811388300841896,
+          "total_energy": 4820,
+          "coverage": 0.1205,
+          "pattern_count": 200,
+          "r_mean_norm": 0.09923889482906299,
+          "r_std_norm": 0.01241538372770559,
+          "energy_density": 0.1205,
+          "pattern_density_2d": 0.005
+        },
+        "stability_metrics": {
+          "r_mean_norm_avg": 0.09924972588171249,
+          "r_mean_norm_std": 3.063484310334384e-05
+        },
+        "history": [
+          {
+            "tick": 100,
+            "r_mean": 16.226607555607323,
+            "r_std": 2.275347717670257,
+            "r_mean_norm": 0.16226607555607322,
+            "energy_density": 0.0754,
+            "pattern_count": 200
+          },
+          {
+            "tick": 200,
+            "r_mean": 9.933637430290831,
+            "r_std": 1.287574232238652,
+            "r_mean_norm": 0.09933637430290831,
+            "energy_density": 0.0741,
+            "pattern_count": 200
+          },
+          {
+            "tick": 300,
+            "r_mean": 9.923889482906299,
+            "r_std": 1.2415383727705591,
+            "r_mean_norm": 0.09923889482906299,
+            "energy_density": 0.120425,
+            "pattern_count": 200
+          },
+          {
+            "tick": 400,
+            "r_mean": 9.923889482906299,
+            "r_std": 1.2415383727705591,
+            "r_mean_norm": 0.09923889482906299,
+            "energy_density": 0.1213,
+            "pattern_count": 200
+          },
+          {
+            "tick": 500,
+            "r_mean": 9.923889482906299,
+            "r_std": 1.2415383727705591,
+            "r_mean_norm": 0.09923889482906299,
+            "energy_density": 0.12275,
+            "pattern_count": 200
+          },
+          {
+            "tick": 600,
+            "r_mean": 9.923889482906299,
+            "r_std": 1.2415383727705591,
+            "r_mean_norm": 0.09923889482906299,
+            "energy_density": 0.117975,
+            "pattern_count": 200
+          },
+          {
+            "tick": 700,
+            "r_mean": 9.923889482906299,
+            "r_std": 1.2415383727705591,
+            "r_mean_norm": 0.09923889482906299,
+            "energy_density": 0.125225,
+            "pattern_count": 200
+          },
+          {
+            "tick": 800,
+            "r_mean": 9.923889482906299,
+            "r_std": 1.2415383727705591,
+            "r_mean_norm": 0.09923889482906299,
+            "energy_density": 0.11845,
+            "pattern_count": 200
+          },
+          {
+            "tick": 900,
+            "r_mean": 9.923889482906299,
+            "r_std": 1.2415383727705591,
+            "r_mean_norm": 0.09923889482906299,
+            "energy_density": 0.121,
+            "pattern_count": 200
+          },
+          {
+            "tick": 1000,
+            "r_mean": 9.923889482906299,
+            "r_std": 1.2415383727705591,
+            "r_mean_norm": 0.09923889482906299,
+            "energy_density": 0.1205,
+            "pattern_count": 200
+          }
+        ],
+        "elapsed_seconds": 781.9930968284607,
+        "num_ticks": 1000
+      },
+      "v12d": {
+        "config_name": "V12d",
+        "grid_size": 200,
+        "effective_tick": 200,
+        "n_patterns": 200,
+        "params": {
+          "gamma_window_size": 200,
+          "gamma_imprint_k": 200.0,
+          "target_gamma_k": 200.0,
+          "jitter_strength": 0.119,
+          "ca_survival_threshold": null,
+          "ca_creation_threshold": null,
+          "creation_sensitivity": 0.0,
+          "field_decay_threshold": 0.0,
+          "field_decay_rate": 0.0
+        },
+        "final_stats": {
+          "r_mean": 26.477746685344954,
+          "r_std": 2.525654463045994,
+          "r_min": 18.973665961010276,
+          "r_max": 35.84689665786984,
+          "total_energy": 26774,
+          "coverage": 0.66935,
+          "pattern_count": 200,
+          "r_mean_norm": 0.26477746685344955,
+          "r_std_norm": 0.02525654463045994,
+          "energy_density": 0.66935,
+          "pattern_density_2d": 0.005
+        },
+        "stability_metrics": {
+          "r_mean_norm_avg": 0.2645462211587714,
+          "r_mean_norm_std": 0.00016700547724549523
+        },
+        "history": [
+          {
+            "tick": 100,
+            "r_mean": 26.446434322585464,
+            "r_std": 2.529053503027074,
+            "r_mean_norm": 0.26446434322585466,
+            "energy_density": 0.66935,
+            "pattern_count": 200
+          },
+          {
+            "tick": 200,
+            "r_mean": 26.4378944361672,
+            "r_std": 2.507536197561203,
+            "r_mean_norm": 0.264378944361672,
+            "energy_density": 0.66685,
+            "pattern_count": 200
+          },
+          {
+            "tick": 300,
+            "r_mean": 26.4378944361672,
+            "r_std": 2.507536197561203,
+            "r_mean_norm": 0.264378944361672,
+            "energy_density": 0.6647,
+            "pattern_count": 200
+          },
+          {
+            "tick": 400,
+            "r_mean": 26.43466126852768,
+            "r_std": 2.5027352273468257,
+            "r_mean_norm": 0.2643466126852768,
+            "energy_density": 0.665,
+            "pattern_count": 200
+          },
+          {
+            "tick": 500,
+            "r_mean": 26.440531030890543,
+            "r_std": 2.5046594188660465,
+            "r_mean_norm": 0.26440531030890546,
+            "energy_density": 0.667875,
+            "pattern_count": 200
+          },
+          {
+            "tick": 600,
+            "r_mean": 26.451245676392006,
+            "r_std": 2.510299218649674,
+            "r_mean_norm": 0.26451245676392005,
+            "energy_density": 0.667725,
+            "pattern_count": 200
+          },
+          {
+            "tick": 700,
+            "r_mean": 26.464386211933615,
+            "r_std": 2.519178918937241,
+            "r_mean_norm": 0.26464386211933616,
+            "energy_density": 0.668975,
+            "pattern_count": 200
+          },
+          {
+            "tick": 800,
+            "r_mean": 26.474477507660467,
+            "r_std": 2.524290137123675,
+            "r_mean_norm": 0.26474477507660465,
+            "energy_density": 0.6678,
+            "pattern_count": 200
+          },
+          {
+            "tick": 900,
+            "r_mean": 26.474477507660467,
+            "r_std": 2.524290137123675,
+            "r_mean_norm": 0.26474477507660465,
+            "energy_density": 0.669625,
+            "pattern_count": 200
+          },
+          {
+            "tick": 1000,
+            "r_mean": 26.476030967495088,
+            "r_std": 2.524833501092877,
+            "r_mean_norm": 0.2647603096749509,
+            "energy_density": 0.66935,
+            "pattern_count": 200
+          }
+        ],
+        "elapsed_seconds": 2.0634233951568604,
+        "num_ticks": 1000
+      },
+      "comparison": {
+        "r_diff": 0.16553857202438654,
+        "v12c_stable": true,
+        "v12d_stable": true
+      }
+    }
+  },
+  "summary_v12c": [
+    {
+      "grid_size": 50,
+      "r_mean_norm": 0.08944271909999159,
+      "energy_density": 0.322,
+      "drift": 0.01746266747704167,
+      "stable": true
+    },
+    {
+      "grid_size": 100,
+      "r_mean_norm": 0.07378836246674876,
+      "energy_density": 0.1986,
+      "drift": 0.013498526425364834,
+      "stable": true
+    },
+    {
+      "grid_size": 200,
+      "r_mean_norm": 0.09923889482906299,
+      "energy_density": 0.1205,
+      "drift": 3.063484310334384e-05,
+      "stable": true
+    }
+  ],
+  "summary_v12d": [
+    {
+      "grid_size": 50,
+      "r_mean_norm": 0.36150721329276203,
+      "energy_density": 0.6588,
+      "drift": 0.000831217961541728,
+      "stable": true
+    },
+    {
+      "grid_size": 100,
+      "r_mean_norm": 0.3458943179898496,
+      "energy_density": 0.6691,
+      "drift": 0.0017290883133348183,
+      "stable": true
+    },
+    {
+      "grid_size": 200,
+      "r_mean_norm": 0.26477746685344955,
+      "energy_density": 0.66935,
+      "drift": 0.00016700547724549523,
+      "stable": true
+    }
+  ],
+  "analysis": {
+    "v12c_stable_count": 3,
+    "v12d_stable_count": 3,
+    "total_scales": 3,
+    "v12d_as_good_or_better": true
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "slow_headon": {
+    "speed": 0.2,
+    "impact_parameter": 0.0,
+    "impact_tick": 289,
+    "before": {
+      "r_mean": 1.0331370849898476,
+      "r_std": 1.136937889076919,
+      "total_energy": 1208,
+      "coverage": 0.1208
+    },
+    "after": {
+      "r_mean": 0.0,
+      "r_std": 0.0,
+      "total_energy": 1192,
+      "coverage": 0.1192
+    }
+  },
+  "fast_headon": {
+    "speed": 1.0,
+    "impact_parameter": 0.0,
+    "impact_tick": 138,
+    "before": {
+      "r_mean": 1.235453980694907,
+      "r_std": 1.481098734583589,
+      "total_energy": 1222,
+      "coverage": 0.1222
+    },
+    "after": {
+      "r_mean": 0.0,
+      "r_std": 0.0,
+      "total_energy": 1190,
+      "coverage": 0.119
+    }
+  },
+  "medium_grazing": {
+    "speed": 0.5,
+    "impact_parameter": 5.0,
+    "impact_tick": null,
+    "before": {
+      "r_mean": 1.5060176587111116,
+      "r_std": 1.4324492352786198,
+      "total_energy": 1215,
+      "coverage": 0.1215
+    },
+    "after": {
+      "r_mean": 0.0,
+      "r_std": 0.0,
+      "total_energy": 1164,
+      "coverage": 0.1164
+    }
+  },
+  "fast_miss": {
+    "speed": 1.0,
+    "impact_parameter": 15.0,
+    "impact_tick": null,
+    "before": {
+      "r_mean": 1.2161967338915067,
+      "r_std": 1.3269760753199855,
+      "total_energy": 1222,
+      "coverage": 0.1222
+    },
+    "after": {
+      "r_mean": 0.0,
+      "r_std": 0.0,
+      "total_energy": 1189,
+      "coverage": 0.1189
+    }
+  }
+}

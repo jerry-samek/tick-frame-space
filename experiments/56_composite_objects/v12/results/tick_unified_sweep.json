@@ -1,0 +1,764 @@
+{
+  "all_results": {
+    "grid_50": {
+      "grid_size": 50,
+      "v12b": {
+        "config_name": "V12b",
+        "grid_size": 50,
+        "effective_tick": 50,
+        "n_patterns": 50,
+        "params": {
+          "gamma_window_size": 25,
+          "gamma_imprint_k": 5.0,
+          "target_gamma_k": 25.0,
+          "window_imprint_ratio": 5.0,
+          "jitter_strength": 0.119
+        },
+        "final_stats": {
+          "r_mean": 2.23606797749979,
+          "r_std": 0.0,
+          "r_min": 2.23606797749979,
+          "r_max": 2.23606797749979,
+          "total_energy": 790,
+          "coverage": 0.316,
+          "pattern_count": 50,
+          "r_mean_norm": 0.08944271909999159,
+          "r_std_norm": 0.0,
+          "energy_density": 0.316,
+          "pattern_density_2d": 0.02
+        },
+        "stability_metrics": {
+          "r_mean_norm_avg": 0.129476549540928,
+          "r_mean_norm_std": 0.01699347075604932
+        },
+        "history": [
+          {
+            "tick": 100,
+            "r_mean": 4.205073826133537,
+            "r_std": 2.1857159277377876,
+            "r_mean_norm": 0.1682029530453415,
+            "energy_density": 0.2808,
+            "pattern_count": 50
+          },
+          {
+            "tick": 200,
+            "r_mean": 2.987117586847918,
+            "r_std": 0.46597051660364913,
+            "r_mean_norm": 0.11948470347391671,
+            "energy_density": 0.3036,
+            "pattern_count": 50
+          },
+          {
+            "tick": 300,
+            "r_mean": 3.162277660168379,
+            "r_std": 4.440892098500626e-16,
+            "r_mean_norm": 0.12649110640673517,
+            "energy_density": 0.3104,
+            "pattern_count": 50
+          },
+          {
+            "tick": 400,
+            "r_mean": 3.605551275463989,
+            "r_std": 0.0,
+            "r_mean_norm": 0.14422205101855956,
+            "energy_density": 0.3004,
+            "pattern_count": 50
+          },
+          {
+            "tick": 500,
+            "r_mean": 3.605551275463989,
+            "r_std": 0.0,
+            "r_mean_norm": 0.14422205101855956,
+            "energy_density": 0.298,
+            "pattern_count": 50
+          },
+          {
+            "tick": 600,
+            "r_mean": 3.162277660168379,
+            "r_std": 4.440892098500626e-16,
+            "r_mean_norm": 0.12649110640673517,
+            "energy_density": 0.3116,
+            "pattern_count": 50
+          },
+          {
+            "tick": 700,
+            "r_mean": 3.605551275463989,
+            "r_std": 0.0,
+            "r_mean_norm": 0.14422205101855956,
+            "energy_density": 0.3072,
+            "pattern_count": 50
+          },
+          {
+            "tick": 800,
+            "r_mean": 3.605551275463989,
+            "r_std": 0.0,
+            "r_mean_norm": 0.14422205101855956,
+            "energy_density": 0.3192,
+            "pattern_count": 50
+          },
+          {
+            "tick": 900,
+            "r_mean": 3.162277660168379,
+            "r_std": 4.440892098500626e-16,
+            "r_mean_norm": 0.12649110640673517,
+            "energy_density": 0.3104,
+            "pattern_count": 50
+          },
+          {
+            "tick": 1000,
+            "r_mean": 2.23606797749979,
+            "r_std": 0.0,
+            "r_mean_norm": 0.08944271909999159,
+            "energy_density": 0.316,
+            "pattern_count": 50
+          }
+        ],
+        "elapsed_seconds": 17.592847108840942,
+        "num_ticks": 1000
+      },
+      "v12c": {
+        "config_name": "V12c",
+        "grid_size": 50,
+        "effective_tick": 50,
+        "n_patterns": 50,
+        "params": {
+          "gamma_window_size": 50,
+          "gamma_imprint_k": 50.0,
+          "target_gamma_k": 50.0,
+          "window_imprint_ratio": 1.0,
+          "jitter_strength": 0.119
+        },
+        "final_stats": {
+          "r_mean": 2.23606797749979,
+          "r_std": 0.0,
+          "r_min": 2.23606797749979,
+          "r_max": 2.23606797749979,
+          "total_energy": 824,
+          "coverage": 0.3296,
+          "pattern_count": 50,
+          "r_mean_norm": 0.08944271909999159,
+          "r_std_norm": 0.0,
+          "energy_density": 0.3296,
+          "pattern_density_2d": 0.02
+        },
+        "stability_metrics": {
+          "r_mean_norm_avg": 0.11461874066668393,
+          "r_mean_norm_std": 0.019276101368366272
+        },
+        "history": [
+          {
+            "tick": 100,
+            "r_mean": 4.07589790084592,
+            "r_std": 2.1370672197850555,
+            "r_mean_norm": 0.1630359160338368,
+            "energy_density": 0.2912,
+            "pattern_count": 50
+          },
+          {
+            "tick": 200,
+            "r_mean": 2.8263508013670067,
+            "r_std": 0.5401306764219942,
+            "r_mean_norm": 0.11305403205468027,
+            "energy_density": 0.3044,
+            "pattern_count": 50
+          },
+          {
+            "tick": 300,
+            "r_mean": 3.162277660168379,
+            "r_std": 4.440892098500626e-16,
+            "r_mean_norm": 0.12649110640673517,
+            "energy_density": 0.3164,
+            "pattern_count": 50
+          },
+          {
+            "tick": 400,
+            "r_mean": 2.23606797749979,
+            "r_std": 0.0,
+            "r_mean_norm": 0.08944271909999159,
+            "energy_density": 0.3064,
+            "pattern_count": 50
+          },
+          {
+            "tick": 500,
+            "r_mean": 3.162277660168379,
+            "r_std": 4.440892098500626e-16,
+            "r_mean_norm": 0.12649110640673517,
+            "energy_density": 0.3196,
+            "pattern_count": 50
+          },
+          {
+            "tick": 600,
+            "r_mean": 3.162277660168379,
+            "r_std": 4.440892098500626e-16,
+            "r_mean_norm": 0.12649110640673517,
+            "energy_density": 0.3044,
+            "pattern_count": 50
+          },
+          {
+            "tick": 700,
+            "r_mean": 3.162277660168379,
+            "r_std": 4.440892098500626e-16,
+            "r_mean_norm": 0.12649110640673517,
+            "energy_density": 0.314,
+            "pattern_count": 50
+          },
+          {
+            "tick": 800,
+            "r_mean": 3.605551275463989,
+            "r_std": 0.0,
+            "r_mean_norm": 0.14422205101855956,
+            "energy_density": 0.3112,
+            "pattern_count": 50
+          },
+          {
+            "tick": 900,
+            "r_mean": 2.23606797749979,
+            "r_std": 0.0,
+            "r_mean_norm": 0.08944271909999159,
+            "energy_density": 0.3104,
+            "pattern_count": 50
+          },
+          {
+            "tick": 1000,
+            "r_mean": 2.23606797749979,
+            "r_std": 0.0,
+            "r_mean_norm": 0.08944271909999159,
+            "energy_density": 0.3296,
+            "pattern_count": 50
+          }
+        ],
+        "elapsed_seconds": 18.445719003677368,
+        "num_ticks": 1000
+      },
+      "comparison": {
+        "r_diff": 0.0,
+        "v12b_stable": true,
+        "v12c_stable": true
+      }
+    },
+    "grid_100": {
+      "grid_size": 100,
+      "v12b": {
+        "config_name": "V12b",
+        "grid_size": 100,
+        "effective_tick": 100,
+        "n_patterns": 100,
+        "params": {
+          "gamma_window_size": 50,
+          "gamma_imprint_k": 10.0,
+          "target_gamma_k": 50.0,
+          "window_imprint_ratio": 5.0,
+          "jitter_strength": 0.119
+        },
+        "final_stats": {
+          "r_mean": 3.877656026444183,
+          "r_std": 1.5696444631129403,
+          "r_min": 1.4142135623730951,
+          "r_max": 6.4031242374328485,
+          "total_energy": 1967,
+          "coverage": 0.1967,
+          "pattern_count": 100,
+          "r_mean_norm": 0.07755312052888366,
+          "r_std_norm": 0.031392889262258805,
+          "energy_density": 0.1967,
+          "pattern_density_2d": 0.01
+        },
+        "stability_metrics": {
+          "r_mean_norm_avg": 0.09139445131634683,
+          "r_mean_norm_std": 0.023287758147530303
+        },
+        "history": [
+          {
+            "tick": 100,
+            "r_mean": 10.962741985921054,
+            "r_std": 1.6876872192807848,
+            "r_mean_norm": 0.21925483971842108,
+            "energy_density": 0.1715,
+            "pattern_count": 100
+          },
+          {
+            "tick": 200,
+            "r_mean": 7.426180237146001,
+            "r_std": 1.6005771101143966,
+            "r_mean_norm": 0.14852360474292003,
+            "energy_density": 0.1821,
+            "pattern_count": 100
+          },
+          {
+            "tick": 300,
+            "r_mean": 5.673880113889632,
+            "r_std": 1.5320197300321499,
+            "r_mean_norm": 0.11347760227779265,
+            "energy_density": 0.1849,
+            "pattern_count": 100
+          },
+          {
+            "tick": 400,
+            "r_mean": 4.710576431731958,
+            "r_std": 1.5685884357636364,
+            "r_mean_norm": 0.09421152863463916,
+            "energy_density": 0.1949,
+            "pattern_count": 100
+          },
+          {
+            "tick": 500,
+            "r_mean": 3.8957120007625035,
+            "r_std": 1.5695311424482812,
+            "r_mean_norm": 0.07791424001525007,
+            "energy_density": 0.1846,
+            "pattern_count": 100
+          },
+          {
+            "tick": 600,
+            "r_mean": 3.8858745705954494,
+            "r_std": 1.5588389338221023,
+            "r_mean_norm": 0.07771749141190899,
+            "energy_density": 0.1853,
+            "pattern_count": 100
+          },
+          {
+            "tick": 700,
+            "r_mean": 3.8858745705954494,
+            "r_std": 1.5588389338221023,
+            "r_mean_norm": 0.07771749141190899,
+            "energy_density": 0.1899,
+            "pattern_count": 100
+          },
+          {
+            "tick": 800,
+            "r_mean": 3.8858745705954494,
+            "r_std": 1.5588389338221023,
+            "r_mean_norm": 0.07771749141190899,
+            "energy_density": 0.1895,
+            "pattern_count": 100
+          },
+          {
+            "tick": 900,
+            "r_mean": 3.8858745705954494,
+            "r_std": 1.5588389338221023,
+            "r_mean_norm": 0.07771749141190899,
+            "energy_density": 0.1908,
+            "pattern_count": 100
+          },
+          {
+            "tick": 1000,
+            "r_mean": 3.877656026444183,
+            "r_std": 1.5696444631129403,
+            "r_mean_norm": 0.07755312052888366,
+            "energy_density": 0.1967,
+            "pattern_count": 100
+          }
+        ],
+        "elapsed_seconds": 82.62892055511475,
+        "num_ticks": 1000
+      },
+      "v12c": {
+        "config_name": "V12c",
+        "grid_size": 100,
+        "effective_tick": 100,
+        "n_patterns": 100,
+        "params": {
+          "gamma_window_size": 100,
+          "gamma_imprint_k": 100.0,
+          "target_gamma_k": 100.0,
+          "window_imprint_ratio": 1.0,
+          "jitter_strength": 0.119
+        },
+        "final_stats": {
+          "r_mean": 3.4853933736195257,
+          "r_std": 1.059260605861045,
+          "r_min": 2.0,
+          "r_max": 5.385164807134504,
+          "total_energy": 1976,
+          "coverage": 0.1976,
+          "pattern_count": 100,
+          "r_mean_norm": 0.06970786747239051,
+          "r_std_norm": 0.021185212117220898,
+          "energy_density": 0.1976,
+          "pattern_density_2d": 0.01
+        },
+        "stability_metrics": {
+          "r_mean_norm_avg": 0.08214359037839038,
+          "r_mean_norm_std": 0.014997440836478637
+        },
+        "history": [
+          {
+            "tick": 100,
+            "r_mean": 7.990892092615408,
+            "r_std": 1.4337515698950565,
+            "r_mean_norm": 0.15981784185230816,
+            "energy_density": 0.1267,
+            "pattern_count": 100
+          },
+          {
+            "tick": 200,
+            "r_mean": 5.90215613518472,
+            "r_std": 1.4051878721015845,
+            "r_mean_norm": 0.1180431227036944,
+            "energy_density": 0.1883,
+            "pattern_count": 100
+          },
+          {
+            "tick": 300,
+            "r_mean": 4.909195470005754,
+            "r_std": 1.31901472216006,
+            "r_mean_norm": 0.09818390940011508,
+            "energy_density": 0.1885,
+            "pattern_count": 100
+          },
+          {
+            "tick": 400,
+            "r_mean": 4.107081466023203,
+            "r_std": 1.293012695780167,
+            "r_mean_norm": 0.08214162932046407,
+            "energy_density": 0.1942,
+            "pattern_count": 100
+          },
+          {
+            "tick": 500,
+            "r_mean": 3.808972088272226,
+            "r_std": 1.209020938926667,
+            "r_mean_norm": 0.07617944176544453,
+            "energy_density": 0.1865,
+            "pattern_count": 100
+          },
+          {
+            "tick": 600,
+            "r_mean": 3.7532558770379416,
+            "r_std": 1.2137010840730749,
+            "r_mean_norm": 0.07506511754075883,
+            "energy_density": 0.1889,
+            "pattern_count": 100
+          },
+          {
+            "tick": 700,
+            "r_mean": 3.7532558770379416,
+            "r_std": 1.2137010840730749,
+            "r_mean_norm": 0.07506511754075883,
+            "energy_density": 0.1877,
+            "pattern_count": 100
+          },
+          {
+            "tick": 800,
+            "r_mean": 3.622652691547178,
+            "r_std": 1.2068087986197262,
+            "r_mean_norm": 0.07245305383094357,
+            "energy_density": 0.1871,
+            "pattern_count": 100
+          },
+          {
+            "tick": 900,
+            "r_mean": 3.622652691547178,
+            "r_std": 1.2068087986197262,
+            "r_mean_norm": 0.07245305383094357,
+            "energy_density": 0.1932,
+            "pattern_count": 100
+          },
+          {
+            "tick": 1000,
+            "r_mean": 3.4853933736195257,
+            "r_std": 1.059260605861045,
+            "r_mean_norm": 0.06970786747239051,
+            "energy_density": 0.1976,
+            "pattern_count": 100
+          }
+        ],
+        "elapsed_seconds": 83.23777318000793,
+        "num_ticks": 1000
+      },
+      "comparison": {
+        "r_diff": -0.007845253056493154,
+        "v12b_stable": true,
+        "v12c_stable": true
+      }
+    },
+    "grid_200": {
+      "grid_size": 200,
+      "v12b": {
+        "config_name": "V12b",
+        "grid_size": 200,
+        "effective_tick": 200,
+        "n_patterns": 200,
+        "params": {
+          "gamma_window_size": 100,
+          "gamma_imprint_k": 20.0,
+          "target_gamma_k": 100.0,
+          "window_imprint_ratio": 5.0,
+          "jitter_strength": 0.119
+        },
+        "final_stats": {
+          "r_mean": 13.811737863232828,
+          "r_std": 1.980125550903426,
+          "r_min": 9.0,
+          "r_max": 17.08800749063506,
+          "total_energy": 4825,
+          "coverage": 0.120625,
+          "pattern_count": 200,
+          "r_mean_norm": 0.13811737863232829,
+          "r_std_norm": 0.01980125550903426,
+          "energy_density": 0.120625,
+          "pattern_density_2d": 0.005
+        },
+        "stability_metrics": {
+          "r_mean_norm_avg": 0.1431998430453375,
+          "r_mean_norm_std": 0.0058262608054331965
+        },
+        "history": [
+          {
+            "tick": 100,
+            "r_mean": 16.383746383158012,
+            "r_std": 4.222896452952264,
+            "r_mean_norm": 0.16383746383158013,
+            "energy_density": 0.059575,
+            "pattern_count": 200
+          },
+          {
+            "tick": 200,
+            "r_mean": 15.703115663140393,
+            "r_std": 3.5912614037458876,
+            "r_mean_norm": 0.15703115663140393,
+            "energy_density": 0.102625,
+            "pattern_count": 200
+          },
+          {
+            "tick": 300,
+            "r_mean": 14.846624063343725,
+            "r_std": 2.855302772341853,
+            "r_mean_norm": 0.14846624063343725,
+            "energy_density": 0.121075,
+            "pattern_count": 200
+          },
+          {
+            "tick": 400,
+            "r_mean": 14.503705304597041,
+            "r_std": 2.4036498158849358,
+            "r_mean_norm": 0.14503705304597042,
+            "energy_density": 0.120975,
+            "pattern_count": 200
+          },
+          {
+            "tick": 500,
+            "r_mean": 14.17349243002645,
+            "r_std": 2.1810805432131315,
+            "r_mean_norm": 0.1417349243002645,
+            "energy_density": 0.122575,
+            "pattern_count": 200
+          },
+          {
+            "tick": 600,
+            "r_mean": 14.073315438126082,
+            "r_std": 2.0752813252670212,
+            "r_mean_norm": 0.14073315438126083,
+            "energy_density": 0.1198,
+            "pattern_count": 200
+          },
+          {
+            "tick": 700,
+            "r_mean": 14.014414450595488,
+            "r_std": 2.0102705307844357,
+            "r_mean_norm": 0.1401441445059549,
+            "energy_density": 0.12695,
+            "pattern_count": 200
+          },
+          {
+            "tick": 800,
+            "r_mean": 13.921820630609547,
+            "r_std": 1.9616091173152679,
+            "r_mean_norm": 0.13921820630609547,
+            "energy_density": 0.1204,
+            "pattern_count": 200
+          },
+          {
+            "tick": 900,
+            "r_mean": 13.828995275508165,
+            "r_std": 1.9846636163271791,
+            "r_mean_norm": 0.13828995275508166,
+            "energy_density": 0.120925,
+            "pattern_count": 200
+          },
+          {
+            "tick": 1000,
+            "r_mean": 13.814375484856885,
+            "r_std": 1.981925821867482,
+            "r_mean_norm": 0.13814375484856886,
+            "energy_density": 0.120625,
+            "pattern_count": 200
+          }
+        ],
+        "elapsed_seconds": 347.48034024238586,
+        "num_ticks": 1000
+      },
+      "v12c": {
+        "config_name": "V12c",
+        "grid_size": 200,
+        "effective_tick": 200,
+        "n_patterns": 200,
+        "params": {
+          "gamma_window_size": 200,
+          "gamma_imprint_k": 200.0,
+          "target_gamma_k": 200.0,
+          "window_imprint_ratio": 1.0,
+          "jitter_strength": 0.119
+        },
+        "final_stats": {
+          "r_mean": 9.980472821542497,
+          "r_std": 1.1533266052821218,
+          "r_min": 7.615773105863909,
+          "r_max": 15.811388300841896,
+          "total_energy": 4843,
+          "coverage": 0.121075,
+          "pattern_count": 200,
+          "r_mean_norm": 0.09980472821542496,
+          "r_std_norm": 0.011533266052821218,
+          "energy_density": 0.121075,
+          "pattern_density_2d": 0.005
+        },
+        "stability_metrics": {
+          "r_mean_norm_avg": 0.09975276755105865,
+          "r_mean_norm_std": 9.78615653772001e-05
+        },
+        "history": [
+          {
+            "tick": 100,
+            "r_mean": 16.190588698425497,
+            "r_std": 2.212427987170793,
+            "r_mean_norm": 0.16190588698425498,
+            "energy_density": 0.076,
+            "pattern_count": 200
+          },
+          {
+            "tick": 200,
+            "r_mean": 9.95948299890873,
+            "r_std": 1.2118986733419537,
+            "r_mean_norm": 0.0995948299890873,
+            "energy_density": 0.07375,
+            "pattern_count": 200
+          },
+          {
+            "tick": 300,
+            "r_mean": 9.954698046246584,
+            "r_std": 1.1827877273857956,
+            "r_mean_norm": 0.09954698046246584,
+            "energy_density": 0.119125,
+            "pattern_count": 200
+          },
+          {
+            "tick": 400,
+            "r_mean": 9.980472821542497,
+            "r_std": 1.1533266052821218,
+            "r_mean_norm": 0.09980472821542496,
+            "energy_density": 0.12,
+            "pattern_count": 200
+          },
+          {
+            "tick": 500,
+            "r_mean": 9.980472821542497,
+            "r_std": 1.1533266052821218,
+            "r_mean_norm": 0.09980472821542496,
+            "energy_density": 0.1245,
+            "pattern_count": 200
+          },
+          {
+            "tick": 600,
+            "r_mean": 9.980472821542497,
+            "r_std": 1.1533266052821218,
+            "r_mean_norm": 0.09980472821542496,
+            "energy_density": 0.11885,
+            "pattern_count": 200
+          },
+          {
+            "tick": 700,
+            "r_mean": 9.980472821542497,
+            "r_std": 1.1533266052821218,
+            "r_mean_norm": 0.09980472821542496,
+            "energy_density": 0.124175,
+            "pattern_count": 200
+          },
+          {
+            "tick": 800,
+            "r_mean": 9.980472821542497,
+            "r_std": 1.1533266052821218,
+            "r_mean_norm": 0.09980472821542496,
+            "energy_density": 0.12055,
+            "pattern_count": 200
+          },
+          {
+            "tick": 900,
+            "r_mean": 9.980472821542497,
+            "r_std": 1.1533266052821218,
+            "r_mean_norm": 0.09980472821542496,
+            "energy_density": 0.120825,
+            "pattern_count": 200
+          },
+          {
+            "tick": 1000,
+            "r_mean": 9.980472821542497,
+            "r_std": 1.1533266052821218,
+            "r_mean_norm": 0.09980472821542496,
+            "energy_density": 0.121075,
+            "pattern_count": 200
+          }
+        ],
+        "elapsed_seconds": 352.098650932312,
+        "num_ticks": 1000
+      },
+      "comparison": {
+        "r_diff": -0.03831265041690332,
+        "v12b_stable": true,
+        "v12c_stable": true
+      }
+    }
+  },
+  "summary_v12b": [
+    {
+      "grid_size": 50,
+      "r_mean_norm": 0.08944271909999159,
+      "energy_density": 0.316,
+      "drift": 0.01699347075604932,
+      "stable": true
+    },
+    {
+      "grid_size": 100,
+      "r_mean_norm": 0.07755312052888366,
+      "energy_density": 0.1967,
+      "drift": 0.023287758147530303,
+      "stable": true
+    },
+    {
+      "grid_size": 200,
+      "r_mean_norm": 0.13811737863232829,
+      "energy_density": 0.120625,
+      "drift": 0.0058262608054331965,
+      "stable": true
+    }
+  ],
+  "summary_v12c": [
+    {
+      "grid_size": 50,
+      "r_mean_norm": 0.08944271909999159,
+      "energy_density": 0.3296,
+      "drift": 0.019276101368366272,
+      "stable": true
+    },
+    {
+      "grid_size": 100,
+      "r_mean_norm": 0.06970786747239051,
+      "energy_density": 0.1976,
+      "drift": 0.014997440836478637,
+      "stable": true
+    },
+    {
+      "grid_size": 200,
+      "r_mean_norm": 0.09980472821542496,
+      "energy_density": 0.121075,
+      "drift": 9.78615653772001e-05,
+      "stable": true
+    }
+  ],
+  "analysis": {
+    "v12b_stable_count": 3,
+    "v12c_stable_count": 3,
+    "total_scales": 3,
+    "v12c_as_good_or_better": true
+  }
+}
