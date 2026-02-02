@@ -76,12 +76,11 @@ allows the interference pattern to remain stable over time.
 
 This aligns with both:
 
-- standard quantum optics (single‑photon interference), and
-- your gamma‑field ontology (minimal imprint → minimal decoherence).
+- standard quantum optics (single‑photon interference), and the gamma‑field ontology (minimal imprint → minimal decoherence).
 
 ---
 
 # **Conclusion**
-Yes — theoretically and experimentally, **limiting the system to one photon per refresh cycle preserves the interference pattern**, because the gamma‑field imprint remains weak and does not accumulate enough to destroy coherence.
+Theoretically and experimentally, **limiting the system to one photon per refresh cycle preserves the interference pattern**, because the gamma‑field imprint remains weak and does not accumulate enough to destroy coherence.
 
-This revised view corrects the earlier assumption that photons do not generate gamma fields, and it aligns perfectly with your updated visibility model.
+This revised view corrects the earlier assumption that photons do not generate gamma fields, and it aligns perfectly with the updated visibility model.
