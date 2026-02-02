@@ -66,7 +66,7 @@ python scripts/snapshot-energy-histogram.py W:\data\snapshots\time-frame.5000.js
 
 ## 🧩 Substrate Model Implementation
 
-The **tick-space-runner** module contains the operational Java (26) implementation of tick-frame physics.
+The **tick-space-runner** module contains the operational Java (25) implementation of tick-frame physics.
 
 ### Core Components
 
@@ -103,26 +103,28 @@ The **tick-space-runner** module contains the operational Java (26) implementati
 
 ### Current Status
 
-**Phase 8 (Physical Formalization):** COMPLETED (2026-01)
-**Phase 9 (Integration & Synthesis):** IN PROGRESS
+**Last Updated:** February 2026
 
-**Theory achievements:**
-- ✅ **48 theoretical documents** covering foundation through physical formalization
-- ✅ **Complete axiomatic system** at Planck scale (Docs 47-48)
-- ✅ **Observer cognitive model** explaining memory, consciousness, trauma, déjà vu, dreams, death
-- ✅ **Experimental validation** (3,960 dimensional simulations, 99.9% success rate)
-- ✅ **Dimensional phase transition** discovered at d=3
-- ✅ **3D optimality validated** (SPBI = 2.23, minimal sufficient dimension)
-- ✅ **Void asymmetry** explains matter-antimatter surplus from symmetric rules
-- ✅ **Rendering theory** validated (O(n) temporal bucketing eliminates sorting)
-- ✅ **Free will & consciousness** formalized (bounded operator manipulation)
+**Theory Development:** 76+ theoretical documents, 10/12 computational validations complete
+
+**Major Breakthroughs (January-February 2026):**
+- ✅ **Time dilation validated** (Exp #51 v9: r ≈ 0.999 correlation with GR+SR)
+- ✅ **Geodesics emerged naturally** (Exp #53 v10: 100% orbital success, NO force laws programmed!)
+- ✅ **Collision physics validated** (Exp #55: 6/6 test cases, exact energy conservation)
+- ✅ **Pauli exclusion discovered** (Exp #55: emerged from cell capacity - NOT programmed!)
+- ✅ **Jitter stability range** (Exp #56 v13: 0.119 is NOT special, stable range [0.075, 0.5])
+- ✅ **Canvas/Renderer ontology** (Exp #56 v17: O(entities) sparse storage, stable clustering)
+- ✅ **Interferometry validated** (Exp #62: 26/26 tests, which-path WITHOUT collapse - FALSIFIABLE!)
+- ⚠️ **Black hole c-ring discovered** (Exp #52 v11: stable at v≈c, awaiting collision validation)
+- 🔄 **Composite objects** (Exp #56: H, He, H₂ structures implemented, binding validation pending)
+- 🔬 **ZPE cosmological hypothesis** (Docs 072-073: jitter scales with expansion, explains early universe)
 
 **Implementation observations:**
 - ✅ Entities exhibit temporal surfing behavior
 - ✅ Collision patterns create composite structures
 - ✅ Expansion follows dimensional growth rules
 - ⚠️ Over-coherence: structures too uniform (anisotropy deficit)
-- ⚠️ Collision dynamics tuning needed (persistence vs. dissolution balance)
+- ⚠️ Java implementation based on Doc 15, theory evolved to Doc 49
 
 **Typical performance:** ~100ms per tick (~10-20ms updates, ~80-90ms execution)
 
@@ -148,26 +150,32 @@ Python scripts for analyzing JSON snapshots from LocalApp:
 
 ## 📚 Documentation
 
-### Theory (48 Documents)
+### Theory (76+ Documents - V2 Consolidated)
 
-- **Foundation & Overview**
-    - [00 Meta-Critical Theory Development Log](docs/theory/00%20Meta-Critical%20Theory%20Development%20Log.md) - Complete development history through Phase 8
-    - [97 Meta-Critical Theory — Integrated Spec](docs/theory/97%20Meta-Critical%20Theory%20—%20Integrated%20Spec.md) - Comprehensive integration
-    - [99 Closure Improvement Plan](docs/theory/99%20Closure%20Improvement%20Plan.md) - Development roadmap and status
-    - [Theory README](docs/theory/README.md) - Full index of all 48 documents
+- **V2 Consolidated Framework** (January-February 2026)
+    - [Theory README](docs/theory/README.md) - Complete framework guide and reading paths
+    - [Ch1 Temporal Ontology](docs/theory/ch001_temporal_ontology.md) - Time as primary substrate
+    - [Ch2 Dimensional Framework](docs/theory/ch002_dimensional_framework.md) - 3D optimality (SPBI=2.23)
+    - [Ch3 Entity Dynamics](docs/theory/ch003_entity_dynamics.md) - Temporal surfing, collisions
+    - [Ch7 Physical Formalization](docs/theory/ch007_physical_formalization.md) - Planck-scale axioms
+    - [Ch8 Integration & Falsification](docs/theory/ch008_integration_falsification.md) - Validation status
 
-- **Physical Formalization**
-    - [47 Tick‑Frame Universe - Physical Formalization](docs/theory/47%20Tick‑Frame%20Universe%20-%20Physical%20Formalization.md) - Complete axiomatic system at Planck scale
-    - [48 Observer Model in the Tick‑Frame Universe](docs/theory/48%20Observer%20Model%20in%20the%20Tick‑Frame%20Universe.md) - Cognitive formalization: identity, memory, dreams, death
+- **Reference Documents** (Critical)
+    - [REFERENCE_doc015_minimal_model](docs/theory/REFERENCE_doc015_minimal_model.md) - Java implementation basis
+    - [REFERENCE_doc049_temporal_ontology](docs/theory/REFERENCE_doc049_temporal_ontology.md) - Theoretical constitution
+    - [REFERENCE_doc050_01](docs/theory/REFERENCE_doc050_01_dimensional_equivalence_rejection.md) - ρ=2.0 smoking gun
 
-- **Key Principles**
-    - [49 Temporal Ontology of the Tick-Frame Universe](docs/theory/49%20Temporal%20Ontology%20of%20the%20Tick‑Frame%20Universe.md) - Unified framework: temporal primacy, absolute tick-stream, emergent space
-    - [28 Temporal Surfing Principle](docs/theory/28%20Temporal%20Surfing%20Principle.md) - Persistence through continual renewal
-    - [30 Collision Persistence Principle](docs/theory/30%20Collision%20Persistence%20Principle%20in%20Tick-Frame.md) - Entities as collision patterns
-    - [37 Observer‑Relative Big Bang Principle](docs/theory/37%20Observer‑Relative%20Big%20Bang%20Principle.md) - Big Bang as observer event
-    - [40 Dimension Definition in Tick‑Frame Space](docs/theory/40%20Dimension%20Definition%20in%20Tick‑Frame%20Space.md) - Dimension as observer property
-    - [43 Void Asymmetry Principle](docs/theory/43%20Void%20Asymmetry%20Principle.md) - Matter surplus via void stabilization
-    - [44 Fallible Commit Principle](docs/theory/44%20Fallible%20Commit%20Principle.md) - Irreversible decisions with inherent lag
+- **Supporting Materials**
+    - [honest_status.md](docs/theory/honest_status.md) - Brutally honest assessment of validated vs speculation
+    - [experiment_index.md](docs/theory/experiment_index.md) - Cross-reference of all experiments
+    - [glossary.md](docs/theory/glossary.md) - 85+ terms, 20+ symbols
+
+- **New Theoretical Developments (February 2026)** - in `docs/theory/raw/`
+    - **Docs 055-058**: Speed of light, propulsion limits
+    - **Docs 063-066**: Electromagnetism framework
+    - **Docs 072-073**: ZPE hypothesis (jitter scaling with expansion)
+    - **Doc 074**: Ternary substrate correction axiom
+    - **Doc 075**: Metabolic time dilation interpretation
 
 ### Model & Implementation
 
@@ -175,58 +183,63 @@ Python scripts for analyzing JSON snapshots from LocalApp:
 - [Rendering Pipeline](docs/model/03%20Rendering%20pipeline.md)
 - [Tick‑Frame Engine Documentation](docs/model/04%20Tick‑Frame%20Engine%20Documentation.md)
 
-### Experimental Validation (3,960 Simulations)
+### Experimental Validation
 
+**Tier 0 - Foundational (3,960+ simulations):**
 - [SPBI Executive Summary](experiments/15_minimal-model/v6-gpu/SPBI_EXECUTIVE_SUMMARY.md) - 3D optimality validation
-- [SPBI Analysis Report](experiments/15_minimal-model/v6-gpu/SPBI_ANALYSIS_REPORT.md) - Dimensional scaling analysis
-- [Validation Summary](experiments/15_minimal-model/v6-gpu/VALIDATION_SUMMARY.md) - Hypothesis testing results
-- [Theoretical Implications](experiments/15_minimal-model/v6-gpu/THEORETICAL_IMPLICATIONS.md) - Impact on foundation theory
-- [5D Analysis Summary](experiments/15_minimal-model/v6-gpu/5D_ANALYSIS_SUMMARY.md) - High-dimensional behavior
+- [Dimensional Equivalence Rejection](docs/theory/REFERENCE_doc050_01_dimensional_equivalence_rejection.md) - ρ=2.0 signature
+
+**Tier 1 - Physics Mechanisms (January-February 2026):**
+- [Exp #51 Time Dilation](experiments/51_emergent_time_dilation/) - v1-v9, r≈0.999 GR+SR correlation
+- [Exp #55 Collision Physics](experiments/55_collision_physics/) - Three regimes, emergent Pauli exclusion
+- [Exp #56 Composite Objects](experiments/56_composite_objects/) - v1-v17, canvas ontology, jitter stability
 
 ---
 
 ## 🧪 Experiments
 
+### Physics Mechanism Experiments (51-62 Series) - January-February 2026
+
+- **51: Emergent Time Dilation** ✅ VALIDATED
+    - [EXPERIMENTAL_ARC.md](experiments/51_emergent_time_dilation/EXPERIMENTAL_ARC.md) - Complete v1-v9 journey
+    - **v9 Result:** r ≈ 0.999 correlation with GR+SR predictions
+    - **v10 Result:** 100% orbital success (geodesics emerged, no force laws!)
+    - **v11 Result:** Stable c-speed ring at r≈10.1 (black hole preliminary)
+
+- **55: Collision Physics** ✅ VALIDATED
+    - Three regimes (merge/explode/excite), 6/6 test cases
+    - **DISCOVERY:** Pauli exclusion emerged naturally (NOT programmed!)
+    - Energy conservation exact (ratio 1.000)
+
+- **56: Composite Objects** 🔄 IN PROGRESS
+    - [README](experiments/56_composite_objects/README.md) - Atoms, molecules, binding physics
+    - **v4:** 200k tick stability (6.52% drift, 0/50 escapes)
+    - **v13:** Jitter stability range [0.075, 0.5] validated (0.119 NOT special)
+    - **v17:** [Canvas/Renderer ontology](experiments/56_composite_objects/v17/README.md) - O(entities) sparse storage
+
+- **62: Interferometry** ✅ VALIDATED - FALSIFIABLE PREDICTION
+    - 26/26 tests passed
+    - Which-path detection WITHOUT wavefunction collapse
+    - **Prediction:** V > 0.9 after path readout (vs QM: V → 0)
+
 ### Dimensional Physics Experiments (15 Series)
 
-- **v6-gpu: Dimensional Sweeps**
-    - [1D](experiments/15_minimal-model/v6-gpu/v6_gpu_1d.py)
-    - [2D](experiments/15_minimal-model/v6-gpu/v6_gpu_2d.py)
-    - [3D](experiments/15_minimal-model/v6-gpu/v6_gpu_3d.py)
-    - [4D](experiments/15_minimal-model/v6-gpu/v6_gpu_4d.py)
-    - [5D](experiments/15_minimal-model/v6-gpu/v6_gpu_5d.py)
+- **v6-gpu: Dimensional Sweeps** (3,960 simulations)
+    - [SPBI Executive Summary](experiments/15_minimal-model/v6-gpu/SPBI_EXECUTIVE_SUMMARY.md)
+    - 3D optimal (SPBI=2.23), phase transition at d=3
 
-- **v7: Focused Saturation & Analysis**
-    - [Saturation 3D](experiments/15_minimal-model/v7/v7a_saturation_3d.py)
-    - [Saturation 4D](experiments/15_minimal-model/v7/v7a_saturation_4d.py)
-    - [Saturation 5D](experiments/15_minimal-model/v7/v7a_saturation_5d.py)
-    - [Normalized Analysis](experiments/15_minimal-model/v7/v7b_normalized_analysis.py)
-    - [Causal Comparison](experiments/15_minimal-model/v7/v7c_causal_comparison.py)
-
-- **v7-final: Goldilocks Zone & LHB Validation**
-    - [3D](experiments/15_minimal-model/v7-final/v7_final_3d.py)
-    - [4D](experiments/15_minimal-model/v7-final/v7_final_4d.py)
-    - [5D](experiments/15_minimal-model/v7-final/v7_final_5d.py)
+- **v7-final: Goldilocks Zone Validation**
     - [Experiment Plan](experiments/15_minimal-model/v7-final/Experiment%20Plan%20-%20SPBI%20and%20LHB%20validation.md)
 
-### Temporal Rendering Experiments (44 Series)
+### Temporal Rendering Experiments (44-49 Series)
 
-- **44_05: Double Buffer Rendering**
-    - [README](experiments/44_05_double_buffer_rendering/README.md) - O(n) bucketing vs O(n log n) sorting
-    - [RESULTS](experiments/44_05_double_buffer_rendering/RESULTS.md) - 2.78× speedup validation
-    - [Interactive Demo](experiments/44_05_double_buffer_rendering/double_buffer_rendering.py)
-    - [Benchmark](experiments/44_05_double_buffer_rendering/benchmark_sorting_vs_bucketing.py)
-    - **Status:** ✅ Validated - Theory Doc 46 confirmed (sorting not required)
+- **44_05: Double Buffer Rendering** ✅ Validated
+    - [RESULTS](experiments/44_05_double_buffer_rendering/RESULTS.md) - 2.78× speedup
+    - O(n) bucketing vs O(n log n) sorting confirmed
 
-### Theory Validation Experiments (49 Series)
-
-- **49: Temporal Ontology - Dynamic Sliding Window**
-    - [README](experiments/49_sliding_window_rendering/README.md) - Dynamic temporal memory with holographic horizon
-    - [RESULTS](experiments/49_sliding_window_rendering/RESULTS.md) - Performance validated and documented
-    - [Interactive Demo](experiments/49_sliding_window_rendering/sliding_window_rendering.py)
-    - [Benchmark](experiments/49_sliding_window_rendering/benchmark_sliding_vs_double.py)
-    - **Status:** ✅ Validated - Implements Theory Doc 49 existence buffer
-    - **Performance:** 120 FPS @ 6.6k entities | 75 FPS @ 10k entities
+- **49: Sliding Window Rendering** ✅ Validated
+    - [RESULTS](experiments/49_sliding_window_rendering/RESULTS.md)
+    - 120 FPS @ 6.6k entities | 75 FPS @ 10k entities
 
 ---
 
@@ -246,34 +259,45 @@ Python scripts for analyzing JSON snapshots from LocalApp:
 
 ## 🔬 Scientific Status
 
-**Theory Development:** 48 documents spanning foundation to complete physical formalization
+**Theory Development:** 76+ documents spanning foundation to physical formalization and cosmological implications
 
-**Experimental Validation:**
-- **3,960 simulations** across 1D-5D dimensions (99.9% success rate)
-- **Dimensional phase transition** discovered at d=3
-- **3D optimality validated** via SPBI framework (minimal sufficient dimension)
-- **Rendering theory validated** (O(n) temporal bucketing experimentally confirmed)
-- **45% hypothesis validation rate** with falsification leading to theory refinement
+**Computational Validation (February 2026):**
+- **10/12 experiments validated** (4 Tier 0 foundational + 6 Tier 1 physics mechanisms)
+- **Time dilation validated:** r ≈ 0.999 correlation with combined GR+SR predictions (Exp #51 v9)
+- **Geodesics emerged naturally:** 100% orbital success without programming force laws (Exp #53 v10)
+- **Collision physics validated:** Three regimes (merge/explode/excite), exact energy conservation (Exp #55)
+- **Pauli exclusion discovered:** Emerged from cell capacity - genuinely surprising, NOT programmed! (Exp #55)
+- **Jitter stability range:** 0.119 is within stable range [0.075, 0.5], NOT a fundamental constant (Exp #56 v13)
+- **Canvas/Renderer ontology:** O(entities) sparse storage vs O(grid³), stable clustering (Exp #56 v17)
+- **Interferometry validated:** Which-path detection WITHOUT wavefunction collapse - FALSIFIABLE prediction! (Exp #62)
 
 **Key Scientific Contributions:**
-- **Void Asymmetry Principle:** Matter-antimatter asymmetry arises from ternary state stabilization ({-1, 0, +1}), not CP violation. Symmetric rules yield asymmetric outcomes.
-- **Observer-Relative Cosmology:** Big Bang, dimensions, and multiverse are observer properties, not substrate events.
-- **Dimensional Determinism Emergence:** Probabilistic behavior decreases exponentially with dimension: CV(d) ≈ 80% × exp(-0.82×d). Free will perception may be dimensional artifact.
-- **Consciousness from Tick One:** Consciousness fundamental, not emergent. Free will = bounded operator manipulation at commit points.
-- **Memory as Indexing:** Brain is indexing mechanism, not storage device. Explains trauma (high indexing priority), déjà vu (index collision), dreams (non-causal traversal).
+- **Emergent Gravity:** Geodesic motion from time gradients, NOT force laws. Strongest evidence this is real physics!
+- **Emergent Pauli Exclusion:** Arises from pattern overlap + cell capacity limits, NOT explicit programming
+- **Void Asymmetry Principle:** Matter-antimatter asymmetry from ternary state stabilization ({-1, 0, +1})
+- **Observer-Relative Cosmology:** Big Bang, dimensions, multiverse are observer properties, not substrate events
+- **Memory as Indexing:** Brain indexes historical ticks; explains trauma, déjà vu, dreams
+- **ZPE Hypothesis (NEW):** Jitter decreases with cosmic expansion, potentially explains early universe anomalies
 
-**Computational Insights:**
-- **Planck-scale observer cost:** 10⁴⁹-10⁵⁵ ops/s
-- **Earth's capacity:** 10²² ops/s (gap of 10⁻²⁷ to 10⁻³³)
-- **Implication:** Compression essential; Planck-scale simulation computationally extreme
+**First Falsifiable Prediction:**
+- **Interferometry:** Which-path information can be obtained WITHOUT destroying interference fringes
+- **QM Prediction:** Visibility V → 0 after which-path measurement
+- **Tick-Frame Prediction:** Visibility V > 0.9 after which-path measurement
+- **Test:** Cold atom or neutron interferometer, delayed-choice quantum eraser (~$500K-$2M, 1-2 years)
+
+**New Theoretical Developments (February 2026):**
+- **ZPE/Jitter Scaling (Docs 072-073):** J(t) ∝ 1/a(t), explains early SMBHs and massive galaxies at z > 10
+- **Ternary Substrate Correction (Doc 074):** Stability via integer corrections {-1, 0, +1}
+- **Metabolic Time Dilation (Doc 075):** Entities "skip" rendering to conserve energy, not temporal slowdown
+- **Electromagnetism Framework (Docs 063-066):** Theoretical foundation for EM in tick-frame substrate
 
 **Defined Limitations:**
-1. Quantum-classical correspondence conceptually mapped but not mathematically rigorous
+1. Still no connection to real-world physics experiments
 2. Lorentz invariance recovery not yet demonstrated
-3. Matter emergence mechanism (void asymmetry) lacks defined dynamics
-4. Consciousness predictions testable in principle but not yet empirically validated
+3. ZPE hypothesis is pure speculation with no validation yet
+4. Black hole c-ring needs collision validation (ghost particle limitation)
 
-⚠️ **Speculation disclaimer:** This is a speculative computational model exploring discrete physics. Physics parallels are exploratory and falsifiable, not predictive of experimental outcomes without further validation.
+⚠️ **Speculation disclaimer:** This is a speculative computational model exploring discrete physics. Major computational validations achieved, but real-world experimental tests are still needed. The interferometry prediction (which-path without collapse) is the first truly testable difference from standard QM.
 
 ---
 
@@ -281,26 +305,22 @@ Python scripts for analyzing JSON snapshots from LocalApp:
 
 ### Quick Start Paths
 
-1. **Theory Overview:** Start with [00 Meta-Critical Theory Development Log](docs/theory/00%20Meta-Critical%20Theory%20Development%20Log.md) for complete history
-2. **Physical Formalization:** Jump to [47 Tick‑Frame Universe](docs/theory/47%20Tick‑Frame%20Universe%20-%20Physical%20Formalization.md) and [48 Observer Model](docs/theory/48%20Observer%20Model%20in%20the%20Tick‑Frame%20Universe.md)
-3. **Experimental Validation:** See [SPBI Executive Summary](experiments/15_minimal-model/v6-gpu/SPBI_EXECUTIVE_SUMMARY.md) for dimensional optimality results
-4. **Implementation:** Read [Tick‑Frame Engine Documentation](docs/model/04%20Tick‑Frame%20Engine%20Documentation.md)
-5. **Integrated Spec:** Review [97 Meta-Critical Theory — Integrated Spec](docs/theory/97%20Meta-Critical%20Theory%20—%20Integrated%20Spec.md)
+1. **New Readers:** [Ch1 Temporal Ontology](docs/theory/ch001_temporal_ontology.md) → [Ch2 Dimensional Framework](docs/theory/ch002_dimensional_framework.md) → [experiment_index.md](docs/theory/experiment_index.md)
+2. **Skeptics:** [REFERENCE_doc050_01](docs/theory/REFERENCE_doc050_01_dimensional_equivalence_rejection.md) (smoking gun) → [honest_status.md](docs/theory/honest_status.md) (reality check)
+3. **Implementers:** [REFERENCE_doc015](docs/theory/REFERENCE_doc015_minimal_model.md) (Java basis) → [Ch3 Entity Dynamics](docs/theory/ch003_entity_dynamics.md)
+4. **Breakthrough Results:** [Exp #51 v10](experiments/51_emergent_time_dilation/) (geodesics emerged!) → [Exp #55](experiments/55_collision_physics/) (Pauli emerged!)
+5. **Latest Work:** [Exp #56 v17](experiments/56_composite_objects/v17/README.md) (canvas ontology) → [honest_status.md](docs/theory/honest_status.md)
 
-### All 48 Theory Documents
+### V2 Consolidated Theory (76+ Documents)
 
-See [docs/theory/README.md](docs/theory/README.md) for complete index organized by topic:
-- Foundation (Docs 01-08)
-- Core Equations (Docs 09-15)
-- Physical Quantities (Docs 16-25)
-- Collision Theory (Docs 26-30)
-- Energy & Conservation (Docs 31-34)
-- Observer Cosmology (Docs 35-38)
-- Ternary Logic (Docs 39-43)
-- Free Will & Consciousness (Doc 44)
-- Rendering Theory (Docs 45-46)
-- Physical Formalization (Docs 47-48)
-- Meta-Documents (Docs 97-99)
+See [docs/theory/README.md](docs/theory/README.md) for complete framework:
+- **Ch1-2:** Temporal Ontology, Dimensional Framework (validated)
+- **Ch3:** Entity Dynamics (partially validated)
+- **Ch4-5:** Observer & Consciousness, Free Will (speculative)
+- **Ch6:** Rendering Theory (validated)
+- **Ch7:** Physical Formalization (analytical)
+- **Ch8:** Integration & Falsification (synthesis)
+- **Raw 055-075:** New theoretical developments (ZPE, EM, metabolic dilation)
 
 ---
 
@@ -316,6 +336,6 @@ This project represents a novel approach to theoretical physics development: **A
 
 **This distinction matters:** AI is being used as an advanced tool for expression and implementation — much like using LaTeX for typesetting or MATLAB for simulations — not as the source of theoretical creativity. The human provides the vision; AI helps make it concrete, testable, and reproducible.
 
-Without Claude and Copilot, this theory would still exist as scattered thoughts. With them, it has become 48 formalized documents, 3,960 validation experiments, a working Java implementation, and a falsifiable framework. This collaboration demonstrates how AI can amplify human theoretical work without replacing human creativity.
+Without Claude and Copilot, this theory would still exist as scattered thoughts. With them, it has become 76+ formalized documents, 10/12 validated experiments, a working Java implementation, and the first falsifiable prediction distinguishing tick-frame from standard QM (interferometry without collapse). This collaboration demonstrates how AI can amplify human theoretical work without replacing human creativity.
 
 **Acknowledgment:** This project would not have been possible in its current form without the assistance of Claude (Anthropic) and GitHub Copilot. They served as tireless partners in the work of bringing speculative ideas into rigorous form.
