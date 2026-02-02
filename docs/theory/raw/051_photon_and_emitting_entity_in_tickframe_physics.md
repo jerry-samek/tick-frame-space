@@ -177,3 +177,132 @@ This produces the effective refractive index.
 - Materials modify photons only via absorption and re‑emission.
 
 ---
+
+## 6. Photon-Gamma Coupling
+
+### 6.1 Light as Gamma Oscillation
+
+Per Doc 065 (Electromagnetism in Tick-Frame), electromagnetic waves are:
+
+> **Traveling oscillations of gamma gradients and anisotropies.**
+
+A photon's periodic imprint manifests as oscillation in the gamma field:
+- The pattern [s₀, s₁, ..., sₙ₋₁] modulates local gamma
+- Oscillation amplitude: proportional to photon energy
+- Oscillation frequency: ν = 1/n (pattern period)
+
+This means the photon **does modify the gamma field** along its path, reconciling:
+- Doc 051: Photon as periodic imprint (this document)
+- Doc 065: Light IS gamma oscillation
+- Exp 56 v17: All entity actions = gamma modifications (canvas ontology)
+
+---
+
+### 6.2 Gamma Trace
+
+As a photon propagates through space:
+
+1. **Trace Creation**: It leaves a transient gamma oscillation along its path
+2. **Trace Amplitude**: Proportional to photon energy (E = hν in continuous limit)
+3. **Trace Decay**: The trace decays over characteristic time τ_decay
+4. **Path Encoding**: The trace IS the "imprint in the tick-stream"
+
+```
+Photon at position x, tick t:
+  γ(x, t) = γ_background + A_photon × sin(ωt + φ)
+
+where:
+  A_photon = k_coupling × E_photon
+  ω = 2π/n (angular frequency from pattern period)
+  φ = phase index within pattern
+```
+
+After the photon passes, the gamma perturbation decays:
+
+```
+γ(x, t + Δt) = γ_background + (γ(x, t) - γ_background) × exp(-Δt/τ_decay)
+```
+
+---
+
+### 6.3 Implications for Measurement
+
+Since gamma traces exist:
+
+1. **Which-path information IS encoded** in the gamma field
+2. **Detecting gamma traces = detecting which-path**
+3. **This modifies the "which-path without collapse" claim** (see Doc 062)
+
+The key question becomes: **Does reading the gamma trace disturb the interference?**
+
+In standard QM: ANY which-path measurement destroys interference (complementarity)
+
+In tick-frame physics with gamma coupling:
+- **Weak detection**: Sampling gamma trace with energy E_probe ≪ E_photon → minimal disturbance
+- **Strong detection**: E_probe ~ E_photon → significant phase perturbation
+- **Threshold behavior**: Interference degradation depends on detection strength
+
+This produces a **different falsifiable prediction** than the original claim:
+
+> **Original claim (superseded)**: Which-path without collapse (interference unaffected)
+>
+> **Revised claim**: Interference degradation depends on gamma trace detection strength
+
+---
+
+### 6.4 Phase Evolution in Gamma Field
+
+Photon phase evolves based on local gamma:
+
+```
+dφ/dt = ω × γ(x, t)
+```
+
+In regions of higher gamma (faster time flow):
+- Phase accumulates faster
+- Effective frequency is higher
+- This produces gravitational frequency shift (Shapiro delay)
+
+In regions of lower gamma (slower time flow):
+- Phase accumulates slower
+- This produces effective wavelength stretching
+
+---
+
+### 6.5 Two-Photon Gamma Interaction
+
+When two photons have overlapping paths:
+- Their gamma traces superpose
+- Each photon's phase evolves in the combined gamma field
+- This produces subtle interference effects beyond simple superposition
+
+```
+γ_total(x, t) = γ_background + Δγ_photon_A(x, t) + Δγ_photon_B(x, t)
+```
+
+This may explain:
+- Photon-photon scattering (normally forbidden in classical EM)
+- Vacuum birefringence effects
+- Nonlinear optical phenomena
+
+---
+
+### 6.6 Reconciliation with Canvas Ontology
+
+From Exp 56 v17, the canvas (gamma field) IS the complete tick state:
+- Entities "paint" on the canvas by modifying gamma
+- The canvas persists between ticks
+- Unpainted regions have no influence on behavior
+
+Applying this to photons:
+- Photons paint transient oscillations on the canvas
+- These oscillations decay but DO exist
+- The canvas records the photon's passage temporarily
+- Reading the canvas = obtaining which-path information
+
+This resolves the theoretical contradiction identified in the analysis:
+- If light IS gamma oscillation → photons modify gamma ✓
+- If the canvas IS gamma → photon imprints exist in gamma ✓
+- If imprints exist → which-path info exists in gamma field ✓
+
+---

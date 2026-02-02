@@ -1,8 +1,49 @@
 # Experiment #62: Tick-Frame Interferometry
 
-**Status**: ALL VALIDATION COMPLETE ✅ (10/10 phases, 26/26 tests passed)
-**Date**: January 2026
+**Status**: THEORY REVISED - Gamma Coupling Added (February 2026)
+**Date**: January-February 2026
 **Purpose**: Validate discrete wave mechanics and establish falsifiable predictions vs quantum mechanics
+
+---
+
+## IMPORTANT: February 2026 Theory Revision
+
+### Photon-Gamma Coupling Resolution
+
+The original "which-path without collapse" claim has been **revised** based on theoretical analysis that identified a fundamental contradiction:
+
+| Theory Component | Claim |
+|-----------------|-------|
+| Doc 051 | Photons are "periodic imprints in tick-stream" |
+| Doc 065 | "Light IS gamma oscillation" |
+| Exp 56 v17 | All entity actions = gamma modifications |
+
+**The Contradiction**: If light IS gamma oscillation, then photons DO modify the gamma field, meaning which-path information IS encoded in gamma traces.
+
+### Revised Understanding
+
+**Original claim (SUPERSEDED)**:
+> "Which-path information can be obtained WITHOUT destroying interference"
+
+**Revised claim**:
+> "Interference degradation depends on gamma trace detection strength"
+
+Key differences from quantum mechanics:
+- **QM**: ANY which-path measurement destroys interference (binary collapse)
+- **Tick-frame (revised)**: Interference degrades GRADUALLY with detection strength
+
+### New Implementation
+
+- `gamma_coupled_wave.py` - Wave mechanics with gamma field coupling
+- `tests/test_gamma_coupling.py` - Test suite for gamma-coupled interference
+
+### What This Changes
+
+1. **Phase 7 tests remain valid** - They test abstract wave mechanics without gamma coupling
+2. **New tests required** - Gamma-coupled interferometry with detection strength scanning
+3. **Falsifiable prediction updated** - Test for GRADUAL vs BINARY visibility degradation
+
+See Doc 051 §6 and Doc 062 §2.4 for full theoretical treatment.
 
 ---
 
@@ -367,12 +408,13 @@ Validate core interference physics first using familiar continuous wave equation
 - ✅ Phase-shift linearity: <1% error
 - ✅ Visibility: V ≈ 1.0000 (both systems)
 
-**Phase 7: Which-Path Without Collapse** ✅ (7/7 tests) **← CRITICAL FINDING**
+**Phase 7: Which-Path Without Collapse** ✅ (7/7 tests) **← SEE REVISION ABOVE**
 - ✅ Visibility CONSTANT despite which-path coupling (0.00% variation)
 - ✅ Complete path readout: V = 1.0000 (interference preserved)
 - ✅ Phase readout at all points: V = 1.0000 (fringes persist)
-- ❗ **VIOLATES quantum complementarity principle**
-- 📋 **Real-world experimental proposal ready**
+- ⚠️ **NOTE**: These tests use abstract wave mechanics WITHOUT gamma coupling
+- ⚠️ **REVISED**: See "February 2026 Theory Revision" section above
+- 📋 **Real-world experimental proposal UPDATED** - now tests gradual vs binary degradation
 
 **Phase 8: Decoherence Resistance** ✅ (4/4 tests)
 - ✅ Phase noise, temporal jitter, spatial perturbation mechanisms validated
@@ -425,11 +467,18 @@ Validate core interference physics first using familiar continuous wave equation
 - `experimental_roadmap.md` - Phases 6-10 specification
 
 **Theory**:
-- `docs/theory/raw/062_experiment_tick-frame_interferometry.md` - Full theoretical framework
+- `docs/theory/raw/062_experiment_tick-frame_interferometry.md` - Full theoretical framework (§2.4 has revision)
+- `docs/theory/raw/051_photon_and_emitting_entity_in_tickframe_physics.md` - Photon model (§6 has gamma coupling)
+- `docs/theory/raw/065_electromagnetism.md` - Light as gamma oscillation (§5.2)
 - Doc 049: Temporal Ontology (deterministic substrate, no collapse)
 - Doc 028: Temporal Surfing (relativistic effects)
 - Doc 053: Collision Physics (pattern-based particles)
 - Experiment #55: Pattern overlap framework (composite particles)
+- Experiment #56 v17: Canvas ontology (gamma field as tick state)
+
+**Gamma-Coupled Implementation** (February 2026):
+- `gamma_coupled_wave.py` - Wave mechanics with gamma field coupling
+- `tests/test_gamma_coupling.py` - Test suite for gamma coupling
 
 ---
 

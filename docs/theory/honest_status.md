@@ -214,32 +214,48 @@ Extrapolation to Physics Claims
 
 ---
 
-### ✅ Computational Result 8: Interferometry Without Collapse (Exp #62)
+### ⚠️ REVISED: Computational Result 8: Interferometry With Gamma Coupling (Exp #62)
 
-**Claim**: Which-path information can be obtained WITHOUT destroying interference fringes - violates quantum complementarity.
+**Original Claim (SUPERSEDED)**: Which-path information can be obtained WITHOUT destroying interference fringes - violates quantum complementarity.
+
+**February 2026 Revision**: Theoretical analysis identified a contradiction between:
+- Doc 051: Photons as "periodic imprints in tick-stream"
+- Doc 065: "Light IS gamma oscillation"
+- Exp 56 v17: Canvas ontology (all actions = gamma modifications)
+
+**Resolution**: If light IS gamma oscillation, photons DO modify the gamma field, and which-path information IS encoded in gamma traces.
+
+**Revised Claim**: Interference degradation depends on gamma trace detection strength (gradual, not binary).
 
 **What This Actually Proves**:
 
-- In the tick-frame model, measurement is deterministic readout
-- Visibility remains V ≈ 1.0 even after complete path readout
-- 26/26 test cases passed including composite particle interference
+- Abstract wave mechanics (Phases 1-10): Measurement is deterministic readout - 26/26 tests pass
+- Gamma-coupled wave mechanics (new): Visibility degrades GRADUALLY with detection strength
+- Key difference from QM: GRADUAL degradation vs BINARY collapse
 
 **What This Does NOT Prove**:
 
 - That real-world quantum mechanics works this way
-- That complementarity is wrong in nature
-- That tick-frame predictions match real experiments
+- That the gradual degradation model matches nature
+- That gamma coupling parameters are correct
 
-**Critical Finding**: This is a **FALSIFIABLE PREDICTION** that distinguishes tick-frame from standard QM!
+**Revised Falsifiable Prediction**: Test for GRADUAL vs BINARY visibility degradation
 
-**Experimental Test Possible**: Cold atom or neutron interferometer, delayed-choice quantum eraser
-- QM Prediction: V → 0 after which-path measurement
-- Tick-Frame Prediction: V > 0.9 after which-path measurement
+**Experimental Test Updated**:
+- QM Prediction: V drops to 0 as soon as which-path is detected (binary collapse)
+- Tick-Frame Prediction: V = V_max × (1 - k × detection_strength) (gradual degradation)
 - Cost: $500K-$2M, Timeline: 1-2 years
 
-**Honest Assessment**: If confirmed by real experiment, this would be revolutionary. If falsified, tick-frame physics needs major revision. This is the first truly testable prediction differentiating tick-frame from QM.
+**Honest Assessment**: The prediction is more nuanced than originally stated. Instead of "no collapse," we now predict "gradual degradation." This is still testable and distinguishes tick-frame from QM, but it's a different kind of test.
 
-**See**: `experiments/62_interferometry/FALSIFIABLE_PREDICTIONS.md`
+**New Implementation**:
+- `experiments/62_interferometry/gamma_coupled_wave.py` - Gamma-coupled wave mechanics
+- `experiments/62_interferometry/tests/test_gamma_coupling.py` - New test suite
+
+**See**:
+- `experiments/62_interferometry/README.md` (February 2026 revision section)
+- `docs/theory/raw/051_photon_and_emitting_entity_in_tickframe_physics.md` §6
+- `docs/theory/raw/062_00_experiment_tick-frame_interferometry.md` §2.4
 
 ---
 
@@ -663,7 +679,7 @@ Why does this create orbits?
 - ✅ **Pauli exclusion emerges naturally** (Exp #55 DISCOVERY - not programmed, emerged from cell capacity!)
 - ✅ **Jitter stability range validated** (Exp #56 v13 - 0.119 NOT special, range [0.075, 0.5])
 - ✅ **Canvas/Renderer ontology works** (Exp #56 v17 - O(entities) sparse storage)
-- ✅ **Interferometry validated** (Exp #62 - 26/26 tests, which-path without collapse)
+- ⚠️ **Interferometry REVISED** (Exp #62 - theory updated for gamma coupling, now predicts GRADUAL degradation)
 - 🔄 Composite objects form via γ-well binding (Exp #56 IN PROGRESS - structures defined, binding pending)
 - 🔬 ZPE cosmological model (Exp #72 - roadmap defined, V1-V9 planned)
 
@@ -797,7 +813,7 @@ This emergence provides evidence AGAINST overfitting - if we were just designing
 - ✅ **Experiment #55**: Pauli exclusion emerged naturally (genuinely surprising discovery!)
 - ✅ **Experiment #56 v13**: Jitter stability range VALIDATED ([0.075, 0.5], 0.119 NOT special)
 - ✅ **Experiment #56 v17**: Canvas/Renderer ontology VALIDATED (O(entities) sparse storage)
-- ✅ **Experiment #62**: Interferometry VALIDATED (26/26 tests, which-path without collapse)
+- ⚠️ **Experiment #62**: Interferometry REVISED (gamma coupling added - predicts GRADUAL degradation)
 - 🔄 **Experiment #56**: Composite structures implemented (hydrogen atom, helium nucleus, H2 molecule)
 - 🔬 **Experiment #72**: ZPE cosmological model roadmap defined (V1-V9 phases)
 
@@ -862,7 +878,7 @@ This emergence provides evidence AGAINST overfitting - if we were just designing
 - **Collision physics**: ✅ VALIDATED (three regimes + emergent Pauli exclusion)
 - **Jitter stability**: ✅ VALIDATED (0.119 is arbitrary, range [0.075, 0.5])
 - **Canvas ontology**: ✅ VALIDATED (O(entities) sparse storage)
-- **Interferometry**: ✅ VALIDATED (which-path without collapse - FALSIFIABLE!)
+- **Interferometry**: ⚠️ REVISED (gradual degradation vs binary - FALSIFIABLE!)
 - **Black holes**: ⚠️ PRELIMINARY (c-ring found, needs collision validation)
 - **Composite objects**: 🔄 IN PROGRESS (structures defined, binding pending)
 - **ZPE cosmology**: 🔬 EARLY (hypothesis formulated, roadmap defined)
@@ -917,7 +933,7 @@ This emergence provides evidence AGAINST overfitting - if we were just designing
 | 055-058 | Speed of light, propulsion | 🔬 Theoretical |
 | 059-060 | Causal cell, overlap experiments | 🔬 Theoretical |
 | 061 | Matter-antimatter asymmetry | 🔬 Theoretical |
-| 062 | Interferometry | ✅ VALIDATED (Exp #62) |
+| 062 | Interferometry | ⚠️ REVISED (gamma coupling, gradual degradation) |
 | 063-066 | Electromagnetism | 🔬 Theoretical framework |
 | 067-069 | Anti-gravity, time crystals, bootstrapping | 🔬 Highly speculative |
 | 070 series | Emergent atomic model | 🔬 Theoretical |

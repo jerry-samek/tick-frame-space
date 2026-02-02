@@ -188,6 +188,83 @@ I_predicted = I1 + I2 + 2*sqrt(I1*I2)*cos(delta_phi)
 
 ---
 
+### 2.4 REVISED: Photon-Gamma Coupling and Which-Path (February 2026)
+
+**Important Update**: The original claim in §2.3 has been revised based on theoretical analysis of photon-gamma field coupling. See Doc 051 §6 for full derivation.
+
+#### The Contradiction Discovered
+
+The original claim ("which-path without collapse") conflicts with established tick-frame theory:
+
+| Theory Component | Implication |
+|-----------------|-------------|
+| Doc 051: Photons are "periodic imprints in tick-stream" | Imprints must manifest somewhere |
+| Doc 065: "Light IS gamma oscillation" | Photons modify gamma field |
+| Exp 56 v17: All entity actions = gamma modifications | The canvas IS gamma |
+
+**If light IS gamma oscillation → photons modify gamma → which-path info exists in gamma field**
+
+#### Original Claim (SUPERSEDED)
+
+> "Which-path information can be obtained WITHOUT destroying interference"
+
+This assumed that reading the pattern's phase variable was a passive operation with no coupling to the underlying gamma field.
+
+#### Revised Understanding
+
+Photons leave **gamma traces** along their path:
+
+```
+Photon passage at position x:
+  γ(x) = γ_background + A_photon × oscillation
+
+Trace decay:
+  γ(x, t+Δt) = γ_background + (γ(x,t) - γ_background) × exp(-Δt/τ_decay)
+```
+
+These traces:
+1. **Encode which-path information** in the gamma field
+2. **Are theoretically detectable** via gamma field measurement
+3. **May affect interference** through gamma-phase coupling
+
+#### New Falsifiable Prediction
+
+The degree of interference degradation depends on:
+- **Gamma trace amplitude** (photon energy)
+- **Detection sensitivity threshold**
+- **Coupling strength** between gamma field and phase evolution
+
+```
+V(detection_strength) = V_max × f(E_probe / E_photon, k_coupling)
+```
+
+**Key Difference from QM**:
+- QM: ANY which-path detection destroys interference immediately (complementarity)
+- Tick-frame: Interference degradation is **gradual** and depends on detection strength
+
+This produces a **continuous visibility curve** rather than a **binary collapse**:
+
+```
+Standard QM:          V = V_max if no detection, V = 0 if detected
+Tick-frame (revised): V = V_max × (1 - k × detection_strength)
+```
+
+#### Experimental Test (Updated)
+
+The original test (Phase 7 in Exp #62) validated that reading `pattern.phase` does not affect interference. This remains valid for the abstract wave mechanics layer.
+
+The revised test requires **gamma-coupled wave mechanics**:
+
+1. Implement gamma field that photons modify
+2. Implement phase evolution dependent on local gamma: `dφ/dt = ω × γ(x,t)`
+3. Implement gamma trace detection mechanism
+4. Measure visibility vs detection strength
+5. Compare to QM prediction (immediate collapse) vs tick-frame (gradual degradation)
+
+See `experiments/62_interferometry/gamma_coupled_wave.py` for implementation.
+
+---
+
 ## 3. Mach-Zehnder Interferometer Design
 
 ### 3.1 Geometry
