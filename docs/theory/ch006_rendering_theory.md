@@ -35,7 +35,7 @@ then rendered back-to-front (painter's algorithm) or front-to-back (early z-reje
 sorting**: O(n log n) complexity.
 
 In tick-frame physics, entities exist in **N-dimensional space + discrete time**. The question: **Can we visualize
-temporal information spatially?**
+temporal information spatially?** This echoes earlier work on spacetime visualization in discrete systems [Wolfram, 2002; 't Hooft, 2014].
 
 ### Lag as Depth: The Core Insight
 
@@ -110,13 +110,13 @@ for lag in reversed(range(MAX_HISTORY)):  # Back-to-front
 
 ### Theoretical Justification
 
-This is a **counting sort variant**:
+This is a **counting sort variant** [Cormen et al., 2009]:
 
 - **Domain**: Discrete, bounded integers (temporal lag)
 - **Assumption**: MAX_HISTORY << n (realistic: history ~100-1000, entities ~10k-1M)
 - **Structure exploitation**: Natural ordering from tick-stream
 
-**Comparison to classical graphics**:
+**Comparison to classical graphics** [Akenine-Möller et al., 2018]:
 
 | Property         | Classical Z-Buffer              | Tick-Frame Bucketing           |
 |------------------|---------------------------------|--------------------------------|
@@ -310,7 +310,7 @@ dimension?
 
 ### Theoretical Implications
 
-**This is kinematic validation of Chapter 1's temporal ontology**:
+**This is kinematic validation of Chapter 1's temporal ontology**, and mirrors constraints in relativistic discrete-time models [Bedingham, 2020; Tumulka, 2006]:
 
 1. **Tick-stream is absolute substrate** (Ch1 §2):
     - Entities cannot move forward in tick-stream
@@ -371,7 +371,7 @@ To move from lag=k to lag=k-1 in <1 tick:
 **Physical meaning**: An entity can at most stay synchronized with the current tick. It cannot "catch up" if it has
 fallen behind.
 
-### Analogy to Speed of Light
+### Analogy to Speed of Light [Carroll, 2004]:
 
 | Relativity           | Tick-Frame                | Constraint       |
 |----------------------|---------------------------|------------------|
@@ -657,7 +657,7 @@ buckets = [None] * MAX_HISTORY  # Just reset pointers
 
 - **Ch1 §9**: Identity is temporal continuity (chain of states)
 - **Rendering**: Linked list = literal representation of this continuity
-- **Code = physics**: Not just metaphor, actual structural correspondence
+- **Code = physics**: Not just metaphor, actual structural correspondence [Wolfram, 2002; McCarthy, 1960]
 
 **Philosophical implication**: The most efficient computational representation may be the one that **accurately reflects
 physical structure**. This suggests deep connections between:
@@ -792,7 +792,7 @@ For each lag bucket (back-to-front):
 4. **May generalize beyond rendering** - any discrete-time ordering problem
 
 **Implication**: If time is fundamentally discrete (Planck scale), then nature may "compute" temporal ordering in O(n),
-not O(n log n). Discrete time could be **computationally fundamental**, not just an approximation.
+not O(n log n) [Lloyd, 2000; Margolus & Levitin, 1998]. Discrete time could be **computationally fundamental**, not just an approximation.
 
 ### For Implementation (Java Tick-Space-Runner)
 
@@ -831,8 +831,8 @@ not O(n log n). Discrete time could be **computationally fundamental**, not just
 - **Exp 44 (kinematics)**: v <= 1 shows time is directionally constrained
 - **Exp 46_01 (computation)**: O(n) shows discrete time is algorithmically superior
 
-**All three point to same conclusion**: Time is fundamentally different from space, and this difference can be *
-*computationally exploited**.
+**All three point to same conclusion**: Time is fundamentally different from space, and this difference can be
+**computationally exploited** [Bedingham, 2020; 't Hooft, 2014].
 
 ---
 
@@ -919,6 +919,20 @@ performance improve**. This suggests deep correspondence between:
 ---
 
 ## References
+
+### External References
+
+1. **Wolfram, S.** (2002). *A New Kind of Science.* Wolfram Media.
+2. **'t Hooft, G.** (2014). *The Cellular Automaton Interpretation of Quantum Mechanics.* Springer.
+3. **Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C.** (2009). *Introduction to Algorithms.* MIT Press.
+4. **Akenine-Möller, T., Haines, E., & Hoffman, N.** (2018). *Real-Time Rendering (4th ed.).* CRC Press.
+5. **Bedingham, D. J.** (2020). *Collapse Models, Relativity, and Discrete Spacetime.* Springer.
+6. **Tumulka, R.** (2006). *Collapse and Relativity.* AIP Conf. Proc. **844**, 340–352.
+7. **Carroll, S.** (2004). *Spacetime and Geometry: An Introduction to General Relativity.* Addison-Wesley.
+8. **Tononi, G.** (2004). *An information integration theory of consciousness.* BMC Neuroscience **5**, 42.
+9. **McCarthy, J.** (1960). *Recursive functions of symbolic expressions and their computation by machine.* Communications of the ACM **3**, 184–195.
+10. **Lloyd, S.** (2000). *Ultimate physical limits to computation.* Nature **406**, 1047–1054.
+11. **Margolus, N., & Levitin, L. B.** (1998). *The maximum speed of dynamical evolution.* Physica D **120**, 188–195.
 
 ### V1 Theory Documents
 

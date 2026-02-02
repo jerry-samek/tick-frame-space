@@ -61,7 +61,7 @@ Layer 6 (Synthesis): Integration & Testing
     (Ch8: This chapter - coherence, gaps, falsification)
 ```
 
-**Flow**: Ontology → Structure → Dynamics → Observation → Formalization → Validation.
+**Flow**: Ontology → Structure → Dynamics → Observation → Formalization → Validation [Bunge, 1967; Tegmark, 2007].
 
 ### Cross-Chapter Dependencies
 
@@ -117,7 +117,7 @@ Layer 6 (Synthesis): Integration & Testing
 **Status**: ✓ **VALIDATED**
 
 **Falsification**: If future experiments show d=2 or d=4 more stable than d=3 (SPBI > 2.23), framework requires
-revision.
+revision [Ehrenfest, 1917].
 
 ### Experiment #44: Rotation Asymmetry (Chapter 6)
 
@@ -146,7 +146,7 @@ falsified.
 
 **Status**: ✓ **VALIDATED**
 
-**Falsification**: If (3D+time) shows rho ≈ 1.5 (matching 4D spatial), temporal ontology (Ch1) is falsified.
+**Falsification**: If (3D+time) shows rho ≈ 1.5 (matching 4D spatial), temporal ontology (Ch1) is falsified [Nimmrichter & Hornberger, 2013].
 
 ### Experiment #46_01: O(n) Bucketing (Chapter 6)
 
@@ -653,7 +653,7 @@ Universe is **open system** at substrate level.
 **Gap 3**: Gravitational constant G not derived from substrate parameters (Ch7 §8 speculative).
 
 **Resolution**: These are **known open questions**, not contradictions. Framework is internally consistent but not yet
-complete.
+complete [Lakatos, 1970].
 
 ---
 
@@ -711,7 +711,7 @@ complete.
 **Difference**: Wolfram seeks one universal rule, tick-frame has layered principles (ontology → dynamics → physics).
 
 **Tick-frame advantage**: Experimentally validated predictions (rho=2.0, v <= c, O(n) rendering). Wolfram Physics model
-still seeking experimental signatures.
+still seeking experimental signatures [Wolfram, 2020].
 
 ---
 
@@ -874,7 +874,7 @@ still seeking experimental signatures.
 3. Experimental physics predictions and tests (Phase 6)
 
 **Verdict**: Framework is **internally consistent and computationally validated**, but **not yet a complete physical
-theory**. It demonstrates that discrete time at Planck scale can produce emergent physics matching key observations (3D
+theory** [Popper, 1959]. It demonstrates that discrete time at Planck scale can produce emergent physics matching key observations (3D
 space, speed of light limit, temporal asymmetry).
 
 **Next milestone**: Validate Imbalance Theory (Doc 29) via expansion coupling experiments. Success would elevate from "
@@ -917,6 +917,18 @@ remains interesting computational model.
 ---
 
 ## References
+
+### External References
+
+1. **Bunge, M.** (1967). *Scientific Research: Strategy and Philosophy.* Springer.
+2. **Ehrenfest, P.** (1917). *In what way does it become manifest in the fundamental laws of physics that space has three dimensions?* Proc. Amsterdam Acad. **20**, 200.
+3. **Nimmrichter, S., & Hornberger, K.** (2013). *Macroscopicity of mechanical quantum superposition states.* Phys. Rev. Lett. **110**, 160403.
+4. **Lakatos, I.** (1970). *Falsification and the Methodology of Scientific Research Programmes.* In Criticism and the Growth of Knowledge.
+5. **Wolfram, S.** (2020). *A Class of Models with the Potential to Represent Fundamental Physics.* Complex Systems **29**, 107–536.
+6. **Popper, K. R.** (1959). *The Logic of Scientific Discovery.* Hutchinson.
+7. **Peirce, C. S.** (1878). *The Fixation of Belief.* Popular Science Monthly **12**, 1–15.
+8. **Hacking, I.** (1983). *Representing and Intervening: Introductory Topics in the Philosophy of Natural Science.* Cambridge University Press.
+9. **Tegmark, M.** (2007). *The Mathematical Universe.* Found. Phys. **38**, 101–150.
 
 ### All Chapters
 

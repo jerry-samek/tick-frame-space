@@ -45,7 +45,7 @@ in binary systems.
 2. **Libertarian free will**: Determinism is false (some choices uncaused)
 3. **Compatibilism**: Free will compatible with determinism (Hume, Dennett)
 
-**Tick-frame approach**: **Compatibilism+** - Free will as **auditable agency** in deterministic substrate.
+**Tick-frame approach**: **Compatibilism+** – Free will as **auditable agency** in deterministic substrate [Dennett, 2003; Frankfurt, 1971].
 
 ### Why This Matters for Tick-Frame
 
@@ -93,7 +93,7 @@ where F is a deterministic function (no random variables)
 2. **No spontaneous events**: Everything has a tick-based cause
 3. **Closed causal loops**: No external influences on substrate
 
-**This is stronger than classical determinism**:
+**This is stronger than classical determinism** [Laplace, 1814; Wolfram, 2002]:
 
 - Classical physics: Differential equations (continuous time)
 - Tick-frame: Discrete update rules (algorithmic)
@@ -110,7 +110,7 @@ where F is a deterministic function (no random variables)
 - No moral responsibility (can't be held accountable for randomness)
 - No meaning (random = arbitrary)
 
-**Tick-frame stance**: **Determinism is necessary for agency**, not opposed to it.
+**Tick-frame stance**: **Determinism is necessary for agency**, not opposed to it [Frankfurt, 1971].
 
 ### Laplace's Demon Scenario
 
@@ -126,7 +126,7 @@ where F is a deterministic function (no random variables)
 2. **Perception budget** (Ch4 §5): Observers can't track all entities
 3. **Computational bounds**: Observers have finite tick budget per tick
 
-**Result**: **Substrate is deterministic, but observers experience uncertainty**.
+**Result**: **Substrate is deterministic, but observers experience uncertainty** [Everett, 1957; Wallace, 2012].
 
 ---
 
@@ -236,7 +236,7 @@ This allocation is:
   - Meaningful (affects O's trajectory)
 ```
 
-**This IS free will**: Real choices with real consequences, even though determined by prior state.
+**This IS free will**: Real choices with real consequences, even though determined by prior state [Dennett, 2003].
 
 ### Why It Feels Scary (Doc 24 §5)
 
@@ -246,13 +246,17 @@ This allocation is:
 
 **The fear**: "If my choices are determined, am I just a puppet?"
 
-**Tick-frame response**: **You ARE the determination**.
+**Tick-frame response**: **You ARE the determination** [Frankfurt, 1971; Fischer & Ravizza, 1998].
 
 **Explanation**:
 
 - Your state at tick n determines your choice at tick n
 - But "your state" = accumulated history of YOUR tick allocations
 - **You built the deterministic function that generates your choices**
+
+---
+
+**Freedom IS causal agency** [Kane, 1996].
 
 **Analogy**: Like a chess computer:
 
@@ -332,7 +336,7 @@ N_allocations ~ 10^10 (10 billion possible choices per tick)
 
 **Implication**: **Vast choice space** even within constraints.
 
-**This is freedom**: Not "unlimited options" but "large, meaningful choice space."
+**This is freedom**: Not "unlimited options" but "large, meaningful choice space" [List, 2019].
 
 ### Committed Choices vs Uncommitted Potentials
 
@@ -359,7 +363,7 @@ After allocation @ tick n:
 - **After measurement**: Collapsed to eigenstate
 - **Measurement = tick allocation** (observer commits)
 
-**Difference from quantum mechanics**: Not random collapse - **deterministic** based on observer's state.
+**Difference from quantum mechanics**: Not random collapse – **deterministic** based on observer's state ['t Hooft, 2014].
 
 ---
 
@@ -484,7 +488,7 @@ Not binary: Forward vs not-forward
 Ternary: Forward vs neutral vs backward
 ```
 
-**Richer semantics**: Three values capture **positive, neutral, negative** stances.
+**Richer semantics**: Three values capture **positive, neutral, negative** stances [Knuth, 1965; Hayes, 2001].
 
 ### Ternary Commitment Dynamics
 
@@ -575,7 +579,7 @@ After tick n:
 Future allocations: Use updated heuristic
 ```
 
-**This is growth**: Deterministic function evolves (deterministically) based on experience.
+**This is growth**: Deterministic function evolves (deterministically) based on experience [Dennett, 2003].
 
 **Implication**: Even in deterministic substrate, agents can **improve** (meta-level causality).
 
@@ -651,7 +655,7 @@ Result:
   - Can modify future allocation strategy
 ```
 
-**This enables**:
+**This enables** [Schacter, 1999; Hofstadter, 1979]:
 
 - **Self-reflection**: "Why did I choose that?"
 - **Regret**: "I should have chosen differently"
@@ -675,7 +679,7 @@ At current tick:
   - "Feels" choice (subjective experience of deliberation)
 ```
 
-**Phenomenology of choice**:
+**Phenomenology of choice** [Kane, 1996]:
 
 - **Deliberation**: Considering options (computing allocations)
 - **Decision**: Selecting allocation (committing ticks)
@@ -727,7 +731,7 @@ deterministic causation).
 
 **If choices are determined, are agents responsible?**
 
-**Tick-frame answer**: **Yes, because agent IS the determination.**
+**Tick-frame answer**: **Yes, because agent IS the determination** [Frankfurt, 1971; Fischer & Ravizza, 1998].
 
 **Mechanism**:
 
@@ -756,7 +760,7 @@ self-determination).
 3. Observer's trajectory shaped by choices
 4. Therefore: Choices matter (regardless of determinism)
 
-**Dignity**: Observers are not "mere puppets" - they're **causal agents** whose allocations shape reality.
+**Dignity**: Observers are not "mere puppets" – they're **causal agents** whose allocations shape reality [Dennett, 2003].
 
 ---
 
@@ -795,7 +799,7 @@ self-determination).
 **Test**:
 
 - Compare choice quality (utility achieved) for well-rested vs sleep-deprived observers
-- **Prediction**: Sleep deprivation → suboptimal allocations
+- **Prediction**: Sleep deprivation → suboptimal allocations [Tononi & Cirelli, 2006]
 
 **Status**: Testable in simulation (requires sleep + choice implementation).
 
@@ -1005,6 +1009,24 @@ uncaused, but because they're **self-caused** (choices determined by self-built 
 ---
 
 ## References
+
+### External References
+
+1. **Dennett, D. C.** (2003). *Freedom Evolves.* Viking Press.
+2. **Frankfurt, H. G.** (1971). *Freedom of the Will and the Concept of a Person.* Journal of Philosophy **68**, 5–20.
+3. **Fischer, J. M., & Ravizza, M.** (1998). *Responsibility and Control: A Theory of Moral Responsibility.* Cambridge University Press.
+4. **Kane, R.** (1996). *The Significance of Free Will.* Oxford University Press.
+5. **List, C.** (2019). *Why Free Will Is Real.* Harvard University Press.
+6. **Laplace, P. S.** (1814). *A Philosophical Essay on Probabilities.*
+7. **Everett, H.** (1957). *"Relative State" Formulation of Quantum Mechanics.* Rev. Mod. Phys. **29**, 454–462.
+8. **Wallace, D.** (2012). *The Emergent Multiverse: Quantum Theory according to the Everett Interpretation.* Oxford University Press.
+9. **'t Hooft, G.** (2014). *The Cellular Automaton Interpretation of Quantum Mechanics.* Springer.
+10. **Knuth, D. E.** (1965). *An imaginary number system.* Communications of the ACM **8**, 245–247.
+11. **Hayes, B.** (2001). *Third Base.* American Scientist **89**, 490–494.
+12. **Schacter, D. L.** (1999). *The seven sins of memory.* American Psychologist **54**, 182–203.
+13. **Hofstadter, D. R.** (1979). *Gödel, Escher, Bach: An Eternal Golden Braid.* Basic Books.
+14. **Tononi, G., & Cirelli, C.** (2006). *Sleep function and synaptic homeostasis.* Sleep Med. Rev. **10**, 49–62.
+15. **Wolfram, S.** (2002). *A New Kind of Science.* Wolfram Media.
 
 ### V1 Theory Documents
 

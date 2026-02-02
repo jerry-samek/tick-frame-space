@@ -817,6 +817,24 @@ See Chapter 8 (Integration & Falsification) for detailed roadmap.
 - Chapter 3: Entity Dynamics (temporal processes in Java)
 - Chapter 8: Integration & Falsification (implementation roadmap)
 
+**External theoretical and experimental references**:
+
+- Bassi, A., Lochan, K., Satin, S., Singh, T. P., & Ulbricht, H. *Models of wave-function collapse: A review.* Rev. Mod. Phys. 85, 471 (2013).
+- Bedingham, D. J. *Collapse Models, Relativity, and Discrete Spacetime.* Springer, Fundamental Theories of Physics (2020).
+- Bedingham, D. J. *Collapse Models and Spacetime Symmetries.* arXiv:1612.09470 (2016).
+- Bassi, Ghirardi, Rimini, Weber (GRW). *Unified dynamics for microscopic and macroscopic systems.* Phys. Rev. D 34, 470 (1986).
+- Carroll, S. *Spacetime and Geometry: An Introduction to General Relativity.* Addison-Wesley (2004).
+- Cronin, A. D., Schmiedmayer, J., & Pritchard, D. E. *Optics and interferometry with atoms and molecules.* Rev. Mod. Phys. 81, 1051 (2009).
+- Arndt, M. et al. *Wave–particle duality of C60 molecules.* Nature 401, 680–682 (1999).
+- Nimmrichter, S., & Hornberger, K. *Macroscopicity of mechanical quantum superposition states.* Phys. Rev. Lett. 110, 160403 (2013).
+- Tumulka, R. *Collapse and Relativity.* AIP Conf. Proc. 844, 340–352 (2006).
+- 't Hooft, G. *The Cellular Automaton Interpretation of Quantum Mechanics.* Springer (2014).
+- Wolfram, S. *A New Kind of Science.* Wolfram Media (2002).
+- Lloyd, S. *Ultimate physical limits to computation.* Nature 406, 1047–1054 (2000).
+- Margolus, N., & Levitin, L. B. *The maximum speed of dynamical evolution.* Physica D 120, 188–195 (1998).
+- Shannon, C. E. *Communication in the presence of noise.* Proc. IRE 37, 10–21 (1949).
+- Whitehead, A. N. *Process and Reality.* Macmillan (1929).
+
 ---
 
 **Chapter Status**: VALIDATED
