@@ -1,0 +1,257 @@
+{
+  "sweep_params": {
+    "grid_size": 100,
+    "num_ticks": 300,
+    "random_seed": 42,
+    "jitter_values": [
+      0.0,
+      0.025,
+      0.05,
+      0.07500000000000001,
+      0.1,
+      0.119,
+      0.125,
+      0.15000000000000002,
+      0.17500000000000002,
+      0.2,
+      0.225,
+      0.25,
+      0.275,
+      0.30000000000000004,
+      0.325,
+      0.35000000000000003,
+      0.375,
+      0.4,
+      0.42500000000000004,
+      0.45,
+      0.47500000000000003,
+      0.5
+    ]
+  },
+  "results": [
+    {
+      "jitter": 0.0,
+      "r_norm": 0.0,
+      "r_std": 0.0,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "COLLAPSED",
+      "elapsed": 9.25878095626831
+    },
+    {
+      "jitter": 0.025,
+      "r_norm": 0.4282362200875424,
+      "r_std": 8.253303821586332,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "DISPERSED",
+      "elapsed": 11.71523666381836
+    },
+    {
+      "jitter": 0.05,
+      "r_norm": 0.4129627423416238,
+      "r_std": 8.141823122660904,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "DISPERSED",
+      "elapsed": 11.979552268981934
+    },
+    {
+      "jitter": 0.07500000000000001,
+      "r_norm": 0.39351582565221305,
+      "r_std": 7.584204060466589,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 12.444327116012573
+    },
+    {
+      "jitter": 0.1,
+      "r_norm": 0.3844159760099481,
+      "r_std": 7.372128498628321,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 12.566704273223877
+    },
+    {
+      "jitter": 0.119,
+      "r_norm": 0.38998510938627795,
+      "r_std": 7.541743012067534,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 12.661396741867065
+    },
+    {
+      "jitter": 0.125,
+      "r_norm": 0.3815434881678426,
+      "r_std": 7.262592473259762,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 12.373188972473145
+    },
+    {
+      "jitter": 0.15000000000000002,
+      "r_norm": 0.3748625671514846,
+      "r_std": 7.151004499379413,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 12.529263734817505
+    },
+    {
+      "jitter": 0.17500000000000002,
+      "r_norm": 0.3709136825694063,
+      "r_std": 7.128384993000722,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 13.076223373413086
+    },
+    {
+      "jitter": 0.2,
+      "r_norm": 0.3708214282698721,
+      "r_std": 6.965478984431405,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 11.9501051902771
+    },
+    {
+      "jitter": 0.225,
+      "r_norm": 0.3634552996627997,
+      "r_std": 6.941003315133451,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 12.210119724273682
+    },
+    {
+      "jitter": 0.25,
+      "r_norm": 0.3579626803986653,
+      "r_std": 6.809127705355344,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 16.836137294769287
+    },
+    {
+      "jitter": 0.275,
+      "r_norm": 0.35797883145540765,
+      "r_std": 6.82438684184405,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 12.376359939575195
+    },
+    {
+      "jitter": 0.30000000000000004,
+      "r_norm": 0.36334343124537194,
+      "r_std": 6.8749597169970365,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 12.473169565200806
+    },
+    {
+      "jitter": 0.325,
+      "r_norm": 0.3569024602463338,
+      "r_std": 6.777339581408182,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 12.49179744720459
+    },
+    {
+      "jitter": 0.35000000000000003,
+      "r_norm": 0.36068624292152085,
+      "r_std": 6.943079140653067,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 12.388966798782349
+    },
+    {
+      "jitter": 0.375,
+      "r_norm": 0.3553645219621403,
+      "r_std": 6.754910204793725,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 12.235790491104126
+    },
+    {
+      "jitter": 0.4,
+      "r_norm": 0.352068425985996,
+      "r_std": 6.684908418991903,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 12.757288217544556
+    },
+    {
+      "jitter": 0.42500000000000004,
+      "r_norm": 0.34833114706018437,
+      "r_std": 6.592259775198452,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 12.799638271331787
+    },
+    {
+      "jitter": 0.45,
+      "r_norm": 0.34648444576855325,
+      "r_std": 6.5662657416052355,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 12.698901176452637
+    },
+    {
+      "jitter": 0.47500000000000003,
+      "r_norm": 0.34594833761107174,
+      "r_std": 6.583111493815915,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 13.250963687896729
+    },
+    {
+      "jitter": 0.5,
+      "r_norm": 0.3486388122630844,
+      "r_std": 6.61607239309253,
+      "entity_count": 300,
+      "drift": 0.0,
+      "state": "STABLE",
+      "elapsed": 12.990471124649048
+    }
+  ],
+  "analysis": {
+    "stable_count": 19,
+    "collapsed_count": 1,
+    "dispersed_count": 2,
+    "stable_jitter_range": [
+      0.07500000000000001,
+      0.5
+    ],
+    "transitions": [
+      {
+        "from_jitter": 0.0,
+        "to_jitter": 0.025,
+        "from_state": "COLLAPSED",
+        "to_state": "DISPERSED"
+      },
+      {
+        "from_jitter": 0.05,
+        "to_jitter": 0.07500000000000001,
+        "from_state": "DISPERSED",
+        "to_state": "STABLE"
+      }
+    ],
+    "is_0119_special": false,
+    "0119_position": "middle_of_stable_range"
+  },
+  "elapsed_seconds": 276.33040022850037
+}

@@ -1,0 +1,103 @@
+{
+  "config_name": "V14",
+  "grid_size": 100,
+  "params": {
+    "jitter_strength": 0.119,
+    "gamma_decay": 0.99,
+    "skip_sensitivity": 0.010000000000000009
+  },
+  "final_stats": {
+    "entity_count": 500,
+    "total_energy": 26246,
+    "gamma_sum": 5001.789874356581,
+    "r_mean": 18.503381773312032,
+    "r_mean_norm": 0.37006763546624066,
+    "r_std": 7.046570472588183,
+    "skip_rate": 0.8373333333333334,
+    "dilation_mean": 0.1573473736810395,
+    "dilation_std": 0.09313771345000486,
+    "dilation_min": 0.05421686746987952,
+    "dilation_max": 1.0
+  },
+  "stability_metrics": {
+    "r_mean_norm_avg": 0.3630340658341016,
+    "r_mean_norm_std": 0.005499774003417667,
+    "drift": 0.005499774003417667,
+    "skip_rate_avg": 0.7402242615513352,
+    "skip_rate_std": 0.09062656627936402
+  },
+  "history": [
+    {
+      "tick": 100,
+      "entity_count": 100,
+      "total_energy": 11254,
+      "gamma_sum": 1395.7018302434258,
+      "gamma_max": 224.2151410070055,
+      "gradient_max": 130.2759918596892,
+      "r_mean": 17.74751236422272,
+      "r_mean_norm": 0.35495024728445446,
+      "r_std": 6.728924576049212,
+      "nonzero_count": 2003,
+      "skip_rate": 0.5879207920792079,
+      "dilation_mean": 0.43097758106334294
+    },
+    {
+      "tick": 200,
+      "entity_count": 200,
+      "total_energy": 15955,
+      "gamma_sum": 3141.9759759988488,
+      "gamma_max": 527.868077173413,
+      "gradient_max": 250.59991441693032,
+      "r_mean": 17.946335808640878,
+      "r_mean_norm": 0.3589267161728176,
+      "r_std": 6.856486052322339,
+      "nonzero_count": 2076,
+      "skip_rate": 0.6928855721393035,
+      "dilation_mean": 0.31671990383749704
+    },
+    {
+      "tick": 300,
+      "entity_count": 300,
+      "total_energy": 20729,
+      "gamma_sum": 3826.8420684790462,
+      "gamma_max": 533.1246348597225,
+      "gradient_max": 255.34842521571906,
+      "r_mean": 18.192271784961402,
+      "r_mean_norm": 0.36384543569922806,
+      "r_std": 6.935759077051321,
+      "nonzero_count": 2173,
+      "skip_rate": 0.7697895902547065,
+      "dilation_mean": 0.23106495378867095
+    },
+    {
+      "tick": 400,
+      "entity_count": 400,
+      "total_energy": 23558,
+      "gamma_sum": 4321.417357272497,
+      "gamma_max": 430.6088914055957,
+      "gradient_max": 204.8930592998488,
+      "r_mean": 18.369014727388354,
+      "r_mean_norm": 0.3673802945477671,
+      "r_std": 7.009448845368123,
+      "nonzero_count": 2195,
+      "skip_rate": 0.8131920199501247,
+      "dilation_mean": 0.17695638307617326
+    },
+    {
+      "tick": 500,
+      "entity_count": 500,
+      "total_energy": 26246,
+      "gamma_sum": 5001.789874356581,
+      "gamma_max": 472.78381236751545,
+      "gradient_max": 231.47334154555156,
+      "r_mean": 18.503381773312032,
+      "r_mean_norm": 0.37006763546624066,
+      "r_std": 7.046570472588183,
+      "nonzero_count": 2219,
+      "skip_rate": 0.8373333333333334,
+      "dilation_mean": 0.1573473736810395
+    }
+  ],
+  "elapsed_seconds": 5.754144906997681,
+  "num_ticks": 500
+}

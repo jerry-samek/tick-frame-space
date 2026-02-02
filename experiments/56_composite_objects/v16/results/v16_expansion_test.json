@@ -1,0 +1,63 @@
+{
+  "test": "expansion_v16",
+  "expected_expansions": 9,
+  "actual_expansions": 10,
+  "expansion_rate_correct": true,
+  "expected_final_size": 35,
+  "actual_final_size": 35,
+  "size_correct": true,
+  "memory_within_budget": true,
+  "expansion_events": [
+    {
+      "tick": 5,
+      "new_size": 17,
+      "memory_mb": 0.056224822998046875
+    },
+    {
+      "tick": 10,
+      "new_size": 19,
+      "memory_mb": 0.11120128631591797
+    },
+    {
+      "tick": 15,
+      "new_size": 21,
+      "memory_mb": 0.1943035125732422
+    },
+    {
+      "tick": 20,
+      "new_size": 23,
+      "memory_mb": 0.3132905960083008
+    },
+    {
+      "tick": 25,
+      "new_size": 25,
+      "memory_mb": 0.476837158203125
+    },
+    {
+      "tick": 30,
+      "new_size": 27,
+      "memory_mb": 0.6945333480834961
+    },
+    {
+      "tick": 35,
+      "new_size": 29,
+      "memory_mb": 0.9768848419189453
+    },
+    {
+      "tick": 40,
+      "new_size": 31,
+      "memory_mb": 1.335312843322754
+    },
+    {
+      "tick": 45,
+      "new_size": 33,
+      "memory_mb": 1.7821540832519531
+    },
+    {
+      "tick": 50,
+      "new_size": 35,
+      "memory_mb": 2.330660820007324
+    }
+  ],
+  "passed": true
+}

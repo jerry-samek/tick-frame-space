@@ -1,0 +1,100 @@
+{
+  "gamma_test": {
+    "test": "gamma_accumulation",
+    "gamma_growing": true,
+    "effective_bounded": true,
+    "jitter_inverse": 1.0,
+    "gamma_history": [
+      {
+        "tick": 50,
+        "gamma_sum": 828.0,
+        "gamma_max": 531.0,
+        "effective_gamma_mean": 0.0006237288135593221,
+        "jitter_mean": 0.9993762711864407
+      },
+      {
+        "tick": 100,
+        "gamma_sum": 2584.0,
+        "gamma_max": 1848.0,
+        "effective_gamma_mean": 0.0005593073593073594,
+        "jitter_mean": 0.9994406926406926
+      },
+      {
+        "tick": 150,
+        "gamma_sum": 4150.0,
+        "gamma_max": 2919.0,
+        "effective_gamma_mean": 0.0005686879068174033,
+        "jitter_mean": 0.9994313120931827
+      },
+      {
+        "tick": 200,
+        "gamma_sum": 5132.0,
+        "gamma_max": 3338.0,
+        "effective_gamma_mean": 0.0006149790293588976,
+        "jitter_mean": 0.9993850209706412
+      },
+      {
+        "tick": 250,
+        "gamma_sum": 6293.0,
+        "gamma_max": 3845.0,
+        "effective_gamma_mean": 0.000654668400520156,
+        "jitter_mean": 0.9993453315994799
+      },
+      {
+        "tick": 300,
+        "gamma_sum": 7694.0,
+        "gamma_max": 4456.0,
+        "effective_gamma_mean": 0.0006906642728904847,
+        "jitter_mean": 0.9993093357271094
+      }
+    ],
+    "passed": 1.0
+  },
+  "jitter_test": {
+    "test": "jitter_variation",
+    "jitter_by_position": {
+      "origin": {
+        "position": [
+          25,
+          25
+        ],
+        "effective_gamma": 0.09856201318154584,
+        "jitter": 0.9014379868184541
+      },
+      "near_origin": {
+        "position": [
+          30,
+          30
+        ],
+        "effective_gamma": 0.0,
+        "jitter": 1.0
+      },
+      "mid_range": {
+        "position": [
+          40,
+          40
+        ],
+        "effective_gamma": 0.0,
+        "jitter": 1.0
+      },
+      "edge": {
+        "position": [
+          49,
+          49
+        ],
+        "effective_gamma": 0.0,
+        "jitter": 1.0
+      }
+    },
+    "jitter_varies": true,
+    "passed": true
+  },
+  "emergence_test": {
+    "test": "emergence_validation",
+    "r_stable": 1.0,
+    "skip_stable": 1.0,
+    "r_bounded": 0.0,
+    "passed": 0.0
+  },
+  "all_passed": false
+}

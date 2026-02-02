@@ -14,15 +14,18 @@ This index catalogs all experiments in the `experiments/` directory, providing:
 - **Dependencies** between experiments
 - **Key findings** and implications
 
-**Total Experiments**: 17 (including sub-experiments)
+**Total Experiments**: 20 (including sub-experiments and v13-v17 series)
 
-**Major Validations**: 8 experiments have validated core theoretical predictions
+**Major Validations**: 10 experiments have validated core theoretical predictions
 
 **Major Falsifications**: 1 experiment has falsified bold theoretical claims (Exp #51 v1)
 
 **Critical Findings**: 1 experiment has identified FALSIFIABLE predictions vs quantum mechanics (Exp #62)
 
-**Latest Additions**: Experiment 62 (Interferometry - Which-Path Without Collapse, January 2026)
+**Latest Additions**:
+- Experiment 56 v13-v17 (Canvas Ontology, Jitter Investigation, Sparse Storage - February 2026)
+- Experiment 72 (ZPE Cosmological Model - February 2026)
+- Experiment 63 (Magnetron Theory - February 2026)
 
 ---
 
@@ -37,12 +40,16 @@ This index catalogs all experiments in the `experiments/` directory, providing:
 - **Gravity & Relativity**: [#51](#51-emergent-time-dilation-from-tick-budgets)
 - **Collision Physics & Matter**: [#55](#55-collision-physics-framework), [#56](#56-composite-objects), [#62](#62-interferometry)
 - **Quantum-Like Behavior**: [#62](#62-interferometry)
+- **Stability & Constants**: [#56 v13](#56-v13-jitter-investigation)
+- **Architecture & Ontology**: [#56 v17](#56-v17-canvas-ontology)
+- **Electromagnetism**: [#63](#63-magnetron-theory)
+- **Cosmology**: [#72](#72-zpe-cosmological-model)
 
 ### By Status
 
-- **✓ Validated**: [#15](#15-minimal-model), [#44_03](#4403-emergent-rotation), [#46_01](#reference-4601-on-bucketing), [#50](#50-dimensional-equivalence-under-explicit-time), [#51](#51-emergent-time-dilation-from-tick-budgets), [#55](#55-collision-physics-framework), [#62](#62-interferometry)
+- **✓ Validated**: [#15](#15-minimal-model), [#44_03](#4403-emergent-rotation), [#46_01](#reference-4601-on-bucketing), [#50](#50-dimensional-equivalence-under-explicit-time), [#51](#51-emergent-time-dilation-from-tick-budgets), [#55](#55-collision-physics-framework), [#62](#62-interferometry), [#56 v13](#56-v13-jitter-investigation), [#56 v17](#56-v17-canvas-ontology)
 - **⏳ In Progress**: [#49](#49-sliding-window-rendering), [#56](#56-composite-objects)
-- **🔬 Exploratory**: [#22](#22-genesis-and-discrete-relativity), [#39](#39-law-000), [#40](#40-tick-engine)
+- **🔬 Exploratory/Early**: [#22](#22-genesis-and-discrete-relativity), [#39](#39-law-000), [#40](#40-tick-engine), [#63](#63-magnetron-theory), [#72](#72-zpe-cosmological-model)
 
 ---
 
@@ -67,6 +74,10 @@ This index catalogs all experiments in the `experiments/` directory, providing:
 | **55**    | Collision Physics      | Matter       | ✓ Validated    | Doc 053, Doc 030                                            | 3 regimes validated, Pauli exclusion emerges                   |
 | **56**    | Composite Objects      | Matter       | ⏳ In Progress  | Doc 054, Doc 030                                            | Atoms, molecules, nuclei structure defined                     |
 | **62**    | Interferometry         | Matter       | ✓ Validated    | Doc 049, Doc 028, Doc 030, Exp 55                           | 26/26 tests, which-path WITHOUT collapse (falsifiable)         |
+| **63**    | Magnetron              | EM           | 🔬 Exploratory | Doc 063                                                     | Tick-frame magnetism theory                                    |
+| **56 v13**| Jitter Investigation   | Stability    | ✓ Validated    | Doc 072, Doc 074                                            | 0.119 NOT fundamental, range [0.075, 0.5]                      |
+| **56 v17**| Canvas Ontology        | Architecture | ✓ Validated    | Doc 049, Ch1                                                | O(entities) sparse storage, gamma=canvas                       |
+| **72**    | ZPE Cosmology          | Cosmology    | 🔬 Early       | Doc 072, Doc 073                                            | Jitter scaling roadmap V1-V9                                   |
 | **-**     | movement-vs-division   | Analysis     | 📊 Data        | -                                                           | Entity dynamics trade-offs                                     |
 
 **Legend**:
@@ -1022,6 +1033,139 @@ Final: binding_energy = +6.4 → stable = False (ionization)
 
 ---
 
+### #56 v13: Jitter Investigation
+
+**Full Name**: Jitter Stability Range Investigation
+
+**Location**: `experiments/56_composite_objects/v13/`
+
+**Status**: ✓ **VALIDATED** (22 jitter values tested)
+
+**Hypothesis**: Is the jitter value 0.119 a fundamental constant, or is it empirically tuned?
+
+**Method**:
+
+- Sweep jitter values from 0.0 to 0.5
+- 300 ticks per experiment, 100x100 grid
+- Track stability metrics (r_norm, collapse, dispersion)
+
+**Key Results**:
+
+- **Collapsed** (jitter < 0.025): Complete collapse to origin
+- **Dispersed** (0.025 < jitter < 0.075): Unstable expansion
+- **Stable** (0.075 ≤ jitter ≤ 0.5+): Long-term stability
+- **0.119 is NOT special**: Lies within broad stable range
+
+**Critical Insight**: The "fundamental" quantity is the existence of a stable range, not a specific jitter value.
+
+**Theory Validation**:
+
+- ✓ Validates that "constants" may be balance points, not primordial values
+- ✓ Aligns with ternary substrate correction axiom (doc 074)
+
+**Theory Connection**: Doc 072 (ZPE scaling), Doc 074 (ternary correction)
+
+**Files**:
+- `JITTER_INVESTIGATION.md` (detailed results)
+- `experiment_jitter_sweep.py` (sweep implementation)
+
+---
+
+### #56 v17: Canvas Ontology
+
+**Full Name**: Canvas/Renderer Model with Sparse Storage
+
+**Location**: `experiments/56_composite_objects/v17/`
+
+**Status**: ✓ **VALIDATED** (architectural and behavioral)
+
+**Hypothesis**: The gamma field IS the complete tick state - sparse storage should scale as O(entities) not O(grid³).
+
+**Method**:
+
+- Implement canvas/renderer model where gamma = accumulated paint
+- Use sparse dictionary storage (only non-zero values)
+- Test gradient-following movement behavior
+
+**Key Results**:
+
+- **Memory**: 500 ticks at 176³ grid: ~50 MB (sparse) vs ~2 GB (dense)
+- **Scaling**: O(painted_cells) not O(grid_volume)
+- **Behavior**: Gradient-following creates gravity-like clustering
+- **Stability**: Renderers cluster near origin where gamma accumulates
+
+**Architecture**:
+
+```
+Renderer (stateless) → reads canvas → decides paint position → Canvas (accumulated state)
+```
+
+**Theory Validation**:
+
+- ✓ Validates Ch1 temporal ontology (canvas = tick state)
+- ✓ Validates sparse representation is ontologically correct
+
+**Theory Connection**: Doc 049 (temporal ontology), Ch1
+
+**Files**:
+- `README.md` (comprehensive documentation)
+- `canvas.py`, `renderer.py`, `evolution.py` (implementation)
+
+---
+
+### #63: Magnetron Theory
+
+**Full Name**: Tick-Frame Theory of Magnetism
+
+**Location**: `experiments/63_magnetron/`
+
+**Status**: 🔬 **EXPLORATORY**
+
+**Purpose**: Develop tick-frame theory of magnetism and electromagnetic phenomena.
+
+**Theory Connection**: Docs 063-066 (magnetism, electric fields, electromagnetism)
+
+**Note**: Early exploratory work. Framework defined in theory docs, awaiting experimental validation.
+
+---
+
+### #72: ZPE Cosmological Model
+
+**Full Name**: Emergent Universe via Jitter/ZPE Scaling
+
+**Location**: `experiments/72_zpe/`
+
+**Status**: 🔬 **EARLY STAGE** (roadmap defined, V1 pending)
+
+**Hypothesis**: Jitter represents zero-point energy that decreases with cosmic expansion, explaining early universe anomalies.
+
+**Roadmap** (V1-V9):
+
+| Version | Feature | Purpose |
+|---------|---------|---------|
+| **V1** | Fixed tick energy, jitter/gamma ratio | Ontology validation |
+| **V2** | Gamma field upgrade | Realistic gravity |
+| **V3** | Movement | Kinematics |
+| **V4** | Entity creation/deletion | Population dynamics |
+| **V5** | Dynamic global jitter | Cosmological evolution |
+| **V6** | Adaptive grid expansion | Metric behavior |
+| **V7** | Energy bookkeeping | Thermodynamics |
+| **V8** | Multi-scale structures | Cosmic web |
+| **V9** | Physical mapping | Cosmological interpretation |
+
+**Theory Validation** (Pending):
+
+- ⏳ V1: Ontology validation (rules never violate 1-tick constraint)
+- ⏳ V2+: Progressive mechanism validation
+
+**Theory Connection**: Docs 072-073 (ZPE hypothesis, epoch-dependent stability)
+
+**Files**:
+- `ROADMAP.md` (comprehensive V1-V9 plan)
+- `v1/README.md` (V1 specification)
+
+---
+
 ### Reference: #46_01: On Bucketing
 
 **Note**: This is a **theory document** (REFERENCE_doc46_01), not a standalone experiment, but is listed here due to
@@ -1070,7 +1214,9 @@ direct mapping to rendering order. Thus, sorting is not a theoretical requiremen
 | **Ch6 §5** (Rotation Asymmetry)      | #44_03       | 933× asymmetry measured            |
 | **Doc 028** (Temporal Surfing)       | #62          | Relativistic SR effects (v < 0.9c) |
 | **Doc 030** (Collision Persistence)  | #55, #62     | Patterns persist without collapse  |
-| **Doc 049** (Temporal Ontology)      | #62          | Deterministic substrate validated  |
+| **Doc 049** (Temporal Ontology)      | #62, #56 v17 | Deterministic substrate validated  |
+| **Doc 072** (ZPE Hypothesis)         | #56 v13      | Jitter range [0.075, 0.5] stable   |
+| **Doc 074** (Ternary Correction)     | #56 v13      | Balance via discrete corrections   |
 
 ### Reference Documents with Experimental Basis
 
@@ -1078,7 +1224,7 @@ direct mapping to rendering order. Thus, sorting is not a theoretical requiremen
 |------------------------|---------------|-------------------------------|
 | **REFERENCE_doc15**    | #15           | Preserved complete experiment |
 | **REFERENCE_doc46_01** | #44_05        | Theoretical proof, validated  |
-| **REFERENCE_doc49**    | #40, #50, #62 | Ontology validated            |
+| **REFERENCE_doc49**    | #40, #50, #62, #56 v17 | Ontology validated            |
 | **REFERENCE_doc50_01** | #50           | Preserved complete results    |
 
 ---
@@ -1116,12 +1262,23 @@ direct mapping to rendering order. Thus, sorting is not a theoretical requiremen
 - #56: Composite objects (in progress)
 - #62: Interferometry validated (26/26 tests, which-path falsifiable prediction)
 
-**Phase 6: Current Work (2026 Q1)**
+**Phase 6: Stability & Ontology (2026 Q1-Q2)**
 
-- V2 theory consolidation
-- #49 implementation pending
+- #56 v13: Jitter investigation validated (0.119 NOT special, range [0.075, 0.5])
+- #56 v17: Canvas/Renderer ontology validated (O(entities) sparse storage)
+- V2 theory consolidation complete
+
+**Phase 7: Cosmology (2026 Q1-Q2)**
+
+- #72: ZPE cosmological model roadmap defined (V1-V9 phases)
+- Docs 072-075: Theoretical frameworks for epoch-dependent stability
+- #63: Magnetron theory (exploratory)
+
+**Phase 8: Current Work (2026 Q1)**
+
+- #72 V1 implementation pending
 - #62 experimental proposal preparation
-- Documentation completion
+- Real-world falsification test planning
 
 ---
 
@@ -1138,12 +1295,17 @@ direct mapping to rendering order. Thus, sorting is not a theoretical requiremen
 | **5. ρ=2.0 signature**         | #50        | ✓ VALIDATED    | ρ=2.000±0.002 universal        |
 | **6. O(n) rendering**          | #44_05     | ✓ VALIDATED    | 13-16× faster, linear scaling  |
 | **7. Which-path no collapse**  | #62        | ⏳ TESTABLE     | V > 0.9 predicted (QM: V → 0)  |
+| **8. Jitter stability range**  | #56 v13    | ✓ VALIDATED    | [0.075, 0.5] stable range      |
+| **9. Canvas ontology**         | #56 v17    | ✓ VALIDATED    | O(entities) memory scaling     |
+| **10. ZPE epoch-dependence**   | #72        | 🔬 PROPOSED    | Roadmap V1-V9 defined          |
 
-**Computational Physics**: 4/4 testable predictions validated ✓
+**Computational Physics**: 6/6 testable predictions validated ✓
 
 **Real-World Physics**: 1 falsifiable prediction ready for experimental test ($500K-$2M, 1-2 years)
 
 **Observational Physics**: 2 predictions not yet testable (require experiments beyond current technology)
+
+**Cosmological Physics**: 1 framework proposed (ZPE epoch-dependence, needs validation)
 
 ---
 
@@ -1201,11 +1363,11 @@ experiments/[number]_[name]/
 
 **By Status**:
 
-- ✓ Validated: 5 experiments (38%)
-- ⏳ In Progress: 1 experiment (8%)
-- 🔬 Exploratory: 3 experiments (23%)
-- 📐 Prototype: 4 experiments (31%)
-- 📊 Analysis: 1 experiment (8%)
+- ✓ Validated: 8 experiments (40%)
+- ⏳ In Progress: 1 experiment (5%)
+- 🔬 Exploratory/Early: 5 experiments (25%)
+- 📐 Prototype: 4 experiments (20%)
+- 📊 Analysis: 2 experiments (10%)
 
 **By Type**:
 
@@ -1263,9 +1425,10 @@ experiments/[number]_[name]/
 
 ---
 
-**Document Version**: 1.0
-**Last Updated**: January 2026
+**Document Version**: 1.1
+**Last Updated**: February 2026
 **Status**: Living document (will update with new experiments)
+**Changes in v1.1**: Added Exp #56 v13 (jitter), v17 (canvas), #63 (magnetron), #72 (ZPE)
 **Maintainer**: Auto-generated from experiment README files
 
 **For questions about specific experiments, see individual README files in `experiments/[name]/`**

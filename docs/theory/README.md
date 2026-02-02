@@ -382,7 +382,7 @@ science.
 | **#50**    | rho=2.0 in (n+t) systems             | 2.0 ± 0.002 (all configs)       | ✓ Validated | Ch1     |
 | **#46_01** | O(n) bucketing faster                | 2.78× @ 100k entities           | ✓ Validated | Ch6     |
 
-### Tier 1: Physics Mechanisms (January 2026 Breakthrough)
+### Tier 1: Physics Mechanisms (January-February 2026)
 
 | Experiment  | Prediction                          | Result                                  | Status          | Chapter |
 |-------------|-------------------------------------|-----------------------------------------|-----------------|---------|
@@ -392,12 +392,26 @@ science.
 | **#55**     | Three-regime collision physics      | 6/6 test cases, E_ratio = 1.000         | ✅ VALIDATED    | Ch3     |
 | **#55**     | *(Emergent Pauli exclusion)*        | Emerged from cell capacity (surprise!)  | ✅ **DISCOVERY** | Ch3    |
 | **#56**     | Composite atoms/molecules           | H, He, H₂ structures implemented        | 🔄 In Progress  | Ch3     |
+| **#56 v13** | Jitter stability range              | [0.075, 0.5] stable, 0.119 NOT special  | ✅ VALIDATED    | Ch7     |
+| **#56 v17** | Canvas/Renderer ontology            | O(entities) sparse storage works        | ✅ VALIDATED    | Ch1     |
+| **#62**     | Interferometry (which-path)         | 26/26 tests, V=1.0 after path readout   | ✅ VALIDATED    | Ch7     |
+| **#72**     | ZPE cosmological model              | Roadmap V1-V9 defined                   | 🔬 Early Stage  | Ch7     |
 
-**Overall**: **9/10 validations successful** (4 Tier 0 + 5 Tier 1). 1 preliminary (ghost particle limitation), 1 in progress.
+**Overall**: **10/12 validations successful** (4 Tier 0 + 6 Tier 1). 1 preliminary (ghost particle limitation), 1 in progress.
 
-**Major Achievement**: Geodesics emerged WITHOUT programming force laws - strongest evidence this is real physics!
+**Major Achievements**:
+- Geodesics emerged WITHOUT programming force laws - strongest evidence this is real physics!
+- Interferometry validated: which-path detection WITHOUT wavefunction collapse (Exp #62)
+- Jitter stability validated: 0.119 is within stable range [0.075, 0.5], NOT a fundamental constant (Exp #56 v13)
+- Canvas/Renderer ontology: sparse O(entities) memory instead of O(grid³) (Exp #56 v17)
 
-**Next**: Complete Exp #56 (composite validation), then validate black hole c-ring with collisions (v12).
+**New Theoretical Developments (Feb 2026)**:
+- **ZPE Hypothesis** (docs 072-073): Jitter decreases with cosmic expansion, explains early universe anomalies
+- **Ternary Substrate Correction** (doc 074): Stability via discrete integer corrections {-1, 0, +1}
+- **Metabolic Time Dilation** (doc 075): Entities "skip" rendering to conserve energy, not temporal slowdown
+- **Electromagnetism Framework** (docs 063-066): Theoretical foundation for EM in tick-frame substrate
+
+**Next**: Complete ZPE cosmological model (Exp #72), validate epoch-dependent stability predictions
 
 ---
 
@@ -422,11 +436,11 @@ science.
 
 **Raw status**: Fully archived in `raw/` subdirectory with complete README. Nothing deleted.
 
-### Raw (2024-2026) - Archived
+### Raw (2024-2026) - Archived + New (2026)
 
 **Location**: `raw/` subdirectory
 
-**Contents**: 76 original theory documents in chronological order
+**Contents**: 96+ theory documents (76 original + 20 new in 055-075 range)
 
 **Key docs** (preserved as references):
 
@@ -434,6 +448,22 @@ science.
 - raw/046: Why Sorting Is Not Required
 - raw/049: Temporal Ontology
 - raw/050: Dimensional Equivalence Test Specification
+
+**New raw documents (055-075)** - February 2026:
+
+| Range | Topic | Key Findings |
+|-------|-------|--------------|
+| **055-058** | Speed of light, propulsion | Substrate vs pattern speed distinction, active propulsion limits |
+| **059-060** | Causal cell scale, overlap | Effective causal cell experiments, brute-force vs engineered patterns |
+| **061** | Matter-antimatter | Asymmetry emergence from collision dynamics |
+| **062** | Interferometry | Which-path detection WITHOUT wavefunction collapse (FALSIFIABLE!) |
+| **063-066** | Electromagnetism | Magnetron theory, electric fields, EM framework |
+| **067-069** | Advanced topics | Anti-gravity, time crystals, computational bootstrapping |
+| **070 series** | Emergent atoms | Fragmented electron cloud, collision-driven stabilization, field rotation |
+| **071** | Double-slit | Tick-frame interpretation of interference |
+| **072-073** | ZPE hypothesis | Jitter scaling with expansion, epoch-dependent stability |
+| **074** | Ternary correction | Axiom of ternary substrate correction {-1, 0, +1} |
+| **075** | Metabolic dilation | Time dilation as energy-saving skip, not temporal slowdown |
 
 **See**: `raw/README.md` for complete archive guide.
 
@@ -546,10 +576,11 @@ Not a claim to replace established physics - an exploration of what emerges from
 
 ---
 
-**Last updated**: January 2026 (v2 consolidation complete + major experimental breakthrough)
-**Document count**: 7 chapters + 4 references + 7 supplements + v1 archive (76 docs)
-**Computational validation**: 9/10 successful (4 Tier 0 foundational + 5 Tier 1 physics mechanisms)
-**Physics claims**: **PARTIALLY VALIDATED** - Time dilation (✅), geodesics (✅), collision physics (✅), Pauli exclusion (✅ emergent!), black holes (⚠️ preliminary), composites (🔄 in progress)
+**Last updated**: February 2026 (v2.1 update: new raw docs 055-075, experiments v13-v17, ZPE hypothesis)
+**Document count**: 9 chapters + 4 references + 7 supplements + v1 archive (96+ docs, including 055-075 new)
+**Computational validation**: 10/12 successful (4 Tier 0 foundational + 6 Tier 1 physics mechanisms)
+**Physics claims**: **PARTIALLY VALIDATED** - Time dilation (✅), geodesics (✅), collision physics (✅), Pauli exclusion (✅ emergent!), interferometry (✅), jitter stability (✅ NEW), black holes (⚠️ preliminary), composites (🔄 in progress)
 **Confidence level**: MODERATE-HIGH for emergent gravity/relativity mechanisms. Transitioned from speculation to validated computational physics.
 **Implementation status**: Partial (tier 2/5 complete, Ch4-5 not implemented)
-**Next milestone**: Complete Exp #56 (composite objects), validate black hole c-ring with collisions (v12)
+**New theoretical developments**: ZPE/jitter scaling hypothesis (docs 072-073), ternary substrate correction (doc 074), metabolic time dilation (doc 075), canvas ontology (exp 56 v17)
+**Next milestone**: Complete ZPE cosmological model (Exp #72), validate epoch-dependent stability predictions

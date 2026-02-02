@@ -1,7 +1,8 @@
 # Theory Documentation v1 Archive
 
-**Status**: ARCHIVED (2026-01-15)
+**Status**: ARCHIVED (2026-01-15) + NEW DOCUMENTS (2026-02)
 **Current Version**: See `docs/theory/` for v2 consolidated chapters
+**Document Count**: 96+ documents (76 original + 20+ new in 055-075 range)
 
 ---
 
@@ -163,9 +164,11 @@ These documents are so important they remain accessible at `docs/theory/` root:
 
 ---
 
-## Complete V1 Document List
+## Complete Document List
 
 See files in this directory:
+
+### Original V1 Archive (000-051, 096-099)
 
 - **00-14**: Foundational principles and meta-theory
 - **15-series**: Experimental framework (Chapter 15 model - IMPLEMENTED)
@@ -182,10 +185,35 @@ See files in this directory:
 - **51**: Photon theory
 - **96-99**: Meta-documents, references, improvement plans
 
-**Total**: 76 documents
+### New Documents (052-075) - February 2026
+
+- **052**: Black hole behavior in tick-frame
+- **053**: Tick-frame collision physics (VALIDATED - Exp #55)
+- **054**: Elasticity of composite objects (IN PROGRESS - Exp #56)
+- **055-058**: Speed of light, substrate vs pattern speed, propulsion limits, geodesic drives
+- **059**: Effective causal cell scale
+- **060-series**: Pattern overlap experiments, brute-force vs engineered patterns
+- **061**: Matter-antimatter asymmetry
+- **062**: Interferometry experiment (VALIDATED - Exp #62, FALSIFIABLE!)
+- **063**: Theory of magnetism / magnetron
+- **064**: Theory of electric fields
+- **065**: Electromagnetism
+- **066**: Experiments with electricity and magnetism
+- **067**: Anti-gravity
+- **068**: Time crystals
+- **069**: Computational cost and universe bootstrapping
+- **070-series**: Fragmented electron cloud, collision-driven stabilization, field rotation, emergent atomic model
+- **071**: Double-slit experiment
+- **072-series**: ZPE/Jitter scaling and matter growth (Exp #72 roadmap)
+- **073-series**: Epoch-dependent ZPE hypothesis and cosmological implications
+- **074**: Axiom of ternary substrate correction
+- **075**: Time dilation as metabolic adaptation, gamma renormalization
+
+**Total**: 96+ documents (76 original + 20+ new)
 
 ---
 
 **Archive Created**: 2026-01-15
-**v2 Consolidation**: In progress
+**Last Updated**: 2026-02-02 (added docs 052-075)
+**v2 Consolidation**: Complete (v2.1 incorporates new docs)
 **Questions?**: See `docs/theory/README.md`

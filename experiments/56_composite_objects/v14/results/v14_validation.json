@@ -1,0 +1,10 @@
+{
+  "test": "tick_skipping_validation",
+  "skip_rate": 0.6963184079601991,
+  "skip_rate_nonzero": true,
+  "gradient_max": 225.53996827373706,
+  "gradient_present": true,
+  "near_origin_dilation": 0.31311111218830034,
+  "far_from_origin_dilation": 1.0,
+  "passed": true
+}

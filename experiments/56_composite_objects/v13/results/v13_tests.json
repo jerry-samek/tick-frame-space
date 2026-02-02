@@ -1,0 +1,30 @@
+{
+  "tests": [
+    {
+      "test": "layer_isolation",
+      "layers_independent": true,
+      "jitter_isolated": 1.0,
+      "passed": 1.0
+    },
+    {
+      "test": "gamma_coupling",
+      "entities_contribute": 1.0,
+      "gamma_uniform": true,
+      "gamma_nonzero": 5.0,
+      "gamma_sum": 5.0,
+      "passed": true
+    },
+    {
+      "test": "origin_spawn",
+      "all_at_origin": true,
+      "all_layers_at_origin": true,
+      "origin": [
+        50,
+        50
+      ],
+      "entity_count": 10,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

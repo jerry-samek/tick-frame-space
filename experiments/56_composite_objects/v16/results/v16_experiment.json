@@ -1,0 +1,554 @@
+{
+  "config_name": "V16_EXPANDING_GRID",
+  "initial_size": 20,
+  "final_size": 176,
+  "expansion_rate": 5,
+  "dimensions": 3,
+  "params": {
+    "SKIP_SENSITIVITY": 0.01,
+    "GAMMA_IMPRINT": 1.0,
+    "ENERGY_PER_TICK": 1.0,
+    "note": "Zero tunable parameters - all fixed or derived"
+  },
+  "final_stats": {
+    "tick_count": 390,
+    "entity_count": 389,
+    "total_energy": 3940204,
+    "grid_size": 176,
+    "expansion_count": 78,
+    "memory_mb": 2064.08984375,
+    "gamma_sum": 10145.0,
+    "gamma_min": 0.0,
+    "gamma_max": 3956.0,
+    "effective_gamma_mean": 4.7038965825906915e-07,
+    "r_mean": 11.141503861841766,
+    "r_mean_norm": 0.12660799843002007,
+    "r_std": 3.2964968825353087,
+    "skip_rate": 0.8662579922220025,
+    "jitter_mean": 0.9999995296103418,
+    "jitter_std": 0.00048364935680969914,
+    "dilation_mean": 0.13739920455011698,
+    "dilation_std": 0.07326431155197256,
+    "dilation_min": 0.0,
+    "dilation_max": 1.0
+  },
+  "stability_metrics": {
+    "r_mean_norm_avg": 0.2511259600605604,
+    "r_mean_norm_std": 0.08891843298575991,
+    "drift": 0.08891843298575991,
+    "skip_rate_avg": 0.7535929308208255,
+    "skip_rate_std": 0.10079428726473416,
+    "jitter_mean_avg": 0.9999956617350961,
+    "jitter_mean_std": 3.684369164217723e-06
+  },
+  "shell_distribution": {
+    "num_shells": 5,
+    "shell_width": 17.6,
+    "max_r": 88.0,
+    "shells": [
+      {
+        "shell": 0,
+        "r_inner": 0.0,
+        "r_outer": 17.6,
+        "energy": 3928343,
+        "cells": 22887,
+        "nonzero": 12015,
+        "density": 171.64080045440645
+      },
+      {
+        "shell": 1,
+        "r_inner": 17.6,
+        "r_outer": 35.2,
+        "energy": 11861,
+        "cells": 159884,
+        "nonzero": 152,
+        "density": 0.07418503414975858
+      },
+      {
+        "shell": 2,
+        "r_inner": 35.2,
+        "r_outer": 52.800000000000004,
+        "energy": 0,
+        "cells": 433658,
+        "nonzero": 0,
+        "density": 0.0
+      },
+      {
+        "shell": 3,
+        "r_inner": 52.800000000000004,
+        "r_outer": 70.4,
+        "energy": 0,
+        "cells": 845660,
+        "nonzero": 0,
+        "density": 0.0
+      },
+      {
+        "shell": 4,
+        "r_inner": 70.4,
+        "r_outer": 88.0,
+        "energy": 0,
+        "cells": 1391858,
+        "nonzero": 0,
+        "density": 0.0
+      }
+    ]
+  },
+  "expansion_events": [
+    {
+      "tick": 5,
+      "new_size": 22,
+      "memory_mb": 0.121856689453125
+    },
+    {
+      "tick": 10,
+      "new_size": 24,
+      "memory_mb": 0.22412109375
+    },
+    {
+      "tick": 15,
+      "new_size": 26,
+      "memory_mb": 0.3687591552734375
+    },
+    {
+      "tick": 20,
+      "new_size": 28,
+      "memory_mb": 0.56524658203125
+    },
+    {
+      "tick": 25,
+      "new_size": 30,
+      "memory_mb": 0.823974609375
+    },
+    {
+      "tick": 30,
+      "new_size": 32,
+      "memory_mb": 1.15625
+    },
+    {
+      "tick": 35,
+      "new_size": 34,
+      "memory_mb": 1.5742950439453125
+    },
+    {
+      "tick": 40,
+      "new_size": 36,
+      "memory_mb": 2.09124755859375
+    },
+    {
+      "tick": 45,
+      "new_size": 38,
+      "memory_mb": 2.721160888671875
+    },
+    {
+      "tick": 50,
+      "new_size": 40,
+      "memory_mb": 3.47900390625
+    },
+    {
+      "tick": 55,
+      "new_size": 42,
+      "memory_mb": 4.3806610107421875
+    },
+    {
+      "tick": 60,
+      "new_size": 44,
+      "memory_mb": 5.44293212890625
+    },
+    {
+      "tick": 65,
+      "new_size": 46,
+      "memory_mb": 6.68353271484375
+    },
+    {
+      "tick": 70,
+      "new_size": 48,
+      "memory_mb": 8.12109375
+    },
+    {
+      "tick": 75,
+      "new_size": 50,
+      "memory_mb": 9.775161743164062
+    },
+    {
+      "tick": 80,
+      "new_size": 52,
+      "memory_mb": 11.66619873046875
+    },
+    {
+      "tick": 85,
+      "new_size": 54,
+      "memory_mb": 13.815582275390625
+    },
+    {
+      "tick": 90,
+      "new_size": 56,
+      "memory_mb": 16.24560546875
+    },
+    {
+      "tick": 95,
+      "new_size": 58,
+      "memory_mb": 18.979476928710938
+    },
+    {
+      "tick": 100,
+      "new_size": 60,
+      "memory_mb": 22.04132080078125
+    },
+    {
+      "tick": 105,
+      "new_size": 62,
+      "memory_mb": 25.4561767578125
+    },
+    {
+      "tick": 110,
+      "new_size": 64,
+      "memory_mb": 29.25
+    },
+    {
+      "tick": 115,
+      "new_size": 66,
+      "memory_mb": 33.44966125488281
+    },
+    {
+      "tick": 120,
+      "new_size": 68,
+      "memory_mb": 38.08294677734375
+    },
+    {
+      "tick": 125,
+      "new_size": 70,
+      "memory_mb": 43.178558349609375
+    },
+    {
+      "tick": 130,
+      "new_size": 72,
+      "memory_mb": 48.76611328125
+    },
+    {
+      "tick": 135,
+      "new_size": 74,
+      "memory_mb": 54.87614440917969
+    },
+    {
+      "tick": 140,
+      "new_size": 76,
+      "memory_mb": 61.54010009765625
+    },
+    {
+      "tick": 145,
+      "new_size": 78,
+      "memory_mb": 68.79034423828125
+    },
+    {
+      "tick": 150,
+      "new_size": 80,
+      "memory_mb": 76.66015625
+    },
+    {
+      "tick": 155,
+      "new_size": 82,
+      "memory_mb": 85.18373107910156
+    },
+    {
+      "tick": 160,
+      "new_size": 84,
+      "memory_mb": 94.39617919921875
+    },
+    {
+      "tick": 165,
+      "new_size": 86,
+      "memory_mb": 104.33352661132812
+    },
+    {
+      "tick": 170,
+      "new_size": 88,
+      "memory_mb": 115.03271484375
+    },
+    {
+      "tick": 175,
+      "new_size": 90,
+      "memory_mb": 126.53160095214844
+    },
+    {
+      "tick": 180,
+      "new_size": 92,
+      "memory_mb": 138.86895751953125
+    },
+    {
+      "tick": 185,
+      "new_size": 94,
+      "memory_mb": 152.08447265625
+    },
+    {
+      "tick": 190,
+      "new_size": 96,
+      "memory_mb": 166.21875
+    },
+    {
+      "tick": 195,
+      "new_size": 98,
+      "memory_mb": 181.3133087158203
+    },
+    {
+      "tick": 200,
+      "new_size": 100,
+      "memory_mb": 197.41058349609375
+    },
+    {
+      "tick": 205,
+      "new_size": 102,
+      "memory_mb": 214.55392456054688
+    },
+    {
+      "tick": 210,
+      "new_size": 104,
+      "memory_mb": 232.78759765625
+    },
+    {
+      "tick": 215,
+      "new_size": 106,
+      "memory_mb": 252.1567840576172
+    },
+    {
+      "tick": 220,
+      "new_size": 108,
+      "memory_mb": 272.70758056640625
+    },
+    {
+      "tick": 225,
+      "new_size": 110,
+      "memory_mb": 294.48699951171875
+    },
+    {
+      "tick": 230,
+      "new_size": 112,
+      "memory_mb": 317.54296875
+    },
+    {
+      "tick": 235,
+      "new_size": 114,
+      "memory_mb": 341.92433166503906
+    },
+    {
+      "tick": 240,
+      "new_size": 116,
+      "memory_mb": 367.68084716796875
+    },
+    {
+      "tick": 245,
+      "new_size": 118,
+      "memory_mb": 394.8631896972656
+    },
+    {
+      "tick": 250,
+      "new_size": 120,
+      "memory_mb": 423.52294921875
+    },
+    {
+      "tick": 255,
+      "new_size": 122,
+      "memory_mb": 453.71263122558594
+    },
+    {
+      "tick": 260,
+      "new_size": 124,
+      "memory_mb": 485.48565673828125
+    },
+    {
+      "tick": 265,
+      "new_size": 126,
+      "memory_mb": 518.8963623046875
+    },
+    {
+      "tick": 270,
+      "new_size": 128,
+      "memory_mb": 554.0
+    },
+    {
+      "tick": 275,
+      "new_size": 130,
+      "memory_mb": 590.8527374267578
+    },
+    {
+      "tick": 280,
+      "new_size": 132,
+      "memory_mb": 629.5116577148438
+    },
+    {
+      "tick": 285,
+      "new_size": 134,
+      "memory_mb": 670.0347595214844
+    },
+    {
+      "tick": 290,
+      "new_size": 136,
+      "memory_mb": 712.48095703125
+    },
+    {
+      "tick": 295,
+      "new_size": 138,
+      "memory_mb": 756.9100799560547
+    },
+    {
+      "tick": 300,
+      "new_size": 140,
+      "memory_mb": 803.3828735351562
+    },
+    {
+      "tick": 305,
+      "new_size": 142,
+      "memory_mb": 851.9609985351562
+    },
+    {
+      "tick": 310,
+      "new_size": 144,
+      "memory_mb": 902.70703125
+    },
+    {
+      "tick": 315,
+      "new_size": 146,
+      "memory_mb": 955.6844635009766
+    },
+    {
+      "tick": 320,
+      "new_size": 148,
+      "memory_mb": 1010.9577026367188
+    },
+    {
+      "tick": 325,
+      "new_size": 150,
+      "memory_mb": 1068.5920715332031
+    },
+    {
+      "tick": 330,
+      "new_size": 152,
+      "memory_mb": 1128.65380859375
+    },
+    {
+      "tick": 335,
+      "new_size": 154,
+      "memory_mb": 1191.2100677490234
+    },
+    {
+      "tick": 340,
+      "new_size": 156,
+      "memory_mb": 1256.3289184570312
+    },
+    {
+      "tick": 345,
+      "new_size": 158,
+      "memory_mb": 1324.079345703125
+    },
+    {
+      "tick": 350,
+      "new_size": 160,
+      "memory_mb": 1394.53125
+    },
+    {
+      "tick": 355,
+      "new_size": 162,
+      "memory_mb": 1467.7554473876953
+    },
+    {
+      "tick": 360,
+      "new_size": 164,
+      "memory_mb": 1543.8236694335938
+    },
+    {
+      "tick": 365,
+      "new_size": 166,
+      "memory_mb": 1622.8085632324219
+    },
+    {
+      "tick": 370,
+      "new_size": 168,
+      "memory_mb": 1704.78369140625
+    },
+    {
+      "tick": 375,
+      "new_size": 170,
+      "memory_mb": 1789.8235321044922
+    },
+    {
+      "tick": 380,
+      "new_size": 172,
+      "memory_mb": 1878.0034790039062
+    },
+    {
+      "tick": 385,
+      "new_size": 174,
+      "memory_mb": 1969.3998413085938
+    }
+  ],
+  "history": [
+    {
+      "tick": 100,
+      "entity_count": 100,
+      "total_energy": 1003744,
+      "grid_size": 60,
+      "expansion_count": 20,
+      "memory_mb": 22.247314453125,
+      "gamma_sum": 1950.0,
+      "gamma_max": 954.0,
+      "gamma_min": 0.0,
+      "effective_gamma_mean": 9.463079431632893e-06,
+      "gradient_max": 477.12786546166006,
+      "r_mean": 11.141503861841766,
+      "r_mean_norm": 0.3713834620613922,
+      "r_std": 3.2964968825353087,
+      "nonzero_count": 12167,
+      "skip_rate": 0.6138613861386139,
+      "dilation_mean": 0.36882342590567546,
+      "jitter_mean": 0.9999905369205684,
+      "jitter_std": 0.0022985281553228047,
+      "tick_rate": 20.456532920681713
+    },
+    {
+      "tick": 200,
+      "entity_count": 200,
+      "total_energy": 2027258,
+      "grid_size": 100,
+      "expansion_count": 40,
+      "memory_mb": 198.3642578125,
+      "gamma_sum": 4039.0,
+      "gamma_max": 1559.0,
+      "gamma_min": 0.0,
+      "effective_gamma_mean": 2.5907633098139834e-06,
+      "gradient_max": 780.6365991932482,
+      "r_mean": 11.141503861841766,
+      "r_mean_norm": 0.22283007723683532,
+      "r_std": 3.2964968825353087,
+      "nonzero_count": 12167,
+      "skip_rate": 0.7990547263681592,
+      "dilation_mean": 0.2025546447973145,
+      "jitter_mean": 0.9999974092366902,
+      "jitter_std": 0.001145411606789366,
+      "tick_rate": 11.622740979609665
+    },
+    {
+      "tick": 300,
+      "entity_count": 300,
+      "total_energy": 3051538,
+      "grid_size": 140,
+      "expansion_count": 60,
+      "memory_mb": 805.999755859375,
+      "gamma_sum": 6869.0,
+      "gamma_max": 2605.0,
+      "gamma_min": 0.0,
+      "effective_gamma_mean": 9.609519705880707e-07,
+      "gradient_max": 1307.5759060184614,
+      "r_mean": 11.141503861841766,
+      "r_mean_norm": 0.1591643408834538,
+      "r_std": 3.2964968825353087,
+      "nonzero_count": 12167,
+      "skip_rate": 0.8478626799557032,
+      "dilation_mean": 0.15728856610045686,
+      "jitter_mean": 0.9999990390480294,
+      "jitter_std": 0.0006886257699130524,
+      "tick_rate": 3.6480688922580327
+    }
+  ],
+  "elapsed_seconds": 231.51793599128723,
+  "num_ticks": 390,
+  "ticks_per_second": 1.6845347136071434
+}

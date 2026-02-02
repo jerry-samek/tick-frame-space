@@ -1,0 +1,63 @@
+{
+  "test": "stability_comparison",
+  "v16_r_norm_mean": 0.2702365199064572,
+  "v16_r_norm_std": 0.037110906217779155,
+  "v16_variance_pct": 13.732750196244814,
+  "v15_3d_r_norm": 0.89,
+  "v15_3d_variance": 0.0,
+  "r_norm_lower": true,
+  "stability_similar": false,
+  "r_norm_history": [
+    {
+      "tick": 20,
+      "r_norm": 0.7947648526111211,
+      "grid_size": 28
+    },
+    {
+      "tick": 40,
+      "r_norm": 0.618220909500634,
+      "grid_size": 36
+    },
+    {
+      "tick": 60,
+      "r_norm": 0.5062782277530411,
+      "grid_size": 44
+    },
+    {
+      "tick": 80,
+      "r_norm": 0.42849232973174034,
+      "grid_size": 52
+    },
+    {
+      "tick": 100,
+      "r_norm": 0.3713834620613922,
+      "grid_size": 60
+    },
+    {
+      "tick": 120,
+      "r_norm": 0.3276912900541696,
+      "grid_size": 68
+    },
+    {
+      "tick": 140,
+      "r_norm": 0.2931974700484675,
+      "grid_size": 76
+    },
+    {
+      "tick": 160,
+      "r_norm": 0.26525715650060117,
+      "grid_size": 84
+    },
+    {
+      "tick": 180,
+      "r_norm": 0.2422066056922123,
+      "grid_size": 92
+    },
+    {
+      "tick": 200,
+      "r_norm": 0.22283007723683532,
+      "grid_size": 100
+    }
+  ],
+  "passed": false
+}

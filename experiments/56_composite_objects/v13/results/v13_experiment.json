@@ -1,0 +1,126 @@
+{
+  "config_name": "V13",
+  "grid_size": 100,
+  "params": {
+    "jitter_strength": 0.119,
+    "gamma_decay": 0.99,
+    "gamma_imprint_strength": 1.0
+  },
+  "final_stats": {
+    "entity_count": 1000,
+    "total_energy": 39424,
+    "gamma_sum": 252655.85417079105,
+    "r_mean": 19.72702277122685,
+    "r_mean_norm": 0.394540455424537,
+    "r_std": 7.608541293527064
+  },
+  "stability_metrics": {
+    "r_mean_norm_avg": 0.391970969238481,
+    "r_mean_norm_std": 0.0023561291297862666,
+    "drift": 0.0023561291297862666
+  },
+  "history": [
+    {
+      "tick": 100,
+      "entity_count": 100,
+      "total_energy": 12344,
+      "gamma_sum": 124998.10383901678,
+      "r_mean": 18.682091692230777,
+      "r_mean_norm": 0.3736418338446155,
+      "r_std": 7.116156504480459,
+      "nonzero_count": 2228
+    },
+    {
+      "tick": 200,
+      "entity_count": 200,
+      "total_energy": 17249,
+      "gamma_sum": 192897.11566046154,
+      "r_mean": 19.34508756699209,
+      "r_mean_norm": 0.3869017513398418,
+      "r_std": 7.490428105249041,
+      "nonzero_count": 2384
+    },
+    {
+      "tick": 300,
+      "entity_count": 300,
+      "total_energy": 22277,
+      "gamma_sum": 223103.9915130084,
+      "r_mean": 19.499255469313898,
+      "r_mean_norm": 0.38998510938627795,
+      "r_std": 7.541743012067534,
+      "nonzero_count": 2438
+    },
+    {
+      "tick": 400,
+      "entity_count": 400,
+      "total_energy": 24887,
+      "gamma_sum": 236151.3857523566,
+      "r_mean": 19.5207620691107,
+      "r_mean_norm": 0.39041524138221395,
+      "r_std": 7.516012069745136,
+      "nonzero_count": 2461
+    },
+    {
+      "tick": 500,
+      "entity_count": 500,
+      "total_energy": 28004,
+      "gamma_sum": 243919.2133300433,
+      "r_mean": 19.579801443232455,
+      "r_mean_norm": 0.3915960288646491,
+      "r_std": 7.567864038903678,
+      "nonzero_count": 2486
+    },
+    {
+      "tick": 600,
+      "entity_count": 600,
+      "total_energy": 31600,
+      "gamma_sum": 247556.42622041955,
+      "r_mean": 19.70232137003769,
+      "r_mean_norm": 0.3940464274007538,
+      "r_std": 7.636057659604243,
+      "nonzero_count": 2512
+    },
+    {
+      "tick": 700,
+      "entity_count": 700,
+      "total_energy": 34198,
+      "gamma_sum": 249893.25039435667,
+      "r_mean": 19.662547674020296,
+      "r_mean_norm": 0.3932509534804059,
+      "r_std": 7.59388884151415,
+      "nonzero_count": 2513
+    },
+    {
+      "tick": 800,
+      "entity_count": 800,
+      "total_energy": 36714,
+      "gamma_sum": 251184.246278823,
+      "r_mean": 19.64937419076636,
+      "r_mean_norm": 0.39298748381532717,
+      "r_std": 7.578459361387202,
+      "nonzero_count": 2520
+    },
+    {
+      "tick": 900,
+      "entity_count": 900,
+      "total_energy": 39767,
+      "gamma_sum": 252054.87552769008,
+      "r_mean": 19.700763602616146,
+      "r_mean_norm": 0.3940152720523229,
+      "r_std": 7.589248027685858,
+      "nonzero_count": 2528
+    },
+    {
+      "tick": 1000,
+      "entity_count": 1000,
+      "total_energy": 39424,
+      "gamma_sum": 252655.85417079105,
+      "r_mean": 19.72702277122685,
+      "r_mean_norm": 0.394540455424537,
+      "r_std": 7.608541293527064,
+      "nonzero_count": 2515
+    }
+  ],
+  "elapsed_seconds": 208.93857955932617,
+  "num_ticks": 1000
+}

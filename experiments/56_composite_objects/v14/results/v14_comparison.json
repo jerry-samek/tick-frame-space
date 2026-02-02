@@ -1,0 +1,26 @@
+{
+  "test": "decay_sensitivity_comparison",
+  "results": [
+    {
+      "gamma_decay": 0.99,
+      "skip_sensitivity": 0.010000000000000009,
+      "skip_rate": 0.7711627906976745,
+      "dilation_mean": 0.22522359210551965,
+      "gamma_max": 591.7342284714217
+    },
+    {
+      "gamma_decay": 0.95,
+      "skip_sensitivity": 0.050000000000000044,
+      "skip_rate": 0.8104097452934662,
+      "dilation_mean": 0.19428343271975165,
+      "gamma_max": 96.96180866848958
+    },
+    {
+      "gamma_decay": 0.9,
+      "skip_sensitivity": 0.09999999999999998,
+      "skip_rate": 0.795592469545958,
+      "dilation_mean": 0.19637586362036344,
+      "gamma_max": 37.13376196544844
+    }
+  ]
+}

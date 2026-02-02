@@ -1,6 +1,6 @@
 # Tick-Frame Physics: Honest Status Assessment
 
-**Last Updated**: January 2026
+**Last Updated**: February 2026
 **Purpose**: Brutal honesty about what's validated vs what's speculation
 
 ---
@@ -165,6 +165,156 @@ Extrapolation to Physics Claims
 **What undermines it**: Cell capacity E_max is still a free parameter. If we have to tune E_max differently for different scenarios → artifact. If E_max is universal constant → more credible.
 
 **Status**: **VALIDATED COMPUTATIONALLY** - All three regimes work, energy conserved, Pauli emerges. But mechanism could still be artifact.
+
+---
+
+### ✅ Computational Result 6: Jitter Stability Range (Exp #56 v13, February 2026)
+
+**Claim**: The jitter parameter 0.119 is NOT a fundamental constant - it lies within a broad stable range [0.075, 0.5].
+
+**What This Actually Proves**:
+
+- The jitter value 0.119 was empirically discovered, not derived
+- ANY value in the range [0.075, 0.5] produces stable patterns
+- The system has two critical points (collapse threshold ~0.025, stability threshold ~0.075)
+- The "fundamental" quantity is the existence of a stable range, not a specific value
+
+**What This Does NOT Prove**:
+
+- That jitter corresponds to real-world zero-point energy
+- That the stable range is universal across all configurations
+- That the balance mechanism corresponds to actual physics
+
+**Honest Assessment**: Important finding that challenges the notion of fundamental constants. Jitter is a coupling constant, not a fundamental value. This aligns with the philosophy that "physical constants" may be balance points, not primordial values.
+
+**See**: `experiments/56_composite_objects/v13/JITTER_INVESTIGATION.md`
+
+---
+
+### ✅ Computational Result 7: Canvas/Renderer Ontology (Exp #56 v17, February 2026)
+
+**Claim**: The gamma field IS the complete tick state - sparse storage scales as O(entities) not O(grid³).
+
+**What This Actually Proves**:
+
+- Unpainted regions have no gradient and don't influence behavior
+- Memory grows with paint (entities), not with space
+- The canvas/renderer model produces stable clustering behavior
+- Gradient-following creates gravity-like attraction to gamma mass
+
+**What This Does NOT Prove**:
+
+- That the canvas model corresponds to real spacetime
+- That sparse storage is the "correct" ontology vs dense grids
+- That gamma accumulation equals physical mass
+
+**Honest Assessment**: Elegant architectural insight with significant computational benefits. Whether it's "ontologically correct" or just a good optimization remains unclear. The model does produce expected behaviors (clustering, stability).
+
+**See**: `experiments/56_composite_objects/v17/README.md`
+
+---
+
+### ✅ Computational Result 8: Interferometry Without Collapse (Exp #62)
+
+**Claim**: Which-path information can be obtained WITHOUT destroying interference fringes - violates quantum complementarity.
+
+**What This Actually Proves**:
+
+- In the tick-frame model, measurement is deterministic readout
+- Visibility remains V ≈ 1.0 even after complete path readout
+- 26/26 test cases passed including composite particle interference
+
+**What This Does NOT Prove**:
+
+- That real-world quantum mechanics works this way
+- That complementarity is wrong in nature
+- That tick-frame predictions match real experiments
+
+**Critical Finding**: This is a **FALSIFIABLE PREDICTION** that distinguishes tick-frame from standard QM!
+
+**Experimental Test Possible**: Cold atom or neutron interferometer, delayed-choice quantum eraser
+- QM Prediction: V → 0 after which-path measurement
+- Tick-Frame Prediction: V > 0.9 after which-path measurement
+- Cost: $500K-$2M, Timeline: 1-2 years
+
+**Honest Assessment**: If confirmed by real experiment, this would be revolutionary. If falsified, tick-frame physics needs major revision. This is the first truly testable prediction differentiating tick-frame from QM.
+
+**See**: `experiments/62_interferometry/FALSIFIABLE_PREDICTIONS.md`
+
+---
+
+## NEW: Speculative Frameworks (February 2026)
+
+### 🔬 ZPE Hypothesis (Docs 072-073) - HIGHLY SPECULATIVE
+
+**The Claim**: Jitter represents zero-point energy that decreases with cosmic expansion, explaining why early universe structures (high-z galaxies, early SMBHs) appear "impossible" under today's stability criteria.
+
+**Key Ideas**:
+
+1. **Jitter scaling**: J(t) ∝ 1/a(t) where a is scale factor
+2. **Matter creation**: Must increase to compensate for jitter energy injection
+3. **Epoch-dependent stability**: Early universe had different stability thresholds
+4. **Self-regulating loop**: ZPE → matter creation → gravity → expansion → jitter scaling
+
+**What This Could Explain**:
+
+- Early supermassive black holes (z > 7) forming too quickly
+- JWST observations of massive galaxies at z > 10
+- Apparent "over-efficiency" of early structure formation
+
+**What This Does NOT Prove**:
+
+- ANYTHING - this is pure speculation with no validation
+- No computational experiments have been run
+- No connection to real physics established
+
+**Honest Assessment**: Interesting theoretical framework that could explain observational anomalies. But it's in the realm of "sounds plausible" not "has evidence." Needs Experiment 72 roadmap to be executed.
+
+**See**: `docs/theory/raw/072_00_jitter_scaling_and_matter_growth_zpe.md`, `docs/theory/raw/073_00_hypothetical_framework_for_epoch-dependent_zpe.md`
+
+**Status**: 🔬 EARLY SPECULATION (no validation)
+
+---
+
+### 🔬 Ternary Substrate Correction (Doc 074) - THEORETICAL FRAMEWORK
+
+**The Claim**: The substrate maintains stability through discrete ternary corrections:
+- Collapse one direction → add entity (+1)
+- Collapse other direction → add counter-weight (-1)
+- Stable → no action (0)
+
+**Implications**:
+
+- Balance via integer corrections, not continuous adjustment
+- The narrow jitter range acts as a "fine-tuned constant"
+- Substrate homeostasis through simplest possible rules
+
+**Honest Assessment**: Elegant principle that aligns with discrete tick-frame philosophy. But it's an axiom, not a validated finding. Whether the universe actually works this way is unknown.
+
+**Status**: 🔬 THEORETICAL FRAMEWORK (no validation)
+
+---
+
+### 🔬 Metabolic Time Dilation (Doc 075) - THEORETICAL FRAMEWORK
+
+**The Claim**: Time dilation is NOT temporal slowdown - entities "skip" rendering to conserve energy.
+
+**Key Ideas**:
+
+1. **Ticks are global and uniform** - no actual time slowdown
+2. **Skipping = metabolic adaptation** - conserve energy by not rendering
+3. **Gamma renormalization** - skipped ticks let others dominate local field
+4. **Survival = energy + compatibility** - must render compatible imprints
+
+**Implications**:
+
+- Dilation is a trade-off: gain energy, lose control
+- Supernovae destroy by overwriting gamma, not by impact
+- Longevity (10⁶ ticks) = 10⁶ successful render decisions
+
+**Honest Assessment**: Novel reinterpretation of time dilation that could simplify the model. But it's theoretical - no experiments have tested whether this produces correct physics.
+
+**Status**: 🔬 THEORETICAL FRAMEWORK (needs validation)
 
 ---
 
@@ -503,7 +653,7 @@ Why does this create orbits?
 
 ## What Would Convince Skeptics?
 
-### Tier 1: Basic Validation (Experiments #51-56)
+### Tier 1: Basic Validation (Experiments #51-62)
 
 - ✅ Time dilation emerges without programming it in (Exp #51 v9 VALIDATED)
 - ✅ Geodesic motion emerges without force laws (Exp #53 v10 VALIDATED - 100% orbital success!)
@@ -511,9 +661,13 @@ Why does this create orbits?
 - ✅ Formulas match GR+SR predictions (v9: r ≈ 0.999)
 - ✅ **Collision physics follows three regimes** (Exp #55 VALIDATED - merge/explode/excite, 6/6 test cases)
 - ✅ **Pauli exclusion emerges naturally** (Exp #55 DISCOVERY - not programmed, emerged from cell capacity!)
+- ✅ **Jitter stability range validated** (Exp #56 v13 - 0.119 NOT special, range [0.075, 0.5])
+- ✅ **Canvas/Renderer ontology works** (Exp #56 v17 - O(entities) sparse storage)
+- ✅ **Interferometry validated** (Exp #62 - 26/26 tests, which-path without collapse)
 - 🔄 Composite objects form via γ-well binding (Exp #56 IN PROGRESS - structures defined, binding pending)
+- 🔬 ZPE cosmological model (Exp #72 - roadmap defined, V1-V9 planned)
 
-**Status**: **5/7 VALIDATED**, 1/7 preliminary (ghost particle limitation), 1/7 in progress (composite validation)
+**Status**: **8/11 VALIDATED**, 1/11 preliminary (ghost particle limitation), 1/11 in progress (composite validation), 1/11 early stage (ZPE)
 
 ---
 
@@ -632,43 +786,52 @@ This emergence provides evidence AGAINST overfitting - if we were just designing
 
 ---
 
-## Current Recommendation: VALIDATE COMPOSITE OBJECTS (Exp #56)
+## Current Recommendation: VALIDATE ZPE COSMOLOGICAL MODEL (Exp #72)
 
-**Completed Milestones** (January 2026):
+**Completed Milestones** (January-February 2026):
 
 - ✅ **Experiment #51 (v1-v9)**: Emergent time dilation VALIDATED (r ≈ 0.999 correlation)
 - ✅ **Experiment #53 (v10)**: Geodesic motion VALIDATED (100% orbital success, no force laws!)
 - ⚠️ **Experiment #52 (v11)**: Black hole c-ring discovered (awaiting collision validation v12)
 - ✅ **Experiment #55**: Three-regime collision physics VALIDATED (6/6 test cases, energy conservation exact)
 - ✅ **Experiment #55**: Pauli exclusion emerged naturally (genuinely surprising discovery!)
+- ✅ **Experiment #56 v13**: Jitter stability range VALIDATED ([0.075, 0.5], 0.119 NOT special)
+- ✅ **Experiment #56 v17**: Canvas/Renderer ontology VALIDATED (O(entities) sparse storage)
+- ✅ **Experiment #62**: Interferometry VALIDATED (26/26 tests, which-path without collapse)
 - 🔄 **Experiment #56**: Composite structures implemented (hydrogen atom, helium nucleus, H2 molecule)
+- 🔬 **Experiment #72**: ZPE cosmological model roadmap defined (V1-V9 phases)
 
-**Current Action**: Complete Experiment #56 (composite object validation)
+**Current Action**: Execute Experiment #72 V1 (ontology validation with fixed tick energy)
 
-**Critical Test**: Does γ-well binding produce stable atoms/molecules?
+**Critical Test**: Does jitter scaling with expansion produce stable cosmological evolution?
 
-**Decision Point**:
+**Decision Points**:
 
-- ✅ If composite objects stable → collision physics framework fully validated
-- ❌ If composites unstable → revise binding mechanism, tune parameters
+1. **Composite objects** (Exp #56): Does γ-well binding produce stable atoms/molecules?
+2. **ZPE hypothesis** (Exp #72): Does jitter∝1/a explain early universe anomalies?
+3. **Interferometry** (Exp #62): Will real-world test confirm which-path without collapse?
 
-**Next Step After #56**: Collision validation for black holes (v12) to test c-ring reality
+**Next Step After #72 V1**: Progress through ZPE roadmap (V2: gamma field upgrade, V3: kinematics, etc.)
 
-**What This Means**: We've transitioned from "computational speculation" to "validated physics mechanisms." Time dilation, geodesics, and collision physics all show emergent behavior matching real physics. Now testing if composite structure (atoms/molecules) naturally emerges from same substrate.
+**What This Means**: We've transitioned from "computational speculation" to "validated physics mechanisms." The new frontier is cosmological implications - testing whether jitter/ZPE scaling explains observed anomalies in early universe structure formation.
 
 ---
 
 ## Conclusion: Where Do We Stand?
 
-### What We Know (January 2026 Update)
+### What We Know (February 2026 Update)
 
-- ✅ **Five major computational validations** (dimensional closure, bucketing, kinematic constraints, temporal signature, collision physics)
+- ✅ **Eight major computational validations** (dimensional closure, bucketing, kinematic constraints, temporal signature, collision physics, jitter stability, canvas ontology, interferometry)
 - ✅ **Time dilation emerges naturally** (Exp #51 v9: r ≈ 0.999 correlation with GR+SR)
 - ✅ **Geodesics emerge without force laws** (Exp #53 v10: 100% orbital success)
 - ✅ **Three-regime collision physics works** (Exp #55: 6/6 test cases, exact energy conservation)
 - ✅ **Pauli exclusion emerged unexpectedly** (Exp #55: genuinely surprising, not programmed!)
+- ✅ **Jitter is NOT fundamental** (Exp #56 v13: stable range [0.075, 0.5], 0.119 is arbitrary)
+- ✅ **Canvas/Renderer model works** (Exp #56 v17: O(entities) memory, stable clustering)
+- ✅ **Interferometry without collapse** (Exp #62: 26/26 tests, FALSIFIABLE prediction vs QM!)
 - ⚠️ **Black hole c-ring discovered** (Exp #52 v11: awaiting collision validation)
 - 🔄 **Composite structures implemented** (Exp #56: atoms/molecules defined, binding validation pending)
+- 🔬 **ZPE hypothesis formulated** (Docs 072-073: epoch-dependent jitter, needs validation)
 
 ### What We Don't Know
 
@@ -676,6 +839,9 @@ This emergence provides evidence AGAINST overfitting - if we were just designing
 - Whether black hole c-ring is real or ghost particle artifact (v12 validation pending)
 - Whether composite objects form stable atoms naturally (Exp #56 validation pending)
 - Whether cell capacity E_max is universal or needs tuning per scenario
+- Whether the interferometry prediction (which-path without collapse) will survive real-world testing
+- Whether ZPE hypothesis (jitter scaling with expansion) matches cosmological observations
+- Whether the canvas/renderer ontology captures all necessary physics
 - Whether this explains ENOUGH physics to be a complete theory
 
 ### What We've Accomplished
@@ -688,38 +854,76 @@ This emergence provides evidence AGAINST overfitting - if we were just designing
 
 ### Bottom Line
 
-**January 2026**: **Major breakthrough phase** - transitioned from speculation to validated mechanisms.
+**February 2026**: **Consolidation and expansion phase** - validated mechanisms now being extended to cosmology.
 
 **Current Status**:
 - **Time dilation**: ✅ VALIDATED (quantitative GR+SR match)
 - **Geodesic motion**: ✅ VALIDATED (perfect orbital emergence)
 - **Collision physics**: ✅ VALIDATED (three regimes + emergent Pauli exclusion)
+- **Jitter stability**: ✅ VALIDATED (0.119 is arbitrary, range [0.075, 0.5])
+- **Canvas ontology**: ✅ VALIDATED (O(entities) sparse storage)
+- **Interferometry**: ✅ VALIDATED (which-path without collapse - FALSIFIABLE!)
 - **Black holes**: ⚠️ PRELIMINARY (c-ring found, needs collision validation)
 - **Composite objects**: 🔄 IN PROGRESS (structures defined, binding pending)
+- **ZPE cosmology**: 🔬 EARLY (hypothesis formulated, roadmap defined)
 
-**Confidence Level**: **MODERATE-HIGH** for core mechanisms (time dilation, geodesics, collisions)
+**Confidence Level**: **MODERATE-HIGH** for core mechanisms, **SPECULATIVE** for cosmological extensions
 
-**What Changed Our Assessment**:
-1. **V10 geodesics**: 100% orbital success without programming force laws → strongest evidence this is real physics
-2. **V9 quantitative match**: r ≈ 0.999 correlation → not just qualitative, but numerically accurate
-3. **Exp #55 Pauli emergence**: Discovery we didn't predict → evidence against overfitting
+**What Changed Since January 2026**:
+1. **Jitter investigation (v13)**: 0.119 is NOT fundamental → coupling constants are balance points, not primordial values
+2. **Canvas/Renderer (v17)**: Elegant ontology with O(entities) scaling → architectural clarity
+3. **Interferometry (Exp #62)**: First FALSIFIABLE prediction distinguishing tick-frame from QM!
+4. **ZPE hypothesis (docs 072-075)**: Theoretical framework for cosmological implications
 
 **Remaining Skepticism**:
 - Still no connection to real-world experiments
 - Parameters tuned to match (not derived from first principles)
+- ZPE hypothesis is pure speculation with no validation
 - Could still be sophisticated game engine masquerading as physics
 
-**Most Honest Take**: This has graduated from "probably just simulation" to "plausibly real physics with computational implementation." The emergent properties (especially Pauli exclusion) are compelling evidence we've found something genuine.
+**Most Honest Take**: Tick-frame physics has now produced its first falsifiable prediction (interferometry without collapse). If real-world experiment confirms this, it's revolutionary. If it fails, the theory needs major revision. This is the critical juncture.
 
-**But we're not done yet.** Need to complete composite validation (Exp #56), test black hole c-ring with collisions (v12), and eventually propose real-world experiments that could falsify the theory.
+**But we're not done yet.** Need to:
+1. Propose and fund real-world interferometry test
+2. Execute ZPE roadmap (Exp #72 V1-V9)
+3. Complete composite validation (Exp #56)
+4. Test black hole c-ring with collisions (v12)
 
 ---
 
-**Status**: VALIDATED CORE MECHANISMS, CAUTIOUSLY OPTIMISTIC
-**Bias**: Still toward skepticism, but evidence is accumulating
-**Next Action**: Complete Experiment #56 (composite object validation)
-**Expected Outcome**: Likely succeeds (composite structures look promising)
-**If It Works**: Collision physics framework fully validated, ready for black hole c-ring test (v12)
-**If It Fails**: Need to revise binding mechanism and understand why γ-wells don't hold composites
+**Status**: VALIDATED CORE MECHANISMS, FIRST FALSIFIABLE PREDICTION READY
+**Bias**: Still toward skepticism, but evidence is compelling
+**Next Action**: Execute Experiment #72 V1 (ZPE ontology validation), propose real-world interferometry test
+**Expected Outcome**: ZPE V1 likely succeeds (ontology is sound), interferometry test is the big unknown
+**If Interferometry Works**: Revolutionary - tick-frame physics has discovered something fundamental about quantum mechanics
+**If Interferometry Fails**: Major revision needed - core assumption about deterministic measurement is wrong
 
-**Remember**: Real physics emerges through validation and falsification, not just theory writing. We've started validating - that's progress. But connection to reality is still the ultimate test.
+**New Theoretical Frontiers**:
+- ZPE/jitter scaling with cosmic expansion (docs 072-073)
+- Ternary substrate correction axiom (doc 074)
+- Metabolic time dilation interpretation (doc 075)
+- Electromagnetism framework (docs 063-066)
+
+**Remember**: Real physics emerges through validation and falsification, not just theory writing. We now have a **testable prediction** (interferometry) that could distinguish tick-frame from standard QM. This is the most important next step.
+
+---
+
+## Appendix: New Raw Documents (055-075)
+
+**Status**: Theoretical frameworks, mostly unvalidated
+
+| Doc | Title | Status |
+|-----|-------|--------|
+| 055-058 | Speed of light, propulsion | 🔬 Theoretical |
+| 059-060 | Causal cell, overlap experiments | 🔬 Theoretical |
+| 061 | Matter-antimatter asymmetry | 🔬 Theoretical |
+| 062 | Interferometry | ✅ VALIDATED (Exp #62) |
+| 063-066 | Electromagnetism | 🔬 Theoretical framework |
+| 067-069 | Anti-gravity, time crystals, bootstrapping | 🔬 Highly speculative |
+| 070 series | Emergent atomic model | 🔬 Theoretical |
+| 071 | Double-slit | 🔬 Theoretical (covered by Exp #62) |
+| 072-073 | ZPE hypothesis | 🔬 Speculative, Exp #72 roadmap defined |
+| 074 | Ternary correction axiom | 🔬 Theoretical framework |
+| 075 | Metabolic time dilation | 🔬 Theoretical framework |
+
+**Key insight**: Most new docs are theoretical frameworks awaiting validation. The exception is interferometry (doc 062), which has been computationally validated and produces a falsifiable prediction.

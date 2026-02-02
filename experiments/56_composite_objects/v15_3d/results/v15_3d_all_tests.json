@@ -1,0 +1,104 @@
+{
+  "gamma_test": {
+    "test": "gamma_accumulation_3d",
+    "gamma_growing": true,
+    "effective_bounded": true,
+    "jitter_inverse": 1.0,
+    "gamma_history": [
+      {
+        "tick": 30,
+        "gamma_sum": 377.0,
+        "gamma_max": 105.0,
+        "effective_gamma_mean": 0.00022979047619047616,
+        "jitter_mean": 0.9997702095238096
+      },
+      {
+        "tick": 60,
+        "gamma_sum": 1001.0,
+        "gamma_max": 441.0,
+        "effective_gamma_mean": 0.0001452698412698413,
+        "jitter_mean": 0.9998547301587302
+      },
+      {
+        "tick": 90,
+        "gamma_sum": 1728.0,
+        "gamma_max": 845.0,
+        "effective_gamma_mean": 0.00013087810650887576,
+        "jitter_mean": 0.9998691218934911
+      },
+      {
+        "tick": 120,
+        "gamma_sum": 2414.0,
+        "gamma_max": 1233.0,
+        "effective_gamma_mean": 0.00012530089213300892,
+        "jitter_mean": 0.999874699107867
+      },
+      {
+        "tick": 150,
+        "gamma_sum": 2896.0,
+        "gamma_max": 1417.0,
+        "effective_gamma_mean": 0.00013080028228652083,
+        "jitter_mean": 0.9998691997177135
+      }
+    ],
+    "passed": 1.0
+  },
+  "jitter_test": {
+    "test": "jitter_variation_3d",
+    "jitter_by_position": {
+      "origin": {
+        "position": [
+          12,
+          12,
+          12
+        ],
+        "effective_gamma": 0.15431472081218275,
+        "jitter": 0.8456852791878172
+      },
+      "near_origin": {
+        "position": [
+          15,
+          15,
+          15
+        ],
+        "effective_gamma": 0.0,
+        "jitter": 1.0
+      },
+      "mid_range": {
+        "position": [
+          20,
+          20,
+          20
+        ],
+        "effective_gamma": 0.0,
+        "jitter": 1.0
+      },
+      "edge": {
+        "position": [
+          24,
+          24,
+          24
+        ],
+        "effective_gamma": 0.0,
+        "jitter": 1.0
+      }
+    },
+    "jitter_varies": true,
+    "passed": true
+  },
+  "emergence_test": {
+    "test": "emergence_validation_3d",
+    "r_stable": 1.0,
+    "skip_stable": 1.0,
+    "r_bounded": 0.0,
+    "passed": 0.0
+  },
+  "comparison_test": {
+    "test": "2d_vs_3d_comparison",
+    "variance_3d": 2.652268220223274e-05,
+    "theory_variance_2d": 0.22,
+    "theory_variance_3d": 0.05,
+    "is_3d_more_stable": 1.0
+  },
+  "all_passed": false
+}
