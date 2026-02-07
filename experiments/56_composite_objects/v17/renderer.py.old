@@ -1,0 +1,268 @@
+"""
+V17 Renderer - Stateless entity that paints on the canvas.
+
+The renderer is the "head" of an entity - a stateless temporal process
+that only sees the current canvas and decides where to paint next.
+
+Ontological principles:
+1. Renderer is stateless - it only sees the current canvas
+2. The only "memory" is the accumulated paint on the canvas
+3. Position is where we last painted (for tracking, not identity)
+4. Patterns are gamma-bound, not position-bound
+
+Key behaviors:
+- Gradient pulls renderer toward higher gamma (like gravity toward mass)
+- Skip probability based on gradient magnitude (time dilation resistance)
+- When gradient is significant: move in gradient direction
+- When gradient is ~zero: small random jitter
+
+Author: V17 Implementation
+Date: 2026-02-01
+"""
+
+import numpy as np
+from typing import Tuple, Optional
+
+try:
+    from .canvas import Canvas3D, Pos3D
+except ImportError:
+    from canvas import Canvas3D, Pos3D
+
+
+class Renderer:
+    """Stateless renderer - decides where to paint based on canvas.
+
+    The renderer represents an entity's temporal process. It:
+    1. Reads the current canvas state (gamma field)
+    2. Decides whether to skip this tick (time dilation resistance)
+    3. If not skipping: follows gradient toward higher gamma, or jitters if flat
+    4. Paints at new position
+
+    Movement model:
+    - Gradient pulls renderer toward higher gamma (like gravity)
+    - Skip mechanism is the resistance (time dilation)
+    - Balance determines stable position near gamma concentrations
+
+    The renderer is conceptually "stateless" - it doesn't remember
+    its history, only where it last painted. The canvas IS the memory.
+    """
+
+    def __init__(self, entity_id: int, seed: int):
+        """Initialize renderer.
+
+        Args:
+            entity_id: Unique identifier for this renderer
+            seed: Random seed (combined with entity_id for uniqueness)
+        """
+        self.entity_id = entity_id
+        self.rng = np.random.default_rng(seed + entity_id * 1000)
+
+        # Position is where we last painted (for pattern tracking)
+        self.last_paint_pos: Pos3D = (0, 0, 0)
+
+        # Statistics
+        self.total_skips: int = 0
+        self.total_acts: int = 0
+        self.skip_accumulator: int = 0
+
+    @property
+    def time_dilation_factor(self) -> float:
+        """Time dilation factor = acts / total_ticks.
+
+        Returns 1.0 if no skipping (no dilation).
+        Returns < 1.0 if renderer has been skipping (time dilated).
+        """
+        total = self.total_acts + self.total_skips
+        if total == 0:
+            return 1.0
+        return self.total_acts / total
+
+    def render_tick(
+        self,
+        canvas: Canvas3D,
+        skip_sensitivity: float = 0.01,
+        jitter_strength: float = 0.1,
+        gradient_threshold: float = 0.01,
+        gamma_imprint: float = 1.0
+    ) -> Optional[Pos3D]:
+        """Decide where to paint this tick. Returns None if skipped.
+
+        The rendering process:
+        1. Compute gradient at current position
+        2. Compute skip probability from gradient magnitude (resistance)
+        3. If skipped, return None (time dilation)
+        4. If gradient significant: move in gradient direction (toward higher gamma)
+        5. If gradient ~zero: small random jitter
+        6. Paint on canvas
+        7. Return new position
+
+        Args:
+            canvas: The current canvas state
+            skip_sensitivity: Probability per unit gradient
+            jitter_strength: Probability of random step when gradient ~0
+            gradient_threshold: Below this magnitude, use jitter instead of gradient
+            gamma_imprint: Strength of paint
+
+        Returns:
+            New paint position, or None if tick was skipped
+        """
+        # 1. Get gradient at current position
+        gradient = canvas.get_gradient(self.last_paint_pos)
+        gradient_mag = np.sqrt(gradient[0]**2 + gradient[1]**2 + gradient[2]**2)
+
+        # 2. Skip check - resist the pull via time dilation
+        skip_prob = min(gradient_mag * skip_sensitivity, 0.9)
+
+        if self.rng.random() < skip_prob:
+            # Skip this tick (time dilation)
+            self.skip_accumulator += 1
+            self.total_skips += 1
+            return None
+
+        # 3. Entity acts this tick
+        self.total_acts += 1
+        self.skip_accumulator = 0
+
+        # 4. Movement decision
+        if gradient_mag > gradient_threshold:
+            # Follow gradient (move toward higher gamma)
+            # Take one step in the gradient direction
+            step = (
+                int(np.sign(gradient[0])) if gradient[0] != 0 else 0,
+                int(np.sign(gradient[1])) if gradient[1] != 0 else 0,
+                int(np.sign(gradient[2])) if gradient[2] != 0 else 0,
+            )
+            new_pos = (
+                self.last_paint_pos[0] + step[0],
+                self.last_paint_pos[1] + step[1],
+                self.last_paint_pos[2] + step[2],
+            )
+        else:
+            # No significant gradient - small random jitter
+            jitter = self._sample_small_jitter(jitter_strength)
+            new_pos = (
+                self.last_paint_pos[0] + jitter[0],
+                self.last_paint_pos[1] + jitter[1],
+                self.last_paint_pos[2] + jitter[2],
+            )
+
+        # 5. Paint on canvas
+        canvas.paint(new_pos, gamma_imprint)
+
+        # Update last paint position
+        self.last_paint_pos = new_pos
+
+        return new_pos
+
+    def _sample_small_jitter(self, strength: float) -> Tuple[int, int, int]:
+        """Sample small random jitter when gradient is near zero.
+
+        Lower probability of movement than before - only used when
+        there's no gradient to follow.
+
+        Args:
+            strength: Probability of random step in each dimension
+
+        Returns:
+            (dx, dy, dz) - integer offset in each dimension
+        """
+        jitter = []
+        for _ in range(3):
+            r = self.rng.random()
+            if r < strength:
+                jitter.append(self.rng.choice([-1, 1]))
+            else:
+                jitter.append(0)
+
+        return tuple(jitter)
+
+    def set_position(self, pos: Pos3D):
+        """Set current position (for initialization).
+
+        Args:
+            pos: New position
+        """
+        self.last_paint_pos = pos
+
+    def get_statistics(self) -> dict:
+        """Get renderer statistics.
+
+        Returns:
+            Dict with renderer stats
+        """
+        return {
+            "entity_id": self.entity_id,
+            "position": self.last_paint_pos,
+            "total_acts": self.total_acts,
+            "total_skips": self.total_skips,
+            "time_dilation": self.time_dilation_factor,
+        }
+
+    def __repr__(self) -> str:
+        return (
+            f"Renderer(id={self.entity_id}, "
+            f"pos={self.last_paint_pos}, "
+            f"dilation={self.time_dilation_factor:.2f})"
+        )
+
+
+if __name__ == "__main__":
+    print("V17 Renderer Demo")
+    print("=" * 70)
+
+    # Create canvas
+    canvas = Canvas3D()
+
+    # Create renderer
+    renderer = Renderer(entity_id=1, seed=42)
+    print(f"Created: {renderer}")
+    print()
+
+    # Simulate ticks
+    print("Simulating 20 ticks...")
+    print("-" * 40)
+
+    for tick in range(1, 21):
+        result = renderer.render_tick(
+            canvas,
+            skip_sensitivity=0.01,
+            jitter_strength=0.1,
+            gradient_threshold=0.01,
+            gamma_imprint=1.0
+        )
+
+        if result is None:
+            print(f"  Tick {tick:2d}: SKIPPED")
+        else:
+            print(f"  Tick {tick:2d}: painted at {result}")
+
+    print()
+    print(f"Final state: {renderer}")
+    print()
+
+    # Statistics
+    print("Renderer statistics:")
+    stats = renderer.get_statistics()
+    for k, v in stats.items():
+        if isinstance(v, float):
+            print(f"  {k}: {v:.4f}")
+        else:
+            print(f"  {k}: {v}")
+    print()
+
+    # Canvas state
+    print("Canvas state:")
+    canvas_stats = canvas.get_statistics()
+    for k, v in canvas_stats.items():
+        if isinstance(v, float):
+            print(f"  {k}: {v:.4f}")
+        else:
+            print(f"  {k}: {v}")
+    print()
+
+    # Visualization
+    print("Canvas XY slice at z=0:")
+    print(canvas.visualize_slice_ascii("xy", 0, 15))
+    print()
+
+    print("=" * 70)

@@ -69,6 +69,21 @@ Emergent Pauli Exclusion:
   If E_total + E_overlap > E_max  →  rejection/excitation (forced to different modes)
 ```
 
+### Gamma Field Foundations (Ch10-Ch13)
+
+```
+Gamma Field:          γ(x, t) — scalar field over discrete lattice, updated each tick
+Entity Energy Budget: E_t = E_bind + E_move + E_emit
+Gravity (cost grad):  a = -∇C(x)  where C(x) = movement cost at position x
+EM Decomposition:     W = W_radial + W_tangential  (gravity + magnetism)
+Charge (lag-shear):   Q = handedness of imprint shear (geometric, not intrinsic)
+Curvature Duality:    Well ≡ Hill (same geometry, dual interpretation)
+Rising Hill:          Entity doesn't climb; hill rises beneath via energy accumulation
+Terminal Hill:        Black hole = maximal curvature, perfect coherence, self-sustaining
+Existence Condition:  E_bind > E_dissolution  (entity persists iff binding exceeds dissipation)
+Cooperation:          N cooperating > N isolated (collective hill-raising is geometrically favored)
+```
+
 ### Gravitational Time Dilation (Exp #51 v9 - January 2026)
 
 ```
@@ -80,6 +95,18 @@ Emergent Pauli Exclusion:
 
 γ_total = γ_grav × γ_SR         [Combined effects - EMERGENT, not programmed!]
 ```
+
+---
+
+## 7 Gamma Field Principles (from Ch10)
+
+1. **Temporal Surfing**: Entity recreates itself each tick; existence = ongoing process
+2. **Gamma Attraction**: Entities cluster inside the field; outside = no gradients = no existence
+3. **Existential Drag**: Field interaction imposes cost (drag) but also provides persistence gradients
+4. **Rotational Persistence**: Angular momentum as stable imprint mode; rotation resists dissipation
+5. **Gamma Slingshot**: Steep gradients can accelerate and redirect entities into new orbits
+6. **Existential Boundary**: Outside the gamma field, gradients → 0; leaving = ceasing to exist
+7. **Compatibility Maximization**: Entities move/rotate/imprint to maximize signature-field compatibility
 
 ---
 
@@ -240,12 +267,15 @@ sensitivity).
 - **Philosophy**: Ch4 (Observer), Ch5 (Free Will)
 - **Math/Physics**: Ch7 (Formalization)
 - **Meta**: Ch8 (Integration & Falsification)
+- **Gamma Field**: Ch9 (Furrow/Dark Matter), Ch10 (Foundations), Ch11 (Entity Physics)
+- **Curvature/EM**: Ch12 (Electromagnetism & Curvature Geometry)
+- **Life/Ontology**: Ch13 (Hill Ontology — Existence to Life)
 
 ### By Validation Status
 
 - **Validated**: Ch1, Ch2, Ch6 + Experiments 15, 44, 46_01, 50
-- **Partial**: Ch3, Ch7
-- **Speculative**: Ch4, Ch5
+- **Partial**: Ch3, Ch7, Ch11 (Exp #51 for gravity, Exp #53 for geodesics)
+- **Speculative**: Ch4, Ch5, Ch9, Ch10, Ch12, Ch13
 
 ### Key References
 
@@ -304,6 +334,10 @@ addressing, not storage.
 5. **Imbalance validation**: Does expansion coupling create predicted asymmetry? (Ch3 §4, Ch8 §4)
 6. **QFT formulation**: How to do quantum field theory on tick-lattice? (Ch7 §10)
 7. **Gravitational constant G**: Is it derivable from substrate expansion rate λ? (Ch7 §8)
+8. **Scalar vs tensor γ-field**: Does EM unification require tensor structure? (Ch10, Ch12)
+9. **Well-to-hill transition**: Under what conditions is the hill interpretation required? (Ch12 §6-§10)
+10. **Charge quantization**: How does discrete charge arise from lag-flow asymmetry? (Ch12 §4)
+11. **Dark matter**: Can gamma-field fossil geometry reproduce rotation curves? (Ch9 §3-§5)
 
 ---
 
@@ -322,8 +356,9 @@ addressing, not storage.
 
 ---
 
-**Document Version**: 2.0
-**Last Updated**: January 18, 2026
+**Document Version**: 2.1
+**Last Updated**: February 2026
 **Status**: Living reference (updates with framework)
-**Major Update**: Added Tier 1 experimental results (Exp #51, 53, 55, 56), collision physics formulas, gravitational time dilation equations
+**Major Update v2.1**: Added gamma field formulas (Ch10-Ch13), 7 principles, expanded navigation and open questions
+**Major Update v2.0**: Added Tier 1 experimental results (Exp #51, 53, 55, 56), collision physics formulas, gravitational time dilation equations
 **Companion Documents**: [README](README.md) | [Glossary](glossary.md) | [Experiment Index](experiment_index.md) | [Honest Status](honest_status.md)

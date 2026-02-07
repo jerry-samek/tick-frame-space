@@ -12,9 +12,9 @@ This document consolidates open questions from across the tick-frame physics fra
 - **Type** (Theoretical / Experimental / Implementation)
 - **Status** (Active / Speculative / Deferred)
 
-**Total Open Questions**: 32+ (down from 35+ - 3 answered in January 2026)
+**Total Open Questions**: 39+ (32 original + 7 new gamma-field questions from Ch9-Ch13)
 
-**Research Areas**: 8 major domains
+**Research Areas**: 10 major domains
 
 ---
 
@@ -873,7 +873,139 @@ mass?
 
 ---
 
-## IX. Rendering and Visualization
+## IX. Gamma Field Theory
+
+### Critical Questions
+
+#### Q9.5: Is the gamma field a scalar field or a tensor field?
+
+**Current Status**: Ch10 treats γ(x,t) as scalar. But EM unification (Ch12) decomposes curvature into radial and
+tangential components, suggesting tensor structure.
+
+**Question**: Does the gamma field require tensor representation to accommodate electromagnetism?
+
+**Sub-questions**:
+
+- Can a scalar field support the radial/tangential decomposition needed for EM unification?
+- Does the hill model require directional (tensor) curvature?
+- What is the minimal mathematical structure needed?
+
+**Implications**:
+
+- If scalar: Simpler implementation, but EM unification may be approximate
+- If tensor: Richer physics, but much harder to simulate
+
+**Difficulty**: High (requires mathematical physics)
+
+**Related**: Ch10 (scalar definition), Ch12 §3 (EM decomposition), Ch12 §7 (curvature duality)
+
+---
+
+#### Q9.6: Can the well-to-hill transition be made rigorous?
+
+**Current Status**: Ch12 §6-§10 argues that well and hill are dual interpretations of the same geometry, but the
+energetic consequences differ radically. The hill interpretation (entities gain surplus from curvature) is preferred.
+
+**Question**: Under what precise conditions does the well interpretation break down and the hill interpretation become
+necessary?
+
+**Hypotheses**:
+
+- **Frame-dependent**: Well and hill are always dual; choice is conventional
+- **Energy-dependent**: Below some threshold → well behavior; above → hill behavior
+- **Topology-dependent**: The transition depends on global field structure, not local curvature
+
+**Difficulty**: High (foundational theoretical question)
+
+**Related**: Ch12 §6 (debate), Ch12 §7 (duality), Ch12 §8 (hill energetics)
+
+---
+
+### High Priority Questions
+
+#### Q9.7: Does the gamma field predict dark matter distribution?
+
+**Current Status**: Ch9 §3-§5 proposes dark matter as frozen gamma-field geometry — fossil imprints from early universe
+expansion. No quantitative prediction yet.
+
+**Question**: Can gamma-field dynamics reproduce observed dark matter halos and large-scale structure?
+
+**Proposed Test**: Simulate gamma-field evolution with expansion, check if fossil geometry matches rotation curve data.
+
+**Difficulty**: Very High (requires cosmological simulation and observational comparison)
+
+**Related**: Ch9 §3-§5, Ch10 (field dynamics), Exp #80 (gamma-field rendering)
+
+---
+
+#### Q9.8: How does charge arise from lag-flow asymmetry?
+
+**Current Status**: Ch12 §4 proposes charge as geometric handedness of imprint shear. This is qualitative; no
+mechanism produces discrete charge values (+1, -1, 0).
+
+**Question**: What gamma-field geometry produces quantized charge?
+
+**Sub-questions**:
+
+- Why is charge quantized (not continuous)?
+- How does charge conservation emerge from field dynamics?
+- Can fractional charges (quarks) arise from partial shear configurations?
+
+**Difficulty**: Very High (requires deep field-theory connection)
+
+**Related**: Ch12 §4 (charge definition), Ch11 §2 (photon), Ch12 §5 (EM interactions)
+
+---
+
+#### Q9.9: Can the hill ontology of life be experimentally tested?
+
+**Current Status**: Ch13 §7 proposes 10 axioms for life as self-reinforcing slow-time structure. These are
+philosophical/geometric, not yet connected to measurable quantities.
+
+**Question**: Is there a measurable quantity (e.g., local time dilation, entropy production rate) that distinguishes
+living from non-living matter in gamma-field terms?
+
+**Proposed Test**: Compare local gamma-field properties of biological vs non-biological systems in simulation.
+
+**Difficulty**: Very High (requires bridge between physics and biology)
+
+**Related**: Ch13 §7 (10 axioms), Ch13 §6 (cooperation), Ch13 §8 (reproduction)
+
+---
+
+### Medium Priority Questions
+
+#### Q9.10: What is the gamma-field analogue of the electromagnetic spectrum?
+
+**Current Status**: Ch9 §8.5 hypothesizes that all wave phenomena are gamma-field imprint propagation at different
+scales. Ch12 §3 decomposes EM into radial/tangential curvature.
+
+**Question**: Can we derive the full EM spectrum (radio → gamma rays) from gamma-field dynamics?
+
+**Proposed Test**: Simulate oscillating charge (lag-shear source) in gamma field, measure radiated wave properties.
+
+**Difficulty**: High (requires wave simulation in gamma field)
+
+**Related**: Ch9 §8.5 (gamma spectrum hypothesis), Ch12 §3 (EM unification), Exp #63 (magnetron)
+
+---
+
+#### Q9.11: Can the cooperative curvature principle explain multicellularity?
+
+**Current Status**: Ch13 §6 argues cooperation is geometric necessity — cooperating processes raise the hill faster.
+This is axiomatic, not derived.
+
+**Question**: Does gamma-field simulation show that cooperating entities achieve higher curvature than isolated ones?
+
+**Proposed Test**: Simulate N isolated entities vs N cooperating entities, compare hill height over time.
+
+**Difficulty**: Medium (requires gamma-field simulation with entity interaction)
+
+**Related**: Ch13 §6 (cooperation), Ch10 §8 (compatibility maximization)
+
+---
+
+## X. Rendering and Visualization
 
 ### High Priority Questions
 
@@ -921,6 +1053,7 @@ mass?
 2. **Q9.1**: Execute Experiment #49 (sliding window)
 3. **Q5.1**: Validate imbalance theory with active λ
 4. **Q1.2**: Derive ρ=2.0 analytically
+5. **Q9.6**: Rigorize well-to-hill transition (Ch12)
 
 ### Tier 2: High Impact, High Difficulty
 
@@ -928,18 +1061,23 @@ mass?
 6. **Q4.1**: QM emergence from discrete substrate
 7. **Q3.1**: Derive G from expansion rate
 8. **Q6.3**: Implement observer model
+9. **Q9.5**: Scalar vs tensor gamma field (Ch10/Ch12)
+10. **Q9.8**: Charge quantization from lag-flow asymmetry (Ch12)
 
 ### Tier 3: Experimental Validation
 
-9. **Q1.4**: Measure ρ in real physical systems
-10. **Q2.3**: Predict Planck-scale Lorentz violation
-11. **Q6.4**: Test psychological phenomena predictions
+11. **Q1.4**: Measure ρ in real physical systems
+12. **Q2.3**: Predict Planck-scale Lorentz violation
+13. **Q6.4**: Test psychological phenomena predictions
+14. **Q9.7**: Dark matter from gamma-field fossil geometry (Ch9)
 
 ### Tier 4: Extensions and Refinements
 
-12. **Q8.2**: Ternary logic validation
-13. **Q7.3**: Optimize to 1M entities
-14. **Q1.3**: Extend dimensionality tests to 10D
+15. **Q8.2**: Ternary logic validation
+16. **Q7.3**: Optimize to 1M entities
+17. **Q1.3**: Extend dimensionality tests to 10D
+18. **Q9.10**: EM spectrum from gamma-field dynamics (Ch12)
+19. **Q9.11**: Cooperative curvature and multicellularity (Ch13)
 
 ---
 
@@ -1182,10 +1320,11 @@ Questions that were once open but have been resolved:
 
 ---
 
-**Document Version**: 1.1
-**Last Updated**: January 18, 2026
-**Total Questions**: 32 active + 8 answered (3 new answers in Jan 2026)
+**Document Version**: 1.2
+**Last Updated**: February 2026
+**Total Questions**: 39 active + 8 answered
 **Status**: Living document (will evolve with research)
-**Major Update**: Added Exp #55 (collision physics + emergent Pauli exclusion), Exp #53 (geodesics), Doc 061 (matter-antimatter asymmetry)
+**Major Update v1.2**: Added 7 gamma-field questions (Q9.5-Q9.11) from Ch9-Ch13 consolidation
+**Major Update v1.1**: Added Exp #55 (collision physics + emergent Pauli exclusion), Exp #53 (geodesics), Doc 061 (matter-antimatter asymmetry)
 
 **For specific question details, see cross-referenced theory chapters and experiments**

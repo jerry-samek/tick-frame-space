@@ -14,7 +14,7 @@ This index catalogs all experiments in the `experiments/` directory, providing:
 - **Dependencies** between experiments
 - **Key findings** and implications
 
-**Total Experiments**: 20 (including sub-experiments and v13-v17 series)
+**Total Experiments**: 21 (including sub-experiments and v13-v17 series)
 
 **Major Validations**: 10 experiments have validated core theoretical predictions
 
@@ -23,6 +23,7 @@ This index catalogs all experiments in the `experiments/` directory, providing:
 **Critical Findings**: 1 experiment has identified FALSIFIABLE predictions vs quantum mechanics (Exp #62)
 
 **Latest Additions**:
+- Experiment 80 (Gamma-Field Rendering - February 2026)
 - Experiment 56 v13-v17 (Canvas Ontology, Jitter Investigation, Sparse Storage - February 2026)
 - Experiment 72 (ZPE Cosmological Model - February 2026)
 - Experiment 63 (Magnetron Theory - February 2026)
@@ -43,12 +44,13 @@ This index catalogs all experiments in the `experiments/` directory, providing:
 - **Stability & Constants**: [#56 v13](#56-v13-jitter-investigation)
 - **Architecture & Ontology**: [#56 v17](#56-v17-canvas-ontology)
 - **Electromagnetism**: [#63](#63-magnetron-theory)
+- **Gamma Field Rendering**: [#80](#80-gamma-field-rendering)
 - **Cosmology**: [#72](#72-zpe-cosmological-model)
 
 ### By Status
 
 - **✓ Validated**: [#15](#15-minimal-model), [#44_03](#4403-emergent-rotation), [#46_01](#reference-4601-on-bucketing), [#50](#50-dimensional-equivalence-under-explicit-time), [#51](#51-emergent-time-dilation-from-tick-budgets), [#55](#55-collision-physics-framework), [#62](#62-interferometry), [#56 v13](#56-v13-jitter-investigation), [#56 v17](#56-v17-canvas-ontology)
-- **⏳ In Progress**: [#49](#49-sliding-window-rendering), [#56](#56-composite-objects)
+- **⏳ In Progress**: [#49](#49-sliding-window-rendering), [#56](#56-composite-objects), [#80](#80-gamma-field-rendering)
 - **🔬 Exploratory/Early**: [#22](#22-genesis-and-discrete-relativity), [#39](#39-law-000), [#40](#40-tick-engine), [#63](#63-magnetron-theory), [#72](#72-zpe-cosmological-model)
 
 ---
@@ -78,6 +80,7 @@ This index catalogs all experiments in the `experiments/` directory, providing:
 | **56 v13**| Jitter Investigation   | Stability    | ✓ Validated    | Doc 072, Doc 074                                            | 0.119 NOT fundamental, range [0.075, 0.5]                      |
 | **56 v17**| Canvas Ontology        | Architecture | ✓ Validated    | Doc 049, Ch1                                                | O(entities) sparse storage, gamma=canvas                       |
 | **72**    | ZPE Cosmology          | Cosmology    | 🔬 Early       | Doc 072, Doc 073                                            | Jitter scaling roadmap V1-V9                                   |
+| **80**    | Gamma-Field Rendering  | Rendering    | ⏳ In Progress  | Ch9, Ch10, Ch11                                             | Virtual expansion + gamma field visualization                  |
 | **-**     | movement-vs-division   | Analysis     | 📊 Data        | -                                                           | Entity dynamics trade-offs                                     |
 
 **Legend**:
@@ -1129,6 +1132,67 @@ Renderer (stateless) → reads canvas → decides paint position → Canvas (acc
 
 ---
 
+### #80: Gamma-Field Rendering
+
+**Full Name**: Gamma-Field Virtual Expansion Rendering
+
+**Location**: `experiments/80_gamma-field_rendering/`
+
+**Status**: ⏳ **IN PROGRESS** (v1 implemented, v2-v3 described)
+
+**Hypothesis**: A gamma field with virtual spatial expansion can be rendered on a fixed 512x512 viewport while
+maintaining energy conservation, deterministic behavior, and realistic core-growth dynamics.
+
+**Method**:
+
+- **Fixed viewport**: 512x512 internal buffer; world coordinates expand virtually
+- **Hybrid field model**: Conservative residual field + informational core pattern
+- **Core growth**: Morphological dilation limited to 1 pixel/tick in comoving coordinates
+- **Residual remap**: Bilinear resampling with 1/s² intensity normalization (2D)
+- **Energy tracking**: Sum of discarded intensity logged per tick
+
+**Architecture**:
+
+```
+Entity (reference coords) → Core emission → field_core (512×512)
+                           → Residual emission → field_residual (512×512)
+Scale change → remap residual (1/s²) → clip/aggregate out-of-bounds → render
+```
+
+**Key Features**:
+
+- **Comoving core**: Entities stored in reference coordinates, transformed by scale factor s(t)
+- **Conservative residual**: Low-frequency field dilutes with expansion
+- **Holographic horizon**: Optional aggregation of out-of-bounds data
+- **Sliding window**: Stores s(t) and field snapshots for temporal playback
+
+**Versions**:
+
+- **v1**: Core implementation with full pipeline (main.py, modules for core, residual, remap, sliding window)
+- **v2**: Extended experiment description (in progress)
+- **v3**: Extended experiment description (in progress)
+
+**Theory Validation**:
+
+- ⏳ **PENDING**: Energy conservation during virtual expansion (Ch10 field dynamics)
+- ⏳ **PENDING**: Core growth matches gamma-well behavior (Ch11 §4)
+- ⏳ **PENDING**: Residual dilution matches expansion predictions (Ch9 §8)
+
+**Theory Connection**:
+
+- Ch9 (Gamma Furrow) — furrow geometry and imprint propagation
+- Ch10 (Gamma Field Foundations) — field dynamics and update rules
+- Ch11 (Entity Physics) — gamma-well self-maintenance and energy budget
+
+**Files**:
+
+- `v1/main.py` — Main runnable demo
+- `v1/gamma_field_core.py`, `gamma_field_residual.py`, `remap.py`, `core_growth.py`, `sliding_window.py` — Modules
+- `v1/renderer.py`, `scene.py`, `utils.py` — Rendering infrastructure
+- `v2/v2_experiment_description.md`, `v3/v3_experiment_description.md` — Extended descriptions
+
+---
+
 ### #72: ZPE Cosmological Model
 
 **Full Name**: Emergent Universe via Jitter/ZPE Scaling
@@ -1217,6 +1281,10 @@ direct mapping to rendering order. Thus, sorting is not a theoretical requiremen
 | **Doc 049** (Temporal Ontology)      | #62, #56 v17 | Deterministic substrate validated  |
 | **Doc 072** (ZPE Hypothesis)         | #56 v13      | Jitter range [0.075, 0.5] stable   |
 | **Doc 074** (Ternary Correction)     | #56 v13      | Balance via discrete corrections   |
+| **Ch9** (Gamma Furrow)               | #80          | Furrow geometry, imprint propagation|
+| **Ch10** (Gamma Field Foundations)   | #80          | Field dynamics and update rules     |
+| **Ch11** (Entity Physics)            | #51, #53, #80| Gravity as cost gradient, geodesics |
+| **Ch12** (EM & Curvature)            | #63          | Magnetism theory (exploratory)      |
 
 ### Reference Documents with Experimental Basis
 
@@ -1425,9 +1493,10 @@ experiments/[number]_[name]/
 
 ---
 
-**Document Version**: 1.1
+**Document Version**: 1.2
 **Last Updated**: February 2026
 **Status**: Living document (will update with new experiments)
+**Changes in v1.2**: Added Exp #80 (gamma-field rendering), linked Ch9-Ch13 to experiment cross-references
 **Changes in v1.1**: Added Exp #56 v13 (jitter), v17 (canvas), #63 (magnetron), #72 (ZPE)
 **Maintainer**: Auto-generated from experiment README files
 

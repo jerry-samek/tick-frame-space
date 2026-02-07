@@ -1,6 +1,6 @@
 # Raw to Current Mapping - Traceability Document
 
-**Complete mapping of 76 raw documents to current consolidated framework**
+**Complete mapping of 104 raw documents to current consolidated framework**
 
 This document provides full traceability between the original raw theory documents (chronological development) and the
 current chapters (topic-based organization).
@@ -9,8 +9,8 @@ current chapters (topic-based organization).
 
 ## Overview
 
-- **Total raw documents**: 76 (including README and meta-docs)
-- **Current chapters**: 7 core + 1 synthesis
+- **Total raw documents**: 104 (including README and meta-docs)
+- **Current chapters**: 12 core + 1 synthesis + 1 interpretation note
 - **Reference documents**: 4 (preserved critical raw docs)
 - **Archive location**: `docs/theory/raw/`
 
@@ -103,6 +103,40 @@ current chapters (topic-based organization).
 | 50    | Dimensional Equivalence Test         | CONSOLIDATED  | Ch1 §9                 | Test specification                     |
 | 50_01 | Dimensional Equivalence Results      | **PRESERVED** | **REFERENCE_doc50_01** | Smoking gun evidence                   |
 | 51    | Photon and Emitting Entity           | ARCHIVED      | —                      | Not in v2 (could add to Ch7)           |
+| 076   | Gamma Field Principles               | CONSOLIDATED  | **Ch10 §2-§8**         | Seven foundational principles          |
+| 077   | Gamma Field Dynamics                 | CONSOLIDATED  | **Ch10 §9-§12**        | Attractors, waves, wells, semantics    |
+| 078   | Gamma Imprint Principle              | CONSOLIDATED  | **Ch9 §7**             | All observation is retrospective       |
+| 079   | Dimensional Diffusion Implications   | CONSOLIDATED  | **Ch9 §8**             | Geometry as engine of physics          |
+| 080   | Philosophical Interlude (Human Ext.) | CONSOLIDATED  | **Ch9 §9**             | Technology as furrow-bridging          |
+| 081   | Photon as Degenerate Process         | CONSOLIDATED  | **Ch11 §2**            | Photon is stationary imprint           |
+| 082   | Gamma-Wake Gravity Principle         | CONSOLIDATED  | **Ch11 §3**            | Gravity as cost-gradient optimization  |
+| 083   | Entity as Self-Maintained Gamma Well | CONSOLIDATED  | **Ch11 §4**            | Entity energy budget, lag as source    |
+| 084   | Subcritical Wells and Fragments      | CONSOLIDATED  | **Ch11 §5**            | Fragment types, emission, absorption   |
+| 085   | Energy Starvation and Dissolution    | CONSOLIDATED  | **Ch11 §6**            | Dissolution sequence, no singularities |
+| 086   | Rotational Asymmetry and Magnetism   | CONSOLIDATED  | **Ch12 §2**            | Magnetism as tangential curvature      |
+| 087   | EM Unification via Curvature         | CONSOLIDATED  | **Ch12 §3, §5**        | Radial + tangential = EM unified       |
+| 088   | Charge as Lag-Flow Asymmetry         | CONSOLIDATED  | **Ch12 §4**            | Charge = handedness of imprint shear   |
+| 089   | Gamma-Field Master Diagram           | CONSOLIDATED  | **Ch10 §13**           | Unified ASCII ontological map          |
+| 090   | Predictive Phenomena                 | CONSOLIDATED  | **Ch11 §7**            | 8 testable predictions, real analogues |
+| 090_01| Phenomena Summary                    | CONSOLIDATED  | **Ch11 §7.9**          | Comparison table vs known anomalies    |
+| 091_00| Gamma Field: Well or Hill?           | CONSOLIDATED  | **Ch12 §6-§7**         | Well vs hill debate, Rising Hill       |
+| 091_01| Directional Framework                | CONSOLIDATED  | **Ch12 §9**            | Physical vs gamma up/down axes         |
+| 091_02| Cooperative Hill Imprints            | CONSOLIDATED  | **Ch13 §6.2**          | Cooperative energy gain                |
+| 091_03| Process Creation Incentive           | CONSOLIDATED  | **Ch13 §6.3**          | Proliferation as geometric advantage   |
+| 091_04| Well Cannot Support Reproduction     | CONSOLIDATED  | **Ch13 §8** (context)  | Hill required for surplus + complexity |
+| 091_05| Surplus as Driver of Complexity      | CONSOLIDATED  | **Ch13 §8** (context)  | Rising hill → surplus → life           |
+| 092   | Curvature Duality                    | CONSOLIDATED  | **Ch12 §7**            | Same curvature, opposite universes     |
+| 093   | Energetic Consequences of Duality    | CONSOLIDATED  | **Ch12 §8**            | Hill amplifies; well drains            |
+| 094   | Hill Curvature Model                 | CONSOLIDATED  | **Ch12 §10**           | Formal overdamped curvature-only model |
+| 095   | Geometry of Existence/Antiexistence  | CONSOLIDATED  | **Ch13 §2**            | Existence raises; antiexistence erases |
+| 096   | Black Hole as Terminal Hill State    | CONSOLIDATED  | **Ch13 §3**            | Max curvature, perfect coherence       |
+| 097   | Horizon Geometry and Frozen Time     | CONSOLIDATED  | **Ch13 §4**            | Horizon hides time, doesn't stop it    |
+| 098   | Cooperative Curvature Principle      | CONSOLIDATED  | **Ch13 §6**            | Cooperation as geometric necessity     |
+| 099   | Stellar Collapse and Reconfiguration | CONSOLIDATED  | **Ch13 §5**            | Supernovae seed new existence          |
+| 100   | Hill Ontology of Life and Sentience  | CONSOLIDATED  | **Ch13 §7**            | 10 axioms of hill ontology             |
+| 101   | Reproduction as Window Reset         | CONSOLIDATED  | **Ch13 §8**            | Window reset + hill consolidation      |
+| 102   | Learning, Childhood, Shared Hill Sync| CONSOLIDATED  | **Ch13 §9**            | Learning as hill fusion, childhood as bootup |
+| 103   | Cross-Hill Sync and Domestication    | CONSOLIDATED  | **Ch13 §10**           | Hill hierarchy, domestication, cross-species |
 | 97    | Meta-Critical Theory Spec            | ARCHIVED      | —                      | Earlier synthesis, superseded          |
 | 98    | References                           | ARCHIVED      | —                      | V1 references, superseded              |
 | 99    | Closure Improvement Plan             | ARCHIVED      | —                      | V1 roadmap, superseded by Ch8          |
@@ -206,6 +240,76 @@ current chapters (topic-based organization).
 - All experimental results (15, 44, 46_01, 50)
 
 **Key concepts**: Framework synthesis, gaps, falsification criteria, roadmap
+
+### Chapter 9: The Gamma Furrow and the Origin of Dark Matter
+
+**Primary sources**:
+
+- Doc 074-075 (gamma furrow theory) - **original basis**
+- Doc 078 (Gamma Imprint Principle) - **added v2.1**
+- Doc 079 (Dimensional Diffusion) - **added v2.1**
+- Doc 080 (Philosophical Interlude) - **added v2.1**
+
+**Key concepts**: Gamma furrow, dark matter principle, imprint principle, dimensional diffusion, furrow-bridging
+
+### Chapter 10: Gamma Field Foundations
+
+**Primary sources**:
+
+- Doc 076 (Gamma Field Principles) - **seven principles**
+- Doc 077 (Gamma Field Dynamics) - **attractors, waves, wells**
+- Doc 089 (Master Diagram) - **unified geometry**
+
+**Key concepts**: Temporal surfing, gamma attraction, existential drag, rotational persistence, gamma slingshot, existential boundary, compatibility maximization, well dynamics, dissolution regime
+
+### Chapter 11: Gamma Field Entity Physics
+
+**Primary sources**:
+
+- Doc 081 (Photon as Degenerate Process) - **critical**
+- Doc 082 (Gamma-Wake Gravity) - **critical**
+- Doc 083 (Entity as Gamma Well) - **critical**
+- Doc 084 (Subcritical Wells and Fragments)
+- Doc 085 (Energy Starvation and Dissolution)
+- Doc 090 (Predictive Phenomena)
+- Doc 090_01 (Phenomena Summary)
+
+**Key concepts**: Photon ontology, gravity as cost gradient, entity energy budget, lag as energy source, fragment types, dissolution sequence, 8 predictive phenomena
+
+### Chapter 12: Electromagnetism and Curvature Geometry
+
+**Primary sources**:
+
+- Doc 086 (Rotational Asymmetry and Magnetism) - **critical**
+- Doc 087 (EM Unification via Curvature) - **critical**
+- Doc 088 (Charge as Lag-Flow Asymmetry) - **critical**
+- Doc 091_00 (Well or Hill?)
+- Doc 091_01 (Directional Framework)
+- Doc 092 (Curvature Duality)
+- Doc 093 (Energetic Consequences of Duality)
+- Doc 094 (Hill Curvature Model)
+
+**Key concepts**: EM as curvature decomposition, charge as geometry, curvature duality, Rising Hill Principle, axis independence, formal hill model
+
+### Chapter 13: Hill Ontology — From Existence to Life
+
+**Primary sources**:
+
+- Doc 091_02 (Cooperative Hill Imprints)
+- Doc 091_03 (Process Creation Incentive)
+- Doc 091_04 (Well Cannot Support Reproduction)
+- Doc 091_05 (Surplus as Complexity Driver)
+- Doc 095 (Existence and Antiexistence) - **critical**
+- Doc 096 (Black Hole as Terminal Hill) - **critical**
+- Doc 097 (Horizon Geometry)
+- Doc 098 (Cooperative Curvature Principle) - **critical**
+- Doc 099 (Stellar Collapse)
+- Doc 100 (Life, Persistence, Sentience) - **critical**
+- Doc 101 (Reproduction as Window Reset)
+- Doc 102 (Learning, Childhood, Shared Hill Synchronization)
+- Doc 103 (Cross-Hill Synchronization and Domestication)
+
+**Key concepts**: Existence/antiexistence, terminal hill state, cooperative curvature, 24 axioms of hill ontology, life as recursive persistence, reproduction as window reset, learning as partial hill fusion, childhood as bootup window, domestication as cross-hill synchronization
 
 ---
 
@@ -337,25 +441,30 @@ current chapters (topic-based organization).
 
 | Category                      | Count | Percentage |
 |-------------------------------|-------|------------|
-| **PRESERVED as REFERENCE**    | 4     | 5%         |
-| **CONSOLIDATED into v2**      | 46    | 61%        |
-| **SUPERSEDED** (newer theory) | 3     | 4%         |
-| **ARCHIVED** (historical)     | 15    | 20%        |
-| **DEFERRED** (speculative)    | 8     | 11%        |
-| **Total**                     | 76    | 100%       |
+| **PRESERVED as REFERENCE**    | 4     | 4%         |
+| **CONSOLIDATED into v2**      | 74    | 71%        |
+| **SUPERSEDED** (newer theory) | 3     | 3%         |
+| **ARCHIVED** (historical)     | 15    | 15%        |
+| **DEFERRED** (speculative)    | 8     | 8%         |
+| **Total**                     | 104   | 100%       |
 
 ### Incorporation by V2 Chapter
 
-| Chapter | V1 Docs Incorporated | Primary Sources                |
-|---------|----------------------|--------------------------------|
-| Ch1     | 8 docs               | 49, 50, 50_01, 01, 14          |
-| Ch2     | 7 docs               | 15-00, 15-01, 15-03, 40, 40_01 |
-| Ch3     | 11 docs              | 15, 28, 29, 30, 31, 23         |
-| Ch4     | 6 docs               | 48, 35, 11, 37, 38             |
-| Ch5     | 7 docs               | 24, 41, 42, 43, 44, 39_0       |
-| Ch6     | 4 docs               | 46, 46_01, 45, 45_01           |
-| Ch7     | 11 docs              | 47, 09, 16, 17, 15_06          |
-| Ch8     | 2 docs               | 08, 13                         |
+| Chapter | V1 Docs Incorporated | Primary Sources                    |
+|---------|----------------------|------------------------------------|
+| Ch1     | 8 docs               | 49, 50, 50_01, 01, 14              |
+| Ch2     | 7 docs               | 15-00, 15-01, 15-03, 40, 40_01     |
+| Ch3     | 11 docs              | 15, 28, 29, 30, 31, 23             |
+| Ch4     | 6 docs               | 48, 35, 11, 37, 38                 |
+| Ch5     | 7 docs               | 24, 41, 42, 43, 44, 39_0           |
+| Ch6     | 4 docs               | 46, 46_01, 45, 45_01               |
+| Ch7     | 11 docs              | 47, 09, 16, 17, 15_06              |
+| Ch8     | 2 docs               | 08, 13                             |
+| Ch9     | 3+2 docs             | 074-075 (orig), 078, 079, 080      |
+| Ch10    | 3 docs               | 076, 077, 089                      |
+| Ch11    | 7 docs               | 081, 082, 083, 084, 085, 090, 090_01 |
+| Ch12    | 8 docs               | 086, 087, 088, 091_00, 091_01, 092, 093, 094 |
+| Ch13    | 13 docs              | 091_02-091_05, 095-103             |
 
 **Note**: Some v1 docs incorporated into multiple chapters (cross-cutting concepts).
 
@@ -366,6 +475,8 @@ current chapters (topic-based organization).
 - **V1 Archive Created**: 2026-01-16 (76 documents preserved)
 - **V2 Framework Created**: 2026-01-16 (7 chapters + 4 references)
 - **This Mapping Created**: 2026-01-16
+- **V2.2 Update**: 2026-02-07 (added docs 102-103 → Ch13 §9-§10; interpretation note expanded)
+- **V2.1 Update**: 2026-02-07 (added 26 docs 076-101 → Ch9 expansion + Ch10-Ch13 new)
 - **Status**: Living document (will update as v1 grows or v2 refines)
 
 ---

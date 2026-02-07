@@ -278,6 +278,104 @@ Essential reference materials for navigation and lookup:
 
 ---
 
+#### **[Chapter 9: The Gamma Furrow and the Origin of Dark Matter](ch009_the_gamma_furrow_and_the_origin_of_dark_matter.md)** (~15 pages)
+
+**Status**: Speculative (no experimental validation)
+
+**Core content**:
+
+- Gamma furrow (observer's causal boundary in the gamma field)
+- Dark matter as imprints that missed us (no exotic particles needed)
+- Dark energy as geometric dilution of the gamma field
+- Gamma Imprint Principle (all observation is retrospective)
+- Dimensional diffusion (geometry alone produces inverse-square laws)
+- Philosophical interlude: technology as furrow-bridging
+
+**Key principles**: Gamma Furrow Principle, Dark Matter Principle, Gamma Imprint Principle, Gamma Spectrum Hypothesis
+
+**Read this if**: You want the cosmological foundations of the gamma-field ontology.
+
+---
+
+#### **[Chapter 10: Gamma Field Foundations](ch010_gamma_field_foundations.md)** (~20 pages)
+
+**Status**: Speculative (theoretical framework)
+
+**Core content**:
+
+- Seven foundational principles (temporal surfing, gamma attraction, existential drag, rotational persistence, gamma slingshot, existential boundary, compatibility maximization)
+- Attractor and wave dynamics (expansion-driven propagation)
+- Well dynamics and propagation (gradient basins, stability conditions)
+- Dissolution regime (five stages of entity death)
+- Semantic reconstruction and retrodictive coherence
+- Master diagram: unified geometry of all gamma-field phenomena
+
+**Key evidence**: Partial — Exp #51 (time dilation), Exp #53 (geodesic motion)
+
+**Read this if**: You want to understand what the gamma field IS — its principles, dynamics, and geometry.
+
+---
+
+#### **[Chapter 11: Gamma Field Entity Physics](ch011_gamma_field_entity_physics.md)** (~18 pages)
+
+**Status**: Speculative (conceptual framework)
+
+**Core content**:
+
+- Photon as degenerate process (stationary imprint, field propagates at c)
+- Gravity as energetic optimization (cost-gradient, not force)
+- Entity as self-maintained gamma well (energy budget, lag as energy source)
+- Fragments: subcritical wells, emission modes, absorption
+- Dissolution: energy starvation survival sequence
+- Eight predictive phenomena with real-world analogues
+
+**Key evidence**: Partial — Exp #51 (cost-gradient gravity), Exp #53 (geodesics), Exp #55 (collision physics)
+
+**Read this if**: You want to understand how entities BEHAVE in the gamma field.
+
+---
+
+#### **[Chapter 12: Electromagnetism and Curvature Geometry](ch012_electromagnetism_curvature_geometry.md)** (~20 pages)
+
+**Status**: Speculative (theoretical framework)
+
+**Core content**:
+
+- Magnetism as tangential curvature of the gamma well
+- EM unification: W = W_radial + W_tangential
+- Charge as lag-flow asymmetry (geometric, not intrinsic)
+- Lorentz-like effects, induction, EM waves from curvature
+- The well-vs-hill debate: curvature duality
+- Hill interpretation: surplus energy → complexity → life
+- Directional framework: physical vs gamma-gradient axes
+- Formal hill model (normalized curvature, overdamped dynamics)
+
+**Key insight**: Same curvature, opposite universes — only the hill interpretation supports life.
+
+**Read this if**: You want the EM theory and the resolution of the well-vs-hill debate.
+
+---
+
+#### **[Chapter 13: Hill Ontology — From Existence to Life](ch013_hill_ontology.md)** (~20 pages)
+
+**Status**: HIGHLY SPECULATIVE (philosophical capstone)
+
+**Core content**:
+
+- Existence vs antiexistence (geometric distinction, curvature-based)
+- Black holes as terminal hill states (maximal curvature, perfect coherence)
+- Horizon geometry and the illusion of frozen time
+- Stellar collapse and explosive reconfiguration (supernovae seed new existence)
+- Cooperative curvature principle (cooperation as geometric necessity)
+- Ten axioms of hill ontology (life, sentience, value, reproduction)
+- Reproduction as window reset and hill consolidation
+
+**Key insight**: Life is the inevitable fixed point of recursive physics.
+
+**Read this if**: You want the philosophical capstone — from geometry through astrophysics to biology.
+
+---
+
 ## Reading Paths
 
 ### Path 1: For New Readers (Conceptual Understanding)
@@ -410,6 +508,7 @@ science.
 - **Ternary Substrate Correction** (doc 074): Stability via discrete integer corrections {-1, 0, +1}
 - **Metabolic Time Dilation** (doc 075): Entities "skip" rendering to conserve energy, not temporal slowdown
 - **Electromagnetism Framework** (docs 063-066): Theoretical foundation for EM in tick-frame substrate
+- **Gamma Field Theory** (docs 076-101, consolidated into Ch9-Ch13): Complete gamma-field ontology from foundations through entity physics, electromagnetism, curvature duality, to hill ontology of life
 
 **Next**: Complete ZPE cosmological model (Exp #72), validate epoch-dependent stability predictions
 
@@ -440,7 +539,7 @@ science.
 
 **Location**: `raw/` subdirectory
 
-**Contents**: 96+ theory documents (76 original + 20 new in 055-075 range)
+**Contents**: 102+ theory documents (76 original + 26 new in 076-101 range, plus earlier 055-075)
 
 **Key docs** (preserved as references):
 
@@ -464,6 +563,16 @@ science.
 | **072-073** | ZPE hypothesis | Jitter scaling with expansion, epoch-dependent stability |
 | **074** | Ternary correction | Axiom of ternary substrate correction {-1, 0, +1} |
 | **075** | Metabolic dilation | Time dilation as energy-saving skip, not temporal slowdown |
+
+**New raw documents (076-101)** - February 2026 (consolidated into Ch9-Ch13):
+
+| Range | Topic | Consolidated Into |
+|-------|-------|-------------------|
+| **076-077, 089** | Gamma field principles, dynamics, master diagram | Ch10 (Gamma Field Foundations) |
+| **078-080** | Imprint principle, dimensional diffusion, philosophical interlude | Ch9 (expanded) |
+| **081-085, 090** | Photon, gravity, entity wells, fragments, dissolution, predictions | Ch11 (Entity Physics) |
+| **086-088, 091_00-01, 092-094** | Magnetism, EM unification, charge, well-vs-hill, curvature duality | Ch12 (EM and Curvature) |
+| **091_02-05, 095-101** | Existence/antiexistence, black holes, cooperation, life, reproduction | Ch13 (Hill Ontology) |
 
 **See**: `raw/README.md` for complete archive guide.
 
@@ -576,8 +685,8 @@ Not a claim to replace established physics - an exploration of what emerges from
 
 ---
 
-**Last updated**: February 2026 (v2.1 update: new raw docs 055-075, experiments v13-v17, ZPE hypothesis)
-**Document count**: 9 chapters + 4 references + 7 supplements + v1 archive (96+ docs, including 055-075 new)
+**Last updated**: February 2026 (v2.2 update: consolidated docs 076-101 into Ch9 expansion + Ch10-Ch13 new)
+**Document count**: 14 chapters + 4 references + 7 supplements + v1 archive (102+ docs, including 076-101 gamma field theory)
 **Computational validation**: 10/12 successful (4 Tier 0 foundational + 6 Tier 1 physics mechanisms)
 **Physics claims**: **PARTIALLY VALIDATED** - Time dilation (✅), geodesics (✅), collision physics (✅), Pauli exclusion (✅ emergent!), interferometry (✅), jitter stability (✅ NEW), black holes (⚠️ preliminary), composites (🔄 in progress)
 **Confidence level**: MODERATE-HIGH for emergent gravity/relativity mechanisms. Transitioned from speculation to validated computational physics.
