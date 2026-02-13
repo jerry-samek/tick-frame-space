@@ -1,0 +1,5359 @@
+{
+  "config": {
+    "planet_count": 10,
+    "planet_spread_radius": 3,
+    "planet_formation_ticks": 20,
+    "orbital_test_ticks": 50,
+    "speed_limit": 5,
+    "enable_spreading": true,
+    "use_accumulator": false,
+    "approach": "A",
+    "approach_b_radii": [
+      20,
+      30,
+      50
+    ],
+    "approach_b_per_ring": 10,
+    "wake_decay_rate": 0.05,
+    "random_seed": 42,
+    "total_ticks": 70
+  },
+  "gamma_profile": {
+    "0": 0.23864551976959836,
+    "1": 8.42030331139181,
+    "2": 14.265111489769097,
+    "3": 23.669920088877465,
+    "4": 19.45492413808342,
+    "5": 16.447682320773854,
+    "6": 8.037848581659938,
+    "7": 4.521648731350224,
+    "8": 1.4698473903823508,
+    "9": 0.39917662396907755,
+    "10": 0.0671799883624193,
+    "11": 0.007065950391835593,
+    "12": 0.0005301145552845943,
+    "13": 1.3147846491896558e-05
+  },
+  "gradient_analysis": [
+    {
+      "distance": 5,
+      "standard_gradient_mag": 0.02770571934966127,
+      "smoothed_gradient_mag": 97.90993934493636,
+      "local_gamma": 5.503478969796274
+    },
+    {
+      "distance": 10,
+      "standard_gradient_mag": 4.9003767848768575e-05,
+      "smoothed_gradient_mag": 98.48326893298912,
+      "local_gamma": 0.011443472132254568
+    },
+    {
+      "distance": 15,
+      "standard_gradient_mag": 0.0,
+      "smoothed_gradient_mag": 97.37671833455293,
+      "local_gamma": 0.0
+    },
+    {
+      "distance": 20,
+      "standard_gradient_mag": 0.0,
+      "smoothed_gradient_mag": 97.00987805156473,
+      "local_gamma": 0.0
+    },
+    {
+      "distance": 25,
+      "standard_gradient_mag": 0.0,
+      "smoothed_gradient_mag": 96.99989795515911,
+      "local_gamma": 0.0
+    },
+    {
+      "distance": 30,
+      "standard_gradient_mag": 0.0,
+      "smoothed_gradient_mag": 96.99989739718268,
+      "local_gamma": 0.0
+    },
+    {
+      "distance": 40,
+      "standard_gradient_mag": 0.0,
+      "smoothed_gradient_mag": 96.99989739718268,
+      "local_gamma": 0.0
+    },
+    {
+      "distance": 50,
+      "standard_gradient_mag": 0.0,
+      "smoothed_gradient_mag": 96.990254138115,
+      "local_gamma": 0.0
+    }
+  ],
+  "gamma_history": [
+    {
+      "tick": 10,
+      "total_gamma": 97.0
+    },
+    {
+      "tick": 20,
+      "total_gamma": 96.99989739718285
+    }
+  ],
+  "field_diagnostics": {
+    "gamma_at_r": {
+      "1": 0.5152566618401664,
+      "2": 0.18750178612254254,
+      "3": 0.2607113768861453,
+      "5": 0.051171666619036715,
+      "7": 0.003799479563582785,
+      "10": 4.9614515063760605e-06,
+      "15": 0.0,
+      "20": 0.0,
+      "25": 0.0,
+      "30": 0.0,
+      "40": 0.0,
+      "50": 0.0
+    },
+    "power_law_exponent": -13.385139853645812,
+    "gradient_at_r": {
+      "5": 0.02770571934966127,
+      "10": 4.9003767848768575e-05,
+      "15": 0.0,
+      "20": 0.0,
+      "25": 0.0,
+      "30": 0.0,
+      "40": 0.0,
+      "50": 0.0
+    },
+    "total_gamma": 96.99989739718285,
+    "painted_cells": 4211,
+    "field_r_max": 13.19090595827292,
+    "formation_ticks": 20,
+    "n_planets": 10
+  },
+  "approach_a": {
+    "T1": {
+      "config": {
+        "start_position": [
+          30,
+          0,
+          0
+        ],
+        "initial_velocity": [
+          0,
+          3,
+          0
+        ],
+        "max_speed": 5,
+        "use_accumulator": false
+      },
+      "acts": 50,
+      "skips": 0,
+      "trajectory": [
+        {
+          "tick": 20,
+          "position": [
+            30,
+            3,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 30.14962686336267,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 21,
+          "position": [
+            30,
+            6,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 30.59411708155671,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 22,
+          "position": [
+            30,
+            9,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 31.32091952673165,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 23,
+          "position": [
+            30,
+            12,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 32.31098884280702,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 24,
+          "position": [
+            30,
+            15,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 33.54101966249684,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 25,
+          "position": [
+            30,
+            18,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 34.9857113690718,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 26,
+          "position": [
+            30,
+            21,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 36.61966684720111,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 27,
+          "position": [
+            30,
+            24,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 38.41874542459709,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 28,
+          "position": [
+            30,
+            27,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 40.36087214122113,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 29,
+          "position": [
+            30,
+            30,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 42.42640687119285,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 30,
+          "position": [
+            30,
+            33,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 44.598206241955516,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 31,
+          "position": [
+            30,
+            36,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 46.861498055439924,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 32,
+          "position": [
+            30,
+            39,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 49.20365840057018,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 33,
+          "position": [
+            30,
+            42,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 51.61395160225576,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 34,
+          "position": [
+            30,
+            45,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 54.08326913195984,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 35,
+          "position": [
+            30,
+            48,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 56.60388679233962,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 36,
+          "position": [
+            30,
+            51,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 59.16924876994806,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 37,
+          "position": [
+            30,
+            54,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 61.773780845922005,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 38,
+          "position": [
+            30,
+            57,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 64.41273166075166,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 39,
+          "position": [
+            30,
+            60,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 67.08203932499369,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 40,
+          "position": [
+            30,
+            63,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 69.77822009767804,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 41,
+          "position": [
+            30,
+            66,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 72.49827584156743,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 42,
+          "position": [
+            30,
+            69,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 75.23961722390672,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 43,
+          "position": [
+            30,
+            72,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 78.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 44,
+          "position": [
+            30,
+            75,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 80.77747210701756,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 45,
+          "position": [
+            30,
+            78,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 83.57032966310472,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 46,
+          "position": [
+            30,
+            81,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 86.37708029332781,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 47,
+          "position": [
+            30,
+            84,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 89.19641248391103,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 48,
+          "position": [
+            30,
+            87,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 92.02716990106781,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 49,
+          "position": [
+            30,
+            90,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 94.86832980505137,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 50,
+          "position": [
+            30,
+            93,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 97.71898484941399,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 51,
+          "position": [
+            30,
+            96,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 100.57832768544127,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 52,
+          "position": [
+            30,
+            99,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 103.4456378974,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 53,
+          "position": [
+            30,
+            102,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 106.3202708800161,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 54,
+          "position": [
+            30,
+            105,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 109.20164833920778,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 55,
+          "position": [
+            30,
+            108,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 112.08925015361643,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 56,
+          "position": [
+            30,
+            111,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 114.9826073804208,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 57,
+          "position": [
+            30,
+            114,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 117.881296226331,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 58,
+          "position": [
+            30,
+            117,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 120.78493283518438,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 59,
+          "position": [
+            30,
+            120,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 123.69316876852982,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 60,
+          "position": [
+            30,
+            123,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 126.60568707605516,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 61,
+          "position": [
+            30,
+            126,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 129.52219886953742,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 62,
+          "position": [
+            30,
+            129,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 132.4424403278647,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 63,
+          "position": [
+            30,
+            132,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 135.36617007214173,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 64,
+          "position": [
+            30,
+            135,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 138.2931668593933,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 65,
+          "position": [
+            30,
+            138,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 141.22322755127783,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 66,
+          "position": [
+            30,
+            141,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 144.15616532080756,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 67,
+          "position": [
+            30,
+            144,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 147.09180806557515,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 68,
+          "position": [
+            30,
+            147,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 150.02999700059985,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 69,
+          "position": [
+            30,
+            150,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 152.97058540778355,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        }
+      ]
+    },
+    "T2": {
+      "config": {
+        "start_position": [
+          30,
+          0,
+          0
+        ],
+        "initial_velocity": [
+          0,
+          0,
+          0
+        ],
+        "max_speed": 5,
+        "use_accumulator": false
+      },
+      "acts": 50,
+      "skips": 0,
+      "trajectory": [
+        {
+          "tick": 20,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 21,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 22,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 23,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 24,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 25,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 26,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 27,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 28,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 29,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 30,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 31,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 32,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 33,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 34,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 35,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 36,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 37,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 38,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 39,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 40,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 41,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 42,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 43,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 44,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 45,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 46,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 47,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 48,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 49,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 50,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 51,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 52,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 53,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 54,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 55,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 56,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 57,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 58,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 59,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 60,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 61,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 62,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 63,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 64,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 65,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 66,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 67,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 68,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 69,
+          "position": [
+            30,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "r": 30.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        }
+      ]
+    },
+    "T3": {
+      "config": {
+        "start_position": [
+          20,
+          0,
+          0
+        ],
+        "initial_velocity": [
+          0,
+          3,
+          0
+        ],
+        "max_speed": 5,
+        "use_accumulator": false
+      },
+      "acts": 50,
+      "skips": 0,
+      "trajectory": [
+        {
+          "tick": 20,
+          "position": [
+            20,
+            3,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 20.223748416156685,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 21,
+          "position": [
+            20,
+            6,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 20.8806130178211,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 22,
+          "position": [
+            20,
+            9,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 21.93171219946131,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 23,
+          "position": [
+            20,
+            12,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 23.323807579381203,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 24,
+          "position": [
+            20,
+            15,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 25.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 25,
+          "position": [
+            20,
+            18,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 26.90724809414742,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 26,
+          "position": [
+            20,
+            21,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 29.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 27,
+          "position": [
+            20,
+            24,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 31.240998703626616,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 28,
+          "position": [
+            20,
+            27,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 33.60059523282288,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 29,
+          "position": [
+            20,
+            30,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 36.05551275463989,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 30,
+          "position": [
+            20,
+            33,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 38.58756276314948,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 31,
+          "position": [
+            20,
+            36,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 41.182520563948,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 32,
+          "position": [
+            20,
+            39,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 43.829214001622255,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 33,
+          "position": [
+            20,
+            42,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 46.51881339845203,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 34,
+          "position": [
+            20,
+            45,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 49.24428900898052,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 35,
+          "position": [
+            20,
+            48,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 52.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 36,
+          "position": [
+            20,
+            51,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 54.78138369920935,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 37,
+          "position": [
+            20,
+            54,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 57.584720195551874,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 38,
+          "position": [
+            20,
+            57,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 60.40695324215582,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 39,
+          "position": [
+            20,
+            60,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 63.245553203367585,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 40,
+          "position": [
+            20,
+            63,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 66.09841147864296,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 41,
+          "position": [
+            20,
+            66,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 68.96375859826666,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 42,
+          "position": [
+            20,
+            69,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 71.84010022264724,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 43,
+          "position": [
+            20,
+            72,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 74.72616676907762,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 44,
+          "position": [
+            20,
+            75,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 77.62087348130012,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 45,
+          "position": [
+            20,
+            78,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 80.52328855678958,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 46,
+          "position": [
+            20,
+            81,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 83.43260753446461,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 47,
+          "position": [
+            20,
+            84,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 86.34813257969161,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 48,
+          "position": [
+            20,
+            87,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 89.26925562588724,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 49,
+          "position": [
+            20,
+            90,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 92.19544457292888,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 50,
+          "position": [
+            20,
+            93,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 95.12623192369179,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 51,
+          "position": [
+            20,
+            96,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 98.0612053770501,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 52,
+          "position": [
+            20,
+            99,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 101.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 53,
+          "position": [
+            20,
+            102,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 103.94229168149026,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 54,
+          "position": [
+            20,
+            105,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 106.88779163215975,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 55,
+          "position": [
+            20,
+            108,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 109.83624174196785,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 56,
+          "position": [
+            20,
+            111,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 112.78741064498288,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 57,
+          "position": [
+            20,
+            114,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 115.7410903698423,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 58,
+          "position": [
+            20,
+            117,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 118.69709347747316,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 59,
+          "position": [
+            20,
+            120,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 121.6552506059644,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 60,
+          "position": [
+            20,
+            123,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 124.61540835707277,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 61,
+          "position": [
+            20,
+            126,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 127.57742747053649,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 62,
+          "position": [
+            20,
+            129,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 130.54118124178285,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 63,
+          "position": [
+            20,
+            132,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 133.5065541462291,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 64,
+          "position": [
+            20,
+            135,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 136.4734406395618,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 65,
+          "position": [
+            20,
+            138,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 139.44174410842686,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 66,
+          "position": [
+            20,
+            141,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 142.41137595009747,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 67,
+          "position": [
+            20,
+            144,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 145.38225476308997,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 68,
+          "position": [
+            20,
+            147,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 148.35430563350698,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 69,
+          "position": [
+            20,
+            150,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 151.32745950421557,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        }
+      ]
+    },
+    "T4": {
+      "config": {
+        "start_position": [
+          50,
+          0,
+          0
+        ],
+        "initial_velocity": [
+          0,
+          3,
+          0
+        ],
+        "max_speed": 5,
+        "use_accumulator": false
+      },
+      "acts": 50,
+      "skips": 0,
+      "trajectory": [
+        {
+          "tick": 20,
+          "position": [
+            50,
+            3,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 50.08991914547278,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 21,
+          "position": [
+            50,
+            6,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 50.35871324805669,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 22,
+          "position": [
+            50,
+            9,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 50.80354318352215,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 23,
+          "position": [
+            50,
+            12,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 51.419840528729765,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 24,
+          "position": [
+            50,
+            15,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 52.20153254455275,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 25,
+          "position": [
+            50,
+            18,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 53.14132102234569,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 26,
+          "position": [
+            50,
+            21,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 54.230987451824994,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 27,
+          "position": [
+            50,
+            24,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 55.46169849544819,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 28,
+          "position": [
+            50,
+            27,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 56.824290580701486,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 29,
+          "position": [
+            50,
+            30,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 58.309518948453004,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 30,
+          "position": [
+            50,
+            33,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 59.90826320300064,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 31,
+          "position": [
+            50,
+            36,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 61.61168720299745,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 32,
+          "position": [
+            50,
+            39,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 63.41135544995076,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 33,
+          "position": [
+            50,
+            42,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 65.29931086925804,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 34,
+          "position": [
+            50,
+            45,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 67.26812023536856,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 35,
+          "position": [
+            50,
+            48,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 69.31089380465383,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 36,
+          "position": [
+            50,
+            51,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 71.42128534267638,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 37,
+          "position": [
+            50,
+            54,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 73.59347797189639,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 38,
+          "position": [
+            50,
+            57,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 75.82216034906945,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 39,
+          "position": [
+            50,
+            60,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 78.10249675906654,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 40,
+          "position": [
+            50,
+            63,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 80.43009387039157,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 41,
+          "position": [
+            50,
+            66,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 82.80096617793781,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 42,
+          "position": [
+            50,
+            69,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 85.21150157109074,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 43,
+          "position": [
+            50,
+            72,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 87.65842800324451,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 44,
+          "position": [
+            50,
+            75,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 90.13878188659973,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 45,
+          "position": [
+            50,
+            78,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 92.64987857520376,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 46,
+          "position": [
+            50,
+            81,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 95.1892851112981,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 47,
+          "position": [
+            50,
+            84,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 97.75479527879949,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 48,
+          "position": [
+            50,
+            87,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 100.34440691936945,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 49,
+          "position": [
+            50,
+            90,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 102.95630140987001,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 50,
+          "position": [
+            50,
+            93,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 105.58882516630251,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 51,
+          "position": [
+            50,
+            96,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 108.24047302187847,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 52,
+          "position": [
+            50,
+            99,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 110.90987332063814,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 53,
+          "position": [
+            50,
+            102,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 113.59577456930342,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 54,
+          "position": [
+            50,
+            105,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 116.29703349613007,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 55,
+          "position": [
+            50,
+            108,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 119.01260437449471,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 56,
+          "position": [
+            50,
+            111,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 121.74152947946727,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 57,
+          "position": [
+            50,
+            114,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 124.48293055676348,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 58,
+          "position": [
+            50,
+            117,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 127.23600119463045,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 59,
+          "position": [
+            50,
+            120,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 130.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 60,
+          "position": [
+            50,
+            123,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 132.7742444904131,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 61,
+          "position": [
+            50,
+            126,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 135.55810562264435,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 62,
+          "position": [
+            50,
+            129,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 138.351002887583,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 63,
+          "position": [
+            50,
+            132,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 141.1523999087511,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 64,
+          "position": [
+            50,
+            135,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 143.96180048887967,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 65,
+          "position": [
+            50,
+            138,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 146.77874505527018,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 66,
+          "position": [
+            50,
+            141,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 149.60280746028798,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 67,
+          "position": [
+            50,
+            144,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 152.43359209832983,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 68,
+          "position": [
+            50,
+            147,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 155.2707313050338,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 69,
+          "position": [
+            50,
+            150,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 158.11388300841898,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        }
+      ]
+    },
+    "T5": {
+      "config": {
+        "start_position": [
+          30,
+          0,
+          0
+        ],
+        "initial_velocity": [
+          0,
+          0,
+          3
+        ],
+        "max_speed": 5,
+        "use_accumulator": false
+      },
+      "acts": 50,
+      "skips": 0,
+      "trajectory": [
+        {
+          "tick": 20,
+          "position": [
+            30,
+            0,
+            3
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 30.14962686336267,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 21,
+          "position": [
+            30,
+            0,
+            6
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 30.59411708155671,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 22,
+          "position": [
+            30,
+            0,
+            9
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 31.32091952673165,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 23,
+          "position": [
+            30,
+            0,
+            12
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 32.31098884280702,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 24,
+          "position": [
+            30,
+            0,
+            15
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 33.54101966249684,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 25,
+          "position": [
+            30,
+            0,
+            18
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 34.9857113690718,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 26,
+          "position": [
+            30,
+            0,
+            21
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 36.61966684720111,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 27,
+          "position": [
+            30,
+            0,
+            24
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 38.41874542459709,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 28,
+          "position": [
+            30,
+            0,
+            27
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 40.36087214122113,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 29,
+          "position": [
+            30,
+            0,
+            30
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 42.42640687119285,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 30,
+          "position": [
+            30,
+            0,
+            33
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 44.598206241955516,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 31,
+          "position": [
+            30,
+            0,
+            36
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 46.861498055439924,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 32,
+          "position": [
+            30,
+            0,
+            39
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 49.20365840057018,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 33,
+          "position": [
+            30,
+            0,
+            42
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 51.61395160225576,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 34,
+          "position": [
+            30,
+            0,
+            45
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 54.08326913195984,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 35,
+          "position": [
+            30,
+            0,
+            48
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 56.60388679233962,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 36,
+          "position": [
+            30,
+            0,
+            51
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 59.16924876994806,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 37,
+          "position": [
+            30,
+            0,
+            54
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 61.773780845922005,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 38,
+          "position": [
+            30,
+            0,
+            57
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 64.41273166075166,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 39,
+          "position": [
+            30,
+            0,
+            60
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 67.08203932499369,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 40,
+          "position": [
+            30,
+            0,
+            63
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 69.77822009767804,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 41,
+          "position": [
+            30,
+            0,
+            66
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 72.49827584156743,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 42,
+          "position": [
+            30,
+            0,
+            69
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 75.23961722390672,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 43,
+          "position": [
+            30,
+            0,
+            72
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 78.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 44,
+          "position": [
+            30,
+            0,
+            75
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 80.77747210701756,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 45,
+          "position": [
+            30,
+            0,
+            78
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 83.57032966310472,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 46,
+          "position": [
+            30,
+            0,
+            81
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 86.37708029332781,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 47,
+          "position": [
+            30,
+            0,
+            84
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 89.19641248391103,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 48,
+          "position": [
+            30,
+            0,
+            87
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 92.02716990106781,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 49,
+          "position": [
+            30,
+            0,
+            90
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 94.86832980505137,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 50,
+          "position": [
+            30,
+            0,
+            93
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 97.71898484941399,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 51,
+          "position": [
+            30,
+            0,
+            96
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 100.57832768544127,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 52,
+          "position": [
+            30,
+            0,
+            99
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 103.4456378974,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 53,
+          "position": [
+            30,
+            0,
+            102
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 106.3202708800161,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 54,
+          "position": [
+            30,
+            0,
+            105
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 109.20164833920778,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 55,
+          "position": [
+            30,
+            0,
+            108
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 112.08925015361643,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 56,
+          "position": [
+            30,
+            0,
+            111
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 114.9826073804208,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 57,
+          "position": [
+            30,
+            0,
+            114
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 117.881296226331,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 58,
+          "position": [
+            30,
+            0,
+            117
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 120.78493283518438,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 59,
+          "position": [
+            30,
+            0,
+            120
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 123.69316876852982,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 60,
+          "position": [
+            30,
+            0,
+            123
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 126.60568707605516,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 61,
+          "position": [
+            30,
+            0,
+            126
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 129.52219886953742,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 62,
+          "position": [
+            30,
+            0,
+            129
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 132.4424403278647,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 63,
+          "position": [
+            30,
+            0,
+            132
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 135.36617007214173,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 64,
+          "position": [
+            30,
+            0,
+            135
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 138.2931668593933,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 65,
+          "position": [
+            30,
+            0,
+            138
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 141.22322755127783,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 66,
+          "position": [
+            30,
+            0,
+            141
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 144.15616532080756,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 67,
+          "position": [
+            30,
+            0,
+            144
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 147.09180806557515,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 68,
+          "position": [
+            30,
+            0,
+            147
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 150.02999700059985,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 69,
+          "position": [
+            30,
+            0,
+            150
+          ],
+          "velocity": [
+            0,
+            0,
+            3
+          ],
+          "r": 152.97058540778355,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        }
+      ]
+    },
+    "T6": {
+      "config": {
+        "start_position": [
+          40,
+          0,
+          0
+        ],
+        "initial_velocity": [
+          0,
+          3,
+          0
+        ],
+        "max_speed": 5,
+        "use_accumulator": false
+      },
+      "acts": 50,
+      "skips": 0,
+      "trajectory": [
+        {
+          "tick": 20,
+          "position": [
+            40,
+            3,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 40.11234224026316,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 21,
+          "position": [
+            40,
+            6,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 40.44749683231337,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 22,
+          "position": [
+            40,
+            9,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 41.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 23,
+          "position": [
+            40,
+            12,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 41.7612260356422,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 24,
+          "position": [
+            40,
+            15,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 42.720018726587654,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 25,
+          "position": [
+            40,
+            18,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 43.86342439892262,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 26,
+          "position": [
+            40,
+            21,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 45.17742799230607,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 27,
+          "position": [
+            40,
+            24,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 46.647615158762406,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 28,
+          "position": [
+            40,
+            27,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 48.25971404805462,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 29,
+          "position": [
+            40,
+            30,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 50.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 30,
+          "position": [
+            40,
+            33,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 51.85556864985669,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 31,
+          "position": [
+            40,
+            36,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 53.81449618829484,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 32,
+          "position": [
+            40,
+            39,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 55.86591089385369,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 33,
+          "position": [
+            40,
+            42,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 58.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 34,
+          "position": [
+            40,
+            45,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 60.207972893961475,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 35,
+          "position": [
+            40,
+            48,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 62.48199740725323,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 36,
+          "position": [
+            40,
+            51,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 64.81512169239521,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 37,
+          "position": [
+            40,
+            54,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 67.20119046564577,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 38,
+          "position": [
+            40,
+            57,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 69.63476143421474,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 39,
+          "position": [
+            40,
+            60,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 72.11102550927978,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 40,
+          "position": [
+            40,
+            63,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 74.62573282722254,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 41,
+          "position": [
+            40,
+            66,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 77.17512552629896,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 42,
+          "position": [
+            40,
+            69,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 79.75587752636166,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 43,
+          "position": [
+            40,
+            72,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 82.365041127896,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 44,
+          "position": [
+            40,
+            75,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 85.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 45,
+          "position": [
+            40,
+            78,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 87.65842800324451,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 46,
+          "position": [
+            40,
+            81,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 90.33825324855468,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 47,
+          "position": [
+            40,
+            84,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 93.03762679690406,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 48,
+          "position": [
+            40,
+            87,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 95.75489543621255,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 49,
+          "position": [
+            40,
+            90,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 98.48857801796105,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 50,
+          "position": [
+            40,
+            93,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 101.23734488813898,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 51,
+          "position": [
+            40,
+            96,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 104.0,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 52,
+          "position": [
+            40,
+            99,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 106.77546534667971,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 53,
+          "position": [
+            40,
+            102,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 109.5627673984187,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 54,
+          "position": [
+            40,
+            105,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 112.36102527122117,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 55,
+          "position": [
+            40,
+            108,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 115.16944039110375,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 56,
+          "position": [
+            40,
+            111,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 117.98728745080972,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 57,
+          "position": [
+            40,
+            114,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 120.81390648431164,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 58,
+          "position": [
+            40,
+            117,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 123.64869590901475,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 59,
+          "position": [
+            40,
+            120,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 126.49110640673517,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 60,
+          "position": [
+            40,
+            123,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 129.34063553268942,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 61,
+          "position": [
+            40,
+            126,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 132.19682295728592,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 62,
+          "position": [
+            40,
+            129,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 135.05924625881784,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 63,
+          "position": [
+            40,
+            132,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 137.92751719653333,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 64,
+          "position": [
+            40,
+            135,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 140.80127840328723,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 65,
+          "position": [
+            40,
+            138,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 143.68020044529447,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 66,
+          "position": [
+            40,
+            141,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 146.5639792036229,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 67,
+          "position": [
+            40,
+            144,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 149.45233353815524,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 68,
+          "position": [
+            40,
+            147,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 152.34500319997372,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        },
+        {
+          "tick": 69,
+          "position": [
+            40,
+            150,
+            0
+          ],
+          "velocity": [
+            0,
+            3,
+            0
+          ],
+          "r": 155.24174696260025,
+          "local_gamma": 0.0,
+          "gradient_mag": 0.0,
+          "skipped": false
+        }
+      ]
+    }
+  },
+  "canvas_stats": {
+    "painted_cells": 4211,
+    "total_gamma": 96.99989739718285,
+    "total_wake": 48.87184962713693,
+    "memory_mb": 0.32157135009765625,
+    "r_mean": 7.726983306470688,
+    "r_max": 13.19090595827292
+  }
+}

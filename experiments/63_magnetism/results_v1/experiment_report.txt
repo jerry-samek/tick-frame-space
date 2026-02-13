@@ -1,0 +1,227 @@
+DISCRETE ALTERMAGNETISM EXPERIMENT v2 — RESULTS
+==================================================
+
+--- MODE: FROZEN ---
+  Pattern: checkerboard
+    M_net:  8.498053 +/- 3.931973
+    A_NS:   -0.043210 +/- 3.036829
+    A_EW:   -0.723599 +/- 1.068397
+    max_W_tang: 0.499132
+    sigma_mean:
+      [[0.13305129 0.0379584 ]
+ [0.03019715 0.25602692]]
+    Fourier modes: {1: np.float64(0.08927581593152836), 2: np.float64(0.0626746581143643), 3: np.float64(0.04179382613948736), 4: np.float64(0.1430714920922877), 5: np.float64(0.07578176134814853), 6: np.float64(0.040879201745491436), 7: np.float64(0.027510338967553255), 8: np.float64(0.519012905661139)}
+
+  Pattern: stripe
+    M_net:  14.291496 +/- 15.111183
+    A_NS:   0.960693 +/- 0.874842
+    A_EW:   -0.920174 +/- 0.760696
+    max_W_tang: 0.562727
+    sigma_mean:
+      [[ 0.00598111  0.18736994]
+ [-0.22078631 -0.0317222 ]]
+    Fourier modes: {1: np.float64(0.07785059162909097), 2: np.float64(0.12471150179979752), 3: np.float64(0.015329204942902876), 4: np.float64(0.13864545807656442), 5: np.float64(0.04764452777643732), 6: np.float64(0.0278720362302647), 7: np.float64(0.013300916075242041), 8: np.float64(0.5546457634697002)}
+
+  Pattern: ferromagnetic
+    M_net:  13.429066 +/- 10.542117
+    A_NS:   1.057121 +/- 0.268462
+    A_EW:   -0.878366 +/- 0.828459
+    max_W_tang: 0.499147
+    sigma_mean:
+      [[ 0.21073677  0.06425783]
+ [-0.18950834 -0.0166943 ]]
+    Fourier modes: {1: np.float64(0.09587476793239433), 2: np.float64(0.036934941490211995), 3: np.float64(0.03562758521418215), 4: np.float64(0.16727504940184743), 5: np.float64(0.0746432662209176), 6: np.float64(0.0244587363723843), 7: np.float64(0.020005757657353837), 8: np.float64(0.5451798957107084)}
+
+  Pattern: antiferromagnetic
+    M_net:  7.807253 +/- 7.698560
+    A_NS:   -1.341364 +/- 0.880108
+    A_EW:   -1.016435 +/- 0.007105
+    max_W_tang: 0.499060
+    sigma_mean:
+      [[ 0.08011185 -0.21733974]
+ [-0.0465462  -0.24136157]]
+    Fourier modes: {1: np.float64(0.09143983296719943), 2: np.float64(0.072112181958282), 3: np.float64(0.03722004394094937), 4: np.float64(0.1463781084096475), 5: np.float64(0.07352200103364664), 6: np.float64(0.04722935867716499), 7: np.float64(0.022561443681681212), 8: np.float64(0.5095370293314289)}
+
+
+--- MODE: SIGNED ---
+  Pattern: checkerboard
+    M_net:  0.000000 +/- 0.000000
+    A_NS:   -0.421603 +/- 1.394492
+    A_EW:   0.343157 +/- 0.788809
+    max_W_tang: 0.507386
+    sigma_mean:
+      [[-0.05414081  0.0709552 ]
+ [-0.06091795 -0.06559936]]
+    Fourier modes: {1: np.float64(0.06776455129691131), 2: np.float64(0.06610173057417319), 3: np.float64(0.02879704957068262), 4: np.float64(0.17836230738324155), 5: np.float64(0.052261725590555475), 6: np.float64(0.05347422108821935), 7: np.float64(0.02662364545152225), 8: np.float64(0.5266147690446943)}
+
+  Pattern: stripe
+    M_net:  0.000000 +/- 0.000000
+    A_NS:   0.004239 +/- 0.644804
+    A_EW:   0.586069 +/- 0.655477
+    max_W_tang: 0.704508
+    sigma_mean:
+      [[-0.02731046  0.00605729]
+ [ 0.06858379  0.05343436]]
+    Fourier modes: {1: np.float64(0.008931849128369003), 2: np.float64(0.020380628003265004), 3: np.float64(0.0013386577929599998), 4: np.float64(0.43695279440231904), 5: np.float64(0.004067248696748637), 6: np.float64(0.01794639976216116), 7: np.float64(0.0028946230137199425), 8: np.float64(0.5074877992004572)}
+
+  Pattern: ferromagnetic
+    M_net:  8000.000000 +/- 0.000000
+    A_NS:   -0.634610 +/- 1.961327
+    A_EW:   -0.465755 +/- 0.860471
+    max_W_tang: 0.499147
+    sigma_mean:
+      [[-0.1281219  -0.07863123]
+ [-0.03665604 -0.0212842 ]]
+    Fourier modes: {1: np.float64(0.09587476793239419), 2: np.float64(0.036934941490213626), 3: np.float64(0.035627585214181974), 4: np.float64(0.16727504940184748), 5: np.float64(0.07464326622091738), 6: np.float64(0.02445873637238318), 7: np.float64(0.020005757657353743), 8: np.float64(0.5451798957107084)}
+
+  Pattern: antiferromagnetic
+    M_net:  0.000000 +/- 0.000000
+    A_NS:   -0.035967 +/- 1.002136
+    A_EW:   0.030768 +/- 0.786968
+    max_W_tang: 0.538922
+    sigma_mean:
+      [[-0.08182556 -0.06274818]
+ [ 0.02359219  0.16834242]]
+    Fourier modes: {1: np.float64(0.03682016910103248), 2: np.float64(0.06299627176474015), 3: np.float64(0.008067183506006749), 4: np.float64(0.19876121572848687), 5: np.float64(0.022840346087406094), 6: np.float64(0.167666634930306), 7: np.float64(0.010222831321284681), 8: np.float64(0.49262534756073695)}
+
+
+--- MODE: LIVE ---
+  Pattern: checkerboard
+    M_net:  8.678929 +/- 3.938470
+    A_NS:   0.437344 +/- 2.062779
+    A_EW:   -0.888034 +/- 0.620966
+    max_W_tang: 0.498597
+    sigma_mean:
+      [[ 0.06219127  0.00372692]
+ [-0.15986001 -0.03403528]]
+    Fourier modes: {1: np.float64(0.0910709340816079), 2: np.float64(0.06375070150252092), 3: np.float64(0.04226272563799321), 4: np.float64(0.15081088660900238), 5: np.float64(0.0768605635712799), 6: np.float64(0.04241201231354338), 7: np.float64(0.028001942390235568), 8: np.float64(0.5048302338938166)}
+
+  Pattern: stripe
+    M_net:  14.464666 +/- 15.277954
+    A_NS:   -0.428398 +/- 0.411412
+    A_EW:   1.768406 +/- 2.851201
+    max_W_tang: 0.562495
+    sigma_mean:
+      [[-0.14643898  0.01563643]
+ [ 0.23871704  0.06595706]]
+    Fourier modes: {1: np.float64(0.0800732044385671), 2: np.float64(0.1269356156635829), 3: np.float64(0.015453754225991462), 4: np.float64(0.14994067106529016), 5: np.float64(0.04844868312075011), 6: np.float64(0.027186567728452918), 7: np.float64(0.013903313405094039), 8: np.float64(0.5380581903522713)}
+
+  Pattern: ferromagnetic
+    M_net:  13.548444 +/- 10.638805
+    A_NS:   -0.769918 +/- 2.540717
+    A_EW:   0.169739 +/- 2.503010
+    max_W_tang: 0.498597
+    sigma_mean:
+      [[-0.06644799 -0.19932876]
+ [ 0.12680082  0.09587875]]
+    Fourier modes: {1: np.float64(0.09780177147720354), 2: np.float64(0.037082280579722425), 3: np.float64(0.03604598639995697), 4: np.float64(0.17524723145047616), 5: np.float64(0.07574260340868898), 6: np.float64(0.026159523798504315), 7: np.float64(0.020424770987355227), 8: np.float64(0.5314958318980925)}
+
+  Pattern: antiferromagnetic
+    M_net:  7.978682 +/- 7.658976
+    A_NS:   0.048970 +/- 1.840825
+    A_EW:   -0.100383 +/- 0.251282
+    max_W_tang: 0.498600
+    sigma_mean:
+      [[ 0.12862121  0.06596022]
+ [-0.0856488   0.14615812]]
+    Fourier modes: {1: np.float64(0.09324846808417833), 2: np.float64(0.07337113191330183), 3: np.float64(0.03763107114806612), 4: np.float64(0.1538662887191793), 5: np.float64(0.07456407154317643), 6: np.float64(0.04822982380927015), 7: np.float64(0.0229853656682004), 8: np.float64(0.49610377911462755)}
+
+
+--- VELOCITY DEPENDENCE ---
+  frozen: v_low=0.2 -> 1.743275, v_high=0.7 -> 1.488665, scales=no
+  signed: v_low=0.2 -> 0.334339, v_high=0.7 -> 0.623165, scales=yes
+  live: v_low=0.2 -> 0.090055, v_high=0.7 -> 1.093557, scales=yes
+
+
+============================================================
+MODE: FROZEN — INFORMATIONAL (baseline, not scored)
+============================================================
+
+  --- CHECKERBOARD (altermagnetic candidate) ---
+  [INFO] Compensated magnetism: |M_net|/max|W_tang| = 17.0256 (need < 0.1)
+  [INFO] Anisotropic transport: |A_NS|=0.0432, |A_EW|=0.7236 (need > 0.1)
+
+  --- STRIPE (altermagnetic candidate) ---
+  [INFO] Compensated magnetism: |M_net|/max|W_tang| = 25.3968 (need < 0.1)
+  [INFO] Anisotropic transport: |A_NS|=0.9607, |A_EW|=0.9202 (need > 0.1)
+
+  --- FERROMAGNETIC (control: M_net >> 0) ---
+  [INFO] M_net = 13.4291 (expect >> 0)
+  [INFO] Transport: |A_NS|=1.0571, |A_EW|=0.8784
+
+  --- ANTIFERROMAGNETIC (control: M_net ~ 0, isotropic) ---
+  [INFO] M_net ~ 0: ratio = 15.6439
+  [INFO] Transport: |A_NS|=1.3414, |A_EW|=1.0164
+
+  --- PATTERN SPECIFICITY ---
+  [INFO] Checkerboard vs stripe produce distinct results
+
+  --- VELOCITY DEPENDENCE ---
+  [INFO] Faster deflects more: v=0.7 -> 1.488665 vs v=0.2 -> 1.743275
+
+  MODE RESULT: PASS
+
+============================================================
+MODE: LIVE — EXPECTED TO PASS (velocity-dependent deflection)
+============================================================
+
+  --- CHECKERBOARD (altermagnetic candidate) ---
+  [INFO] Compensated magnetism: |M_net|/max|W_tang| = 17.4067 (need < 0.1)
+  [INFO] Anisotropic transport: |A_NS|=0.4373, |A_EW|=0.8880 (need > 0.1)
+
+  --- STRIPE (altermagnetic candidate) ---
+  [INFO] Compensated magnetism: |M_net|/max|W_tang| = 25.7152 (need < 0.1)
+  [INFO] Anisotropic transport: |A_NS|=0.4284, |A_EW|=1.7684 (need > 0.1)
+
+  --- FERROMAGNETIC (control: M_net >> 0) ---
+  [INFO] M_net = 13.5484 (expect >> 0)
+  [INFO] Transport: |A_NS|=0.7699, |A_EW|=0.1697
+
+  --- ANTIFERROMAGNETIC (control: M_net ~ 0, isotropic) ---
+  [INFO] M_net ~ 0: ratio = 16.0022
+  [INFO] Transport: |A_NS|=0.0490, |A_EW|=0.1004
+
+  --- PATTERN SPECIFICITY ---
+  [INFO] Checkerboard vs stripe produce distinct results
+
+  --- VELOCITY DEPENDENCE ---
+  [PASS] Faster deflects more: v=0.7 -> 1.093557 vs v=0.2 -> 0.090055
+
+  MODE RESULT: PASS
+
+============================================================
+MODE: SIGNED — EXPECTED TO PASS (compensated magnetism + pattern specificity)
+============================================================
+
+  --- CHECKERBOARD (altermagnetic candidate) ---
+  [PASS] Compensated magnetism: M_net/M_net_ferro = 0.000000 (need < 0.01)
+  [PASS] Anisotropic transport: |A_NS|=0.4216, |A_EW|=0.3432 (need > 0.1)
+
+  --- STRIPE (altermagnetic candidate) ---
+  [PASS] Compensated magnetism: M_net/M_net_ferro = 0.000000 (need < 0.01)
+  [PASS] Anisotropic transport: |A_NS|=0.0042, |A_EW|=0.5861 (need > 0.1)
+
+  --- FERROMAGNETIC (control: M_net >> 0) ---
+  [PASS] M_net = 8000.0000 (expect >> 0)
+  [INFO] Transport: |A_NS|=0.6346, |A_EW|=0.4658
+
+  --- ANTIFERROMAGNETIC (control: M_net ~ 0, isotropic) ---
+  [PASS] M_net ~ 0: ratio to ferro = 0.000000
+  [INFO] Transport: |A_NS|=0.0360, |A_EW|=0.0308
+
+  --- PATTERN SPECIFICITY ---
+  [PASS] Checkerboard vs stripe produce distinct results
+
+  --- VELOCITY DEPENDENCE ---
+  [INFO] Faster deflects more: v=0.7 -> 0.623165 vs v=0.2 -> 0.334339
+
+  MODE RESULT: PASS
+
+============================================================
+OVERALL RESULTS
+============================================================
+  frozen: PASS (baseline, not scored)
+  live: PASS
+  signed: PASS
+OVERALL: PASS
+============================================================
