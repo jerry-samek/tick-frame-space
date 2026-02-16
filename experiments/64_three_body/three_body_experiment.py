@@ -221,6 +221,8 @@ class MassiveBody:
         # Bremsstrahlung: last acceleration magnitude from kick().
         # Pinned bodies never kick, so this stays 0 — no radiation.
         self.last_accel = 0.0
+        self.last_grad_mag = 0.0       # gradient magnitude at body position
+        self.last_bremsstrahlung = 0.0  # KE drained by Bremsstrahlung (for field deposit)
 
         # Mass-conserving motion: track previous deposit cell
         self._prev_deposit_pos = None
@@ -244,9 +246,10 @@ class MassiveBody:
         Existence: withdraw n_entities from old cell, deposit at new cell.
         This MOVES the body's gamma — no net existence gamma created.
 
-        Radiation: deposit |accel| * n_entities at new cell (new gamma).
-        This is Bremsstrahlung — accelerating entities radiate into the field.
-        No kinetic drain: the extra gamma just appears. Parameter-free.
+        Radiation: deposit the drained KE from apply_bremsstrahlung_drain()
+        into the field at the body's current position. Energy doesn't vanish —
+        it becomes Bremsstrahlung radiation in the gamma field. Close encounters
+        make the field brighter AND deeper — self-reinforcing gravitational wells.
 
         Withdrawal is capped at cell's current value to prevent negative gamma.
         The deficit (gamma that spread away between ticks) is a slow mass leak
@@ -266,45 +269,46 @@ class MassiveBody:
         # Deposit existence at current cell
         field.gamma[new_cx, new_cy, new_cz] += self.n_entities
 
-        # Bremsstrahlung radiation (new gamma, NOT withdrawn next tick)
-        if self.last_accel > 1e-12:
-            field.gamma[new_cx, new_cy, new_cz] += self.last_accel * self.n_entities
+        # Bremsstrahlung radiation: drained KE distributed uniformly across field
+        # (depositing at a single cell creates gradient spikes → runaway feedback)
+        if self.last_bremsstrahlung > 1e-12:
+            field.gamma += self.last_bremsstrahlung / field.gamma.size
 
         self._prev_deposit_pos = (new_cx, new_cy, new_cz)
 
     def deposit(self, field):
         """Legacy deposit for calibration (single field, accumulates)."""
-        amount = (1.0 + self.last_accel) * self.n_entities
         s = field.size
         cx = int(round(self.center[0])) % s
         cy = int(round(self.center[1])) % s
         cz = int(round(self.center[2])) % s
-        field.gamma[cx, cy, cz] += amount
+        field.gamma[cx, cy, cz] += self.n_entities
+        # Bremsstrahlung distributed uniformly
+        if self.last_bremsstrahlung > 1e-12:
+            field.gamma += self.last_bremsstrahlung / field.gamma.size
 
     def kick(self, field, dt_half):
-        """Half-step velocity update from field gradient.
-
-        No Larmor drain — Bremsstrahlung is deposit-only, not kinetic drain.
-        """
+        """Half-step velocity update from field gradient."""
         if self.pinned:
             return
         grad = field.gradient_trilinear(self.center)
         grad_mag = float(np.linalg.norm(grad))
         self.velocity += grad * dt_half
         self.last_accel = grad_mag
+        self.last_grad_mag = grad_mag
 
     def kick_with_gradient(self, grad, dt_half):
         """Half-step velocity update with pre-computed external gradient.
 
         Used with per-body fields where the external gradient (excluding
         self-field) is computed by the caller.
-        No Larmor drain — Bremsstrahlung is deposit-only.
         """
         if self.pinned:
             return
         grad_mag = float(np.linalg.norm(grad))
         self.velocity += grad * dt_half
         self.last_accel = grad_mag
+        self.last_grad_mag = grad_mag
 
     def drift(self, dt):
         """Full-step position update."""
@@ -312,13 +316,31 @@ class MassiveBody:
             return
         self.center += self.velocity * dt
 
-    def clamp_speed(self, max_speed=1.0):
-        """Clamp speed to max_speed (c = 1 cell/tick)."""
+    def apply_bremsstrahlung_drain(self, dt=1.0):
+        """Asymptotic velocity drain — replaces hard v=1 clamp.
+
+        Physics: faster entities moving through curved space (non-zero gradient)
+        radiate energy into the field. drain = grad_mag * speed^3.
+        At low speed (0.05c), drain ~ 0.000125 * grad (negligible).
+        At 0.9c, drain ~ 0.729 * grad (massive).
+        At 1.0c, drain would equal all energy — c is asymptotically unreachable.
+
+        Drained KE is stored in last_bremsstrahlung for deposit into the field.
+        """
         if self.pinned:
+            self.last_bremsstrahlung = 0.0
             return
-        speed = np.linalg.norm(self.velocity)
-        if speed > max_speed:
-            self.velocity *= max_speed / speed
+        speed = float(np.linalg.norm(self.velocity))
+        if speed < 0.01:
+            self.last_bremsstrahlung = 0.0
+            return
+        drain = self.last_grad_mag * speed ** 3
+        drain_factor = max(1.0 - drain * dt, 0.01)  # never fully zero
+        speed_before = speed
+        self.velocity *= drain_factor
+        speed_after = float(np.linalg.norm(self.velocity))
+        # Drained KE = 0.5 * m * (v_before^2 - v_after^2)
+        self.last_bremsstrahlung = 0.5 * self.n_entities * (speed_before**2 - speed_after**2)
 
     def wrap(self, grid_size):
         """Periodic wrapping."""
@@ -497,14 +519,11 @@ def run_dynamics(field, bodies, dynamics_ticks, dt=1.0, max_speed=1.0,
     t0 = time.time()
 
     for tick in range(dynamics_ticks):
-        # Deposit gamma
-        for body in depositing_bodies:
-            body.deposit(field)
-
-        # Spread (possibly every N ticks for performance)
+        # === COMMIT PHASE: spread previous tick's deposits ===
         if tick % spread_interval == 0:
             field.spread()
 
+        # === READ PHASE: all gradient reads from committed field state ===
         # KDK leapfrog
         half_dt = dt * 0.5
         for body in moving_bodies:
@@ -513,8 +532,12 @@ def run_dynamics(field, bodies, dynamics_ticks, dt=1.0, max_speed=1.0,
             body.drift(dt)
         for body in moving_bodies:
             body.kick(field, half_dt)
-            body.clamp_speed(max_speed)
+            body.apply_bremsstrahlung_drain(dt)
             body.wrap(grid_size)
+
+        # === WRITE PHASE: deposits after all reads (transactional isolation) ===
+        for body in depositing_bodies:
+            body.deposit(field)
 
         # Record every log_interval
         if (tick + 1) % log_interval == 0:
@@ -651,18 +674,12 @@ def run_dynamics_multibody(per_body_fields, bodies, dynamics_ticks, dt=1.0,
     t0 = time.time()
 
     for tick in range(dynamics_ticks):
-        # Deposit: mass-conserving for moving bodies, accumulate for pinned
-        for body in bodies:
-            if body.pinned:
-                body.deposit_formation(per_body_fields[body.label])
-            else:
-                body.deposit_dynamics(per_body_fields[body.label])
-
-        # Spread each per-body field
+        # === COMMIT PHASE: spread previous tick's deposits ===
         if tick % spread_interval == 0:
             for bf in per_body_fields.values():
                 bf.spread()
 
+        # === READ PHASE: all gradient reads from committed field state ===
         # KDK leapfrog with external gradients
         half_dt = dt * 0.5
         for body in moving_bodies:
@@ -681,8 +698,15 @@ def run_dynamics_multibody(per_body_fields, bodies, dynamics_ticks, dt=1.0,
                 if other.label != body.label:
                     grad += per_body_fields[other.label].gradient_trilinear(body.center)
             body.kick_with_gradient(grad, half_dt)
-            body.clamp_speed(max_speed)
+            body.apply_bremsstrahlung_drain(dt)
             body.wrap(grid_size)
+
+        # === WRITE PHASE: deposits after all reads (transactional isolation) ===
+        for body in bodies:
+            if body.pinned:
+                body.deposit_formation(per_body_fields[body.label])
+            else:
+                body.deposit_dynamics(per_body_fields[body.label])
 
         # Record and diagnostics every log_interval
         if (tick + 1) % log_interval == 0:
