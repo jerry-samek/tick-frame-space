@@ -42,6 +42,9 @@ mvn exec:java -pl tick-space-runner -Dexec.mainClass="eu.jerrysamek.tickspace.ru
 
 **Important:** LocalApp outputs JSON snapshots to `W:\data\snapshots\` every 1000 ticks. Ensure this directory exists before running.
 
+### Running Python Scripts in Background
+When running long-running Python scripts (experiments, simulations) in the background, always use `python -u` (unbuffered stdout) so output can be monitored in real-time. Without `-u`, Python fully buffers stdout when redirected to a file, producing 0 bytes until the process exits.
+
 ### Python Analysis Tools
 ```bash
 # Statistical analysis by radial shells
