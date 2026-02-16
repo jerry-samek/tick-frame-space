@@ -14,15 +14,16 @@ This index catalogs all experiments in the `experiments/` directory, providing:
 - **Dependencies** between experiments
 - **Key findings** and implications
 
-**Total Experiments**: 21 (including sub-experiments and v13-v17 series)
+**Total Experiments**: 23 (including sub-experiments and v13-v17 series)
 
-**Major Validations**: 10 experiments have validated core theoretical predictions
+**Major Validations**: 11 experiments have validated core theoretical predictions
 
 **Major Falsifications**: 1 experiment has falsified bold theoretical claims (Exp #51 v1)
 
 **Critical Findings**: 1 experiment has identified FALSIFIABLE predictions vs quantum mechanics (Exp #62)
 
 **Latest Additions**:
+- Experiment 64_109 (Three-Body on Graph Lattice - February 2026) — Second independent gravity validation!
 - Experiment 80 (Gamma-Field Rendering - February 2026)
 - Experiment 56 v13-v17 (Canvas Ontology, Jitter Investigation, Sparse Storage - February 2026)
 - Experiment 72 (ZPE Cosmological Model - February 2026)
@@ -38,7 +39,7 @@ This index catalogs all experiments in the `experiments/` directory, providing:
 - **Entity Dynamics**: [#22](#22-genesis-and-discrete-relativity), [#39](#39-law-000), [#40](#40-tick-engine)
 - **Rendering & Visualization**: [#44 series](#44-series-temporal-rendering), [#49](#49-sliding-window-rendering)
 - **Scaling & Performance**: [#44_05](#4405-double-buffer-rendering), [#46_01](#reference-4601-on-bucketing)
-- **Gravity & Relativity**: [#51](#51-emergent-time-dilation-from-tick-budgets)
+- **Gravity & Relativity**: [#51](#51-emergent-time-dilation-from-tick-budgets), [#64_109](#64_109-three-body-dynamics-on-graph-lattice)
 - **Collision Physics & Matter**: [#55](#55-collision-physics-framework), [#56](#56-composite-objects), [#62](#62-interferometry)
 - **Quantum-Like Behavior**: [#62](#62-interferometry)
 - **Stability & Constants**: [#56 v13](#56-v13-jitter-investigation)
@@ -49,7 +50,7 @@ This index catalogs all experiments in the `experiments/` directory, providing:
 
 ### By Status
 
-- **✓ Validated**: [#15](#15-minimal-model), [#44_03](#4403-emergent-rotation), [#46_01](#reference-4601-on-bucketing), [#50](#50-dimensional-equivalence-under-explicit-time), [#51](#51-emergent-time-dilation-from-tick-budgets), [#55](#55-collision-physics-framework), [#62](#62-interferometry), [#56 v13](#56-v13-jitter-investigation), [#56 v17](#56-v17-canvas-ontology)
+- **✓ Validated**: [#15](#15-minimal-model), [#44_03](#4403-emergent-rotation), [#46_01](#reference-4601-on-bucketing), [#50](#50-dimensional-equivalence-under-explicit-time), [#51](#51-emergent-time-dilation-from-tick-budgets), [#55](#55-collision-physics-framework), [#62](#62-interferometry), [#56 v13](#56-v13-jitter-investigation), [#56 v17](#56-v17-canvas-ontology), [#64_109](#64_109-three-body-dynamics-on-graph-lattice)
 - **⏳ In Progress**: [#49](#49-sliding-window-rendering), [#56](#56-composite-objects), [#80](#80-gamma-field-rendering)
 - **🔬 Exploratory/Early**: [#22](#22-genesis-and-discrete-relativity), [#39](#39-law-000), [#40](#40-tick-engine), [#63](#63-magnetron-theory), [#72](#72-zpe-cosmological-model)
 
@@ -80,6 +81,8 @@ This index catalogs all experiments in the `experiments/` directory, providing:
 | **56 v13**| Jitter Investigation   | Stability    | ✓ Validated    | Doc 072, Doc 074                                            | 0.119 NOT fundamental, range [0.075, 0.5]                      |
 | **56 v17**| Canvas Ontology        | Architecture | ✓ Validated    | Doc 049, Ch1                                                | O(entities) sparse storage, gamma=canvas                       |
 | **72**    | ZPE Cosmology          | Cosmology    | 🔬 Early       | Doc 072, Doc 073                                            | Jitter scaling roadmap V1-V9                                   |
+| **64**    | Three-Body Gravity     | Gravity      | ⏳ In Progress  | Ch10, Ch11                                                  | Original three-body on continuous lattice                       |
+| **64_109**| Three-Body on Graph    | Gravity      | ✓ Validated    | RAW 109, RAW 110, Ch10, Ch11                                | Self-subtracting tagged quanta, three-body dynamics, cm → inertia |
 | **80**    | Gamma-Field Rendering  | Rendering    | ⏳ In Progress  | Ch9, Ch10, Ch11                                             | Virtual expansion + gamma field visualization                  |
 | **-**     | movement-vs-division   | Analysis     | 📊 Data        | -                                                           | Entity dynamics trade-offs                                     |
 
@@ -1132,6 +1135,111 @@ Renderer (stateless) → reads canvas → decides paint position → Canvas (acc
 
 ---
 
+### #64_109: Three-Body Dynamics on Graph Lattice
+
+**Full Name**: Three-Body Gravitational Dynamics via Self-Subtracting Tagged Quanta on Discrete Graph
+
+**Location**: `experiments/64_109_three_body_tree/`
+
+**Status**: ✓ **VALIDATED** (9 versions: v1-v9, 10/10 verification tests)
+
+**Hypothesis**: Gravity (mutual attraction + orbital dynamics) emerges from deposit-spread-follow on a discrete graph lattice using integer-tagged quanta, with NO force laws, NO continuous space, and NO field equations programmed.
+
+**Method**: Iterative refinement across 9 versions:
+
+**V1-V3: Pure Random Graphs** (❌ FAILED)
+
+- Watts-Strogatz random graphs with no spatial structure
+- Gamma couldn't propagate coherently — gradients too noisy
+- **Lesson**: Some topology is needed; pure randomness doesn't support gradient formation
+
+**V4-V5: 3D Periodic Cubic Lattice** (✅ PARTIAL)
+
+- Switched to `side=20` periodic lattice (8000 nodes, k=6)
+- Commit-counter model: entity sits for M ticks, reads gradient, hops 1
+- **v = c/M confirmed**: commit_mass controls speed
+- Self-gravitation field validated (gamma accumulates at entity position)
+
+**V6-V7: Self-Attraction Problem** (⚠️ IDENTIFIED)
+
+- Entity's own gamma dominates the field → self-attraction drowns external signal
+- Fixed-field experiment (v7) confirmed: attraction potential EXISTS if self-gamma removed
+- **Lesson**: Need self-subtraction mechanism
+
+**V8: Self-Subtracting Tagged Quanta** (✅ ATTRACTION CONFIRMED)
+
+- Per-entity int64 arrays: `external_gamma = total - own_tagged`
+- Two-body test: distance 10→4 hops in 50K ticks
+- **Breakthrough**: Entities attract via leaked quanta from other entities
+- Conservation exact (integer arithmetic, zero drift)
+
+**V9: Momentum as Continuous Internal Direction** (✅ COMPLETE VALIDATION)
+
+Three iterations:
+1. **Quantized blend** (❌): gradient_strength (~0.001) drowns against momentum (~5)
+2. **Normalized unit vectors** (❌): 6-neighbor lattice quantizes combined vector to same axis
+3. **Continuous internal direction** (✅ **BREAKTHROUGH**):
+   - Entity stores direction as continuous 3D vector: `internal_direction += (1/mass) * grad_unit; normalize()`
+   - Hop = neighbor with highest dot product to internal_direction
+   - Direction NEVER reset to hop direction — accumulates fractional nudges
+
+**V9 Key Results**:
+
+- **Head-on** (no momentum): distance oscillates [4, 26] — gravitational bound state
+- **Perpendicular** (cm=5): distance oscillates [6, 24] — REAL gravitational deflection, all 6 hop directions used
+- **Three-body tangential**: all 3 entities survive 100K ticks, no merger, distances oscillate dynamically
+- **Mass controls turning**: cm=1 turns in 2 hops (nudge=1.0), cm=10 turns in 22 hops (nudge=0.1)
+- **Conservation exact**: integer quanta, zero drift in every run
+- **10/10 verification tests pass**
+
+**Mechanism**:
+
+```
+TaggedGammaField:
+  - Per-entity int64 arrays: tagged[eid][node]
+  - Spread: each node sends alpha_eff * amount to each neighbor
+  - External gamma: total[node] - tagged[eid][node]
+  - Sync: total = sum(tagged[eid]) for all eids
+
+Entity:
+  - Commit counter: hop every M ticks (v = c/M)
+  - Gradient: weighted sum of direction_vector(node, nb) * external_gamma(nb, eid)
+  - Nudge: internal_direction += (1/mass) * gradient_unit; normalize()
+  - Hop: argmax(dot(internal_direction, direction_to_neighbor))
+  - Transfer: all tagged quanta move with entity
+```
+
+**Theory Validation**:
+
+- ✓ **VALIDATES**: Gravity from deposit-spread-follow (Ch10, Ch11)
+- ✓ **VALIDATES**: RAW 109 (physics on causal structure, not spatial geometry)
+- ✓ **VALIDATES**: RAW 110 (local dimensionality diagnosis)
+- ✓ **CONVERGENCE**: Second independent gravity implementation (alongside Exp #51)
+- ✓ **INSIGHT**: Continuous internal state on discrete lattice enables smooth dynamics
+
+**Key Insight**: **Internal state can be continuous even when external actions are quantized.** Small gradient nudges accumulate between hops until the direction vector crosses axis boundaries. This is analogous to dithering — individual steps are coarse, but accumulated path is smooth.
+
+**Limitations**:
+
+- ⚠️ Angular momentum not conserved (L oscillates ±8 due to hop quantization)
+- ⚠️ No stable closed orbits (gravitational scattering, not Keplerian)
+- ⚠️ Random graphs failed (v1-v3) — spatial lattice topology required
+- ⚠️ Signal propagation delay (~5K ticks for gamma to reach other entity)
+
+**Files**:
+
+- Experiment description: `experiment_description.md` (comprehensive v1-v9 documentation)
+- V9 implementation: `v9/tagged_gamma.py` (~900 lines)
+- Results: `v9/results/` (distance, trajectory, direction, histogram plots)
+
+**Dependencies**:
+
+- Experiment #64 (original three-body, continuous lattice)
+- RAW 109 (theoretical framework)
+- RAW 110 (local dimensionality)
+
+---
+
 ### #80: Gamma-Field Rendering
 
 **Full Name**: Gamma-Field Virtual Expansion Rendering
@@ -1283,8 +1391,10 @@ direct mapping to rendering order. Thus, sorting is not a theoretical requiremen
 | **Doc 074** (Ternary Correction)     | #56 v13      | Balance via discrete corrections   |
 | **Ch9** (Gamma Furrow)               | #80          | Furrow geometry, imprint propagation|
 | **Ch10** (Gamma Field Foundations)   | #80          | Field dynamics and update rules     |
-| **Ch11** (Entity Physics)            | #51, #53, #80| Gravity as cost gradient, geodesics |
+| **Ch11** (Entity Physics)            | #51, #53, #64_109, #80| Gravity as cost gradient, geodesics, graph-lattice gravity |
 | **Ch12** (EM & Curvature)            | #63          | Magnetism theory (exploratory)      |
+| **RAW 109** (Causal Structure)       | #64_109      | Physics on graph, not spatial geometry |
+| **RAW 110** (Local Dimensionality)   | #64_109      | Dimensionality diagnosis on lattice  |
 
 ### Reference Documents with Experimental Basis
 
@@ -1342,7 +1452,14 @@ direct mapping to rendering order. Thus, sorting is not a theoretical requiremen
 - Docs 072-075: Theoretical frameworks for epoch-dependent stability
 - #63: Magnetron theory (exploratory)
 
-**Phase 8: Current Work (2026 Q1)**
+**Phase 8: Graph-Based Gravity (2026 Q1)**
+
+- #64_109: Three-body dynamics on graph lattice (v1-v9, VALIDATED)
+- Self-subtracting tagged quanta mechanism
+- Continuous internal direction on discrete lattice breakthrough
+- Second independent gravity implementation converging with Exp #51
+
+**Phase 9: Current Work (2026 Q1)**
 
 - #72 V1 implementation pending
 - #62 experimental proposal preparation
@@ -1366,8 +1483,9 @@ direct mapping to rendering order. Thus, sorting is not a theoretical requiremen
 | **8. Jitter stability range**  | #56 v13    | ✓ VALIDATED    | [0.075, 0.5] stable range      |
 | **9. Canvas ontology**         | #56 v17    | ✓ VALIDATED    | O(entities) memory scaling     |
 | **10. ZPE epoch-dependence**   | #72        | 🔬 PROPOSED    | Roadmap V1-V9 defined          |
+| **11. Graph-lattice gravity**  | #64_109    | ✓ VALIDATED    | Second independent gravity implementation |
 
-**Computational Physics**: 6/6 testable predictions validated ✓
+**Computational Physics**: 7/7 testable predictions validated ✓
 
 **Real-World Physics**: 1 falsifiable prediction ready for experimental test ($500K-$2M, 1-2 years)
 
@@ -1431,11 +1549,11 @@ experiments/[number]_[name]/
 
 **By Status**:
 
-- ✓ Validated: 8 experiments (40%)
-- ⏳ In Progress: 1 experiment (5%)
-- 🔬 Exploratory/Early: 5 experiments (25%)
-- 📐 Prototype: 4 experiments (20%)
-- 📊 Analysis: 2 experiments (10%)
+- ✓ Validated: 9 experiments (39%)
+- ⏳ In Progress: 2 experiments (9%)
+- 🔬 Exploratory/Early: 5 experiments (22%)
+- 📐 Prototype: 4 experiments (17%)
+- 📊 Analysis: 3 experiments (13%)
 
 **By Type**:
 
@@ -1493,9 +1611,10 @@ experiments/[number]_[name]/
 
 ---
 
-**Document Version**: 1.2
+**Document Version**: 1.3
 **Last Updated**: February 2026
 **Status**: Living document (will update with new experiments)
+**Changes in v1.3**: Added Exp #64_109 (graph-lattice gravity, second independent gravity validation), updated timeline and statistics
 **Changes in v1.2**: Added Exp #80 (gamma-field rendering), linked Ch9-Ch13 to experiment cross-references
 **Changes in v1.1**: Added Exp #56 v13 (jitter), v17 (canvas), #63 (magnetron), #72 (ZPE)
 **Maintainer**: Auto-generated from experiment README files

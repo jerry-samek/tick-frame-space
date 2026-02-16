@@ -7,14 +7,15 @@
 
 ## TL;DR: Are We Doing Real Physics?
 
-**Short Answer**: **PROBABLY YES** - Major progress in January 2026:
+**Short Answer**: **PROBABLY YES** - Major progress in January-February 2026:
 
 - ✅ **V9 (Time Dilation)**: Quantitative match to GR+SR (r ≈ 0.999)
 - ✅ **V10 (Geodesics)**: 100% orbital success from pure gradient-following, NO FORCE LAWS
+- ✅ **Exp #64_109 (Graph Gravity)**: Self-subtracting tagged quanta produce attraction + three-body dynamics on discrete lattice
 - ⚠️ **V11 (Black Holes)**: Stable c-speed ring discovered (awaiting collision validation v12)
 - ❌ Still no connection to real-world physics experiments
 
-**Current Status**: Strong computational evidence for emergent gravity mechanism. V10 geodesics are the breakthrough - orbits emerged naturally without programming physics in.
+**Current Status**: Two independent gravity implementations converge. Exp #51 (continuous fields) and Exp #64_109 (integer quanta on graph) both produce gravity-like behavior. This convergence from different methodologies significantly strengthens the case.
 
 ---
 
@@ -47,7 +48,7 @@ Extrapolation to Physics Claims
 - "Gravity" is just an optimization trick
 - We're doing computer science, not physics
 
-**Current Status**: Somewhere in between, leaning toward the worst case until proven otherwise.
+**Current Status**: Somewhere in between. Two independent gravity implementations converging on the same behavior is harder to dismiss as coincidence.
 
 ---
 
@@ -256,6 +257,55 @@ Extrapolation to Physics Claims
 - `experiments/62_interferometry/README.md` (February 2026 revision section)
 - `docs/theory/raw/051_photon_and_emitting_entity_in_tickframe_physics.md` §6
 - `docs/theory/raw/062_00_experiment_tick-frame_interferometry.md` §2.4
+
+---
+
+### ✅ Computational Result 9: Graph-Based Gravity via Self-Subtracting Tagged Quanta (Exp #64_109)
+
+**Claim**: Gravity (mutual attraction + orbital dynamics) emerges from deposit-spread-follow on a discrete graph lattice using integer-tagged quanta, with NO force laws, NO continuous space, and NO field equations programmed.
+
+**What This Actually Proves**:
+
+- On a 3D periodic cubic lattice (8000 nodes, k=6), entities depositing integer quanta into a shared field and following EXTERNAL gradients (subtracting their own contribution) naturally attract
+- **v8: Attraction confirmed** — two-body distance shrinks from 10→4 hops in 50K ticks
+- **v9: Three iterations of momentum refinement**:
+  - Iteration 1: Quantized momentum blend failed (gradient_strength ~0.001 drowns against momentum ~5)
+  - Iteration 2: Normalized unit-vector blend failed (6-neighbor lattice quantizes combined vector to same axis at mass≥2)
+  - **Iteration 3: Continuous internal direction — BREAKTHROUGH**
+    - Entity stores direction as continuous 3D vector, only quantizes the hop (dot product with 6 neighbors)
+    - Gradient nudges accumulate: `internal_direction += (1/mass) * grad_unit; normalize()`
+    - Head-on: distance oscillates [4, 26] — gravitational bound state
+    - Perpendicular cm=5: distance oscillates [6, 24] — REAL gravitational deflection (all 6 hop directions used)
+    - Three-body tangential: all 3 entities survive 100K ticks, no merger, distances oscillate dynamically
+- **Conservation exact**: Integer quanta, zero drift over 100K ticks in every run
+- **Mass controls turning radius**: cm=1 turns in 2 hops (nudge=1.0), cm=10 turns in 22 hops (nudge=0.1)
+- 10/10 verification tests pass
+
+**What This Does NOT Prove**:
+
+- That real-world gravity uses this mechanism
+- That the 3D periodic lattice is the "correct" substrate (random graphs failed in v1-v3)
+- That angular momentum is conserved (L oscillates ±8 due to hop quantization)
+- That stable closed orbits exist (dynamics are gravitational scattering, not Keplerian)
+
+**Honest Assessment**: **Second independent validation of emergent gravity**, using completely different methodology from Exp #51 (which used continuous reaction-diffusion fields). Exp #64_109 uses integer-tagged quanta on a discrete graph. Both produce gravity-like attraction. The convergence from two independent approaches is strong evidence that the mechanism is robust, not an artifact of either specific implementation.
+
+**Key Insight**: **Continuous internal state on a discrete lattice.** The entity's direction vector lives in continuous 3D. The hop is quantized to 6 neighbors. Small gradient nudges accumulate between hops, enabling smooth turning. This is analogous to dithering/subpixel rendering — individual steps are coarse, but the accumulated path is smooth. This resolves the "discrete lattice can't support orbits" limitation.
+
+**What makes this convincing**:
+1. Two completely different gravity implementations (continuous fields vs integer quanta) both work
+2. Three-body dynamics emerge without any N-body code — just deposit-spread-follow
+3. Conservation is EXACT (integer arithmetic, zero drift)
+4. The continuous-direction breakthrough was not predicted — discovered through iterative failure
+
+**What undermines it**:
+1. Angular momentum not conserved (lattice quantization)
+2. No closed orbits — more like gravitational scattering than planetary motion
+3. Required spatial lattice (random graphs failed) — so topology matters, limiting the "space is not fundamental" claim
+
+**See**: `experiments/64_109_three_body_tree/experiment_description.md`, `experiments/64_109_three_body_tree/v9/tagged_gamma.py`
+
+**Status**: **VALIDATED COMPUTATIONALLY** — Gravity emerges from self-subtracting tagged quanta on graph. Three-body dynamics confirmed.
 
 ---
 
@@ -630,6 +680,7 @@ Why does this create orbits?
 **Major Improvements**:
 - Exp #51 v9 validated quantitative GR+SR predictions
 - **Exp #55 produced genuinely emergent Pauli exclusion** - This was NOT predicted or programmed!
+- **Exp #64_109 validated gravity on discrete graph** - Second independent implementation converges!
 
 ### Criteria for "Just a Game Engine"
 
@@ -641,7 +692,7 @@ Why does this create orbits?
 
 **Current Score**: 2/5 confirmed, 1/5 falsified, 1/5 partial, 1/5 unknown
 
-**Key Point**: The multiplicative combination γ_total = γ_grav × γ_SR was NOT programmed - it emerged!
+**Key Point**: The multiplicative combination γ_total = γ_grav × γ_SR was NOT programmed - it emerged! And two completely different implementations (continuous fields vs integer quanta on graph) both produce gravity.
 
 ### Verdict
 
@@ -653,17 +704,19 @@ Why does this create orbits?
 - ✅ Emergent multiplicative combination (not programmed)
 - ✅ **Exp #53 v10: Geodesics EMERGED naturally** (100% orbital success, no force laws!)
 - ✅ Single substrate produces both gravitational and SR effects
+- ✅ **Exp #64_109: Graph-lattice gravity works** (second independent implementation, integer quanta, three-body dynamics)
 - ⚠️ Exp #52 v11: Distinctive black hole structure discovered (c-ring, awaiting collision validation)
 
-**Recent Breakthroughs** (January 2026):
+**Recent Breakthroughs** (January-February 2026):
 
-- **V10 (Geodesics)**: Perfect orbital success rate from pure gradient-following - this is the strongest evidence yet that the mechanism is real physics, not artifact
+- **V10 (Geodesics)**: Perfect orbital success rate from pure gradient-following
 - **V11 (Black Holes)**: Stable c-speed ring discovered - potentially distinctive prediction if validated
-- **V12 (Collisions)**: Collision framework ready - final test for c-ring reality
+- **Exp #64_109 v8-v9 (Graph Gravity)**: Self-subtracting tagged quanta produce attraction + three-body dynamics on discrete lattice. Completely different implementation from Exp #51, yet BOTH produce gravity. The convergence from two independent approaches is the strongest evidence against "just a game engine."
+- **Continuous direction on discrete lattice**: Key insight — internal state can be continuous even when hops are quantized. Gradient nudges accumulate, enabling smooth turning on a 6-neighbor lattice.
 
-**Path to Real Physics**: V12 collision validation is critical next step. If c-ring survives → we have distinctive testable prediction different from GR.
+**Path to Real Physics**: Two independent gravity mechanisms converging + V12 collision validation. If c-ring survives → distinctive testable prediction different from GR.
 
-**Path to Game Engine**: V12 shows c-ring disperses with collisions → artifact confirmed, need to revise black hole model.
+**Path to Game Engine**: V12 shows c-ring disperses with collisions AND graph gravity turns out to be a trivial consequence of field diffusion → artifact confirmed.
 
 ---
 
@@ -683,7 +736,7 @@ Why does this create orbits?
 - 🔄 Composite objects form via γ-well binding (Exp #56 IN PROGRESS - structures defined, binding pending)
 - 🔬 ZPE cosmological model (Exp #72 - roadmap defined, V1-V9 planned)
 
-**Status**: **8/11 VALIDATED**, 1/11 preliminary (ghost particle limitation), 1/11 in progress (composite validation), 1/11 early stage (ZPE)
+**Status**: **9/12 VALIDATED**, 1/12 preliminary (ghost particle limitation), 1/12 in progress (composite validation), 1/12 early stage (ZPE)
 
 ---
 
@@ -765,14 +818,25 @@ Why does this create orbits?
 
 **Test**: Make predictions before running experiments. Don't adjust afterward.
 
-**Status**: **PARTIALLY MITIGATED** - Exp #55 emergent Pauli exclusion was genuinely surprising:
-- **NOT predicted** in original theory (Doc 053 didn't mention Pauli exclusion)
-- **NOT programmed** explicitly (emerged from pattern overlap + cell capacity)
-- **Discovered during testing** (wasn't looking for it, found it while analyzing identical particle collisions)
+**Status**: **SUBSTANTIALLY MITIGATED** - Multiple lines of evidence against overfitting:
 
-This emergence provides evidence AGAINST overfitting - if we were just designing results we wanted, we would have predicted this beforehand. The fact that it surprised us is a good sign.
+1. Exp #55 emergent Pauli exclusion was genuinely surprising:
+   - **NOT predicted** in original theory (Doc 053 didn't mention Pauli exclusion)
+   - **NOT programmed** explicitly (emerged from pattern overlap + cell capacity)
+   - **Discovered during testing** (wasn't looking for it)
 
-**Remaining Risk**: Cell capacity E_max is still a free parameter. Need to test if E_max must be tuned differently for different scenarios (bad) or if it's universal (good).
+2. **Exp #64_109: Two independent gravity implementations converge**:
+   - Exp #51 (continuous reaction-diffusion fields on continuous 2D space) → gravity
+   - Exp #64_109 (integer-tagged quanta on discrete 3D graph lattice) → gravity
+   - **Completely different code, different math, different substrate** → same physics
+   - If overfitting, you'd have to overfit TWO independent implementations independently
+
+3. **Exp #64_109 v9: Continuous direction was discovered through failure**:
+   - Iteration 1 failed (gradient drowning), Iteration 2 failed (lattice quantization)
+   - Iteration 3 worked (continuous internal direction) — this was NOT predicted, emerged from debugging
+   - The key insight (continuous state on discrete lattice) generalized beyond the specific experiment
+
+**Remaining Risk**: Cell capacity E_max is still a free parameter. Parameters were tuned in both gravity experiments (G, alpha, commit_mass). The question is whether the mechanism is robust across parameter ranges or only works at specific values.
 
 ---
 
@@ -814,6 +878,7 @@ This emergence provides evidence AGAINST overfitting - if we were just designing
 - ✅ **Experiment #56 v13**: Jitter stability range VALIDATED ([0.075, 0.5], 0.119 NOT special)
 - ✅ **Experiment #56 v17**: Canvas/Renderer ontology VALIDATED (O(entities) sparse storage)
 - ⚠️ **Experiment #62**: Interferometry REVISED (gamma coupling added - predicts GRADUAL degradation)
+- ✅ **Experiment #64_109 (v8-v9)**: Graph-lattice gravity VALIDATED — self-subtracting tagged quanta produce attraction + three-body dynamics. Second independent gravity implementation!
 - 🔄 **Experiment #56**: Composite structures implemented (hydrogen atom, helium nucleus, H2 molecule)
 - 🔬 **Experiment #72**: ZPE cosmological model roadmap defined (V1-V9 phases)
 
@@ -837,9 +902,11 @@ This emergence provides evidence AGAINST overfitting - if we were just designing
 
 ### What We Know (February 2026 Update)
 
-- ✅ **Eight major computational validations** (dimensional closure, bucketing, kinematic constraints, temporal signature, collision physics, jitter stability, canvas ontology, interferometry)
+- ✅ **Nine major computational validations** (dimensional closure, bucketing, kinematic constraints, temporal signature, collision physics, jitter stability, canvas ontology, interferometry, graph-lattice gravity)
 - ✅ **Time dilation emerges naturally** (Exp #51 v9: r ≈ 0.999 correlation with GR+SR)
 - ✅ **Geodesics emerge without force laws** (Exp #53 v10: 100% orbital success)
+- ✅ **Graph-lattice gravity works** (Exp #64_109 v9: self-subtracting tagged quanta, three-body dynamics, exact integer conservation)
+- ✅ **Two independent gravity implementations converge** (Exp #51 continuous fields + Exp #64_109 integer quanta — both produce attraction)
 - ✅ **Three-regime collision physics works** (Exp #55: 6/6 test cases, exact energy conservation)
 - ✅ **Pauli exclusion emerged unexpectedly** (Exp #55: genuinely surprising, not programmed!)
 - ✅ **Jitter is NOT fundamental** (Exp #56 v13: stable range [0.075, 0.5], 0.119 is arbitrary)
@@ -862,9 +929,11 @@ This emergence provides evidence AGAINST overfitting - if we were just designing
 
 ### What We've Accomplished
 
-- ✅ Experiments #51-55 **COMPLETED** (5/7 Tier 1 validated)
+- ✅ Experiments #51-55, #64_109 **COMPLETED** (6/8 Tier 1 validated)
 - ✅ Quantitative validation against GR+SR achieved (r ≈ 0.999)
+- ✅ Two independent gravity implementations converge (continuous fields + integer quanta on graph)
 - ✅ Emergent physics discovered (Pauli exclusion - not predicted!)
+- ✅ Three-body dynamics on discrete lattice (no merger, 100K ticks, exact conservation)
 - ⏳ Critical evaluation by physicists (not yet attempted)
 - ⏳ Connection to real-world tests (future work)
 
@@ -875,6 +944,7 @@ This emergence provides evidence AGAINST overfitting - if we were just designing
 **Current Status**:
 - **Time dilation**: ✅ VALIDATED (quantitative GR+SR match)
 - **Geodesic motion**: ✅ VALIDATED (perfect orbital emergence)
+- **Graph-lattice gravity**: ✅ VALIDATED (self-subtracting tagged quanta, three-body dynamics)
 - **Collision physics**: ✅ VALIDATED (three regimes + emergent Pauli exclusion)
 - **Jitter stability**: ✅ VALIDATED (0.119 is arbitrary, range [0.075, 0.5])
 - **Canvas ontology**: ✅ VALIDATED (O(entities) sparse storage)
@@ -890,6 +960,7 @@ This emergence provides evidence AGAINST overfitting - if we were just designing
 2. **Canvas/Renderer (v17)**: Elegant ontology with O(entities) scaling → architectural clarity
 3. **Interferometry (Exp #62)**: First FALSIFIABLE prediction distinguishing tick-frame from QM!
 4. **ZPE hypothesis (docs 072-075)**: Theoretical framework for cosmological implications
+5. **Graph-lattice gravity (Exp #64_109 v8-v9)**: Second independent gravity implementation! Self-subtracting integer quanta on discrete lattice produce attraction + three-body dynamics. Continuous internal direction on discrete hops is a key insight.
 
 **Remaining Skepticism**:
 - Still no connection to real-world experiments
@@ -907,8 +978,8 @@ This emergence provides evidence AGAINST overfitting - if we were just designing
 
 ---
 
-**Status**: VALIDATED CORE MECHANISMS, FIRST FALSIFIABLE PREDICTION READY
-**Bias**: Still toward skepticism, but evidence is compelling
+**Status**: VALIDATED CORE MECHANISMS (TWO INDEPENDENT GRAVITY IMPLEMENTATIONS), FIRST FALSIFIABLE PREDICTION READY
+**Bias**: Still toward skepticism, but convergence of independent approaches is hard to dismiss
 **Next Action**: Execute Experiment #72 V1 (ZPE ontology validation), propose real-world interferometry test
 **Expected Outcome**: ZPE V1 likely succeeds (ontology is sound), interferometry test is the big unknown
 **If Interferometry Works**: Revolutionary - tick-frame physics has discovered something fundamental about quantum mechanics
@@ -919,12 +990,14 @@ This emergence provides evidence AGAINST overfitting - if we were just designing
 - Ternary substrate correction axiom (doc 074)
 - Metabolic time dilation interpretation (doc 075)
 - Electromagnetism framework (docs 063-066)
+- Graph-lattice gravity: continuous internal state on discrete substrate (Exp #64_109)
+- Foundational axiom hierarchy (RAW 200 "Constitution")
 
-**Remember**: Real physics emerges through validation and falsification, not just theory writing. We now have a **testable prediction** (interferometry) that could distinguish tick-frame from standard QM. This is the most important next step.
+**Remember**: Real physics emerges through validation and falsification, not just theory writing. We now have a **testable prediction** (interferometry) that could distinguish tick-frame from standard QM. And we have **two independent gravity implementations** converging — the strongest evidence yet against "just a simulation artifact." But still no real-world connection.
 
 ---
 
-## Appendix: New Raw Documents (055-075)
+## Appendix: New Raw Documents (055-075, 100-200)
 
 **Status**: Theoretical frameworks, mostly unvalidated
 
@@ -941,5 +1014,14 @@ This emergence provides evidence AGAINST overfitting - if we were just designing
 | 072-073 | ZPE hypothesis | 🔬 Speculative, Exp #72 roadmap defined |
 | 074 | Ternary correction axiom | 🔬 Theoretical framework |
 | 075 | Metabolic time dilation | 🔬 Theoretical framework |
+| 100-103 | Hill ontology, reproduction, learning, domestication | 🔬 Consolidated into Ch13 |
+| 104-110 | Emission recoil, well-hill unification, Cooper pairs, 3D from trits, isotropy of c, local dimensionality | 🔬 Theoretical |
+| 120-125 | Ontological reparameterization, photon imprint, global geometry, GR geodesics, temporal surfing extended, persistence cost | 🔬 Theoretical |
+| 130 | Aharonov-Bohm unified | 🔬 Theoretical |
+| 140 | Composite objects imprint stability | 🔬 Theoretical |
+| 150 | Energetic topology phase structure | 🔬 Theoretical |
+| 160 | Gamma field conservation laws | 🔬 Theoretical |
+| 200 | Foundational axioms dependency graph | 🔬 "RAW Constitution" — axiom hierarchy |
+| 300 | Complete ontological stack | 🔬 Full ontology reference |
 
-**Key insight**: Most new docs are theoretical frameworks awaiting validation. The exception is interferometry (doc 062), which has been computationally validated and produces a falsifiable prediction.
+**Key insight**: Most new docs are theoretical frameworks awaiting validation. The exceptions are interferometry (doc 062, computationally validated) and graph-lattice gravity (Exp #64_109, validated via RAW 109 theoretical framework).

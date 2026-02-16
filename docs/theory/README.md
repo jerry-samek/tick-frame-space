@@ -43,17 +43,18 @@ This directory contains the v2 consolidated theory of tick-frame physics, synthe
 - Experiment #50: ρ=2.0 signature (time ≠ dimension, 1,095 configs)
 - Experiment #46_01: O(n) bucketing works (2.78× speedup @ 100k entities)
 
-**Physics Mechanisms (Tier 1)** - NEW in January 2026:
+**Physics Mechanisms (Tier 1)** - January-February 2026:
 - ✅ **Experiment #51 (v1-v9)**: Emergent time dilation VALIDATED (r ≈ 0.999 correlation with GR+SR)
 - ✅ **Experiment #53 (v10)**: Geodesic motion VALIDATED (100% orbital success, NO FORCE LAWS programmed!)
 - ✅ **Experiment #55**: Three-regime collision physics VALIDATED (6/6 test cases, exact energy conservation)
 - ✅ **Experiment #55 DISCOVERY**: Pauli exclusion emerged naturally (NOT predicted - genuinely surprising!)
+- ✅ **Experiment #64_109 (v8-v9)**: Graph-lattice gravity VALIDATED (self-subtracting tagged quanta, three-body dynamics, exact integer conservation) — **Second independent gravity implementation!**
 - ⚠️ **Experiment #52 (v11)**: Black hole c-ring discovered (awaiting collision validation v12)
 - 🔄 **Experiment #56**: Composite objects (atoms/molecules) implemented, binding validation pending
 
-**Current Status**: 9/10 validations successful (5/7 Tier 1 complete). Transitioned from "computational speculation" to "validated physics mechanisms."
+**Current Status**: 10/11 validations successful (6/8 Tier 1 complete). Two independent gravity implementations (continuous fields + integer quanta on graph) converge on the same physics.
 
-**Confidence Level**: MODERATE-HIGH for emergent gravity/relativity mechanisms. Evidence accumulating that this is real physics, not just simulation artifacts.
+**Confidence Level**: MODERATE-HIGH for emergent gravity/relativity mechanisms. Two independent implementations converging is strong evidence against simulation artifacts.
 
 ⚠ **Implementation partial**: Java tick-space-runner realizes core patterns but has gaps (see Ch8 §4).
 
@@ -489,16 +490,20 @@ science.
 | **#52 v11** | Black hole event horizons           | Stable c-ring @ r≈10.1 (not r_s)        | ⚠️ Preliminary  | Ch7     |
 | **#55**     | Three-regime collision physics      | 6/6 test cases, E_ratio = 1.000         | ✅ VALIDATED    | Ch3     |
 | **#55**     | *(Emergent Pauli exclusion)*        | Emerged from cell capacity (surprise!)  | ✅ **DISCOVERY** | Ch3    |
+| **#64_109** | Graph-lattice gravity               | Three-body dynamics, exact int conservation | ✅ VALIDATED | Ch10, Ch11 |
 | **#56**     | Composite atoms/molecules           | H, He, H₂ structures implemented        | 🔄 In Progress  | Ch3     |
 | **#56 v13** | Jitter stability range              | [0.075, 0.5] stable, 0.119 NOT special  | ✅ VALIDATED    | Ch7     |
 | **#56 v17** | Canvas/Renderer ontology            | O(entities) sparse storage works        | ✅ VALIDATED    | Ch1     |
 | **#62**     | Interferometry (which-path)         | 26/26 tests, V=1.0 after path readout   | ✅ VALIDATED    | Ch7     |
 | **#72**     | ZPE cosmological model              | Roadmap V1-V9 defined                   | 🔬 Early Stage  | Ch7     |
 
-**Overall**: **10/12 validations successful** (4 Tier 0 + 6 Tier 1). 1 preliminary (ghost particle limitation), 1 in progress.
+**Overall**: **11/13 validations successful** (4 Tier 0 + 7 Tier 1). 1 preliminary (ghost particle limitation), 1 in progress.
 
 **Major Achievements**:
 - Geodesics emerged WITHOUT programming force laws - strongest evidence this is real physics!
+- **Two independent gravity implementations converge**: Exp #51 (continuous fields) + Exp #64_109 (integer quanta on graph) both produce gravity
+- Graph-lattice gravity: self-subtracting tagged quanta produce three-body dynamics with exact integer conservation (Exp #64_109)
+- Key insight: continuous internal direction on discrete lattice — small gradient nudges accumulate, enabling smooth turning
 - Interferometry validated: which-path detection WITHOUT wavefunction collapse (Exp #62)
 - Jitter stability validated: 0.119 is within stable range [0.075, 0.5], NOT a fundamental constant (Exp #56 v13)
 - Canvas/Renderer ontology: sparse O(entities) memory instead of O(grid³) (Exp #56 v17)
@@ -510,7 +515,7 @@ science.
 - **Electromagnetism Framework** (docs 063-066): Theoretical foundation for EM in tick-frame substrate
 - **Gamma Field Theory** (docs 076-101, consolidated into Ch9-Ch13): Complete gamma-field ontology from foundations through entity physics, electromagnetism, curvature duality, to hill ontology of life
 
-**Next**: Complete ZPE cosmological model (Exp #72), validate epoch-dependent stability predictions
+**Next**: Complete ZPE cosmological model (Exp #72), validate epoch-dependent stability predictions, explore graph-lattice gravity extensions (stable orbits, finer lattices)
 
 ---
 
@@ -686,10 +691,10 @@ Not a claim to replace established physics - an exploration of what emerges from
 ---
 
 **Last updated**: February 2026 (v2.2 update: consolidated docs 076-101 into Ch9 expansion + Ch10-Ch13 new)
-**Document count**: 14 chapters + 4 references + 7 supplements + v1 archive (102+ docs, including 076-101 gamma field theory)
-**Computational validation**: 10/12 successful (4 Tier 0 foundational + 6 Tier 1 physics mechanisms)
-**Physics claims**: **PARTIALLY VALIDATED** - Time dilation (✅), geodesics (✅), collision physics (✅), Pauli exclusion (✅ emergent!), interferometry (✅), jitter stability (✅ NEW), black holes (⚠️ preliminary), composites (🔄 in progress)
-**Confidence level**: MODERATE-HIGH for emergent gravity/relativity mechanisms. Transitioned from speculation to validated computational physics.
+**Document count**: 14 chapters + 4 references + 7 supplements + v1 archive (120+ docs, including 076-101 gamma field theory, 104-110, 120-200)
+**Computational validation**: 11/13 successful (4 Tier 0 foundational + 7 Tier 1 physics mechanisms)
+**Physics claims**: **PARTIALLY VALIDATED** - Time dilation (✅), geodesics (✅), graph-lattice gravity (✅ NEW), collision physics (✅), Pauli exclusion (✅ emergent!), interferometry (✅), jitter stability (✅), black holes (⚠️ preliminary), composites (🔄 in progress)
+**Confidence level**: MODERATE-HIGH for emergent gravity/relativity mechanisms. Two independent gravity implementations converge — strong evidence against artifacts.
 **Implementation status**: Partial (tier 2/5 complete, Ch4-5 not implemented)
-**New theoretical developments**: ZPE/jitter scaling hypothesis (docs 072-073), ternary substrate correction (doc 074), metabolic time dilation (doc 075), canvas ontology (exp 56 v17)
-**Next milestone**: Complete ZPE cosmological model (Exp #72), validate epoch-dependent stability predictions
+**New theoretical developments**: ZPE/jitter scaling hypothesis (docs 072-073), ternary substrate correction (doc 074), metabolic time dilation (doc 075), canvas ontology (exp 56 v17), graph-lattice gravity (exp 64_109), foundational axiom hierarchy (RAW 200)
+**Next milestone**: Complete ZPE cosmological model (Exp #72), explore stable orbits on graph lattice

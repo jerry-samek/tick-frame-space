@@ -105,11 +105,12 @@ The **tick-space-runner** module contains the operational Java (25) implementati
 
 **Last Updated:** February 2026
 
-**Theory Development:** 76+ theoretical documents, 10/12 computational validations complete
+**Theory Development:** 120+ theoretical documents, 11/13 computational validations complete
 
 **Major Breakthroughs (January-February 2026):**
 - ✅ **Time dilation validated** (Exp #51 v9: r ≈ 0.999 correlation with GR+SR)
 - ✅ **Geodesics emerged naturally** (Exp #53 v10: 100% orbital success, NO force laws programmed!)
+- ✅ **Graph-lattice gravity validated** (Exp #64_109 v9: self-subtracting tagged quanta, three-body dynamics, exact integer conservation — **second independent gravity implementation!**)
 - ✅ **Collision physics validated** (Exp #55: 6/6 test cases, exact energy conservation)
 - ✅ **Pauli exclusion discovered** (Exp #55: emerged from cell capacity - NOT programmed!)
 - ✅ **Jitter stability range** (Exp #56 v13: 0.119 is NOT special, stable range [0.075, 0.5])
@@ -176,6 +177,10 @@ Python scripts for analyzing JSON snapshots from LocalApp:
     - **Docs 072-073**: ZPE hypothesis (jitter scaling with expansion)
     - **Doc 074**: Ternary substrate correction axiom
     - **Doc 075**: Metabolic time dilation interpretation
+    - **Docs 104-110**: Emission recoil, well-hill unification, Cooper pairs, 3D from trits, isotropy of c
+    - **Docs 120-160**: Ontological reparameterization, photon imprint, GR geodesics, conservation laws
+    - **Doc 200**: Foundational axioms and dependency graph ("RAW Constitution")
+    - **Doc 300**: Complete ontological stack
 
 ### Model & Implementation
 
@@ -193,12 +198,13 @@ Python scripts for analyzing JSON snapshots from LocalApp:
 - [Exp #51 Time Dilation](experiments/51_emergent_time_dilation/) - v1-v9, r≈0.999 GR+SR correlation
 - [Exp #55 Collision Physics](experiments/55_collision_physics/) - Three regimes, emergent Pauli exclusion
 - [Exp #56 Composite Objects](experiments/56_composite_objects/) - v1-v17, canvas ontology, jitter stability
+- [Exp #64_109 Graph-Lattice Gravity](experiments/64_109_three_body_tree/) - Second independent gravity, three-body dynamics
 
 ---
 
 ## 🧪 Experiments
 
-### Physics Mechanism Experiments (51-62 Series) - January-February 2026
+### Physics Mechanism Experiments (51-64 Series) - January-February 2026
 
 - **51: Emergent Time Dilation** ✅ VALIDATED
     - [EXPERIMENTAL_ARC.md](experiments/51_emergent_time_dilation/EXPERIMENTAL_ARC.md) - Complete v1-v9 journey
@@ -221,6 +227,14 @@ Python scripts for analyzing JSON snapshots from LocalApp:
     - 26/26 tests passed
     - Which-path detection WITHOUT wavefunction collapse
     - **Prediction:** V > 0.9 after path readout (vs QM: V → 0)
+
+- **64_109: Three-Body on Graph Lattice** ✅ VALIDATED - SECOND GRAVITY IMPLEMENTATION
+    - [Experiment Description](experiments/64_109_three_body_tree/experiment_description.md) - Complete v1-v9 journey
+    - Self-subtracting integer-tagged quanta on 3D periodic lattice (8000 nodes, k=6)
+    - **v8:** Attraction confirmed (distance 10→4 hops)
+    - **v9:** Three-body dynamics (100K ticks, no merger, exact integer conservation)
+    - **Key Insight:** Continuous internal direction on discrete lattice — gradient nudges accumulate, enabling smooth turning
+    - **Convergence:** Completely different implementation from Exp #51, yet BOTH produce gravity
 
 ### Dimensional Physics Experiments (15 Series)
 
@@ -259,12 +273,13 @@ Python scripts for analyzing JSON snapshots from LocalApp:
 
 ## 🔬 Scientific Status
 
-**Theory Development:** 76+ documents spanning foundation to physical formalization and cosmological implications
+**Theory Development:** 120+ documents spanning foundation to physical formalization, cosmological implications, and gamma-field ontology
 
 **Computational Validation (February 2026):**
-- **10/12 experiments validated** (4 Tier 0 foundational + 6 Tier 1 physics mechanisms)
+- **11/13 experiments validated** (4 Tier 0 foundational + 7 Tier 1 physics mechanisms)
 - **Time dilation validated:** r ≈ 0.999 correlation with combined GR+SR predictions (Exp #51 v9)
 - **Geodesics emerged naturally:** 100% orbital success without programming force laws (Exp #53 v10)
+- **Graph-lattice gravity validated:** Self-subtracting tagged quanta produce three-body dynamics with exact integer conservation (Exp #64_109 v9) — **second independent gravity implementation!**
 - **Collision physics validated:** Three regimes (merge/explode/excite), exact energy conservation (Exp #55)
 - **Pauli exclusion discovered:** Emerged from cell capacity - genuinely surprising, NOT programmed! (Exp #55)
 - **Jitter stability range:** 0.119 is within stable range [0.075, 0.5], NOT a fundamental constant (Exp #56 v13)
@@ -272,12 +287,14 @@ Python scripts for analyzing JSON snapshots from LocalApp:
 - **Interferometry validated:** Which-path detection WITHOUT wavefunction collapse - FALSIFIABLE prediction! (Exp #62)
 
 **Key Scientific Contributions:**
-- **Emergent Gravity:** Geodesic motion from time gradients, NOT force laws. Strongest evidence this is real physics!
+- **Two Independent Gravity Implementations Converge:** Exp #51 (continuous fields) and Exp #64_109 (integer quanta on graph) both produce gravity — strongest evidence against "just a simulation artifact"
+- **Emergent Gravity:** Geodesic motion from time gradients, NOT force laws
+- **Continuous Direction on Discrete Lattice:** Internal state can be continuous even when hops are quantized — gradient nudges accumulate between hops, enabling smooth turning on a 6-neighbor lattice
 - **Emergent Pauli Exclusion:** Arises from pattern overlap + cell capacity limits, NOT explicit programming
 - **Void Asymmetry Principle:** Matter-antimatter asymmetry from ternary state stabilization ({-1, 0, +1})
 - **Observer-Relative Cosmology:** Big Bang, dimensions, multiverse are observer properties, not substrate events
 - **Memory as Indexing:** Brain indexes historical ticks; explains trauma, déjà vu, dreams
-- **ZPE Hypothesis (NEW):** Jitter decreases with cosmic expansion, potentially explains early universe anomalies
+- **ZPE Hypothesis:** Jitter decreases with cosmic expansion, potentially explains early universe anomalies
 
 **First Falsifiable Prediction:**
 - **Interferometry:** Which-path information can be obtained WITHOUT destroying interference fringes
@@ -286,6 +303,9 @@ Python scripts for analyzing JSON snapshots from LocalApp:
 - **Test:** Cold atom or neutron interferometer, delayed-choice quantum eraser (~$500K-$2M, 1-2 years)
 
 **New Theoretical Developments (February 2026):**
+- **Graph-Lattice Gravity (Exp #64_109):** Second independent gravity implementation using integer-tagged quanta on discrete graph
+- **Continuous Direction on Discrete Lattice:** Key insight — internal state can be continuous even when hops are quantized
+- **Foundational Axioms (RAW 200):** "RAW Constitution" — axiom hierarchy and dependency graph of the gamma-field ontology
 - **ZPE/Jitter Scaling (Docs 072-073):** J(t) ∝ 1/a(t), explains early SMBHs and massive galaxies at z > 10
 - **Ternary Substrate Correction (Doc 074):** Stability via integer corrections {-1, 0, +1}
 - **Metabolic Time Dilation (Doc 075):** Entities "skip" rendering to conserve energy, not temporal slowdown
@@ -308,10 +328,10 @@ Python scripts for analyzing JSON snapshots from LocalApp:
 1. **New Readers:** [Ch1 Temporal Ontology](docs/theory/ch001_temporal_ontology.md) → [Ch2 Dimensional Framework](docs/theory/ch002_dimensional_framework.md) → [experiment_index.md](docs/theory/experiment_index.md)
 2. **Skeptics:** [REFERENCE_doc050_01](docs/theory/REFERENCE_doc050_01_dimensional_equivalence_rejection.md) (smoking gun) → [honest_status.md](docs/theory/honest_status.md) (reality check)
 3. **Implementers:** [REFERENCE_doc015](docs/theory/REFERENCE_doc015_minimal_model.md) (Java basis) → [Ch3 Entity Dynamics](docs/theory/ch003_entity_dynamics.md)
-4. **Breakthrough Results:** [Exp #51 v10](experiments/51_emergent_time_dilation/) (geodesics emerged!) → [Exp #55](experiments/55_collision_physics/) (Pauli emerged!)
-5. **Latest Work:** [Exp #56 v17](experiments/56_composite_objects/v17/README.md) (canvas ontology) → [honest_status.md](docs/theory/honest_status.md)
+4. **Breakthrough Results:** [Exp #51 v10](experiments/51_emergent_time_dilation/) (geodesics emerged!) → [Exp #55](experiments/55_collision_physics/) (Pauli emerged!) → [Exp #64_109](experiments/64_109_three_body_tree/) (graph gravity!)
+5. **Latest Work:** [Exp #64_109](experiments/64_109_three_body_tree/experiment_description.md) (graph-lattice gravity) → [honest_status.md](docs/theory/honest_status.md)
 
-### V2 Consolidated Theory (76+ Documents)
+### V2 Consolidated Theory (120+ Documents)
 
 See [docs/theory/README.md](docs/theory/README.md) for complete framework:
 - **Ch1-2:** Temporal Ontology, Dimensional Framework (validated)
@@ -320,7 +340,8 @@ See [docs/theory/README.md](docs/theory/README.md) for complete framework:
 - **Ch6:** Rendering Theory (validated)
 - **Ch7:** Physical Formalization (analytical)
 - **Ch8:** Integration & Falsification (synthesis)
-- **Raw 055-075:** New theoretical developments (ZPE, EM, metabolic dilation)
+- **Ch9-13:** Gamma Field Foundations, Entity Physics, EM & Curvature, Hill Ontology
+- **Raw 055-200:** ZPE, EM, metabolic dilation, graph gravity, foundational axioms
 
 ---
 
@@ -336,6 +357,6 @@ This project represents a novel approach to theoretical physics development: **A
 
 **This distinction matters:** AI is being used as an advanced tool for expression and implementation — much like using LaTeX for typesetting or MATLAB for simulations — not as the source of theoretical creativity. The human provides the vision; AI helps make it concrete, testable, and reproducible.
 
-Without Claude and Copilot, this theory would still exist as scattered thoughts. With them, it has become 76+ formalized documents, 10/12 validated experiments, a working Java implementation, and the first falsifiable prediction distinguishing tick-frame from standard QM (interferometry without collapse). This collaboration demonstrates how AI can amplify human theoretical work without replacing human creativity.
+Without Claude and Copilot, this theory would still exist as scattered thoughts. With them, it has become 120+ formalized documents, 11/13 validated experiments, two independent gravity implementations, a working Java implementation, and the first falsifiable prediction distinguishing tick-frame from standard QM (interferometry without collapse). This collaboration demonstrates how AI can amplify human theoretical work without replacing human creativity.
 
 **Acknowledgment:** This project would not have been possible in its current form without the assistance of Claude (Anthropic) and GitHub Copilot. They served as tireless partners in the work of bringing speculative ideas into rigorous form.

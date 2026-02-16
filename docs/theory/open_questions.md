@@ -140,7 +140,7 @@ This document consolidates open questions from across the tick-frame physics fra
 - 12 questions extend to new domains
 - 11 questions are refinements
 
-**Already Answered**: 8 major questions fully resolved (3 NEW in January 2026!)
+**Already Answered**: 9 major questions fully resolved (4 NEW in January-February 2026!)
 
 - Time ≠ dimension (Exp #50) - ✓ Complete
 - Sorting unnecessary (Exp #44_05) - ✓ Complete
@@ -150,6 +150,7 @@ This document consolidates open questions from across the tick-frame physics fra
 - **Geodesics without force laws (Exp #53 v10)** - ✓ **NEW** (100% orbital success)
 - **Collision physics (Exp #55)** - ✓ **NEW** (three regimes + emergent Pauli exclusion!)
 - **Matter-antimatter asymmetry (Doc 061 + Exp #55)** - ✓ **NEW** (pattern diversity explanation)
+- **Graph-lattice gravity (Exp #64_109 v8-v9)** - ✓ **NEW** (second independent gravity implementation, three-body dynamics)
 
 ---
 
@@ -459,19 +460,33 @@ as accelerating expansion?
 - Regenerative energy essential to prevent collapse
 - Space must be represented as computational field
 
+**Second Independent Validation** (Exp #64_109, February 2026):
+
+- ✅ **Completely different implementation** from Exp #51:
+  - Exp #51: Continuous reaction-diffusion fields on continuous 2D space
+  - Exp #64_109: Integer-tagged quanta on discrete 3D graph lattice (8000 nodes, k=6)
+- ✅ Self-subtracting tagged quanta: `external_gamma = total - own_tagged`
+- ✅ Two-body attraction: distance 10→4 hops (v8), oscillates [4, 26] (v9)
+- ✅ Three-body dynamics: all 3 entities survive 100K ticks, no merger
+- ✅ Conservation exact: integer arithmetic, zero drift
+- ✅ Key insight: continuous internal direction on discrete lattice enables smooth turning
+
 **Remaining Questions**:
 
-- Can we implement emergent trajectories (replace forced circular orbits)?
-- Does gradient create geodesic motion? (Exp #53)
+- Can stable closed orbits emerge? (current dynamics are scattering, not Keplerian)
+- Can angular momentum be conserved on discrete lattice? (currently oscillates ±8)
 - Can ultra-relativistic regime (>0.9c) be improved?
+- Is the lattice topology essential? (random graphs failed in v1-v3)
 
-**Difficulty**: Medium → **VALIDATED**
+**Difficulty**: Medium → **VALIDATED (TWICE)**
 
 **Related**:
 
 - Ch4 §6, Ch7 §9 (original speculation)
-- Exp #51 v1-v8 (experimental validation)
-- `experiments/51_emergent_time_dilation/EXPERIMENTAL_ARC.md` (full journey)
+- Exp #51 v1-v9 (first validation, continuous fields)
+- Exp #64_109 v1-v9 (second validation, graph-lattice integer quanta)
+- `experiments/51_emergent_time_dilation/EXPERIMENTAL_ARC.md` (Exp #51 journey)
+- `experiments/64_109_three_body_tree/experiment_description.md` (Exp #64_109 journey)
 
 ---
 
@@ -1293,6 +1308,21 @@ Questions that were once open but have been resolved:
   - Emergence validates computational basis for quantum mechanics
 - See: experiments/55_collision_physics/, docs/theory/raw/053_tick_frame_collision_physics.md
 
+### ✅ Does gravity work on a discrete graph (not just continuous space)?
+
+**Status**: **VALIDATED** - Answered by Experiment #64_109 (v1-v9).
+
+- ❌ Random graphs don't work (v1-v3: no coherent gradient formation)
+- ✅ 3D periodic cubic lattice works (v4+: spatial topology enables gradient propagation)
+- ✅ **Self-subtracting tagged quanta** produce attraction (v8: distance 10→4 hops)
+- ✅ **Continuous internal direction** enables smooth dynamics on 6-neighbor lattice (v9)
+- ✅ **Three-body dynamics** without merger (100K ticks, distances oscillate dynamically)
+- ✅ **Conservation exact** (integer arithmetic, zero drift)
+- ✅ **Mass controls turning radius** (nudge_strength = 1/mass)
+- ✅ **Second independent gravity implementation** converging with Exp #51 (continuous fields)
+- Key insight: internal state continuous, external action quantized — accumulated nudges cross axis boundaries
+- See: experiments/64_109_three_body_tree/experiment_description.md, honest_status.md
+
 ### ✅ Why didn't matter and antimatter completely annihilate in early universe?
 
 **Status**: **EXPLAINED** - Framework provided by Doc 061 + validated by Exp #55.
@@ -1320,10 +1350,11 @@ Questions that were once open but have been resolved:
 
 ---
 
-**Document Version**: 1.2
+**Document Version**: 1.3
 **Last Updated**: February 2026
-**Total Questions**: 39 active + 8 answered
+**Total Questions**: 39 active + 9 answered
 **Status**: Living document (will evolve with research)
+**Major Update v1.3**: Added Exp #64_109 (graph-lattice gravity) to answered questions, updated Q3.4 with second independent validation
 **Major Update v1.2**: Added 7 gamma-field questions (Q9.5-Q9.11) from Ch9-Ch13 consolidation
 **Major Update v1.1**: Added Exp #55 (collision physics + emergent Pauli exclusion), Exp #53 (geodesics), Doc 061 (matter-antimatter asymmetry)
 

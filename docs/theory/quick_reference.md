@@ -84,6 +84,23 @@ Existence Condition:  E_bind > E_dissolution  (entity persists iff binding excee
 Cooperation:          N cooperating > N isolated (collective hill-raising is geometrically favored)
 ```
 
+### Graph-Lattice Gravity (Exp #64_109 v9 - February 2026)
+
+```
+Tagged Quanta:
+  tagged[eid][node] ∈ int64           [Per-entity integer quanta at each node]
+  external_gamma(node, eid) = total[node] - tagged[eid][node]  [Self-subtraction]
+
+Entity Direction:
+  internal_direction += (1/mass) * grad_unit   [Continuous 3D nudge]
+  normalize(internal_direction)                 [Unit vector]
+  hop = argmax(dot(internal_direction, dir_to_neighbor))  [Quantized to k neighbors]
+
+Commit Counter:
+  v = c / commit_mass                 [Speed inversely proportional to mass]
+  nudge_strength = 1.0 / commit_mass  [Heavier = harder to turn]
+```
+
 ### Gravitational Time Dilation (Exp #51 v9 - January 2026)
 
 ```
@@ -140,7 +157,7 @@ Cooperation:          N cooperating > N isolated (collective hill-raising is geo
 | **#50**    | ρ=2.0 in (n+t) | ρ=2.000±0.002          | ✓ VALIDATED | 1,095 configs, 0% pass |
 | **#46_01** | O(n) bucketing | 2.78× speedup          | ✓ VALIDATED | 297k @ 60 FPS          |
 
-### Tier 1: Physics Mechanisms (January 2026 Breakthrough)
+### Tier 1: Physics Mechanisms (January-February 2026)
 
 | Experiment  | Prediction            | Result                                 | Status         |
 |-------------|-----------------------|----------------------------------------|----------------|
@@ -148,9 +165,10 @@ Cooperation:          N cooperating > N isolated (collective hill-raising is geo
 | **#53 v10** | Geodesics (no forces) | 100% orbital success (18/18 entities)  | ✅ VALIDATED   |
 | **#55**     | Collision physics     | 6/6 test cases, E_ratio = 1.000        | ✅ VALIDATED   |
 | **#55**     | *(Pauli exclusion)*   | Emerged from cell capacity (surprise!) | ✅ **DISCOVERY** |
+| **#64_109** | Graph-lattice gravity | Three-body dynamics, exact conservation | ✅ VALIDATED   |
 | **#56**     | Composite atoms       | H, He, H₂ structures implemented       | 🔄 In Progress |
 
-**Overall**: 9/10 validations successful (4 Tier 0 + 5 Tier 1). **Major breakthrough in emergent physics!**
+**Overall**: 10/11 validations successful (4 Tier 0 + 6 Tier 1). **Two independent gravity implementations converge!**
 
 ---
 
@@ -237,6 +255,7 @@ sensitivity).
 - **Collision physics framework (Exp #55)** - Three regimes, pattern overlap, exact energy conservation
 - **Gravitational time dilation (Exp #51 v9)** - Coupled field dynamics, GR+SR combined
 - **Geodesic motion (Exp #53 v10)** - Gradient-following, 100% orbital success
+- **Graph-lattice gravity (Exp #64_109 v9)** - Self-subtracting tagged quanta, three-body dynamics, exact conservation
 - **Composite structures (Exp #56)** - Atoms/molecules with orbital dynamics (validation pending)
 
 ### Gaps / In Progress ⚠
@@ -317,13 +336,14 @@ addressing, not storage.
 
 ## Research Frontier (Top Open Questions)
 
-### ✅ RECENTLY ANSWERED (January 2026)
+### ✅ RECENTLY ANSWERED (January-February 2026)
 
 1. **Gravity mechanism** - ✅ VALIDATED (Exp #51 v9): Coupled field dynamics create emergent GR+SR time dilation (r ≈ 0.999)
 2. **Geodesic motion** - ✅ VALIDATED (Exp #53 v10): Objects follow time-flow gradients without force laws (100% orbital success)
 3. **Collision physics** - ✅ VALIDATED (Exp #55): Three regimes work, energy conserved exactly
 4. **Pauli exclusion** - ✅ DISCOVERED (Exp #55): Emerged from cell capacity limits (NOT predicted!)
 5. **Matter-antimatter asymmetry** - ✅ EXPLAINED (Doc 061 + Exp #55): Pattern diversity prevents global annihilation
+6. **Graph-lattice gravity** - ✅ VALIDATED (Exp #64_109 v9): Self-subtracting tagged quanta, three-body dynamics, two independent gravity implementations converge!
 
 ### 🔥 STILL OPEN (High Priority)
 
@@ -356,9 +376,10 @@ addressing, not storage.
 
 ---
 
-**Document Version**: 2.1
+**Document Version**: 2.2
 **Last Updated**: February 2026
 **Status**: Living reference (updates with framework)
+**Major Update v2.2**: Added Exp #64_109 (graph-lattice gravity), tagged quanta formulas, updated validation tables
 **Major Update v2.1**: Added gamma field formulas (Ch10-Ch13), 7 principles, expanded navigation and open questions
 **Major Update v2.0**: Added Tier 1 experimental results (Exp #51, 53, 55, 56), collision physics formulas, gravitational time dilation equations
 **Companion Documents**: [README](README.md) | [Glossary](glossary.md) | [Experiment Index](experiment_index.md) | [Honest Status](honest_status.md)
