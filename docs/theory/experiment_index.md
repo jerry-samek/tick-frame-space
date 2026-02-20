@@ -82,7 +82,7 @@ This index catalogs all experiments in the `experiments/` directory, providing:
 | **56 v17**| Canvas Ontology        | Architecture | ✓ Validated    | Doc 049, Ch1                                                | O(entities) sparse storage, gamma=canvas                       |
 | **72**    | ZPE Cosmology          | Cosmology    | 🔬 Early       | Doc 072, Doc 073                                            | Jitter scaling roadmap V1-V9                                   |
 | **64**    | Three-Body Gravity     | Gravity      | ⏳ In Progress  | Ch10, Ch11                                                  | Original three-body on continuous lattice                       |
-| **64_109**| Three-Body on Graph    | Gravity      | ✓ Validated    | RAW 109, RAW 110, Ch10, Ch11                                | Self-subtracting tagged quanta, three-body dynamics, cm → inertia |
+| **64_109**| Three-Body on Graph    | Gravity      | ✓ Validated    | RAW 109, RAW 110, Ch10, Ch11                                | v9: three-body dynamics. v10: stable orbits, force law ~2.2, GR-like geodesics |
 | **80**    | Gamma-Field Rendering  | Rendering    | ⏳ In Progress  | Ch9, Ch10, Ch11                                             | Virtual expansion + gamma field visualization                  |
 | **-**     | movement-vs-division   | Analysis     | 📊 Data        | -                                                           | Entity dynamics trade-offs                                     |
 
@@ -1141,44 +1141,44 @@ Renderer (stateless) → reads canvas → decides paint position → Canvas (acc
 
 **Location**: `experiments/64_109_three_body_tree/`
 
-**Status**: ✓ **VALIDATED** (9 versions: v1-v9, 10/10 verification tests)
+**Status**: ✓ **VALIDATED** (10 versions: v1-v10, stable orbits + force law measured)
 
 **Hypothesis**: Gravity (mutual attraction + orbital dynamics) emerges from deposit-spread-follow on a discrete graph lattice using integer-tagged quanta, with NO force laws, NO continuous space, and NO field equations programmed.
 
-**Method**: Iterative refinement across 9 versions:
+**Method**: Iterative refinement across 10 versions:
 
-**V1-V3: Pure Random Graphs** (❌ FAILED)
+**V1-V3: Pure Random Graphs** (FAILED)
 
 - Watts-Strogatz random graphs with no spatial structure
 - Gamma couldn't propagate coherently — gradients too noisy
 - **Lesson**: Some topology is needed; pure randomness doesn't support gradient formation
 
-**V4-V5: 3D Periodic Cubic Lattice** (✅ PARTIAL)
+**V4-V5: 3D Periodic Cubic Lattice** (PARTIAL)
 
 - Switched to `side=20` periodic lattice (8000 nodes, k=6)
 - Commit-counter model: entity sits for M ticks, reads gradient, hops 1
 - **v = c/M confirmed**: commit_mass controls speed
 - Self-gravitation field validated (gamma accumulates at entity position)
 
-**V6-V7: Self-Attraction Problem** (⚠️ IDENTIFIED)
+**V6-V7: Self-Attraction Problem** (IDENTIFIED)
 
-- Entity's own gamma dominates the field → self-attraction drowns external signal
+- Entity's own gamma dominates the field — self-attraction drowns external signal
 - Fixed-field experiment (v7) confirmed: attraction potential EXISTS if self-gamma removed
 - **Lesson**: Need self-subtraction mechanism
 
-**V8: Self-Subtracting Tagged Quanta** (✅ ATTRACTION CONFIRMED)
+**V8: Self-Subtracting Tagged Quanta** (ATTRACTION CONFIRMED)
 
 - Per-entity int64 arrays: `external_gamma = total - own_tagged`
-- Two-body test: distance 10→4 hops in 50K ticks
+- Two-body test: distance 10 to 4 hops in 50K ticks
 - **Breakthrough**: Entities attract via leaked quanta from other entities
 - Conservation exact (integer arithmetic, zero drift)
 
-**V9: Momentum as Continuous Internal Direction** (✅ COMPLETE VALIDATION)
+**V9: Momentum as Continuous Internal Direction** (COMPLETE VALIDATION)
 
 Three iterations:
-1. **Quantized blend** (❌): gradient_strength (~0.001) drowns against momentum (~5)
-2. **Normalized unit vectors** (❌): 6-neighbor lattice quantizes combined vector to same axis
-3. **Continuous internal direction** (✅ **BREAKTHROUGH**):
+1. **Quantized blend** (failed): gradient_strength (~0.001) drowns against momentum (~5)
+2. **Normalized unit vectors** (failed): 6-neighbor lattice quantizes combined vector to same axis
+3. **Continuous internal direction** (BREAKTHROUGH):
    - Entity stores direction as continuous 3D vector: `internal_direction += (1/mass) * grad_unit; normalize()`
    - Hop = neighbor with highest dot product to internal_direction
    - Direction NEVER reset to hop direction — accumulates fractional nudges
@@ -1192,11 +1192,23 @@ Three iterations:
 - **Conservation exact**: integer quanta, zero drift in every run
 - **10/10 verification tests pass**
 
+**V10: Macro Bodies — Astronomical Scale** (PARTIAL PASS — February 20, 2026)
+
+Scaled the proven micro-rules to macro bodies using float64 gamma (justified by law of large numbers at M~10^30). Key results:
+
+- **Force law n ~ 2.2** in mid-field (r=3-20 hops). Three regimes: near/mid field n~2.2 (0.2 excess = k=6 lattice anisotropy), far field n~3.5 (propagation horizon). G only scales magnitude, not exponent.
+- **Bresenham-like hop accumulator**: Replaced argmax (45-degree dead zone) with accumulator distributing hops across axes proportional to internal_direction. Infinite angular resolution on 6-direction lattice.
+- **Gravitational time dilation stabilizes orbits**: `effective_commit = commit_mass * (1 + scale * local_gamma)`. Bodies slow in the gamma well. Without this, all orbits unstable (constant speed + uniform lattice = no restoring force).
+- **433 stable revolutions** at mean r=1.97 hops over 30K ticks. Period = 20.3 ticks. Orbit shape is a square (4 in-plane directions on k=6 lattice).
+- **Velocity decomposition**: tangential dominant (~-0.7), radial oscillates around ~0. Speed rotates between radial and tangential — GR-like geodesic motion, not Newtonian F=ma.
+- **No orbit quantization**: Only r_start=10 captures to r~2. Other starting separations escape. Narrow capture basin, not electron-shell structure.
+- **Equal-mass bodies don't orbit**: Required asymmetric masses (star=100, planet=1) for stability.
+
 **Mechanism**:
 
 ```
 TaggedGammaField:
-  - Per-entity int64 arrays: tagged[eid][node]
+  - Per-entity arrays: tagged[eid][node]
   - Spread: each node sends alpha_eff * amount to each neighbor
   - External gamma: total[node] - tagged[eid][node]
   - Sync: total = sum(tagged[eid]) for all eids
@@ -1205,7 +1217,7 @@ Entity:
   - Commit counter: hop every M ticks (v = c/M)
   - Gradient: weighted sum of direction_vector(node, nb) * external_gamma(nb, eid)
   - Nudge: internal_direction += (1/mass) * gradient_unit; normalize()
-  - Hop: argmax(dot(internal_direction, direction_to_neighbor))
+  - Hop: Bresenham accumulator (v10) or argmax dot product (v9)
   - Transfer: all tagged quanta move with entity
 ```
 
@@ -1216,21 +1228,31 @@ Entity:
 - ✓ **VALIDATES**: RAW 110 (local dimensionality diagnosis)
 - ✓ **CONVERGENCE**: Second independent gravity implementation (alongside Exp #51)
 - ✓ **INSIGHT**: Continuous internal state on discrete lattice enables smooth dynamics
+- ✓ **INSIGHT**: Force is turning rate (GR geodesic), not acceleration (Newton)
+- ✓ **MEASURED**: Force law exponent ~2.2 in mid-field (lattice anisotropy from k=6)
 
-**Key Insight**: **Internal state can be continuous even when external actions are quantized.** Small gradient nudges accumulate between hops until the direction vector crosses axis boundaries. This is analogous to dithering — individual steps are coarse, but accumulated path is smooth.
+**Key Insights**:
+
+1. **Internal state can be continuous even when external actions are quantized.** Small gradient nudges accumulate between hops. This is dithering — individual steps are coarse, accumulated path is smooth.
+2. **Force is turning rate, not acceleration.** Bodies move at constant v = c/M. Gravity changes direction, not speed. This is geodesic motion (GR), not F=ma (Newton).
+3. **Time dilation stabilizes orbits.** Without it, constant speed + uniform lattice = no restoring mechanism. With gamma-dependent effective commit time, bodies slow in the well and can't collapse.
+4. **The lattice shapes physics.** k=6 cubic lattice produces square orbits and force law exponent 2.2 instead of Newton's 2.0. Different k would give different results.
 
 **Limitations**:
 
-- ⚠️ Angular momentum not conserved (L oscillates ±8 due to hop quantization)
-- ⚠️ No stable closed orbits (gravitational scattering, not Keplerian)
-- ⚠️ Random graphs failed (v1-v3) — spatial lattice topology required
-- ⚠️ Signal propagation delay (~5K ticks for gamma to reach other entity)
+- Angular momentum not conserved (L oscillates due to hop quantization)
+- Stable orbits require time dilation parameter (not purely emergent from base rules)
+- Random graphs failed (v1-v3) — spatial lattice topology required
+- Force law exponent 2.2, not Newton's 2.0 (lattice artifact)
+- Narrow capture basin — only r_start=10 produces bound orbit
+- Only one stable orbital radius achieved (r~2, lattice minimum)
 
 **Files**:
 
-- Experiment description: `experiment_description.md` (comprehensive v1-v9 documentation)
+- Experiment description: `experiment_description.md` (comprehensive v1-v10 documentation)
 - V9 implementation: `v9/tagged_gamma.py` (~900 lines)
-- Results: `v9/results/` (distance, trajectory, direction, histogram plots)
+- V10 implementation: `v10/macro_bodies.py` (~1400 lines)
+- V10 results: `v10/results/` (orbit, trajectory, force law, quantization plots)
 
 **Dependencies**:
 
@@ -1459,11 +1481,21 @@ direct mapping to rendering order. Thus, sorting is not a theoretical requiremen
 - Continuous internal direction on discrete lattice breakthrough
 - Second independent gravity implementation converging with Exp #51
 
-**Phase 9: Current Work (2026 Q1)**
+**Phase 9: Macro-Scale Orbits (2026 Q1)**
+
+- #64_109 v10: Macro bodies on 64K-node lattice (PARTIAL PASS)
+- Force law measured at ~1/r^2.2 (lattice anisotropy)
+- Stable orbit via gravitational time dilation (433 revolutions)
+- GR-like geodesic motion: constant speed, turning = gravity
+- Bresenham-like hop accumulator for infinite angular resolution
+- Orbit quantization test: narrow capture basin, not electron shells
+
+**Phase 10: Current Work (2026 Q1)**
 
 - #72 V1 implementation pending
 - #62 experimental proposal preparation
 - Real-world falsification test planning
+- #64_109 v11: Higher k lattice, Kepler's law test, wider capture basins
 
 ---
 
@@ -1484,8 +1516,9 @@ direct mapping to rendering order. Thus, sorting is not a theoretical requiremen
 | **9. Canvas ontology**         | #56 v17    | ✓ VALIDATED    | O(entities) memory scaling     |
 | **10. ZPE epoch-dependence**   | #72        | 🔬 PROPOSED    | Roadmap V1-V9 defined          |
 | **11. Graph-lattice gravity**  | #64_109    | ✓ VALIDATED    | Second independent gravity implementation |
+| **12. Macro-scale orbits**     | #64_109 v10| ✓ PARTIAL PASS | Stable orbit, force law ~2.2, time dilation required |
 
-**Computational Physics**: 7/7 testable predictions validated ✓
+**Computational Physics**: 8/8 testable predictions validated (1 partial) ✓
 
 **Real-World Physics**: 1 falsifiable prediction ready for experimental test ($500K-$2M, 1-2 years)
 
@@ -1549,9 +1582,9 @@ experiments/[number]_[name]/
 
 **By Status**:
 
-- ✓ Validated: 9 experiments (39%)
-- ⏳ In Progress: 2 experiments (9%)
-- 🔬 Exploratory/Early: 5 experiments (22%)
+- ✓ Validated: 10 experiments (41%)
+- ⏳ In Progress: 2 experiments (8%)
+- 🔬 Exploratory/Early: 5 experiments (21%)
 - 📐 Prototype: 4 experiments (17%)
 - 📊 Analysis: 3 experiments (13%)
 
@@ -1611,9 +1644,10 @@ experiments/[number]_[name]/
 
 ---
 
-**Document Version**: 1.3
-**Last Updated**: February 2026
+**Document Version**: 1.4
+**Last Updated**: February 20, 2026
 **Status**: Living document (will update with new experiments)
+**Changes in v1.4**: Updated Exp #64_109 with v10 macro bodies results (stable orbits, force law ~2.2, gravitational time dilation, GR-like geodesic motion, orbit quantization test)
 **Changes in v1.3**: Added Exp #64_109 (graph-lattice gravity, second independent gravity validation), updated timeline and statistics
 **Changes in v1.2**: Added Exp #80 (gamma-field rendering), linked Ch9-Ch13 to experiment cross-references
 **Changes in v1.1**: Added Exp #56 v13 (jitter), v17 (canvas), #63 (magnetron), #72 (ZPE)

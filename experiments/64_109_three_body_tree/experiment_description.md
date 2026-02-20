@@ -1834,6 +1834,54 @@ python tagged_gamma.py --phase3 --ticks 100000 --initial-momentum tangential --t
 
 ---
 
+## v10: Macro Bodies — Faking Astronomical Entities on an Expanding Graph
+
+### Status: PARTIAL PASS — Stable orbit via time dilation, force law ~2.2, no quantization
+
+### Motivation
+
+v1-v9 proved gravity at sub-atomic scale: attraction (v1), orbits (v2), v=c/M (v5-v6), self-subtraction (v8),
+continuous direction (v9). All at ~1000 quanta, 8K nodes, high stochastic noise. v10 scales to astronomical bodies
+by aggregating the proven micro-rules into clean macro dynamics.
+
+The justification: at M~10³⁰, the law of large numbers makes stochastic effects negligible. The integer quantum
+field converges to a deterministic continuous field. We "fake" big entities by encoding their mass as a number
+rather than counting individual quanta — not as approximation, but as the correct large-number limit.
+
+### What We Fake vs What We Keep
+
+**Faked (justified aggregation):** mass as a property (not quanta count), continuous float gamma (not integer),
+macro-ticks (1 tick = configurable time unit).
+
+**Kept (preserved from micro):** graph topology, gamma propagation at c, self-subtraction, continuous internal
+direction (v9), speed limit c = 1 hop/tick, expansion.
+
+### Key New Feature: Graph Expansion
+
+Edge weights grow by factor (1 + H) per tick. Hops take longer as edges stretch. Bodies experience expansion as
+"it takes more ticks to reach neighbors." Unbound pairs recede at v = H × d (Hubble's law). Bound pairs resist
+(binding > expansion). The critical H where orbits unbind = cosmological constant analog.
+
+### Success Criteria
+
+- **PASS**: Stable two-body orbit, T² ∝ r³, acceleration ∝ 1/r²
+- **STRONG PASS**: G_eff constant within 1%, three-body matches Newtonian integration
+- **EXCEPTIONAL**: Force law deviation at min-hop and at expansion scale, derivable G_eff formula
+- **FAIL**: No stable orbits, force law not 1/r², G_eff varies with distance
+
+### Implementation Phases
+
+1. Deterministic continuous field (port from v6/v8 integer → float64)
+2. Two-body orbit (tune parameters, verify Kepler)
+3. Force law measurement (a vs 1/r²)
+4. Expansion (edge weight growth, orbital decay)
+5. Three-body (compare against scipy Newtonian integration)
+6. Mathematical extraction (derive G_eff formula)
+
+Full details: `v10/experiment_description.md`
+
+---
+
 ## Dependencies
 
 - Experiment 64 results (for comparison)
