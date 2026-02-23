@@ -15,3 +15,5 @@ __pycache__
 target/
 **/output/
 output/
+**/results/
+results/
