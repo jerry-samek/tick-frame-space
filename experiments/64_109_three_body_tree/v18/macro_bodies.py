@@ -62,13 +62,15 @@ class RandomGeometricGraph:
     """
 
     def __init__(self, n_nodes, k=6, alpha=None, G=1.0, H=0.0,
-                 alpha_expand=1.0, seed=42, body_ids=None, radius=50.0):
+                 alpha_expand=1.0, seed=42, body_ids=None, radius=50.0,
+                 weighted_spread=False):
         self.k = k
         self.G = G
         self.H = H
         self.alpha_expand = alpha_expand
         self.seed = seed
         self.radius = radius
+        self.weighted_spread = weighted_spread
 
         print(f"  Building random geometric graph: N={n_nodes}, k={k}, "
               f"radius={radius}, seed={seed}")
@@ -131,6 +133,7 @@ class RandomGeometricGraph:
         pos_b = self.positions[self.edge_node_b]
         self.edge_lengths = np.linalg.norm(pos_b - pos_a, axis=1).astype(np.float64)
         self.initial_mean_edge = float(np.mean(self.edge_lengths))
+        self.initial_edge_lengths = self.edge_lengths.copy()
         self.last_growth = np.zeros(self.n_edges, dtype=np.float64)
 
         # Per-node neighbor list: node_neighbors[node] = [(nb_id, edge_idx), ...]
@@ -168,15 +171,40 @@ class RandomGeometricGraph:
         return self.gamma[node] - self.tagged[exclude_bid][node]
 
     def spread(self):
-        """Deterministic self-gravitating spread. Conserves gamma exactly."""
-        alpha_eff = self.alpha / (1.0 + self.G * np.abs(self.gamma))
-        alpha_eff = np.clip(alpha_eff, 0.0, 1.0)
+        """Diffuse gamma along graph edges. Conserves gamma exactly.
 
-        for bid in self.body_ids:
-            outflow = alpha_eff * self.tagged[bid]
-            per_edge = outflow / self.degrees
-            inflow = self.A @ per_edge
-            self.tagged[bid] = self.tagged[bid] - outflow + inflow
+        If weighted_spread=True, flow is weighted by initial_length/current_length.
+        Stretched edges carry less gamma. Short edges carry more.
+        Not a new mechanism — just making diffusion honest about edge lengths.
+        """
+        if self.weighted_spread:
+            # Edge weights: ratio of initial to current length
+            # Fresh edges: weight=1. Expanded edges: weight<1.
+            weights = self.initial_edge_lengths / self.edge_lengths
+
+            # Build weighted adjacency (rebuild each tick — edges change)
+            rows = np.concatenate([self.edge_node_a, self.edge_node_b])
+            cols = np.concatenate([self.edge_node_b, self.edge_node_a])
+            data = np.concatenate([weights, weights])
+            A_w = csr_matrix((data, (rows, cols)),
+                             shape=(self.n_nodes, self.n_nodes))
+            w_degrees = np.array(A_w.sum(axis=1)).flatten()
+            w_degrees = np.maximum(w_degrees, 1e-15)
+
+            for bid in self.body_ids:
+                outflow = self.alpha * self.tagged[bid]
+                per_node = outflow / w_degrees
+                inflow = A_w @ per_node
+                self.tagged[bid] = self.tagged[bid] - outflow + inflow
+        else:
+            # Original topology-only spread (with G-dependent alpha for compat)
+            alpha_eff = self.alpha / (1.0 + self.G * np.abs(self.gamma))
+            alpha_eff = np.clip(alpha_eff, 0.0, 1.0)
+            for bid in self.body_ids:
+                outflow = alpha_eff * self.tagged[bid]
+                per_edge = outflow / self.degrees
+                inflow = self.A @ per_edge
+                self.tagged[bid] = self.tagged[bid] - outflow + inflow
 
         self.sync_total()
 
@@ -855,6 +883,24 @@ def run_verification():
           f"tagged {tagged_before:.1f}->{tagged_after:.1f}")
     passed += ok; failed += (not ok)
 
+    # Test 10: Weighted spread conserves gamma
+    print("Test 10: Weighted spread conserves gamma (1000 ticks)")
+    f10 = RandomGeometricGraph(500, k=6, G=0.0, H=0.01, seed=10,
+                                body_ids=['A', 'B'], weighted_spread=True)
+    f10.tagged['A'][f10.n_nodes // 2] = 500.0
+    f10.tagged['B'][f10.n_nodes // 2 + 10] = 300.0
+    f10.sync_total()
+    init_total = f10.total_gamma()
+    for _ in range(1000):
+        f10.expand_edges()
+        f10.spread()
+    final_total = f10.total_gamma()
+    drift = abs(final_total - init_total)
+    ok = drift < 1e-6
+    print(f"  {'PASS' if ok else 'FAIL'}: {init_total:.1f} -> {final_total:.6f} "
+          f"(drift={drift:.2e})")
+    passed += ok; failed += (not ok)
+
     print(f"\n=== RESULTS: {passed}/{passed + failed} passed ===\n")
     return failed == 0
 
@@ -866,7 +912,7 @@ def run_verification():
 def experiment_phase0(n_nodes=10000, k=12, H=0.01, alpha_expand=1.0,
                       mass=100000.0, deposit_strength=0.00001,
                       ticks=50000, seed=42, tag='', radius=30.0,
-                      radiate_mass=True):
+                      radiate_mass=True, weighted_spread=False):
     """Phase 0: Single body gradient formation test.
 
     Does a single massive body's continuous deposits create a gamma
@@ -881,7 +927,8 @@ def experiment_phase0(n_nodes=10000, k=12, H=0.01, alpha_expand=1.0,
     graph = RandomGeometricGraph(n_nodes, k=k, G=0.0, H=H,
                                   alpha_expand=alpha_expand,
                                   seed=seed, body_ids=['A'],
-                                  radius=radius)
+                                  radius=radius,
+                                  weighted_spread=weighted_spread)
     center = graph.nearest_node(np.array([0.0, 0.0, 0.0]))
 
     body = Entity('A', center, mass=mass, deposit_rate=deposit_strength,
@@ -979,7 +1026,7 @@ def experiment_phase1(n_nodes=10000, k=6, H=0.1, alpha_expand=1.0,
                       separation=10.0,
                       ticks=50000, seed=42, tag='',
                       tangential_momentum=0.1, inertia=1.0, radius=30.0,
-                      radiate_mass=True, warm_up=0):
+                      radiate_mass=True, warm_up=0, weighted_spread=False):
     print("=" * 70)
     print("PHASE 1: Star + Planet Orbit (Random Graph, One Stupid Rule)")
     print("  G=0 (free diffusion), continuous deposit, expanding edges")
@@ -989,7 +1036,8 @@ def experiment_phase1(n_nodes=10000, k=6, H=0.1, alpha_expand=1.0,
     graph = RandomGeometricGraph(n_nodes, k=k, G=0.0, H=H,
                                   alpha_expand=alpha_expand,
                                   seed=seed, body_ids=['star', 'planet'],
-                                  radius=radius)
+                                  radius=radius,
+                                  weighted_spread=weighted_spread)
 
     # Place star at center, planet at separation along x
     center_pos = np.array([0.0, 0.0, 0.0])
@@ -1320,7 +1368,7 @@ def experiment_phase2(n_nodes=10000, k=12, H=0.1, alpha_expand=1.0,
                       separation=10.0, ticks=20000,
                       seed=42, tag='',
                       tangential_momentum=0.1, inertia=1.0, radius=30.0,
-                      radiate_mass=True, warm_up=0):
+                      radiate_mass=True, warm_up=0, weighted_spread=False):
     print("=" * 70)
     print("PHASE 2: Equal Mass Binary (Random Graph)")
     print("  Two equal masses with opposing tangential velocity.")
@@ -1330,7 +1378,8 @@ def experiment_phase2(n_nodes=10000, k=12, H=0.1, alpha_expand=1.0,
     graph = RandomGeometricGraph(n_nodes, k=k, G=0.0, H=H,
                                   alpha_expand=alpha_expand,
                                   seed=seed, body_ids=['A', 'B'],
-                                  radius=radius)
+                                  radius=radius,
+                                  weighted_spread=weighted_spread)
 
     # Place bodies symmetrically
     half_sep = separation / 2.0
@@ -1705,7 +1754,7 @@ def experiment_phase2(n_nodes=10000, k=12, H=0.1, alpha_expand=1.0,
 def experiment_sweep_deposit(n_nodes=10000, k=12, H=0.01, alpha_expand=1.0,
                              mass=100000.0, separation=10.0, ticks=50000,
                              seed=42, tangential_momentum=0.1, inertia=1.0,
-                             radius=30.0, warm_up=0):
+                             radius=30.0, warm_up=0, weighted_spread=False):
     """Phase 3: Sweep deposit_rate to find the sweet spot."""
     print("=" * 70)
     print("PHASE 3: Deposit Rate Sweep")
@@ -1722,7 +1771,8 @@ def experiment_sweep_deposit(n_nodes=10000, k=12, H=0.01, alpha_expand=1.0,
         graph = RandomGeometricGraph(n_nodes, k=k, G=0.0, H=H,
                                       alpha_expand=alpha_expand,
                                       seed=seed, body_ids=['A', 'B'],
-                                      radius=radius)
+                                      radius=radius,
+                                      weighted_spread=weighted_spread)
 
         half_sep = separation / 2.0
         node_a = graph.nearest_node(np.array([-half_sep, 0.0, 0.0]))
@@ -1891,6 +1941,8 @@ def main():
                         help='Disable mass radiation (deposit gamma but keep mass constant)')
     parser.add_argument('--warm-up', type=int, default=0,
                         help='Warm-up ticks: deposit+spread, no movement (default 0)')
+    parser.add_argument('--weighted-spread', action='store_true',
+                        help='Weight gamma spread by initial/current edge length')
 
     args = parser.parse_args()
 
@@ -1905,7 +1957,8 @@ def main():
                           ticks=args.ticks,
                           seed=args.seed, tag=args.tag,
                           radius=args.radius,
-                          radiate_mass=not args.no_mass_loss)
+                          radiate_mass=not args.no_mass_loss,
+                          weighted_spread=args.weighted_spread)
 
     if args.phase1:
         experiment_phase1(n_nodes=args.n_nodes, k=args.k, H=args.H,
@@ -1920,7 +1973,8 @@ def main():
                           inertia=args.inertia,
                           radius=args.radius,
                           radiate_mass=not args.no_mass_loss,
-                          warm_up=args.warm_up)
+                          warm_up=args.warm_up,
+                          weighted_spread=args.weighted_spread)
 
     if args.phase2:
         experiment_phase2(n_nodes=args.n_nodes, k=args.k, H=args.H,
@@ -1934,7 +1988,8 @@ def main():
                           inertia=args.inertia,
                           radius=args.radius,
                           radiate_mass=not args.no_mass_loss,
-                          warm_up=args.warm_up)
+                          warm_up=args.warm_up,
+                          weighted_spread=args.weighted_spread)
 
     if args.sweep_deposit:
         experiment_sweep_deposit(
@@ -1945,7 +2000,8 @@ def main():
             seed=args.seed,
             tangential_momentum=args.tangential_momentum,
             inertia=args.inertia, radius=args.radius,
-            warm_up=args.warm_up)
+            warm_up=args.warm_up,
+            weighted_spread=args.weighted_spread)
 
     if not any([args.verify, args.phase0, args.phase1, args.phase2, args.sweep_deposit]):
         print("No experiment selected. Use --help for options.")
