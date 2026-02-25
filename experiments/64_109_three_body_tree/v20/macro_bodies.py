@@ -111,7 +111,8 @@ class RandomGeometricGraph:
 
     def _build_graph(self, k):
         """Build k-NN graph with symmetrized edges."""
-        tree = KDTree(self.positions)
+        self.tree = KDTree(self.positions)
+        tree = self.tree
         # Query k+1 because first result is the point itself
         distances, indices = tree.query(self.positions, k=k + 1)
 
@@ -265,6 +266,11 @@ class RandomGeometricGraph:
         """Find the graph node closest to a 3D position."""
         dists = np.linalg.norm(self.positions - pos_3d, axis=1)
         return int(np.argmin(dists))
+
+    def nodes_within_radius(self, center_pos, radius):
+        """Find all graph nodes within Euclidean radius of a 3D position."""
+        indices = self.tree.query_ball_point(center_pos, radius)
+        return indices if indices else []
 
     def direction_vector(self, from_node, to_node):
         """Unit vector from from_node to to_node in 3D embedding."""
