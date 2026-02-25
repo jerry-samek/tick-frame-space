@@ -396,7 +396,7 @@ class Entity:
 
     def __init__(self, bid, node, mass=1.0, deposit_rate=1.0, inertia=1.0,
                  stationary=False, radiate_mass=True, drag=0.0,
-                 inertia_mode='constant'):
+                 inertia_mode='constant', graph=None, body_radius=0.0):
         self.bid = bid
         self.node = node
         self.mass = mass
@@ -416,6 +416,17 @@ class Entity:
         self.trajectory = []
         self.pos_history = []
 
+        # Distributed body: occupy multiple nodes within body_radius
+        self.center_node = node
+        if graph is not None and body_radius > 0:
+            center_pos = graph.positions[node]
+            self.nodes = graph.nodes_within_radius(center_pos, body_radius)
+            if not self.nodes:
+                self.nodes = [node]
+        else:
+            self.nodes = [node]
+        self.body_radius = body_radius
+
     def advance(self, graph, tick=None):
         """Advance one tick.
 
@@ -426,7 +437,10 @@ class Entity:
         5. Transfer residual displacement to new node's best connector
         """
         deposited = self.mass * self.deposit_rate
-        graph.deposit(self.node, self.bid, deposited)
+        n_body_nodes = len(self.nodes)
+        deposit_per_node = deposited / n_body_nodes
+        for n in self.nodes:
+            graph.deposit(n, self.bid, deposit_per_node)
         if self.radiate_mass:
             self.mass = max(self.mass - deposited, 0.0)
 
