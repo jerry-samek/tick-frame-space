@@ -1062,7 +1062,8 @@ def experiment_phase1(n_nodes=10000, k=6, H=0.1, alpha_expand=1.0,
                       ticks=50000, seed=42, tag='',
                       tangential_momentum=0.1, inertia=1.0, radius=30.0,
                       radiate_mass=True, warm_up=0, weighted_spread=False,
-                      drag=0.0, inertia_mode='constant'):
+                      drag=0.0, inertia_mode='constant',
+                      body_base_radius=5.0, body_ref_mass=100000.0):
     print("=" * 70)
     print("PHASE 1: Star + Planet Orbit (Random Graph, One Stupid Rule)")
     print("  G=0 (free diffusion), continuous deposit, expanding edges")
@@ -1095,17 +1096,26 @@ def experiment_phase1(n_nodes=10000, k=6, H=0.1, alpha_expand=1.0,
 
     print(f"  No formation phase — entities build field from tick 1")
 
+    # Compute body radii: radius = base_radius * (mass / ref_mass) ^ (1/3)
+    star_body_radius = body_base_radius * (star_mass / body_ref_mass) ** (1.0 / 3.0)
+    planet_body_radius = body_base_radius * (planet_mass / body_ref_mass) ** (1.0 / 3.0)
+
     bodies = [
         Entity('star', node_star, mass=star_mass,
                deposit_rate=deposit_strength,
                inertia=inertia, stationary=True,
                radiate_mass=radiate_mass,
-               drag=drag, inertia_mode=inertia_mode),
+               drag=drag, inertia_mode=inertia_mode,
+               graph=graph, body_radius=star_body_radius),
         Entity('planet', node_planet, mass=planet_mass,
                deposit_rate=0.0,
                inertia=inertia, radiate_mass=radiate_mass,
-               drag=drag, inertia_mode=inertia_mode),
+               drag=drag, inertia_mode=inertia_mode,
+               graph=graph, body_radius=planet_body_radius),
     ]
+
+    print(f"  Star body: radius={star_body_radius:.2f}, nodes={len(bodies[0].nodes)}")
+    print(f"  Planet body: radius={planet_body_radius:.4f}, nodes={len(bodies[1].nodes)}")
 
     # Planet gets initial tangential velocity (y direction)
     bodies[1].set_velocity(np.array([0.0, tangential_momentum, 0.0]))
@@ -2184,6 +2194,10 @@ def main():
                         help='Warm-up ticks: deposit+spread, no movement (default 0)')
     parser.add_argument('--weighted-spread', action='store_true',
                         help='Weight gamma spread by initial/current edge length')
+    parser.add_argument('--body-base-radius', type=float, default=5.0,
+                        help='Base radius for distributed bodies (default 5.0)')
+    parser.add_argument('--body-ref-mass', type=float, default=100000.0,
+                        help='Reference mass for body radius scaling (default 100000)')
 
     args = parser.parse_args()
 
@@ -2217,7 +2231,9 @@ def main():
                           warm_up=args.warm_up,
                           weighted_spread=args.weighted_spread,
                           drag=args.drag,
-                          inertia_mode=args.inertia_mode)
+                          inertia_mode=args.inertia_mode,
+                          body_base_radius=args.body_base_radius,
+                          body_ref_mass=args.body_ref_mass)
 
     if args.phase2:
         experiment_phase2(n_nodes=args.n_nodes, k=args.k, H=args.H,

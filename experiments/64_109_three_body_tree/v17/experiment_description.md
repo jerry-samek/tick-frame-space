@@ -115,24 +115,82 @@ Key additions:
 - Velocity components (vx, vy, vz) tracked in records and plots
 - XZ trajectory views alongside XY (reveals out-of-plane precession)
 
-## Open Questions
+## Overnight Runs (2M ticks, 30K nodes)
 
-1. **Does mass radiation matter at the Eddington peak?** The sweep was done with
-   `--no-mass-loss`. At deposit=0.005, mass loss would be significant (half-life
-   ~139 ticks). Does radiation stabilize or destabilize the Eddington peak orbit?
+Five runs at 2M ticks revealed the long-term fate of each regime:
 
-2. **What sets the Eddington limit?** The crossover from "gravity works" to
-   "self-blinding" should depend on graph properties (k, radius, N) and the
-   ratio of entity deposit to formation gamma. Is there a scaling law?
+| Run | deposit | radiation | Final |v| | Reversals | Hops (A+B) | Scale |
+|-----|---------|-----------|---------|-----------|------------|-------|
+| fossil | 0.0001 | OFF | 0.03 | 316 | 83,075 | 1,053 |
+| eddington_norad | 0.005 | OFF | 0.005 | 268 | 17,236 | 57 |
+| eddington_rad | 0.005 | ON | 0.05–0.08 | 325 | 121,490 | 4,516 |
+| dep01_norad | 0.01 | OFF | 0.004 | 246 | 15,928 | 57 |
+| dep01_rad | 0.01 | ON | 0.06–0.09 | 334 | 119,944 | 4,516 |
 
-3. **Is the precession physical?** The out-of-plane velocity at the Eddington peak
-   could be a genuine frame-dragging analog (asymmetric gamma wake on graph) or
-   a numerical artifact of graph anisotropy. A lattice comparison would distinguish
-   these.
+**Key finding: The Eddington peak was a MIRAGE.**
 
-4. **What maintains the fossil orbit?** At deposit=0.0001, the formation gamma
-   must eventually disperse completely (G=0, free diffusion). When it does, gravity
-   dies and the orbit unbinds. How long does the formation gradient survive?
+At 5K ticks, deposit=0.005–0.01 showed the highest velocities (0.17–0.21).
+At 2M ticks, these same values collapsed to 0.004–0.005. Self-blinding is slow
+but inevitable with constant mass — gamma accumulates tick after tick until the
+gradient drowns.
+
+**Radiation runs (mass loss ON):** Mass dies quickly (half-life ~139 ticks at
+deposit=0.005), then bodies become dark inertial objects — no deposits, no
+gravity, no drag. Velocity sustained at 0.05–0.08 but no physics driving it.
+More reversals (325–334) because dark bodies still diffuse on the graph.
+
+**Fossil orbit (deposit=0.0001, no radiation):** Velocity decays 0.1→0.03 over
+2M ticks. Formation gradient slowly disperses (G=0 = free diffusion). The orbit
+IS dying, just slowly. Answer to Open Question 4: fossil gradients survive for
+~1M ticks before becoming too weak to maintain velocity.
+
+## G > 0 Exploration
+
+G controls self-gravitating spread: `alpha_eff = alpha / (1 + G * |gamma|)`.
+At G>0, high-gamma regions resist diffusion, preserving peaks.
+
+### Initial tests (G=1.0, G=10.0)
+
+| G | Result |
+|-------|--------|
+| 1.0 | Bodies merged by tick 15K. Well too deep. |
+| 10.0 | Only 3 reversals, 39 hops. Gamma confined to narrow spike. |
+
+### G Sweep (0.001–0.5, fossil setup, 50K ticks)
+
+| G | Reversals | Final d | d_comov | |vA|/|vB| | Gamma r=1→5→10→20 | Peak γ |
+|-------|-----------|---------|---------|----------|---------------------|--------|
+| 0.001 | 151 | 48.2 | 0.45 | 0.05/0.09 | 1.55→1.05→1.03→1.00 | 2.0 |
+| 0.01 | 163 | 32.8 | 0.31 | 0.09/0.08 | 1.16→1.03→1.00→1.02 | 2.1 |
+| **0.1** | **219** | **8.2** | **0.08** | **0.06/0.08** | **1.48→1.33→1.22→1.08** | 2.9 |
+| 0.3 | 122 | 0.0 | 0.00 | 10.2/10.3 | 5.86→1.50→1.01→0.69 | 6,148 |
+| 0.5 | 98 | 6.7 | 0.04 | 0.84/0.48 | 2.69→1.17→0.79→0.50 | 8,568 |
+
+**G=0.1 is the sweet spot:** 219 reversals (most), broad gradient from 1.48→1.08
+across r=1–20, comoving distance tight at 0.08. The gradient reaches orbital
+distance without collapsing to a spike.
+
+Three G regimes:
+1. **G ≤ 0.01**: Too weak. Gradient disperses flat. Equivalent to G=0.
+2. **G = 0.1**: Goldilocks. Broad 1/r profile, gradient at orbital distances.
+3. **G ≥ 0.3**: Catastrophic. Gamma peaks explode (6K–8.5K), bodies merge or trap.
+   Note γ<1 at r=20 — the well steals gamma from surroundings.
+
+**However:** G is a THIRD mechanism beyond expansion and radiation. v18 returns to
+the fundamental question: can expansion + radiation alone sustain orbits?
+
+## Conclusions
+
+1. **Self-blinding** is the dominant failure mode at G=0. Any deposit rate that
+   creates a useful gradient also eventually floods it.
+2. **Mass radiation** prevents self-blinding (mass dies, deposits stop) but also
+   kills gravity. Bodies go dark and coast.
+3. **Fossil orbits** work for ~1M ticks but are not self-sustaining.
+4. **G>0** can maintain gradients (G=0.1 optimal) but adds a third mechanism.
+5. **The missing piece:** a self-consistent regime where the entity continuously
+   deposits enough to maintain a gradient while losing mass slowly enough to
+   survive. This requires: low deposit_rate, high mass, and NO formation phase
+   (the entity builds its own field). → v18.
 
 ## Commands
 

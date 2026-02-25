@@ -1409,6 +1409,25 @@ def experiment_phase2(n_nodes=10000, k=12, G=0.0, H=0.1, alpha_expand=1.0,
                                  (dists_c[i-1] - dists_c[i-2]) < 0)
         print(f"  Reversals: physical={reversals_phys}, comoving={reversals_comov}")
 
+    # Gamma profile at end of run
+    peak_A = graph.tagged_peak_node('A')
+    peak_B = graph.tagged_peak_node('B')
+    center_pos_A = graph.positions[peak_A]
+    node_dists_A = np.linalg.norm(graph.positions - center_pos_A, axis=1)
+    probe_radii = [1.0, 5.0, 10.0, 20.0]
+    print(f"  Gamma profile (from A peak, node {peak_A}):")
+    for pr in probe_radii:
+        mask = (node_dists_A > pr - 1.0) & (node_dists_A < pr + 1.0)
+        if np.any(mask):
+            avg_gamma = float(np.mean(graph.gamma[mask]))
+            print(f"    r={pr:5.1f}: gamma={avg_gamma:.4f} "
+                  f"({int(np.sum(mask))} nodes)")
+        else:
+            print(f"    r={pr:5.1f}: no nodes in shell")
+    print(f"  Gamma total: {graph.total_gamma():.1f}, "
+          f"peak_A={graph.tagged['A'][peak_A]:.2f}, "
+          f"peak_B={graph.tagged['B'][peak_B]:.2f}")
+
     suffix = f"_{tag}" if tag else ""
 
     # Plot: physical AND comoving distances + mass + velocity

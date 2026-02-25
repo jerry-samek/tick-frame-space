@@ -389,12 +389,16 @@ class Entity:
     """
 
     def __init__(self, bid, node, mass=1.0, deposit_rate=1.0, inertia=1.0,
-                 stationary=False, radiate_mass=True):
+                 stationary=False, radiate_mass=True, drag=0.0,
+                 inertia_mode='constant'):
         self.bid = bid
         self.node = node
         self.mass = mass
+        self.initial_mass = mass
         self.deposit_rate = deposit_rate
         self.inertia = inertia
+        self.inertia_mode = inertia_mode
+        self.drag = drag
         self.stationary = stationary
         self.radiate_mass = radiate_mass
 
@@ -423,6 +427,12 @@ class Entity:
         if self.stationary:
             return False
 
+        # --- Inertia mode update ---
+        if self.inertia_mode == 'mass':
+            self.inertia = max(self.mass, 1e-10)
+        elif self.inertia_mode == 'initial_mass':
+            self.inertia = self.initial_mass
+
         # --- Acceleration: growth asymmetry -> 3D force -> velocity ---
         # Use external gamma only (exclude self) to prevent self-gravity.
         if graph.H > 0:
@@ -438,6 +448,10 @@ class Entity:
                     accel += direction * push
 
                 self.velocity += accel
+
+        # --- Velocity damping (Hubble drag analog) ---
+        if self.drag > 0:
+            self.velocity *= (1.0 - self.drag)
 
         # --- Velocity -> displacement: best-aligned connector ---
         conn_list = graph.node_neighbors[self.node]
@@ -1027,7 +1041,8 @@ def experiment_phase1(n_nodes=10000, k=6, H=0.1, alpha_expand=1.0,
                       separation=10.0,
                       ticks=50000, seed=42, tag='',
                       tangential_momentum=0.1, inertia=1.0, radius=30.0,
-                      radiate_mass=True, warm_up=0, weighted_spread=False):
+                      radiate_mass=True, warm_up=0, weighted_spread=False,
+                      drag=0.0, inertia_mode='constant'):
     print("=" * 70)
     print("PHASE 1: Star + Planet Orbit (Random Graph, One Stupid Rule)")
     print("  G=0 (free diffusion), continuous deposit, expanding edges")
@@ -1055,6 +1070,7 @@ def experiment_phase1(n_nodes=10000, k=6, H=0.1, alpha_expand=1.0,
     print(f"  H={H}, alpha_expand={alpha_expand}, G=0.0")
     print(f"  deposit_strength={deposit_strength}")
     print(f"  radiate_mass={radiate_mass}, inertia={inertia}")
+    print(f"  drag={drag}, inertia_mode={inertia_mode}")
     print(f"  tangential_momentum={tangential_momentum}")
 
     print(f"  No formation phase — entities build field from tick 1")
@@ -1063,10 +1079,12 @@ def experiment_phase1(n_nodes=10000, k=6, H=0.1, alpha_expand=1.0,
         Entity('star', node_star, mass=star_mass,
                deposit_rate=deposit_strength,
                inertia=inertia, stationary=True,
-               radiate_mass=radiate_mass),
+               radiate_mass=radiate_mass,
+               drag=drag, inertia_mode=inertia_mode),
         Entity('planet', node_planet, mass=planet_mass,
                deposit_rate=0.0,
-               inertia=inertia, radiate_mass=radiate_mass),
+               inertia=inertia, radiate_mass=radiate_mass,
+               drag=drag, inertia_mode=inertia_mode),
     ]
 
     # Planet gets initial tangential velocity (y direction)
@@ -1342,6 +1360,54 @@ def experiment_phase1(n_nodes=10000, k=6, H=0.1, alpha_expand=1.0,
         fig.savefig(RESULTS_DIR / f'phase1_trajectory3d{suffix}.png', dpi=150)
         plt.close(fig)
 
+    # Smoothness dashboard
+    if records:
+        fig, axes = plt.subplots(2, 2, figsize=(14, 10))
+
+        ticks_arr = [r['tick'] for r in records]
+
+        # Speed vs time
+        ax = axes[0, 0]
+        speeds = [np.linalg.norm(r['vPlanet']) for r in records]
+        ax.plot(ticks_arr, speeds, '-', linewidth=0.8)
+        ax.set_title('Planet Speed |v|')
+        ax.set_xlabel('Tick'); ax.set_ylabel('Speed')
+        ax.grid(True, alpha=0.3)
+
+        # Comoving distance vs time
+        ax = axes[0, 1]
+        d_comovs = [r['d_comov'] for r in records]
+        ax.plot(ticks_arr, d_comovs, '-', linewidth=0.8)
+        ax.set_title('Comoving Distance')
+        ax.set_xlabel('Tick'); ax.set_ylabel('d_comov')
+        ax.grid(True, alpha=0.3)
+
+        # v_z fraction vs time
+        ax = axes[1, 0]
+        vz_fracs = [abs(r['vPlanet'][2]) / max(np.linalg.norm(r['vPlanet']), 1e-15)
+                     for r in records]
+        ax.plot(ticks_arr, vz_fracs, '-', linewidth=0.8)
+        ax.set_title('Out-of-Plane Fraction |v_z|/|v|')
+        ax.set_xlabel('Tick'); ax.set_ylabel('Fraction')
+        ax.set_ylim(0, 1)
+        ax.grid(True, alpha=0.3)
+
+        # Angular momentum vs time
+        ax = axes[1, 1]
+        if ang_records:
+            ang_ticks = [a[0] for a in ang_records]
+            ang_vals = [a[1] for a in ang_records]
+            ax.plot(ang_ticks, ang_vals, '-', linewidth=0.8)
+        ax.set_title('Angular Momentum L_z')
+        ax.set_xlabel('Tick'); ax.set_ylabel('L')
+        ax.axhline(0, color='gray', linewidth=0.5)
+        ax.grid(True, alpha=0.3)
+
+        fig.suptitle(f'Phase 1: Smoothness Dashboard', fontweight='bold')
+        fig.tight_layout()
+        fig.savefig(RESULTS_DIR / f'phase1_smoothness{suffix}.png', dpi=150)
+        plt.close(fig)
+
     if ang_records:
         plot_angular_momentum(ang_records,
                               RESULTS_DIR / f'phase1_Lz{suffix}.png')
@@ -1417,7 +1483,8 @@ def experiment_phase2(n_nodes=10000, k=12, H=0.1, alpha_expand=1.0,
                       separation=10.0, ticks=20000,
                       seed=42, tag='',
                       tangential_momentum=0.1, inertia=1.0, radius=30.0,
-                      radiate_mass=True, warm_up=0, weighted_spread=False):
+                      radiate_mass=True, warm_up=0, weighted_spread=False,
+                      drag=0.0, inertia_mode='constant'):
     print("=" * 70)
     print("PHASE 2: Equal Mass Binary (Random Graph)")
     print("  Two equal masses with opposing tangential velocity.")
@@ -1443,7 +1510,7 @@ def experiment_phase2(n_nodes=10000, k=12, H=0.1, alpha_expand=1.0,
     print(f"  Mass A = Mass B = {mass}")
     print(f"  Separation: {actual_sep:.2f} (requested {separation})")
     print(f"  tangential_momentum: +/-{tangential_momentum}")
-    print(f"  Inertia: {inertia}")
+    print(f"  Inertia: {inertia}, drag={drag}, inertia_mode={inertia_mode}")
     print(f"  H={H}, alpha_expand={alpha_expand}, G=0.0")
     print(f"  deposit_strength={deposit_strength}")
     print(f"  radiate_mass={radiate_mass}")
@@ -1455,10 +1522,12 @@ def experiment_phase2(n_nodes=10000, k=12, H=0.1, alpha_expand=1.0,
     bodies = [
         Entity('A', node_a, mass=mass,
                deposit_rate=deposit_strength,
-               inertia=inertia, radiate_mass=radiate_mass),
+               inertia=inertia, radiate_mass=radiate_mass,
+               drag=drag, inertia_mode=inertia_mode),
         Entity('B', node_b, mass=mass,
                deposit_rate=deposit_strength,
-               inertia=inertia, radiate_mass=radiate_mass),
+               inertia=inertia, radiate_mass=radiate_mass,
+               drag=drag, inertia_mode=inertia_mode),
     ]
 
     # Opposite tangential velocity
@@ -1778,6 +1847,56 @@ def experiment_phase2(n_nodes=10000, k=12, H=0.1, alpha_expand=1.0,
         fig.savefig(RESULTS_DIR / f'phase2_trajectory3d{suffix}.png', dpi=150)
         plt.close(fig)
 
+    # Smoothness dashboard
+    if records:
+        fig, axes = plt.subplots(2, 2, figsize=(14, 10))
+
+        ticks_arr = [r['tick'] for r in records]
+
+        # Speed vs time (both bodies)
+        ax = axes[0, 0]
+        speeds_a = [np.linalg.norm(r['vA']) for r in records]
+        speeds_b = [np.linalg.norm(r['vB']) for r in records]
+        ax.plot(ticks_arr, speeds_a, '-', linewidth=0.8, label='A')
+        ax.plot(ticks_arr, speeds_b, '-', linewidth=0.8, label='B')
+        ax.set_title('Speed |v|')
+        ax.set_xlabel('Tick'); ax.set_ylabel('Speed')
+        ax.legend(); ax.grid(True, alpha=0.3)
+
+        # Comoving distance vs time
+        ax = axes[0, 1]
+        d_comovs = [r['d_comov'] for r in records]
+        ax.plot(ticks_arr, d_comovs, '-', linewidth=0.8)
+        ax.set_title('Comoving Distance')
+        ax.set_xlabel('Tick'); ax.set_ylabel('d_comov')
+        ax.grid(True, alpha=0.3)
+
+        # v_z fraction vs time (body B)
+        ax = axes[1, 0]
+        vz_fracs = [abs(r['vB'][2]) / max(np.linalg.norm(r['vB']), 1e-15)
+                     for r in records]
+        ax.plot(ticks_arr, vz_fracs, '-', linewidth=0.8)
+        ax.set_title('Out-of-Plane Fraction |v_z|/|v| (B)')
+        ax.set_xlabel('Tick'); ax.set_ylabel('Fraction')
+        ax.set_ylim(0, 1)
+        ax.grid(True, alpha=0.3)
+
+        # Angular momentum vs time
+        ax = axes[1, 1]
+        if ang_records:
+            ang_ticks = [a[0] for a in ang_records]
+            ang_vals = [a[1] for a in ang_records]
+            ax.plot(ang_ticks, ang_vals, '-', linewidth=0.8)
+        ax.set_title('Angular Momentum L_z')
+        ax.set_xlabel('Tick'); ax.set_ylabel('L')
+        ax.axhline(0, color='gray', linewidth=0.5)
+        ax.grid(True, alpha=0.3)
+
+        fig.suptitle(f'Phase 2: Smoothness Dashboard', fontweight='bold')
+        fig.tight_layout()
+        fig.savefig(RESULTS_DIR / f'phase2_smoothness{suffix}.png', dpi=150)
+        plt.close(fig)
+
     if ang_records:
         plot_angular_momentum(ang_records,
                               RESULTS_DIR / f'phase2_Lz{suffix}.png')
@@ -2033,6 +2152,11 @@ def main():
     parser.add_argument('--tangential-momentum', type=float, default=0.1,
                         help='Initial tangential velocity')
     parser.add_argument('--inertia', type=float, default=1.0)
+    parser.add_argument('--drag', type=float, default=0.0,
+                        help='Velocity damping per tick (0=none, 0.001=gentle)')
+    parser.add_argument('--inertia-mode', choices=['constant', 'mass', 'initial_mass'],
+                        default='constant',
+                        help='How inertia scales: constant(v18), mass(current), initial_mass(fixed)')
     parser.add_argument('--binary-mass', type=float, default=100000.0)
     parser.add_argument('--no-mass-loss', action='store_true',
                         help='Disable mass radiation (deposit gamma but keep mass constant)')
@@ -2071,7 +2195,9 @@ def main():
                           radius=args.radius,
                           radiate_mass=not args.no_mass_loss,
                           warm_up=args.warm_up,
-                          weighted_spread=args.weighted_spread)
+                          weighted_spread=args.weighted_spread,
+                          drag=args.drag,
+                          inertia_mode=args.inertia_mode)
 
     if args.phase2:
         experiment_phase2(n_nodes=args.n_nodes, k=args.k, H=args.H,
@@ -2086,7 +2212,9 @@ def main():
                           radius=args.radius,
                           radiate_mass=not args.no_mass_loss,
                           warm_up=args.warm_up,
-                          weighted_spread=args.weighted_spread)
+                          weighted_spread=args.weighted_spread,
+                          drag=args.drag,
+                          inertia_mode=args.inertia_mode)
 
     if args.sweep_deposit:
         experiment_sweep_deposit(
