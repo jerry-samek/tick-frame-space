@@ -396,6 +396,8 @@ class Entity:
         self.velocity = np.zeros(3, dtype=np.float64)  # persistent 3D velocity
         self.disp = {}              # per-connector displacement accumulator
         self.hops = 0
+        self.just_hopped = True  # read force on first tick
+        self.hop_log = []  # tick number at each hop
 
         # History
         self.trajectory = []
@@ -438,9 +440,10 @@ class Entity:
         elif self.inertia_mode == 'initial_mass':
             self.inertia = self.initial_mass
 
-        # --- Acceleration: growth asymmetry -> 3D force -> velocity ---
-        # Use external gamma only (exclude self) to prevent self-gravity.
-        if graph.H > 0:
+        # --- Acceleration: force on hop only (v21) ---
+        # Entity reads connectors ONCE when arriving at a node.
+        # Between hops: pure inertia. No force updates.
+        if self.just_hopped and graph.H > 0:
             connectors = graph.growth_at_node_external(self.node, self.bid)
             if connectors:
                 growths = [g for _, _, g in connectors]
@@ -453,6 +456,7 @@ class Entity:
                     accel += direction * push
 
                 self.velocity += accel
+            self.just_hopped = False
 
         # --- Velocity damping (Hubble drag analog) ---
         if self.drag > 0:
@@ -498,6 +502,9 @@ class Entity:
             self.hops += 1
             hops_this_tick += 1
             moved = True
+            self.just_hopped = True
+            if tick is not None:
+                self.hop_log.append(tick)
 
         return moved
 
@@ -1048,7 +1055,8 @@ def experiment_phase1(n_nodes=10000, k=6, H=0.1, alpha_expand=1.0,
                       tangential_momentum=0.1, inertia=1.0, radius=30.0,
                       radiate_mass=True, warm_up=0, weighted_spread=False,
                       drag=0.0, inertia_mode='constant',
-                      body_base_radius=5.0, body_ref_mass=100000.0):
+                      body_base_radius=5.0, body_ref_mass=100000.0,
+                      log_hops=False):
     print("=" * 70)
     print("PHASE 1: Star + Planet Orbit (Random Graph, One Stupid Rule)")
     print("  G=0 (free diffusion), continuous deposit, expanding edges")
@@ -1484,6 +1492,52 @@ def experiment_phase1(n_nodes=10000, k=6, H=0.1, alpha_expand=1.0,
     fig.tight_layout()
     fig.savefig(RESULTS_DIR / f'phase1_summary{suffix}.png', dpi=150)
     plt.close(fig)
+
+    # Time dilation plot: ticks between hops vs time
+    if log_hops:
+        planet = bodies[1]
+        if len(planet.hop_log) > 1:
+            hop_ticks = np.array(planet.hop_log)
+            ticks_between = np.diff(hop_ticks)
+
+            fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 8))
+
+            ax1.plot(hop_ticks[1:], ticks_between, '-', linewidth=0.8, alpha=0.7)
+            ax1.set_xlabel('Tick')
+            ax1.set_ylabel('Ticks between hops')
+            ax1.set_title('Time Dilation: Ticks Between Hops vs Time')
+            ax1.grid(True, alpha=0.3)
+
+            # Distance from star at each hop
+            hop_dists = []
+            for ht in hop_ticks:
+                # Find closest recorded distance
+                best_d = None
+                for r in records:
+                    if r['tick'] >= ht:
+                        best_d = r['d_comov']
+                        break
+                if best_d is None and records:
+                    best_d = records[-1]['d_comov']
+                hop_dists.append(best_d if best_d is not None else 0)
+
+            if len(hop_dists) > 1:
+                ax2.scatter(hop_dists[1:], ticks_between, s=8, alpha=0.5)
+                ax2.set_xlabel('Comoving distance from star')
+                ax2.set_ylabel('Ticks between hops')
+                ax2.set_title('Time Dilation: Ticks Between Hops vs Distance')
+                ax2.grid(True, alpha=0.3)
+
+            fig.suptitle('Time Dilation Analysis', fontweight='bold')
+            fig.tight_layout()
+            fig.savefig(RESULTS_DIR / f'phase1_timedilation{suffix}.png', dpi=150)
+            plt.close(fig)
+
+            print(f"\n  Hop log: {len(hop_ticks)} hops")
+            print(f"  Ticks between hops: min={ticks_between.min():.0f}, "
+                  f"max={ticks_between.max():.0f}, "
+                  f"mean={ticks_between.mean():.1f}, "
+                  f"median={np.median(ticks_between):.1f}")
 
     print(f"\n  Saved plots to {RESULTS_DIR}/")
     return records
@@ -2183,6 +2237,8 @@ def main():
                         help='Base radius for distributed bodies (default 5.0)')
     parser.add_argument('--body-ref-mass', type=float, default=100000.0,
                         help='Reference mass for body radius scaling (default 100000)')
+    parser.add_argument('--log-hops', action='store_true',
+                        help='Log hop ticks and plot time dilation')
 
     args = parser.parse_args()
 
@@ -2218,7 +2274,8 @@ def main():
                           drag=args.drag,
                           inertia_mode=args.inertia_mode,
                           body_base_radius=args.body_base_radius,
-                          body_ref_mass=args.body_ref_mass)
+                          body_ref_mass=args.body_ref_mass,
+                          log_hops=args.log_hops)
 
     if args.phase2:
         experiment_phase2(n_nodes=args.n_nodes, k=args.k, H=args.H,
