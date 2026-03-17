@@ -468,7 +468,7 @@ class Entity:
             return False
 
         best_nb = None
-        best_proj = 0.0
+        best_proj = -float('inf')
         for nb, eidx in conn_list:
             direction = graph.connector_direction(self.node, nb)
             v_proj = float(np.dot(self.velocity, direction))
@@ -477,7 +477,11 @@ class Entity:
                 best_nb = nb
 
         if best_nb is not None:
-            self.disp[best_nb] = self.disp.get(best_nb, 0.0) + best_proj
+            # abs(): when all projections are negative (velocity fights the
+            # lattice), accumulate |proj| on the least-negative connector.
+            # Entity still makes progress toward a hop and gets force
+            # correction on arrival.  For positive projections abs() is a no-op.
+            self.disp[best_nb] = self.disp.get(best_nb, 0.0) + abs(best_proj)
 
         # --- Hop when displacement >= hop_threshold ---
         hop_threshold = graph.initial_mean_edge
@@ -504,7 +508,11 @@ class Entity:
             moved = True
             self.just_hopped = True
             if tick is not None:
-                self.hop_log.append(tick)
+                # Log hop diagnostics: tick, local mean edge, best_proj, hop_threshold
+                local_edges = [graph.edge_lengths[eidx]
+                               for _, eidx in graph.node_neighbors[self.node]]
+                local_mean = np.mean(local_edges) if local_edges else 0.0
+                self.hop_log.append((tick, local_mean, best_proj, hop_threshold))
 
         return moved
 
@@ -1123,7 +1131,10 @@ def experiment_phase1(n_nodes=10000, k=6, H=0.1, alpha_expand=1.0,
         for wt in range(warm_up):
             for body in bodies:
                 deposited = body.mass * body.deposit_rate
-                graph.deposit(body.node, body.bid, deposited)
+                n_body_nodes = len(body.nodes)
+                deposit_per_node = deposited / n_body_nodes
+                for n in body.nodes:
+                    graph.deposit(n, body.bid, deposit_per_node)
                 if body.radiate_mass:
                     body.mass = max(body.mass - deposited, 0.0)
             graph.spread()
@@ -1497,8 +1508,20 @@ def experiment_phase1(n_nodes=10000, k=6, H=0.1, alpha_expand=1.0,
     if log_hops:
         planet = bodies[1]
         if len(planet.hop_log) > 1:
-            hop_ticks = np.array(planet.hop_log)
+            # hop_log entries: (tick, local_mean_edge, best_proj, hop_threshold)
+            hop_ticks = np.array([h[0] for h in planet.hop_log])
+            hop_edges = np.array([h[1] for h in planet.hop_log])
+            hop_projs = np.array([h[2] for h in planet.hop_log])
+            hop_thresh = planet.hop_log[0][3]
             ticks_between = np.diff(hop_ticks)
+
+            # Print per-hop diagnostics
+            print(f"\n  Hop diagnostics (hop_threshold={hop_thresh:.3f}):")
+            print(f"  {'hop':>4s} {'tick':>6s} {'local_edge':>10s} {'best_proj':>10s} "
+                  f"{'edge/thresh':>11s}")
+            for i, (t, le, bp, _) in enumerate(planet.hop_log):
+                print(f"  {i+1:4d} {t:6d} {le:10.3f} {bp:10.4f} "
+                      f"{le/hop_thresh:11.2f}x")
 
             fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 8))
 
@@ -1511,7 +1534,6 @@ def experiment_phase1(n_nodes=10000, k=6, H=0.1, alpha_expand=1.0,
             # Distance from star at each hop
             hop_dists = []
             for ht in hop_ticks:
-                # Find closest recorded distance
                 best_d = None
                 for r in records:
                     if r['tick'] >= ht:
@@ -1610,7 +1632,10 @@ def experiment_phase2(n_nodes=10000, k=12, H=0.1, alpha_expand=1.0,
         for wt in range(warm_up):
             for body in bodies:
                 deposited = body.mass * body.deposit_rate
-                graph.deposit(body.node, body.bid, deposited)
+                n_body_nodes = len(body.nodes)
+                deposit_per_node = deposited / n_body_nodes
+                for n in body.nodes:
+                    graph.deposit(n, body.bid, deposit_per_node)
                 if body.radiate_mass:
                     body.mass = max(body.mass - deposited, 0.0)
             graph.spread()
@@ -2078,7 +2103,10 @@ def experiment_sweep_deposit(n_nodes=10000, k=12, H=0.01, alpha_expand=1.0,
             for wt in range(warm_up):
                 for body in bodies:
                     deposited = body.mass * body.deposit_rate
-                    graph.deposit(body.node, body.bid, deposited)
+                    n_body_nodes = len(body.nodes)
+                    deposit_per_node = deposited / n_body_nodes
+                    for n in body.nodes:
+                        graph.deposit(n, body.bid, deposit_per_node)
                     if body.radiate_mass:
                         body.mass = max(body.mass - deposited, 0.0)
                 graph.spread()
@@ -2229,8 +2257,8 @@ def main():
     parser.add_argument('--binary-mass', type=float, default=100000.0)
     parser.add_argument('--no-mass-loss', action='store_true',
                         help='Disable mass radiation (deposit gamma but keep mass constant)')
-    parser.add_argument('--warm-up', type=int, default=0,
-                        help='Warm-up ticks: deposit+spread, no movement (default 0)')
+    parser.add_argument('--warm-up', type=int, default=5000,
+                        help='Warm-up ticks: deposit+spread, no movement (default 5000)')
     parser.add_argument('--weighted-spread', action='store_true',
                         help='Weight gamma spread by initial/current edge length')
     parser.add_argument('--body-base-radius', type=float, default=5.0,
