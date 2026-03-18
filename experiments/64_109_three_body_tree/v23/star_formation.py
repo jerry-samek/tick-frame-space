@@ -790,7 +790,7 @@ def phase2(n_nodes=30000, k=24, H=0.0001, alpha_expand=1.0,
         p = DiskParticle('disk', node, mass=ring_mass,
                          deposit_rate=ring_deposit,
                          inertia=inertia, force_coeff=force_coeff,
-                         radiate_mass=True, force_interval=force_interval)
+                         radiate_mass=radiate_mass, force_interval=force_interval)
 
         # Tangential velocity: perpendicular to radial in xy-plane
         r_hat = (actual_pos - star_pos)
