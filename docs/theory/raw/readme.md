@@ -1,219 +1,120 @@
-# Theory Documentation v1 Archive
+# Raw Theory Documents — Graph-First Framework
 
-**Status**: ARCHIVED (2026-01-15) + NEW DOCUMENTS (2026-02)
-**Current Version**: See `docs/theory/` for v2 consolidated chapters
-**Document Count**: 96+ documents (76 original + 20+ new in 055-075 range)
-
----
-
-## About This Archive
-
-This directory contains the **chronological development history** of tick-frame physics theory (v1), comprising 76
-documents written between the project's inception and January 2026. These documents represent the iterative, exploratory
-process of theory development, including early concepts, experimental designs, and theoretical refinements.
-
-**This archive is preserved for:**
-
-- Historical reference and development traceability
-- Detailed derivations and proofs
-- Understanding the evolution of key concepts
-- Accessing specific experimental designs and raw data
-
-**For current theory, see**: `docs/theory/` (v2 consolidated chapters)
+**Status**: Active development (March 2026)
+**Current frontier**: RAW 117
+**Paradigm**: Graph substrate — see `README_PARADIGM_SHIFT.md`
 
 ---
 
-## V1 → V2 Transition
+## Directory Structure
 
-### Why Consolidate?
-
-**V1 Characteristics:**
-
-- 76 documents (chronological order)
-- Theory evolved from Doc 15 (Chapter 15 model) → Doc 49 (Temporal Ontology)
-- Some contradictions between early and late documents
-- Hard to navigate for new readers
-- Experimental validations scattered
-
-**V2 Improvements:**
-
-- 8 cohesive chapters (topic-based organization)
-- Contradictions resolved with explicit gap documentation
-- Validated vs speculative content clearly separated
-- Integrated experimental evidence
-- Clear reading order for new readers
-
-### What Changed?
-
-**Content**: Nothing lost, everything consolidated or preserved
-
-- Critical docs preserved as references (15, 49, 50_01, 46_01)
-- Experimental validations integrated into chapters
-- Early speculative content archived here
-- Falsifications documented prominently
-
-**Structure**: Chronological → Topical
-
-- V1: Doc 01 → Doc 51 (development timeline)
-- V2: 8 chapters by theme (ontology, dimensions, entities, etc.)
+```
+docs/theory/
+  raw/          ← YOU ARE HERE: current graph-first theory documents
+  archive/      ← Superseded: geometric-era documents (RAW 001-027)
+  review/       ← Transitional: needs case-by-case audit (RAW 024-069)
+  final/        ← Early consolidation attempt (pre-V2)
+  (V2 chapters) ← ch001-ch013 at theory/ root (V2, being superseded by V3)
+```
 
 ---
 
-## Critical V1 Documents Preserved as References
+## Reading Order for New Readers
 
-These documents are so important they remain accessible at `docs/theory/` root:
+Start with the graph-first foundation:
 
-### REFERENCE_doc15_minimal_model.md
+1. **RAW 112** — The Single Mechanism (one operation → all physics)
+2. **RAW 113** — Semantic Isomorphism (same / different / unknown)
+3. **RAW 111** — Space Is Connections (what connectors are)
+4. **RAW 110** — Local Dimensionality (geometry is observer reconstruction)
 
-- **Original**: v1/15 Minimal Model Recommendation
-- **Why preserved**: BASIS FOR JAVA IMPLEMENTATION
-- **Status**: IMPLEMENTED in tick-space-runner
-- **Note**: Java uses Chapter 15 model; Doc 49 (Temporal Ontology) is theoretical target
+Then the recent extensions:
 
-### REFERENCE_doc49_temporal_ontology.md
+5. **RAW 114** — Shared Prefix and Particle Identity
+6. **RAW 115** — Granularity, Rendering Spec, and Simulation Depth
+7. **RAW 116** — The Single Entity and the Continuity of Self
+8. **RAW 117** — Teleios and the Origin Event
 
-- **Original**: v1/49 Temporal Ontology of the Tick-Frame Universe
-- **Why preserved**: THEORETICAL FOUNDATION (constitution of tick-frame physics)
-- **Status**: Cited extensively in v2 Ch1
-- **Key principle**: Time is primary substrate, space is emergent
+For historical context:
 
-### REFERENCE_doc50_01_dimensional_equivalence_rejection.md
-
-- **Original**: v1/50_01 Experimental Results
-- **Why preserved**: SMOKING GUN EVIDENCE
-- **Key finding**: ρ=2.0 signature (time ≠ dimension)
-- **Validation**: 1,095 configurations tested, 0/6 tests passed
-- **Convergent**: Experiment 44 (rotation asymmetry) + Experiment 50 (ρ=2.0) confirm same constraint
-
-### REFERENCE_doc46_01_bucketing_validation.md
-
-- **Original**: v1/46_01 Experimental Validation
-- **Why preserved**: RENDERING VALIDATION
-- **Key finding**: O(n) complexity confirmed (2.78× speedup @ 100k entities)
-- **Validates**: Temporal bucketing theory (Doc 46)
+9. **RAW 108** — Three Dimensions from Trit Change Geometry
+10. **RAW 109** — Apparent Isotropy of c
 
 ---
 
-## Experimental Validations Summary
+## Active Documents in `raw/` (by category)
 
-### Experiment #15 (v6-gpu, v7-final) - 3,960 simulations
+### Foundation (RAW 108–117) — Graph-first frontier
 
-- **3D is optimal** (Goldilocks zone), not exclusive
-- ρ=2.0 phase transition @ d=3
-- Dimensional scaling laws discovered
-- **See v2 Ch2**
+| Doc | Title |
+|-----|-------|
+| 108 | Three Dimensions from Trit Change Geometry |
+| 109 | Apparent Isotropy of c |
+| 110 | Local Dimensionality |
+| 111 | Space Is Connections |
+| 112 | The Single Mechanism |
+| 112_01 | Hubble Tension Resolution |
+| 113 | Semantic Isomorphism: Same / Different / Unknown |
+| 114 | Shared Prefix and Particle Identity |
+| 115 | Granularity, Rendering Spec, and Simulation Depth |
+| 116 | The Single Entity and the Continuity of Self |
+| 117 | Teleios and the Origin Event |
+| 120 | Open Questions and Experimental Status |
 
-### Experiment #44 Series - Lag-based rendering
+### Gamma Field Theory (RAW 070–107) — Graph-compatible
 
-- **Rotation asymmetry: 933×** (forward 0%, backward 93%)
-- Temporal velocity constraint: v ≤ 1 tick/tick
-- **See v2 Ch6**
+| Range | Topics |
+|-------|--------|
+| 070–073 | Electron cloud, double-slit, ZPE hypothesis |
+| 074–075 | Ternary correction, time dilation |
+| 076–083 | Gamma field principles, dynamics, imprint, wake gravity |
+| 084–085 | Subcritical wells, energy starvation |
+| 086–092 | EM unification, curvature duality |
+| 093–099 | Curvature consequences, black holes, stellar collapse |
+| 100–103 | Hill ontology: life, reproduction, learning, domestication |
+| 104 | Emission recoil, radiative coupling |
+| 106–107 | Well/hill saturation, Cooper pair curvature |
 
-### Experiment #50 - Dimensional equivalence
+### Observer & Rendering (RAW 035–046) — Substrate-independent
 
-- **0/6 tests passed** (hypothesis rejected)
-- **ρ=2.0 SIGNATURE** discovered (smoking gun)
-- Time is special generator, not dimension
-- **See v2 Ch1, REFERENCE_doc50_01**
+| Doc | Title |
+|-----|-------|
+| 035 | The Observer Sleep Principle |
+| 037 | Observer-Relative Big Bang Principle |
+| 038 | Observer-Separated Multiverse Principle |
+| 039 | Law 000: XOR Parity Rule |
+| 040 | Dimension Definition in Tick-Frame Space |
+| 040_01 | Why 3D Emerges as the Natural Equilibrium |
+| 041 | Ternary XOR, Tick-Stream, and Sampler |
+| 042 | Temporal Choice Reconstruction Principle |
+| 043 | Void Asymmetry Principle |
+| 044 | Fallible Commit Principle |
+| 045–046 | Rendering theory and validation |
 
----
+### Meta & Vortex Theory
 
-## How to Use This Archive
-
-### For New Readers
-
-**Don't start here!** Read v2 consolidated chapters first:
-
-1. `docs/theory/README.md` (v2 overview)
-2. `docs/theory/REFERENCE_doc49_temporal_ontology.md` (constitution)
-3. `docs/theory/v2_ch01_temporal_ontology.md` (foundations)
-4. Then consult v1 for detailed derivations
-
-### For Researchers
-
-**Use v1 for:**
-
-- Tracing concept evolution (Doc 15 → Doc 49)
-- Accessing detailed proofs
-- Understanding experimental methodology
-- Finding specific calculations or diagrams
-
-### For Implementers
-
-**Key v1 docs for Java codebase:**
-
-- **v1/15**: Minimal Model (current Java basis)
-- **v1/28**: Temporal Surfing
-- **v1/29**: Imbalance Theory
-- **v1/30**: Collision Persistence
-
----
-
-## V2 Chapter Structure (Current)
-
-1. **Ch1**: Temporal Ontology
-2. **Ch2**: Dimensional Framework
-3. **Ch3**: Entity Dynamics
-4. **Ch4**: Observer & Consciousness
-5. **Ch5**: Free Will & Ternary Logic
-6. **Ch6**: Rendering Theory
-7. **Ch7**: Physical Formalization
-8. **Ch8**: Integration & Falsification
-
-**Plus 4 reference documents** (critical v1 docs preserved)
+| Doc | Title |
+|-----|-------|
+| 000 | Meta: Critical Theory Development Log |
+| 170 | Entity Vortex Theory |
+| 997 | Meta: Integrated Spec |
+| 998 | References |
+| 999 | Closure Improvement Plan |
 
 ---
 
-## Complete Document List
+## Experimental Frontier
 
-See files in this directory:
+The current simulation work is in `experiments/64_109_three_body_tree/`:
 
-### Original V1 Archive (000-051, 096-099)
+- **v21**: Force-on-hop, warm-up diagnostic
+- **v22**: Leapfrog force, 3D displacement, first curved trajectories
+- **v23**: Larger domain (80k nodes), radial reversal, dissipative capture
+- **v24**: Stronger gradient (M=1M), anti-Newtonian scaling discovered
 
-- **00-14**: Foundational principles and meta-theory
-- **15-series**: Experimental framework (Chapter 15 model - IMPLEMENTED)
-- **16-25**: Physical quantities (velocity, mass, gravity, etc.)
-- **26-30**: Collision & persistence trilogy (IMPLEMENTED)
-- **31-34**: Energy & conservation
-- **35-38**: Observer cosmology
-- **39-43**: Ternary logic & dimensions
-- **44-44_01**: Free will & consciousness
-- **45-46**: Rendering theory (VALIDATED)
-- **47-48**: Physical formalization
-- **49**: Temporal Ontology (CURRENT FOUNDATION)
-- **50-50_01**: Dimensional equivalence test (SMOKING GUN)
-- **51**: Photon theory
-- **96-99**: Meta-documents, references, improvement plans
-
-### New Documents (052-075) - February 2026
-
-- **052**: Black hole behavior in tick-frame
-- **053**: Tick-frame collision physics (VALIDATED - Exp #55)
-- **054**: Elasticity of composite objects (IN PROGRESS - Exp #56)
-- **055-058**: Speed of light, substrate vs pattern speed, propulsion limits, geodesic drives
-- **059**: Effective causal cell scale
-- **060-series**: Pattern overlap experiments, brute-force vs engineered patterns
-- **061**: Matter-antimatter asymmetry
-- **062**: Interferometry experiment (VALIDATED - Exp #62, FALSIFIABLE!)
-- **063**: Theory of magnetism / magnetron
-- **064**: Theory of electric fields
-- **065**: Electromagnetism
-- **066**: Experiments with electricity and magnetism
-- **067**: Anti-gravity
-- **068**: Time crystals
-- **069**: Computational cost and universe bootstrapping
-- **070-series**: Fragmented electron cloud, collision-driven stabilization, field rotation, emergent atomic model
-- **071**: Double-slit experiment
-- **072-series**: ZPE/Jitter scaling and matter growth (Exp #72 roadmap)
-- **073-series**: Epoch-dependent ZPE hypothesis and cosmological implications
-- **074**: Axiom of ternary substrate correction
-- **075**: Time dilation as metabolic adaptation, gamma renormalization
-
-**Total**: 96+ documents (76 original + 20+ new)
+See experiment descriptions in each version directory.
 
 ---
 
-**Archive Created**: 2026-01-15
-**Last Updated**: 2026-02-02 (added docs 052-075)
-**v2 Consolidation**: Complete (v2.1 incorporates new docs)
-**Questions?**: See `docs/theory/README.md`
+**Last Updated**: March 19, 2026
+**Restructuring**: Geometric-era docs moved to `archive/`, transitional docs to `review/`
