@@ -17,3 +17,5 @@ target/
 output/
 **/results/
 results/
+**/data/
+data/
