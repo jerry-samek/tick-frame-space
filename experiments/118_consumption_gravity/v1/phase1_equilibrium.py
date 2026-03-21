@@ -47,7 +47,7 @@ SIM           = 10000
 LOG_EVERY     = 500
 MEASURE_EVERY = 50
 
-OUT = os.path.dirname(os.path.abspath(__file__))
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results")
 
 
 # ── Connector ─────────────────────────────────────────────────
