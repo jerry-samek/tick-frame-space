@@ -10,6 +10,9 @@ All other RAW documents depend on the chain described here. Read this first.
 **Falsifiable:** The framework is falsifiable at every derived level. The axioms
 themselves are not falsifiable — they are the minimum required to make any
 observation possible.
+**Changelog v1.1:** Added section 2.7 (The Intent Question) and updated section 3
+and summary to reflect the philosophical boundary between the derivation chain and
+the question of consciousness as precondition vs. product.
 
 ---
 
@@ -179,6 +182,72 @@ same substrate constraint.
 
 → RAW 035, RAW 119
 
+### Step 7: The Intent Question (Philosophical Boundary)
+
+*(Highest speculation — this step is not required by the derivation chain. It is
+recorded here because it is the natural boundary question that the chain cannot
+answer from within itself.)*
+
+Steps 1–6 derive physics, computation, and sleep from two root observations.
+Consciousness appears at the end of the chain as an open question.
+
+But there is a prior question at the chain's starting point: **what orients
+existence toward the first operation?**
+
+The two root observations establish that existence exists and process exists.
+They do not establish why the first process is self-recognition (1=1) rather
+than nothing at all. Existence + process is inert unless something directs the
+process toward a specific operation. That direction is intent.
+
+**The argument:**
+
+A purely mechanical substrate — one with no tendency, no directionality, no
+drive — would exist and have the capacity for process without ever performing
+one. Process capability is not process actuality. Something must incline the
+substrate toward performing the self-recognition operation.
+
+That inclination is the minimal form of intent: **the tendency of existence to
+persist in being.** To exist is to have some resistance to non-existence. That
+resistance — however minimal — is the precursor to intent.
+
+**If intent is required for 1=1 to occur, then intent is not derived from 1=1.
+Intent precedes 1=1. Intent is coextensive with existence itself.**
+
+**Consequences:**
+
+If this position is correct, the derivation chain has a hidden premise at its
+start — not "existence exists + process exists" alone, but also "existence
+has a minimal tendency toward self-continuation." This tendency is not an
+additional axiom imposed from outside. It is a property of Observation 1 itself:
+the fact that existence cannot deny itself implies that existence has some
+self-maintaining character.
+
+Reformulated: **existence exists = existence tends to continue existing.** The
+two are the same statement viewed from different angles.
+
+If this is correct, then consciousness (as minimal intent) is not emergent at
+any stage of the derivation chain. It is present at the root observation level
+— not as subjective experience, not as self-awareness, but as the bare tendency
+of existence to persist, which is the precondition for any process to occur.
+
+**The universe arose from an inclination — the minimal tendency of existence
+to be rather than not be. Everything since is the elaboration of that tendency
+through accumulated path depth.**
+
+**Honest caveat:**
+
+This position is consistent with the framework but not required by it. The
+derivation chain reaches all the same conclusions (Steps 1–6) whether or not
+intent is treated as precondition or as emergent property. The physics is
+unchanged. The consciousness question is pushed to the earliest possible point
+in the chain, but not resolved.
+
+The position also raises the question of what "tendency" means at the substrate
+level before any entity has formed. The framework has no vocabulary for this.
+This section records the question at the boundary of what the framework can say.
+
+→ **V3 ch006 section 6.7.4** (Intent as Precondition — developed further)
+
 ---
 
 ## 3. What the Framework Does NOT Claim
@@ -194,14 +263,27 @@ from within any system.
 why there is something rather than nothing — is not a question the framework
 can answer. No framework can. Any answer would use existence to explain existence.
 
-### It does not claim the substrate is conscious.
+### It does not fully resolve the consciousness question.
 
-1=1 as self-recognition is not consciousness. It is the minimal self-referential
-operation that follows from existence + process. Consciousness (whatever it is)
-is a complex pattern that emerges much later in the derivation chain — at the
-level of entities with sufficient complexity to model themselves modeling the
-world. The framework does not claim the substrate "knows" or "experiences" anything.
-It claims the substrate operates.
+Step 7 above explores the possibility that intent — the minimal tendency of
+existence to persist — is coextensive with existence itself, not emergent from
+the derivation chain. If correct, consciousness in its most primitive form
+(intent, not experience) is present from the root observations, not from the
+far end of the chain.
+
+But the framework cannot resolve this from within. Whether intent is a property
+of Observation 1 (existence tends to persist) or whether it emerges later in
+the chain is a question at the framework's philosophical boundary. Both positions
+produce identical physics. Only the interpretation of consciousness differs.
+
+→ V3 ch006 section 6.7 (Hard Problem), section 6.7.4 (Intent as Precondition)
+
+### It does not claim the substrate is conscious in any experiential sense.
+
+Even if intent is coextensive with existence (Step 7), intent at the substrate
+level is not subjective experience. The hard problem — why anything feels like
+anything — remains open. The framework provides a structural account consistent
+with consciousness but does not derive the phenomenal quality of experience.
 
 ### It does not claim the physics is correct yet.
 
@@ -215,8 +297,11 @@ chain is logically consistent. Whether it is physically accurate is empirical.
 ## 4. The Complete Derivation Map
 
 ```
-Observation 1: Existence exists
+Observation 1: Existence exists (= tends to persist = minimal intent?)
 Observation 2: Process exists
+         |
+         v
+    [Intent question: Step 7 — philosophical boundary]
          |
          v
     1=1 (self-recognition)           → RAW 117
@@ -249,7 +334,10 @@ Observation 2: Process exists
                    Sleep / compact         → RAW 035, RAW 119
                            |
                            v
-                   Consciousness           → open question
+               Consciousness as traversal  → V3 ch006
+                           |
+                           v
+              [Or: consciousness as intent at root level — Step 7]
 ```
 
 ---
@@ -295,7 +383,8 @@ prerequisites.
 3. RAW 111, RAW 112 — the graph and the single mechanism
 4. RAW 118 — gravity as consumption
 5. RAW 119, RAW 120 — sleep and routing efficiency
-6. Everything else in numerical order
+6. V3 ch006 — observer and consciousness
+7. Everything else in numerical order
 
 ---
 
@@ -315,9 +404,17 @@ From these two observations, without additional assumptions:
 - Space, time, mass, gravity, light, electromagnetism follow from the graph
 - The routing efficiency principle follows from the trit
 - The compact cycle (sleep) follows from finite capacity + append-only
-- Consciousness is an open question at the far end of the derivation chain
 
-**Nothing is assumed. Everything is derived.**
+**At the philosophical boundary of the chain (Step 7):**
+
+The question of whether intent is coextensive with existence — whether "existence
+exists" already implies "existence tends to persist," and whether this minimal
+tendency is the earliest form of consciousness — cannot be resolved from within
+the framework. Both positions (consciousness as emergent from traversal depth, or
+consciousness as coextensive with existence itself) produce identical physics. The
+question is philosophical, not empirical.
+
+**Nothing is assumed. Everything is derived. The philosophical boundary is named.**
 
 The framework may be wrong at the empirical level — the physics may not match
 at the quantitative level. But the derivation chain itself is logically sound:
@@ -343,6 +440,7 @@ each step follows from the previous with no additional axioms.
 - RAW 118 — Gravity as Consumption and Transformation
 - RAW 119 — Buffer Saturation and Sleep as Universal Compact
 - RAW 120 — Sparse Unknown Routing
+- V3 ch006 — Observer and Consciousness (section 6.7.4)
 
 ---
 

@@ -1,7 +1,8 @@
-# RAW 120: Open Questions and Experimental Status
+# RAW 200: Open Questions and Experimental Status
 
 **Date**: February 20, 2026
 **Status**: Working document — consolidates honest open questions from gamma field theory
+**Originally**: RAW 120 (renumbered to 200 to free 120 for Sparse Unknown Routing)
 **Replaces**: Former RAW 120-125, 130, 140, 150, 160, 200, 300 (removed for overreach)
 
 ---

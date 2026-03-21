@@ -638,12 +638,12 @@ The same equation that gives Schwarzschild in the local limit gives accelerating
 
 **Expansion history:**
 
-| Era | Mechanism | Expansion |
-|---|---|---|
-| Tree phase | Node splitting | Exponential (inflation) |
-| Post-crosslinking (dense) | Edge growth, heavily suppressed | Slow, accelerating |
-| Current epoch | Edge growth, moderate suppression | Accelerating (q₀ ≈ -0.55) |
-| Far future | Edge growth, negligible suppression | Approaching linear (q → 0) |
+| Era                       | Mechanism                           | Expansion                  |
+|---------------------------|-------------------------------------|----------------------------|
+| Tree phase                | Node splitting                      | Exponential (inflation)    |
+| Post-crosslinking (dense) | Edge growth, heavily suppressed     | Slow, accelerating         |
+| Current epoch             | Edge growth, moderate suppression   | Accelerating (q₀ ≈ -0.55)  |
+| Far future                | Edge growth, negligible suppression | Approaching linear (q → 0) |
 
 Standard cosmological problems resolved differently from standard inflation:
 
@@ -835,7 +835,7 @@ Schwarzschild locally — matches the observed q₀ ≈ -0.55 without a cosmolog
 - RAW 109 — Speed of light and isotropy from graph topology
 - RAW 110 — Local dimensionality as critical variable for orbital mechanics
 - RAW 111 — Space is connections
-- RAW 120 — Open questions and experimental status
+- RAW 200 — Open questions and experimental status
 - Experiment 64_109 v1–v9 — Three-body dynamics on graph substrate
 - Experiment 64_109 v10 — Macro-scale orbits with gravitational time dilation
 - Experiment 64_109 v11 — Random geometric graph with self-gravitation

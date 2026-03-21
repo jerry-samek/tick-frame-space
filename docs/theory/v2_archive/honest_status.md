@@ -11,12 +11,16 @@
 
 - ✅ **V9 (Time Dilation)**: Quantitative match to GR+SR (r ≈ 0.999)
 - ✅ **V10 (Geodesics)**: 100% orbital success from pure gradient-following, NO FORCE LAWS
-- ✅ **Exp #64_109 (Graph Gravity)**: Self-subtracting tagged quanta produce attraction + three-body dynamics on discrete lattice
-- ✅ **Exp #64_109 v10 (Macro Orbits)**: Stable 433-revolution orbit, force law ~1/r^2.2, GR-like geodesic motion (constant speed, turning = gravity)
+- ✅ **Exp #64_109 (Graph Gravity)**: Self-subtracting tagged quanta produce attraction + three-body dynamics on discrete
+  lattice
+- ✅ **Exp #64_109 v10 (Macro Orbits)**: Stable 433-revolution orbit, force law ~1/r^2.2, GR-like geodesic motion (
+  constant speed, turning = gravity)
 - ⚠️ **V11 (Black Holes)**: Stable c-speed ring discovered (awaiting collision validation v12)
 - ❌ Still no connection to real-world physics experiments
 
-**Current Status**: Two independent gravity implementations converge. Exp #51 (continuous fields) and Exp #64_109 (integer quanta on graph) both produce gravity-like behavior. Exp #64_109 v10 extended this to stable macro-scale orbits with measured force law. This convergence from different methodologies significantly strengthens the case.
+**Current Status**: Two independent gravity implementations converge. Exp #51 (continuous fields) and Exp #64_109 (
+integer quanta on graph) both produce gravity-like behavior. Exp #64_109 v10 extended this to stable macro-scale orbits
+with measured force law. This convergence from different methodologies significantly strengthens the case.
 
 ---
 
@@ -49,7 +53,8 @@ Extrapolation to Physics Claims
 - "Gravity" is just an optimization trick
 - We're doing computer science, not physics
 
-**Current Status**: Somewhere in between. Two independent gravity implementations converging on the same behavior is harder to dismiss as coincidence.
+**Current Status**: Somewhere in between. Two independent gravity implementations converging on the same behavior is
+harder to dismiss as coincidence.
 
 ---
 
@@ -137,17 +142,21 @@ Extrapolation to Physics Claims
 
 ### ✅ Computational Result 5: Three-Regime Collision Physics + Emergent Pauli Exclusion (Exp #55)
 
-**Claim**: Particle collisions fall into three distinct regimes based on pattern overlap and cell capacity. Pauli exclusion principle emerges naturally from cell capacity limits, without explicit programming.
+**Claim**: Particle collisions fall into three distinct regimes based on pattern overlap and cell capacity. Pauli
+exclusion principle emerges naturally from cell capacity limits, without explicit programming.
 
 **What This Actually Proves**:
 
-- In our collision framework, patterns with internal structure (type, energy, mode, phase) show three collision behaviors:
-  1. **Merge** (non-overlapping → fusion): Proton + Neutron → Deuterium
-  2. **Explosion** (overlap + excess → annihilation): Electron + Positron → Photons + Shockwave
-  3. **Excitation** (partial overlap → redistribution): Proton + Proton → Excited states
+- In our collision framework, patterns with internal structure (type, energy, mode, phase) show three collision
+  behaviors:
+    1. **Merge** (non-overlapping → fusion): Proton + Neutron → Deuterium
+    2. **Explosion** (overlap + excess → annihilation): Electron + Positron → Photons + Shockwave
+    3. **Excitation** (partial overlap → redistribution): Proton + Proton → Excited states
 - Tested 6 collision scenarios, **100% success rate**
 - Energy conservation exact (ratio 1.000) across all regimes
-- **Surprising discovery**: Identical particles in same quantum state have moderate overlap (k_type = 0.5), which increases total energy. If E_total + E_overlap > E_max → explosion (rejection). If E_total + E_overlap ≤ E_max → excitation (forced to different modes).
+- **Surprising discovery**: Identical particles in same quantum state have moderate overlap (k_type = 0.5), which
+  increases total energy. If E_total + E_overlap > E_max → explosion (rejection). If E_total + E_overlap ≤ E_max →
+  excitation (forced to different modes).
 - **Pauli exclusion was NOT programmed** - it emerged from pattern structure + cell capacity limits!
 
 **What This Does NOT Prove**:
@@ -157,16 +166,21 @@ Extrapolation to Physics Claims
 - That cell capacity E_max corresponds to Planck-scale physics
 - That matter-antimatter asymmetry can be fully explained (Doc 061 provides framework, needs validation)
 
-**Honest Assessment**: **Strongest emergent physics result yet.** Pauli exclusion emerging without explicit programming is either:
+**Honest Assessment**: **Strongest emergent physics result yet.** Pauli exclusion emerging without explicit programming
+is either:
+
 1. **Deep insight** - We discovered the computational basis for quantum mechanics
 2. **Coincidence** - We built a system that happens to match QM by accident
 3. **Circular reasoning** - We designed pattern overlap to produce Pauli-like effects (possible overfitting concern)
 
-**What makes this convincing**: The emergence was **genuinely surprising** - we didn't predict Pauli exclusion would emerge. We only discovered it when testing identical particle collisions.
+**What makes this convincing**: The emergence was **genuinely surprising** - we didn't predict Pauli exclusion would
+emerge. We only discovered it when testing identical particle collisions.
 
-**What undermines it**: Cell capacity E_max is still a free parameter. If we have to tune E_max differently for different scenarios → artifact. If E_max is universal constant → more credible.
+**What undermines it**: Cell capacity E_max is still a free parameter. If we have to tune E_max differently for
+different scenarios → artifact. If E_max is universal constant → more credible.
 
-**Status**: **VALIDATED COMPUTATIONALLY** - All three regimes work, energy conserved, Pauli emerges. But mechanism could still be artifact.
+**Status**: **VALIDATED COMPUTATIONALLY** - All three regimes work, energy conserved, Pauli emerges. But mechanism could
+still be artifact.
 
 ---
 
@@ -187,7 +201,9 @@ Extrapolation to Physics Claims
 - That the stable range is universal across all configurations
 - That the balance mechanism corresponds to actual physics
 
-**Honest Assessment**: Important finding that challenges the notion of fundamental constants. Jitter is a coupling constant, not a fundamental value. This aligns with the philosophy that "physical constants" may be balance points, not primordial values.
+**Honest Assessment**: Important finding that challenges the notion of fundamental constants. Jitter is a coupling
+constant, not a fundamental value. This aligns with the philosophy that "physical constants" may be balance points, not
+primordial values.
 
 **See**: `experiments/56_composite_objects/v13/JITTER_INVESTIGATION.md`
 
@@ -210,7 +226,9 @@ Extrapolation to Physics Claims
 - That sparse storage is the "correct" ontology vs dense grids
 - That gamma accumulation equals physical mass
 
-**Honest Assessment**: Elegant architectural insight with significant computational benefits. Whether it's "ontologically correct" or just a good optimization remains unclear. The model does produce expected behaviors (clustering, stability).
+**Honest Assessment**: Elegant architectural insight with significant computational benefits. Whether it's "
+ontologically correct" or just a good optimization remains unclear. The model does produce expected behaviors (
+clustering, stability).
 
 **See**: `experiments/56_composite_objects/v17/README.md`
 
@@ -218,14 +236,17 @@ Extrapolation to Physics Claims
 
 ### ⚠️ REVISED: Computational Result 8: Interferometry With Gamma Coupling (Exp #62)
 
-**Original Claim (SUPERSEDED)**: Which-path information can be obtained WITHOUT destroying interference fringes - violates quantum complementarity.
+**Original Claim (SUPERSEDED)**: Which-path information can be obtained WITHOUT destroying interference fringes -
+violates quantum complementarity.
 
 **February 2026 Revision**: Theoretical analysis identified a contradiction between:
+
 - Doc 051: Photons as "periodic imprints in tick-stream"
 - Doc 065: "Light IS gamma oscillation"
 - Exp 56 v17: Canvas ontology (all actions = gamma modifications)
 
-**Resolution**: If light IS gamma oscillation, photons DO modify the gamma field, and which-path information IS encoded in gamma traces.
+**Resolution**: If light IS gamma oscillation, photons DO modify the gamma field, and which-path information IS encoded
+in gamma traces.
 
 **Revised Claim**: Interference degradation depends on gamma trace detection strength (gradual, not binary).
 
@@ -244,17 +265,21 @@ Extrapolation to Physics Claims
 **Revised Falsifiable Prediction**: Test for GRADUAL vs BINARY visibility degradation
 
 **Experimental Test Updated**:
+
 - QM Prediction: V drops to 0 as soon as which-path is detected (binary collapse)
 - Tick-Frame Prediction: V = V_max × (1 - k × detection_strength) (gradual degradation)
 - Cost: $500K-$2M, Timeline: 1-2 years
 
-**Honest Assessment**: The prediction is more nuanced than originally stated. Instead of "no collapse," we now predict "gradual degradation." This is still testable and distinguishes tick-frame from QM, but it's a different kind of test.
+**Honest Assessment**: The prediction is more nuanced than originally stated. Instead of "no collapse," we now predict "
+gradual degradation." This is still testable and distinguishes tick-frame from QM, but it's a different kind of test.
 
 **New Implementation**:
+
 - `experiments/62_interferometry/gamma_coupled_wave.py` - Gamma-coupled wave mechanics
 - `experiments/62_interferometry/tests/test_gamma_coupling.py` - New test suite
 
 **See**:
+
 - `experiments/62_interferometry/README.md` (February 2026 revision section)
 - `docs/theory/raw/051_photon_and_emitting_entity_in_tickframe_physics.md` §6
 - `docs/theory/raw/062_00_experiment_tick-frame_interferometry.md` §2.4
@@ -263,21 +288,24 @@ Extrapolation to Physics Claims
 
 ### ✅ Computational Result 9: Graph-Based Gravity via Self-Subtracting Tagged Quanta (Exp #64_109)
 
-**Claim**: Gravity (mutual attraction + orbital dynamics) emerges from deposit-spread-follow on a discrete graph lattice using integer-tagged quanta, with NO force laws, NO continuous space, and NO field equations programmed.
+**Claim**: Gravity (mutual attraction + orbital dynamics) emerges from deposit-spread-follow on a discrete graph lattice
+using integer-tagged quanta, with NO force laws, NO continuous space, and NO field equations programmed.
 
 **What This Actually Proves**:
 
-- On a 3D periodic cubic lattice (8000 nodes, k=6), entities depositing integer quanta into a shared field and following EXTERNAL gradients (subtracting their own contribution) naturally attract
+- On a 3D periodic cubic lattice (8000 nodes, k=6), entities depositing integer quanta into a shared field and following
+  EXTERNAL gradients (subtracting their own contribution) naturally attract
 - **v8: Attraction confirmed** — two-body distance shrinks from 10→4 hops in 50K ticks
 - **v9: Three iterations of momentum refinement**:
-  - Iteration 1: Quantized momentum blend failed (gradient_strength ~0.001 drowns against momentum ~5)
-  - Iteration 2: Normalized unit-vector blend failed (6-neighbor lattice quantizes combined vector to same axis at mass≥2)
-  - **Iteration 3: Continuous internal direction — BREAKTHROUGH**
-    - Entity stores direction as continuous 3D vector, only quantizes the hop (dot product with 6 neighbors)
-    - Gradient nudges accumulate: `internal_direction += (1/mass) * grad_unit; normalize()`
-    - Head-on: distance oscillates [4, 26] — gravitational bound state
-    - Perpendicular cm=5: distance oscillates [6, 24] — REAL gravitational deflection (all 6 hop directions used)
-    - Three-body tangential: all 3 entities survive 100K ticks, no merger, distances oscillate dynamically
+    - Iteration 1: Quantized momentum blend failed (gradient_strength ~0.001 drowns against momentum ~5)
+    - Iteration 2: Normalized unit-vector blend failed (6-neighbor lattice quantizes combined vector to same axis at
+      mass≥2)
+    - **Iteration 3: Continuous internal direction — BREAKTHROUGH**
+        - Entity stores direction as continuous 3D vector, only quantizes the hop (dot product with 6 neighbors)
+        - Gradient nudges accumulate: `internal_direction += (1/mass) * grad_unit; normalize()`
+        - Head-on: distance oscillates [4, 26] — gravitational bound state
+        - Perpendicular cm=5: distance oscillates [6, 24] — REAL gravitational deflection (all 6 hop directions used)
+        - Three-body tangential: all 3 entities survive 100K ticks, no merger, distances oscillate dynamically
 - **Conservation exact**: Integer quanta, zero drift over 100K ticks in every run
 - **Mass controls turning radius**: cm=1 turns in 2 hops (nudge=1.0), cm=10 turns in 22 hops (nudge=0.1)
 - 10/10 verification tests pass
@@ -285,14 +313,28 @@ Extrapolation to Physics Claims
 **v10: Macro Bodies — Scaling to Astronomical Entities** (February 20, 2026):
 
 - **Verdict: PARTIAL PASS** — Stable orbit via gravitational time dilation, force law ~2.2, no orbit quantization
-- **Method**: Aggregated proven micro-rules (v1-v9) into deterministic macro dynamics. Float64 gamma field (justified by law of large numbers at M~10^30). Bodies as single nodes with mass, deposit strength, commit counter. Same self-subtraction, same graph topology, same speed limit c=1 hop/tick.
-- **Force law n ~ 2.2** in mid-field (r=3-20 hops). Three regimes: near/mid field n~2.2 (close to Newton's 2.0, excess is lattice anisotropy from k=6), far field n~3.5 (propagation horizon). G only scales magnitude, not exponent — geometric property of the lattice.
-- **Bresenham-like hop accumulator**: Replaced argmax neighbor selection (45-degree dead zone) with accumulator distributing hops across axes proportional to internal_direction. Gives infinite angular resolution on 6-direction lattice.
-- **Gravitational time dilation stabilizes orbits**: `effective_commit = commit_mass * (1 + edge_gamma_scale * local_external_gamma)`. Bodies slow in gamma well, preventing runaway infall. Without this, all orbits are unstable (constant speed + uniform lattice = no restoring force).
-- **433 stable revolutions** at mean r=1.97 hops over 30K ticks. Period = 20.3 ticks. Orbit shape is a square (4 in-plane directions on k=6 lattice). No escape, no collapse.
-- **Radial/tangential velocity decomposition** confirms orbital mechanics: tangential component dominant (~-0.7, clockwise), radial oscillates around ~0. Speed doesn't change — it rotates between radial and tangential. This is GR-like (constant speed, curved path) not Newtonian (variable speed, straight force).
-- **No orbit quantization**: Only r_start=10 captures to r~2. Other starting separations (4, 6, 8, 12, 15) escape or scatter. Narrow capture basin, not universal shell structure.
-- **Equal-mass bodies don't orbit**: Required asymmetric masses (heavy star mass=100, light planet mass=1) for stability.
+- **Method**: Aggregated proven micro-rules (v1-v9) into deterministic macro dynamics. Float64 gamma field (justified by
+  law of large numbers at M~10^30). Bodies as single nodes with mass, deposit strength, commit counter. Same
+  self-subtraction, same graph topology, same speed limit c=1 hop/tick.
+- **Force law n ~ 2.2** in mid-field (r=3-20 hops). Three regimes: near/mid field n~2.2 (close to Newton's 2.0, excess
+  is lattice anisotropy from k=6), far field n~3.5 (propagation horizon). G only scales magnitude, not exponent —
+  geometric property of the lattice.
+- **Bresenham-like hop accumulator**: Replaced argmax neighbor selection (45-degree dead zone) with accumulator
+  distributing hops across axes proportional to internal_direction. Gives infinite angular resolution on 6-direction
+  lattice.
+- **Gravitational time dilation stabilizes orbits**:
+  `effective_commit = commit_mass * (1 + edge_gamma_scale * local_external_gamma)`. Bodies slow in gamma well,
+  preventing runaway infall. Without this, all orbits are unstable (constant speed + uniform lattice = no restoring
+  force).
+- **433 stable revolutions** at mean r=1.97 hops over 30K ticks. Period = 20.3 ticks. Orbit shape is a square (4
+  in-plane directions on k=6 lattice). No escape, no collapse.
+- **Radial/tangential velocity decomposition** confirms orbital mechanics: tangential component dominant (~-0.7,
+  clockwise), radial oscillates around ~0. Speed doesn't change — it rotates between radial and tangential. This is
+  GR-like (constant speed, curved path) not Newtonian (variable speed, straight force).
+- **No orbit quantization**: Only r_start=10 captures to r~2. Other starting separations (4, 6, 8, 12, 15) escape or
+  scatter. Narrow capture basin, not universal shell structure.
+- **Equal-mass bodies don't orbit**: Required asymmetric masses (heavy star mass=100, light planet mass=1) for
+  stability.
 
 **What This Does NOT Prove**:
 
@@ -302,18 +344,31 @@ Extrapolation to Physics Claims
 - That Kepler's third law holds (only one stable orbital radius achieved so far)
 - That the force law exponent deviation (2.2 vs 2.0) reduces with finer lattice
 
-**Honest Assessment**: **Second independent validation of emergent gravity**, using completely different methodology from Exp #51 (which used continuous reaction-diffusion fields). Exp #64_109 uses integer-tagged quanta on a discrete graph. Both produce gravity-like attraction. The convergence from two independent approaches is strong evidence that the mechanism is robust, not an artifact of either specific implementation.
+**Honest Assessment**: **Second independent validation of emergent gravity**, using completely different methodology
+from Exp #51 (which used continuous reaction-diffusion fields). Exp #64_109 uses integer-tagged quanta on a discrete
+graph. Both produce gravity-like attraction. The convergence from two independent approaches is strong evidence that the
+mechanism is robust, not an artifact of either specific implementation.
 
-v10 macro bodies extend this to stable orbits, but with important caveats: orbits require gravitational time dilation (not purely emergent from the base rules), the force law deviates from Newton's 2.0, and only a narrow window of initial conditions captures into bound orbits. The orbit is at the lattice floor (r~2 hops) — it's a minimum-radius orbit, not a freely-chosen one.
+v10 macro bodies extend this to stable orbits, but with important caveats: orbits require gravitational time dilation (
+not purely emergent from the base rules), the force law deviates from Newton's 2.0, and only a narrow window of initial
+conditions captures into bound orbits. The orbit is at the lattice floor (r~2 hops) — it's a minimum-radius orbit, not a
+freely-chosen one.
 
 **Key Insights**:
 
-1. **Continuous internal state on a discrete lattice.** The entity's direction vector lives in continuous 3D. The hop is quantized to 6 neighbors. Small gradient nudges accumulate between hops, enabling smooth turning. This is analogous to dithering/subpixel rendering — individual steps are coarse, but the accumulated path is smooth.
-2. **Force is turning rate, not acceleration.** Bodies move at constant v = c/M. Gravity changes direction, not speed. The gradient nudges the internal direction vector. This is geodesic motion (GR), not F=ma (Newton).
-3. **Time dilation as orbital stabilizer.** Without variable edge length, all orbits are unstable. With gamma-dependent edge compression, bodies slow in the well and can't collapse further. The stabilization mechanism is purely geometric.
-4. **The lattice shapes orbits.** k=6 cubic lattice produces square orbits. The force law exponent (2.2 vs 2.0) is a geometric fingerprint. Different k would produce different orbit shapes and exponents.
+1. **Continuous internal state on a discrete lattice.** The entity's direction vector lives in continuous 3D. The hop is
+   quantized to 6 neighbors. Small gradient nudges accumulate between hops, enabling smooth turning. This is analogous
+   to dithering/subpixel rendering — individual steps are coarse, but the accumulated path is smooth.
+2. **Force is turning rate, not acceleration.** Bodies move at constant v = c/M. Gravity changes direction, not speed.
+   The gradient nudges the internal direction vector. This is geodesic motion (GR), not F=ma (Newton).
+3. **Time dilation as orbital stabilizer.** Without variable edge length, all orbits are unstable. With gamma-dependent
+   edge compression, bodies slow in the well and can't collapse further. The stabilization mechanism is purely
+   geometric.
+4. **The lattice shapes orbits.** k=6 cubic lattice produces square orbits. The force law exponent (2.2 vs 2.0) is a
+   geometric fingerprint. Different k would produce different orbit shapes and exponents.
 
 **What makes this convincing**:
+
 1. Two completely different gravity implementations (continuous fields vs integer quanta) both work
 2. Three-body dynamics emerge without any N-body code — just deposit-spread-follow
 3. Conservation is EXACT (integer arithmetic, zero drift in v1-v9)
@@ -321,6 +376,7 @@ v10 macro bodies extend this to stable orbits, but with important caveats: orbit
 5. v10 stable orbits with velocity decomposition showing GR-like geodesic motion
 
 **What undermines it**:
+
 1. Angular momentum not conserved (lattice quantization)
 2. Stable orbits require gravitational time dilation (extra parameter, not purely emergent)
 3. Required spatial lattice (random graphs failed) — so topology matters
@@ -328,9 +384,11 @@ v10 macro bodies extend this to stable orbits, but with important caveats: orbit
 5. Narrow capture basin — not robust orbital mechanics
 6. Only one stable orbital radius achieved (lattice floor r~2)
 
-**See**: `experiments/64_109_three_body_tree/experiment_description.md`, `experiments/64_109_three_body_tree/v10/experiment_description.md`
+**See**: `experiments/64_109_three_body_tree/experiment_description.md`,
+`experiments/64_109_three_body_tree/v10/experiment_description.md`
 
-**Status**: **VALIDATED COMPUTATIONALLY** — Gravity emerges from self-subtracting tagged quanta on graph. Stable orbits via time dilation (v10). Force law ~1/r^2.2. Three-body dynamics confirmed (v9).
+**Status**: **VALIDATED COMPUTATIONALLY** — Gravity emerges from self-subtracting tagged quanta on graph. Stable orbits
+via time dilation (v10). Force law ~1/r^2.2. Three-body dynamics confirmed (v9).
 
 ---
 
@@ -338,7 +396,8 @@ v10 macro bodies extend this to stable orbits, but with important caveats: orbit
 
 ### 🔬 ZPE Hypothesis (Docs 072-073) - HIGHLY SPECULATIVE
 
-**The Claim**: Jitter represents zero-point energy that decreases with cosmic expansion, explaining why early universe structures (high-z galaxies, early SMBHs) appear "impossible" under today's stability criteria.
+**The Claim**: Jitter represents zero-point energy that decreases with cosmic expansion, explaining why early universe
+structures (high-z galaxies, early SMBHs) appear "impossible" under today's stability criteria.
 
 **Key Ideas**:
 
@@ -359,9 +418,11 @@ v10 macro bodies extend this to stable orbits, but with important caveats: orbit
 - No computational experiments have been run
 - No connection to real physics established
 
-**Honest Assessment**: Interesting theoretical framework that could explain observational anomalies. But it's in the realm of "sounds plausible" not "has evidence." Needs Experiment 72 roadmap to be executed.
+**Honest Assessment**: Interesting theoretical framework that could explain observational anomalies. But it's in the
+realm of "sounds plausible" not "has evidence." Needs Experiment 72 roadmap to be executed.
 
-**See**: `docs/theory/raw/072_00_jitter_scaling_and_matter_growth_zpe.md`, `docs/theory/raw/073_00_hypothetical_framework_for_epoch-dependent_zpe.md`
+**See**: `docs/theory/raw/072_00_jitter_scaling_and_matter_growth_zpe.md`,
+`docs/theory/raw/073_00_hypothetical_framework_for_epoch-dependent_zpe.md`
 
 **Status**: 🔬 EARLY SPECULATION (no validation)
 
@@ -370,6 +431,7 @@ v10 macro bodies extend this to stable orbits, but with important caveats: orbit
 ### 🔬 Ternary Substrate Correction (Doc 074) - THEORETICAL FRAMEWORK
 
 **The Claim**: The substrate maintains stability through discrete ternary corrections:
+
 - Collapse one direction → add entity (+1)
 - Collapse other direction → add counter-weight (-1)
 - Stable → no action (0)
@@ -380,7 +442,8 @@ v10 macro bodies extend this to stable orbits, but with important caveats: orbit
 - The narrow jitter range acts as a "fine-tuned constant"
 - Substrate homeostasis through simplest possible rules
 
-**Honest Assessment**: Elegant principle that aligns with discrete tick-frame philosophy. But it's an axiom, not a validated finding. Whether the universe actually works this way is unknown.
+**Honest Assessment**: Elegant principle that aligns with discrete tick-frame philosophy. But it's an axiom, not a
+validated finding. Whether the universe actually works this way is unknown.
 
 **Status**: 🔬 THEORETICAL FRAMEWORK (no validation)
 
@@ -403,7 +466,8 @@ v10 macro bodies extend this to stable orbits, but with important caveats: orbit
 - Supernovae destroy by overwriting gamma, not by impact
 - Longevity (10⁶ ticks) = 10⁶ successful render decisions
 
-**Honest Assessment**: Novel reinterpretation of time dilation that could simplify the model. But it's theoretical - no experiments have tested whether this produces correct physics.
+**Honest Assessment**: Novel reinterpretation of time dilation that could simplify the model. But it's theoretical - no
+experiments have tested whether this produces correct physics.
 
 **Status**: 🔬 THEORETICAL FRAMEWORK (needs validation)
 
@@ -531,11 +595,11 @@ v10 macro bodies extend this to stable orbits, but with important caveats: orbit
 
 **Comparison with GR**:
 
-| Feature | GR Prediction | V11 Result | Match? |
-|---------|---------------|------------|--------|
-| Event horizon exists | Yes (r_s = 2GM/c²) | ⚠️ Unclear | ⚠️ DIFFERENT |
-| Photon sphere | r = 1.5 r_s | r ≈ 10.1 (c-ring) | ❓ SIMILAR? |
-| Singularity | At r = 0 | ❌ Substrate continues | ✅ DISTINCTIVE |
+| Feature              | GR Prediction      | V11 Result            | Match?        |
+|----------------------|--------------------|-----------------------|---------------|
+| Event horizon exists | Yes (r_s = 2GM/c²) | ⚠️ Unclear            | ⚠️ DIFFERENT  |
+| Photon sphere        | r = 1.5 r_s        | r ≈ 10.1 (c-ring)     | ❓ SIMILAR?    |
+| Singularity          | At r = 0           | ❌ Substrate continues | ✅ DISTINCTIVE |
 
 **⚠️ CRITICAL LIMITATION: Ghost Particle Approximation**
 
@@ -551,12 +615,12 @@ V10-V11 have **NO collision physics**:
 **Two Interpretations**:
 
 1. **C-ring is real tick-frame prediction** (distinctive vs GR photon sphere)
-   - If validated → testable difference from General Relativity
-   - Look for stable c-speed rings in black hole observations
+    - If validated → testable difference from General Relativity
+    - Look for stable c-speed rings in black hole observations
 
 2. **C-ring is ghost particle artifact**
-   - Unrealistic orbital stability from lack of collisions
-   - Need collision physics to validate
+    - Unrealistic orbital stability from lack of collisions
+    - Need collision physics to validate
 
 **V12 Validation** (IN PROGRESS - January 2026):
 
@@ -570,7 +634,8 @@ V10-V11 have **NO collision physics**:
 2. **C-ring disperses** → Ghost particle artifact confirmed
 3. **C-ring transforms** → New physics emerges (e.g., accretion disk)
 
-**Status**: **PRELIMINARY RESULT** - Stable c-ring observed, but requires collision validation before accepting as real tick-frame prediction
+**Status**: **PRELIMINARY RESULT** - Stable c-ring observed, but requires collision validation before accepting as real
+tick-frame prediction
 
 **See**:
 
@@ -615,20 +680,20 @@ def update_velocity_gradient_following(entity, gamma_field, dt, k=0.01):
     velocity += acceleration * dt
 
     # Enforce speed limit c = 1.0
-    if |velocity| > c:
-        velocity = velocity * (c / |velocity|)
+    if | velocity | > c:
+        velocity = velocity * (c / | velocity |)
 ```
 
 **V10 Result**: ✅ **100% ORBITAL SUCCESS - ALL ENTITIES ACHIEVED STABLE ORBITS**
 
 **Quantitative Results**:
 
-| Metric | Target | Actual | Status |
-|--------|--------|--------|--------|
-| Stable orbit rate | ≥30% | **100%** (18/18) | ✅✅ EXCEEDED |
-| Circular orbits (e < 0.1) | Some | **78%** (14/18) | ✅✅ EXCEEDED |
-| Elliptical orbits (0.1 < e < 0.5) | Some | **22%** (4/18) | ✅ PASS |
-| Escaping/collapsing | Minimize | **0%** (0/18) | ✅ PERFECT |
+| Metric                            | Target   | Actual           | Status      |
+|-----------------------------------|----------|------------------|-------------|
+| Stable orbit rate                 | ≥30%     | **100%** (18/18) | ✅✅ EXCEEDED |
+| Circular orbits (e < 0.1)         | Some     | **78%** (14/18)  | ✅✅ EXCEEDED |
+| Elliptical orbits (0.1 < e < 0.5) | Some     | **22%** (4/18)   | ✅ PASS      |
+| Escaping/collapsing               | Minimize | **0%** (0/18)    | ✅ PERFECT   |
 
 **Orbital Classifications**:
 
@@ -695,14 +760,17 @@ Why does this create orbits?
 
 1. **Falsifiability**: Can be proven wrong ✅ (we have specific tests)
 2. **Predictive Power**: Makes testable predictions ✅ (collision cross-sections vs gravity, matter-antimatter asymmetry)
-3. **Explanatory Coherence**: Explains phenomena without ad-hoc additions ✅ (v9: GR+SR from single substrate, Exp 55: Pauli exclusion emerges!)
-4. **Quantitative Agreement**: Matches known results numerically ✅ (v9: r ≈ 0.999 correlation, Exp 55: exact energy conservation)
+3. **Explanatory Coherence**: Explains phenomena without ad-hoc additions ✅ (v9: GR+SR from single substrate, Exp 55:
+   Pauli exclusion emerges!)
+4. **Quantitative Agreement**: Matches known results numerically ✅ (v9: r ≈ 0.999 correlation, Exp 55: exact energy
+   conservation)
 5. **Novel Insights**: Provides new understanding ✅ (Exp 55: Pauli exclusion from cell capacity - not predicted!)
 6. **Connection to Reality**: Corresponds to real experiments ❌ (no real-world tests yet)
 
 **Current Score**: 5/6 confirmed, 0/6 partial, 1/6 not yet testable
 
 **Major Improvements**:
+
 - Exp #51 v9 validated quantitative GR+SR predictions
 - **Exp #55 produced genuinely emergent Pauli exclusion** - This was NOT predicted or programmed!
 - **Exp #64_109 validated gravity on discrete graph** - Second independent implementation converges!
@@ -717,7 +785,8 @@ Why does this create orbits?
 
 **Current Score**: 2/5 confirmed, 1/5 falsified, 1/5 partial, 1/5 unknown
 
-**Key Point**: The multiplicative combination γ_total = γ_grav × γ_SR was NOT programmed - it emerged! And two completely different implementations (continuous fields vs integer quanta on graph) both produce gravity.
+**Key Point**: The multiplicative combination γ_total = γ_grav × γ_SR was NOT programmed - it emerged! And two
+completely different implementations (continuous fields vs integer quanta on graph) both produce gravity.
 
 ### Verdict
 
@@ -729,20 +798,29 @@ Why does this create orbits?
 - ✅ Emergent multiplicative combination (not programmed)
 - ✅ **Exp #53 v10: Geodesics EMERGED naturally** (100% orbital success, no force laws!)
 - ✅ Single substrate produces both gravitational and SR effects
-- ✅ **Exp #64_109: Graph-lattice gravity works** (second independent implementation, integer quanta, three-body dynamics)
+- ✅ **Exp #64_109: Graph-lattice gravity works** (second independent implementation, integer quanta, three-body
+  dynamics)
 - ⚠️ Exp #52 v11: Distinctive black hole structure discovered (c-ring, awaiting collision validation)
 
 **Recent Breakthroughs** (January-February 2026):
 
 - **V10 (Geodesics)**: Perfect orbital success rate from pure gradient-following
 - **V11 (Black Holes)**: Stable c-speed ring discovered - potentially distinctive prediction if validated
-- **Exp #64_109 v8-v9 (Graph Gravity)**: Self-subtracting tagged quanta produce attraction + three-body dynamics on discrete lattice. Completely different implementation from Exp #51, yet BOTH produce gravity. The convergence from two independent approaches is the strongest evidence against "just a game engine."
-- **Continuous direction on discrete lattice**: Key insight — internal state can be continuous even when hops are quantized. Gradient nudges accumulate, enabling smooth turning on a 6-neighbor lattice.
-- **Exp #64_109 v10 (Macro Orbits)**: Stable orbits via gravitational time dilation on 64K-node lattice. Force law measured at ~1/r^2.2 (lattice anisotropy). Velocity decomposition shows GR-like geodesic motion — speed rotates between radial and tangential, never changes magnitude. Orbit quantization test shows narrow capture basin, not electron-shell-like shells.
+- **Exp #64_109 v8-v9 (Graph Gravity)**: Self-subtracting tagged quanta produce attraction + three-body dynamics on
+  discrete lattice. Completely different implementation from Exp #51, yet BOTH produce gravity. The convergence from two
+  independent approaches is the strongest evidence against "just a game engine."
+- **Continuous direction on discrete lattice**: Key insight — internal state can be continuous even when hops are
+  quantized. Gradient nudges accumulate, enabling smooth turning on a 6-neighbor lattice.
+- **Exp #64_109 v10 (Macro Orbits)**: Stable orbits via gravitational time dilation on 64K-node lattice. Force law
+  measured at ~1/r^2.2 (lattice anisotropy). Velocity decomposition shows GR-like geodesic motion — speed rotates
+  between radial and tangential, never changes magnitude. Orbit quantization test shows narrow capture basin, not
+  electron-shell-like shells.
 
-**Path to Real Physics**: Two independent gravity mechanisms converging + V12 collision validation. If c-ring survives → distinctive testable prediction different from GR.
+**Path to Real Physics**: Two independent gravity mechanisms converging + V12 collision validation. If c-ring survives →
+distinctive testable prediction different from GR.
 
-**Path to Game Engine**: V12 shows c-ring disperses with collisions AND graph gravity turns out to be a trivial consequence of field diffusion → artifact confirmed.
+**Path to Game Engine**: V12 shows c-ring disperses with collisions AND graph gravity turns out to be a trivial
+consequence of field diffusion → artifact confirmed.
 
 ---
 
@@ -762,7 +840,8 @@ Why does this create orbits?
 - 🔄 Composite objects form via γ-well binding (Exp #56 IN PROGRESS - structures defined, binding pending)
 - 🔬 ZPE cosmological model (Exp #72 - roadmap defined, V1-V9 planned)
 
-**Status**: **9/12 VALIDATED**, 1/12 preliminary (ghost particle limitation), 1/12 in progress (composite validation), 1/12 early stage (ZPE)
+**Status**: **9/12 VALIDATED**, 1/12 preliminary (ghost particle limitation), 1/12 in progress (composite validation),
+1/12 early stage (ZPE)
 
 ---
 
@@ -847,22 +926,24 @@ Why does this create orbits?
 **Status**: **SUBSTANTIALLY MITIGATED** - Multiple lines of evidence against overfitting:
 
 1. Exp #55 emergent Pauli exclusion was genuinely surprising:
-   - **NOT predicted** in original theory (Doc 053 didn't mention Pauli exclusion)
-   - **NOT programmed** explicitly (emerged from pattern overlap + cell capacity)
-   - **Discovered during testing** (wasn't looking for it)
+    - **NOT predicted** in original theory (Doc 053 didn't mention Pauli exclusion)
+    - **NOT programmed** explicitly (emerged from pattern overlap + cell capacity)
+    - **Discovered during testing** (wasn't looking for it)
 
 2. **Exp #64_109: Two independent gravity implementations converge**:
-   - Exp #51 (continuous reaction-diffusion fields on continuous 2D space) → gravity
-   - Exp #64_109 (integer-tagged quanta on discrete 3D graph lattice) → gravity
-   - **Completely different code, different math, different substrate** → same physics
-   - If overfitting, you'd have to overfit TWO independent implementations independently
+    - Exp #51 (continuous reaction-diffusion fields on continuous 2D space) → gravity
+    - Exp #64_109 (integer-tagged quanta on discrete 3D graph lattice) → gravity
+    - **Completely different code, different math, different substrate** → same physics
+    - If overfitting, you'd have to overfit TWO independent implementations independently
 
 3. **Exp #64_109 v9: Continuous direction was discovered through failure**:
-   - Iteration 1 failed (gradient drowning), Iteration 2 failed (lattice quantization)
-   - Iteration 3 worked (continuous internal direction) — this was NOT predicted, emerged from debugging
-   - The key insight (continuous state on discrete lattice) generalized beyond the specific experiment
+    - Iteration 1 failed (gradient drowning), Iteration 2 failed (lattice quantization)
+    - Iteration 3 worked (continuous internal direction) — this was NOT predicted, emerged from debugging
+    - The key insight (continuous state on discrete lattice) generalized beyond the specific experiment
 
-**Remaining Risk**: Cell capacity E_max is still a free parameter. Parameters were tuned in both gravity experiments (G, alpha, commit_mass). The question is whether the mechanism is robust across parameter ranges or only works at specific values.
+**Remaining Risk**: Cell capacity E_max is still a free parameter. Parameters were tuned in both gravity experiments (G,
+alpha, commit_mass). The question is whether the mechanism is robust across parameter ranges or only works at specific
+values.
 
 ---
 
@@ -904,7 +985,8 @@ Why does this create orbits?
 - ✅ **Experiment #56 v13**: Jitter stability range VALIDATED ([0.075, 0.5], 0.119 NOT special)
 - ✅ **Experiment #56 v17**: Canvas/Renderer ontology VALIDATED (O(entities) sparse storage)
 - ⚠️ **Experiment #62**: Interferometry REVISED (gamma coupling added - predicts GRADUAL degradation)
-- ✅ **Experiment #64_109 (v8-v9)**: Graph-lattice gravity VALIDATED — self-subtracting tagged quanta produce attraction + three-body dynamics. Second independent gravity implementation!
+- ✅ **Experiment #64_109 (v8-v9)**: Graph-lattice gravity VALIDATED — self-subtracting tagged quanta produce
+  attraction + three-body dynamics. Second independent gravity implementation!
 - 🔄 **Experiment #56**: Composite structures implemented (hydrogen atom, helium nucleus, H2 molecule)
 - 🔬 **Experiment #72**: ZPE cosmological model roadmap defined (V1-V9 phases)
 
@@ -920,7 +1002,9 @@ Why does this create orbits?
 
 **Next Step After #72 V1**: Progress through ZPE roadmap (V2: gamma field upgrade, V3: kinematics, etc.)
 
-**What This Means**: We've transitioned from "computational speculation" to "validated physics mechanisms." The new frontier is cosmological implications - testing whether jitter/ZPE scaling explains observed anomalies in early universe structure formation.
+**What This Means**: We've transitioned from "computational speculation" to "validated physics mechanisms." The new
+frontier is cosmological implications - testing whether jitter/ZPE scaling explains observed anomalies in early universe
+structure formation.
 
 ---
 
@@ -928,12 +1012,16 @@ Why does this create orbits?
 
 ### What We Know (February 2026 Update)
 
-- ✅ **Nine major computational validations** (dimensional closure, bucketing, kinematic constraints, temporal signature, collision physics, jitter stability, canvas ontology, interferometry, graph-lattice gravity)
+- ✅ **Nine major computational validations** (dimensional closure, bucketing, kinematic constraints, temporal signature,
+  collision physics, jitter stability, canvas ontology, interferometry, graph-lattice gravity)
 - ✅ **Time dilation emerges naturally** (Exp #51 v9: r ≈ 0.999 correlation with GR+SR)
 - ✅ **Geodesics emerge without force laws** (Exp #53 v10: 100% orbital success)
-- ✅ **Graph-lattice gravity works** (Exp #64_109 v9: self-subtracting tagged quanta, three-body dynamics, exact integer conservation)
-- ✅ **Macro-scale stable orbits** (Exp #64_109 v10: 433 revolutions at r~2, force law ~1/r^2.2, gravitational time dilation stabilizes)
-- ✅ **Two independent gravity implementations converge** (Exp #51 continuous fields + Exp #64_109 integer quanta — both produce attraction)
+- ✅ **Graph-lattice gravity works** (Exp #64_109 v9: self-subtracting tagged quanta, three-body dynamics, exact integer
+  conservation)
+- ✅ **Macro-scale stable orbits** (Exp #64_109 v10: 433 revolutions at r~2, force law ~1/r^2.2, gravitational time
+  dilation stabilizes)
+- ✅ **Two independent gravity implementations converge** (Exp #51 continuous fields + Exp #64_109 integer quanta — both
+  produce attraction)
 - ✅ **Three-regime collision physics works** (Exp #55: 6/6 test cases, exact energy conservation)
 - ✅ **Pauli exclusion emerged unexpectedly** (Exp #55: genuinely surprising, not programmed!)
 - ✅ **Jitter is NOT fundamental** (Exp #56 v13: stable range [0.075, 0.5], 0.119 is arbitrary)
@@ -971,6 +1059,7 @@ Why does this create orbits?
 **February 2026**: **Consolidation and expansion phase** - validated mechanisms now being extended to cosmology.
 
 **Current Status**:
+
 - **Time dilation**: ✅ VALIDATED (quantitative GR+SR match)
 - **Geodesic motion**: ✅ VALIDATED (perfect orbital emergence)
 - **Graph-lattice gravity**: ✅ VALIDATED (self-subtracting tagged quanta, three-body dynamics)
@@ -986,22 +1075,33 @@ Why does this create orbits?
 **Confidence Level**: **MODERATE-HIGH** for core mechanisms, **SPECULATIVE** for cosmological extensions
 
 **What Changed Since January 2026**:
-1. **Jitter investigation (v13)**: 0.119 is NOT fundamental → coupling constants are balance points, not primordial values
+
+1. **Jitter investigation (v13)**: 0.119 is NOT fundamental → coupling constants are balance points, not primordial
+   values
 2. **Canvas/Renderer (v17)**: Elegant ontology with O(entities) scaling → architectural clarity
 3. **Interferometry (Exp #62)**: First FALSIFIABLE prediction distinguishing tick-frame from QM!
 4. **ZPE hypothesis (docs 072-075)**: Theoretical framework for cosmological implications
-5. **Graph-lattice gravity (Exp #64_109 v8-v9)**: Second independent gravity implementation! Self-subtracting integer quanta on discrete lattice produce attraction + three-body dynamics. Continuous internal direction on discrete hops is a key insight.
-6. **Macro-scale stable orbits (Exp #64_109 v10, Feb 20)**: 433 revolutions at r~2 on 64K-node lattice. Force law ~1/r^2.2 (0.2 excess = lattice anisotropy). Gravitational time dilation stabilizes orbits. Bresenham-like hop accumulator gives infinite angular resolution on 6-direction lattice. Key physics insight: force is turning rate (GR geodesic), not acceleration (Newtonian F=ma). Speed is constant, it rotates between radial and tangential.
+5. **Graph-lattice gravity (Exp #64_109 v8-v9)**: Second independent gravity implementation! Self-subtracting integer
+   quanta on discrete lattice produce attraction + three-body dynamics. Continuous internal direction on discrete hops
+   is a key insight.
+6. **Macro-scale stable orbits (Exp #64_109 v10, Feb 20)**: 433 revolutions at r~2 on 64K-node lattice. Force law ~
+   1/r^2.2 (0.2 excess = lattice anisotropy). Gravitational time dilation stabilizes orbits. Bresenham-like hop
+   accumulator gives infinite angular resolution on 6-direction lattice. Key physics insight: force is turning rate (GR
+   geodesic), not acceleration (Newtonian F=ma). Speed is constant, it rotates between radial and tangential.
 
 **Remaining Skepticism**:
+
 - Still no connection to real-world experiments
 - Parameters tuned to match (not derived from first principles)
 - ZPE hypothesis is pure speculation with no validation
 - Could still be sophisticated game engine masquerading as physics
 
-**Most Honest Take**: Tick-frame physics has now produced its first falsifiable prediction (interferometry without collapse). If real-world experiment confirms this, it's revolutionary. If it fails, the theory needs major revision. This is the critical juncture.
+**Most Honest Take**: Tick-frame physics has now produced its first falsifiable prediction (interferometry without
+collapse). If real-world experiment confirms this, it's revolutionary. If it fails, the theory needs major revision.
+This is the critical juncture.
 
 **But we're not done yet.** Need to:
+
 1. Propose and fund real-world interferometry test
 2. Execute ZPE roadmap (Exp #72 V1-V9)
 3. Complete composite validation (Exp #56)
@@ -1013,19 +1113,25 @@ Why does this create orbits?
 **Bias**: Still toward skepticism, but convergence of independent approaches is hard to dismiss
 **Next Action**: Execute Experiment #72 V1 (ZPE ontology validation), propose real-world interferometry test
 **Expected Outcome**: ZPE V1 likely succeeds (ontology is sound), interferometry test is the big unknown
-**If Interferometry Works**: Revolutionary - tick-frame physics has discovered something fundamental about quantum mechanics
+**If Interferometry Works**: Revolutionary - tick-frame physics has discovered something fundamental about quantum
+mechanics
 **If Interferometry Fails**: Major revision needed - core assumption about deterministic measurement is wrong
 
 **New Theoretical Frontiers**:
+
 - ZPE/jitter scaling with cosmic expansion (docs 072-073)
 - Ternary substrate correction axiom (doc 074)
 - Metabolic time dilation interpretation (doc 075)
 - Electromagnetism framework (docs 063-066)
 - Graph-lattice gravity: continuous internal state on discrete substrate (Exp #64_109)
-- Macro-scale orbital mechanics: gravitational time dilation, force law measurement, orbit quantization test (Exp #64_109 v10)
-- Open questions: conservation laws, composite stability, lattice-continuum limit (RAW 120)
+- Macro-scale orbital mechanics: gravitational time dilation, force law measurement, orbit quantization test (Exp
+  #64_109 v10)
+- Open questions: conservation laws, composite stability, lattice-continuum limit (RAW 200, formerly RAW 120)
 
-**Remember**: Real physics emerges through validation and falsification, not just theory writing. We now have a **testable prediction** (interferometry) that could distinguish tick-frame from standard QM. And we have **two independent gravity implementations** converging — the strongest evidence yet against "just a simulation artifact." But still no real-world connection.
+**Remember**: Real physics emerges through validation and falsification, not just theory writing. We now have a *
+*testable prediction** (interferometry) that could distinguish tick-frame from standard QM. And we have **two
+independent gravity implementations** converging — the strongest evidence yet against "just a simulation artifact." But
+still no real-world connection.
 
 ---
 
@@ -1033,21 +1139,24 @@ Why does this create orbits?
 
 **Status**: Theoretical frameworks, mostly unvalidated
 
-| Doc | Title | Status |
-|-----|-------|--------|
-| 055-058 | Speed of light, propulsion | 🔬 Theoretical |
-| 059-060 | Causal cell, overlap experiments | 🔬 Theoretical |
-| 061 | Matter-antimatter asymmetry | 🔬 Theoretical |
-| 062 | Interferometry | ⚠️ REVISED (gamma coupling, gradual degradation) |
-| 063-066 | Electromagnetism | 🔬 Theoretical framework |
-| 067-069 | Anti-gravity, time crystals, bootstrapping | 🔬 Highly speculative |
-| 070 series | Emergent atomic model | 🔬 Theoretical |
-| 071 | Double-slit | 🔬 Theoretical (covered by Exp #62) |
-| 072-073 | ZPE hypothesis | 🔬 Speculative, Exp #72 roadmap defined |
-| 074 | Ternary correction axiom | 🔬 Theoretical framework |
-| 075 | Metabolic time dilation | 🔬 Theoretical framework |
-| 100-103 | Hill ontology, reproduction, learning, domestication | 🔬 Consolidated into Ch13 |
-| 104-110 | Emission recoil, well-hill unification, Cooper pairs, 3D from trits, isotropy of c, local dimensionality | 🔬 Theoretical |
-| 120 | Open questions & experimental status | 🔬 Consolidation of what v10 actually showed + honest open questions |
+| Doc           | Title                                                                                                    | Status                                                               |
+|---------------|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| 055-058       | Speed of light, propulsion                                                                               | 🔬 Theoretical                                                       |
+| 059-060       | Causal cell, overlap experiments                                                                         | 🔬 Theoretical                                                       |
+| 061           | Matter-antimatter asymmetry                                                                              | 🔬 Theoretical                                                       |
+| 062           | Interferometry                                                                                           | ⚠️ REVISED (gamma coupling, gradual degradation)                     |
+| 063-066       | Electromagnetism                                                                                         | 🔬 Theoretical framework                                             |
+| 067-069       | Anti-gravity, time crystals, bootstrapping                                                               | 🔬 Highly speculative                                                |
+| 070 series    | Emergent atomic model                                                                                    | 🔬 Theoretical                                                       |
+| 071           | Double-slit                                                                                              | 🔬 Theoretical (covered by Exp #62)                                  |
+| 072-073       | ZPE hypothesis                                                                                           | 🔬 Speculative, Exp #72 roadmap defined                              |
+| 074           | Ternary correction axiom                                                                                 | 🔬 Theoretical framework                                             |
+| 075           | Metabolic time dilation                                                                                  | 🔬 Theoretical framework                                             |
+| 100-103       | Hill ontology, reproduction, learning, domestication                                                     | 🔬 Consolidated into Ch13                                            |
+| 104-110       | Emission recoil, well-hill unification, Cooper pairs, 3D from trits, isotropy of c, local dimensionality | 🔬 Theoretical                                                       |
+| 120 (now 200) | Open questions & experimental status                                                                     | 🔬 Consolidation of what v10 actually showed + honest open questions |
 
-**Key insight**: Most new docs are theoretical frameworks awaiting validation. The exceptions are interferometry (doc 062, computationally validated) and graph-lattice gravity (Exp #64_109, validated via RAW 109 theoretical framework). RAW 120 consolidates open questions from premature theoretical documents (formerly 120-300) that were removed for overreach.
+**Key insight**: Most new docs are theoretical frameworks awaiting validation. The exceptions are interferometry (doc
+062, computationally validated) and graph-lattice gravity (Exp #64_109, validated via RAW 109 theoretical framework).
+RAW 200 (formerly 120) consolidates open questions from premature theoretical documents (formerly 120-300) that were
+removed for overreach.

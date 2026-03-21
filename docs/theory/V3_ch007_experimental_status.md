@@ -41,6 +41,7 @@ distinction for every result.
 **Reference:** `experiments/51_emergent_time_dilation/v9/RESULTS.md`
 
 **What was demonstrated:**
+
 - Gravitational time dilation and special-relativistic time dilation reproduced simultaneously
   in a multi-entity system
 - Correlation between measured and predicted effective gamma: r = 0.999
@@ -50,6 +51,7 @@ distinction for every result.
 - Stable gravitational gradient confirmed (monotonic decrease with distance from cluster)
 
 **What was not demonstrated:**
+
 - Emergent trajectories. All orbits in v9 were forced circular trajectories, not self-organizing.
   The field remained stable under these forced conditions, but the experiment did not show that
   entities would naturally orbit.
@@ -70,6 +72,7 @@ substrate-specific.
 **Reference:** `experiments/51_emergent_time_dilation/v10/RESULTS.md`
 
 **What was demonstrated:**
+
 - 100% orbital completion: all 18 entities achieved stable circular or elliptical orbits
 - Orbits emerged from gradient-following alone, with no programmed force law or trajectory
   constraints
@@ -78,6 +81,7 @@ substrate-specific.
 - Zero collapses, zero escapes
 
 **What was not demonstrated:**
+
 - Long-term orbital stability. The simulation ran for 5000 ticks. Whether orbits remain stable
   over 100,000+ ticks is unknown.
 - The acceleration rule was `acceleration = k * grad(gamma_grav)`, applied on a smooth continuous
@@ -97,6 +101,7 @@ is the current experimental frontier (Section 2).
 **Reference:** `experiments/55_collision_physics/VALIDATION_RESULTS.md`
 
 **What was demonstrated:**
+
 - Three-regime collision framework validated: merge, explosion, excitation
 - Energy conservation exact in merge and excitation regimes
 - Matter-antimatter annihilation producing photon pairs with shockwave
@@ -105,6 +110,7 @@ is the current experimental frontier (Section 2).
 - All validation criteria met
 
 **What was not demonstrated:**
+
 - The collision dynamics were tested on a lattice substrate with discrete cell occupancy limits.
   The V3 graph substrate does not have fixed cell capacity -- nodes are points in a random
   geometric graph with variable connectivity. Whether Pauli exclusion still emerges when cells
@@ -125,6 +131,7 @@ plausibly has a graph analog (node deposit saturation), but this has not been te
 **Reference:** `experiments/15_minimal-model/v6-gpu/`
 
 **What was demonstrated:**
+
 - 3,960 simulations across 1D, 2D, 3D, 4D, and 5D grid substrates
 - 3D achieved optimal balance: SPBI (Stability-Probability Balance Index) = 2.23
 - 3D showed lowest coefficient of variation: CV = 5.3%
@@ -133,6 +140,7 @@ plausibly has a graph analog (node deposit saturation), but this has not been te
 - 5D showed saturation effects
 
 **What was not demonstrated:**
+
 - The "3D optimality" result was measured on regular Euclidean grids with uniform connectivity.
   The V3 theory claims dimension is an observer property of a raw graph with no intrinsic
   dimension. Whether random geometric graphs produce optimal behavior at any embedding dimension
@@ -153,6 +161,7 @@ SPBI metric.
 **Reference:** `experiments/50_dimensional_equivalence_explicit_time/EXPERIMENT_RESULTS.md`
 
 **What was demonstrated:**
+
 - 1,095 configurations tested across (2D+t, 3D+t, 4D+t) and baseline (3D, 4D, 5D)
 - Hypothesis that (n spatial + time) behaves like (n+1 spatial) was decisively rejected: 0/6
   tests passed
@@ -174,6 +183,7 @@ directly to V3 without qualification.
 **Reference:** `experiments/44_03_emergent_rotation/RESULTS.md`
 
 **What was demonstrated:**
+
 - 933x asymmetry between forward and backward pitch rotation
 - Forward pitch (reducing temporal lag below zero): 0% success (0/12 attempts)
 - Backward pitch (increasing temporal lag): 93% success (14/15 attempts)
@@ -192,6 +202,7 @@ to V3.
 **Reference:** `experiments/44_05_double_buffer_rendering/RESULTS.md`
 
 **What was demonstrated:**
+
 - O(n) bucketing achieves 2.78x speedup over O(n log n) sorting at 100,000 entities
 - 297,000 entities renderable at 60 FPS with bucketing
 - Double-buffering enables lock-free simulation/rendering coordination
@@ -208,6 +219,7 @@ directly to any discrete-time framework, including V3.
 `experiments/62_interferometry/FALSIFIABLE_PREDICTIONS.md`
 
 **What was demonstrated:**
+
 - 26/26 simulation tests passed across 10 phases
 - Wave-packet propagation, dispersion relations, and Mach-Zehnder interferometry reproduced
 - Which-path information extracted without destroying interference (fringe visibility V = 1.0000
@@ -217,6 +229,7 @@ directly to any discrete-time framework, including V3.
   readout; standard QM predicts V = 0
 
 **What was not demonstrated:**
+
 - These results were obtained in a simulation that implements the tick-frame wave model on a
   lattice. They show internal consistency of the tick-frame wave model, not a physical
   experimental result. The prediction has not been tested against a real quantum system.
@@ -238,9 +251,10 @@ no such experiment has been conducted. The prediction remains unfalsified, not v
 **Experiment:** #64_109, versions 1-9 (January-February 2026)
 **Substrate:** Cubic lattice (k=6) with integer gamma quanta
 **Reference:** `experiments/64_109_three_body_tree/experiment_description.md`,
-`docs/theory/raw/120_open_questions_experimental_status.md`
+`docs/theory/raw/200_open_questions_experimental_status.md`
 
 **What was demonstrated:**
+
 - Integer gamma quanta on a cubic lattice produce attractive force via self-subtracting transport
 - Three-body dynamics emerge without special-casing
 - Force law measured at approximately 1/r^2.2 (0.2 excess attributed to lattice anisotropy, k=6)
@@ -252,6 +266,7 @@ no such experiment has been conducted. The prediction remains unfalsified, not v
 **Reference:** `experiments/64_109_three_body_tree/v10/experiment_description.md`
 
 **What was demonstrated (v10):**
+
 - 433 stable revolutions at r approximately 2 on a 64K-node lattice
 - Force acts as turning rate, not acceleration: speed is constant, gravity rotates the velocity
   vector between radial and tangential components (geodesic motion)
@@ -261,6 +276,7 @@ no such experiment has been conducted. The prediction remains unfalsified, not v
 - Hawking-like evaporation behavior in energy drain dynamics
 
 **What was not demonstrated (v10):**
+
 - Equal-mass orbits: both bodies see identical symmetric gradients, no differential turning.
   This is a real limitation, not a parameter issue.
 - Conservation laws: energy and angular momentum approximately conserved but not exactly. No
@@ -277,18 +293,18 @@ is the explicit subject of the v21-v24 experimental arc described in Section 2.
 
 ### 1.10 Summary Table: V2-Substrate Results
 
-| Result | Experiment | Substrate | Key metric | Transfers to V3? |
-|--------|-----------|-----------|------------|-------------------|
-| Time dilation | #51 v9 | Continuous field | r = 0.999 | Mechanism yes, precision unknown |
-| Geodesic orbits | #53 v10 | Continuous field | 100% orbital | Mechanism yes, not tested on graph |
-| Collision physics | #55 | Lattice | 3 regimes validated | Mechanism yes, Pauli unknown |
-| 3D optimality | #15 v6-gpu | Regular grid | SPBI = 2.23 | Plausible, not tested |
-| Dim. equivalence rejection | #50 | Grid + time | 0/6 passed, rho = 2.0 | Yes, substrate-independent |
-| Rotation asymmetry | #44_03 | Temporal lag | 933x ratio | Yes, substrate-independent |
-| O(n) bucketing | #44_05 | Temporal rendering | 2.78x speedup | Yes, substrate-independent |
-| Interferometry | #62 | Lattice | 26/26 tests | Prediction transfers, not physical |
-| Lattice gravity | #64_109 v1-v9 | Cubic lattice | 1/r^2.2 force | Mechanism yes, specifics untested |
-| Stable orbits | #64_109 v10 | Cubic lattice | 433 revolutions | Mechanism yes, specifics untested |
+| Result                     | Experiment    | Substrate          | Key metric            | Transfers to V3?                   |
+|----------------------------|---------------|--------------------|-----------------------|------------------------------------|
+| Time dilation              | #51 v9        | Continuous field   | r = 0.999             | Mechanism yes, precision unknown   |
+| Geodesic orbits            | #53 v10       | Continuous field   | 100% orbital          | Mechanism yes, not tested on graph |
+| Collision physics          | #55           | Lattice            | 3 regimes validated   | Mechanism yes, Pauli unknown       |
+| 3D optimality              | #15 v6-gpu    | Regular grid       | SPBI = 2.23           | Plausible, not tested              |
+| Dim. equivalence rejection | #50           | Grid + time        | 0/6 passed, rho = 2.0 | Yes, substrate-independent         |
+| Rotation asymmetry         | #44_03        | Temporal lag       | 933x ratio            | Yes, substrate-independent         |
+| O(n) bucketing             | #44_05        | Temporal rendering | 2.78x speedup         | Yes, substrate-independent         |
+| Interferometry             | #62           | Lattice            | 26/26 tests           | Prediction transfers, not physical |
+| Lattice gravity            | #64_109 v1-v9 | Cubic lattice      | 1/r^2.2 force         | Mechanism yes, specifics untested  |
+| Stable orbits              | #64_109 v10   | Cubic lattice      | 433 revolutions       | Mechanism yes, specifics untested  |
 
 Three results are substrate-independent (dimensional equivalence rejection, rotation asymmetry,
 O(n) bucketing). The remaining seven use substrates that differ from the V3 graph. In all seven
@@ -327,6 +343,7 @@ the same connectors -- like being pushed 100 times before taking a step.
 hops, the entity coasts on pure inertia. This is the graph analog of a symplectic integrator.
 
 **What it found:**
+
 - Warm-up diagnostic revealed the "frozen planet" bug: planet placed next to a star with zero
   established field escapes immediately
 - Bootstrap deadlock identified: planet cannot orbit before field exists, but field does not
@@ -346,6 +363,7 @@ the principle that the star must form first, establish its gravitational field, 
 can a planet exist in that field.
 
 **What it introduced:**
+
 - Phase 0: Star formation from seed deposit (mass 1.0, not 100,000). Star grows via
   self-reinforcing accumulation over 20,000+ ticks.
 - Phase 1: Orbital velocity derived from measured force, not guessed.
@@ -354,11 +372,13 @@ can a planet exist in that field.
 - Local hop threshold tracking expansion.
 
 **Key measurements:**
+
 - F_radial at r=8: -0.0000196 (100% inward, 395 nodes sampled)
 - v_circular derived: 0.00396 (from measured force, inertia=10, force_coeff=1.0)
 - Mean ticks/hop: 611 +/- 49 (k=24, radius=30)
 
 **Key results:**
+
 - First curved trajectories in the entire experiment arc (leapfrog N=10 configuration)
 - Best particle (p14 in leapfrog run) survived 11,945 ticks with velocity declining 30%
   (0.00396 to 0.00278) -- gravity actively decelerating outward drift
@@ -394,10 +414,10 @@ hop threshold with floor, derived orbital velocity from measured force.
 
 **Key measurements (v23):**
 
-| Radius | F_radial | % inward | v_circular (i=10) |
-|--------|----------|----------|-------------------|
-| r=8 | -0.0000198 | 100% | 0.00398 |
-| r=25 | -0.0000062 | 92% | 0.00394 |
+| Radius | F_radial   | % inward | v_circular (i=10) |
+|--------|------------|----------|-------------------|
+| r=8    | -0.0000198 | 100%     | 0.00398           |
+| r=25   | -0.0000062 | 92%      | 0.00394           |
 
 **Five runs completed:**
 
@@ -410,6 +430,7 @@ ticks (tick 36k-54k). All best-3 particles still bound at 60k ticks. Late veloci
 (0.00129 to 0.00139) as star mass dropped to 55%.
 
 **Run C** (v=0.003 at r=8, stable star): **Best result in the arc.**
+
 - Particle p8: r went 8.0 to 21.1 (tick 36k) to 17.1 (tick 60k). **First radial reversal
   in the entire v21-v24 arc.** The particle turned around and moved back toward the star.
 - Particle p19: Locked at r=25.9 for 27,000 consecutive ticks (tick 33k-60k).
@@ -430,6 +451,7 @@ directly at r=25 with v=0.003 had 7.5x more velocity and escaped. The gradient a
 (F_radial = -0.0000062, only 31% of the r=8 value) was too weak to decelerate them.
 
 **What v23 proved:**
+
 - Larger domain removes boundary artifacts (Run C: all particles bound at 60k)
 - Stable star (no mass loss) eliminates late-run field decay
 - Leapfrog force genuinely decelerates particles and curves trajectories
@@ -437,6 +459,7 @@ directly at r=25 with v=0.003 had 7.5x more velocity and escaped. The gradient a
 - Radial equilibrium is physically possible (p19: locked at r=25.9 for 27k ticks)
 
 **What v23 did not prove:**
+
 - Closed orbits. No perihelion/aphelion oscillation observed.
 - That the gradient supports actual orbital dynamics at radii where particles settle.
 - That v_circular derived from measure_force is reliable -- particles initialized at the
@@ -461,10 +484,10 @@ v24 increased star mass by 10x (from 100,000 to 1,000,000) to strengthen the gra
 
 **What it discovered: Anti-Newtonian scaling.**
 
-| Metric | v23 (M=100k) | v24 (M=1M) | Ratio |
-|--------|-------------|------------|-------|
-| F_radial at r=8 | -0.0000198 | -0.00000129 | 0.065x (15x weaker) |
-| v_circular (i=10) | 0.00398 | 0.00101 | 0.25x |
+| Metric            | v23 (M=100k) | v24 (M=1M)  | Ratio               |
+|-------------------|--------------|-------------|---------------------|
+| F_radial at r=8   | -0.0000198   | -0.00000129 | 0.065x (15x weaker) |
+| v_circular (i=10) | 0.00398      | 0.00101     | 0.25x               |
 
 **The 10x heavier star produced a 15x weaker force.** This is the opposite of Newtonian scaling.
 
@@ -594,12 +617,12 @@ free parameter in all simulations to date.
 
 The v21-v24 arc shows a clear progression in the nature of failures:
 
-| Version | Primary failure mode | Root cause |
-|---------|---------------------|------------|
-| v21 | Frozen planet, bootstrap deadlock | Architectural: planet placed before field exists |
-| v22 | Domain too small | Boundary artifact: natural radius exceeds graph |
-| v23 | Force too weak at settling radius | Physics: gradient drops faster than 1/r^2 |
-| v24 | Anti-Newtonian mass scaling | Float artifact: gamma self-suppression |
+| Version | Primary failure mode              | Root cause                                       |
+|---------|-----------------------------------|--------------------------------------------------|
+| v21     | Frozen planet, bootstrap deadlock | Architectural: planet placed before field exists |
+| v22     | Domain too small                  | Boundary artifact: natural radius exceeds graph  |
+| v23     | Force too weak at settling radius | Physics: gradient drops faster than 1/r^2        |
+| v24     | Anti-Newtonian mass scaling       | Float artifact: gamma self-suppression           |
 
 The failures are qualitatively different at each stage. v21 failed because the architecture
 was wrong. v22 failed because the domain was too small. v23 failed because the force law is
@@ -627,13 +650,13 @@ The V3 theoretical framework (RAW 108-113) makes the following core claims:
 
 The experimental status of each claim:
 
-| Claim | Theoretical basis | Experimental status |
-|-------|------------------|---------------------|
-| Deposit-based gravity | RAW 112 | Qualitative: curved trajectories, radial reversal. Quantitative: no orbit, no force law. |
-| Three comparison states | RAW 113 | No experimental instantiation. Theoretical only. |
-| Observer-reconstructed geometry | RAW 110 | Not tested. Simulations use embedded 3D coordinates. |
-| Time as branch depth | RAW 113, V3 Ch.4 | Self-pinning observed but time dilation not measured from it. |
-| Traversal-driven expansion | RAW 112 | Not implemented. Global H used in all simulations. |
+| Claim                           | Theoretical basis | Experimental status                                                                      |
+|---------------------------------|-------------------|------------------------------------------------------------------------------------------|
+| Deposit-based gravity           | RAW 112           | Qualitative: curved trajectories, radial reversal. Quantitative: no orbit, no force law. |
+| Three comparison states         | RAW 113           | No experimental instantiation. Theoretical only.                                         |
+| Observer-reconstructed geometry | RAW 110           | Not tested. Simulations use embedded 3D coordinates.                                     |
+| Time as branch depth            | RAW 113, V3 Ch.4  | Self-pinning observed but time dilation not measured from it.                            |
+| Traversal-driven expansion      | RAW 112           | Not implemented. Global H used in all simulations.                                       |
 
 **Of the five core claims, one has qualitative experimental support, and zero have quantitative
 experimental support on the V3 substrate.**
@@ -664,12 +687,14 @@ A cross-cutting issue affects all V3-substrate experiments: the gamma field is i
 float64 values, not as the binary deposits the theory describes.
 
 The theory (RAW 112) claims:
+
 - Each deposit event places exactly one unit at one node
 - Deposits are binary (present or absent at each node)
 - The field propagates only via entity hops at c
 - No diffusion operation
 
 The simulation implements:
+
 - Continuous float gamma values that accumulate without bound
 - A diffusion (spread) operation that propagates field instantaneously
 - Continuous velocity vectors in Euclidean 3D space
@@ -884,6 +909,7 @@ of any kind. The graph-substrate gravity mechanism has qualitative support and z
 validation.
 
 **What has not been acknowledged as prominently as it should be:**
+
 - No closed orbit on any graph substrate (random or otherwise), despite the cubic lattice
   achieving 433 revolutions.
 - No force law measurement beyond two data points.
@@ -892,6 +918,7 @@ validation.
 - All graph simulations embed 3D coordinates, which the theory says should be emergent.
 
 **What is genuinely encouraging:**
+
 - The failure modes are progressing from architectural to physical, suggesting the architecture
   is converging toward something correct.
 - Self-pinning emerged unprogrammed and qualitatively reproduces the Hubble flow.
@@ -919,7 +946,8 @@ validation.
 - Exp #15 v6-gpu: 3,960 dimensional simulations. `experiments/15_minimal-model/v6-gpu/`
 - Exp #44_03: Rotation asymmetry, 933x ratio. `experiments/44_03_emergent_rotation/RESULTS.md`
 - Exp #44_05: O(n) bucketing, 2.78x speedup. `experiments/44_05_double_buffer_rendering/RESULTS.md`
-- Exp #50: Dimensional equivalence rejection. `experiments/50_dimensional_equivalence_explicit_time/EXPERIMENT_RESULTS.md`
+- Exp #50: Dimensional equivalence rejection.
+  `experiments/50_dimensional_equivalence_explicit_time/EXPERIMENT_RESULTS.md`
 - Exp #51 v9: Time dilation, r = 0.999 correlation. `experiments/51_emergent_time_dilation/v9/RESULTS.md`
 - Exp #53 v10: Geodesic orbits, 100% completion. `experiments/51_emergent_time_dilation/v10/RESULTS.md`
 - Exp #55: Collision physics, Pauli exclusion. `experiments/55_collision_physics/VALIDATION_RESULTS.md`
@@ -930,7 +958,8 @@ validation.
 ### V3-Substrate Experiments
 
 - Exp #64_109 v21: Force-on-hop. `experiments/64_109_three_body_tree/v21/experiment_description.md`
-- Exp #64_109 v22: Star formation, curved trajectories. `experiments/64_109_three_body_tree/v22/experiment_description.md`
+- Exp #64_109 v22: Star formation, curved trajectories.
+  `experiments/64_109_three_body_tree/v22/experiment_description.md`
 - Exp #64_109 v23: Larger domain, radial reversal. `experiments/64_109_three_body_tree/v23/experiment_description.md`
 - Exp #64_109 v24: M=1M star, anti-Newtonian scaling. `experiments/64_109_three_body_tree/v24/experiment_description.md`
 
@@ -942,7 +971,8 @@ validation.
 - RAW 111: Space is connections
 - RAW 112: The single mechanism
 - RAW 113: Semantic isomorphism -- same/different/unknown
-- RAW 120: Open questions and experimental status
+- RAW 120: Sparse unknown routing
+- RAW 200: Open questions and experimental status
 
 ---
 

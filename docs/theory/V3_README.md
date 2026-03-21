@@ -20,10 +20,15 @@ From these two observations, without additional assumptions, the derivation chai
 - Existence subject to process → self-recognition → **1=1** (RAW 117)
 - Self-recognition requires a vocabulary → **Same / Different / Unknown** (RAW 113)
 - Results are append-only → **the graph substrate** (RAW 111, RAW 112)
-- The graph generates space, time, mass, gravity, light (RAW 108, RAW 109, RAW 118)
+- The graph generates space (RAW 111), time (RAW 112), mass and gravity (RAW 118),
+  light (RAW 109, RAW 081), three spatial dimensions (RAW 108, RAW 040),
+  electromagnetism (RAW 086, RAW 087)
 
-The full derivation is in **RAW 122 — The Derivation Chain**. It is the entry point to
-the entire framework. Everything below follows from that chain.
+The full derivation is in **[RAW 122 — The Derivation Chain](raw/122_the_derivation_chain.md)**.
+It is the entry point to the entire framework. The derivation chain is logically
+complete — no additional axioms are introduced. The one remaining free parameter
+(deposit strength per hop) arises at the implementation level, not in the derivation
+itself. Everything below follows from that chain.
 
 ---
 
@@ -44,11 +49,11 @@ that has happened can be undone.
 When an entity arrives at a node, its arriving pattern is compared against the existing
 deposit state. There are exactly three possible outcomes:
 
-| Outcome | Condition | Physical mapping |
-|---------|-----------|-----------------|
-| **Same** | Arriving pattern matches existing deposits | Gravity |
-| **Different** | Arriving pattern diverges from existing deposits | Radiation |
-| **Unknown** | Node has no existing deposits | Expansion |
+| Outcome       | Condition                                        | Physical mapping |
+|---------------|--------------------------------------------------|------------------|
+| **Same**      | Arriving pattern matches existing deposits       | Gravity          |
+| **Different** | Arriving pattern diverges from existing deposits | Radiation        |
+| **Unknown**   | Node has no existing deposits                    | Expansion        |
 
 These three outcomes are not imposed categories. They are the exhaustive logical partition
 of all possible comparison results. No fourth state is constructible.
@@ -177,17 +182,17 @@ have been experimentally validated.
 
 ## Complete Chapter List
 
-| Chapter | Title | Key sources |
-|---------|-------|-------------|
-| [Foundation](raw/122_the_derivation_chain.md) | The Derivation Chain | RAW 122 |
-| [Ch1](V3_ch001_the_graph_substrate.md) | The Graph Substrate | RAW 111, RAW 112 |
-| [Ch2](V3_ch002_three_states.md) | The Three States | RAW 113 |
-| [Ch3](V3_ch003_emergent_geometry.md) | Emergent Geometry | RAW 108, RAW 109, RAW 110 |
-| [Ch4](V3_ch004_time_and_depth.md) | Time and Depth | RAW 112, V2 ch001 |
-| [Ch5](V3_ch005_information_and_trie.md) | Information and the Trie | RAW 113, Ch2 |
+| Chapter                                       | Title                      | Key sources               |
+|-----------------------------------------------|----------------------------|---------------------------|
+| [Foundation](raw/122_the_derivation_chain.md) | The Derivation Chain       | RAW 122                   |
+| [Ch1](V3_ch001_the_graph_substrate.md)        | The Graph Substrate        | RAW 122, RAW 111, RAW 112 |
+| [Ch2](V3_ch002_three_states.md)               | The Three States           | RAW 122, RAW 113          |
+| [Ch3](V3_ch003_emergent_geometry.md)          | Emergent Geometry          | RAW 108, RAW 109, RAW 110 |
+| [Ch4](V3_ch004_time_and_depth.md)             | Time and Depth             | RAW 112, V2 ch001         |
+| [Ch5](V3_ch005_information_and_trie.md)       | Information and the Trie   | RAW 113, Ch2              |
 | [Ch6](V3_ch006_observer_and_consciousness.md) | Observer and Consciousness | RAW 035, RAW 042, RAW 116 |
-| [Ch7](V3_ch007_experimental_status.md) | Experimental Status | All experiments |
-| [Ch8](V3_ch008_open_questions.md) | Open Questions | All chapters |
+| [Ch7](V3_ch007_experimental_status.md)        | Experimental Status        | All experiments           |
+| [Ch8](V3_ch008_open_questions.md)             | Open Questions             | All chapters              |
 
 ---
 
@@ -204,17 +209,17 @@ Between February and March 2026, RAW documents 108-113 established a fundamental
 different substrate. The V3 framework replaces V2's geometric lattice with a raw graph
 that has no intrinsic geometry at all.
 
-| Concept | V2 (Geometric Era) | V3 (Graph Era) |
-|---------|-------------------|----------------|
-| Substrate | Discrete Euclidean lattice | Raw graph, no geometry |
-| Space | Emergent from temporal gradients | Emergent from observer latency matrix |
-| Time | Primary substrate (tick-stream) | Branch depth -- observer property |
-| Connectors | Edges on fixed grid | Deposit chains |
-| Dimension | Substrate property (3D Goldilocks) | Observer property (minimal embedding) |
-| Geometry | Planck-scale voxels | Observer reconstruction from causal data |
-| Gravity | Time gradient following | Same -- familiarity routing |
-| Radiation | Propagating disturbance | Different -- divergence propagating |
-| Expansion | Dark energy / field dilution | Unknown -- frontier writing |
+| Concept    | V2 (Geometric Era)                 | V3 (Graph Era)                           |
+|------------|------------------------------------|------------------------------------------|
+| Substrate  | Discrete Euclidean lattice         | Raw graph, no geometry                   |
+| Space      | Emergent from temporal gradients   | Emergent from observer latency matrix    |
+| Time       | Primary substrate (tick-stream)    | Branch depth -- observer property        |
+| Connectors | Edges on fixed grid                | Deposit chains                           |
+| Dimension  | Substrate property (3D Goldilocks) | Observer property (minimal embedding)    |
+| Geometry   | Planck-scale voxels                | Observer reconstruction from causal data |
+| Gravity    | Time gradient following            | Same -- familiarity routing              |
+| Radiation  | Propagating disturbance            | Different -- divergence propagating      |
+| Expansion  | Dark energy / field dilution       | Unknown -- frontier writing              |
 
 The shift is not incremental. V2 assumed geometry was physical at the smallest scale
 and time was the primary substrate. V3 assumes neither. The graph has no geometry.

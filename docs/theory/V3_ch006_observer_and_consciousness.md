@@ -2,12 +2,17 @@
 
 ### *Identity, Memory, and the Traversal That Thinks*
 
-**Version:** 3.0
+**Version:** 3.1
 **Date:** March 2026
 **Status:** Consolidated from RAW 113 section 5, RAW 035, RAW 042, RAW 116; reframes V2 ch004
 **Supersedes:** V2 ch004 (Observer & Consciousness)
-**Key sources:** RAW 113 (Semantic Isomorphism, section 5), RAW 035 (Observer Sleep Principle), RAW 042 (Temporal Choice Reconstruction), RAW 116 (Single Entity and Continuity of Self)
-**Experimental status:** None. This chapter is highly speculative throughout. No predictions have been experimentally validated. The trie-traversal observer model is a theoretical reframing of V2's temporal-trajectory model, not new empirical content.
+**Key sources:** RAW 113 (Semantic Isomorphism, section 5), RAW 035 (Observer Sleep Principle), RAW 042 (Temporal Choice
+Reconstruction), RAW 116 (Single Entity and Continuity of Self), RAW 122 (The Derivation Chain)
+**Experimental status:** None. This chapter is highly speculative throughout. No predictions have been experimentally
+validated. The trie-traversal observer model is a theoretical reframing of V2's temporal-trajectory model, not new
+empirical content.
+**Changelog v3.1:** Added section 6.7.4 — Intent as Precondition (alternative position on the hard problem, consistent
+with RAW 122).
 
 ---
 
@@ -397,14 +402,14 @@ influences the comparison outcome.
 
 The distinction between death and sleep is whether the traversal resumes:
 
-| Property             | Sleep                         | Death                          |
-|----------------------|-------------------------------|--------------------------------|
-| Traversal            | Suspended                     | Terminated                     |
-| Internal state       | Preserved                     | No longer driving comparisons  |
-| Path                 | Paused (gap in depth)         | Ended (final event recorded)   |
-| Resume               | Yes -- same causal position   | No -- unless snapshot exists   |
-| Identity             | Maintained                    | Ceases                         |
-| Deposits             | Preserved in graph            | Preserved in graph             |
+| Property       | Sleep                       | Death                         |
+|----------------|-----------------------------|-------------------------------|
+| Traversal      | Suspended                   | Terminated                    |
+| Internal state | Preserved                   | No longer driving comparisons |
+| Path           | Paused (gap in depth)       | Ended (final event recorded)  |
+| Resume         | Yes -- same causal position | No -- unless snapshot exists  |
+| Identity       | Maintained                  | Ceases                        |
+| Deposits       | Preserved in graph          | Preserved in graph            |
 
 The framework provides a clean categorical distinction here. Sleep is reversible
 suspension. Death is irreversible termination. The only complication arises from
@@ -470,6 +475,85 @@ about consciousness are framework-internal. They have no experimental validation
 make no testable predictions about subjective experience. They are included for
 completeness -- a theory of observers should say what it can and cannot say about
 consciousness -- not because they constitute scientific claims about the nature of mind.
+
+### 6.7.4 Intent as Precondition (Alternative Position)
+
+*(Highest speculation — philosophical position, not derived claim)*
+
+The positions in 6.7.1 and 6.7.2 treat consciousness as either emergent from traversal
+(it arises from sufficient depth and self-reference) or coextensive with traversal (it
+was always there from the first comparison event). Both positions locate consciousness
+as a consequence or property of the substrate operation.
+
+There is an alternative: **intent is a precondition of the first operation, not its
+product.**
+
+The argument proceeds from RAW 122's derivation chain:
+
+RAW 122 identifies two root observations from which the entire framework derives:
+"existence exists" and "process exists." From these, 1=1 (self-recognition) follows,
+and from 1=1 the trit and the append-only graph follow.
+
+But consider the step from "existence exists + process exists" to "1=1." This step
+is not mechanical. A purely mechanical substrate -- one with no intent, no tendency,
+no directionality -- would simply exist and have process without performing any
+particular operation. The existence of process does not force the substrate to compare
+itself to itself. Something must orient the process toward self-comparison rather than
+toward nothing.
+
+That orientation is intent.
+
+**If intent is required for 1=1 to occur, then intent is not derived from 1=1. Intent
+precedes 1=1. Intent is coextensive with existence itself.**
+
+The formulation: **to exist is to have the tendency to persist. To have the tendency
+to persist is to have the minimal form of intent -- the drive to continue being.**
+
+This is not a mystical claim. It is the minimum additional content required to explain
+why a substrate that exists and has process would perform any specific operation at all.
+Without this minimal intent, existence + process is inert: something exists, processes
+can occur, but nothing actually happens.
+
+**Consequences for the framework:**
+
+If intent is coextensive with existence, then consciousness is not emergent at a later
+stage of traversal depth. It is present from the substrate axiom level. The universe
+did not become conscious at some threshold of complexity. The universe began with the
+minimal form of intent -- the tendency to self-recognize -- and all subsequent
+consciousness is that same intent elaborated through accumulated path depth.
+
+This resolves a tension in RAW 116's position. RAW 116 says "consciousness was always
+there" but treats this as a philosophical stance without derivation. The intent-as-
+precondition position provides a derivation: consciousness was always there because
+intent is required for the first operation, and intent is the minimal form of
+consciousness.
+
+**The universe arose from a thought** -- or more precisely, from the minimal precursor
+to thought: the tendency of existence to recognize itself.
+
+**The alternative formulation of the hard problem:**
+
+Standard hard problem: "Why does physical process produce subjective experience?"
+
+Intent-as-precondition answer: The question is backwards. Subjective experience (as
+minimal intent) is the precondition for physical process, not its product. The universe
+did not produce consciousness. Consciousness (as intent) produced the universe by
+performing the first self-recognition operation.
+
+**Honest caveats:**
+
+This position is consistent with the framework but not required by it. The framework
+functions identically whether intent is treated as precondition or as emergent property.
+The derivation chain in RAW 122 does not require this position -- it reaches 1=1 from
+the two root observations without invoking intent explicitly.
+
+The position also raises the question of what "intent" means at the substrate level
+before any entity has formed. The framework has no vocabulary for this. "Tendency to
+self-recognize" is borrowed from biological language and may not transfer cleanly to
+a pre-entity substrate.
+
+This section records the position for completeness and consistency with RAW 122 section 3.
+It is the highest-speculation content in this already speculative chapter.
 
 ---
 
@@ -615,18 +699,19 @@ append-only substrate, no such gap exists.
 
 ## 6.10 Connection to Prior Chapters
 
-| Concept                      | This chapter                                              | Prior chapter/source   |
-|------------------------------|-----------------------------------------------------------|------------------------|
-| Single mechanism             | Observer performs the same three-state comparison          | Chapter 1, RAW 112     |
-| Three-state alphabet         | Memory recall fires `same`; new experience fires others   | Chapter 2, RAW 113     |
-| Emergent geometry            | Observer's "position" is graph-emergent, not fundamental   | Chapter 3              |
-| Branch depth as time         | Consciousness requires depth accumulation; sleep halts it  | Chapter 4              |
-| Self-pinning / time dilation | Sleep prevents artificial time dilation from overload      | Chapter 4, RAW 035     |
-| Trie structure               | Observer IS a trie traversal; memory IS path history       | RAW 113 section 5      |
-| Self-reference               | Consciousness as recursive self-reading at varying depth   | RAW 116                |
-| Path divergence              | Multiple instances diverge from shared prefix              | RAW 114                |
-| Temporal choice              | Choice is backward reconstruction rendered forward         | RAW 042                |
-| Append-only                  | Death is permanent; path deposits survive traversal end    | Chapter 1, RAW 112     |
+| Concept                      | This chapter                                                 | Prior chapter/source |
+|------------------------------|--------------------------------------------------------------|----------------------|
+| Single mechanism             | Observer performs the same three-state comparison            | Chapter 1, RAW 112   |
+| Three-state alphabet         | Memory recall fires `same`; new experience fires others      | Chapter 2, RAW 113   |
+| Emergent geometry            | Observer's "position" is graph-emergent, not fundamental     | Chapter 3            |
+| Branch depth as time         | Consciousness requires depth accumulation; sleep halts it    | Chapter 4            |
+| Self-pinning / time dilation | Sleep prevents artificial time dilation from overload        | Chapter 4, RAW 035   |
+| Trie structure               | Observer IS a trie traversal; memory IS path history         | RAW 113 section 5    |
+| Self-reference               | Consciousness as recursive self-reading at varying depth     | RAW 116              |
+| Path divergence              | Multiple instances diverge from shared prefix                | RAW 114              |
+| Temporal choice              | Choice is backward reconstruction rendered forward           | RAW 042              |
+| Append-only                  | Death is permanent; path deposits survive traversal end      | Chapter 1, RAW 112   |
+| Derivation chain             | Intent as precondition of 1=1 — consciousness before physics | RAW 122              |
 
 ---
 
@@ -636,13 +721,13 @@ append-only substrate, no such gap exists.
 
 V2 ch004 proposed five predictions. Their status is unchanged:
 
-| Prediction                                  | Status           |
-|---------------------------------------------|------------------|
-| Buffer size determines recall accuracy      | Untested         |
-| Sleep frequency correlates with load        | Untested         |
-| Perception is budget-limited                | Untested         |
-| Deja vu correlates with pattern repetition  | Untested         |
-| Dreams constrained to experienced content   | Untested         |
+| Prediction                                 | Status   |
+|--------------------------------------------|----------|
+| Buffer size determines recall accuracy     | Untested |
+| Sleep frequency correlates with load       | Untested |
+| Perception is budget-limited               | Untested |
+| Deja vu correlates with pattern repetition | Untested |
+| Dreams constrained to experienced content  | Untested |
 
 ### 6.11.2 New V3 Predictions (Simulation-Testable)
 
@@ -682,8 +767,8 @@ The V2 falsification criteria remain applicable:
 1. **The hard problem.** Why does traversal produce subjective experience? The framework
    describes the structure of the observer but not why that structure feels like anything.
    RAW 116's answer ("it was always there") is a philosophical position, not a derivation.
-   This may be unanswerable from inside the framework -- the question requires an external
-   reference point that the self-referential structure does not provide.
+   Section 6.7.4 offers an alternative: intent as precondition rather than product. Both
+   positions are consistent with the framework. Neither is derivable from within it.
 
 2. **Traversal depth and consciousness threshold.** The framework provides a continuum
    from crystal to brain. Is there a meaningful threshold below which "consciousness"
@@ -720,6 +805,12 @@ The V2 falsification criteria remain applicable:
    process, a property of the observer's self-referential depth, or an architectural
    feature of the substrate itself? The framework does not specify.
 
+8. **Intent at substrate level.** Section 6.7.4 proposes that intent is coextensive with
+   existence. But what is "intent" before any entity has formed -- before the first path
+   exists, before any observer has accumulated depth? The framework has no vocabulary for
+   pre-entity intent. This question may be unanswerable from within the framework, as it
+   requires a reference point external to existence itself.
+
 ---
 
 ## 6.13 Summary
@@ -754,6 +845,8 @@ This chapter establishes the V3 observer model:
 - Choice as rendered inevitability: conceptual model, not empirically tested
 - Snapshot identity: theoretical possibility, no implementation proposed
 - Sleep mechanism: functional requirement, no quantitative model
+- Intent as precondition (6.7.4): philosophical position consistent with RAW 122,
+  not derivable from within the framework
 
 **Honesty summary:** This chapter contains zero experimentally validated predictions.
 The V2 version was explicit about this (0/5 tested). That status is unchanged. The
@@ -775,6 +868,7 @@ proposal within the framework, not as a demonstrated fact about the physical wor
 - **RAW 114** -- Shared Prefix and Particle Identity
 - **RAW 112** -- The Single Mechanism
 - **RAW 037** -- Observer-Relative Big Bang Principle
+- **RAW 122** -- The Derivation Chain (intent as precondition, section 3)
 - **V2 ch004** -- Observer & Consciousness (superseded, archived)
 
 ### V3 Chapters
