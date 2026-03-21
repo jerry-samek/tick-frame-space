@@ -170,11 +170,11 @@ other-signature becomes self-signature. What was `Different` becomes `Same`.
 
 This reframes the three-state alphabet at the point of traversal:
 
-| Before traversal | After traversal | What happened |
-|---|---|---|
-| Connector carries star-signature (`Different` to planet) | Connector carries planet-signature (`Same` to planet) | Consumption: Different → Same |
-| Connector carries planet's own prior deposits (`Same`) | Connector carries reinforced planet-signature (`Same`) | Self-reinforcement: Same → Same |
-| Connector carries no deposits (`Unknown`) | Connector carries planet-signature (`Same` to planet) | Frontier writing: Unknown → Same |
+| Before traversal                                         | After traversal                                        | What happened                    |
+|----------------------------------------------------------|--------------------------------------------------------|----------------------------------|
+| Connector carries star-signature (`Different` to planet) | Connector carries planet-signature (`Same` to planet)  | Consumption: Different → Same    |
+| Connector carries planet's own prior deposits (`Same`)   | Connector carries reinforced planet-signature (`Same`) | Self-reinforcement: Same → Same  |
+| Connector carries no deposits (`Unknown`)                | Connector carries planet-signature (`Same` to planet)  | Frontier writing: Unknown → Same |
 
 In all three cases, the entity converts toward `Same`. But the gravitational
 routing — the direction change — comes specifically from the `Different → Same`
@@ -221,11 +221,47 @@ static field. The star produces `Different` (from the perspective of everything
 else). Everything else consumes and transforms it toward their own `Same`. The
 gradient persists only as long as production exceeds consumption at each radius.
 
-At the radius where consumption rate equals production rate, the gradient drops
-to zero. Beyond that radius, the star's gravitational influence does not reach.
-This is the star's **gravitational horizon** — determined not by a coupling
-constant, but by the ratio of the star's deposit rate to the total consumption
-rate of all entities in its field.
+### 2.6 Gravity Never Reaches Zero
+
+The append-only axiom guarantees that every deposit ever made is still in the
+graph. A star that has been depositing for a million ticks has sent deposits
+propagating outward through connectors for a million ticks. Those deposits spread,
+dilute, get consumed and transformed by everything they pass through — but they
+never reach zero. At enormous distances the deposits are sparse. Maybe one connector
+in a thousand carries a single quantum of star-signature. But it is there.
+
+An entity at that distance has k connectors. Perhaps 23 carry nothing from the
+star. One carries a single quantum. That tick, the entity consumes that one quantum
+and routes slightly starward. Next tick, maybe a different connector has one. Or
+maybe none do for several ticks. Then one appears. The routing is stochastic,
+intermittent, noisy — but it has a net bias toward the star, because the star-
+signature deposits, however sparse, are never exactly isotropic.
+
+This produces a **transition from deterministic to stochastic gravity** as a
+function of deposit density:
+
+| Distance regime | Deposit density per connector       | Gravity character                         |
+|-----------------|-------------------------------------|-------------------------------------------|
+| Near the star   | Many quanta per connector           | Deterministic: strong, smooth attraction  |
+| Intermediate    | ~1 quantum per connector            | Noisy: intermittent routing with net bias |
+| Far             | << 1 quantum per connector per tick | Stochastic: Brownian drift with weak bias |
+
+There is no gravitational horizon — no radius beyond which gravity is zero. The
+star's influence extends everywhere its deposits have ever propagated, which
+(given enough time) is the entire connected graph. It just becomes progressively
+noisier with distance, transitioning from deterministic force to Brownian drift.
+
+This is consistent with Newtonian gravity (1/r² to infinity, never zero) and
+also consistent with the Brownian motion observed in Experiment 64_109 v6, where
+integer quanta on a lattice produced genuine stochastic drift of cluster centers
+with diffusion coefficient D ~ 1/M². That was not a simulation artifact — it was
+the correct low-density behavior of integer consumption on the graph.
+
+The earlier version of this document (§2.5 in the first draft) incorrectly
+predicted a "gravitational horizon" — a hard cutoff radius. This was wrong. The
+append-only axiom forbids any deposit from reaching zero. Gravity is infinite in
+reach but finite in precision: at sufficient distance it becomes indistinguishable
+from noise.
 
 ---
 
@@ -266,6 +302,7 @@ This scales with spatial extent. A 1-node entity has mass proportional to k. A
 size is structural, not parameterized.
 
 A massive entity:
+
 - Consumes more incoming deposits per tick (more receptors)
 - Deposits more of its own pattern per tick (more output connectors)
 - Extends more connectors per tick (more traversals)
@@ -379,6 +416,7 @@ deposits outward. Every tick: absorb from local connectors, transform `Different
 everyone else's perspective).
 
 When a planet sits between a star and a test particle:
+
 - The planet consumes some star-deposits arriving from the star-facing side
   (transforming star-`Different` into planet-`Same`)
 - The planet radiates its own deposits outward through all connectors, including
@@ -399,6 +437,7 @@ shielding ~ binding_efficiency_loss × (cross_section / 4π r²)
 ```
 
 For the Moon during a solar eclipse (the Allais effect scenario):
+
 - The Moon's binding loss fraction is small (the Moon is not a significant energy sink
   relative to the Sun's output)
 - The Moon's angular cross-section as seen from Earth's surface is ~0.5°
@@ -588,6 +627,7 @@ through the full single mechanism (consume-transform-deposit-extend), achieve a 
 separation distance without any global expansion parameter (H=0).
 
 **Setup:**
+
 - Graph: Random geometric graph, N=10000–30000 nodes, k=24
 - Entity A: Cluster of ~100 nodes, depositing every tick, consuming from local
   connectors
@@ -596,12 +636,14 @@ separation distance without any global expansion parameter (H=0).
 - Initial separation: ~20 hops
 
 **Protocol:**
+
 1. Let both entities deposit for 5000 ticks to establish fields
 2. Release entity B with zero initial velocity
 3. Measure: does B fall toward A indefinitely (collapse), escape, or stabilize at
    an equilibrium distance?
 
 **Success criterion:**
+
 - B reaches a minimum distance and then maintains approximately constant separation
   for >10000 ticks
 - The equilibrium distance depends on the ratio of A's deposit rate to B's
@@ -609,6 +651,7 @@ separation distance without any global expansion parameter (H=0).
 - No global parameters (H, drag, jitter) are used
 
 **Failure modes:**
+
 - B collapses onto A → traversal extension is too weak to balance consumption routing
 - B escapes → traversal extension overwhelms consumption routing
 - B oscillates without damping → the mechanism lacks a dissipation channel
@@ -622,6 +665,7 @@ needs refinement.
 test particle around a distributed star, using only the full single mechanism.
 
 **Setup:**
+
 - Graph: Random geometric graph, N=50000–100000 nodes, k=24
 - Star: Cluster of ~500 nodes bound through mutual consumption and internal
   traversal pressure. Formed through self-assembly (many entities deposited at
@@ -630,6 +674,7 @@ test particle around a distributed star, using only the full single mechanism.
 - H = 0
 
 **Protocol:**
+
 1. Phase 0 (star formation): Seed 500 entities at nearby nodes. Run until cluster
    reaches internal equilibrium (stable mean radius, no further contraction).
    If cluster collapses to a point, the experiment fails — traversal extension is
@@ -641,6 +686,7 @@ test particle around a distributed star, using only the full single mechanism.
    Run for >50000 ticks. Measure orbital parameters.
 
 **Success criterion:**
+
 - Star maintains stable spatial extent through internal traversal pressure
 - Deposit gradient approximates 1/r² at orbital distances
 - Test particle completes >1 full orbit without escape or collapse
@@ -654,20 +700,21 @@ validating the consumption-transformation model.
 
 ## 8. Connection to Existing Documents
 
-| Concept                        | This document                                  | Prior document |
-|--------------------------------|------------------------------------------------|----------------|
-| Single mechanism               | Expanded: consume-transform-deposit-extend     | RAW 112 §2.1   |
-| Gravity as Same                | Corrected: gravity = transformation of Different into Same | RAW 113 §2.1 |
-| Self-pinning                   | Reinterpreted: traversal pressure, not H suppression | RAW 112 §2.7 |
-| Mass as commitment cost        | Extended: mass = receptor count = consumption capacity | RAW 112 §2.3 |
-| Space is connections           | Unchanged — connectors are deposit chains      | RAW 111        |
-| Append-only axiom              | Used to derive why traversal must transform     | RAW 112 §4    |
-| Three-state alphabet           | Deepened: consumption = Different → Same transformation | RAW 113 §1 |
-| Point-mass limitation          | Identified: single-node mass is structurally wrong | Exp 64_109 v1–v24 |
-| Gravitational shielding        | Predicted negligible from consumer-producer cycle | New           |
-| Equilibrium from single mech.  | Predicted: consumption vs extension balance     | New            |
-| Gravity-radiation unification  | Pull and push are undersaturated/oversaturated regimes | New       |
-| Eddington limit                | Reinterpreted as receptor saturation threshold  | New            |
+| Concept                             | This document                                              | Prior document    |
+|-------------------------------------|------------------------------------------------------------|-------------------|
+| Single mechanism                    | Expanded: consume-transform-deposit-extend                 | RAW 112 §2.1      |
+| Gravity as Same                     | Corrected: gravity = transformation of Different into Same | RAW 113 §2.1      |
+| Self-pinning                        | Reinterpreted: traversal pressure, not H suppression       | RAW 112 §2.7      |
+| Mass as commitment cost             | Extended: mass = receptor count = consumption capacity     | RAW 112 §2.3      |
+| Space is connections                | Unchanged — connectors are deposit chains                  | RAW 111           |
+| Append-only axiom                   | Used to derive why traversal must transform                | RAW 112 §4        |
+| Three-state alphabet                | Deepened: consumption = Different → Same transformation    | RAW 113 §1        |
+| Point-mass limitation               | Identified: single-node mass is structurally wrong         | Exp 64_109 v1–v24 |
+| Gravitational shielding             | Predicted negligible from consumer-producer cycle          | New               |
+| Equilibrium from single mech.       | Predicted: consumption vs extension balance                | New               |
+| Gravity-radiation unification       | Pull and push are undersaturated/oversaturated regimes     | New               |
+| Eddington limit                     | Reinterpreted as receptor saturation threshold             | New               |
+| Deterministic-stochastic transition | Gravity becomes Brownian drift at low density              | New               |
 
 ---
 
@@ -737,14 +784,14 @@ validating the consumption-transformation model.
    Is it total deposit count (number of deposits in the graph), total deposit
    energy (some function of deposit density × connector length), or something else?
 
-7. **The gravitational horizon.** §2.5 predicts that a star's gravitational influence
-   has a finite reach, determined by the ratio of production rate to total
-   consumption rate. Is this consistent with observed gravitational physics? In
-   Newtonian gravity the field extends to infinity (diluted by 1/r²). In the
-   consumption model, the field extends only as far as production exceeds
-   consumption. The two descriptions converge if consumption in empty space is
-   negligible — which it should be (no entities to consume). The distinction would
-   only matter in extremely crowded environments.
+7. **Deterministic-stochastic transition radius.** §2.6 establishes that gravity
+   transitions from deterministic to stochastic as deposit density per connector
+   drops below ~1 quantum. At what radius does this transition occur for a given
+   star mass? Is this transition radius consistent with the observed boundary
+   between Keplerian orbital dynamics (deterministic) and the diffuse dynamics
+   of the outer Oort cloud (stochastic)? The transition should depend on the
+   star's deposit rate and the graph's local connectivity — both potentially
+   derivable quantities.
 
 8. **Saturation curve shape.** §6.5 predicts the gravity-to-radiation-pressure
    transition follows a saturation curve, not a linear crossing. What is the
@@ -775,6 +822,11 @@ not follow familiarity — it creates familiarity by consuming and transforming 
 deposits into its own pattern. Gravity is the substrate's tendency to convert
 `Different` into `Same`.
 
+**Gravity never reaches zero.** The append-only axiom guarantees that every deposit
+persists forever. At large distances, deposits become sparse and gravity transitions
+from deterministic attraction to stochastic Brownian drift — but it never vanishes.
+There is no gravitational horizon, only a transition in character.
+
 **Gravity and radiation pressure are two regimes of one mechanism.** Below receptor
 saturation: pull (the entity consumes everything, routes toward the source). Above
 receptor saturation: push (unconsumed deposits extend the connectors, pushing the
@@ -804,6 +856,7 @@ mechanism as the theory describes it.
 - RAW 112 — The Single Mechanism (March 2026)
 - RAW 113 — The Semantic Isomorphism: Same / Different / Unknown (March 2026)
 - Experiment 64_109 v1–v24 — Three-Body Dynamics on Graph Substrate
+- Experiment 64_109 v6 — Integer quanta Brownian motion (stochastic gravity observed)
 - Allais, M. (1959) — "Should the Laws of Gravitation be Reconsidered?" (anomalous
   pendulum observations during solar eclipse)
 
@@ -815,5 +868,5 @@ mechanism as the theory describes it.
 *Supersedes: Passive-reading gravity model in Experiment 64_109 v1–v24*
 *Opens: Consumption efficiency function, extension magnitude, self-consumption,
 radiation pressure requirement, dissipation channel, conservation laws,
-gravitational horizon, saturation curve shape, cosmological redshift derivation,
-equilibrium experiment, distributed-star orbit experiment*
+deterministic-stochastic transition, saturation curve shape, cosmological redshift
+derivation, equilibrium experiment, distributed-star orbit experiment*

@@ -7,6 +7,26 @@
 
 ---
 
+## Foundation
+
+The tick-frame framework rests on two observations that cannot be denied without
+self-contradiction:
+
+1. **Existence exists.** Something is here. Any attempt to deny it uses existence to do so.
+2. **Process exists.** Something changes. Any attempt to deny it is itself a process.
+
+From these two observations, without additional assumptions, the derivation chain proceeds:
+
+- Existence subject to process → self-recognition → **1=1** (RAW 117)
+- Self-recognition requires a vocabulary → **Same / Different / Unknown** (RAW 113)
+- Results are append-only → **the graph substrate** (RAW 111, RAW 112)
+- The graph generates space, time, mass, gravity, light (RAW 108, RAW 109, RAW 118)
+
+The full derivation is in **RAW 122 — The Derivation Chain**. It is the entry point to
+the entire framework. Everything below follows from that chain.
+
+---
+
 ## What This Theory Claims
 
 The universe is a graph. Nodes connected by edges, nothing else. No manifold, no metric
@@ -60,6 +80,8 @@ These results were obtained on the graph-based substrate using deposit-chain mec
 - **Curved trajectories** under gravitational force (v22-v23)
 - **Radial reversal** and velocity stabilization (v23)
 - **Self-pinning:** dense bodies resist expansion drift (v22)
+- **Gravitational binding from consumption-transformation** with H=0 — planet
+  oscillates around equilibrium instead of collapsing or escaping (Exp #118, v1-v2)
 
 ### Validated on V2 Substrates, Plausibly Substrate-Independent
 
@@ -100,13 +122,15 @@ point based on what you care about.
 
 ### For physicists
 
-Start with the substrate and its consequences:
+Start with the foundation and its consequences:
 
-1. [Chapter 1: The Graph Substrate](V3_ch001_the_graph_substrate.md) -- nodes, edges,
+1. [RAW 122: The Derivation Chain](raw/122_the_derivation_chain.md) -- the two root
+   observations and what follows from them
+2. [Chapter 1: The Graph Substrate](V3_ch001_the_graph_substrate.md) -- nodes, edges,
    the single operation, deposit chains
-2. [Chapter 2: The Three States](V3_ch002_three_states.md) -- Same/Different/Unknown
+3. [Chapter 2: The Three States](V3_ch002_three_states.md) -- Same/Different/Unknown
    as the complete physical alphabet
-3. [Chapter 7: Experimental Status](V3_ch007_experimental_status.md) -- what has been
+4. [Chapter 7: Experimental Status](V3_ch007_experimental_status.md) -- what has been
    measured, on which substrate, with what confidence
 
 Then fill in as needed: Ch3 (emergent geometry), Ch4 (time as branch depth), Ch8 (open
@@ -128,13 +152,15 @@ depth as time).
 
 ### For philosophers
 
-Start with what the framework says about time, observation, and identity:
+Start with the axiom derivation and what it implies for observation and identity:
 
-1. [Chapter 4: Time and Depth](V3_ch004_time_and_depth.md) -- arrow of time, observer-
+1. [RAW 122: The Derivation Chain](raw/122_the_derivation_chain.md) -- existence exists,
+   process exists, and what follows without additional assumptions
+2. [Chapter 4: Time and Depth](V3_ch004_time_and_depth.md) -- arrow of time, observer-
    relative Big Bang, dissolution of the simulation argument
-2. [Chapter 6: Observer and Consciousness](V3_ch006_observer_and_consciousness.md) --
+3. [Chapter 6: Observer and Consciousness](V3_ch006_observer_and_consciousness.md) --
    identity as trie traversal, memory as branch topology
-3. [Chapter 5: Information and the Trie](V3_ch005_information_and_trie.md) -- what
+4. [Chapter 5: Information and the Trie](V3_ch005_information_and_trie.md) -- what
    "information" means in a graph with no external reference frame
 
 Note: Chapter 6 is highly speculative throughout. No predictions from the observer model
@@ -153,6 +179,7 @@ have been experimentally validated.
 
 | Chapter | Title | Key sources |
 |---------|-------|-------------|
+| [Foundation](raw/122_the_derivation_chain.md) | The Derivation Chain | RAW 122 |
 | [Ch1](V3_ch001_the_graph_substrate.md) | The Graph Substrate | RAW 111, RAW 112 |
 | [Ch2](V3_ch002_three_states.md) | The Three States | RAW 113 |
 | [Ch3](V3_ch003_emergent_geometry.md) | Emergent Geometry | RAW 108, RAW 109, RAW 110 |
@@ -223,4 +250,4 @@ docs/theory/
 Experimental code and results are in `experiments/` at the repository root. Key
 experiments referenced by V3: #15 (dimensional closure), #44 (kinematic constraints),
 #50 (dimensional equivalence rejection), #51 (time dilation), #64_109 (three-body
-tree, graph substrate gravity).
+tree, graph substrate gravity), #118 (consumption-transformation gravity, H=0).

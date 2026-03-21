@@ -11,8 +11,11 @@ node and its arriving pattern meets the existing deposit state, what are the pos
 The answer is that exactly three outcomes exist. The arriving pattern either **matches** the existing
 deposits (Same), **diverges** from them (Different), or **encounters a node with no deposits**
 (Unknown). These three states are not physical categories imposed from outside. They are the
-exhaustive logical partition of all possible relationships between any arriving pattern and any
-existing node state. No fourth state is constructible.
+exhaustive logical partition of all possible comparison results — derived in RAW 122 as the minimal
+vocabulary that self-recognition (1=1) requires. A binary system (same/different only) cannot
+represent the frontier where comparison is impossible because nothing has arrived. More than three
+states introduces redundancy not derivable from the two root observations. No fourth state is
+constructible.
 
 The theory proposes that these three comparison outcomes map directly onto the three fundamental
 physical behaviours of the substrate: gravity (Same), radiation (Different), and expansion (Unknown).
@@ -25,7 +28,7 @@ This chapter derives the three-state alphabet from the single mechanism of Chapt
 proposed physical mapping for each state, presents the theory's account of photon properties as path
 geometry rather than intrinsic signal properties, and states plainly what remains unvalidated.
 
-**Key source:** RAW 113 (Semantic Isomorphism: Same / Different / Unknown)
+**Key sources:** RAW 122 (The Derivation Chain), RAW 113 (Semantic Isomorphism: Same / Different / Unknown)
 
 **Status:** The three-state mapping is a theoretical proposal. No experiment has yet tested whether
 gravity, radiation, and expansion correspond to these three comparison outcomes. The mapping is

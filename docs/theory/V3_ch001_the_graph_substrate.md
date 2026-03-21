@@ -6,7 +6,7 @@
 **Date:** March 2026
 **Status:** Consolidated from RAW 111, RAW 112
 **Supersedes:** V2 ch001 (Temporal Ontology)
-**Key sources:** RAW 111 (Space Is Connections), RAW 112 (The Single Mechanism)
+**Key sources:** RAW 122 (The Derivation Chain), RAW 111 (Space Is Connections), RAW 112 (The Single Mechanism)
 **Experimental status:** Mechanisms validated on lattice substrates; graph substrate under active testing
 
 ---
@@ -22,6 +22,14 @@ edges added as primitives; they are persistent chains of deposits linking nodes,
 accumulated over time. The graph is append-only: every deposit is permanent, every
 connector extension is permanent, every hop leaves a permanent record in the topology.
 Nothing that has happened can be undone.
+
+The graph substrate is not an assumption. It is derived from two observations that
+cannot be denied without self-contradiction: *existence exists* and *process exists*.
+From these, self-recognition (1=1) follows as the minimal operation, the trit
+(Same/Different/Unknown) follows as the minimal vocabulary, and the append-only graph
+follows as the minimal structure that can accumulate results without deletion. The full
+derivation is in RAW 122 (The Derivation Chain). This chapter develops the graph's
+physical consequences.
 
 This framework claims to derive gravity, inertia, momentum, cosmological expansion,
 and zero-point energy from the single operation, with no additional mechanisms and
@@ -42,6 +50,20 @@ Nothing else exists. There is no space in which the graph is embedded. There is 
 external to the graph's update cycle. The graph is not a model of something more
 fundamental. It is the fundamental thing.
 
+This claim is derived, not assumed. The derivation (RAW 122) proceeds:
+
+1. **Existence exists** — undeniable; denial uses existence.
+2. **Process exists** — undeniable; denial is a process.
+3. Existence + process → the minimal operation is self-recognition: **1=1** (RAW 117).
+4. Self-recognition requires a vocabulary of exactly three outcomes: **Same, Different,
+   Unknown** (RAW 113). A binary system cannot represent the unresolved frontier.
+   More than three states introduces redundancy not derivable from the root observations.
+5. Results cannot be deleted (deletion would require something to un-exist, contradicting
+   observation 1). Therefore the substrate is **append-only**.
+6. Self-recognition + trit + append-only = **an ever-growing graph** where nodes are
+   entities, edges are permanent records of interactions, and growth proceeds by addition
+   only, never by removal.
+
 From this substrate and one operation, the theory claims that all observable physics
 emerges. The operation is:
 
@@ -51,7 +73,7 @@ deposit on a connector -> hop -> connector extends
 
 The claim is strong and specific. It is falsifiable: if any physical phenomenon requires
 a mechanism that cannot be reduced to this operation, the claim is wrong. The sections
-that follow derive the operation from its components and trace its claimed consequences.
+that follow develop the operation from its components and trace its claimed consequences.
 
 ---
 
