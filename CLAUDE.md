@@ -134,10 +134,15 @@ Updates applied → new positions, collisions detected, entities created/destroy
 - Mathematical and conceptual foundation
 - Key docs: 28 (Temporal Surfing), 29 (Imbalance), 30 (Collision Persistence)
 
-**experiments/** (Python dimensional simulations)
-- v6-gpu: 3,960 dimensional sweeps (1D-5D)
-- v7: Focused saturation and analysis
-- v7-final: Goldilocks zone and LHB validation
+**experiments/** (Python simulations)
+- Dimensional sweeps (v6-gpu, v7, v7-final): Goldilocks zone and LHB validation
+- **118_consumption_gravity/** — stream filtering and temporal decomposition arc:
+  - v1-v3: Gravitational binding from consumption-transformation
+  - v4-v6: Producer-consumer filtering, recursive hierarchy, token routing
+  - v7: N-gram stream filtering — discovers sequential structure in text/DNA/random
+  - v8: Causal window (learning_window = birth_tick) — inverted hierarchy
+  - v9: Video frame decomposition — root learns "no change", children handle motion
+  - v10: Store and reconstruct — trie as reversible memory (26.3 dB PSNR, 100% recovery)
 
 ## Important Implementation Details
 
