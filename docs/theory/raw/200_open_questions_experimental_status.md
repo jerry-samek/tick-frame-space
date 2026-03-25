@@ -1,9 +1,11 @@
-# RAW 200: Open Questions and Experimental Status
+# RAW 200: Open Questions and Experimental Status (SUPERSEDED)
 
 **Date**: February 20, 2026
-**Status**: Working document — consolidates honest open questions from gamma field theory
+**Status**: SUPERSEDED — moved to [RAW 400](400_open_questions_experimental_status.md) (March 25, 2026)
 **Originally**: RAW 120 (renumbered to 200 to free 120 for Sparse Unknown Routing)
 **Replaces**: Former RAW 120-125, 130, 140, 150, 160, 200, 300 (removed for overreach)
+
+> **This document is kept for historical reference.** The questions below addressed the gamma field / cubic lattice model (Exp 64_109 v1–v10), which has since been superseded by the V3 graph-first framework. See [RAW 400](400_open_questions_experimental_status.md) for the current open questions.
 
 ---
 

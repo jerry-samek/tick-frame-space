@@ -45,6 +45,9 @@ Dense deposit regions suppress connector growth, making dense bodies resist expa
 **Single mechanism.**
 The one operation: deposit on connector, hop, connector extends. All physics derives from this. Gravity, inertia, momentum, expansion, and zero-point energy are consequences of this operation iterated by every entity at every tick since the first deposit broke the symmetry of 1=1. The number of free parameters required is zero. (RAW 112 S2.1)
 
+**Trit.**
+The fundamental unit of the framework. A three-valued comparison outcome: Same, Different, or Unknown. When an entity arrives at a node, the comparison of its arriving pattern against existing deposits produces exactly one of these three results -- they are the exhaustive logical partition of all possible comparison outcomes. No fourth state is constructible: the node either has no deposits (Unknown), has deposits that match (Same), or has deposits that diverge (Different). A trit has three independent change components, requiring exactly three spatial axes for lossless representation -- this is why space is three-dimensional. (RAW 108, RAW 113 S1). *See also RAW 126-127 for the extended capacitor model of the trit (V4 candidate).*
+
 **Trie.**
 The tree structure the substrate naturally produces. Shared history shares branches (runs of `same`); divergence points mark information boundaries (`different` fired); the frontier is unwritten configuration space (`unknown`). The universe is maximally compressed by construction because the three-state comparison only writes when it must. (RAW 113 S3)
 
@@ -126,6 +129,18 @@ These terms are superseded in V3. Listed for reference when reading older docume
 
 ---
 
-*Date: March 19, 2026*
+## V4 Candidate Material
+
+The following RAW documents propose extensions beyond the V3 framework. They are internally consistent but introduce concepts (capacitor model, reading direction, fixed points) that conflict with V3's simultaneous-classification model of the three states and branch-depth definition of time. They are candidates for a future V4 consolidation:
+
+- **RAW 125** — Reading direction (leaf-to-root vs root-to-leaf), universal fixed points, planetary uniqueness, biological incompatibility
+- **RAW 126** — The trit as capacitor: three states as sequential hardware phases (Empty→Charging→Discharge), quanta as emergent from threshold discharge, time as cycle count
+- **RAW 127** — Trit has depth: continuous charging phase (superposition), bimodal observation distribution, gravitational dependence of measurement statistics
+
+Key tensions with V3: (1) sequential phases vs simultaneous classification of three states; (2) cycle count vs branch depth as time; (3) nodes as capacitors vs discrete graph sites. See RAW 400 for the full inconsistency analysis.
+
+---
+
+*Date: March 25, 2026*
 *Status: V3 working glossary*
-*Depends on: RAW 037, RAW 076, RAW 110, RAW 111, RAW 112, RAW 113, Exp #50, Exp 64_109 v21-v24*
+*Depends on: RAW 037, RAW 076, RAW 108, RAW 110, RAW 111, RAW 112, RAW 113, Exp #50, Exp 64_109 v21-v24*

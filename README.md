@@ -105,7 +105,9 @@ The theory has gone through three versions. **V3 is current** — a graph-first 
 
 ### Raw Theory Documents
 
-120+ documents in `docs/theory/raw/`. The current frontier documents:
+120+ documents in `docs/theory/raw/`. **Documents numbered 500+ (the 5xx series) are explicitly labeled as highly speculative** — logical consequences of the framework that are either unfalsifiable or far beyond current experimental capability. The main RAW sequence (001–499) contains theory, results, and testable predictions. If a 500-series idea becomes testable, it graduates to the main sequence.
+
+The current frontier documents:
 
 | Document | Title |
 |----------|-------|

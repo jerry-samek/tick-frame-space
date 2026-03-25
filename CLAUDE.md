@@ -133,6 +133,7 @@ Updates applied → new positions, collisions detected, entities created/destroy
 **docs/theory/** (40+ theoretical documents)
 - Mathematical and conceptual foundation
 - Key docs: 28 (Temporal Surfing), 29 (Imbalance), 30 (Collision Persistence)
+- **RAW 500+ series is highly speculative** — unfalsifiable or untestable consequences of the framework, separate from the main RAW sequence (001–499)
 
 **experiments/** (Python simulations)
 - Dimensional sweeps (v6-gpu, v7, v7-final): Goldilocks zone and LHB validation
