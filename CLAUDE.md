@@ -137,8 +137,10 @@ Updates applied → new positions, collisions detected, entities created/destroy
 
 **experiments/** (Python simulations)
 - Dimensional sweeps (v6-gpu, v7, v7-final): Goldilocks zone and LHB validation
-- **118_consumption_gravity/** — stream filtering and temporal decomposition arc:
-  - v1-v3: Gravitational binding from consumption-transformation
+- **118_consumption_gravity/** — gravitational binding and orbital mechanics:
+  - v1-v3: Radial binding from consumption-transformation (H=0, equilibrium at r~14-16)
+  - v4: Orbital mechanism (planned — tangential velocity, closed orbits, Kepler laws)
+- **trie_stream_filtering/** — stream filtering and temporal decomposition (separated from 118):
   - v4-v6: Producer-consumer filtering, recursive hierarchy, token routing
   - v7: N-gram stream filtering — discovers sequential structure in text/DNA/random
   - v8: Causal window (learning_window = birth_tick) — inverted hierarchy
