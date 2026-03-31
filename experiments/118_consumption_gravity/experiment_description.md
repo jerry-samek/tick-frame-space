@@ -310,94 +310,32 @@ properties needed:
 
 ---
 
-## Experiment Arc: Stream Filtering (v4–v10)
+## Version History
 
-Starting from v4, the experiment shifted focus from gravitational binding to the
-more fundamental question: **does consumption-transformation on a data stream
-self-organize into a hierarchical structure?** This arc produced the most
-significant results.
+| Version | Name | Result | Status |
+|---------|------|--------|--------|
+| v1 | Equilibrium distance | Radial oscillation around r~14-16, H=0 | Done |
+| v2 | Momentum model | Multi-node planet, Different-fraction extension | Done |
+| v3 | Planet from core | Entity spirals outward from star center | Done |
+| v4 | Orbital mechanism | *Next* | Planned |
 
-### Version History
+**Note:** Former v4-v10 (stream filtering, trie memory, video decomposition) were
+separated to `experiments/trie_stream_filtering/` on March 31, 2026. Those experiments
+validate RAW 123 (The Stream and the Trie), not RAW 118 (Gravity). See that directory
+for the complete stream filtering arc and results.
 
-| Version | Name | Key Idea | Key Result |
-|---------|------|----------|------------|
-| v1 | Equilibrium distance | Star-planet routing via connector density | Baseline gravitational binding test |
-| v2 | Momentum model | Multi-node planet, Different-fraction extension | Extended v1 with momentum |
-| v3 | Planet from core | Entity spirals outward from star center | Formation dynamics |
-| v4 | Producer-consumer | Seed accepts known types, rejects unknown | First consume/reject filtering |
-| v5 | Recursive filtering | Same algorithm at all levels, hierarchy emerges | Recursive self-similarity |
-| v6 | Token-addressed routing | K-element tokens, decision trie | Designed tokens → designed depth (trie by construction) |
-| **v7** | **N-gram stream filtering** | **Raw bytes, learned spectra, N=1,2,4,8** | **Mechanism discovers sequential structure: consumed depth ↑ with N for English, collapses for random** |
-| **v8** | **Causal window** | **learning_window = max(1, birth_tick)** | **Inverted hierarchy: deeper entities learn better. Spectrum coverage improves with depth** |
-| **v9** | **Video decomposition** | **Frame diffs as byte stream** | **Root learns "no change" (byte 128). Hierarchy separates static/motion/noise without being told** |
-| **v10** | **Store and reconstruct** | **Consumption logging + agent traversal** | **100% lossless pixel recovery at 26.3 dB PSNR. Trie is a functional reversible memory** |
+## Known Issues from v1-v3
 
-### Key Findings Across the Arc
+1. **Star core connector runaway.** Intra-star connectors grow to 1e28+ lengths because
+   intra-star traffic (partially Same-group) triggers full compound extension. Fix:
+   extension should scale with the fraction of deposit that is actually Different.
+   Internal star-to-star connectors carry group-Same deposits and should extend less.
 
-**1. The mechanism discovers sequential structure (v7)**
+2. **No tangential motion.** v1-v3 demonstrated radial binding only. No angular
+   momentum, no orbital test attempted.
 
-Fed raw byte streams from English text, DNA, and random data. Compared
-n-gram sizes N=1 (single bytes) through N=8 (8-character sequences).
-
-Result: consumed depth increases with N for structured data (English 4→4→6→20,
-DNA 2→4→5→20) but collapses for random data at N≥4 (consumed depth → 0).
-The mechanism distinguishes structure from noise without being told what
-structure looks like.
-
-**2. The causal window inverts the hierarchy (v8)**
-
-Replaced the fixed learning window with `learning_window = max(1, birth_tick)` —
-entities cannot learn from more history than the universe has provided. Root at
-tick 0 gets window=1 (learns one token — "hydrogen"). Later entities get larger
-windows and develop more refined spectra.
-
-Result: root consumption drops from 40-55% (v7) to 0-10% (v8). The deepest
-entities become the best consumers. Spectrum coverage improves monotonically
-with depth (e.g., English N=4: 11% → 16% → 27% → 34% → 44% → 47%). This is
-the "heavy elements form later" pattern.
-
-**3. Video temporal structure discovery (v9)**
-
-Fed video frame differences (64×64 grayscale) through the same mechanism.
-Root learned byte `(128,)` = "no change" — the single most common pixel-level
-event in video. Children handle motion. Real video: 58.7% of pixels are static
-(|delta| < 5), correctly consumed by root.
-
-**4. The trie is a reversible memory (v10)**
-
-Logged every consumed token with its tick position. An agent traverses the trie
-from root to leaves, reads consumption logs, and reconstructs the video pixel by
-pixel.
-
-First run: 11.9 dB PSNR — 82,554 pixels lost during entity learning phases
-(the `observe()` Counter discarded tick positions). Root cause: the causal
-window's long learning phases (d5 alone lost 59,756 pixels, 72% of all loss).
-
-Fix: added `learning_log` alongside `consumption_log` so entities track
-`(tick, token)` during learning. Result: **100% pixel recovery, 26.3 dB PSNR,
-zero error at every depth level.** The remaining PSNR gap from infinity is
-solely from uint8 clipping in the delta-chain, not from information loss.
-
-**5. Progressive retrieval is the killer feature (v10)**
-
-The trie offers something flat storage and H.264 cannot: stop reading at any
-depth for a partial reconstruction.
-
-```
-Root only:     22% of pixels recovered
-+ depth 1:     45%
-+ depth 2:     71%
-+ depth 3:     84%
-+ depth 4:     93%
-+ depth 5+6:  100%
-```
-
-**6. The trie does not compress (v10)**
-
-Mode A bytestream storage expands 4.6× vs raw data because each pixel needs
-explicit position (tick) stored alongside its value. Raw sequential bytes encode
-position implicitly. The trie trades compactness for hierarchical queryability —
-it's an indexed representation, not a compressed one.
+3. **No Kepler verification.** No quantitative comparison with known orbital mechanics
+   (1/r^2 force law, period-radius relationship, angular momentum conservation).
 
 ---
 
@@ -407,12 +345,10 @@ it's an indexed representation, not a compressed one.
 - RAW 112 — The Single Mechanism
 - RAW 113 — The Semantic Isomorphism: Same / Different / Unknown
 - RAW 111 — Space Is Connections
-- RAW 123 — The Stream and the Trie (continuous sampling, Nyquist connection)
 - Experiment 64_109 CLOSURE — Results and lessons learned (see 64_109 closure docs)
 
 ---
 
-*Date: March 21, 2026 (initial), March 22, 2026 (v4–v10 stream filtering arc)*
+*Date: March 21, 2026 (initial), March 31, 2026 (stream filtering arc separated)*
 *Author: Tom (theory), Claude (experiment design and implementation)*
-*Status: v1–v3 (gravitational binding) ready for implementation;
-v4–v10 (stream filtering) completed with results*
+*Status: v1-v3 (radial binding) complete; v4 (orbital mechanism) planned*
