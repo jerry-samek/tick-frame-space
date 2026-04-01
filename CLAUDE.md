@@ -139,7 +139,12 @@ Updates applied → new positions, collisions detected, entities created/destroy
 - Dimensional sweeps (v6-gpu, v7, v7-final): Goldilocks zone and LHB validation
 - **118_consumption_gravity/** — gravitational binding and orbital mechanics:
   - v1-v3: Radial binding from consumption-transformation (H=0, equilibrium at r~14-16)
-  - v4: Orbital mechanism (planned — tangential velocity, closed orbits, Kepler laws)
+  - v4: Connector-as-deposit-count — extension bug SOLVED, star alive but weak binding (3.8x expansion)
+  - v5: Fixed-graph deposit propagation — perfect conservation, but no gradient (ontological wrong turn — empty substrate)
+  - v6: Accumulated-density routing — density flat at 97% everywhere (saturation problem)
+  - v7: Traversal-time model — **FIRST ORBIT** (time well binds star, planet orbits in 3D with seeded tangential kick)
+  - v8: Store/move partition — **FIRST EMERGENT ORBIT** (planet orbits without kick, 1869 deg, but partition barely engages)
+  - v9: Three-way partition store/move/radiate — orbit without kick (2254 deg), but partition barely engaged (timing issue)
 - **trie_stream_filtering/** — stream filtering and temporal decomposition (separated from 118):
   - v4-v6: Producer-consumer filtering, recursive hierarchy, token routing
   - v7: N-gram stream filtering — discovers sequential structure in text/DNA/random

@@ -317,25 +317,198 @@ properties needed:
 | v1 | Equilibrium distance | Radial oscillation around r~14-16, H=0 | Done |
 | v2 | Momentum model | Multi-node planet, Different-fraction extension | Done |
 | v3 | Planet from core | Entity spirals outward from star center | Done |
-| v4 | Orbital mechanism | *Next* | Planned |
+| v4 | Connector-as-deposit-count | Extension bug SOLVED, star alive but weak binding (3.8x expansion) | Done |
+| v5 | Fixed-graph deposit propagation | Conservation perfect, propagation works, but no gradient → no binding | Done |
+| v6 | Accumulated-density routing | Density flat at 97% everywhere — signal saturated, no gradient | Done |
+| v7 | Traversal-time model | **FIRST ORBIT.** Time well binds star (20:1 int/bnd ratio). Planet orbits in 3D. | Done |
+| v8 | Store/move energy partition | Emergent orbit WITHOUT kick (1869 deg). Partition mechanism barely engaged (absorbed=0). | Done |
+| v9 | Three-way partition (store/move/radiate) | Orbit without kick (2254 deg). Partition 99% move, 0% store, 0.7% radiate — timing issue. | Done |
+| v10 | *TBD* | *Fix partition timing — idle window too narrow for absorption* | Planned |
 
 **Note:** Former v4-v10 (stream filtering, trie memory, video decomposition) were
 separated to `experiments/trie_stream_filtering/` on March 31, 2026. Those experiments
 validate RAW 123 (The Stream and the Trie), not RAW 118 (Gravity). See that directory
 for the complete stream filtering arc and results.
 
-## Known Issues from v1-v3
+## Results Summary
 
-1. **Star core connector runaway.** Intra-star connectors grow to 1e28+ lengths because
-   intra-star traffic (partially Same-group) triggers full compound extension. Fix:
-   extension should scale with the fraction of deposit that is actually Different.
-   Internal star-to-star connectors carry group-Same deposits and should extend less.
+### v1-v3: Radial binding (March 21, 2026)
+- Demonstrated equilibrium oscillation using compound connector extension
+- Star core connector runaway to 1e28+ (the extension bug)
+- No tangential motion, no Kepler verification
 
-2. **No tangential motion.** v1-v3 demonstrated radial binding only. No angular
-   momentum, no orbital test attempted.
+### v4: Connector-as-deposit-count model (March 31, 2026)
+- **SOLVED the extension bug**: connector length = initial + deposit count. Linear
+  growth (max ~97 at 50k ticks), not exponential.
+- **Star has real dynamics**: weighted random walk routing produces actual node movement.
+- **Star binding WEAK**: mean radius 3.84 → 14.5 (3.8x expansion). Routing signal
+  (1 + recent_other_group) too weak vs base exploration weight (1).
+- Three routing iterations: deterministic (frozen), exclude-own-group (frozen),
+  weighted random walk (alive but dispersed).
+- Key insight: deterministic routing on graphs converges to stable cycles.
+  Stochastic routing needed for dynamics.
 
-3. **No Kepler verification.** No quantitative comparison with known orbital mechanics
-   (1/r^2 force law, period-radius relationship, angular momentum conservation).
+### v5: Fixed-graph deposit propagation (April 1, 2026)
+- **Corrected physics**: connectors are fixed-length roads, deposits TRAVEL at 1 hop/tick.
+  Eliminates "light sail" problem from v4 where every deposit extended space.
+- **Propagation engine**: double-buffered numpy arrays, vectorized at 42-76 t/s.
+  Perfect conservation across all runs.
+- **Three absorption iterations:**
+  1. No absorption (all transparent): 4M deposits uniform, no gradient, 3.8x expansion
+  2. Full absorption (entity nodes opaque): deposits stuck at 80, total sink, nothing escapes
+  3. Partial absorption (other-group only): 3.2M deposits, ~16 absorbed/tick, but
+     uniform distribution — absorption too small vs total field
+- **The chicken-and-egg problem identified**: no gradient → no binding → star
+  expands → weaker sink → less gradient. The 80 entity nodes (1.6% of graph)
+  cannot maintain a deposit density gradient against diffusion once dispersed.
+
+### v6: Accumulated-density routing (April 1, 2026)
+- **Returned to v4 ontology** (connector = deposits, length = deposit count).
+  v5's fixed-graph propagation was an ontological wrong turn — it postulated
+  an empty substrate that doesn't exist in the theory.
+- **Accumulated matching_density routing** (matching/length) instead of v4's
+  recent-only signal. Expected 40:1 ratios from heavy vs light connectors.
+- **Result: density FLAT at 97% everywhere.** With 4M star deposits across 55k
+  connectors, the deposit fraction is ~0.97 on every connector. Less than 0.3%
+  variation across the graph. Routing ratio collapsed from 127 (early) to 1.0
+  (saturated). Star expanded to r=14.4, same as v4/v5.
+- **The saturation problem:** accumulated deposits grow without bound while
+  differences stay small. After 50k ticks of 80 random-walking nodes, star
+  deposits are everywhere. The signal saturates the graph.
+- **Conservation: PERFECT** (4M = 80×50k). Max connector length 96. No runaway.
+- **Key insight:** in a finite graph, any process that deposits uniformly
+  eventually saturates and destroys gradients. v1's compound extension
+  (EXTEND_RATE) worked because it made heavily-used connectors exponentially
+  longer, creating genuine density differences. Without differential growth,
+  density is flat.
+
+### v7: Traversal-time model — FIRST ORBIT (April 1, 2026)
+
+**The breakthrough.** Two key innovations:
+
+1. **Traversal time proportional to connector length.** A node traversing a
+   connector of length L takes L ticks. This creates gravitational time dilation:
+   nodes deep in the star (long connectors) are trapped for thousands of ticks.
+   Boundary nodes (short connectors) move freely. The star self-binds via a
+   TIME WELL, not a field gradient.
+
+2. **Deposit-on-arrival (RAW 126).** The node READS during transit (capacitor
+   charging) and WRITES one deposit on arrival (capacitor discharge). One deposit
+   per traversal, not one per tick. This keeps nodes making routing decisions
+   regularly (~every 100-200 ticks) while preserving time dilation.
+
+**Phase 1 results (star equilibrium, 100k ticks):**
+
+| Metric | v4-v6 (best) | v7 deposit-per-tick | v7 deposit-on-arrival |
+|--------|-------------|---------------------|----------------------|
+| COM drift | 3.3-4.6 | **0.77** | 4.24 |
+| Mean radius | 14-16 | **8.5** (2.2x) | 12.0 (3.1x) |
+| Int/bnd ratio | ~1 | **20:1** | 2.2:1 |
+| Max connector | 97-597k | 597k | **498** |
+| Total hops | 3.5k-292k | 3,496 | **292,396** |
+| Performance | 42-264 t/s | **50,000 t/s** | 8,478 t/s |
+
+Deposit-on-arrival chosen for Phase 2: weaker binding but nodes active enough
+to test orbital mechanics.
+
+**Phase 2 results (planet introduction, 200k ticks):**
+
+- **Phase 2a (no kick):** Planet attracted to star, radial oscillation between
+  r=1.25 and r=10.84. BOUND but purely radial (36 deg tangential). First
+  attraction + binding in entire experiment 118 line.
+
+- **Phase 2b (tangential kick):** **FIRST ORBIT.** 3.9 net revolutions, 24.5
+  radial oscillations, 6202 total degrees of angular motion over 200k ticks.
+  Period ~8k ticks. Planet orbits star in 3D. 3D trajectory confirms sustained
+  looping motion around star.
+
+- **Phase 2c (different placement, tangential kick):** Orbit robust. 2.1 net
+  revolutions, 28 oscillations, 7392 total degrees. Net rotation reversed
+  direction (topology-dependent). Binding confirmed.
+
+**Planet placement issue:** All Phase 2 tests had planet inside star body
+(r=4-6, star r=12). The 5 planet nodes scatter around the star when picked
+by distance threshold. Fix needed: cluster placement (find one node outside
+star, take its nearest neighbors).
+
+**Key findings:**
+1. Traversal time creates time dilation — the binding mechanism is a time well
+2. The orbit is sustained — tangential motion doesn't decay over 200k ticks
+3. Orbit direction is topology-dependent (different start → different rotation)
+4. Tangential motion requires seeding — the mechanism preserves angular momentum
+   but doesn't generate it spontaneously (corrected in v8: emergent orbit without kick)
+5. Self-limiting compound growth: connector length ~ t (linear in real time)
+   despite doubling per traversal, because traversal time also doubles
+
+### v8: Store/Move energy partition (April 1, 2026)
+
+Implemented the store/move partition from RAW 128: discharged quanta check the
+receiving node's capacitor availability. Idle → absorbed (stored). Busy → continues
+propagating forward (momentum wake). In-flight quanta propagate at c=1 hop/tick
+using forward-continuation, depositing on connectors they traverse.
+
+**Phase 2 results (200k ticks, NO seeded tangential kick):**
+
+- **Attraction: PASS.** Initial distance 19.57 (properly outside star at r=17.5),
+  minimum 2.25. Planet fell inward.
+- **Bound: PASS.** Final distance 5.42. Planet oscillating, not escaping.
+- **Tangential motion WITHOUT kick: PASS.** 1869 total degrees, net -193 degrees.
+  The planet orbits without any seeded tangential velocity. First emergent orbit.
+- **9.5 radial oscillations** over 200k ticks.
+- **Planet cluster placement FIXED.** Find one node beyond star_r + 3, take nearest
+  neighbors. Planet starts as a coherent cluster outside the star body.
+
+**But the partition mechanism barely engaged:**
+- Total absorbed: 0. No quanta absorbed by idle capacitors.
+- In-flight quanta at steady state: ~4. Almost none.
+- Store fraction: 0.000. All discharges either stored directly on the arrival
+  connector (deposit-on-arrival from v7) or expired.
+- The tangential motion comes from graph topology asymmetry (same as v7's
+  unsolicited component), not from the forward-momentum wake predicted by RAW 128.
+
+**Diagnosis:** The deposit-on-arrival mechanic (from v7) deposits directly on the
+connector at arrival, bypassing the store/move check at the destination node. The
+partition mechanism only sees the DischargeEvent destination, but by then the deposit
+is already placed. The forward-propagation quanta are too few and short-lived (max
+age 50) to create a significant momentum wake.
+
+**RAW 128 updated to v2:** Added third outcome — radiation (quanta that go sideways,
+not forward). The three-way partition (store/move/radiate) provides the energy outlet
+needed for orbital stability. Without radiation, orbits spiral outward from energy
+accumulation. With radiation, the energy budget self-corrects.
+
+## Known Issues
+
+1. ~~**Star core connector runaway.**~~ SOLVED in v4.
+
+2. ~~**No gravitational binding.**~~ SOLVED in v7 (time well from traversal time).
+
+3. ~~**Tangential motion requires seeding.**~~ PARTIALLY SOLVED in v8: planet orbits
+   without kick (1869 deg), but mechanism is graph-topology asymmetry, not the
+   RAW 128 momentum wake.
+
+4. **The store/move partition barely engages (v8).** Deposit-on-arrival bypasses
+   the capacitor availability check. The forward-momentum wake is too weak (~4
+   in-flight quanta). v9 should restructure the discharge to fully route through
+   the store/move/radiate partition.
+
+5. **No energy outlet (v7-v8).** Orbits have no radiation mechanism. Energy only
+   accumulates (mass + momentum). Need the three-way partition from RAW 128 v2
+   for orbital stability.
+
+6. **No Kepler verification.** Not yet attempted. Requires stable exterior orbit.
+
+7. ~~**Planet placement.**~~ SOLVED in v8: cluster placement (seed node + nearest
+   neighbors).
+
+8. **The partition timing problem (v8-v9).** The store/move/radiate partition barely
+   engages because entity nodes are idle for only 1 tick out of ~100-200. In-flight
+   quanta (~4 at any time) almost never coincide with an idle capacitor. Result:
+   stored=0, radiate=0.7%, everything is "move." The orbit works (from graph-topology
+   routing) but the RAW 128 momentum-wake mechanism is not the driver. Fix requires
+   either: (a) many more in-flight quanta (faster emission rate), (b) entity nodes
+   idle longer (slower routing), or (c) fundamentally different timing model where
+   absorption happens during transit, not only at idle ticks.
 
 ---
 
@@ -345,10 +518,13 @@ for the complete stream filtering arc and results.
 - RAW 112 — The Single Mechanism
 - RAW 113 — The Semantic Isomorphism: Same / Different / Unknown
 - RAW 111 — Space Is Connections
+- RAW 126 — The Trit Is a Capacitor
+- RAW 127 — The Trit Has Depth
+- RAW 128 — The Energy Partition: Store, Move, or Radiate
 - Experiment 64_109 CLOSURE — Results and lessons learned (see 64_109 closure docs)
 
 ---
 
-*Date: March 21, 2026 (initial), March 31, 2026 (stream filtering arc separated)*
+*Date: March 21, 2026 (initial), April 1, 2026 (v4-v5 results)*
 *Author: Tom (theory), Claude (experiment design and implementation)*
-*Status: v1-v3 (radial binding) complete; v4 (orbital mechanism) planned*
+*Status: v1-v5 complete; v6 (gradient formation) planned*
