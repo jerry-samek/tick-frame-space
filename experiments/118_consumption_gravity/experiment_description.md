@@ -322,8 +322,15 @@ properties needed:
 | v6 | Accumulated-density routing | Density flat at 97% everywhere — signal saturated, no gradient | Done |
 | v7 | Traversal-time model | **FIRST ORBIT.** Time well binds star (20:1 int/bnd ratio). Planet orbits in 3D. | Done |
 | v8 | Store/move energy partition | Emergent orbit WITHOUT kick (1869 deg). Partition mechanism barely engaged (absorbed=0). | Done |
-| v9 | Three-way partition (store/move/radiate) | Orbit without kick (2254 deg). Partition 99% move, 0% store, 0.7% radiate — timing issue. | Done |
-| v10 | *TBD* | *Fix partition timing — idle window too narrow for absorption* | Planned |
+| v9 | Three-way partition + diagnostic | "Orbit" is a bound random walk, not real orbit. Partition doesn't engage. | Done |
+| v10 | Reactive entities (fire on trigger) | Deadlock. Aristotle's physics: everything waits for a push, nobody pushes first. | Done |
+| v11 | Newtonian (forward default + deflection) | No deadlock. 1252 net deg, 8k total. Deflection ~1.0 (too weak). | Done |
+| v12 | Same reinforces, Different extends | Internal connectors stay at 2.9 (no growth!). Star STILL r=14.5 — pure diffusion. | Done |
+| v13 | Density + Same rule + length momentum | g/f=63:1 but inverted gradient. Star r=14.4. Gravity pulls toward cloud, not center. | Done |
+| v14 | Larger graph (50k nodes, R=80) | Star fills 73% of ANY graph (scale-invariant). Coherence 0.27 (best yet). | Done |
+| v15 | Propagating deposits build connectors | 3B deposits, saturated. Reactive charging works but flux uniform. | Done |
+| v16 | Same consumes Different | Connectors CAN shrink. Consumed(19k) > Different(8k). 37 oscillations. | Done |
+| v17 | Inter-group rotation + consumption | Rotation didn't help (groups spatially mixed in diffuse cloud). | Done |
 
 **Note:** Former v4-v10 (stream filtering, trie memory, video decomposition) were
 separated to `experiments/trie_stream_filtering/` on March 31, 2026. Those experiments
@@ -477,54 +484,255 @@ not forward). The three-way partition (store/move/radiate) provides the energy o
 needed for orbital stability. Without radiation, orbits spiral outward from energy
 accumulation. With radiation, the energy budget self-corrects.
 
-## Known Issues
+### v9: Three-way partition + diagnostic (April 1-2, 2026)
+
+Replaced deposit-on-arrival with full three-way partition: all deposits flow
+through store/move/radiate classification. Partition still barely engaged
+(store=0, move=99.3%, radiate=0.7%).
+
+**The v9 diagnostic (April 2) was the most important analysis.** Four tests
+to determine the tangential motion mechanism:
+
+| Test | Total deg | Finding |
+|------|-----------|---------|
+| v9 reference | 2,254 | The "orbit" to explain |
+| D3 random walk (20 trials) | 1,770,372 | 784x more — hop count difference |
+| D4 frozen star | 2,135 | Same as v9 — star dynamics not needed |
+| D5 no planet deposit | 5,667 | MORE — planet trail slows things down |
+
+**Verdict: the "orbit" is a bound random walk.** Per-hop angular displacement
+is the same for random walk as for routed motion. The deposits and routing
+are irrelevant for tangential motion. The traversal-time model (v7) confines
+the planet (can't escape), and the random walk within the well produces
+apparent rotation. Coherence = 0.20 (target >0.3).
+
+### v10: Reactive entities — Aristotle's deadlock (April 2, 2026)
+
+Entities fire ONLY when triggered by incoming deposits (RAW 126 strict
+interpretation). Result: **total deadlock.** Every node waits for a push.
+Nobody pushes first. Universe frozen. 0 hops across 200k ticks.
+
+Aristotle's physics implemented literally: motion requires a mover. But
+there is no first mover. The universe is dead. Aristotle was wrong.
+
+### v11: Newtonian entities (April 2, 2026)
+
+Newton's first law on the graph: forward continuation as default. Deposits
+during charging phase (50 ticks) accumulate a deflection vector (gravity).
+No deadlock — entities always have a direction.
+
+**Results:** 24,762 hops, 7,966 total degrees, 1,252 net degrees, 32
+oscillations. Most dynamic planet behavior yet. But deflection magnitude
+is flat at ~1.0 regardless of distance (only ~1 deposit per 50-tick
+charging phase). Forward default produces inertia but gravity is too weak
+to coherently bend the path. Coherence = 0.20.
+
+### v12: Same reinforces, Different extends (April 2, 2026)
+
+RAW 113 extension rule: Same deposits don't grow connectors (reinforcement).
+Different deposits grow connectors (new structure). Star-internal connectors
+stay at initial length 2.9 — no inflation.
+
+**Critical finding: star expansion is pure diffusion, not connector growth.**
+With zero connector growth (Same rule active, internal length stable at 2.9),
+the star STILL expands to r=14.5. The expansion that plagued v4-v11 was
+NEVER caused by connector inflation. It's 80 nodes random-walking on a
+finite graph, diffusing to fill ~70% of the volume.
+
+The Same/Different rule works correctly but targets the wrong cause.
+
+### v13: Accumulated density + Same rule + length momentum (April 2, 2026)
+
+Three failed mechanisms combined: v6's density routing (now viable because
+Same rule prevents denominator growth) + v12's Same/Different rule + new
+length-proportional momentum (forward = L × arrival_dir).
+
+**Results:** Gravity/forward ratio 63:1 — gravity massively dominates. But
+the density gradient is INVERTED (d0-1=7.2, d4-5=12.1). Deposits are densest
+where the nodes ARE (r=10-15 shell), not at the center. The gravity pulls
+nodes toward the existing cloud, not toward the origin. Star r=14.4.
+
+Planet: 10,124 total degrees, 753 net, 28.5 oscillations. Bound but
+coherence 0.19 (random walk). The most angular motion of any version.
+
+### v14: Larger graph, 50k nodes, R=80 (April 2, 2026)
+
+Accepted star thermal equilibrium. Scaled graph to 50k nodes (R=80) so
+star at r~14 would be only 18% of the universe. **Result: star expanded
+to r=59 (73% of R=80).** The thermal equilibrium is SCALE-INVARIANT.
+Star fills 73% of any graph regardless of size.
+
+Coherence 0.27 — the best of any version. The larger graph gives the
+planet more room for systematic angular motion. Hop rate flat at 0.019
+regardless of distance (CHARGING_TIME=50 dominates). No Keplerian velocity.
+
+Deep analysis revealed: deposit flux from star neighbors drops to ZERO at
+r=20 (limited by rc=6.3). Gravitational reach is purely local.
+
+### v15: Propagating deposits build connectors (April 2-3, 2026)
+
+The synthesis of v5 (propagation) + v4 (ontology). Quanta propagate at c=1
+hop/tick, depositing on every connector they traverse — BUILDING the
+connector as they go. The photon creates the road.
+
+**Result: 3 BILLION deposits saturated the graph.** Density flat (d0/d5=1.02).
+Reactive charging works (99.996% quantum-triggered) but flux is uniform —
+10,000 active quanta pass through every node every tick. No distance
+dependence. Same=2.97B, Different=0 (all star-dominated, all Same).
+
+### v16: Same consumes Different (April 3, 2026)
+
+The consumption rule: Same deposits CONSUME one Different deposit on the
+connector (reclassify Different->Same, reducing different_count). Connectors
+can now SHRINK from Same traffic and GROW from Different traffic.
+
+**Result: consumption IS working.** Consumed=19,148 > Different=8,318.
+Star's Same deposits consume planet's Different deposits faster than the
+planet creates them. Boundary connectors oscillate in length. 37 radial
+oscillations (the most ever). But star still r=14, coherence 0.157.
+
+### v17: Inter-group rotation + consumption (April 3, 2026)
+
+Inter-group routing for internal circulation: s0 routes toward {s1,s2,s3}.
+Intended to create a spinning star body instead of a diffusing cloud.
+
+**Result: rotation didn't help.** Star r=14.1 (no improvement). The 4 groups
+are spatially mixed in the diffuse cloud — no spatial separation means no
+organized circulation. Net angular dropped to -14 degrees (near zero).
+Rotation requires spatial group structure, which requires a compact star.
+
+## Experimental Summary (v4-v17, March 31 - April 3, 2026)
+
+### What's proven:
+1. **Gravitational binding works.** Planet attracted and bound in every version v7+.
+2. **Connector = deposits ontology is correct** (v4, confirmed through v17).
+3. **Same/Different rule correctly models internal vs external** (v12+).
+4. **Consumption (Same consumes Different) creates equilibrium distances** (v16-v17).
+5. **Newton's first law is necessary** (v10 deadlock, v11 fix).
+6. **Traversal time proportional to length creates time dilation** (v7).
+7. **Star thermal equilibrium is scale-invariant at 73% volume fraction** (v12, v14).
+
+### What doesn't work:
+1. **No coherent orbits.** Best angular coherence: 0.27 (v14). Target: 0.3. All
+   "orbits" are bound random walks (v9 diagnostic proved this definitively).
+2. **Star won't compact.** Every version v4-v17 produces star r~14 on 5k graph,
+   r~59 on 50k graph. Thermal diffusion is scale-invariant.
+3. **Deposit fields saturate.** Any mechanism depositing on a finite graph eventually
+   fills it uniformly (v6, v15). Gradients are temporary.
+4. **Velocity is distance-independent.** Fixed charging time (v11-v14) or uniform
+   flux (v15) makes hop rate constant. Keplerian v~1/sqrt(r) not achieved.
+
+### Key theoretical insights:
+1. **The graph doesn't move. What moves is statistics and visualization.**
+   Entity "position" is the statistical center of its deposit pattern.
+   "Movement" is the deposit pattern shifting through the connector network.
+2. **The universe can only grow** (append-only). Connectors extend from Different
+   deposits. The ONLY shrinkage is consumption (Same reclassifies Different).
+   This means orbital mechanics must be a balance of growth and consumption.
+3. **Aristotle was wrong** (v10). Motion doesn't need continuous energy input.
+   Newton's first law (forward continuation) is necessary on the graph.
+4. **The photon builds the road** (v15). Propagating deposits ARE the connector
+   structure. The gravitational field is the accumulated radiation trail.
+5. **If the star can transform everything, there is no planet.** The planet
+   exists because the star's spectrum is incomplete. The planet IS what the
+   star can't digest. (RAW 118 + trie_stream_filtering connection).
+
+## Open Questions for Theory
+
+1. **How does the tick-frame model represent the static gravitational field?**
+   The model has accumulated deposits (historical) and propagating quanta
+   (radiative). Neither is equivalent to a static field that reflects where
+   mass IS right now. The gravitational field should be a property of the
+   graph STRUCTURE (connector lengths, deposit density), not just the
+   deposit HISTORY.
+
+2. **Is the random geometric graph the right substrate?** The theory says
+   space IS connections, and connections grow from deposits. Maybe the graph
+   should GROW from entity activity, not be pre-built. Start with just the
+   star cluster, expand as entities explore the frontier (Unknown).
+
+3. **What IS movement in the model?** Entities hopping between fixed graph
+   nodes is a simplification. The theory suggests movement = deposit pattern
+   shifting through the graph. The graph doesn't move. Statistics move.
+   Visualization is a projection of deposit statistics, not of node positions.
+
+4. **Can the star compaction problem be solved, or is it thermodynamics?**
+   80 nodes diffuse to 73% volume fraction on any graph. Is this correct
+   physics (the star IS this diffuse) or a model limitation?
+
+## Known Issues (Resolved)
 
 1. ~~**Star core connector runaway.**~~ SOLVED in v4.
+2. ~~**Planet placement.**~~ SOLVED in v8.
+3. ~~**Connector inflation causes expansion.**~~ DISPROVED in v12.
+4. ~~**Aristotle's deadlock.**~~ SOLVED in v11 (Newton's first law).
 
-2. ~~**No gravitational binding.**~~ SOLVED in v7 (time well from traversal time).
+4. **Star fills 73% of any graph (v4-v14).** 80 nodes diffuse to fill ~73%
+   of the graph volume. v14 proved this is scale-invariant: on a 50k-node
+   graph (R=80), the star expanded to r=59 (73%). Same fraction as r=14
+   on R=20. Larger graphs don't help. The star's thermal equilibrium is a
+   fixed fraction of available volume, not a fixed absolute radius.
 
-3. ~~**Tangential motion requires seeding.**~~ PARTIALLY SOLVED in v8: planet orbits
-   without kick (1869 deg), but mechanism is graph-topology asymmetry, not the
-   RAW 128 momentum wake.
+5. **Tangential motion is random walk (v9 diagnostic).** No version has
+   produced coherent orbital motion (angular coherence > 0.3). The planet
+   random-walks within the gravitational well. Forward default (v11+)
+   increases angular displacement but doesn't make it coherent.
 
-4. **The store/move partition barely engages (v8).** Deposit-on-arrival bypasses
-   the capacitor availability check. The forward-momentum wake is too weak (~4
-   in-flight quanta). v9 should restructure the discharge to fully route through
-   the store/move/radiate partition.
-
-5. **No energy outlet (v7-v8).** Orbits have no radiation mechanism. Energy only
-   accumulates (mass + momentum). Need the three-way partition from RAW 128 v2
-   for orbital stability.
-
-6. **No Kepler verification.** Not yet attempted. Requires stable exterior orbit.
-
-7. ~~**Planet placement.**~~ SOLVED in v8: cluster placement (seed node + nearest
-   neighbors).
-
-8. **The partition timing problem (v8-v9).** The store/move/radiate partition barely
-   engages because entity nodes are idle for only 1 tick out of ~100-200. In-flight
-   quanta (~4 at any time) almost never coincide with an idle capacitor. Result:
-   stored=0, radiate=0.7%, everything is "move." The orbit works (from graph-topology
-   routing) but the RAW 128 momentum-wake mechanism is not the driver. Fix requires
-   either: (a) many more in-flight quanta (faster emission rate), (b) entity nodes
-   idle longer (slower routing), or (c) fundamentally different timing model where
-   absorption happens during transit, not only at idle ticks.
+6. **No Kepler verification.** Blocked by issues 4 and 5.
 
 ---
 
 ## References
 
-- RAW 118 — Gravity as Consumption and Transformation of Connectors
+- RAW 111 — Space Is Connections
 - RAW 112 — The Single Mechanism
 - RAW 113 — The Semantic Isomorphism: Same / Different / Unknown
-- RAW 111 — Space Is Connections
+- RAW 118 — Gravity as Consumption and Transformation of Connectors
 - RAW 126 — The Trit Is a Capacitor
 - RAW 127 — The Trit Has Depth
 - RAW 128 — The Energy Partition: Store, Move, or Radiate
-- Experiment 64_109 CLOSURE — Results and lessons learned (see 64_109 closure docs)
+- Experiment 64_109 CLOSURE — Results and lessons learned
 
 ---
 
-*Date: March 21, 2026 (initial), April 1, 2026 (v4-v5 results)*
+## Closure
+
+Experiment 118 is CLOSED. 17 versions, 4 days (March 31 - April 3, 2026).
+
+The experiment answered its core question — "does gravity emerge from
+consumption and transformation of deposits on connectors?" — with a
+qualified YES. Gravitational binding (attraction + confinement) emerges
+from every mechanism tested since v7. The planet is attracted to the star's
+deposit field, oscillates radially, and cannot escape.
+
+The experiment did NOT produce coherent Keplerian orbits. The v9 diagnostic
+proved that all apparent orbital motion is a bound random walk on the graph.
+Angular coherence peaked at 0.27 (v14), below the 0.3 threshold for
+systematic rotation.
+
+The deeper finding: **entity hopping on a graph is the wrong model of
+movement.** The graph is the substrate. It doesn't move. What changes is
+the deposit STATISTICS — which patterns dominate at each position. Movement
+in the tick-frame model should be the statistical center of a deposit pattern
+shifting through the connector network, not an entity teleporting between
+graph nodes.
+
+This insight motivates **Experiment 128** — testing the deposit-statistics
+model of motion, where entities ARE patterns and movement IS statistical shift.
+
+### What Experiment 118 contributed to the theory:
+- RAW 128 (Energy Partition: Store, Move, or Radiate)
+- The Same/Different extension rule (derived from RAW 113)
+- The consumption mechanism (Same reclassifies Different)
+- Aristotle's deadlock (v10) — proof that Newton I is necessary
+- Star thermal equilibrium at 73% volume fraction (scale-invariant)
+- The photon builds the road (propagating deposits create connectors)
+- If the star can transform everything, there is no planet
+
+### Superseded by: Experiment 128 (The Energy Partition)
+
+---
+
+*Date: March 21, 2026 (initial), April 3, 2026 (closure)*
 *Author: Tom (theory), Claude (experiment design and implementation)*
-*Status: v1-v5 complete; v6 (gradient formation) planned*
+*Status: CLOSED. Superseded by Experiment 128.*

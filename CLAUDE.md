@@ -133,6 +133,7 @@ Updates applied → new positions, collisions detected, entities created/destroy
 **docs/theory/** (40+ theoretical documents)
 - Mathematical and conceptual foundation
 - Key docs: 28 (Temporal Surfing), 29 (Imbalance), 30 (Collision Persistence)
+- Key recent docs: 128 (Energy Partition), 129 (Experimental Connections), 130 (It Rotates Because It Consumes)
 - **RAW 500+ series is highly speculative** — unfalsifiable or untestable consequences of the framework, separate from the main RAW sequence (001–499)
 
 **experiments/** (Python simulations)
@@ -144,7 +145,27 @@ Updates applied → new positions, collisions detected, entities created/destroy
   - v6: Accumulated-density routing — density flat at 97% everywhere (saturation problem)
   - v7: Traversal-time model — **FIRST ORBIT** (time well binds star, planet orbits in 3D with seeded tangential kick)
   - v8: Store/move partition — **FIRST EMERGENT ORBIT** (planet orbits without kick, 1869 deg, but partition barely engages)
-  - v9: Three-way partition store/move/radiate — orbit without kick (2254 deg), but partition barely engaged (timing issue)
+  - v9: Three-way partition + diagnostic — "orbit" proven to be bound random walk, not real orbit
+  - v10: Reactive entities — deadlock (Aristotle's physics: everything waits for a push)
+  - v11: Newtonian (forward default + deflection) — most hops (25k), weak deflection (~1.0)
+  - v12: Same/Different extension rule — internal connectors stable at 2.9, star STILL r=14 (proved: expansion is diffusion not inflation)
+  - v13: Density + Same rule + length momentum — g/f=63:1 but inverted gradient, star r=14.4
+  - v14: Larger graph (50k, R=80) — star fills 73% of ANY graph (scale-invariant). Coherence 0.27 (best yet).
+  - v15: Propagating deposits build connectors — 3B deposits saturated graph. Reactive charging works but flux uniform.
+  - v16: Same consumes Different — connectors CAN shrink. Consumed>Different. 37 oscillations.
+  - v17: Inter-group rotation — didn't help (groups spatially mixed). 17 versions. CLOSED.
+- **128_energy_partition/** — entities as deposit patterns, movement as statistical shift:
+  - Phase 0: 1D chain — consumption equilibrium works
+  - Phase 1: Graph — boundary forms from geometric dilution, mass=node count
+  - Phase 2: **COHERENCE 0.438/0.478** — first coherent arcs (hand-coded momentum, not emergent)
+  - v3: 500k graph, 5 planet nodes — probability cloud, ejection event, binding survives
+  - v4/v5: 500 planet nodes, vectorized (535 t/s, 38x speedup) — planet merges, nodes diffuse
+  - v6: **Deposit dominance tracking** — regions at dist=12.2 (stable equilibrium!)
+  - v7: Tangential velocity — one-time 25-degree deflection, dies at equilibrium
+  - v8: Tangential acceleration — noisy oscillation
+  - v9 ODE: **Keplerian orbits from consumption force.** RAW 130: "it rotates because it consumes"
+  - v10: Consumption IS movement. Minimal orbit: perfect circles. Uses flux=L/(4 pi r^2) = Newton renamed.
+  - **Gap: graph -> 1/r^2 force not yet proven. Orbits work if force is 1/r^2.**
 - **trie_stream_filtering/** — stream filtering and temporal decomposition (separated from 118):
   - v4-v6: Producer-consumer filtering, recursive hierarchy, token routing
   - v7: N-gram stream filtering — discovers sequential structure in text/DNA/random
