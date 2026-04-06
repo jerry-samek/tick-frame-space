@@ -976,7 +976,90 @@ validation.
 
 ---
 
-*Date: March 19, 2026*
-*Status: Current as of v24 Phase 2 (running)*
-*Substrate coverage: V2 (10 experiments catalogued), V3 (4 experiment versions catalogued)*
-*Honest assessment: qualitative progress on V3, zero quantitative validation of core claims*
+## April 2026 Update: Experiments 118 and 128
+
+### Experiment 118: Entity Hopping Model (April 1-3, 17 versions, CLOSED)
+
+Tested whether entities hopping on a random geometric graph produce orbital
+mechanics from the consumption-transformation mechanism. Key results:
+
+**What was established:**
+- Gravitational BINDING (attraction + confinement) from deposit routing (v7+)
+- Same/Different consumption rule: Same reclassifies Different, connectors can
+  shrink (v16). First connector dynamics that allow equilibrium distances.
+- Star thermal equilibrium fills 73% of graph volume, SCALE-INVARIANT (v12, v14).
+  This is thermodynamics at N=80, not a model limitation.
+- Aristotle's deadlock (v10): pure reactive entities freeze. Newton I required.
+- Traversal time ∝ connector length creates time dilation (v7, deposit-per-tick)
+
+**What was NOT established:**
+- Coherent orbits. v9 diagnostic PROVED all "orbits" are bound random walks
+  (per-hop angular displacement same as pure random walk). Best coherence: 0.27.
+- Star compaction (always r~14 on 5k graph, r~59 on 50k graph).
+- Keplerian velocity profile (hop rate flat, not distance-dependent).
+
+**Closure reason:** Entity hopping on graphs cannot produce orbits at N=80.
+The model was exhausted. Superseded by Experiment 128.
+
+### Experiment 128: Deposit Pattern Model (April 3-6, 10 versions, CURRENT)
+
+Fundamental reframing: entities ARE deposit dominance regions, not objects
+at graph nodes. Movement IS the statistical shift of the deposit pattern.
+
+**What was established:**
+- Radial equilibrium from production/consumption balance on graph (v6:
+  deposit distance 12.2, stable for 200k+ ticks)
+- Deposit dominance tracking reveals structure invisible to node positions
+- Mass = source count (more emission sources = wider deposit territory)
+- Consumption IS centripetal force (v9 ODE): F = -consumed/r² produces
+  perfect Keplerian orbits. 1,812 revolutions. T² ∝ r³. All three of
+  Kepler's laws from consumption. (RAW 130)
+- The gravitational constant: GM = L × R / 4π (star emission × planet
+  absorption fraction / geometry)
+- Tangential thrust (from excess or redirect) DESTABILIZES orbits —
+  continuously pumps energy → escape. Angular momentum must be INHERITED,
+  not generated. (v9 ODE)
+- Consumption IS movement: each consumed deposit shifts the pattern center
+  by the deposit's direction (v10). RAW 028 temporal surfing.
+
+**What was NOT established (the remaining gap):**
+- That graph deposit dynamics produce a 1/r² force law. The ODE uses
+  flux = L/(4πr²) which is geometric dilution in 3D — ASSUMED, not derived
+  from graph dynamics. The ODE relabels GM as L×R/4π. This is a
+  reinterpretation of Newton, not a derivation from the mechanism.
+- Emergent planet formation from star's reject stream (Phase 3)
+- Internal planet structure producing directed processing
+
+**Honest assessment:** The consumption mechanism is validated for producing
+radial equilibrium (on graphs) and Keplerian orbits (in the ODE). The gap
+is the connection: graph deposit dilution → measurable 1/r² force → orbit.
+This may be a mathematical proof rather than a simulation problem.
+
+### New RAW Documents (April 2026)
+
+- RAW 128 — The Energy Partition: Store, Move, or Radiate
+- RAW 129 — Experimental Connections (Breit-Wheeler, quantum batteries, CME,
+  planetary structure, quantum-classical transition)
+- RAW 130 — It Rotates Because It Consumes
+
+### Updated Status Table
+
+| Claim | March 2026 Status | April 2026 Status |
+|-------|-------------------|-------------------|
+| Gravitational binding | Partial (v22-v24) | **Confirmed** (Exp 118 v7+, Exp 128 v6) |
+| Closed orbit | Not achieved | **Achieved in ODE** (1812 rev). Not on graph. |
+| 1/r² force law | Not measured | **Derived in ODE** from geometric dilution. Not from graph dynamics. |
+| Kepler's laws | Not tested | **All three from ODE** (RAW 130). Not from graph. |
+| Same/Different mechanics | Not implemented | **Working** (Exp 118 v12+, Exp 128 v6) |
+| Consumption equilibrium | Not tested | **Confirmed** (Exp 128 v6: dist=12.2, stable) |
+| Entities as patterns | Not considered | **Validated** (Exp 128 v6: deposit regions ≠ node positions) |
+| Newton I required | Not tested | **Confirmed** (Exp 118 v10: Aristotle deadlocks) |
+| Graph → 1/r² | Not tested | **NOT ACHIEVED.** The remaining gap. |
+
+---
+
+*Date: March 19, 2026 (initial), April 6, 2026 (updated with Exp 118-128)*
+*Substrate coverage: V2 (10 experiments), V3 graph (Exp 64_109 v21-24, Exp 118 v1-17,
+Exp 128 v1-10), V3 ODE abstraction (Exp 128 v9-10)*
+*Honest assessment: Consumption mechanism validated. Radial equilibrium confirmed.
+Keplerian orbits derived in ODE. The graph → force law gap remains the frontier.*

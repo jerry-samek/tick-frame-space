@@ -101,22 +101,50 @@ discrete time or kinematic constraints that do not depend on substrate geometry:
   (Exp #51 on continuous field + Exp #64_109 on graph substrate)
 - **Rotation asymmetry 933x** -- kinematic constraint on discrete tick dynamics (Exp #44)
 
+### Validated in April 2026 (Experiments 118 + 128)
+
+These results come from two experiment lines (April 1-6, 2026, 27 versions total):
+
+- **Gravitational binding from consumption** — planet attracted, confined, oscillates
+  radially. Every version of Exp 118 v7+ demonstrates this. (Exp #118, v7-v17)
+- **Same/Different consumption rule** — Same deposits consume (reclassify) Different
+  deposits. Connectors can shrink. Equilibrium distances from production/consumption
+  balance. (Exp #118 v16, Exp #128 v6)
+- **Deposit dominance regions as entity measurement** — entities ARE regions where
+  their deposits dominate, not objects at graph nodes. Reveals structure invisible
+  to node tracking. (Exp #128 v6)
+- **Closed orbits from consumption gravity (ODE)** — consumption force F=-consumed/r²
+  produces Keplerian orbits with T²∝r³. Up to 1,812 revolutions. (Exp #128 v9-v10)
+- **RAW 130: "It rotates because it consumes"** — consumption IS the centripetal force.
+  Angular momentum is inherited from formation. Kepler's three laws follow.
+- **Star thermal equilibrium** — 80+ nodes fill 73% of graph volume, scale-invariant.
+  Not a bug — thermodynamics at this particle count. (Exp #118 v12, v14)
+- **Newton I required** — pure reactive entities deadlock (Aristotle's physics).
+  Forward continuation as default is necessary. (Exp #118 v10-v11)
+
+### Partially Validated / Open Gaps
+
+- **1/r² force law** — derived in the ODE from geometric dilution (flux=L/4πr²).
+  The graph experiments show deposits dilute with distance but the EXACT power law
+  from graph dynamics has not been measured. The ODE relabels GM as L×R/4π.
+  **Gap: graph → 1/r² force not yet proven.** (RAW 130, Exp #128 v9)
+- **Emergent planet formation** — the planet should EMERGE from the star's reject
+  stream, not be pre-placed. Pre-placed nodes diffuse before structure forms.
+  (Exp #128 v3-v5). **Requires Phase 3 implementation.**
+
 ### Not Yet Validated
 
-The following are theoretical claims or predictions that have not been experimentally
-demonstrated:
-
-- **Closed orbit** from deposit-chain gravity alone
-- **1/r^2 force law** as an emergent property of deposit gradients
 - **Three-state alphabet** as observable, distinguishable states in simulation
 - **Photon as path geometry** rather than intrinsic signal
 - **Time dilation from depth accumulation** (quantitative match to GR predictions)
 - **The single mechanism itself** -- all simulations to date use float approximations
   of what the theory describes as integer-only deposit operations on a pure graph
+- **Graph → 1/r² force law** — the connection between graph deposit dynamics and
+  the consumption force law used in the ODE
 
-The gap between what the theory proposes and what experiments have shown is significant.
-The single mechanism is a theoretical claim. The simulations approximate it. Chapter 7
-maps this gap precisely.
+The gap between the graph dynamics and the ODE remains significant. The consumption
+mechanism is validated. The force law derivation from graphs is not. Chapter 7 maps
+this gap precisely. RAW 130 provides the theoretical framework.
 
 ---
 
@@ -255,4 +283,8 @@ docs/theory/
 Experimental code and results are in `experiments/` at the repository root. Key
 experiments referenced by V3: #15 (dimensional closure), #44 (kinematic constraints),
 #50 (dimensional equivalence rejection), #51 (time dilation), #64_109 (three-body
-tree, graph substrate gravity), #118 (consumption-transformation gravity, H=0).
+tree, graph substrate gravity), #118 (consumption-transformation gravity, 17 versions,
+CLOSED April 2026), #128 (energy partition / deposit patterns, 10 versions, April 2026).
+
+Key RAW documents from April 2026: RAW 128 (Energy Partition: Store, Move, or Radiate),
+RAW 129 (Experimental Connections), RAW 130 (It Rotates Because It Consumes).

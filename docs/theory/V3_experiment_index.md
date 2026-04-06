@@ -310,17 +310,74 @@ The V3 graph substrate has demonstrated:
 
 The V3 graph substrate has NOT demonstrated:
 
-- Closed orbit (perihelion/aphelion oscillation)
-- 1/r^2 force law from deposit gradient on graph
+- ~~Closed orbit (perihelion/aphelion oscillation)~~ ACHIEVED in ODE abstraction (Exp 128 v9, April 2026) but NOT on the graph itself
+- 1/r^2 force law from deposit gradient on graph (measured as flux dilution, not as force)
 - Quantitative time dilation from self-pinning
-- Kepler's third law
-- Angular momentum conservation over multiple revolutions
-- Orbital stability for 10k+ ticks after first full cycle
+- Kepler's third law — ACHIEVED in ODE (T²∝r³ from F=-consumed/r²), not on graph
+- Angular momentum conservation over multiple revolutions — ACHIEVED in ODE (1812 rev)
+- Orbital stability for 10k+ ticks after first full cycle — ACHIEVED in ODE
 
-The gap between "curved trajectories" and "closed orbit" is the current frontier.
+The gap has shifted: from "curved trajectories → closed orbit" to
+"graph deposit dynamics → 1/r² force law."
 
 ---
 
-*Date: March 19, 2026*
-*Predecessor: `v2_archive/experiment_index.md` (V2 experiment index)*
-*Next update: after v24 Phase 2 results or v25 distributed star*
+## Experiment 118: Consumption-Transformation Gravity (April 1-3, 2026)
+
+**CLOSED.** 17 versions. Superseded by Experiment 128.
+
+| Version | Key Result |
+|---------|-----------|
+| v1-v3 | Radial oscillation, compound extension runaway (1e28+) |
+| v4 | Extension bug solved (linear growth). Weak routing (3.8x expansion) |
+| v5 | Fixed-graph propagation engine. Wrong ontology (empty substrate) |
+| v6 | Density routing saturates on finite graphs |
+| v7 | **First "orbit"** with seeded kick. Time well (20:1 ratio). But v9 diagnostic proved it's a bound random walk |
+| v8-v9 | Store/move partition barely engages. v9 diagnostic: all orbits = random walks |
+| v10 | Aristotle's deadlock. Pure reactive entities freeze. |
+| v11 | Newton I (forward default). No deadlock. Weak deflection. |
+| v12 | **Same/Different rule.** Star expansion IS diffusion, not inflation. |
+| v13 | Three mechanisms combined. g/f=63:1 but inverted gradient. |
+| v14 | Star fills 73% of ANY graph (scale-invariant thermal equilibrium). |
+| v15 | Propagating deposits saturate the graph. |
+| v16 | **Consumption rule:** Same consumes Different. Connectors can shrink. |
+| v17 | Inter-group rotation — groups too mixed for organized circulation. |
+
+**Key findings:** Gravitational binding works. Coherent orbits don't emerge at N=80.
+Star fills 73% of graph volume regardless of scale. Entity hopping on graphs
+produces random walks, not orbits.
+
+## Experiment 128: Energy Partition / Deposit Patterns (April 3-6, 2026)
+
+**Current.** 10 versions. Supersedes Experiment 118.
+
+| Version | Key Result |
+|---------|-----------|
+| v1 Phase 0 | 1D chain: consumption equilibrium at midpoint. No dilution in 1D. |
+| v1 Phase 1 | **Deposit regions form from geometric dilution.** Mass = source count. |
+| v1 Phase 2 | Pattern drift = gravitational attraction. Hand-coded momentum: coherence 0.44 (first >0.3 but not emergent). |
+| v3 | 500k graph, 10k star, 5 planet. Probability cloud. Ejection event. Binding survives. |
+| v4/v5 | 500 planet nodes. Vectorized (535 t/s, 38x speedup). Planet merges with star. |
+| v6 | **Deposit dominance tracking.** Regions at dist=12.2 (stable equilibrium!). |
+| v7 | Tangential velocity bias: one-time 25-degree deflection, dies at equilibrium. |
+| v8 | Tangential acceleration: noisy oscillation. |
+| v9 ODE | **Keplerian orbits from F=-consumed/r².** 1812 revolutions. Kepler I, II, III. |
+| v10 | Consumption IS movement. Minimal orbit: perfect circles. Newton renamed. |
+
+**Key findings:**
+- Radial equilibrium from consumption (deposit distance 12.2, stable)
+- Entities ARE deposit dominance regions, not objects at nodes
+- Consumption IS centripetal force → Kepler's laws (RAW 130)
+- GM = L × R / 4π (star emission × planet resistance / geometry)
+- **Gap: graph → 1/r² force not yet derived from graph dynamics**
+
+## Key RAW Documents (April 2026)
+
+- **RAW 128:** Energy Partition — Store, Move, or Radiate
+- **RAW 129:** Experimental Connections — Breit-Wheeler, quantum batteries, CME, planetary structure
+- **RAW 130:** It Rotates Because It Consumes — orbital mechanics from consumption
+
+---
+
+*Date: March 19, 2026 (initial), April 6, 2026 (updated with Exp 118 + 128)*
+*Next: prove graph → 1/r² force law (mathematical, not simulation?)*

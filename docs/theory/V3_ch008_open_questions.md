@@ -901,8 +901,71 @@ research programme designed to determine whether any of these conditions is met.
 
 ---
 
-*Date: March 19, 2026*
-*Status: V3 CONSOLIDATED*
-*Depends on: V3_ch001, V3_ch002, V3_ch003, V3_ch004, RAW 112-117, Experiments 15, 50, 51, 64_109*
-*Defines: The complete set of open questions as of March 2026*
-*Recommended next action: 8.11 (integer gamma) -> 8.9 (closed orbit) -> 8.3 (depth measurement)*
+## April 2026 Update: Questions Resolved or Reframed
+
+Experiments 118 (17 versions) and 128 (10 versions) resolved or reframed several
+open questions. See V3_ch007 April 2026 update for full experimental details.
+
+### Resolved
+
+- **8.9 (Closed Orbit):** RESOLVED in ODE abstraction. F = -consumed/r² produces
+  Keplerian orbits with T²∝r³ (Exp 128 v9, RAW 130). Not yet on the graph itself.
+  The question shifts from "can consumption produce orbits?" (yes) to "does the
+  graph produce the 1/r² force law?" (open).
+
+- **Aristotle vs Newton:** Not listed as a question in March, but Exp 118 v10
+  demonstrated that pure reactive entities (fire only on trigger) deadlock.
+  Newton's first law (forward continuation) is REQUIRED. This is a structural
+  result about the framework.
+
+### Reframed
+
+- **8.2 (Entity definition):** The entity is NOT an object at a graph node.
+  The entity IS a deposit dominance region — the set of connectors where its
+  deposits outnumber others. This reframing (Exp 128 v6) changes how many
+  other questions should be approached.
+
+- **8.11 (Integer gamma):** Remains open but less critical. Exp 128 showed
+  that the consumption mechanism works with float deposits. The Same/Different
+  classification is integer-like (binary: dominant or not). The exact integer
+  vs float distinction matters for formal derivation but not for the mechanism.
+
+### New Open Questions (from April 2026)
+
+- **Graph → 1/r² force law.** The central remaining gap. The ODE derives
+  orbits from F = -consumed/r² where 1/r² comes from geometric dilution
+  (flux = L/4πr²). But this assumes 3D geometry. The graph experiments show
+  deposits dilute with distance but the exact power law hasn't been measured.
+  Proving that deposit dilution on a 3D random geometric graph produces 1/r²
+  force in the large-N limit would close the chain from graph to Kepler.
+
+- **Emergent planet formation.** The planet should emerge from the star's
+  reject stream (the trie hierarchy from stream filtering experiments).
+  Pre-placed nodes diffuse. The internal structure needed for directed
+  processing must grow organically. (Exp 128 Phase 3, not implemented.)
+
+- **Dimensional emergence from the trit.** The 1/r² force comes from 3D.
+  But WHY 3D? The branching-pruning balance of the reject stream might
+  determine the effective dimensionality. 3 states → 3 dimensions? This
+  connects to RAW 108 (Three Dimensions from Trit Change Geometry) but
+  has not been derived from first principles.
+
+- **Is consumption-gravity distinguishable from Newtonian gravity?** The
+  consumption model predicts GM = L×R/4π where R depends on spectral
+  compatibility between star and planet. Newton says GM is universal.
+  If R varies with composition, the models diverge. If R averages to a
+  universal value at large N, they're indistinguishable.
+
+### References (April 2026)
+
+- RAW 128 — The Energy Partition: Store, Move, or Radiate
+- RAW 129 — Experimental Connections
+- RAW 130 — It Rotates Because It Consumes
+- Experiment 118 v1-v17 (CLOSED) — Entity hopping model
+- Experiment 128 v1-v10 — Deposit pattern model
+
+---
+
+*Date: March 19, 2026 (initial), April 6, 2026 (updated)*
+*Status: V3 CONSOLIDATED + April 2026 experimental updates*
+*Recommended next action: prove graph → 1/r² (mathematical), then emergent planet (Phase 3)*
