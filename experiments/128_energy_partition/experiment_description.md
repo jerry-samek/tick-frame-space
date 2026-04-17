@@ -413,7 +413,373 @@ dynamics are radial (approach/retreat).
 - **Honest assessment:** uses flux = L/(4πr²) = Newton renamed.
   The gap between graph dynamics and 1/r² force remains open.
 
-## Experiment 128 Final Summary (v1-v10, April 3-6, 2026)
+### v11: Arrival Rig (April 16, 2026)
+
+#### Phase 1 — Graph → 1/r² confirmed
+- **Strips everything away: star emits, graph propagates, no consumption.**
+  Isolates the question "does the substrate alone produce 1/r²?"
+- Model: density field on a 3D random geometric graph. Each tick, every
+  node redistributes `ρ / degree` to neighbors. Star held at `ρ = L`
+  (source). Outer shell (`r > 0.95 R`) absorbs. Vectorized with
+  `np.bincount` over flat directed-edge arrays (~5 t/s at 500k nodes).
+- 500k-node / R=80 / ⟨k⟩=23.5 / 3000 ticks. Density fit in the
+  intermediate range r ∈ [4, 40].
+- **Gradient log-log slope = −1.968 at t=3000 (within 1.6% of Newton).**
+  Density slope = −1.274, consistent with the integrated log-log slope
+  of the analytical Poisson form `(1/r − 1/R)` over that range.
+- Slopes converge monotonically as the profile fills (−2.109 at t=500
+  → −1.968 at t=3000). Total interior density at ~80% of asymptote;
+  profile *shape* converged earlier than magnitude.
+- **The 1/r² that v9/v10 marked "fake" is earned** — it is what the
+  substrate naturally delivers under pure propagation. The deviation
+  from exactly −2 could be residual transient, discreteness (finite
+  ⟨k⟩ RGG vs continuum), or the 50-node source extent.
+
+#### Phase 2 — Orbits under the measured field
+- Take the binned ρ(r) from Phase 1, build an interpolator, feed
+  F(r) = RESISTANCE · |dρ/dr(r)| directly into v10's orbit integrator.
+  No analytical fit, no Newton ansatz — the raw graph profile is the
+  force curve.
+- 100k-node graph, propagated 2000 ticks to steady state, six orbit
+  integrations from r=20 at {circular, 0.85 v_c, 1.15 v_c} compared
+  against a pure K/r² reference with matched coupling.
+- **Result: orbits from the measured field and orbits from pure Newton
+  overlay within a few percent.** Circular stays circular, elliptical
+  stays elliptical, periods match. The chain tick-frame axioms → graph
+  propagation → measured 1/r² → Keplerian orbits is unbroken.
+- Only deviation: at large r (>1.3 R_eq) the measured field drops
+  slightly below 1/r² because the absorbing boundary starts to bite;
+  wide orbits close tighter under the measured curve than under Newton.
+  A real graph-substrate signature, not a failure.
+
+#### Phase 3 — Buffered consumption (honest label: HYBRID)
+- Tests a new idea: the planet has a **finite consumption capacity
+  C_max**, and unconsumed deposits accumulate on the star-planet
+  connector as a buffer `B`. Buffer physically extends the connector:
+  `r_eff = r_geom + α·B`. Force seen by the planet uses `r_eff`, not
+  `r_geom`. Grounded in RAW 113 / Exp 118: Different deposits extend
+  connectors; buffer = Different on the star-planet connector.
+- State: `(x, y, v_x, v_y, B)`. Per-tick rule: pool = B + K/r_eff²,
+  consumed = min(pool, C_max), B' = pool − consumed, F = consumed·(−r̂).
+- Six initial conditions. All six produce bound orbits. Clean
+  inner/outer split:
+  - `r < r_eq`: **capacity-limited.** F = C_max constant. Even with
+    elliptical r_geom (swinging 6→11), **r_eff pins to r_eq = 20.00
+    ± 0.15** via buffer absorption. Predicted scaling T ∝ √r.
+  - `r > r_eq`: buffer is zero, F = K/r² — ordinary Newton.
+- **Honest disclosure: Phase 3 is NOT Newton-free.** (Revised after
+  discussion 2026-04-16 about tick-bookkeeping ontology.)
+  - `arrival = K/r_eff²` is Newton's 1/r² typed in directly. Defense:
+    Phase 1 measured it and Phase 2 verified it produces the same
+    orbits on the graph; using K/r² in Phase 3 is a known-good
+    shortcut, but not re-derived here.
+  - `F = m·a` is NOT smuggled Newton under the tick reading: time,
+    length, mass are all tick-counts; force = consumption rate
+    (deposits/tick); acceleration = velocity-change-per-tick.
+    `F = m·a` is `ticks/tick = ticks × 1/tick` — impulse conservation
+    distributed across constituent quanta. Doc 28 grounds this: a
+    mass-M entity consumes M ticks/tick just to persist (renewal),
+    and surplus = arrival − M drives acceleration with a = surplus/M.
+  - Continuous `(x, y)` position for the planet IS a substrate
+    abstraction. On the graph the planet position is the COM of its
+    deposit-dominance region, which only moves via boundary shifts.
+    v8 showed isolated clusters diffuse instead of coasting — so
+    whether the COM-as-continuous approximation holds is an open bet.
+  - The "outer regime = Kepler" observation is a tautology given the
+    K/r² input — only an integrator sanity check, not a discovery.
+- What IS new in Phase 3: the buffer mechanism and its consequences
+  (r_eff pinning, capacity-limited inner regime, T ∝ √r prediction).
+  These are genuine consequences of the update rule. But the update
+  rule itself is a heuristic motivated by Exp 118 theory, **not
+  derived from graph dynamics.** On the actual graph, unconsumed
+  Different deposits would scatter across many paths, not pool on
+  one "star-planet connector."
+- **What Phase 3 does NOT establish.** That the same inner/outer
+  dichotomy would appear if Newton were fully removed (no K/r²
+  baked in, no continuous planet with F=m·a, buffer forming on the
+  graph organically). That is Phase 4, and based on v7/v8 precedent,
+  the orbital part probably would not survive — the "bent pipe"
+  problem (need for emergent internal planet structure) is still the
+  gate on real orbits on the substrate.
+
+**Stance.** Using Newton as a computational shortcut is fine when we
+are not claiming emergence. When we ARE claiming emergence (the whole
+point of Experiment 128), Newton in the code needs a flag on it.
+
+#### Phase 3.1 — Mass, Renewal, and Capacity-per-Node (April 16, 2026)
+
+Driven by the tick-bookkeeping correction and Doc 28 Temporal Surfing.
+Wires mass in as a genuine parameter and adds renewal:
+
+```
+renewal  = M                          # cost just to persist
+pool     = B + K / r_eff^2
+consumed = min(pool, C_cap)
+surplus  = max(0, consumed - renewal) # drives motion
+F        = surplus * (-r_hat)
+a        = F / M
+B'       = pool - consumed
+```
+
+Two capacity variants tested across mass sweep M ∈ {0.25, 0.5, 1.0,
+2.0, 4.0} at r₀ ∈ {10, 15, 20, 25, 30}:
+
+- **Variant A:** `C_cap = 1.0` fixed — unphysical: heavy planets
+  starve before reaching their equilibrium. Sanity-check, not the
+  real model.
+- **Variant B:** `C_cap = 1.5·M` — each node carries its own capacity.
+
+**Variant B produces Newton's mass-independence of orbital period.**
+At r=10, measured T=28.10 for M=0.25, 0.5, 1.0, and 2.0 (identical to
+three decimals). At r=15, T=34.41 across masses. At r=30, T=48.67.
+Mass cancels in the equation of motion because
+`F = surplus = C_cap − M = 0.5M`, giving `a = F/M = 0.5` (constant).
+This is Newton's "third body mass doesn't affect period" falling out
+of substrate arithmetic when capacity scales with size.
+
+**T ∝ √r confirmed in the capacity-limited inner regime** —
+48.67 / 28.10 = 1.73 ≈ √3 for r ratio 30/10 = 3. Clean anti-Kepler
+signature.
+
+**Two new testable predictions emerge from Phase 3.1:**
+
+- **Gravity horizon** `r_star = √(K/M)`: beyond this radius, arrival
+  K/r² drops below renewal M, surplus goes negative, no orbit
+  possible. Heavier planets are confined closer. Lighter planets can
+  roam farther.
+- **Capacity-limited inner zone** with T ∝ √r (not Kepler's r^(3/2)).
+
+#### Phase 3.2-3.4 — solar-system reality check (April 16)
+
+- 3.2 solar-system sanity check: Phase 3.1 formula fails (T² slope
+  2.24 vs Kepler's 1.5). The "fixed model" (consumption ∝ M) matches
+  inner planets but the naive renewal term produces a false gravity
+  horizon at √K = 6.28 AU, beyond which real planets orbit fine.
+- 3.3 Earth at Planck scale: renewal demand 10³²/tick, stellar supply
+  10⁻²²/tick. Ratio 10⁻⁵⁴. Renewal is decisively **local (ambient
+  tick-stream), not stellar**.
+- 3.4 per-planet resistance fit: fitting each planet's resistance
+  gives R(r) = 1 + r²/K — a pure distance function, not planet-
+  specific. Interpretation: ambient contributes 1 per node per tick
+  exactly covering renewal, stellar contributes K/r² on top as
+  surplus. Renewal drops out of orbital dynamics entirely.
+- Consequence: the anti-Kepler / horizon story from Phase 3.1 is
+  **not applicable to real planets**. The clean substrate-Newton
+  (`a = K/r²`) holds to ephemeris precision.
+- The "consumed/renewal = K/r²" ratio does reveal a real pattern:
+  rocky planets 17–264×, gas giants near 1×. Suggestive of a
+  transition at ~6 AU between star-dominated (rocky) and self-
+  dominated (gas giant) regimes. User's "structure = resistance"
+  reading maps: high-resistance rocky planets force complexity
+  formation; low-resistance gas giants absorb/dissipate.
+
+### v11 Phase 4 — Gravitational Time Dilation (April 17, 2026)
+
+Reinterpret the Phase 1 field as a local clock modulator:
+
+```
+γ_local = 1 / (1 + ρ_local / ρ_scale)
+```
+
+- Weak-field limit: `(1 - γ) ≈ ρ/ρ_scale = (A/ρ_scale) / r`.
+- Measured log-log slope of `(1 - γ)` vs `r` on the graph: **-1.094**
+  (Einstein's weak-field gravitational redshift: -1.000, within 9%).
+- ρ(r) slope itself is -1.298, consistent with `(1/r - 1/R)` form
+  from Phase 1.
+- The 1/r shape of gravitational redshift emerges from the measured
+  substrate field. Saturation form and ρ_scale are free.
+
+### v11 Phase 5 — Unified SR + GR from a single tick-budget (April 17)
+
+Insight (Tom, 2026-04-17): load is braking against connector
+propagation. Photon (at c) doesn't brake — doesn't consume. Below c
+you refuse to flow; refusal costs budget. Gravity is another kind of
+refusal (you process deposits instead of just being).
+
+Tick-budget accounting:
+- Each node has unit tick-budget per tick.
+- Gravity load: L_grav = ρ/ρ_scale.
+- Velocity load: L_vel = v²/c² (squared form from Minkowski
+  Pythagoras — time and space combine geometrically).
+- Proper tick rate: `γ = √(1 - L_grav - L_vel)`.
+
+**Key result:** This additive-under-sqrt form is NOT a weak-field
+approximation — it is the EXACT Schwarzschild proper-time formula
+for a stationary or tangentially-rotating clock:
+
+```
+dτ/dt = √((1 - 2GM/rc²) - v²/c²)
+```
+
+The commonly quoted multiplicative form `γ_grav × γ_SR` is the
+weak-field approximation; the strict GR answer is the additive
+form we derived from substrate accounting.
+
+Test on (r, v) grid with graph-measured ρ(r):
+- v = 0: TF = multiplicative trivially (same formula).
+- Weak (L_total < 0.25): agree within 1–2%.
+- Strong (L_total → 1): TF correctly saturates to 0 (static limit /
+  ergosphere boundary). Multiplicative form gives wrong positive
+  values.
+
+**What's earned:**
+- Unified SR + GR from one substrate accounting principle.
+- Exact Schwarzschild formula for tangential motion, with ρ(r) from
+  first-principles graph propagation.
+- Static limit as a geometric boundary, not assumed.
+- One free coupling (ρ_scale). No Einstein in the code.
+
+**What's still open:**
+- Actual moving-clock simulation on the graph (here we reinterpret
+  static field with v as analytical parameter).
+- ρ_scale calibration.
+
+### v11 Phase 6 — Radial Motion and the Substrate's Isotropy Limit (April 17)
+
+Tests whether the tick-budget formula also matches Schwarzschild
+for radial motion. GR's radial case has an extra `1/(1 − L_grav)`
+factor on the spatial term (from the Schwarzschild metric component
+`g_rr = 1/(1 − L_grav)`):
+
+```
+dτ/dt = √((1 - L_grav) - v²/(c²(1 - L_grav)))   [radial, GR]
+vs
+dτ/dt = √((1 - L_grav) - v²/c²)                 [tangential, our Phase 5]
+```
+
+**Test results (same (r, v) grid as Phase 5):**
+- Weak field (r=25, v=0.3): naive TF agrees with Schwarzschild
+  radial to 0.4%. Fine.
+- Moderate (r=12, v=0.5): 6% discrepancy.
+- Strong (r=8, v=0.6): **50% off**. Naive form dramatically over-
+  estimates γ in strong radial fields.
+
+**Direct measurement of graph structure:**
+Measured `⟨cos²θ_radial⟩` averaged over edge directions in radial
+shells. Uniform 3D isotropic value = 1/3.
+| shell | ⟨cos²θ⟩ |
+|---|---|
+| [3, 6] | 0.326 |
+| [8, 12] | 0.322 |
+| [15, 20] | 0.332 |
+| [25, 35] | 0.338 |
+
+All ≈ 1/3. **The graph has no radial-vs-tangential anisotropy,
+including near the source.** This confirms that the v11 substrate
+lacks the structural feature GR needs for radial motion.
+
+**What Phase 6 diagnoses:**
+
+To reproduce full GR (not just tangential), the substrate must
+**reshape local connector geometry near masses**, making radial
+connectors effectively longer than tangential ones by the
+Schwarzschild factor `1/√(1 − L_grav)`. In Tom's earlier "connector
+= gravity" intuition, this would mean deposits don't just add
+density scalar-wise — they also anisotropically redistribute the
+local graph topology.
+
+Predictions of such a substrate (not yet built):
+- Phase 5 tangential result stays.
+- Radial test would pass in strong field.
+- Mercury perihelion precession would emerge from the radial/tangential
+  asymmetry of elliptical orbits.
+- Black-hole event horizons emerge as surfaces where radial
+  connectors have infinite effective length.
+
+#### Phase 6 adds to the end-of-April 2026 emergence list
+
+- Schwarzschild tangential proper time — **earned** (Phase 5).
+- Schwarzschild radial proper time — **NOT earned** in v11. Graph is
+  isotropic; needs direction-dependent connector structure.
+- Mercury perihelion precession — **still open**, likely gated by
+  radial-motion fix.
+
+### v11 Phase 7 — Moving Star and the Comoving Pattern (April 17)
+
+Test: move the star in z while tracking the planet's orbit under
+retarded Newtonian gravity (light-speed delay on the force).
+
+**Comoving case** (planet shares star's z-velocity — physical,
+since bound systems form co-moving): orbit preserved perfectly
+for v_z up to 0.001·c (30× real solar galactic speed). 199.9 out
+of 200 expected revolutions. r_xy = 1.0000 exactly.
+
+**Non-comoving case** (planet artificially left at rest in z):
+orbit breaks at v_z = v_circ.
+
+**Interpretation.** Equivalence principle emerges automatically
+from retarded gravity without being built in. The solar system
+is a **coherent pattern drifting through the substrate as a
+unit**; its internal structure (orbit) is a property of the
+pattern, frame-invariant, dynamically irrelevant to the bulk
+drift. Scale-invariant: atoms, planets, solar systems, galaxies
+are all "traveling patterns" at their scales.
+
+**What Phase 7 settles.** The "solar system moves, so no orbit
+really closes" observation is geometrically true but dynamically
+irrelevant. Frame choice determines appearance; substrate
+dynamics are identical in any frame. Growing-graph frontiers
+therefore won't break orbits; patterns just drift across
+continuously-renewing substrate.
+
+**What Phase 7 does NOT address:**
+- Coherent pattern self-formation (still v7/v8's unsolved problem —
+  pre-placed clusters diffuse, they don't cohere).
+- Relativistic v_z regime.
+- Actual substrate growth at the frontier.
+
+#### End-of-April 2026 standing status
+
+**Earned on the substrate:**
+1. 1/r² arrival on the graph (Phase 1, slope −1.968).
+2. Keplerian orbits under measured field (Phase 2).
+3. F = m·a as tick bookkeeping — not smuggled Newton (Phase 3.1).
+4. Newton's mass-independence of orbital period (Phase 3.1 B).
+5. Clean Newton gravity at solar-system scale via ambient-covers-
+   renewal decomposition (Phase 3.2-3.4).
+6. Gravitational redshift 1/r shape (Phase 4, slope −1.094).
+7. Exact Schwarzschild proper-time formula for tangential observers
+   (Phase 5, additive-under-sqrt emerges from tick-budget Pythagoras).
+8. Equivalence principle emerges from retarded gravity (Phase 7).
+
+**NOT earned, specifically diagnosed:**
+- Schwarzschild radial stretching (Phase 6) — substrate needs
+  direction-dependent connector structure near masses.
+- Coherent self-holding patterns on the substrate (the "bent pipe"
+  from v7/v8, the "planet diffuses" problem). Gates all higher-level
+  dynamics.
+
+**Unified synthesis frontier:** v11 gravity + Experiment 55/56
+(collision physics, composite objects) joined into one framework
+where patterns form, hold themselves together, drift through the
+substrate as units, and interact gravitationally with other patterns
+— including radial anisotropy from deposit-reshaped connectors.
+That's the next major effort.
+
+#### Emergence claims that stand, end-of-April 2026
+
+- 1/r² arrival on the graph — **earned** (Phase 1, slope −1.968).
+- Keplerian orbits under the measured arrival curve — **earned**
+  (Phase 2).
+- F = m·a as tick bookkeeping (not external Newton) — **earned**
+  (Phase 3.1, tick reading of mass/force/acceleration).
+- Newton's mass-independence of orbital period — **earned** when
+  capacity scales with mass (Phase 3.1 Variant B).
+- Gravitational redshift 1/r shape — **earned** (Phase 4, slope
+  -1.094 vs Einstein -1.000).
+- Exact Schwarzschild proper-time formula for tangential observers —
+  **earned** (Phase 5, unified additive tick-budget).
+- Ambient-covers-renewal / stellar-drives-orbit decomposition —
+  **earned** (Phase 3.3/3.4, solar system fits to precision).
+- Buffer forms organically from Different deposits on actual graph —
+  **not tested** (v7/v8 precedent is discouraging).
+- Sustained tangential (orbital) motion on the pure substrate —
+  **still unsolved**, same as v7/v8. The "bent pipe" problem is the
+  gate on real orbits.
+- Radial-motion GR test — **not yet done** (Phase 6 candidate).
+- Mercury perihelion precession — **not yet done**.
+
+## Experiment 128 Final Summary (v1-v11, April 3-16, 2026)
 
 ### What's proven:
 1. Radial equilibrium from production/consumption balance (v6)
@@ -423,19 +789,26 @@ dynamics are radial (approach/retreat).
 5. Consumption IS centripetal force → Keplerian orbits (v9 ODE, v10 minimal)
 6. Tangential thrust destabilizes orbits — excess leaves system (v9 ODE)
 7. Angular momentum is INHERITED, not generated (RAW 130)
+8. **Graph substrate produces the 1/r² force law as emergent behavior
+   of pure propagation** (v11, April 16): slope −1.968 vs ideal −2.0.
 
 ### What's not proven:
-1. That graph dynamics produce 1/r² force law (the remaining gap)
-2. Emergent planet formation from reject stream (Phase 3)
-3. Internal planet structure producing directed processing (bent pipe)
+1. That the 1/r² scaling survives when Same/Different consumption is
+   turned on (non-linear coupling could warp it). This is the next test.
+2. That a *consuming* planet at distance r experiences a force that
+   follows the measured gradient. v11 Phase 2 plan.
+3. Emergent planet formation from reject stream (Phase 3, unchanged).
+4. Internal planet structure producing directed processing (bent pipe).
 
-### The remaining gap:
+### The former remaining gap — now closed (in the pure case):
 Graph experiments → deposits dilute with distance (geometric spreading)
 ODE → consumption force with 1/r² produces orbits
-**NOT connected:** graph deposit dilution → measurable 1/r² force → orbit
+**Connected (v11):** graph propagation → measured 1/r² gradient → feeds
+the ODE force law with a result that comes from the substrate, not an
+assumption.
 
-This may be a mathematical theorem (geometric dilution on 3D RGG → 1/r²
-in the large-N limit), not a simulation problem.
+What remains: (a) verify the scaling under consumption dynamics, (b) plug
+the measured `f(r)` into v10's orbit dynamics and confirm closed orbits.
 
 ### Key theoretical contributions:
 - **RAW 130:** "It rotates because it consumes"

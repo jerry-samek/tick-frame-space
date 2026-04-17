@@ -165,7 +165,17 @@ Updates applied → new positions, collisions detected, entities created/destroy
   - v8: Tangential acceleration — noisy oscillation
   - v9 ODE: **Keplerian orbits from consumption force.** RAW 130: "it rotates because it consumes"
   - v10: Consumption IS movement. Minimal orbit: perfect circles. Uses flux=L/(4 pi r^2) = Newton renamed.
-  - **Gap: graph -> 1/r^2 force not yet proven. Orbits work if force is 1/r^2.**
+  - v11 (April 16-17): **Graph → 1/r² → Newton → Einstein (partial) chain**
+    - Phase 1: pure propagation on 3D RGG (500k nodes). Gradient slope **−1.968** vs Newton's −2.0. 1/r² earned.
+    - Phase 2: orbits under *measured* ρ(r) match pure-Newton orbits within a few %.
+    - Phase 3 (HYBRID, flagged): buffered consumption with C_max. Predicts inner anti-Kepler / r_eq regimes; solar-system check showed these are not applicable at real scales.
+    - Phase 3.1: F=m·a reinterpreted as tick bookkeeping (earned, not smuggled Newton). With C_cap ∝ M, Newton's mass-independence of orbital period emerges.
+    - Phase 3.2-3.4: solar-system sanity. Renewal is LOCAL (ambient tick-stream), not stellar. Stellar flux provides orbital surplus only. Clean Newton recovers.
+    - Phase 4 (April 17): gravitational time dilation from ρ(r) reinterpretation. `(1−γ)` slope **−1.094** on graph (Einstein weak-field: −1.000).
+    - Phase 5 (April 17): **unified SR+GR from tick-budget.** `γ = √(1 − L_grav − L_vel)` is the EXACT Schwarzschild proper-time formula for tangential observers (not a weak-field approximation — the multiplicative form is). Static limit at L_total=1 emerges as a geometric boundary. One free coupling ρ_scale; no Einstein in the code.
+    - Phase 6 (April 17): **radial motion fails** in strong field (50% off Schwarzschild at r=8, v=0.6). Direct measurement of graph anisotropy: `⟨cos²θ_radial⟩` = 0.32–0.34 in every shell, vs isotropic value 1/3. Graph has no radial/tangential anisotropy anywhere. **Specific diagnosis:** to get full GR, substrate must make radial connectors longer than tangential ones near mass by factor `1/√(1 − L_grav)`. Deposits aren't enough — they'd need to also reshape connector topology.
+    - Phase 7 (April 17): **moving star + retarded gravity**. In comoving case (planet shares star's z-velocity), orbit preserved perfectly at any v_z including 0.001·c. Equivalence principle emerges from retardation automatically. **Solar system as coherent drifting pattern** (scale-invariant: same picture at galactic/stellar/atomic scales).
+    - Synthesis frontier: v11 gravity + Exp 55/56 (collision physics, composite objects) into one framework where patterns form, self-hold, drift, and interact. The "bent pipe" / "planet diffuses" gate sits there.
 - **trie_stream_filtering/** — stream filtering and temporal decomposition (separated from 118):
   - v4-v6: Producer-consumer filtering, recursive hierarchy, token routing
   - v7: N-gram stream filtering — discovers sequential structure in text/DNA/random

@@ -3,7 +3,7 @@
 ### *Everything That Follows Logically from the Framework but Can't Be Tested from Inside*
 
 **Author:** Tom (ideas), Claude (documentation, critical pushback)
-**Date:** March 25, 2026
+**Date:** March 25, 2026 (original), April 8, 2026 (stress tests added)
 **Status:** SPECULATION — explicitly labeled. Nothing in this document should
 be cited as a result, prediction, or claim. These are logical consequences
 of the framework that are either unfalsifiable from inside the trie, or so
@@ -478,6 +478,340 @@ to N decimal places, but exact by construction.
 
 ---
 
+## 14. The Tesla-in-Space Stress Test
+
+### The Argument
+
+(From the April 8 session — stress-testing the framework's boundary conditions.)
+
+Elon Musk's Tesla Roadster has been in solar orbit since February 2018.
+No engine, no fuel, no active systems. Just a car floating in space with
+solar radiation hitting it. It's still there — still structurally coherent,
+still in a stable orbit.
+
+Three things need explaining:
+
+**Why does it orbit?** Forward continuation (Newton's first law on the graph).
+The Tesla's process chain continues forward because that's the default.
+The Sun's accumulated deposit field deflects it into an ellipse. No energy
+required for either — forward continuation is free, deflection comes from
+the static deposit field.
+
+**Why does it stay a car?** The car's atomic bonds are Same deposits on
+connectors between atoms. Those deposits are permanent (append-only). They
+don't need energy to persist. The car stays a car because nothing can UNDO
+the Same deposits that define its bonds. Structure persists without activity.
+
+**Why doesn't it freeze to nothing?** At ~3K in deep space, atomic
+capacitors charge from the CMB and sparse solar flux — incredibly slowly.
+Discharge rate is near zero. The car's internal clock is nearly stopped.
+But it EXISTS because existence is in the deposit history, not in ongoing
+activity.
+
+### The Stress Point
+
+The framework says: discharge rate IS temperature. Zero flux = zero
+discharges = zero clock rate. But the object still exists (deposits are
+permanent). Existence doesn't require ongoing energy. Temperature is just
+clock rate.
+
+**Standard physics comparison:** Matches perfectly. At 0K, all motion
+ceases but matter still exists. Atoms have zero-point energy (QM minimum),
+but their structure doesn't require continuous energy input.
+
+**Where it gets speculative:** If zero flux truly means zero discharges,
+the object at absolute zero has no internal process at all. It's append-only
+history with no new entries. A frozen record. Is that "existing"? Standard
+QM says even at 0K there are quantum fluctuations (zero-point energy). The
+framework might need a self-sustaining internal loop (the atom's own Same-
+routing deposits triggering its own capacitor cycles) to match this. Or it
+might not — the zero-point energy might emerge from CMB flux that never
+truly reaches zero anywhere in the real universe.
+
+### Why It's a Stress Test
+
+This is the simplest possible scenario: an inert object in space, doing
+nothing, receiving almost nothing. If the framework can't explain THIS,
+it can't explain anything. The framework survives: structure persists
+without activity (append-only), orbit persists without energy (Newton's
+first law), temperature is clock rate (capacitor discharge frequency).
+
+### Verdict
+
+**Framework survives.** Cleanly. The Tesla case is actually the EASIEST
+case for the framework, not the hardest — because it requires only the
+most basic axioms (append-only persistence, forward continuation, deposits
+as deflection).
+
+---
+
+## 15. The Artemis Round-Trip Stress Test
+
+### The Argument
+
+(From the April 8 session.)
+
+The Artemis 2 mission: probe leaves Earth, orbits the Moon, returns to
+Earth. In standard physics: position, velocity, F=ma, done. In the
+tick-frame framework: nothing moves. The graph is static. Deposits are
+static. "Movement" is a visualization artifact.
+
+**The stress:** Can the framework explain a round trip through two
+gravitational domains (Earth → interplanetary space → Moon → back)
+without using the word "moves"?
+
+**The framework's answer:** The probe is a self-perpetuating deposit
+pattern (like a flame — the combustion shifts location, not the fire).
+At tick N, the probe's most recent deposits are near Earth. At tick N+L,
+they're between Earth and Moon. At tick N+2L, they're near the Moon.
+Each deposit event triggers the next through the routing mechanism. The
+"trajectory" is the sequence of deposit events across the graph.
+
+**The gravitational domain transitions:** Earth's region has Earth-
+dominated deposits. Moon's region has Moon-dominated deposits. The
+transition zone has mixed deposits. The probe's routing decision changes
+as the local deposit composition changes. Near Earth: deflected by
+Earth's field. In transition: deflected by both, net toward whichever
+is closer. Near Moon: deflected by Moon's field.
+
+**The transformation:** The probe that returns isn't the same entity
+that left. Its deposit trail now carries Earth-pattern AND Moon-pattern
+deposits from its journey. It has been TRANSFORMED by the Moon's trie
+branch. In the trie `route()` function, this is the token being processed
+by multiple branches and carrying the history of each interaction.
+
+### The Stress Point
+
+**Entity coherence over long chains.** The probe needs to maintain its
+identity across ~400,000 km of graph (thousands of hops). Each hop is a
+new deposit event. Does the pattern signature degrade over thousands of
+events? In the trie-memory, a token is processed at one node and done.
+The entity's persistence over long chains is unproven.
+
+**The connector question:** "How does it switch from one connector to
+the next?" In standard physics, the object moves through space. In the
+framework, nothing moves — the deposit-placement pattern shifts. This
+is conceptually clean but experientially hard to grasp. It's the stadium
+wave: nobody leaves their seat, but the pattern propagates. The probe IS
+the pattern, not a thing separate from the pattern.
+
+### Why It's a Stress Test
+
+This tests whether the framework can handle multi-body gravitational
+interactions (Earth + Moon + Sun), domain transitions, and round trips.
+Standard physics handles this routinely (Apollo did it in 1969). The
+framework needs to match.
+
+### Verdict
+
+**Framework survives conceptually.** The deposit-pattern-as-entity model
+handles domain transitions through changing local deposit composition.
+The round trip is a pattern propagating out and back. The transformation
+during the trip (carrying Moon-pattern deposits home) is a feature, not
+a bug — it matches real physics (the probe's orbit IS changed by the
+lunar flyby).
+
+**Not yet verified experimentally.** The v7-v14 experiments haven't
+tested multi-body scenarios. This requires at minimum: star + planet +
+moon (three entities on one graph). Potential future experiment.
+
+---
+
+## 16. The Cold Atom Stress Test
+
+### The Argument
+
+(From the April 8 session.)
+
+What is the minimum activity needed for an atom to BE an atom? In
+standard quantum mechanics, atoms have zero-point energy — even at
+absolute zero, the electron has nonzero kinetic energy (Heisenberg
+uncertainty principle). The atom is never truly still.
+
+In the tick-frame framework: the atom is a set of nodes with Same-routing
+deposits on their shared connectors. The electron "orbital" is a deposit
+pattern. The proton "core" is a dense deposit cluster. If zero external
+flux arrives, no capacitors charge, no discharges occur. The atom is
+a frozen deposit pattern. Static. No process. No clock ticking.
+
+**Does a frozen deposit pattern still have properties?** Can you measure
+its mass, charge, spin? In the framework: mass = node count (static,
+doesn't require activity). Charge = deposit asymmetry (static). Spin =
+deposit circulation pattern (requires activity? or is it recorded in the
+deposit topology?).
+
+### The Stress Point
+
+Standard QM: zero-point energy is mandatory. The atom can't be completely
+still. This is not a limitation of cooling technology — it's a structural
+requirement from the uncertainty principle.
+
+The framework has three possible answers:
+
+**A: Self-sustaining loop.** The atom's internal Same-routing forms a
+closed cycle. Deposits on the electron-proton connectors trigger the
+electron's capacitor, which discharges onto the connector, which triggers
+the proton's capacitor, which discharges back. The cycle runs at a minimum
+rate determined by the connector lengths and capacitor thresholds. This is
+zero-point energy — the minimum self-sustaining cycle rate. It's never zero
+because the loop is closed.
+
+**B: CMB floor.** The cosmic microwave background (2.7K) provides a minimum
+external flux everywhere. No atom in the real universe truly receives zero
+input. The "zero-point energy" is the CMB-powered minimum discharge rate.
+This is observationally indistinguishable from QM's zero-point energy but
+has a different cause (external flux vs internal requirement).
+
+**C: The atom at true zero IS frozen and that's fine.** The deposit pattern
+persists (append-only). It has mass and charge from its static structure.
+But it has no dynamics. No "electron moving." Just a static pattern. This
+would deviate from QM's prediction that zero-point motion is real and
+measurable (it is — Casimir effect, Lamb shift). If these effects require
+ongoing activity, option C fails.
+
+### Why It's a Stress Test
+
+Options A and B preserve compatibility with QM. Option C might break it.
+The framework needs to pick one. Option A (self-sustaining loop) is the most
+elegant — the atom IS its own stream source. But it needs to be derived,
+not assumed. The trie-memory tool might help: can a trie with a closed loop
+of nodes sustain ongoing routing without external input?
+
+### Verdict
+
+**Open.** This is a genuine gap in the framework. The answer determines
+whether atoms are intrinsically active (option A — framework needs self-
+sustaining loops), extrinsically powered (option B — framework needs
+ubiquitous background flux), or frozen at zero flux (option C — framework
+might conflict with QM). The most promising direction is A, tested via a
+closed-loop trie experiment.
+
+---
+
+## 17. Radiation as Trie Query-Response
+
+### The Argument
+
+(From the April 8 session — insight from hands-on use of the trie-memory
+MCP tool.)
+
+Radiation isn't just "energy leaving the star." It's the star's trie
+branch QUERYING its children: "do you recognize this pattern?"
+
+The trie-memory `route()` function implements this exactly:
+1. Root receives token → Same? Consume. Different? Ask children.
+2. Children: Same? Consume. Different? Ask THEIR children.
+3. If nobody in the entire subtree handles it → create new child.
+
+The "radiation" is the Different signal cascading down the tree. Each
+entity gets first refusal. What nobody claims accumulates in learning
+buffers until a new entity crystallizes to handle it.
+
+**Planet formation IS the trie growing a new branch for unrecognized
+patterns.** The star radiates (sends Different tokens down). Existing
+planets consume what matches their spectra. What passes through all
+existing planets accumulates in proto-planetary regions. When enough
+accumulates (buffer reaches crystallization threshold), a new planet
+forms — specialized in exactly the patterns nobody else handles.
+
+Verified experimentally in the trie-memory tool: feeding accented
+characters (outside root's ASCII spectrum) caused 37% of tokens to
+accumulate in the proto-planetary node (node 3, learning state). The
+cascading rejection was directly observable.
+
+### The Stress Point
+
+In real physics, radiation goes OUTWARD from a star. It doesn't "come
+back as a response." The Sun doesn't receive Earth's thermal emission
+as a "query response" and use it to decide where to create new planets.
+
+**The resolution:** The query-response isn't a physical signal traveling
+back and forth. It's the STRUCTURE of the recursive routing. The root
+(star) "learns" what its children can handle by observing the residual
+deposit pattern — what's left on connectors after children have consumed
+their share. The radiation IS the residual. It doesn't need to physically
+return. The information is in the pattern, not in a signal.
+
+### Why It's Speculation
+
+The mapping between the trie `route()` function and physical radiation
+is qualitative, not quantitative. The trie-memory tool processes bytes
+in a queue. Physical radiation propagates in 3D space at the speed of
+light. Whether the cascade semantics survive the transition from data
+structure to physics is unproven.
+
+### Why It's Interesting
+
+It connects the trie_stream_filtering experiments (v4-v10) directly
+to the gravitational dynamics (Experiment 118). The trie IS the solar
+system. The root IS the star. The branches ARE the planets. The reject
+stream IS radiation. The crystallization of new branches IS planet
+formation. Two experimental lines, one mechanism.
+
+If this mapping holds, planet formation is not a separate process from
+stellar radiation — it's the SAME process viewed from different levels
+of the trie. The star doesn't "form planets." The trie grows branches
+because the root can't handle everything alone.
+
+---
+
+## 18. What Kind of Signal Creates Spatial Structure?
+
+### The Argument
+
+(From the April 8 session — connecting frequency content to trie depth.)
+
+The trie-memory processes delta-encoded tokens (changes between successive
+bytes). The root consumes "no change" (delta=128). Children handle
+progressively larger changes. Depth in the trie maps to the MAGNITUDE
+of change being processed.
+
+**If the input signal has harmonic frequency structure** (a fundamental
+frequency plus overtones), each frequency component produces a
+characteristic delta pattern. Low frequency = slow changes = small deltas
+= processed near the root. High frequency = rapid changes = large deltas
+= processed deep in the trie.
+
+**Frequency content → trie depth → spatial distance** (if depth maps to
+orbital distance). This means:
+- A single-frequency signal → one entity at one distance → one planet
+- A harmonic series (f, 2f, 3f, 4f...) → entities at integer-related
+  distances → planetary spacing (Bode's law?)
+- White noise (all frequencies equal) → no preferred distances → no
+  coherent spatial structure
+
+### The Stress Point
+
+The mapping from trie depth to spatial distance is assumed, not derived.
+In the graph experiments (v7-v14), depth in the trie doesn't straightforwardly
+map to physical distance in the graph. The spatial embedding and the
+hierarchical structure are different dimensions of the same graph. Whether
+they correlate is an empirical question.
+
+Also: Bode's law (the spacing of solar system planets follows a rough
+geometric progression) is considered numerological by most astronomers. It
+has no accepted physical explanation. If the trie model derived it from
+harmonic content in the stream, that would be remarkable — but also suspicious
+(fitting to a pattern that might be coincidental).
+
+### Why It's Speculation
+
+No simulation connecting harmonic input to spatial trie structure. The
+frequency→depth→distance chain has three unverified links. Each could break.
+
+### Why It's Interesting
+
+It's the sharpest form of the stream origin question: the stream's frequency
+content determines the solar system's structure. If the stream has a specific
+harmonic series, the planet distances follow. The stream IS the blueprint.
+Not imposed externally — encoded in the frequency structure of whatever
+the original signal was.
+
+Testable in principle: feed a pure harmonic series into the trie-memory tool.
+Measure whether the depth structure matches a planetary spacing pattern.
+
+---
+
 ## Notes
 
 This document is explicitly labeled SPECULATION. Items may be:
@@ -493,23 +827,27 @@ sequence — protects the framework's credibility. The speculation is fun.
 The theory is what matters.
 
 **If you're reading this and want to know what's actually testable, read
-RAW 126–127.** If you want to know what keeps us up at night, you're in
+RAW 126–128.** If you want to know what keeps us up at night, you're in
 the right place.
 
 ---
 
 ## References
 
-- RAW 112–127 — The testable framework (main sequence)
+- RAW 112–128 — The testable framework (main sequence)
 - Saturday–Wednesday conversations, March 21–25, 2026
+- April 1–2 conversations — Experiment 118 v7–v14, RAW 128
+- April 8 conversation — Stress tests, trie-memory exploration
 - One frozen IntelliJ instance
 - One Czech uncle's Christmas star
 - One dog named Chuckie
 - One toddler's keyboard contribution: `+++++++++++++++++++++++++++++++++`
+- One Tesla Roadster in solar orbit since 2018
+- One trie-memory MCP tool that made radiation click
 
 ---
 
-*Date: March 25, 2026*
+*Date: March 25, 2026 (original), April 8, 2026 (§14–18 added)*
 *Status: SPECULATION — permanently labeled*
 *Series: 500+ (speculation territory, separate from main RAW sequence)*
 *Rule: If it becomes testable, it graduates to the main sequence (001–499).*
