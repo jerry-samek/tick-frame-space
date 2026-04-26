@@ -79,3 +79,87 @@ def init_state(n_nodes: int, n_directed: int, energy_init=None):
 
     received = np.zeros(n_directed, dtype=np.int64)
     return E, received
+
+
+def tick(E, received, src, dst, back_edge, alpha: float):
+    """Execute one tick of the closed-loop substrate rule.
+
+    Per spec §4.2:
+      1. I_local[i] = received[back_edge[i]] (what came in last tick via back-edge)
+      2. w_e = max(0, 1 + α·(mean(I) − I_local)), normalized per cell
+      3. target_e = E[src] · w_e; outgoing[e] = floor(target_e)
+      4. residue R[c] = E[c] − sum of outgoing on c's outgoing edges (held to next tick)
+      5. received_per_cell[c] = sum of outgoing on c's incoming edges
+      6. E_new = R + received_per_cell
+      7. received_new = outgoing
+
+    Args:
+        E: (N,) int64 -- current cell energy
+        received: (2M,) int64 -- quanta received on each directed edge last tick
+        src, dst, back_edge: (2M,) int64 -- directed-edge structure
+        alpha: float -- wake-bias strength
+
+    Returns:
+        E_new: (N,) int64 -- cell energy after tick
+        received_new: (2M,) int64 -- quanta sent on each directed edge this tick
+    """
+    n_nodes = E.shape[0]
+    n_directed = src.shape[0]
+
+    # Step 1: incoming-via-back-edge per directed edge
+    # For directed edge i (src=c, dst=n), I_local[i] = quanta cell c received from n last tick.
+    # That arrived through the back-edge (n->c), whose index is back_edge[i].
+    I_local = received[back_edge].astype(np.float64)
+
+    # Step 2: compute mean(I) per cell, broadcast to per directed edge
+    sum_I_per_cell = np.zeros(n_nodes, dtype=np.float64)
+    np.add.at(sum_I_per_cell, src, I_local)
+    degree = np.zeros(n_nodes, dtype=np.int64)
+    np.add.at(degree, src, 1)
+    mean_I_per_cell = np.zeros(n_nodes, dtype=np.float64)
+    nonzero = degree > 0
+    mean_I_per_cell[nonzero] = sum_I_per_cell[nonzero] / degree[nonzero]
+    mean_I_per_edge = mean_I_per_cell[src]  # (2M,)
+
+    # Wake-bias weights per directed edge
+    w = 1.0 + alpha * (mean_I_per_edge - I_local)
+    w = np.maximum(w, 0.0)  # clamp negatives (occurs when alpha large)
+
+    # Normalize per cell (sum to 1 across cell's outgoing edges)
+    sum_w_per_cell = np.zeros(n_nodes, dtype=np.float64)
+    np.add.at(sum_w_per_cell, src, w)
+    sum_w_per_edge = sum_w_per_cell[src]
+    # Avoid division by zero: if cell's total w is 0 (all edges clamped), fall back to uniform
+    fallback = sum_w_per_edge == 0
+    if fallback.any():
+        # Per-cell fallback to 1/degree
+        w[fallback] = 1.0
+        # Recompute affected sums
+        sum_w_per_cell = np.zeros(n_nodes, dtype=np.float64)
+        np.add.at(sum_w_per_cell, src, w)
+        sum_w_per_edge = sum_w_per_cell[src]
+    sum_w_per_edge = np.where(sum_w_per_edge > 0, sum_w_per_edge, 1.0)
+    w = w / sum_w_per_edge
+
+    # Step 3: targets and floors
+    E_per_edge = E[src].astype(np.float64)
+    target = E_per_edge * w
+    outgoing = np.floor(target).astype(np.int64)
+
+    # Step 4: residue per cell (E - sum of outgoing on its outgoing edges)
+    sent_per_cell = np.zeros(n_nodes, dtype=np.int64)
+    np.add.at(sent_per_cell, src, outgoing)
+    residue = E - sent_per_cell
+
+    # Step 5: received per cell (sum of outgoing on its incoming directed edges)
+    # An incoming edge to cell c is one with dst[i] == c.
+    received_per_cell = np.zeros(n_nodes, dtype=np.int64)
+    np.add.at(received_per_cell, dst, outgoing)
+
+    # Step 6: new energy
+    E_new = residue + received_per_cell
+
+    # Step 7: new per-edge incoming = this tick's outgoing
+    received_new = outgoing
+
+    return E_new, received_new
