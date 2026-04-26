@@ -207,3 +207,46 @@ def test_tick_wake_bias_creates_asymmetry():
     assert out_to_1 < out_to_2, f"Expected backflow penalty: {out_to_1} >= {out_to_2}"
     assert out_to_1 < out_to_3, f"Expected backflow penalty: {out_to_1} >= {out_to_3}"
     assert out_to_1 + out_to_2 + out_to_3 == 300, "Conservation violated"
+
+
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from metrics import per_tick_summary
+
+
+def test_per_tick_summary_returns_expected_keys():
+    rng = np.random.default_rng(7)
+    E = rng.integers(0, 100, size=50, dtype=np.int64)
+
+    src = np.array([0, 0, 1], dtype=np.int64)
+    dst = np.array([1, 2, 0], dtype=np.int64)
+
+    summary = per_tick_summary(E, src)
+
+    assert 'total_energy' in summary
+    assert 'max_E' in summary
+    assert 'mean_E' in summary
+    assert 'n_firing_cells' in summary
+    assert summary['total_energy'] == int(E.sum())
+    assert summary['max_E'] == int(E.max())
+
+
+from metrics import cluster_high_energy
+
+
+def test_cluster_high_energy_finds_obvious_cluster():
+    """A clear concentration is identified as a single cluster."""
+    n = 100
+    coords = np.random.default_rng(42).random((n, 3))
+    E = np.zeros(n, dtype=np.int64)
+    # Put 5 high-energy cells near (0.5, 0.5, 0.5)
+    for i in range(5):
+        coords[i] = [0.5 + i * 0.005, 0.5, 0.5]
+        E[i] = 100
+
+    clusters = cluster_high_energy(E, coords, threshold_quantile=0.9)
+    assert len(clusters) >= 1
+    # Top cluster's mass should be close to 500 (5 × 100)
+    assert clusters[0]['mass'] >= 400
+    assert clusters[0]['cell_count'] >= 4
