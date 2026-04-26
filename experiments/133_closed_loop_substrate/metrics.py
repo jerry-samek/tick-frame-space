@@ -44,7 +44,6 @@ def cluster_high_energy(E, coords, threshold_quantile=0.95):
         list of dicts: [{'centroid': (x,y,z), 'mass': total_E, 'cell_count': n}, ...]
         sorted descending by mass
     """
-    from scipy.spatial import cKDTree
     from scipy.cluster.hierarchy import fcluster, linkage
 
     threshold = np.quantile(E, threshold_quantile)
