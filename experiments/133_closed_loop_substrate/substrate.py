@@ -55,3 +55,27 @@ def build_rgg(n_nodes: int, radius: float, seed: int = 42):
     ])
 
     return coords, src, dst, back_edge
+
+
+def init_state(n_nodes: int, n_directed: int, energy_init=None):
+    """Initialize cell state and per-edge incoming history.
+
+    Args:
+        n_nodes: number of cells
+        n_directed: number of directed edges (= 2M)
+        energy_init: optional (N,) int array of initial energy per cell.
+                     If None, all cells start at 0.
+
+    Returns:
+        E: (N,) int64 -- per-cell energy
+        received: (2M,) int64 -- quanta received on each directed edge last tick
+    """
+    if energy_init is None:
+        E = np.zeros(n_nodes, dtype=np.int64)
+    else:
+        E = np.asarray(energy_init, dtype=np.int64).copy()
+        if E.shape != (n_nodes,):
+            raise ValueError(f"energy_init shape {E.shape} != ({n_nodes},)")
+
+    received = np.zeros(n_directed, dtype=np.int64)
+    return E, received
