@@ -1,0 +1,34 @@
+=== Phase 1 sanity, α=0.0 ===
+Building RGG: N=50000, radius=0.04
+  edges (directed): 642,596, mean degree: 12.9
+  total energy: 4,972,158, mean E per cell: 99.4
+  tick   100 max_E=  237 std_E= 30.41 firing= 49996 (16 t/s, eta 56s)
+  tick   200 max_E=  233 std_E= 30.59 firing= 49996 (16 t/s, eta 50s)
+  tick   300 max_E=  239 std_E= 30.70 firing= 49996 (16 t/s, eta 43s)
+  tick   400 max_E=  234 std_E= 30.75 firing= 49996 (17 t/s, eta 35s)
+  tick   500 max_E=  240 std_E= 30.76 firing= 49996 (17 t/s, eta 30s)
+  tick   600 max_E=  238 std_E= 30.78 firing= 49996 (18 t/s, eta 23s)
+  tick   700 max_E=  233 std_E= 30.80 firing= 49996 (18 t/s, eta 17s)
+  tick   800 max_E=  233 std_E= 30.80 firing= 49996 (18 t/s, eta 11s)
+  tick   900 max_E=  230 std_E= 30.80 firing= 49996 (17 t/s, eta 6s)
+  tick  1000 max_E=  242 std_E= 30.80 firing= 49996 (17 t/s, eta 0s)
+  saved W:\workspace\tick-frame-space\experiments\133_closed_loop_substrate\results\phase1_alpha0.0.json
+  OK: std stable at α=0 (28.89 → 30.80)
+=== Phase 1 sanity, α=1.0 ===
+Building RGG: N=50000, radius=0.04
+  edges (directed): 642,596, mean degree: 12.9
+  total energy: 4,972,158, mean E per cell: 99.4
+  tick   100 max_E=  338 std_E= 36.65 firing= 49985 (14 t/s, eta 65s)
+  tick   200 max_E=  372 std_E= 39.57 firing= 49987 (14 t/s, eta 58s)
+  tick   300 max_E=  391 std_E= 41.04 firing= 49985 (14 t/s, eta 51s)
+  tick   400 max_E=  403 std_E= 41.86 firing= 49984 (14 t/s, eta 44s)
+  tick   500 max_E=  403 std_E= 42.39 firing= 49987 (14 t/s, eta 36s)
+  tick   600 max_E=  410 std_E= 42.76 firing= 49986 (14 t/s, eta 29s)
+  tick   700 max_E=  417 std_E= 43.03 firing= 49986 (14 t/s, eta 21s)
+  tick   800 max_E=  421 std_E= 43.21 firing= 49985 (14 t/s, eta 14s)
+  tick   900 max_E=  415 std_E= 43.35 firing= 49984 (14 t/s, eta 7s)
+  tick  1000 max_E=  424 std_E= 43.42 firing= 49987 (14 t/s, eta 0s)
+  saved W:\workspace\tick-frame-space\experiments\133_closed_loop_substrate\results\phase1_alpha1.0.json
+  OK: max_E=424 bounded
+
+Phase 1 complete. Conservation passed all ticks.
