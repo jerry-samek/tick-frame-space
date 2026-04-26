@@ -103,6 +103,9 @@ def tick(E, received, src, dst, back_edge, alpha: float):
         E_new: (N,) int64 -- cell energy after tick
         received_new: (2M,) int64 -- quanta sent on each directed edge this tick
     """
+    assert E.dtype == np.int64 and received.dtype == np.int64, \
+        f"tick requires int64 inputs; got E.dtype={E.dtype}, received.dtype={received.dtype}"
+
     n_nodes = E.shape[0]
     n_directed = src.shape[0]
 
@@ -129,15 +132,11 @@ def tick(E, received, src, dst, back_edge, alpha: float):
     sum_w_per_cell = np.zeros(n_nodes, dtype=np.float64)
     np.add.at(sum_w_per_cell, src, w)
     sum_w_per_edge = sum_w_per_cell[src]
-    # Avoid division by zero: if cell's total w is 0 (all edges clamped), fall back to uniform
-    fallback = sum_w_per_edge == 0
-    if fallback.any():
-        # Per-cell fallback to 1/degree
-        w[fallback] = 1.0
-        # Recompute affected sums
-        sum_w_per_cell = np.zeros(n_nodes, dtype=np.float64)
-        np.add.at(sum_w_per_cell, src, w)
-        sum_w_per_edge = sum_w_per_cell[src]
+    # Algebraic note: for any cell with degree k >= 1, the unclamped weights
+    # sum to exactly k: Σ_e (1 + α·(mean − I_local_e)) = k + α·(k·mean − Σ_e I_local_e) = k.
+    # Clamping individual negative entries to 0 can only INCREASE the sum, never zero it.
+    # So sum_w_per_edge can only be 0 for degree-0 isolated cells (empty slice -> 0);
+    # the np.where guard below covers that case alone.
     sum_w_per_edge = np.where(sum_w_per_edge > 0, sum_w_per_edge, 1.0)
     w = w / sum_w_per_edge
 

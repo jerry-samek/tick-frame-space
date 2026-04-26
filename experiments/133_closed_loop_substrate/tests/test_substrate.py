@@ -129,6 +129,23 @@ def test_tick_conservation_many_ticks():
     for _ in range(50):
         E, received = tick(E, received, src, dst, back_edge, alpha=2.0)
         assert E.sum() == total_initial
+        assert (E >= 0).all(), f"negative energy detected: min={E.min()}"
+
+
+def test_tick_conservation_negative_alpha():
+    """Conservation holds under α < 0 (a regime the experiment will sweep)."""
+    rng = np.random.default_rng(789)
+    coords, src, dst, back_edge = build_rgg(n_nodes=200, radius=0.18, seed=13)
+    n_directed = len(src)
+
+    energy_init = rng.integers(0, 100, size=200, dtype=np.int64)
+    E, received = init_state(200, n_directed, energy_init)
+    total_initial = E.sum()
+
+    for _ in range(30):
+        E, received = tick(E, received, src, dst, back_edge, alpha=-1.5)
+        assert E.sum() == total_initial
+        assert (E >= 0).all()
 
 
 def test_tick_isolated_cell_unchanged():
