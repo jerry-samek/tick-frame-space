@@ -1,0 +1,24 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- W:\tools\python\python.exe
+cachedir: .pytest_cache
+rootdir: W:\workspace\tick-frame-space
+plugins: anyio-4.11.0
+collecting ... collected 3 items
+
+experiments/134_pattern_coherence/phase2_test.py::test_S1_face_adjacent_records_contact_event 
+S1 final n_test_alive: 0
+S1 first_break: 2
+S1 initial centroid: (2.5, 0.5, 0.0)
+S1 final centroid: None
+S1 drift vector: None
+S1 identity (first 10 cycles): [(1, 0), (2, 0), (3, 0), (4, 0), (5, 0), (6, 0), (7, 0), (8, 0), (9, 0), (10, 0)]
+S1 reference hash: 951a9014873bfbb92266685db59c271e496f93fea267be9466833765c467e751
+PASSED
+experiments/134_pattern_coherence/phase2_test.py::test_S2_one_cell_gap_is_invariant 
+S2 reference hash: 7a64b8296923d98d0edef96253f83d93a476354f384bab52d5bc244efcd31264
+PASSED
+experiments/134_pattern_coherence/phase2_test.py::test_S3_two_cell_gap_is_invariant 
+S3 reference hash: 0cc4dc5e8e7812e219397e03956f8daca41d296e29cbc92d6ad5b58353f0954f
+PASSED
+
+============================== 3 passed in 0.28s ==============================
