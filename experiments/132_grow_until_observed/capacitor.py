@@ -31,4 +31,16 @@ def relax_threshold(cell: "Cell", current_tick: int, baseline: float, rate: floa
 
 
 def check_and_fire(cell: "Cell", current_tick: int, adaptation_rate: float) -> bool:
-    raise NotImplementedError
+    """Check if charge crossed threshold; if so, fire.
+
+    Returns True if cell fired this tick.
+    On firing: charge resets to 0, threshold rises by adaptation_rate,
+    state set to DISCHARGED, last_discharge_tick recorded.
+    """
+    if cell.charge_level < cell.threshold:
+        return False
+    cell.charge_level = 0.0
+    cell.threshold += adaptation_rate
+    cell.last_discharge_tick = current_tick
+    cell.state = CellState.DISCHARGED
+    return True
