@@ -167,3 +167,66 @@ def test_step_b_component_raises_on_non_uniqueness():
     # produces wrong output.
     with pytest.raises(ValueError):
         mp.step_b_component(canvas, component)
+
+
+import rule as r
+
+
+def test_tick_multi_isolated_F1_invariant_over_K_ticks():
+    """A single isolated F1 pattern under tick_multi should be a fixed point
+    after K=4 ticks, just like Phase 1."""
+    canvas: s.Canvas = {}
+    cycle = [(0, 0, 0), (1, 0, 0), (1, 1, 0), (0, 1, 0)]
+    r.bootstrap(canvas, cycle, sign=1)
+    initial = dict(canvas)
+    for _ in range(4):
+        mp.tick_multi(canvas)
+    assert canvas == initial
+
+
+def test_tick_multi_two_separated_F1s_both_invariant():
+    """Two F1 patterns separated by 1 empty cell are independent components.
+    Each should remain invariant over K=4 ticks of tick_multi."""
+    canvas: s.Canvas = {}
+    cycle_a = [(0, 0, 0), (1, 0, 0), (1, 1, 0), (0, 1, 0)]
+    cycle_b = [(3, 0, 0), (4, 0, 0), (4, 1, 0), (3, 1, 0)]
+    r.bootstrap(canvas, cycle_a, sign=1)
+    r.bootstrap(canvas, cycle_b, sign=1)
+    initial = dict(canvas)
+    for _ in range(4):
+        mp.tick_multi(canvas)
+    assert canvas == initial
+
+
+def test_tick_multi_failed_component_decays_quietly():
+    """A component whose step_b_component raises ValueError (e.g., wedged
+    contact between two patterns) should not crash tick_multi. The
+    component's cells should continue to decay over subsequent ticks
+    without renewal, and eventually expire to zero. Other components
+    must continue normally."""
+    canvas: s.Canvas = {}
+    # Healthy component (will be invariant)
+    healthy = [(10, 10, 0), (11, 10, 0), (11, 11, 0), (10, 11, 0)]
+    r.bootstrap(canvas, healthy, sign=1)
+    # Wedged component (two face-adjacent F1s — merged ambiguous component)
+    r.bootstrap(canvas, [(0, 0, 0), (1, 0, 0), (1, 1, 0), (0, 1, 0)], sign=1)
+    r.bootstrap(canvas, [(2, 0, 0), (3, 0, 0), (3, 1, 0), (2, 1, 0)], sign=1)
+
+    # Run K ticks. Healthy component should be invariant; merged should
+    # have lost cells (some / all expired without renewal).
+    healthy_initial = {c: canvas[c] for c in healthy}
+    for _ in range(4):
+        mp.tick_multi(canvas)
+
+    # Healthy survived
+    for c in healthy:
+        assert canvas.get(c) == healthy_initial[c], (
+            f"healthy component cell {c} changed: was {healthy_initial[c]}, "
+            f"now {canvas.get(c)}"
+        )
+
+    # At least some cells of the merged 8-cell component dissolved
+    merged_cells = [(0, 0, 0), (1, 0, 0), (1, 1, 0), (0, 1, 0),
+                    (2, 0, 0), (3, 0, 0), (3, 1, 0), (2, 1, 0)]
+    n_alive = sum(1 for c in merged_cells if c in canvas)
+    assert n_alive < 8, "expected some merged-component cells to dissolve, but all 8 alive"

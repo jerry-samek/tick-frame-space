@@ -68,3 +68,26 @@ def step_b_component(canvas: Canvas, component: set[Cell]) -> None:
     gamma_max = canvas[c_max]
     sign = 1 if gamma_max > 0 else -1
     canvas[c0] = sign * (abs(gamma_max) + 1)
+
+
+def tick_multi(canvas: Canvas) -> None:
+    """One full substrate tick on a multi-pattern canvas:
+        Step A — decay (every nonzero cell)
+        Step B — for each connected component, apply step_b_component
+                 with per-component failure tolerance (a wedged or
+                 non-unique component's ValueError is caught; the
+                 component's cells will continue to decay on subsequent
+                 ticks without renewal).
+
+    Other components are unaffected by one component's failure.
+    """
+    decay(canvas)
+    components = connected_components(canvas)
+    for component in components:
+        try:
+            step_b_component(canvas, component)
+        except ValueError:
+            # Component failed (wedged or non-unique). Its cells will
+            # continue to decay without renewal on subsequent ticks. Move
+            # on; do not crash tick_multi.
+            continue
