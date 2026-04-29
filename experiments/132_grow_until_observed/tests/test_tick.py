@@ -2,7 +2,7 @@
 from capacitor import Cell, CellState
 from connectors import Connector
 from parameters import Parameters
-from tick import tick
+from tick import build_connector_index, tick
 
 
 def _make_simple_setup():
@@ -59,3 +59,48 @@ def test_tick_state_resets_to_empty_after_discharge():
     params = Parameters()
     tick(cells, connectors, current_tick=1, params=params)
     assert cells[(0, 0, 0)].state == CellState.EMPTY
+
+
+def test_tick_with_precomputed_index_matches_unindexed():
+    """Running tick() with a precomputed connector_index must yield identical
+    results to running it without (which builds the index internally)."""
+    # Build two identical fixtures and run them in parallel for many ticks.
+    cells_a, connectors_a = _make_simple_setup()
+    cells_b, connectors_b = _make_simple_setup()
+    params = Parameters()
+
+    index_b = build_connector_index(connectors_b)
+
+    fired_a_log = []
+    fired_b_log = []
+    for t in range(1, 21):
+        fired_a_log.append(tick(cells_a, connectors_a, current_tick=t, params=params))
+        fired_b_log.append(
+            tick(cells_b, connectors_b, current_tick=t, params=params, connector_index=index_b)
+        )
+
+    # Firing histories must match exactly.
+    assert fired_a_log == fired_b_log
+
+    # Final cell states must match exactly.
+    for pos in cells_a:
+        assert cells_a[pos].charge_level == cells_b[pos].charge_level
+        assert cells_a[pos].threshold == cells_b[pos].threshold
+        assert cells_a[pos].state == cells_b[pos].state
+        assert cells_a[pos].last_discharge_tick == cells_b[pos].last_discharge_tick
+
+    # Connector loads must match exactly.
+    assert connectors_a[0].current_load == connectors_b[0].current_load
+
+
+def test_build_connector_index_maps_endpoints():
+    """build_connector_index returns a dict mapping each endpoint to its connectors."""
+    c1 = Connector(a=(0, 0, 0), b=(1, 0, 0))
+    c2 = Connector(a=(1, 0, 0), b=(2, 0, 0))
+    c3 = Connector(a=(0, 0, 0), b=(0, 1, 0))
+    index = build_connector_index([c1, c2, c3])
+    # Compare by identity (Connector is not hashable due to mutable list field).
+    assert {id(x) for x in index[(0, 0, 0)]} == {id(c1), id(c3)}
+    assert {id(x) for x in index[(1, 0, 0)]} == {id(c1), id(c2)}
+    assert {id(x) for x in index[(2, 0, 0)]} == {id(c2)}
+    assert {id(x) for x in index[(0, 1, 0)]} == {id(c3)}
