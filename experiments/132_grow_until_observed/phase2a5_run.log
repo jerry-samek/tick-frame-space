@@ -1,0 +1,94 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- W:\tools\python\python.exe
+cachedir: .pytest_cache
+rootdir: W:\workspace\tick-frame-space
+plugins: anyio-4.11.0
+collecting ... collected 1 item
+
+experiments/132_grow_until_observed/phase2a5_test.py::test_phase2a5_superposition 
+========== PHASE 2A.5: THREE-RUN SUPERPOSITION TEST ==========
+Running R1 (planet-only)...
+
+  [R1 planet-only] completed 20400 ticks; final snapshot at tick 20400
+Running R2 (test-only)...
+
+  [R2 test-only] completed 20400 ticks; final snapshot at tick 20400
+Running R3 (planet+test combined)...
+
+  [R3 combined] completed 20400 ticks; final snapshot at tick 20400
+
+----- Linearity statistics -----
+chi^2 (thresholds): 0.168887
+chi^2 (loads):      0.168357
+
+----- R1 (planet-only) threshold(r) profile from planet centroid -----
+  r=0: threshold = 100.0500
+  r=1: threshold = 100.0500
+  r=2: threshold = 100.0500
+  r=3: threshold = 100.0500
+  r=4: threshold = 100.0500
+  r=5: threshold = 100.0500
+  r=6: threshold = 100.0500
+  r=7: threshold = 100.0500
+  r=8: threshold = 100.0500
+  r=9: threshold = 100.0500
+  r=10: threshold = 100.0500
+  r=11: threshold = 100.0500
+  R1 threshold(r) monotonically decreasing? False
+
+----- R1 (planet-only) load(r) profile from planet centroid -----
+  r=0: load = 1.0000
+  r=1: load = 1.0000
+  r=2: load = 1.0000
+  r=3: load = 1.0000
+  r=4: load = 1.0000
+  r=5: load = 1.0000
+  r=6: load = 1.0000
+  r=7: load = 1.0000
+  r=8: load = 1.0000
+  r=9: load = 1.0000
+  r=10: load = 1.0000
+  r=11: load = 1.0000
+  R1 load(r) monotonically decreasing? True
+
+----- Entity-relative threshold profile (R3-R2)(r) from planet centroid -----
+  r=0: (R3-R2) threshold = 51.5375
+  r=1: (R3-R2) threshold = 51.5187
+  r=2: (R3-R2) threshold = 57.1205
+  r=3: (R3-R2) threshold = 60.3257
+  r=4: (R3-R2) threshold = 56.9737
+  r=5: (R3-R2) threshold = 56.8173
+  r=6: (R3-R2) threshold = 58.1224
+  r=7: (R3-R2) threshold = 61.1922
+  r=8: (R3-R2) threshold = 68.2535
+  r=9: (R3-R2) threshold = 65.5250
+  r=10: (R3-R2) threshold = 63.8227
+  r=11: (R3-R2) threshold = 62.7485
+  Entity-relative threshold monotonically decreasing? False
+
+----- Entity-relative load profile (R3-R2)(r) from planet centroid -----
+  r=0: (R3-R2) load = 0.3333
+  r=1: (R3-R2) load = 0.4412
+  r=2: (R3-R2) load = 0.2500
+  r=3: (R3-R2) load = 0.4231
+  r=4: (R3-R2) load = 0.2669
+  r=5: (R3-R2) load = 0.3192
+  r=6: (R3-R2) load = 0.3448
+  r=7: (R3-R2) load = 0.3226
+  r=8: (R3-R2) load = 0.3452
+  r=9: (R3-R2) load = 0.3214
+  r=10: (R3-R2) load = 0.3543
+  r=11: (R3-R2) load = 0.3235
+  Entity-relative load monotonically decreasing? False
+
+----- OUTCOME CATEGORIZATION -----
+Outcome category: 3 (superposition fails)
+  R1 thresholds monotonic? False
+  R1 loads monotonic? True
+  Entity-relative threshold monotonic? False
+  Entity-relative load monotonic? False
+
+========== END PHASE 2A.5 ==========
+PASSED
+
+======================== 1 passed in 186.49s (0:03:06) ========================
