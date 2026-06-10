@@ -1,6 +1,6 @@
 # v11 — Summary and closure
 
-**Status: CLOSED 2026-05-12.**
+**Status: CLOSED 2026-05-12.** **Addendum 2026-06-10:** the one open question below (cross-band correlation) was tested as Exp 04 and closed **negative** — the dependency is db8 filter leakage of the fundamental + shared loudness envelope, not harmonic structure; net trie-exploitable information ≈ 0.016 bits/symbol (zero net parent gain on held-out data). See `EXPERIMENT_04_crossband.md` / `results_04.md`. v11 now has no open questions.
 **Goal:** explore whether trie stream filtering (v4-v10) can serve as the basis of a lossless audio codec.
 **Outcome:** the trie is not the right tool for lossless audio compression. The "layered WAV" framing is the honest characterization. The codec direction is shelved; one specific scientific question remains open (cross-band correlation, never tested).
 
@@ -68,7 +68,7 @@ With gzip on top of Trie A, the tick stream compresses well and the multiplier d
 - "Fixed universal frequency basis" — Exp 01 showed energy distribution is content-dependent.
 - "Raw-signal TPs are useful directly" — Exp 01 showed they're only meaningful on near-mono-tonal content.
 
-**Untested (only open scientific question):**
+**Untested (only open scientific question)** *(answered 2026-06-10 — Exp 04, negative; see results_04.md)*:
 - **Cross-band / cross-time correlation.** Exp 03's W4 (2nd-harmonic band) had max|R| = 0.274 — higher than the dominant W3's 0.142. Harmonics correlate across bands, and per-band LPC can't see that. **A trie operating cross-band might still add value LPC alone can't.** This is the one direction the diagnostics did not rule out.
 
 ---
