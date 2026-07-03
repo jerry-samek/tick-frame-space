@@ -1,0 +1,28 @@
+sustains check: {'FLAT_K8': True, 'CUBE_K8': True}
+
+### Q1/Q2: R1 continuous-noise driving (expected: dissolves fragile ring) ###
+
+--- p=0.02 ---
+  FLAT_K8: dpr_sub=nan+/-nan ring_alive_frac=0.000 max_spawned_cells=0
+  CUBE_K8: dpr_sub=nan+/-nan ring_alive_frac=0.000 max_spawned_cells=0
+  => CUBE vs FLAT separation = inf pooled-sd (SEPARATES)
+
+--- p=0.05 ---
+  FLAT_K8: dpr_sub=nan+/-nan ring_alive_frac=0.000 max_spawned_cells=0
+  CUBE_K8: dpr_sub=nan+/-nan ring_alive_frac=0.000 max_spawned_cells=0
+  => CUBE vs FLAT separation = inf pooled-sd (SEPARATES)
+
+--- p=0.1 ---
+  FLAT_K8: dpr_sub=nan+/-nan ring_alive_frac=0.000 max_spawned_cells=0
+  CUBE_K8: dpr_sub=nan+/-nan ring_alive_frac=0.000 max_spawned_cells=0
+  => CUBE vs FLAT separation = inf pooled-sd (SEPARATES)
+
+--- p=0.2 ---
+  FLAT_K8: dpr_sub=nan+/-nan ring_alive_frac=0.000 max_spawned_cells=0
+  CUBE_K8: dpr_sub=nan+/-nan ring_alive_frac=0.000 max_spawned_cells=0
+  => CUBE vs FLAT separation = inf pooled-sd (SEPARATES)
+
+=== memory-subtraction readout: fixed-K embedding separation ===
+FLAT_K8 dpr_sub = 4.360 +/- 0.025
+CUBE_K8 dpr_sub = 4.841 +/- 0.020
+separation = 21.10 pooled-sd (SEPARATES)
