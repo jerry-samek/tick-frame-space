@@ -1,0 +1,32 @@
+=== F1/F2: full-census RG sweep (survivors vs non-survivors) ===
+  K=8: 11 classes | survivors pos=[-0.075, 0.322] | non-survivors pos: min=-0.075 median=0.000 max=0.322 (ceiling class: chords=4, rank=3)
+    non-survivors with pos <= 0.5: 9/9 | EXPAND reachable in class: False
+    chords=2: survivor pos=[-0.075] vs non-survivor median=0.055 (n=5)
+  K=10: 73 classes | survivors pos=[-0.099, 0.165] | non-survivors pos: min=-0.099 median=0.000 max=0.166 (ceiling class: chords=4, rank=3)
+    non-survivors with pos <= 0.5: 71/71 | EXPAND reachable in class: False
+    chords=3: survivor pos=[-0.099] vs non-survivor median=0.005 (n=30)
+    chords=5: survivor pos=[0.165] vs non-survivor median=0.165 (n=2)
+
+=== F3: dead-pattern divergence baseline (evolved reference; diagnostic) ===
+  non-survivor (chords=2, rank=3): divergence dpr_sub=5.127 n_active=10 RG=2.229 (survivor M ladder: FLAT 4.36 / CUBE 4.84)
+  non-survivor (chords=2, rank=2): divergence dpr_sub=4.827 n_active=8 RG=2.783 (survivor M ladder: FLAT 4.36 / CUBE 4.84)
+  non-survivor (chords=1, rank=3): divergence dpr_sub=6.695 n_active=9 RG=2.518 (survivor M ladder: FLAT 4.36 / CUBE 4.84)
+
+=== F4: LAT anchor locality check ===
+  |ball(r=6)| on 12^3 torus (n=1728): [374, 374, 374]
+  K=8: LAT(r=3)=6.484+/-0.182 (registered r=6 anchor was 6.822; EXP=6.981)
+  K=10: LAT(r=3)=7.874+/-0.268 (registered r=6 anchor was 8.572; EXP=8.963)
+
+=== F5: RG sensitivity of the T3-B rank swap (FLAT_K6 vs FLAT_K8) ===
+  lam=0.95 W=100: RG(K6)=2.340 RG(K8)=2.459 -> K6>K8: False
+  lam=0.95 W=200: RG(K6)=2.332 RG(K8)=2.447 -> K6>K8: False
+  lam=0.95 W=400: RG(K6)=2.330 RG(K8)=2.442 -> K6>K8: False
+  lam=0.99 W=100: RG(K6)=2.290 RG(K8)=2.276 -> K6>K8: True
+  lam=0.99 W=200: RG(K6)=2.258 RG(K8)=2.229 -> K6>K8: True
+  lam=0.99 W=400: RG(K6)=2.246 RG(K8)=2.205 -> K6>K8: True
+  lam=0.999 W=100: RG(K6)=2.288 RG(K8)=2.241 -> K6>K8: True
+  lam=0.999 W=200: RG(K6)=2.262 RG(K8)=2.211 -> K6>K8: True
+  lam=0.999 W=400: RG(K6)=2.242 RG(K8)=2.178 -> K6>K8: True
+  ordering stable across grid: False
+
+wall clock: 208.4s

@@ -1,0 +1,47 @@
+=== readings: M (frozen) + fixture structure ===
+  FLAT_K4: K=4 rank=2 chords=0 M=2.851+/-0.013 RG=2.000
+  FLAT_K6: K=6 rank=2 chords=1 M=3.779+/-0.028 RG=2.258
+  FLAT_K8: K=8 rank=2 chords=2 M=4.361+/-0.023 RG=2.229
+  CUBE_K8: K=8 rank=3 chords=4 M=4.841+/-0.018 RG=3.927
+  FLAT_K10: K=10 rank=2 chords=3 M=5.447+/-0.022 RG=2.285
+  TOWER_K10: K=10 rank=3 chords=5 M=6.898+/-0.023 RG=3.798
+
+=== impulse anchors at matched N=K ===
+  K=4: CK=2.000 LAT=2.973+/-0.066 EXP=2.984+/-0.038
+  K=6: CK=2.212 LAT=4.917+/-0.078 EXP=4.985+/-0.042
+  K=8: CK=2.549 LAT=6.822+/-0.096 EXP=6.981+/-0.044
+  K=10: CK=2.852 LAT=8.572+/-0.269 EXP=8.963+/-0.063
+
+=== S1: kick battery ===
+  FLAT_K4: S1=0.493 (onring_1:8/32 onring_K:12/32 offring_K:47/64 delete:4/16)
+  FLAT_K6: S1=0.404 (onring_1:12/72 onring_K:18/72 offring_K:90/132 delete:6/36)
+  FLAT_K8: S1=0.408 (onring_1:16/128 onring_K:29/128 offring_K:163/224 delete:14/64)
+  CUBE_K8: S1=0.256 (onring_1:16/128 onring_K:24/128 offring_K:83/192 delete:8/64)
+  FLAT_K10: S1=0.380 (onring_1:20/200 onring_K:40/200 offring_K:233/340 delete:26/100)
+  TOWER_K10: S1=0.223 (onring_1:20/200 onring_K:30/200 offring_K:114/280 delete:10/100)
+
+=== S2: noise time-to-death (p=0.005, 12 seeds) ===
+  FLAT_K4: S2_median=84 ticks=[3, 116, 35, 48, 83, 8, 144, 9, 177, 168, 102, 84]
+  FLAT_K6: S2_median=56 ticks=[4, 76, 25, 54, 45, 5, 98, 6, 57, 111, 68, 183]
+  FLAT_K8: S2_median=38 ticks=[2, 42, 20, 2, 34, 3, 74, 7, 90, 49, 53, 43]
+  CUBE_K8: S2_median=38 ticks=[2, 42, 21, 2, 34, 3, 74, 7, 90, 49, 53, 43]
+  FLAT_K10: S2_median=33 ticks=[6, 34, 14, 7, 32, 6, 64, 8, 36, 37, 43, 109]
+  TOWER_K10: S2_median=34 ticks=[6, 36, 14, 7, 32, 6, 64, 9, 36, 37, 43, 111]
+
+=== decisions ===
+  T3-A FLAT_K4: pos=0.000 (RG=2.000, CK=2.000, LAT=2.973-2sd=2.841)
+  T3-A FLAT_K6: pos=0.017 (RG=2.258, CK=2.212, LAT=4.917-2sd=4.762)
+  T3-A FLAT_K8: pos=-0.075 (RG=2.229, CK=2.549, LAT=6.822-2sd=6.630)
+  T3-A CUBE_K8: pos=0.322 (RG=3.927, CK=2.549, LAT=6.822-2sd=6.630)
+  T3-A FLAT_K10: pos=-0.099 (RG=2.285, CK=2.852, LAT=8.572-2sd=8.035)
+  T3-A TOWER_K10: pos=0.165 (RG=3.798, CK=2.852, LAT=8.572-2sd=8.035)
+  T3-A verdict: CLUSTER-LOW
+  T3-B: Spearman(M, RG) = 0.771 -> attribution does NOT generalize (open anomaly)
+  T3-C FLAT_K8 vs CUBE_K8 [kick]: d_rob=-0.152 d_rank=+0.479 -> negative
+  T3-C FLAT_K8 vs CUBE_K8 [S2_median]: robustness tie (d_rob=0) — no sign
+  T3-C FLAT_K10 vs TOWER_K10 [kick]: d_rob=-0.157 d_rank=+1.451 -> negative
+  T3-C FLAT_K10 vs TOWER_K10 [S2_median]: d_rob=+1.000 d_rank=+1.451 -> positive
+  T3-C verdict: INCONCLUSIVE
+  T3-D normalized (dpr_sub/(N-1)): {'FLAT_K4': 0.95, 'FLAT_K6': 0.756, 'FLAT_K8': 0.623, 'CUBE_K8': 0.692, 'FLAT_K10': 0.605, 'TOWER_K10': 0.766}
+
+wall clock: 53.5s
