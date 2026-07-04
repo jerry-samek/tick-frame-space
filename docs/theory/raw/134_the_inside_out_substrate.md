@@ -158,6 +158,7 @@ The ontology mostly *explains structure* (phenomenology, relativistic observatio
   - *Keepers:* ancestry-depth objectivity gradient; laws-inherited vs present-manufactured split; objects-as-tapped-bundles ("monadology with windows"); the primitive is the *merge*, not "the observer" (§13.2).
   - *Locations added:* Whitehead (near-exact, incl. the extensive-continuum warning), Cahill Process Physics (cautionary), logic-programming duality (van Emden-Kowalski), Zuse/Schmidhuber (§13.3).
   - *Quantitative reformulation:* 3D ⟺ distinct-branch count N(r) ∝ r² in causal depth; trit-alphabet vs correlation-rank distinction (§13.4). §8's participation-ratio program re-motivated from three independent directions → built as **Exp 137**.
+- **2026-07-04, Addendum B:** Tom raises "branches can't overlap / empty space = rendered delay" from nuance to axiom (§14). Same-day locations: Knuth-Bahreyni influence theory (near-exact prior, emergent Minkowski from delay bookkeeping, 3+1 selection), Bondi k-calculus, Rideout-Wallden (spacelike distance derived, not primitive), Kahn process networks (no-shared-state determinism theorem; physics application apparently a gap). Consequence priced: tap topology now carries ALL interaction; empty-cell lattices declared off-ontology.
 
 ## 12. Wrong Turns and Rejected Ideas
 
@@ -215,4 +216,29 @@ The participation-ratio program (§8.1) is now motivated from **three independen
 
 ---
 
-*Status: synthesis draft + Addendum A. The ontology is the contribution; the field's open problem (geometrogenesis / area-law selection) is named precisely and left open; the banked program (§8) is now under test as Exp 137.*
+## 14. Addendum B (2026-07-04): No Overlap — Space as Rendered Delay
+
+*Tom's sharpening, stated because the earlier sections under-weighted it: this is not a nuance of the ontology, it is a load-bearing axiom. Recorded with same-day literature locations.*
+
+### 14.1 The axiom, stated strongly
+
+**Branches cannot overlap.** The causal DAG is a *pure functional pipeline*: concurrent branches share no mutable state, there is no ambient container two branches both write into, and interaction happens **only** at explicit merge points. Corollary, stated at full strength: **even empty space is not a substrate feature — it is purely the observer's visualization of the time delay between deposits.** Not "space is sparse where deposits are rare"; there is no *where*. Delay is the only raw material; "empty space between things" is what differential delay across the observer's channels looks like after the merge renders it.
+
+This sharpens, rather than repeats, what §1/§4 said. §1 gave the even-handed slogan (time = depth, space = breadth); §14 removes the residual container-reading of "breadth": breadth is itself *constructed from delay differentials* across the N channels. The observer's chart (§13.4: celestial sphere × causal depth) is delay-triangulation all the way down — which is literally the project's own operational instrument, **V3 ch003's latency Gram matrix → MDS** (distance is *measured in latency*, then rendered as geometry). RAW 111 ("space is connections") was the early form; the strong form is: space is connections *weighted by delay, read from inside*.
+
+### 14.2 Locations (same-day literature pass)
+
+- **Knuth & Bahreyni (2014), "A potential foundation for emergent space-time" (J. Math. Phys. 55, 112501; arXiv:1209.0881) — the near-exact physics prior.** Particles = totally ordered chains of influence events in a partial order; embedded observer chains quantify everything else purely by *when* influences intersect their own chain ("chain projection"); the Minkowski metric and Lorentz transformations **emerge from delay bookkeeping alone**. This is "space = rendered delay" as a worked-out formalism. Double-edged bonus: their consistency/permutation-symmetry argument selects **1+1 or 3+1 only** (odd chain-counts ruled out; >4 not closed) — an answer-shaped object for "why 3D," but derived from a quantification-consistency prior, so it earns the same skepticism §13.3 applied to CCM's area-law assumption. Flagged as a thread worth a dedicated reading session.
+- **Bondi k-calculus / Einstein radar coordinates** — mainstream pedagogy already defines distance operationally as signal-exchange delay (`d = c·Δt/2`). SR can be *taught* delay-first; the axiom takes that as ontology, not convenience.
+- **Rideout & Wallden (2009), "Spacelike distance from discrete causal order" (arXiv:0810.1768)** — in causal sets, timelike distance is trivial (longest chain) but spacelike distance is *hard and derived*: reconstructed from minimizing/averaging over pairs in the common past and future — i.e., from signal-exchange delay structure. The axiom sits on the technically correct side of a known asymmetry: delay is primitive, spacelike separation is not.
+- **Kahn (1974), process networks — the CS formalism with the theorem.** Deterministic sequential processes, **no shared memory**, communication only over FIFO channels; Kahn's determinism theorem: the outcome is independent of timing/scheduling. "Branches can't overlap" = the KPN discipline; substrate determinism (CLAUDE.md axiom) comes out as a *theorem* of that discipline rather than an extra assumption. **Search found no application of KPN as a physics ontology — an apparent genuine gap.** Lamport (1978) happened-before is the same discipline for distributed systems: no global space, only message causality; spatial-like structure (vector clocks) derived.
+
+### 14.3 The honest consequence: the wall gets heavier
+
+The axiom is cheap on the space side and expensive on the interaction side, and recording it strongly means recording the bill strongly:
+
+- **Collision without a container.** In a container picture, things interact because trajectories *cross in space*. With no container, every re-meeting must be carried by the **merge/tap topology** itself — §13.2's invariant ("five vocabularies, one debt") now carries *all* the load that "moving through empty space and bumping into things" used to carry. KPN states the debt in its most compact form yet: the channel graph is **static and given** — who talks to whom is an *input* to the model, never an output. The framework needs the tap topology to be *dynamical* (deposits rewiring who taps whom), which is the geometrogenesis debt yet again, now with no spatial scaffolding to hide behind.
+- **Exp 134/136-style lattices are off-ontology.** An "empty cell" is container-space smuggled into the substrate: the lattice asserts a *where* with nothing in it, which §14.1 says does not exist. This sharpens Exp 133's closing note ("three commitments need confronting") into a specific charge: any future substrate faithful to this axiom is a **process/channel network with delays** (deposits in flight between bundles), not a cell array. Internal precedent that delay-native substrates *work*: Exp 118 v7's traversal-time model — the first orbit came from making time-in-flight the primitive.
+- **Instrument note (Exp 137):** readout M is already §14-compliant — channel time-series only, no coordinates (gate G-M4). The *fixtures* (Exp 134 lattice survivors) are not. Fine for calibration; a §14-faithful survivor family is the eventual target.
+
+*Status: synthesis draft + Addenda A–B. The ontology is the contribution; the field's open problem (geometrogenesis / area-law selection) is named precisely and left open; the banked program (§8) is under test as Exp 137. Addendum B raises the no-overlap / space-as-rendered-delay corollary to axiom status and prices it honestly.*
