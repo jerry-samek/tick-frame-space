@@ -1,0 +1,75 @@
+
+=== T-E: why does dpr_sub separate while mds_dim90c does not? ===
+  FLAT_K8: eigenspectrum [2.211 1.94  1.68  0.681 0.519 0.47  0.341 0.158]
+    dpr_raw=5.092 dpr_sub=4.363 mds_dim90c=4.7692292563841985
+    |corr| matrix:
+[[1.   0.6  0.45 0.15 0.1  0.06 0.17 0.27]
+ [0.6  1.   0.16 0.44 0.05 0.08 0.26 0.15]
+ [0.45 0.16 1.   0.11 0.49 0.11 0.08 0.07]
+ [0.15 0.44 0.11 1.   0.11 0.48 0.06 0.1 ]
+ [0.1  0.05 0.49 0.11 1.   0.08 0.44 0.11]
+ [0.06 0.08 0.11 0.48 0.08 1.   0.13 0.44]
+ [0.17 0.26 0.08 0.06 0.44 0.13 1.   0.56]
+ [0.27 0.15 0.07 0.1  0.11 0.44 0.56 1.  ]]
+  CUBE_K8: eigenspectrum [1.706 1.642 1.568 1.532 0.541 0.456 0.394 0.161]
+    dpr_raw=5.769 dpr_sub=4.840 mds_dim90c=4.816549044840819
+    |corr| matrix:
+[[1.   0.55 0.12 0.02 0.23 0.04 0.07 0.15]
+ [0.55 1.   0.01 0.11 0.06 0.26 0.14 0.03]
+ [0.12 0.01 1.   0.57 0.03 0.15 0.23 0.05]
+ [0.02 0.11 0.57 1.   0.15 0.03 0.07 0.24]
+ [0.23 0.06 0.03 0.15 1.   0.08 0.52 0.07]
+ [0.04 0.26 0.15 0.03 0.08 1.   0.04 0.53]
+ [0.07 0.14 0.23 0.07 0.52 0.04 1.   0.06]
+ [0.15 0.03 0.05 0.24 0.07 0.53 0.06 1.  ]]
+
+=== T-D: do-nothing baseline (R0 raw series; shuffled M) ===
+  FLAT_K8: R0 dpr_sub=3.441  shuffled-M dpr_sub=6.995
+  CUBE_K8: R0 dpr_sub=3.441  shuffled-M dpr_sub=6.993
+  |R0 gap|=0.000  |shuffled-M gap|=0.002 (M gap was 0.478)
+
+=== T-B: abstract ring-graph surrogate (no lattice, no rule) ===
+  FLAT_K8 ring graph (chords=2, degrees=[2, 3, 3, 2, 2, 3, 3, 2]): dpr_sub=2.229
+  CUBE_K8 ring graph (chords=4, degrees=[3, 3, 3, 3, 3, 3, 3, 3]): dpr_sub=3.927
+  T-B verdict: ordering CUBE>FLAT REPRODUCED on abstract graphs -> M reads adjacency structure, not embedding
+=== T-A: instrument-settings sweep (gap must hold same-sign, >=2sd, in every cell) ===
+  sign=+1 mag=1 W=3K: CUBE=4.880 FLAT=4.292 gap=+0.588 z=17.2
+  sign=+1 mag=1 W=6K: CUBE=4.840 FLAT=4.362 gap=+0.479 z=20.8
+  sign=+1 mag=1 W=12K: CUBE=4.836 FLAT=4.411 gap=+0.425 z=26.7
+  sign=+1 mag=2 W=3K: CUBE=4.737 FLAT=4.264 gap=+0.473 z=13.3
+  sign=+1 mag=2 W=6K: CUBE=4.702 FLAT=4.301 gap=+0.401 z=19.7
+  sign=+1 mag=2 W=12K: CUBE=4.648 FLAT=4.324 gap=+0.325 z=23.6
+  sign=+1 mag=3 W=3K: CUBE=4.857 FLAT=4.323 gap=+0.534 z=14.9
+  sign=+1 mag=3 W=6K: CUBE=4.696 FLAT=4.352 gap=+0.344 z=14.0
+  sign=+1 mag=3 W=12K: CUBE=4.524 FLAT=4.365 gap=+0.159 z=8.4
+  sign=+1 mag=8 W=3K: CUBE=5.085 FLAT=4.358 gap=+0.727 z=15.6
+  sign=+1 mag=8 W=6K: CUBE=4.775 FLAT=4.149 gap=+0.626 z=20.1
+  sign=+1 mag=8 W=12K: CUBE=4.583 FLAT=4.022 gap=+0.561 z=28.8
+  sign=-1 mag=1 W=3K: CUBE=4.883 FLAT=4.289 gap=+0.594 z=18.1
+  sign=-1 mag=1 W=6K: CUBE=4.840 FLAT=4.359 gap=+0.481 z=21.9
+  sign=-1 mag=1 W=12K: CUBE=4.837 FLAT=4.417 gap=+0.420 z=25.2
+  sign=-1 mag=2 W=3K: CUBE=4.734 FLAT=4.263 gap=+0.470 z=13.1
+  sign=-1 mag=2 W=6K: CUBE=4.701 FLAT=4.300 gap=+0.401 z=18.8
+  sign=-1 mag=2 W=12K: CUBE=4.650 FLAT=4.324 gap=+0.326 z=22.9
+  sign=-1 mag=3 W=3K: CUBE=4.856 FLAT=4.324 gap=+0.532 z=13.5
+  sign=-1 mag=3 W=6K: CUBE=4.692 FLAT=4.356 gap=+0.336 z=14.1
+  sign=-1 mag=3 W=12K: CUBE=4.523 FLAT=4.362 gap=+0.161 z=9.1
+  sign=-1 mag=8 W=3K: CUBE=5.092 FLAT=4.358 gap=+0.734 z=15.2
+  sign=-1 mag=8 W=6K: CUBE=4.773 FLAT=4.152 gap=+0.622 z=20.0
+  sign=-1 mag=8 W=12K: CUBE=4.585 FLAT=4.018 gap=+0.566 z=27.3
+  offring +K   W=6K: CUBE=24.152 FLAT=29.478 gap=-5.326 z=34.7
+  T-A verdict: COLLAPSES somewhere
+
+=== T-C: exhaustive enumeration of closed K-cycles up to isometry ===
+  K=4: 1 cycle classes, 1 sustain (0.0s)
+    survivor rank=2 chords=0 degrees=[2, 2, 2, 2] dpr_sub=2.852+/-0.015 cells=[(0, 0, 0), (1, 0, 0), (1, 1, 0), (0, 1, 0)]
+  K=6: 3 cycle classes, 1 sustain (0.5s)
+    survivor rank=2 chords=1 degrees=[2, 2, 2, 2, 3, 3] dpr_sub=3.779+/-0.029 cells=[(0, 0, 0), (1, 0, 0), (2, 0, 0), (2, 1, 0), (1, 1, 0), (0, 1, 0)]
+  K=8: 11 cycle classes, 2 sustain (8.7s)
+    survivor rank=2 chords=2 degrees=[2, 2, 2, 2, 3, 3, 3, 3] dpr_sub=4.359+/-0.026 cells=[(0, 0, 0), (1, 0, 0), (2, 0, 0), (3, 0, 0), (3, 1, 0), (2, 1, 0), (1, 1, 0), (0, 1, 0)]
+    survivor rank=3 chords=4 degrees=[3, 3, 3, 3, 3, 3, 3, 3] dpr_sub=4.839+/-0.019 cells=[(0, 0, 0), (1, 0, 0), (1, 1, 0), (0, 1, 0), (0, 1, 1), (1, 1, 1), (1, 0, 1), (0, 0, 1)]
+  K=10: 73 cycle classes, 2 sustain (135.5s)
+    survivor rank=2 chords=3 degrees=[2, 2, 2, 2, 3, 3, 3, 3, 3, 3] dpr_sub=5.450+/-0.024 cells=[(0, 0, 0), (1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0), (4, 1, 0), (3, 1, 0), (2, 1, 0), (1, 1, 0), (0, 1, 0)]
+    survivor rank=3 chords=5 degrees=[2, 2, 3, 3, 3, 3, 3, 3, 4, 4] dpr_sub=6.900+/-0.024 cells=[(0, 0, 0), (1, 0, 0), (2, 0, 0), (2, 1, 0), (1, 1, 0), (0, 1, 0), (0, 1, 1), (1, 1, 1), (1, 0, 1), (0, 0, 1)]
+
+wall clock: 228.2s
