@@ -45,3 +45,17 @@ def test_jl_equals_exact_on_2d_torus_edges():
     ke = kappa_exact(adj, 0, adj[0][0])
     assert abs(ke) < 1e-9
     assert kappa_jl(adj, 0, adj[0][0]) <= ke + 1e-9
+
+
+def test_regular_fast_path_matches_lp():
+    from curvature import kappa_exact_regular
+    rng = np.random.default_rng(1)
+    adj = random_regular(80, 4, rng)
+    checked = 0
+    for i in range(len(adj)):
+        for j in adj[i]:
+            if i < j and checked < 60:
+                assert abs(kappa_exact_regular(adj, i, j)
+                           - kappa_exact(adj, i, j)) < 1e-9
+                checked += 1
+    assert checked == 60

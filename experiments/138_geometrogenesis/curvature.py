@@ -48,6 +48,46 @@ def kappa_exact(adj, i, j):
     return 1.0 - float(res.fun)
 
 
+_PERMS4 = None
+
+
+def kappa_exact_regular(adj, i, j):
+    """Exact Ollivier curvature for equal-degree endpoints via min-cost
+    perfect matching (Birkhoff: equal uniform marginals -> permutation
+    extreme points). Enumerates k! permutations; intended for k = 4.
+    Distances by 3-level set expansion (fast path; == BFS cutoff 3).
+    Row/column order of the cost matrix is irrelevant to the matching min,
+    so adjacency may be sets or lists."""
+    global _PERMS4
+    si, sj = list(adj[i]), list(adj[j])
+    k = len(si)
+    if len(sj) != k:
+        return kappa_exact(adj, i, j)  # unequal degrees: fall back to LP
+    if _PERMS4 is None or len(_PERMS4[0]) != k:
+        from itertools import permutations
+        _PERMS4 = list(permutations(range(k)))
+    cost = [[0.0] * k for _ in range(k)]
+    for a, u in enumerate(si):
+        d1 = set(adj[u])
+        d2 = set()
+        for x in d1:
+            d2 |= set(adj[x])
+        d2 -= d1
+        d2.discard(u)
+        d3 = set()
+        for x in d2:
+            d3 |= set(adj[x])
+        d3 -= d2
+        d3 -= d1
+        d3.discard(u)
+        row = cost[a]
+        for b, v in enumerate(sj):
+            row[b] = (0.0 if v == u else 1.0 if v in d1
+                      else 2.0 if v in d2 else 3.0 if v in d3 else 4.0)
+    best = min(sum(cost[a][p[a]] for a in range(k)) for p in _PERMS4)
+    return 1.0 - best / k
+
+
 def kappa_jl(adj, i, j):
     """Jost-Liu lower bound (uniform measures, unweighted graph)."""
     di, dj = len(adj[i]), len(adj[j])
