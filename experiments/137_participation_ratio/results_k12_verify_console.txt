@@ -1,0 +1,55 @@
+=== D1: representative invariance of M (box quadruplet) ===
+  box[0] M(rep)=5.790: reversed=5.790(z=0.0)  shifted3=5.791(z=0.0)  rotated=5.248(z=24.8)
+  box[1] M(rep)=5.465: reversed=5.484(z=1.1)  shifted3=5.466(z=0.1)  rotated=5.285(z=11.0)
+  box[2] M(rep)=5.163: reversed=5.490(z=17.1)  shifted3=5.160(z=0.2)  rotated=5.287(z=7.3)
+  box[3] M(rep)=6.001: reversed=6.005(z=0.3)  shifted3=5.998(z=0.1)  rotated=6.016(z=1.1)
+  D1 verdict: NOT representative-invariant — per-class M ill-defined
+
+=== D2: seed-free diagnostics, all 8 survivors ===
+  chords=4 rank=2: dpr_sub=5.214 n_active=12 frac_nz=0.958
+  chords=6 rank=3: dpr_sub=5.991 n_active=13 frac_nz=0.958
+  chords=6 rank=3: dpr_sub=7.274 n_active=15 frac_nz=0.958
+  chords=5 rank=2: dpr_sub=5.230 n_active=12 frac_nz=0.958
+  chords=8 rank=3: dpr_sub=5.788 n_active=12 frac_nz=0.958
+  chords=8 rank=3: dpr_sub=5.468 n_active=12 frac_nz=0.958
+  chords=8 rank=3: dpr_sub=5.161 n_active=12 frac_nz=0.958
+  chords=8 rank=3: dpr_sub=5.998 n_active=12 frac_nz=0.958
+  quadruplet n_active values: [12] (equal — channel-count explanation excluded)
+
+=== D3: death demography vs M (box quadruplet) ===
+  box[0] M=5.787: S1=0.240 onring1_absorbed=24/288 death_med=5.0 max=11 remnants@6K={4: 48, 6: 4, 10: 212, 12: 24}
+  box[1] M=5.469: S1=0.241 onring1_absorbed=24/288 death_med=5.0 max=11 remnants@6K={0: 2, 4: 90, 6: 64, 8: 66, 10: 42, 12: 24}
+  box[2] M=5.162: S1=0.238 onring1_absorbed=24/288 death_med=5.0 max=11 remnants@6K={0: 2, 4: 130, 6: 106, 8: 26, 12: 24}
+  box[3] M=6.001: S1=0.240 onring1_absorbed=24/288 death_med=5.0 max=11 remnants@6K={4: 4, 6: 260, 12: 24}
+  M order vs demography (sorted by M):
+    M=5.162 S1=0.238 absorbed=24 med=5.0
+    M=5.469 S1=0.241 absorbed=24 med=5.0
+    M=5.787 S1=0.240 absorbed=24 med=5.0
+    M=6.001 S1=0.240 absorbed=24 med=5.0
+
+=== D4: direct Hamiltonian-cycle enumeration of the 2x2x3 box ===
+  Hamiltonian cycle classes of the box graph: 4 (census chords=8 row said 4, all surviving)
+
+=== D5: census external validation ===
+  K=8: raw closures 138 x 24 = 3312 (published SAP count 3312: MATCH)
+  K=10: raw closures 2010 x 24 = 48240 (published SAP count 48240: MATCH)
+  K=12: raw closures 31754 x 24 = 762096 (published SAP count 762096: MATCH)
+  K=8: pairwise duplicate scan over 11 class reps: 0 duplicates
+  K=10: pairwise duplicate scan over 73 class reps: 0 duplicates
+
+=== D6: pos ceiling scaling on constructed box cycles ===
+  2x2x4 (K=16, chords=12): RG=4.47 CK=3.61 LAT=14.15 pos=0.082
+  2x4x4 (K=32, chords=32): RG=8.69 CK=5.95 LAT=26.46 pos=0.134
+  2x6x6 (K=72, chords=84): RG=13.06 CK=12.01 LAT=50.84 pos=0.027
+
+=== D7: true minimal periods of the 8 survivors ===
+  chords=4 rank=2: minimal period=12
+  chords=6 rank=3: minimal period=12
+  chords=6 rank=3: minimal period=12
+  chords=5 rank=2: minimal period=12
+  chords=8 rank=3: minimal period=12
+  chords=8 rank=3: minimal period=12
+  chords=8 rank=3: minimal period=12
+  chords=8 rank=3: minimal period=12
+
+wall clock: 217.2s
