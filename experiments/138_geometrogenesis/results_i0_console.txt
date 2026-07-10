@@ -1,0 +1,15 @@
+=== I0c controls ===
+  torus2d: cls=poly e_hat=1.000 rate=0.213 ratio_med=1.183 window=(1, 11)
+  torus3d: cls=poly e_hat=1.756 rate=0.483 ratio_med=1.545 window=(1, 8)
+  tree: cls=exp e_hat=1.830 rate=0.318 ratio_med=1.399 window=(1, 16)
+  expander6 (10 seeds): 10/10 exp, ratio_med=[4.74, 4.76, 4.79]..., rate=1.511
+
+=== gate G-I0 ===
+  torus2d_poly: True
+  torus3d_poly: True
+  tree_exp: True
+  expander_exp: True
+  control_margin: 0.025781434295796157
+  G_I0_PASS: True
+  band_2d: [0.7499999999999993, 1.2499999999999993]
+  band_3d: [1.5063077458943344, 2.0063077458943344]
