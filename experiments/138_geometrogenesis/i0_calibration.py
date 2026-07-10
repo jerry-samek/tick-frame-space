@@ -15,7 +15,7 @@ from instrument import classify  # noqa: E402
 
 
 def main():
-    out = {"prereg": "PREREG_I0b.md", "controls": {}, "gate": {}}
+    out = {"prereg": "PREREG_I0c.md", "controls": {}, "gate": {}}
 
     print("=== I0c controls ===", flush=True)
     t2 = classify(torus2d(24), np.random.default_rng(1))
