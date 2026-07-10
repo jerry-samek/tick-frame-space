@@ -225,7 +225,9 @@ GRID = [dict(q=qs, p_parents=p, L_cycle=lc, W_window=w, decay=True)
 CONTROLS = [dict(q=0.3, p_parents=2, L_cycle=4, W_window=8, decay=False,
                  control="no_decay"),
             dict(q=0.3, p_parents=2, L_cycle=4, W_window=8, decay=True,
-                 any_cycle=True, control="any_cycle")]
+                 any_cycle=True, control="any_cycle"),
+            dict(q=0.1, p_parents=2, L_cycle=4, W_window=4, decay=True,
+                 control="extinct_side")]
 
 
 def _cell(args):
