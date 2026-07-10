@@ -1,0 +1,7 @@
+seed 11 (23.9s): [(1001, 'poly', 1.15, 0.234), (2001, 'poly', 1.11, 0.254), (3001, 'poly', 1.22, 0.242)] ... [(18001, 'poly', 0.38, 0.359), (19001, 'poly', 0.38, 0.363), (20001, 'poly', 0.34, 0.321)]
+seed 12 (23.1s): [(1001, 'poly', 1.53, 0.14), (2001, 'poly', 1.03, 0.294), (3001, 'poly', 1.08, 0.275)] ... [(18001, 'poly', 0.38, 0.368), (19001, 'poly', 0.38, 0.371), (20001, 'poly', 0.35, 0.354)]
+seed 13 (27.3s): [(1001, 'poly', 1.5, 0.152), (2001, 'poly', 1.19, 0.249), (3001, 'poly', 0.91, 0.333)] ... [(18001, 'poly', 0.46, 0.396), (19001, 'poly', 0.44, 0.393), (20001, 'poly', 0.42, 0.369)]
+no_decay to scale: exp-explosion [(1085, 'poly', 2.46), (6539, 'poly', 3.02), (16010, 'poly', 3.31)] (31164, 'poly', 3.55)
+extinction probe q=0.1 W=4: extinct born= 1 alive= 0 deaths= 1
+extinction probe q=0.05 W=4: extinct born= 1 alive= 0 deaths= 1
+extinction probe q=0.1 W=2: extinct born= 1 alive= 0 deaths= 1
