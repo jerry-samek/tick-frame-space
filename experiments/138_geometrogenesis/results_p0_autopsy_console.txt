@@ -1,0 +1,9 @@
+A1 connectivity: 1 component(s), sizes [256], diameter=16
+A2 cycles: sq/edge=1.914 sq-per-vertex hist=[0, 2, 22, 93, 84, 30, 15, 6] zero-square vertices=0
+A3 lattice-local fraction: 0.543 (torus2d = 1.0 by construction)
+A4 spectral dimension (lazy walk, t=20..200): 1.56
+A5 source-resampling: poly 0.99 e_hat 1.257+/-0.021
+A6 structure anchors at N=256:
+  torus2d_16: cls=poly e_hat=1.000 r2_gap=+0.0731 d_s=1.76
+  tube_C64xC4: cls=poly e_hat=0.160 r2_gap=+0.2856 d_s=1.01
+  tf_rrg_256: cls=exp e_hat=2.092 r2_gap=-0.0171 d_s=0.59

@@ -1,9 +1,10 @@
 """Exp 138 — Ollivier-Ricci curvature: exact (LP transport) and Jost-Liu bound.
 
 kappa(i,j) = 1 - W1(mu_i, mu_j), mu_v uniform on neighbors of v, ground
-metric = graph distance. Exact W1 via scipy linprog (small supports).
-Jost-Liu combinatorial lower bound for the O(1) fast path (P0's declared
-action). Cross-validation required before the fast path is used at scale.
+metric = graph distance. Exact W1 via scipy linprog (small supports), or the
+matching fast path for equal degrees (P0's declared action — NOT Jost-Liu,
+which is degree-constant under the hard-core condition; see PREREG_P0.md).
+Jost-Liu retained as a validated lower bound for reference only.
 """
 
 import sys

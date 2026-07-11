@@ -1,0 +1,22 @@
+  cell q=0.3 p=2 L=4 W=8: pass=0/10 {'exp-explosion': 10}
+  cell q=0.3 p=2 L=4 W=16: pass=0/10 {'exp-explosion': 10}
+  cell q=0.3 p=2 L=6 W=8: pass=0/10 {'exp-explosion': 10}
+  cell q=0.3 p=2 L=6 W=16: pass=0/10 {'exp-explosion': 10}
+  cell q=0.3 p=3 L=4 W=8: pass=0/10 {'exp-explosion': 10}
+  cell q=0.3 p=3 L=4 W=16: pass=0/10 {'exp-explosion': 10}
+  cell q=0.3 p=3 L=6 W=8: pass=0/10 {'exp-explosion': 10}
+  cell q=0.3 p=3 L=6 W=16: pass=0/10 {'exp-explosion': 10}
+  cell q=0.6 p=2 L=4 W=8: pass=0/10 {'not-stationary': 4, 'exp-explosion': 6}
+  cell q=0.6 p=2 L=4 W=16: pass=0/10 {'exp-explosion': 5, 'not-stationary': 5}
+  cell q=0.6 p=2 L=6 W=8: pass=0/10 {'not-stationary': 4, 'exp-explosion': 6}
+  cell q=0.6 p=2 L=6 W=16: pass=0/10 {'exp-explosion': 5, 'not-stationary': 5}
+  cell q=0.6 p=3 L=4 W=8: pass=0/10 {'exp-explosion': 7, 'not-stationary': 3}
+  cell q=0.6 p=3 L=4 W=16: pass=0/10 {'not-stationary': 3, 'exp-explosion': 7}
+  cell q=0.6 p=3 L=6 W=8: pass=0/10 {'exp-explosion': 7, 'not-stationary': 3}
+  cell q=0.6 p=3 L=6 W=16: pass=0/10 {'not-stationary': 3, 'exp-explosion': 7}
+  control no_decay: 10/10 exp-explosion, 0 geometric
+  control any_cycle: 10/10 exp-explosion, 0 geometric
+  control extinct_side: 10/10 extinct, 0 geometric
+
+P1b VERDICT: HONEST NEGATIVE
+near-boundary flags (final-3 checkpoints): 463

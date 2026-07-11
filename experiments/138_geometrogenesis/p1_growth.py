@@ -46,16 +46,37 @@ def _ball(live_adj, start, radius):
     return sorted(out)
 
 
-def _on_cycle(live_adj, birth, v, L, need_younger):
+def _descends(u, v, parents_of, max_depth=8):
+    """Is u a descendant of v (ancestor walk up to max_depth)? Conservative
+    approximation for the T3 non-descendant selector: deeper descendants
+    count as non-descendant (biases TOWARD survival)."""
+    frontier = {u}
+    for _ in range(max_depth):
+        nxt = set()
+        for x in frontier:
+            for p in parents_of.get(x, ()):
+                if p == v:
+                    return True
+                nxt.add(p)
+        frontier = nxt
+        if not frontier:
+            break
+    return False
+
+
+def _on_cycle(live_adj, birth, v, L, need_younger, younger_extra=None):
     """Is v on an undirected cycle of length <= L (optionally containing an
-    element younger than v)? Product-graph BFS over (node, younger_seen)."""
+    element younger than v, optionally further filtered by younger_extra)?
+    Product-graph BFS over (node, younger_seen)."""
     bv = birth[v]
+    ok_y = (lambda u: birth[u] > bv) if younger_extra is None else \
+        (lambda u: birth[u] > bv and younger_extra(u))
     nbrs = sorted(live_adj[v])
     for ai in range(len(nbrs)):
         for bi in range(ai + 1, len(nbrs)):
             a, b = nbrs[ai], nbrs[bi]
-            target_bonus = birth[b] > bv
-            start_flag = birth[a] > bv
+            target_bonus = ok_y(b)
+            start_flag = ok_y(a)
             if not need_younger:
                 start_flag = True
             seen = {(a, start_flag)}
@@ -74,7 +95,7 @@ def _on_cycle(live_adj, birth, v, L, need_younger):
                             q.clear()
                             break
                         continue  # may still reach b with flag via other path
-                    nf = flag or (not need_younger) or (birth[u] > bv)
+                    nf = flag or (not need_younger) or ok_y(u)
                     if (u, nf) not in seen:
                         seen.add((u, nf))
                         q.append((u, d + 1, nf))
@@ -116,13 +137,28 @@ def grow(params, seed, max_births=MAX_BIRTHS):
     decay = params.get("decay", True)
     need_younger = not params.get("any_cycle", False)
     rho = 2  # frozen in PREREG_P1b
+    # --- skeptic-battery extensions (defaults preserve registered semantics) ---
+    seed_ring = params.get("seed_ring", 0)      # T2: ring initial condition
+    grace = params.get("grace", 0)              # T2: no decay before this tick
+    quench_at = params.get("quench_at_alive")   # T5: switch q when alive >= this
+    q2 = params.get("q2", q_spawn)              # T5: post-quench spawn rate
+    nondesc = params.get("nondescendant", False)  # T3: younger must be non-descendant
+    parents_of = {}                             # T3: lineage record
 
     rng = np.random.default_rng(seed)
-    live_adj = {0: set()}
-    birth = {0: 0}
-    alive = {0}
-    dirty = {0}
-    n_born = 1
+    if seed_ring >= 3:
+        live_adj = {i: {(i - 1) % seed_ring, (i + 1) % seed_ring}
+                    for i in range(seed_ring)}
+        birth = {i: 0 for i in range(seed_ring)}
+        alive = set(range(seed_ring))
+        dirty = set(range(seed_ring))
+        n_born = seed_ring
+    else:
+        live_adj = {0: set()}
+        birth = {0: 0}
+        alive = {0}
+        dirty = {0}
+        n_born = 1
     deaths = 0
     tick = 0
     outcome = "ran"
@@ -141,9 +177,11 @@ def grow(params, seed, max_births=MAX_BIRTHS):
             outcome = "exp-explosion"
             break
         # --- multiplicative births ---
+        q_now = q2 if (quench_at is not None and len(alive) >= quench_at) \
+            else q_spawn
         spawn_draws = rng.random(len(frontier))
         for f, draw in zip(frontier, spawn_draws):
-            if draw >= q_spawn:
+            if draw >= q_now:
                 continue
             cand = _ball(live_adj, f, rho)
             parents = {f}
@@ -155,6 +193,7 @@ def grow(params, seed, max_births=MAX_BIRTHS):
             n_born += 1
             live_adj[nid] = set()
             birth[nid] = tick
+            parents_of[nid] = tuple(sorted(parents))
             alive.add(nid)
             touched = {nid}
             for p in sorted(parents):
@@ -165,13 +204,20 @@ def grow(params, seed, max_births=MAX_BIRTHS):
                 dirty.add(t_)
                 dirty.update(_ball(live_adj, t_, max(L - 2, 1)))
         # --- simultaneous re-convergence decay pass ---
-        if decay:
+        if decay and tick > grace:
             check = {v for v in dirty if v in alive
                      and tick - birth[v] >= W}
             check |= {v for v in alive if tick - birth[v] == W}
-            doomed = sorted(v for v in check
-                            if not _on_cycle(live_adj, birth, v, L,
-                                             need_younger))
+            if nondesc:
+                doomed = sorted(
+                    v for v in check
+                    if not _on_cycle(live_adj, birth, v, L, need_younger,
+                                     lambda u, _v=v: not _descends(
+                                         u, _v, parents_of)))
+            else:
+                doomed = sorted(v for v in check
+                                if not _on_cycle(live_adj, birth, v, L,
+                                                 need_younger))
             dirty = set()
             for v in doomed:
                 deaths += 1
