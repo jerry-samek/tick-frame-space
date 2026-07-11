@@ -1,0 +1,16 @@
+=== R2: size-matched anchors (N ~ 2000) ===
+  torus2d_45 (N=2025): d_s=2.001 cls=poly e_hat=1.000
+  tube_500x4 (N=2000): d_s=1.005 cls=poly e_hat=0.028
+  torus3d_13 (N=2197): d_s=2.641 cls=poly e_hat=1.766
+
+=== R1: T5 frozen-state baseline (registered selector) ===
+  T5 state (N=2069): d_s=1.457 cls=poly e_hat=2.167 deaths=3334
+
+=== R3: growth-shape classifier validation ===
+  synthetic t^2: ('poly-t', 1.6989406642945024)
+  synthetic t^1: ('poly-t', 0.9092284773973327)
+  (P1b production: 100/100 exp-t, results_p1_growthshape_console)
+
+=== R4: non-descendant selector under quench (turnover?) ===
+  outcome=stationary alive=1741 deaths=6066 (graph too small for d_s)
+  checkpoints (births, alive, deaths): [(1089, 934, 155), (2157, 1841, 316), (3243, 1970, 1273), (4468, 1864, 2604), (5575, 1796, 3779), (6733, 1757, 4976), (7807, 1741, 6066)]

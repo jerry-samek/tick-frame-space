@@ -256,8 +256,10 @@ def grow(params, seed, max_births=MAX_BIRTHS):
     else:
         outcome = "max-births"
 
+    out_graph = _lcc(live_adj, alive) if params.get("return_graph") else None
     return {"params": dict(params), "seed": seed, "n_born": n_born,
             "deaths": deaths, "final_alive": len(alive),
+            "final_lcc_adj": out_graph,
             "outcome": outcome,
             "alive_trajectory": alive_traj[:: max(1, len(alive_traj) // 500)],
             "record_size": n_born, "n_alive": len(alive),
