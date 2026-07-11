@@ -52,3 +52,17 @@
   q=0.15 W=8 qW=1.2: predicted=explode measured=explode (alive=11550 deaths=3795)
   q=0.2 W=8 qW=1.6: predicted=explode measured=explode (alive=15920 deaths=740)
   q=0.25 W=8 qW=2.0: predicted=explode measured=explode (alive=15300 deaths=161)
+  q=0.3 W=8 qW=2.4: predicted=explode measured=explode (alive=18476 deaths=49)
+  q=0.45 W=8 qW=3.6: predicted=explode measured=explode (alive=18423 deaths=1)
+  q=0.6 W=8 qW=4.8: predicted=explode measured=explode (alive=17907 deaths=0)
+  q=0.05 W=16 qW=0.8: predicted=die measured=die (alive=13 deaths=10)
+  q=0.1 W=16 qW=1.6: predicted=explode measured=explode (alive=14546 deaths=732)
+  q=0.15 W=16 qW=2.4: predicted=explode measured=explode (alive=14983 deaths=38)
+  q=0.2 W=16 qW=3.2: predicted=explode measured=explode (alive=17211 deaths=3)
+  q=0.25 W=16 qW=4.0: predicted=explode measured=explode (alive=17196 deaths=0)
+  q=0.3 W=16 qW=4.8: predicted=explode measured=explode (alive=19306 deaths=0)
+  q=0.45 W=16 qW=7.2: predicted=explode measured=explode (alive=16218 deaths=0)
+  q=0.6 W=16 qW=9.6: predicted=explode measured=explode (alive=19128 deaths=0)
+  Euler-Lotka agreement: 29/32; stationary cells found: 0
+
+wall clock: 75.7s
