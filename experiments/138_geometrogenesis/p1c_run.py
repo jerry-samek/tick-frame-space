@@ -92,10 +92,18 @@ def main():
     nonadj = lambda a, b: sum(1 for x, y in zip(a, b) if x != y) >= 2  # noqa
     pass_ok = any(nonadj(a, b) for i, a in enumerate(passing)
                   for b in passing[i + 1:])
+    # PREREG_P1C.md verdict logic, faithfully (skeptic fix: TRADEOFF requires
+    # NO cell to meet all three; a lone passing cell is PARTIAL/knife-edge,
+    # NOT TRADEOFF — the earlier bare `elif rho<0` was more lenient than the
+    # frozen text and is corrected here).
     if len(passing) >= 2 and pass_ok:
         verdict = "GEOMETRIC-SELECTION"
-    elif rho < 0:
+    elif len(passing) == 0 and rho < 0:
         verdict = "TRADEOFF-CONFIRMED (engagement anticorrelated with connectivity)"
+    elif len(passing) >= 1:
+        verdict = ("PARTIAL/KNIFE-EDGE (RAW 134 s12.1 negative) — "
+                   f"{len(passing)} cell(s) pass at letter; disqualification "
+                   "check required (see RESULTS_p1c skeptic tests)")
     else:
         verdict = "PARTIAL / INCONCLUSIVE"
 
