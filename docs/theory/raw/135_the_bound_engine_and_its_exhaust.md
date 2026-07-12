@@ -136,6 +136,16 @@ A minimal dynamic model (`experiments/138_geometrogenesis/flooding_lag_engine.py
 
 **Honest bound:** this is the **pull half only.** A sink producing its Green's-function well is near-guaranteed by diffusion theory; what is shown is that *if* the observer consumes, the resulting well is attractive and dimension-correct on this substrate. It does **not** test §12.1's kill switch — whether the **push** (radiation pressure) stays subdominant so the *net* sign is attractive — because the minimal model has no push. The sign competition (§9 test (c)) remains the open question; this result establishes only that the depletion side, alone, behaves as claimed.
 
+### 13.2 The push half — kill switch pushed on (2026-07-12); §6 refuted, the sign reduced to one unresolved question
+
+A minimal radial model with BOTH channels (`push_pull_renewal.py`): push = momentum (absorbed outward flux adds outward velocity, ∝Φ=1/r²); pull tried two ways; renewal (Doc 28) resets accumulated velocity every W ticks. Findings:
+
+- **§6 is refuted.** §6 claimed the push "averages to jitter" against a slow-rendering pattern. It does not — a **steady radiation force accumulates** (solar sails). The averaging story is dead; delete it as a resolution.
+- **Renewal-reset does not rescue attraction** (with pull=accretion). Fast renewal (small W) gives at best *bound* (holds station, never falls in); slow/no renewal gives *escape* (LeSage). No infall at any W; even 8× pull barely dents r. The renewal-reset idea I floated is not a resolution.
+- **The kill switch reduces to one question the framework answers two ways.** Is consumption a **force** or an **accretion**? (i) pull = **accretion** (a position shift toward the source — RAW 135 §4's own wording): the steady push generically wins → **LeSage's grave** (escape across β/α up to 4× in the fork test). (ii) pull = **force** (velocity change — what Exp 128 v11, the *earned* 1/r²+Kepler result, implicitly used): net force ≈ (β−α)/r², so **infall iff β>α** (the Eddington condition), renewal irrelevant to the sign (fork test: infall at β/α=4). **Gravity survives IFF the pull is a force and β>α** — and §4 (accretion) contradicts Exp 128 (force) on exactly the point that decides gravity-vs-LeSage.
+
+Net: the kill switch is **real, sharp, and unresolved**, now reduced to *is consumption a force or an accretion*, with the two in-house answers giving opposite verdicts. This corrects the RAW (§6 dead; §4 in tension with Exp 128) rather than confirming the mechanism — the honest outcome of pushing on a kill switch.
+
 ---
 
 *Status: synthesis draft. One rendering loop — hold, shed, push-and-feed — reproduces mass, light, their speed gap, the inter-mass coupling, 1/r², and gravity's weakness, and diagnoses why the geometrogenesis experiments (no exhaust → no regulator) could only freeze or explode. Most parts pre-existed; the assembly and the retro-diagnosis are the contribution. The pull half is now dynamically demonstrated (§13): a consuming node on the flooding-lag graph carves the dimension-correct gravitational well (log 2D / 1/r 3D), no coordinates. The attractive NET sign is still not proven — the push half is untested (§12.1 is the kill switch). The banked exhaust-experiment (§9) is the next buildable step, gated behind a random-graph-validated geometry instrument (Exp 138 P1c lesson).*

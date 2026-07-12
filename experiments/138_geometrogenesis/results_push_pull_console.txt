@@ -1,0 +1,33 @@
+=== kill switch: renewal period W vs outcome (alpha=beta=0.02, predicted W* ~ 2*beta/alpha = 2) ===
+   W  outcome     final_r   min_r
+   1  bound         20.00   20.00  
+   2  bound         20.15   20.00  
+   3  bound         20.30   20.00  
+   5  bound         20.58   20.00  
+  10  bound         21.27   20.00  
+  20  escape        22.52   20.00  
+  50  escape        25.63   20.00  
+ 100  escape        29.59   20.00  
+100000  escape        80.03   20.00  (no renewal)
+
+=== is the transition governed by W* ~ 2*beta/alpha? sweep the coupling ratio at fixed W=5 ===
+ beta/alpha  outcome      min_r   (infall expected when 2*beta/alpha > W=5)
+        0.5  bound        20.00   (2*ratio=1)
+        1.0  bound        20.00   (2*ratio=2)
+        2.0  bound        20.00   (2*ratio=4)
+        3.0  bound        20.00   (2*ratio=6)
+        5.0  bound        19.38   (2*ratio=10)
+        8.0  bound        18.37   (2*ratio=16)
+
+=== the modeling FORK: does the pull act as accretion (position) or force (velocity)? (W=10) ===
+ beta/alpha  accretion   force       
+        0.5  bound(20)   bound(20)   
+        1.0  bound(20)   bound(20)   
+        1.5  bound(20)   bound(19)   
+        2.0  bound(20)   bound(18)   
+        4.0  bound(20)   infall(13)  
+
+Reading (honest): the kill switch's resolution HINGES ON THE PULL MECHANISM, and the framework's two candidates disagree.
+  - pull=ACCRETION (RAW 135 §4): the steady push generically wins (escape) except in the degenerate W=1 / very-high-beta limit -> LeSage risk stands.
+  - pull=FORCE (Exp 128 v11, the EARNED 1/r^2+Kepler result): net force ~ (beta-alpha)/r^2, so infall iff beta>alpha (the Eddington condition), renewal irrelevant to the sign.
+So gravity survives IFF the pull is a force and beta>alpha. Whether consumption pulls as force or accretion is UNRESOLVED -- and RAW 135 §6's 'push averages to jitter' is refuted (a steady force accumulates).
