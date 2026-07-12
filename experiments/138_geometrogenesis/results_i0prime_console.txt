@@ -1,0 +1,22 @@
+=== I0' controls ===
+  torus2d: shell_cls=poly d_shell=1.000 d_spectral=1.994 cyc_density=2.0000 is_manifold=True
+  torus3d: shell_cls=poly d_shell=1.756 d_spectral=2.454 cyc_density=6.0000 is_manifold=True
+  tree: shell_cls=exp d_shell=1.830 d_spectral=1.444 cyc_density=0.0000 is_manifold=False
+  random4 (10 seeds): 10/10 is_manifold=False, cyc_density range=[0.0069, 0.0150]
+  random6 (10 seeds): 10/10 is_manifold=False, cyc_density range=[0.0694, 0.1088]
+
+=== gate G-I0' ===
+  torus2d_manifold: True
+  torus3d_manifold: True
+  tree_not_manifold: True
+  random4_null: True
+  random6_null: True
+  G_I0PRIME_PASS: True
+  tree_shell_cls: exp
+  tree_cyc_density: 0.0
+  min_lattice_cyc_density: 2.0
+  max_random_cyc_density: 0.1087962962962963
+  cyc_thresh: 0.4664682117707407
+  control_margin: 1.8912037037037037
+
+G-I0' PASS: True
