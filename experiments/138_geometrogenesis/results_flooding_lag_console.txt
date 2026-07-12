@@ -1,0 +1,10 @@
+torus2d(41): F_far=306.679
+  well deficit (F_far - F) by distance:  r=0:+228.765  r=1:+142.274  r=2:+110.973  r=3:+90.331  r=4:+75.301  r=5:+63.636  r=6:+54.197
+  Green-function fit: R2_log=1.000 R2_(1/r)=0.950  -> better: log(r) [2D]
+  => a consuming observer carves a well: gravity from the act of observing.
+
+torus3d(15): F_far=323.699
+  well deficit (F_far - F) by distance:  r=0:+199.296  r=1:+61.127  r=2:+32.211  r=3:+20.002  r=4:+13.231  r=5:+9.043  r=6:+6.287
+  Green-function fit: R2_log=0.949 R2_(1/r)=0.999  -> better: 1/r [3D]
+  => a consuming observer carves a well: gravity from the act of observing.
+
