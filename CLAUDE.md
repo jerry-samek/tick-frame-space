@@ -276,11 +276,9 @@ This ontology forms the conceptual backbone of the tick-frame universe model and
 
 ## Git Workflow
 
-Currently on branch: `feature/#3-total-energy-balance`
+`main` is the default branch. Do feature work on a branch and open a PR to `main` (confirm the target if unsure).
 
-The main branch is not explicitly set in git config. When creating PRs, verify the target branch with the user.
-
-Recent commits show work on energy balance calculations and collision models. Tests are being added for core components (see `SingleEntityModelTest.java`).
+**Current frontier (as of 2026-07):** the *inside-out synthesis*, RAW 134–137 (`docs/theory/raw/`), which reframes the whole 118–138 gravity/geometrogenesis arc — tick = causal call, no god-view, space = rendered delay, gravity = ambient-renewal shadow, dimension = observer lag-rank, observer = renderer = being. The active experiments live in `experiments/138_geometrogenesis/` (the flooding-lag substrate and the inside-out instruments). The Java `tick-space-runner` is legacy (Chapter-15 / geometric-lattice era). Open substrate-side wall: does directed growth *select* a low-dimensional phase (geometrogenesis) — unsolved; see `experiments/138_geometrogenesis/RESULTS_p1d_recon.md`.
 
 ## Tools (Maven, Java, Python)
 W:\\tools

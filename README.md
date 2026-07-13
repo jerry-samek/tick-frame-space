@@ -1,230 +1,119 @@
 # Tick-Frame Space
 *Coherence over Orthodoxy: a model is valid if it is internally consistent, falsifiable, and explanatory, regardless of its alignment with current physical dogma.*
 
-A speculative discrete physics model exploring whether a single operation on a raw graph can produce everything we observe. My pet project on "garden leave." Don't take it too seriously, but feel free to correct me if I'm wrong (I definitely am). I'm an engineer, not a scientist. And I have plenty of spare memory-time to just think about crazy stuff.
+A speculative discrete-physics model exploring whether a single operation on a raw graph — **read from the inside, never from a god's-eye view** — can produce everything we observe. My pet project on "garden leave." Don't take it too seriously, but feel free to correct me if I'm wrong (I definitely am). I'm an engineer, not a scientist. I just have plenty of spare memory-time to think about crazy stuff.
 
 ## What This Is
 
-An exploration of a universe built from one operation:
+One mechanism, iterated on a graph at every tick:
 
 > **An entity deposits on a connector, hops, and the connector extends.**
 
-From this, iterated across all entities at every tick:
-- **Gravity** emerges from connector asymmetry (entities follow familiar paths)
-- **Radiation** emerges from divergence propagating through the graph
-- **Expansion** emerges from accumulated connector extension
-- **Time** is branch depth (append-only, irreversible)
-- **Space** is connections (geometry is observer-reconstructed)
-- **Dimensions** are observer properties (3D from ternary change geometry)
+Everything is deterministic at the substrate layer — no randomness, no infinity, no continuum. But the load-bearing idea isn't the mechanism; it's the **point of view**.
 
-Everything is deterministic at the substrate layer. No randomness, no infinity, no continuum.
+### The reconciliation: there is no god-view
 
-### The Three States
+The project started (V1–V3) describing the world from the outside — a graph you look *at*, with a geometry you measure. That framing kept hitting walls, and it took a long time to see why: **the outside view doesn't exist in this ontology.** There is no observer who sees the whole graph. There are only patterns inside it, each reading what has *arrived* — and every hard problem, once re-derived from the inside, dissolved. The current frontier is that reconciliation.
 
-Every interaction reduces to one of three comparison outcomes:
+Read inside-out:
+
+- **Time** is the order you read your own causal depth. The future is unseeable because it isn't computed yet.
+- **Space** is *rendered delay*: a pattern reads the lag (arrival delay) of deposits reaching it. "Empty space" is the time-delay between deposits, nothing more.
+- **Dimension** is what an embedded observer's channels resolve — the correlation-rank of its incoming lags. A lattice *looks* low-dimensional from inside; an expander looks high-dimensional. Not a property of the graph — a property of the reading.
+- **Gravity** is the *shadow* a consumer casts in the ambient renewal-flux — a force (you're pushed into the well), attractive, and it carries the local dimension (1/r in 3D, log in 2D).
+- **Light** is the spent exhaust a self-holding pattern must shed; it streams at *c* because, unbound, it has no clock of its own.
+- **Observer = renderer = being.** Any pattern that re-renders itself *is* a full participant: it exists (re-renders), it observes (consuming the lag-flux is perceiving), and it renders itself into everyone else's world (its shadow and shedding are what others read). There's no special observer; the world is the mutual rendering of all of them.
+
+### The Three States (the mechanism underneath)
+
+Every interaction still reduces to one of three comparison outcomes — the alphabet the deposit/hop/extend operation speaks:
 
 | State | Physics | Information |
 |-------|---------|-------------|
-| **Same** | Gravity — follow familiarity | Retrieval — no new structure |
-| **Different** | Radiation — record divergence | Information — branch point |
+| **Same** | Gravity — reincorporate | Retrieval — no new structure |
+| **Different** | Radiation — shed divergence | Information — branch point |
 | **Unknown** | Expansion — write the frontier | Learning — new structure |
 
-No fourth state exists. These three exhaust all possible relationships between an arriving pattern and existing deposits.
+No fourth state exists.
 
----
+## One substrate, one act
 
-## Quick Start
+The synthesis is a single engine — a pipe network with an ambient renewal-flux flooding through it (no coordinate grid). From **one consuming pattern** on it, the same act produces:
 
-### Java Substrate Simulation
+- **gravity** — its consumption carves an attractive well (the graph Green's function of the local dimension);
+- **perception** — its taps read the lag-structure of the flux they consume, yielding a perceived dimension;
+- **a coherence limit** — its own metabolism is produced over its volume but shed through its surface, so past a critical size the core saturates and it decoheres → a *maximum stable pattern* (the framework's Eddington/Chandrasekhar bound).
 
-The **tick-space-runner** module implements an earlier version of the model (Chapter 15 basis).
+Perceiving = gravitating = being, on one substrate. See `experiments/138_geometrogenesis/flooding_lag_substrate.py`.
 
-```bash
-mvn clean package
-mvn exec:java -pl tick-space-runner -Dexec.mainClass="eu.jerrysamek.tickspace.runner.LocalApp"
-```
+## Honest status — the negatives are the point
 
-Output: JSON snapshots to `W:\data\snapshots\` every 1000 ticks.
+This is a speculative model with **no real-world experimental validation**. What makes it worth taking seriously (if anything does) is that it is developed against an adversarial skeptic discipline: every "result" is attacked by a fresh reviewer before it's believed, and the recurring lesson — recorded and reused — is that **when something is stuck, a god-view assumption has been smuggled in.**
 
-**Note:** The Java implementation predates the graph-first paradigm shift. It uses a geometric lattice substrate. The current theoretical frontier uses Python experiments on random geometric graphs.
+### What has been demonstrated (in-model, mostly toy scale)
+- **A candidate gravity mechanism that clears all three classical LeSage problems**, each by the same god-view→inside-out correction: the **sign** (gravity is the ambient shadow, not consumption of a star's light), **drag** (a renewing pattern reads at rest in its own frame, so its bulk velocity is undraggable — orbits stay stable where a persistent body decays), and **heating** (gravity shadows the renewal *rate*, not energy, so it's ~1000× cooler than classical; residual heat becomes the coherence/Eddington limit above).
+- **Dimension is measurable inside-out.** A boundary-layer, lag-correlation reader cleanly separates the exact adversarial zoo (hypercubes, honeycomb, expanders, small-world) that defeated every god-view detector — because from inside, an expander genuinely *looks* high-dimensional. This is the framework's own dimension definition (correlation-rank, à la Cao–Carroll–Michalakis) grounded in propagation delay.
+- **The relational point of view**, concretely: with no god-view, "planet orbits star" is not privileged — the planet's frame sees the star orbit *it*; all frames agree on the invariant lags, none on who moves.
 
-### Python Experiments (Current Frontier)
+### What has NOT been demonstrated (the open wall)
+- **The substrate-side wall — the big one.** Does a growing, directed-time substrate actually *select* a low-dimensional (geometric) phase, or an expander/tree? A first-cut recon says the growth engine's selection produces **no** geometry (its output reads the same with and without selection). This is the geometrogenesis problem, shared with all of discrete quantum gravity, and it is **unsolved here** (see `RESULTS_p1d_recon.md`). The mechanism these results point to — a dissipation/exhaust channel driving self-organized criticality — is designed but not built.
+- The toy demonstrations (orbits, wells, coherence) run on the substrate's *principles* but not all fully graph-native (some are ODE/diffusion-level).
+- No connection to real-world experimental physics. The one banked testable difference from standard QM remains the interferometry prediction (Exp 62 — which-path detection without destroying interference).
 
-The orbital mechanics experiments (v21-v24) are the active development area:
+## Theory documentation
 
-```bash
-# Run the latest experiment (v24)
-cd experiments/64_109_three_body_tree
-python -u v24/star_formation.py --measure-force --weighted-spread --no-mass-loss
-
-# Analyze snapshots from Java simulation
-python scripts/snapshot-stats.py W:\data\snapshots\time-frame.5000.json
-```
-
-### Analysis Tools
-
-| Script | Purpose |
-|--------|---------|
-| `scripts/snapshot-stats.py` | Shell-wise statistics (Manhattan distance) |
-| `scripts/snapshot-visualization.py` | 3D scatter plots colored by energy |
-| `scripts/snapshot-energy-histogram.py` | Energy distribution and radial density |
-
----
-
-## Theory Documentation (V3 — March 2026)
-
-The theory has gone through three versions. **V3 is current** — a graph-first framework where geometry is emergent.
-
-### V3 Chapters
-
-| Chapter | Topic | Status |
-|---------|-------|--------|
-| [V3 README](docs/theory/V3_README.md) | Entry point, reading paths | Current |
-| [Ch1 The Graph Substrate](docs/theory/V3_ch001_the_graph_substrate.md) | Physical foundation: nodes, deposit chains, single mechanism | Core theory |
-| [Ch2 Three States](docs/theory/V3_ch002_three_states.md) | Same/Different/Unknown — the complete physical alphabet | Core theory |
-| [Ch3 Emergent Geometry](docs/theory/V3_ch003_emergent_geometry.md) | Latency matrix, local dimensionality, self-pinning | Core theory |
-| [Ch4 Time and Depth](docs/theory/V3_ch004_time_and_depth.md) | Branch depth, arrow of time, rho=2.0, simulation argument | Core theory |
-| [Ch5 Information and Trie](docs/theory/V3_ch005_information_and_trie.md) | Trie structure, compression, particle identity | Extension |
-| [Ch6 Observer and Consciousness](docs/theory/V3_ch006_observer_and_consciousness.md) | Trie traversal, memory, sleep, snapshots | Speculative |
-| [Ch7 Experimental Status](docs/theory/V3_ch007_experimental_status.md) | Honest assessment — what's proven, what's not | Critical |
-| [Ch8 Open Questions](docs/theory/V3_ch008_open_questions.md) | 12 priority questions with falsification criteria | Active |
-| [Glossary](docs/theory/V3_glossary.md) | 34 V3-era definitions | Reference |
-| [Experiment Index](docs/theory/V3_experiment_index.md) | 16 experiments with substrate identification | Reference |
-
-### Reading Paths
-
-- **Physicists:** Ch1 (Graph Substrate) -> Ch2 (Three States) -> Ch7 (Experimental Status)
-- **Computer scientists:** Ch5 (Trie) -> Ch1 -> Ch2
-- **Skeptics:** Ch7 (what's actually proven) -> Ch8 (what's not)
-- **Quick overview:** V3 README -> Ch7
-
-### Previous Versions
-
-- **V2** (January-February 2026): Geometric lattice substrate. 13 chapters. Archived in `docs/theory/v2_archive/`
-- **V1** (2025-January 2026): 76 raw documents. Triage into `docs/theory/raw/`, `archive/`, `review/`
-
-### Raw Theory Documents
-
-120+ documents in `docs/theory/raw/`. **Documents numbered 500+ (the 5xx series) are explicitly labeled as highly speculative** — logical consequences of the framework that are either unfalsifiable or far beyond current experimental capability. The main RAW sequence (001–499) contains theory, results, and testable predictions. If a 500-series idea becomes testable, it graduates to the main sequence.
-
-The current frontier documents:
+The theory has three prior versions (V1 raw docs → V2 geometric → V3 graph-first). **V3 was the last consolidation; the current frontier is the inside-out synthesis in the RAW 134–137 arc**, which reframes the whole 118–138 gravity/geometrogenesis line.
 
 | Document | Title |
 |----------|-------|
-| RAW 112 | The Single Mechanism — one operation, all physics |
-| RAW 113 | Semantic Isomorphism — same/different/unknown |
-| RAW 111 | Space Is Connections |
-| RAW 110 | Local Dimensionality |
-| RAW 114-117 | Particle identity, rendering, single entity, origin event |
+| RAW 134 | The Inside-Out Substrate — tick ≠ time; observer as merge; objectivity = invariance, not god-view |
+| RAW 135 | The Bound Engine and Its Exhaust — mass, light, gravity from one loop; all three LeSage killers resolved |
+| RAW 136 | The Manifold Is an Attractor — geometry as a self-organized critical phase (the open substrate-side wall) |
+| RAW 137 | The Measurement Is Inside-Out — dimension from lag; the observer-side wall is a god-view artifact |
 
----
+- **V3 chapters** (graph-first consolidation, March 2026): `docs/theory/V3_README.md` and `V3_ch001`–`ch008`.
+- **Raw documents:** 130+ in `docs/theory/raw/`. The **5xx series is explicitly highly speculative**; the main sequence (001–499) holds theory, results, and testable predictions.
+- **Reading paths:** skeptics → the "Honest status" above, then RAW 137 §6/§9 and `V3_ch007`. Physicists → RAW 134 → 135 → 137. CS → RAW 134 (tick = recursive call) → 137.
 
-## Experiments
+## Quick start (current frontier: Python)
 
-### Current Frontier: Orbital Mechanics on Graph (Exp 64_109)
+The active work is the `138_geometrogenesis` line (the flooding-lag substrate and the inside-out instruments):
 
-The active experiment arc, running on random geometric graphs with the graph-first substrate:
+```bash
+cd experiments/138_geometrogenesis
+python flooding_lag_substrate.py    # one engine: gravity + perception + coherence
+python boundary_layer_dim.py        # the inside-out dimension instrument vs the adversarial zoo
+python two_flux_gravity.py          # gravity as the ambient-shadow force (the Eddington crossover)
+python orbit_drag_renewal.py        # renewal defeats LeSage drag
+python orbiting_patterns.py         # relational PoV: no god-view, only lags
+```
 
-| Version | What It Tested | Key Result |
-|---------|---------------|------------|
-| v21 | Force-on-hop, warm-up | Frozen planet bug, bootstrap deadlock |
-| v22 | Leapfrog force, 3D displacement | First curved trajectories (best particle survived 16k ticks) |
-| v23 | Larger domain (80k nodes) | Radial reversal (p8: r=21->17), velocity equilibrium (p19: locked 27k ticks) |
-| v24 | Heavier star (M=1M) | Anti-Newtonian scaling discovered (float artifact) |
+The **tick-space-runner** Java module is a legacy substrate simulation (Chapter-15 / geometric-lattice era) and predates the graph-first and inside-out paradigms; kept for reference.
 
-**Status:** Curved trajectories and velocity stabilization achieved. Closed orbit not yet achieved.
-
-### Validated Results (V2-Substrate)
-
-These used lattice/field substrates. Mechanisms may transfer to graph:
-
-| Experiment | Result | Substrate |
-|-----------|--------|-----------|
-| Exp #15 | 3D optimality (SPBI=2.23), 3,960 sims | Regular grid |
-| Exp #50 | rho=2.0 — time is not a dimension (1,095 configs) | **Substrate-independent** |
-| Exp #44 | Rotation asymmetry 933x, O(n) bucketing | **Substrate-independent** |
-| Exp #51 v9 | Time dilation r=0.999 | Continuous field |
-| Exp #53 v10 | Geodesic orbits 100% | Continuous field |
-| Exp #55 | Collision physics, emergent Pauli exclusion | Lattice |
-| Exp #62 | Interferometry without collapse (falsifiable!) | Lattice |
-| Exp #64_109 v1-v9 | Graph-lattice gravity, Hawking evaporation | Cubic lattice |
-
----
-
-## Scientific Status (March 2026)
-
-### What Has Been Demonstrated
-
-On **graph substrate** (V3, random geometric graph):
-- Star formation gradient from seed deposit
-- Force measurement and derived orbital velocity
-- Curved trajectories under gravitational force (first time in experiment arc)
-- Radial reversal (particle changed direction)
-- Velocity stabilization (equilibrium found)
-- Self-pinning: dense bodies resist expansion automatically
-
-On **lattice/field substrates** (V2, mechanism may transfer):
-- Time dilation r=0.999 (Exp #51)
-- Geodesic orbits from time gradients, no force laws (Exp #53)
-- Collision physics with emergent Pauli exclusion (Exp #55)
-- Two independent gravity implementations converge (Exp #51 + #64_109)
-
-**Substrate-independent** (survives any substrate):
-- rho=2.0 proves time is categorically different from spatial dimensions (Exp #50)
-- Rotation asymmetry 933x (Exp #44)
-- O(n) rendering from discrete time (Exp #44)
-
-### What Has NOT Been Demonstrated
-
-- Closed orbit (perihelion/aphelion oscillation)
-- 1/r^2 force law from deposit gradient
-- Three-state alphabet as observable physical states
-- Photon properties from path geometry
-- Time dilation from branch depth accumulation
-- The single mechanism itself (simulation uses float approximation)
-- Any connection to real-world experimental physics
-
-### Honest Summary
-
-> The graph-first framework is theoretically coherent and internally consistent.
-> It has produced correct qualitative behavior in orbital experiments (curved trajectories,
-> radial reversal, velocity stabilization). Quantitative validation of the core claims
-> (closed orbit, force law, time dilation from depth) is in progress but not achieved.
-
-See [V3_ch007](docs/theory/V3_ch007_experimental_status.md) for the full honest assessment.
-
----
-
-## Project Structure
+## Project structure
 
 ```
 tick-frame-space/
-  tick-space-runner/        Java substrate simulation (Chapter 15 model)
-  scripts/                  Python analysis tools for JSON snapshots
-  experiments/              All experiments (15 series through 64_109)
-    64_109_three_body_tree/ Current frontier (v21-v24)
-  docs/
-    theory/
-      V3_*.md               Current theory (V3, graph-first)
-      raw/                  120+ raw theory documents
-      archive/              Superseded geometric-era documents
-      review/               Transitional documents needing audit
-      v2_archive/           V2 consolidated chapters (January 2026)
-      final/                Early consolidation attempt
-    model/                  Implementation documentation
-    plans/                  Development plans
-  model/                    Model definitions
+  experiments/
+    138_geometrogenesis/   Current frontier: flooding-lag substrate, inside-out instruments
+    137_participation_ratio/  Observer-rank / graph tooling
+    118_.. 136_..          The gravity/geometrogenesis arc
+    64_109_three_body_tree/   Earlier graph-orbital experiments
+  docs/theory/
+    raw/                   130+ raw documents (RAW 134-137 = current frontier)
+    V3_*.md                V3 graph-first consolidation (prior)
+    v2_archive/ archive/ review/   Superseded / transitional
+  tick-space-runner/       Legacy Java substrate simulation
+  scripts/                 Python analysis tools for JSON snapshots
 ```
 
----
+## AI-assisted development
 
-## AI-Assisted Development
+AI is a tool for materialization, not invention. The theory and every reframe originate from human thought during garden leave; AI helps make it concrete and — crucially — helps attack it. The single most productive pattern this project has found is the **fresh-context skeptic**: a reviewer with none of the operator's investment, dispatched to find the smuggled god-view, the goal-post move, the unearned claim. Most of what survives did so because it survived that.
 
-This project uses AI as a tool for materialization, not invention. The theory originates from human thought during garden leave. AI helps make it concrete:
+- **Claude (Anthropic)** — articulation, experimental design, literature grounding, the adversarial skeptic passes, honest accounting.
+- **GitHub Copilot** — code completion.
 
-- **Claude (Anthropic)** — Theory formalization, experimental design, code implementation, cross-consistency verification
-- **GitHub Copilot** — Code completion, refactoring support
+The human provides the vision and the reframes; AI helps test them to destruction.
 
-The human provides the vision; AI helps test it. Without Claude, this would be scattered thoughts. With it: 120+ documents, a working Java simulation, Python experiment arc reaching curved trajectories on random graphs, and V3 consolidated theory.
-
-**Speculation disclaimer:** This is a speculative computational model exploring discrete physics. Significant computational progress has been made, but no real-world experimental validation exists yet. The interferometry prediction (Exp #62 — which-path detection without destroying interference) remains the first testable difference from standard QM.
+**Speculation disclaimer:** a speculative computational model of discrete physics. Real computational progress, zero real-world experimental validation. Read the "Honest status" section as the truth, not the abstract.
