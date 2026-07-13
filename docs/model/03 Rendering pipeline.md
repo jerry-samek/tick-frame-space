@@ -1,3 +1,7 @@
+> **⚠️ SUPERSEDED (started March 2026).** This model-layer formalization hit walls later diagnosed as *god-view* assumptions (energy locked to momentum, absolute frames, an outside-view "constant"). Development moved back to experiments; the current frontier is the inside-out synthesis — see `docs/theory/raw/` **RAW 134–137** and the top-level README. Kept for reference; do not treat as current.
+
+---
+
 +---------------------------+       +--------------------------+       +--------------------------+
 | 0. Input & initialization | ----> | 1. Salience propagation  | ----> | 2. Feature detection     |
 | - Params (γ, α0, sources) |       | - ψ_t+1 = F(ψ_t; γ, α0)  |       | - Local maxima (clusters)|
