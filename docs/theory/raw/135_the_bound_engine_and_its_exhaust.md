@@ -176,7 +176,17 @@ Tested (`heating.py`): equilibrium internal energy vs gravity strength s. Gravit
 - **Drag** (§13.4): god-view assumed a body *moving through* the bath (drag) → inside-out *renews at rest* (undraggable).
 - **Heat** (§13.5): god-view assumed gravity *absorbs energy* (cooks) → inside-out *rate-shadow / timing* (energy-free).
 
-Each time the god-view smuggled in energy/motion/absorption that the inside-out **timing + renewal** ontology does not have. Three independent classical objections dissolving under one PoV correction is a strong internal-coherence signal — the framework holding together, not being patched. Still open (banked): port these toy ODE/diffusion demonstrations onto the *one* flooding-lag graph substrate (so gravity, perception, and dimension run on the same engine — RAW 137), and the P1d substrate-side geometrogenesis question.
+Each time the god-view smuggled in energy/motion/absorption that the inside-out **timing + renewal** ontology does not have. Three independent classical objections dissolving under one PoV correction is a strong internal-coherence signal — the framework holding together, not being patched.
+
+### 13.6 Heat as a coherence limit — the framework's Eddington/Chandrasekhar bound (2026-07-13)
+
+Tom's sharpening turns the *residual* heat (the pattern's own metabolism, not gravity) from a problem into a prediction. Heat is the internal flux a pattern produces throughout its **volume** and must shed through its **surface**. A single/simple pattern channels it directly (core = surface, no bottleneck). A **composite** pattern must transport flux from core to surface; production ∝ R³, shedding ∝ R², so the per-node core load climbs with size, and past a critical size the core saturates, the surface cannot shed the excess, it is forced to re-incorporate deposits, and the overload **decoheres** the pattern.
+
+Tested (`heating_coherence.py`, a 3D-lattice ball: every node produces p, flux diffuses along edges, boundary nodes shed): peak core load grows as **~R²** (p=1: 17→41→74→118 at R=4,6,8,10), crossing a coherence threshold θ=60 at **R≈7 → a maximum stable size.** Higher metabolism shrinks it: **R_max = 11,10,7,5,3 for p = 0.3,0.5,1,2,4 → R_max ∝ √(θ/p).** The core is hottest and saturates first (Tom's "middle part saturated"); a simple pattern has no limit, a composite one is bounded by its outer layers' shed capacity.
+
+This is the framework's **Eddington/Chandrasekhar limit**, emergent from surface-shed vs volume-production — the same surface/volume tension that forces cell division, circulatory systems, and stellar instability. It recasts the last LeSage "problem" (heating) as the framework *deriving* a known physical bound: **there is a maximum coherent pattern, set by metabolism.** Honest bound: θ is a free coherence threshold and "decoherence" is proxied by a load-threshold crossing, not a simulated break-up; the robust claims are the scalings (core ∝ R², R_max ∝ √(θ/p)) and the *existence* of a maximum size, not absolute numbers.
+
+Still open (banked): port these toy ODE/diffusion demonstrations onto the *one* flooding-lag graph substrate (so gravity, perception, dimension, and the coherence limit run on the same engine — RAW 137), simulate actual decoherence (not a threshold proxy), and the P1d substrate-side geometrogenesis question.
 
 ---
 
