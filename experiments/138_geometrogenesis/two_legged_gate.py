@@ -1,37 +1,32 @@
-"""Two-legged re-convergence gate (RAW 136 A.8; PREREG_P1d prerequisite).
+"""Manifold gate for P1d (RAW 136 A.8; PREREG_P1d prerequisite).
 
-A.8 killed the solo local observable: girth-Qg false-positives small-world (Qg =
-honeycomb) because it is blind to global shortcuts. The gate therefore needs a
-SECOND, GLOBAL leg. This builds and VALIDATES it before the P1d channel is read.
+A.8 killed the solo LOCAL observable (girth-Qg false-positives small-world). The
+P1d channel build (159611c) then killed the TWO-legged gate too: it false-positives
+on the substrate's OWN native output -- the directed-growth engine makes a degree-
+HETEROGENEOUS hub graph (mean deg ~4, max ~34, 40% deg<=2), yet Qg>0 is manufactured
+by the re-convergence SELECTOR and D is low, so (Qg,D) alone says MANIFOLD. So the
+gate gets a THIRD leg and the bare-growth graph as an explicit held-out null.
 
-  local leg   Qg  -- girth-aware re-convergence density (plaquette_closure_probe).
-              manifold high; tree & expander ~0.
-  global leg  D   -- lag-correlation rank (RAW 137 `perceived_dim`). THE PRE-
-              REGISTERED global leg (PREREG_P1d). Low-d manifold low (~1-2);
-              expander high (~10); small-world ELEVATED (~3.5, A.8). This is what
-              separates a clean low-d manifold from a small-world crumple.
+  local leg   Qg  -- girth re-convergence density. Manifold high; tree/expander ~0.
+  global leg  D   -- lag-rank (RAW 137). Low-d manifold low; expander high; small-world elevated.
+  regularity  cv  -- degree coefficient of variation std(deg)/mean(deg). A manifold
+                     is locally Euclidean => bounded UNIFORM degree => cv~0. A hub /
+                     scale-free / growth graph has cv >> 0. (Inside-out: an element
+                     compares its own degree with its neighbours'.) Rejects the
+                     growth-null that Qg,D miss. THRESHOLD is a fixed principled value
+                     (lattices are degree-regular), NOT tuned to the null; the null is
+                     held out.
 
-  [note] path-stretch l = mean-path/log(N) is reported for interpretation only. It
-  CONFOUNDS dimension with crumpling (a high-d manifold has intrinsically short
-  paths, so torus3d/hypercube read low l like an expander). It is NOT used to
-  classify -- a first build that used it as the primary leg misclassified torus3d
-  and hypercube; reverting to the pre-registered D leg fixes it. (Kept as a live
-  reminder of why the pre-registration is D, not l.)
+  [reported only] l = mean-path/log(N): CONFOUNDS dimension with crumpling; not used.
 
-Joint classifier (thresholds FROZEN from the calibration triple {torus2d,
-binary_tree, random_regular d=4} ONLY):
-  MANIFOLD (low-d) iff  Qg >= Qg_lo  AND  D <= D_lo,
-    Qg_lo = geomean(torus2d Qg, max(tree,expander) Qg)   [local separation]
-    D_lo  = 2.0 * torus2d D                              [global, from the clean manifold]
-  - tree:        Qg ~0                    -> rejected (local leg)
-  - expander:    Qg ~0, D high            -> rejected (both)
-  - small-world: Qg high, D elevated>D_lo -> rejected by GLOBAL leg  <-- A.8 acid test
-  - hypercube:   Qg high but D>D_lo (10-d, not the low-d target) -> correctly non-(low-d)-manifold
+MANIFOLD iff  Qg >= Qg_lo  AND  D <= D_lo  AND  cv <= cv_hi.
+Thresholds Qg_lo, D_lo FROZEN from the calibration triple {torus2d, tree,
+random_regular} only; cv_hi = 0.60 fixed (principled). GATE PASSES iff held-out
+tests classify right: low-d manifolds {torus3d, honeycomb} -> MANIFOLD;
+small_world p=0.1 -> NON (global leg); GROWTH-NULL -> NON (regularity leg).
 
-Scope: the P1d target is a finite LOW-d (2-4) manifold, so the gate's job is
-low-d-manifold vs {tree, expander, crumple, high-d}. GATE PASSES iff, under the
-frozen thresholds, the held-out low-d manifolds {torus3d, honeycomb} read
-MANIFOLD and small_world p=0.1 reads NON-manifold (decisive).
+Honesty limit: 'validated against this zoo' never means 'proven sufficient'. Each
+new substrate output is a new null until shown otherwise (the standing §12.6 wall).
 """
 
 import math
@@ -48,35 +43,42 @@ sys.path.insert(0, str(HERE.parents[0] / "137_participation_ratio"))
 from graphs import torus2d, torus3d, random_regular, binary_tree  # noqa: E402
 from boundary_layer_dim import honeycomb, hypercube, small_world, perceived_dim  # noqa: E402
 from plaquette_closure_probe import plaquette_Q, torus2d_plus_chords  # noqa: E402
+from p1_growth import grow  # bare growth+selection = the substrate's native null  # noqa: E402
 
 LOWD_MANIFOLDS = {"torus2d(30)", "torus3d(11)", "honeycomb(24)"}
+CV_HI = 0.60  # fixed principled regularity threshold (lattices are degree-regular)
+
+
+def growth_null(seed=1, max_births=1500):
+    """The directed-growth + re-convergence-selection graph WITHOUT dissipation --
+    the substrate's own output the gate must not mistake for a manifold."""
+    r = grow(dict(q=0.5, p_parents=2, L_cycle=4, W_window=8, decay=True,
+                  return_graph=True), seed=seed, max_births=max_births)
+    return r["final_lcc_adj"] or [[]]
 
 
 def path_stretch(adj, rng, n_src=60):
-    """l = mean shortest-path length / log(N) -- reported only (dimension-confounded)."""
     n = len(adj)
     srcs = rng.choice(n, min(n_src, n), replace=False)
     tot, cnt = 0, 0
     for s in srcs:
-        d = {int(s): 0}
-        q = deque([int(s)])
+        d = {int(s): 0}; q = deque([int(s)])
         while q:
             x = q.popleft()
             for y in adj[x]:
                 if y not in d:
-                    d[y] = d[x] + 1
-                    q.append(y)
-        tot += sum(d.values())
-        cnt += len(d) - 1
+                    d[y] = d[x] + 1; q.append(y)
+        tot += sum(d.values()); cnt += len(d) - 1
     return tot / max(cnt, 1) / math.log(n)
 
 
 def legs(name, adj, rng):
     nodes = sorted(int(x) for x in rng.choice(len(adj), min(300, len(adj)), replace=False))
     _, qg, _ = plaquette_Q(adj, nodes, rng)
-    ds = [perceived_dim(adj, seed=s) for s in (1, 2, 3)]
-    return {"name": name, "n": len(adj), "Qg": qg,
-            "D": float(np.median(ds)), "D_seeds": [round(x, 1) for x in ds],
+    D = float(np.median([perceived_dim(adj, seed=s) for s in (1, 2, 3)]))
+    deg = np.array([len(a) for a in adj], float)
+    cv = float(deg.std() / deg.mean()) if deg.mean() > 0 else float("nan")
+    return {"name": name, "n": len(adj), "Qg": qg, "D": D, "cv": cv,
             "l": path_stretch(adj, rng)}
 
 
@@ -87,6 +89,7 @@ def main():
         ("binary_tree(11)", binary_tree(11),             "tree",        "CAL"),
         ("random_reg d4",   random_regular(1600, 4, rng),"expander",    "CAL"),
         ("small_world p.1", small_world(1600, 6, 0.1, 1),"crumple",     "TEST*"),
+        ("GROWTH-NULL",     growth_null(),               "hub/growth",  "TEST*"),
         ("honeycomb(24)",   honeycomb(24),               "manifold",    "TEST"),
         ("torus3d(11)",     torus3d(11),                 "manifold",    "TEST"),
         ("hypercube(10)",   hypercube(10),               "manifold-hiD","TEST"),
@@ -95,21 +98,23 @@ def main():
     rows = [legs(nm, g, rng) | {"truth": t, "role": r} for nm, g, t, r in zoo]
 
     cal = {r["name"]: r for r in rows if r["role"] == "CAL"}
-    man, tree, exp = cal["torus2d(30)"], cal["binary_tree(11)"], cal["random_reg d4"]
-    Qg_lo = math.sqrt(man["Qg"] * max(tree["Qg"], exp["Qg"]))
-    D_lo = 2.0 * man["D"]
+    m, t, e = cal["torus2d(30)"], cal["binary_tree(11)"], cal["random_reg d4"]
+    Qg_lo = math.sqrt(m["Qg"] * max(t["Qg"], e["Qg"]))
+    D_lo = 2.0 * m["D"]
 
     def classify(r):
-        if r["Qg"] >= Qg_lo and r["D"] <= D_lo:
+        if r["Qg"] >= Qg_lo and r["D"] <= D_lo and r["cv"] <= CV_HI:
             return "MANIFOLD"
-        if r["Qg"] < Qg_lo and r["D"] <= D_lo:
-            return "tree/sparse"
-        return "expander/crumple"
+        # label by the strongest disqualifier
+        if r["cv"] > CV_HI:
+            return "hub/irregular"
+        if r["D"] > D_lo:
+            return "expander/crumple"
+        return "tree/sparse"
 
-    print("Two-legged gate (PREREG_P1d prerequisite). Global leg = D (lag-rank),")
-    print(f"as pre-registered. Thresholds FROZEN from the calibration triple only:")
-    print(f"  Qg_lo = {Qg_lo:.3f}   D_lo = {D_lo:.2f}   (l shown for interpretation only)\n")
-    print(f"{'graph':<17}{'role':<7}{'truth':<13}{'Qg':>7}{'D':>6}{'l':>6}   verdict")
+    print("Three-legged manifold gate (PREREG_P1d). Frozen from calibration triple:")
+    print(f"  Qg_lo={Qg_lo:.3f}  D_lo={D_lo:.2f}   cv_hi={CV_HI:.2f} (fixed principled)\n")
+    print(f"{'graph':<16}{'role':<7}{'truth':<13}{'Qg':>7}{'D':>6}{'cv':>7}   verdict")
     ok = True
     for r in rows:
         v = classify(r)
@@ -118,24 +123,20 @@ def main():
         if r["role"].startswith("TEST"):
             ok &= correct
         mark = "" if correct else "  <-- MISCLASSIFIED"
-        print(f"{r['name']:<17}{r['role']:<7}{r['truth']:<13}"
-              f"{r['Qg']:>7.3f}{r['D']:>6.1f}{r['l']:>6.2f}   {v}{mark}")
+        print(f"{r['name']:<16}{r['role']:<7}{r['truth']:<13}"
+              f"{r['Qg']:>7.3f}{r['D']:>6.1f}{r['cv']:>7.2f}   {v}{mark}")
 
+    gn = next(r for r in rows if r["name"] == "GROWTH-NULL")
     sw = next(r for r in rows if r["name"] == "small_world p.1")
-    hc = next(r for r in rows if r["name"] == "honeycomb(24)")
-    t3 = next(r for r in rows if r["name"] == "torus3d(11)")
-    print("\n--- acid tests (held out; thresholds not tuned to them) ---")
-    print(f"  small_world p=0.1 -> {classify(sw):<16} Qg={sw['Qg']:.2f} (manifold-like) "
-          f"D={sw['D']:.1f} > D_lo={D_lo:.2f}  -> caught by GLOBAL leg. seeds D={sw['D_seeds']}")
-    print(f"  honeycomb(24)     -> {classify(hc):<16} Qg={hc['Qg']:.2f} D={hc['D']:.1f} (6-cyc manifold)")
-    print(f"  torus3d(11)       -> {classify(t3):<16} Qg={t3['Qg']:.2f} D={t3['D']:.1f} "
-          f"(low-d manifold must pass). margin to small-world on D: "
-          f"{sw['D']:.1f} vs {t3['D']:.1f}")
+    print("\n--- held-out acid tests (thresholds not tuned to these) ---")
+    print(f"  GROWTH-NULL     -> {classify(gn):<16} cv={gn['cv']:.2f} (> {CV_HI} => hub, "
+          f"caught by REGULARITY leg; Qg={gn['Qg']:.2f} D={gn['D']:.1f} would have passed 2-leg)")
+    print(f"  small_world p.1 -> {classify(sw):<16} D={sw['D']:.1f} (> {D_lo:.2f} => global leg)")
     verdict = "PASS -- gate is P1d-ready" if ok else \
-        "FAIL -- gate NOT P1d-ready (a held-out graph misclassified)"
+        "FAIL -- a held-out graph misclassified"
     print(f"\nGATE VALIDATION: {verdict}")
-    print("(PASS => the P1d channel output can be read with this gate. FAIL => the")
-    print(" channel is not interpretable; do not run/trust it. -- PREREG_P1d)")
+    print("(PASS => channel output readable with this gate. -- PREREG_P1d. Note: "
+          "'validated against this zoo' != 'proven sufficient'; §12.6 stands.)")
 
 
 if __name__ == "__main__":
