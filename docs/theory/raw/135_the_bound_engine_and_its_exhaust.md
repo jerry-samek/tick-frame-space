@@ -163,7 +163,20 @@ Tom's resolution of the drag problem, and it holds: **in this framework entities
 
 Tested (`orbit_drag_renewal.py`): a 2D orbit under central gravity + LeSage drag F = −k·(v − v_frame), with the drag rest-frame v_frame re-based to the body's current velocity every W ticks (renewal); v_frame = 0 fixed = the classical static-bath body. Result (k=0.02): **persistent body (never renews) DECAYS — crashes from r₀ to 0.05 r₀** (the classical drag death); **fast renewal (W≤10) stays STABLE** (r_final 0.97–0.999 r₀); transition around W≈50. Across drag strengths a persistent body always crashes (even k=0.01 → 0.05 r₀) while a W=1 body survives 10× the drag (k=0.2 → 0.98 r₀). Renewal re-bases the frame — it never touches position or orbital velocity directly — so this is non-question-begging: it demonstrates that *drag measured against a renewed frame cannot see the bulk velocity.*
 
-**So the framework's gravity clears BOTH classical LeSage graves:** the **sign** (§13.3, the ambient-shadow PoV fix) and the **drag** (§13.4, renewal). And the axiom that does it — **renewal / temporal surfing (Doc 28, RAW 028)** — was posited years ago for *identity* reasons (patterns persist through renewal, not translation); it turns out to be exactly what makes shadow-gravity viable. Still open (banked): **heating** (does the ambient consumption cook bodies, or is what's consumed the already-spent/depleted flux? — §4's "depleted deposits" framing is the candidate answer, untested), and porting this from the toy orbital ODE onto the actual flooding-lag graph substrate.
+**So the framework's gravity clears BOTH classical LeSage graves:** the **sign** (§13.3, the ambient-shadow PoV fix) and the **drag** (§13.4, renewal). And the axiom that does it — **renewal / temporal surfing (Doc 28, RAW 028)** — was posited years ago for *identity* reasons (patterns persist through renewal, not translation); it turns out to be exactly what makes shadow-gravity viable.
+
+### 13.5 Heating dissolves too — and all THREE classical killers fall to one correction (2026-07-13)
+
+Classical LeSage heats catastrophically because it models gravity as **absorbing energetic corpuscles** (E = p·c — momentum and energy welded), so a big momentum-shadow (gravity) forces a big energy-deposit (heat). That weld is a **god-view artifact.** Inside-out, gravity is a **shadow in the renewal *rate*** (how often the local vacuum tick-stream renews — a timing/lag quantity; RAW 134: time is primary, energy is a *function* of time). A rate-shadow carries momentum-pressure but ~no energy, so the energy-per-shadow ratio η ≪ 1 is *forced by the ontology* (you shadow timing, not energy), not fudged.
+
+Tested (`heating.py`): equilibrium internal energy vs gravity strength s. Gravity ∝ shadow ∝ s; heat-in ∝ η·s. **Classical (η=1, persistent): T = 9.5, 19, 38 at s = 0.5, 1, 2 — strong gravity forces strong heat. Framework (η=0.02, renewing): T = 0.010, 0.020, 0.040 — ~1000× cooler at the same gravity**, with heat tracking η·s (the shadow's energy), not s (the gravity). Renewal additionally caps any reservoir (fast renewal T=1 vs persistent T=19 at η=1). Prediction: a gravitating body still radiates its **own metabolism** (its maintenance luminosity — §2's forced shedding, every self-holding pattern must radiate), just not from gravitational absorption.
+
+**The meta-result — all three classical gravity killers fall to the SAME correction (Tom's PoV lesson, vindicated 3×):**
+- **Sign** (§13.3): god-view assumed consuming the star's *energy-flux* (wrong sign) → inside-out ambient *shadow* (attractive).
+- **Drag** (§13.4): god-view assumed a body *moving through* the bath (drag) → inside-out *renews at rest* (undraggable).
+- **Heat** (§13.5): god-view assumed gravity *absorbs energy* (cooks) → inside-out *rate-shadow / timing* (energy-free).
+
+Each time the god-view smuggled in energy/motion/absorption that the inside-out **timing + renewal** ontology does not have. Three independent classical objections dissolving under one PoV correction is a strong internal-coherence signal — the framework holding together, not being patched. Still open (banked): port these toy ODE/diffusion demonstrations onto the *one* flooding-lag graph substrate (so gravity, perception, and dimension run on the same engine — RAW 137), and the P1d substrate-side geometrogenesis question.
 
 ---
 

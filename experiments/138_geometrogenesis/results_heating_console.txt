@@ -1,0 +1,26 @@
+Gravity strength ~ s (the renewal-rate shadow). Heat-in ~ eta*s (eta = energy per unit shadow).
+Classical LeSage: eta=1 (energy locked to momentum), persistent (W large). Framework: eta<<1 (depleted rate-shadow) + renewal (W=1).
+
+ gravity s   classical T (eta=1,persist)   framework T (eta=.02,W=1)
+       0.1                          1.90                       0.002
+       0.3                          5.70                       0.006
+       0.5                          9.50                       0.010
+       1.0                         19.00                       0.020
+       2.0                         38.00                       0.040
+
+=== decoupling check: sweep gravity at fixed eta -- does heat track gravity or the eta-scaled shadow? ===
+ s (gravity)  heat-in rate (eta=.02)  ratio heat/gravity
+         0.2                  0.0040              0.0200
+         0.5                  0.0100              0.0200
+         1.0                  0.0200              0.0200
+         2.0                  0.0400              0.0200
+
+=== renewal vs persistence at classical energy (eta=1): does renewal alone cap the reservoir? ===
+       W  equilibrium T (eta=1, s=1)
+       1                        1.00  
+       5                        5.00  
+      20                       19.00  
+     100                       19.00  
+  100000                       19.00  (persistent)
+
+Reading: gravity's strength is set by the shadow s; heat by eta*s. Classical locks eta=1 -> big gravity forces big heat. The framework's gravity is a renewal-RATE shadow (eta<<1, energy-free timing effect), so strong gravity carries little heat -- the momentum/energy lock is a god-view artifact. Renewal additionally caps any reservoir. Both the sign, the drag, and the heating dissolve the same way: gravity is inside-out timing, not god-view energetic absorption. Prediction: a gravitating body still radiates its OWN metabolism (luminosity), just not from gravitational absorption.
