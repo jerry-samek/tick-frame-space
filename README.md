@@ -62,7 +62,7 @@ This is a speculative model with **no real-world experimental validation**. What
 
 ## Theory documentation
 
-The theory has prior versions (V1 raw docs → V2 geometric → V3 graph-first, all archived). **V4 is the current consolidation — the inside-out synthesis of the RAW 134–137 arc**, which reframes the whole 118–138 gravity/geometrogenesis line. V4 is a live frontier, not a finished theory: the geometrogenesis wall (does the substrate select geometry?) is open, and V4 says so throughout.
+The theory has three prior versions (V1 raw docs → V2 geometric → V3 graph-first). **V3 was the last consolidation; the current frontier is the inside-out synthesis in the RAW 134–137 arc**, which reframes the whole 118–138 gravity/geometrogenesis line.
 
 | Document | Title |
 |----------|-------|
@@ -71,9 +71,9 @@ The theory has prior versions (V1 raw docs → V2 geometric → V3 graph-first, 
 | RAW 136 | The Manifold Is an Attractor — geometry as a self-organized critical phase (the open substrate-side wall) |
 | RAW 137 | The Measurement Is Inside-Out — dimension from lag; the observer-side wall is a god-view artifact |
 
-- **V4 chapters** (inside-out consolidation, current): `docs/theory/V4_README.md` and `V4_ch01`–`ch08` + `V4_glossary.md`. The prior graph-first consolidation is in `docs/theory/v3_archive/`.
+- **V3 chapters** (graph-first consolidation, March 2026): `docs/theory/V3_README.md` and `V3_ch001`–`ch008`.
 - **Raw documents:** 130+ in `docs/theory/raw/`. The **5xx series is explicitly highly speculative**; the main sequence (001–499) holds theory, results, and testable predictions.
-- **Reading paths:** skeptics → `V4_ch08` (honest status), then RAW 137 §6/§9. Physicists → `V4_ch01` → `ch04` → `ch03`, then RAW 134 → 135 → 137. CS → `V4_ch01` (tick = recursive call) → `V4_ch06` (trie) → `V4_ch03`.
+- **Reading paths:** skeptics → the "Honest status" above, then RAW 137 §6/§9 and `V3_ch007`. Physicists → RAW 134 → 135 → 137. CS → RAW 134 (tick = recursive call) → 137.
 
 ## Quick start (current frontier: Python)
 
@@ -101,8 +101,8 @@ tick-frame-space/
     64_109_three_body_tree/   Earlier graph-orbital experiments
   docs/theory/
     raw/                   130+ raw documents (RAW 134-137 = current frontier)
-    V4_*.md                V4 inside-out consolidation (current)
-    v3_archive/ v2_archive/ archive/ review/   Superseded / transitional
+    V3_*.md                V3 graph-first consolidation (prior)
+    v2_archive/ archive/ review/   Superseded / transitional
   tick-space-runner/       Legacy Java substrate simulation
   scripts/                 Python analysis tools for JSON snapshots
 ```
