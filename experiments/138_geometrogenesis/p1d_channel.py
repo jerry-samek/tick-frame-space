@@ -200,6 +200,48 @@ def run_fine(Qg_lo, D_lo):
           "#ext -> a genuine manifold window (a).")
 
 
+def run_plane(Qg_lo, D_lo):
+    """q-plane at fixed c: verify the skeptic's overturning of (b). Per q: dissipative
+    survivors' gate verdict + cv + ball-growth e_hat (out-of-gate corroboration), vs
+    bare-growth cv (dissipation load-bearing test)."""
+    from instrument import shell_counts, fit_exponent
+    from p1_growth import grow
+    print("q-PLANE at c=1.5, scalar_flux, 6 seeds. Verifying whether MANIFOLD is "
+          "reachable at low q (the fine sweep fixed q=0.40).\n")
+    print(f"{'q':>5}{'#ext':>6}{'#manif':>8}{'cv(diss)':>15}{'ehat_surv':>11}"
+          f"{'cv(bare)':>10}   verdicts")
+    for q in [0.40, 0.30, 0.25, 0.20]:
+        cvs, ehats, verds, ext, manif = [], [], [], 0, 0
+        for sd in range(1, 7):
+            r = grow_dissipative(dict(BASE, mode="scalar_flux", q=q, c=1.5), sd, 3000)
+            v, qg, D, cv = read_gate(r["lcc_adj"], np.random.default_rng(99 + sd),
+                                     Qg_lo, D_lo)
+            if v == "degenerate":
+                ext += 1; verds.append("ext"); continue
+            verds.append(v[:5]); cvs.append(cv)
+            manif += (v == "MANIFOLD")
+            adj = r["lcc_adj"]
+            if len(adj) >= 200:
+                srcs = sorted(int(x) for x in np.random.default_rng(7).choice(
+                    len(adj), min(48, len(adj)), replace=False))
+                f = fit_exponent(shell_counts(adj, srcs))
+                if f["cls"] == "poly":
+                    ehats.append(f["e_hat"])
+        bcv = []
+        for sd in range(1, 4):
+            b = grow(dict(q=q, p_parents=2, L_cycle=4, W_window=8, decay=True,
+                          return_graph=True), sd, 3000)["final_lcc_adj"]
+            if b and len(b) > 10:
+                dg = np.array([len(a) for a in b], float); bcv.append(dg.std() / dg.mean())
+        cvr = f"{min(cvs):.2f}..{max(cvs):.2f}" if cvs else "--"
+        eh = f"{np.mean(ehats):.2f}" if ehats else "--"
+        bc = f"{np.mean(bcv):.2f}" if bcv else "--"
+        print(f"{q:>5.2f}{ext:>6}{manif:>8}{cvr:>15}{eh:>11}{bc:>10}   "
+              f"{','.join(verds)}", flush=True)
+    print("\nVerify: cv(diss) crosses <0.60 at low q (manifold window); ehat_surv ~2-3 "
+          "(finite-d, NOT expander); cv(bare) stays >0.60 (dissipation load-bearing).")
+
+
 def main():
     rng = np.random.default_rng(0)
     smoke = "--smoke" in sys.argv
@@ -209,6 +251,8 @@ def main():
           "starve vs select deaths.\n")
     if "--fine" in sys.argv:
         run_fine(Qg_lo, D_lo); return
+    if "--plane" in sys.argv:
+        run_plane(Qg_lo, D_lo); return
 
     modes = ["none", "scalar_flux", "reconvergence"]
     ratios = [("drive>diss", dict(q=0.5, c=1.0)), ("drive~diss", dict(q=0.3, c=1.4))]
