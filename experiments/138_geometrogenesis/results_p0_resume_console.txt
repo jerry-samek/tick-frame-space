@@ -1,0 +1,31 @@
+recovered 32 finals from console
+running 18 missing cells: [4.0, 8.0]
+  J=8.0 seed=1000: cls=poly e_hat=1.05 sq/edge=0.549 drift=+0.0000 (3533.3s)
+  J=8.0 seed=1003: cls=poly e_hat=1.18 sq/edge=0.508 drift=+0.0000 (3600.6s)
+  J=8.0 seed=1004: cls=poly e_hat=1.14 sq/edge=0.500 drift=+0.0000 (3605.1s)
+  J=8.0 seed=1005: cls=poly e_hat=1.15 sq/edge=0.527 drift=+0.0000 (3612.3s)
+  J=8.0 seed=1007: cls=poly e_hat=1.22 sq/edge=0.521 drift=+0.0000 (3613.4s)
+  J=4.0 seed=1007: cls=poly e_hat=1.26 sq/edge=0.531 drift=+0.0000 (3619.5s)
+  J=4.0 seed=1004: cls=poly e_hat=1.23 sq/edge=0.480 drift=+0.0000 (3623.3s)
+  J=8.0 seed=1006: cls=poly e_hat=1.08 sq/edge=0.498 drift=+0.0000 (3626.2s)
+  J=4.0 seed=1006: cls=poly e_hat=1.22 sq/edge=0.473 drift=+0.0000 (3635.0s)
+  J=4.0 seed=1008: cls=poly e_hat=1.27 sq/edge=0.465 drift=+0.0000 (3638.1s)
+  J=4.0 seed=1003: cls=poly e_hat=1.16 sq/edge=0.512 drift=+0.0000 (3638.5s)
+  J=4.0 seed=1009: cls=poly e_hat=1.18 sq/edge=0.514 drift=+0.0000 (3642.4s)
+  J=4.0 seed=1002: cls=poly e_hat=1.09 sq/edge=0.492 drift=+0.0000 (3646.4s)
+  J=4.0 seed=1005: cls=poly e_hat=1.15 sq/edge=0.514 drift=+0.0000 (3652.7s)
+  J=8.0 seed=1001: cls=poly e_hat=1.19 sq/edge=0.518 drift=+0.0000 (3654.3s)
+  J=8.0 seed=1002: cls=poly e_hat=1.23 sq/edge=0.479 drift=+0.0000 (3659.0s)
+  J=8.0 seed=1008: cls=poly e_hat=0.98 sq/edge=0.512 drift=+0.0000 (1686.7s)
+  J=8.0 seed=1009: cls=poly e_hat=0.95 sq/edge=0.619 drift=+0.0000 (1620.0s)
+
+=== gate G-P0 ===
+  poly_count_J0.5: 0
+  poly_count_J1.0: 0
+  poly_count_J2.0: 0
+  poly_count_J4.0: 10
+  poly_count_J8.0: 10
+  exists_condensing_J: True
+  low_J_stays_exp: True
+  G_P0_PASS: True
+wall clock: 5222.4s

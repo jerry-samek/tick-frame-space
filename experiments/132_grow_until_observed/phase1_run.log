@@ -1,0 +1,16 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- W:\tools\python\python.exe
+cachedir: .pytest_cache
+rootdir: W:\workspace\tick-frame-space
+plugins: anyio-4.11.0
+collecting ... collected 1 item
+
+experiments/132_grow_until_observed/phase1_test.py::test_phase1_sustainment 
+Phase 1 sustainment PASS
+Cycles completed: 5000
+Fire counts: {(0, 0, 0): 5000, (1, 0, 0): 5000, (1, 1, 0): 5000, (0, 1, 0): 5000}
+Steady-state thresholds (after warm-up): {(0, 0, 0): 100.0, (1, 0, 0): 100.05, (1, 1, 0): 100.1, (0, 1, 0): 100.1}
+Final thresholds: {(0, 0, 0): 100.0, (1, 0, 0): 100.05, (1, 1, 0): 100.1, (0, 1, 0): 100.1}
+PASSED
+
+============================== 1 passed in 0.13s ==============================

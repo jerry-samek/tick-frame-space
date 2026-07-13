@@ -1,0 +1,28 @@
+=== frozen fixture family: sustains audit ===
+  FLAT_K4: sustains=True (period_K=True alive=4/4)
+  FLAT_K6: sustains=True (period_K=True alive=6/6)
+  FLAT_K8: sustains=True (period_K=True alive=8/8)
+  CUBE_K8: sustains=True (period_K=True alive=8/8)
+
+=== readout M (memorized-template reference), bootstrap B=200 ===
+  FLAT_K4: dpr_sub=2.851+/-0.014 mds_dim90c=2.56+/-0.01 n_rows=768
+  FLAT_K6: dpr_sub=3.777+/-0.029 mds_dim90c=3.53+/-0.02 n_rows=2592
+  FLAT_K8: dpr_sub=4.361+/-0.028 mds_dim90c=4.77+/-0.02 n_rows=6144
+  CUBE_K8: dpr_sub=4.839+/-0.019 mds_dim90c=4.81+/-0.02 n_rows=6144
+
+=== G-M3 calibration transfer (Phase-0 graph fixtures) ===
+  lattice3d: {'dpr_raw': 44.17361221814558, 'dpr_sub': 45.57993496589538, 'mds_dim90c': 48.61026483859207}
+  expander6: {'dpr_raw': 60.33655607662473, 'dpr_sub': 59.938092361001566, 'mds_dim90c': 53.219592450771245}
+
+=== family-widening probes (substrate question, non-gating) ===
+  RING3x3_K8: sustains=False (period_K=False alive=6/8)
+  ZIGZAG_K8: sustains=False (period_K=False alive=6/8)
+  HEX3D_K6: sustains=False (period_K=False alive=4/6)
+
+=== Phase 1b gate ===
+  G-M1 embedding discrimination: z=19.94 -> PASS
+  G-M2 same-embedding control:   z=0.07 -> PASS
+  G-M3 calibration transfer:     expander6 59.94 vs lattice3d 45.58 -> PASS
+
+PHASE1B_PASS = True
+wall clock: 5.2s

@@ -1,0 +1,89 @@
+  lattice3d seed=0: dpr_raw=57.551, dpr_sub=58.821, mds_dim90=55.000, mds_dim90c=54.333, corr_d1=0.213, corr_d6=0.021
+  lattice3d seed=1: dpr_raw=57.835, dpr_sub=59.003, mds_dim90=55.000, mds_dim90c=54.391, corr_d1=0.218, corr_d6=0.019
+  lattice3d seed=2: dpr_raw=56.933, dpr_sub=59.480, mds_dim90=55.000, mds_dim90c=54.457, corr_d1=0.222, corr_d6=0.026
+  lattice3d seed=3: dpr_raw=57.460, dpr_sub=58.869, mds_dim90=55.000, mds_dim90c=54.354, corr_d1=0.213, corr_d6=0.020
+  lattice3d seed=4: dpr_raw=58.243, dpr_sub=59.454, mds_dim90=55.000, mds_dim90c=54.590, corr_d1=0.210, corr_d6=0.018
+  lattice3d seed=5: dpr_raw=57.552, dpr_sub=59.372, mds_dim90=55.000, mds_dim90c=54.463, corr_d1=0.210, corr_d6=0.020
+  lattice3d seed=6: dpr_raw=57.952, dpr_sub=59.130, mds_dim90=55.000, mds_dim90c=54.414, corr_d1=0.209, corr_d6=0.016
+  lattice3d seed=7: dpr_raw=57.353, dpr_sub=59.269, mds_dim90=55.000, mds_dim90c=54.423, corr_d1=0.212, corr_d6=0.022
+  lattice3d seed=8: dpr_raw=56.672, dpr_sub=59.228, mds_dim90=55.000, mds_dim90c=54.413, corr_d1=0.212, corr_d6=0.023
+  lattice3d seed=9: dpr_raw=57.107, dpr_sub=58.634, mds_dim90=55.000, mds_dim90c=54.275, corr_d1=0.209, corr_d6=0.019
+  expander6 seed=0: dpr_raw=62.306, dpr_sub=62.115, mds_dim90=56.000, mds_dim90c=55.255, corr_d1=0.156, corr_d6=0.012
+  expander6 seed=1: dpr_raw=62.356, dpr_sub=62.267, mds_dim90=56.000, mds_dim90c=55.451, corr_d1=0.147, corr_d6=0.014
+  expander6 seed=2: dpr_raw=61.998, dpr_sub=62.219, mds_dim90=56.000, mds_dim90c=55.412, corr_d1=0.148, corr_d6=0.016
+  expander6 seed=3: dpr_raw=61.788, dpr_sub=62.394, mds_dim90=56.000, mds_dim90c=55.577, corr_d1=0.145, corr_d6=0.019
+  expander6 seed=4: dpr_raw=62.264, dpr_sub=62.204, mds_dim90=56.000, mds_dim90c=55.393, corr_d1=0.157, corr_d6=0.014
+  expander6 seed=5: dpr_raw=61.477, dpr_sub=62.305, mds_dim90=56.000, mds_dim90c=55.430, corr_d1=0.162, corr_d6=0.017
+  expander6 seed=6: dpr_raw=62.020, dpr_sub=62.051, mds_dim90=56.000, mds_dim90c=55.246, corr_d1=0.157, corr_d6=0.014
+  expander6 seed=7: dpr_raw=62.306, dpr_sub=62.298, mds_dim90=56.000, mds_dim90c=55.448, corr_d1=0.156, corr_d6=0.015
+  expander6 seed=8: dpr_raw=61.809, dpr_sub=62.229, mds_dim90=56.000, mds_dim90c=55.392, corr_d1=0.156, corr_d6=0.018
+  expander6 seed=9: dpr_raw=62.145, dpr_sub=62.361, mds_dim90=56.000, mds_dim90c=55.539, corr_d1=0.152, corr_d6=0.016
+  lattice2d seed=0: dpr_raw=28.008, dpr_sub=37.776, mds_dim90=52.000, mds_dim90c=51.036, corr_d1=0.405, corr_d6=0.071
+  lattice2d seed=1: dpr_raw=30.386, dpr_sub=40.153, mds_dim90=52.000, mds_dim90c=51.337, corr_d1=0.385, corr_d6=0.059
+  lattice2d seed=2: dpr_raw=24.623, dpr_sub=36.662, mds_dim90=51.000, mds_dim90c=50.863, corr_d1=0.418, corr_d6=0.086
+  lattice2d seed=3: dpr_raw=28.519, dpr_sub=38.300, mds_dim90=52.000, mds_dim90c=51.199, corr_d1=0.396, corr_d6=0.067
+  lattice2d seed=4: dpr_raw=25.036, dpr_sub=38.314, mds_dim90=52.000, mds_dim90c=51.027, corr_d1=0.411, corr_d6=0.093
+  lattice2d seed=5: dpr_raw=28.396, dpr_sub=36.321, mds_dim90=51.000, mds_dim90c=50.899, corr_d1=0.407, corr_d6=0.072
+  lattice2d seed=6: dpr_raw=30.208, dpr_sub=39.220, mds_dim90=52.000, mds_dim90c=51.308, corr_d1=0.392, corr_d6=0.063
+  lattice2d seed=7: dpr_raw=28.854, dpr_sub=38.313, mds_dim90=52.000, mds_dim90c=51.122, corr_d1=0.395, corr_d6=0.067
+  lattice2d seed=8: dpr_raw=27.380, dpr_sub=38.112, mds_dim90=52.000, mds_dim90c=51.093, corr_d1=0.402, corr_d6=0.075
+  lattice2d seed=9: dpr_raw=25.971, dpr_sub=38.608, mds_dim90=51.000, mds_dim90c=50.950, corr_d1=0.406, corr_d6=0.075
+  expander4 seed=0: dpr_raw=62.372, dpr_sub=61.957, mds_dim90=56.000, mds_dim90c=55.137, corr_d1=0.242, corr_d6=0.013
+  expander4 seed=1: dpr_raw=62.118, dpr_sub=61.800, mds_dim90=56.000, mds_dim90c=55.067, corr_d1=0.247, corr_d6=0.014
+  expander4 seed=2: dpr_raw=61.577, dpr_sub=61.516, mds_dim90=55.000, mds_dim90c=54.697, corr_d1=0.250, corr_d6=0.015
+  expander4 seed=3: dpr_raw=61.305, dpr_sub=61.446, mds_dim90=55.000, mds_dim90c=54.636, corr_d1=0.259, corr_d6=0.016
+  expander4 seed=4: dpr_raw=62.049, dpr_sub=61.810, mds_dim90=56.000, mds_dim90c=55.053, corr_d1=0.249, corr_d6=0.014
+  expander4 seed=5: dpr_raw=61.403, dpr_sub=61.847, mds_dim90=56.000, mds_dim90c=55.125, corr_d1=0.270, corr_d6=0.018
+  expander4 seed=6: dpr_raw=61.154, dpr_sub=60.975, mds_dim90=55.000, mds_dim90c=54.350, corr_d1=0.250, corr_d6=0.013
+  expander4 seed=7: dpr_raw=61.548, dpr_sub=61.415, mds_dim90=55.000, mds_dim90c=54.806, corr_d1=0.266, corr_d6=0.014
+  expander4 seed=8: dpr_raw=61.633, dpr_sub=61.783, mds_dim90=56.000, mds_dim90c=55.019, corr_d1=0.257, corr_d6=0.016
+  expander4 seed=9: dpr_raw=61.298, dpr_sub=61.420, mds_dim90=55.000, mds_dim90c=54.630, corr_d1=0.254, corr_d6=0.015
+  moore2d seed=0: dpr_raw=38.985, dpr_sub=46.675, mds_dim90=54.000, mds_dim90c=53.080, corr_d1=0.309, corr_d6=0.037
+  moore2d seed=1: dpr_raw=38.857, dpr_sub=47.229, mds_dim90=54.000, mds_dim90c=53.120, corr_d1=0.303, corr_d6=0.042
+  moore2d seed=2: dpr_raw=37.705, dpr_sub=46.366, mds_dim90=53.000, mds_dim90c=52.997, corr_d1=0.317, corr_d6=0.048
+  moore2d seed=3: dpr_raw=38.840, dpr_sub=45.595, mds_dim90=54.000, mds_dim90c=53.026, corr_d1=0.309, corr_d6=0.046
+  moore2d seed=4: dpr_raw=36.939, dpr_sub=46.581, mds_dim90=54.000, mds_dim90c=53.065, corr_d1=0.314, corr_d6=0.053
+  moore2d seed=5: dpr_raw=37.983, dpr_sub=45.095, mds_dim90=54.000, mds_dim90c=53.011, corr_d1=0.314, corr_d6=0.044
+  moore2d seed=6: dpr_raw=40.109, dpr_sub=46.308, mds_dim90=54.000, mds_dim90c=53.121, corr_d1=0.301, corr_d6=0.035
+  moore2d seed=7: dpr_raw=39.084, dpr_sub=46.459, mds_dim90=54.000, mds_dim90c=53.146, corr_d1=0.302, corr_d6=0.040
+  moore2d seed=8: dpr_raw=37.134, dpr_sub=46.699, mds_dim90=54.000, mds_dim90c=53.120, corr_d1=0.310, corr_d6=0.045
+  moore2d seed=9: dpr_raw=36.620, dpr_sub=47.254, mds_dim90=54.000, mds_dim90c=53.141, corr_d1=0.313, corr_d6=0.051
+  lattice3d_uniformtaps seed=0: dpr_raw=61.456, dpr_sub=61.234, mds_dim90=55.000, mds_dim90c=54.898
+  lattice3d_uniformtaps seed=1: dpr_raw=61.240, dpr_sub=61.188, mds_dim90=55.000, mds_dim90c=54.903
+  lattice3d_uniformtaps seed=2: dpr_raw=61.070, dpr_sub=61.130, mds_dim90=55.000, mds_dim90c=54.871
+  lattice3d_uniformtaps seed=3: dpr_raw=60.691, dpr_sub=60.982, mds_dim90=55.000, mds_dim90c=54.881
+  lattice3d_uniformtaps seed=4: dpr_raw=61.073, dpr_sub=60.975, mds_dim90=55.000, mds_dim90c=54.806
+  lattice3d_uniformtaps seed=5: dpr_raw=60.278, dpr_sub=60.845, mds_dim90=55.000, mds_dim90c=54.776
+  lattice3d_uniformtaps seed=6: dpr_raw=60.835, dpr_sub=60.612, mds_dim90=55.000, mds_dim90c=54.623
+  lattice3d_uniformtaps seed=7: dpr_raw=61.295, dpr_sub=61.143, mds_dim90=55.000, mds_dim90c=54.874
+  lattice3d_uniformtaps seed=8: dpr_raw=61.258, dpr_sub=61.462, mds_dim90=56.000, mds_dim90c=55.061
+  lattice3d_uniformtaps seed=9: dpr_raw=60.492, dpr_sub=60.770, mds_dim90=55.000, mds_dim90c=54.717
+  lattice3d_shuffled seed=0: dpr_raw=63.799, dpr_sub=62.811, mds_dim90=57.000, mds_dim90c=56.105
+  lattice3d_shuffled seed=1: dpr_raw=63.811, dpr_sub=62.822, mds_dim90=57.000, mds_dim90c=56.115
+  lattice3d_shuffled seed=2: dpr_raw=63.800, dpr_sub=62.814, mds_dim90=57.000, mds_dim90c=56.104
+  lattice3d_shuffled seed=3: dpr_raw=63.797, dpr_sub=62.809, mds_dim90=57.000, mds_dim90c=56.106
+  lattice3d_shuffled seed=4: dpr_raw=63.801, dpr_sub=62.812, mds_dim90=57.000, mds_dim90c=56.091
+  lattice3d_shuffled seed=5: dpr_raw=63.796, dpr_sub=62.807, mds_dim90=57.000, mds_dim90c=56.097
+  lattice3d_shuffled seed=6: dpr_raw=63.802, dpr_sub=62.812, mds_dim90=57.000, mds_dim90c=56.091
+  lattice3d_shuffled seed=7: dpr_raw=63.796, dpr_sub=62.806, mds_dim90=57.000, mds_dim90c=56.083
+  lattice3d_shuffled seed=8: dpr_raw=63.805, dpr_sub=62.817, mds_dim90=57.000, mds_dim90c=56.116
+  lattice3d_shuffled seed=9: dpr_raw=63.795, dpr_sub=62.807, mds_dim90=57.000, mds_dim90c=56.086
+
+=== Exp 137 Phase 0b (deconfound) — mean +/- sd, 10 seeds ===
+lattice3d                   57.47+/-0.45     59.13+/-0.27     55.00+/-0.00     54.41+/-0.08   d1/d6=0.213/0.021
+expander6                   62.05+/-0.27     62.24+/-0.10     56.00+/-0.00     55.41+/-0.10   d1/d6=0.154/0.015
+lattice2d                   27.74+/-1.89     38.18+/-1.06     51.70+/-0.46     51.08+/-0.15   d1/d6=0.402/0.073
+expander4                   61.65+/-0.38     61.60+/-0.28     55.50+/-0.50     54.85+/-0.25   d1/d6=0.254/0.015
+moore2d                     38.23+/-1.07     46.43+/-0.63     53.90+/-0.30     53.08+/-0.05   d1/d6=0.309/0.044
+lattice3d_uniformtaps       60.97+/-0.36     61.03+/-0.24     55.10+/-0.30     54.84+/-0.11 
+lattice3d_shuffled          63.80+/-0.00     62.81+/-0.00     57.00+/-0.00     56.10+/-0.01 
+
+verdicts: {
+  "T1_expander6_vs_lattice3d_sd": 15.214873349103508,
+  "T1_expander4_vs_lattice2d_sd": 30.324452437839522,
+  "T2_moore2d_minus_lattice3d_dpr_sub": -12.699995659370792,
+  "T2_moore2d_minus_lattice3d_mds_dim90c": -1.3286786983958123,
+  "T4_uniformtaps_dpr_sub": 61.03406557539232,
+  "T4_shuffled_dpr_sub": 62.81164367215977,
+  "lattice3d_dpr_sub": 59.12603271349902
+}

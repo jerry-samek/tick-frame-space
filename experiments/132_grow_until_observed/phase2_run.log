@@ -1,0 +1,64 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- W:\tools\python\python.exe
+cachedir: .pytest_cache
+rootdir: W:\workspace\tick-frame-space\experiments\132_grow_until_observed
+plugins: anyio-4.11.0
+collecting ... collected 1 item
+
+phase2_test.py::test_phase2_run_and_analyze 
+========== PHASE 2 RESULTS ==========
+
+H3.5 — threshold(r) profile (averaged from cells at integer distance from planet):
+  r=0: threshold = 151.5875
+  r=1: threshold = 151.5687
+  r=2: threshold = 157.1705
+  r=3: threshold = 160.3757
+  r=4: threshold = 157.0237
+  r=5: threshold = 156.8673
+  r=6: threshold = 158.1724
+  r=7: threshold = 161.2422
+  r=8: threshold = 168.3035
+  r=9: threshold = 165.5750
+  r=10: threshold = 163.8727
+  r=11: threshold = 162.7985
+  Monotonically decreasing? False
+
+H4.1 — load(r) profile (averaged from connectors at integer distance from planet):
+  r=0: load = 1.3333
+  r=1: load = 1.4412
+  r=2: load = 1.2500
+  r=3: load = 1.4231
+  r=4: load = 1.2669
+  r=5: load = 1.3192
+  r=6: load = 1.3448
+  r=7: load = 1.3226
+  r=8: load = 1.3452
+  r=9: load = 1.3214
+  r=10: load = 1.3543
+  r=11: load = 1.3235
+  Monotonically decreasing? False
+
+H5.1 — test pattern centroid_recent trajectory (first/last 3 entries):
+  tick=404, centroid=(15.214285714285714, 10.5, 1.0)
+  tick=408, centroid=(15.214285714285714, 10.5, 1.0)
+  tick=412, centroid=(15.214285714285714, 10.5, 1.0)
+  ...
+  tick=20392, centroid=(15.541666666666666, 10.5, 1.0)
+  tick=20396, centroid=(15.5, 10.5, 1.0)
+  tick=20400, centroid=(15.458333333333334, 10.5, 1.0)
+  Drift in x: 0.2440 (negative = toward planet at x=10.5)
+
+H5.3 — final centroid_threshold_elevated:
+  (20400, (15.5, 10.5, 1.0))
+
+H5.4 — final peak_density_map:
+  (20400, (15.458333333333334, 10.5, 1.0))
+
+H5.5 — final centroid_connected_firing:
+  (20400, (15.5, 10.5, 1.0))
+
+========== END RESULTS ==========
+
+PASSED
+
+======================== 1 passed in 419.57s (0:06:59) ========================

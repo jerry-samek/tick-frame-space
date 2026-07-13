@@ -1,0 +1,59 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- W:\tools\python\python.exe
+cachedir: .pytest_cache
+rootdir: W:\workspace\tick-frame-space
+plugins: anyio-4.11.0
+collecting ... collected 1 item
+
+experiments/135_semantic_substrate/phase3_test.py::test_phase3_observer_crystallizes_without_breaking_ring 
+========== EXP 135 PHASE 3 RESULTS ==========
+K=6 ring + 1 observer at c0; cadence=30; 10000 ticks; seed=42
+
+Injected:        334 total (164 known, 170 unknown)
+Consumed:        329
+  by ring:       126
+  by spawned:    165
+  by observer:   38
+Spawned cells:   5
+Known routing (semantic): 164/164 = 100.0%
+Observer intercepts (consumed tokens that match observer.spectrum): 38
+
+Observer:
+  state:        crystallized
+  total obs:    298
+  spectrum:     [2, 3, 4]
+  obs_counter (top 5): [(3, 72), (4, 61), (2, 41), (6, 34), (7, 27)]
+
+Snapshots (tick, n_cells, observer_obs_count, observer_state, max_pending):
+  tick   500: cells= 11 obs=  21 state=learning     max_pending= 0
+  tick  1000: cells= 11 obs=  46 state=learning     max_pending= 0
+  tick  1500: cells= 12 obs=  62 state=learning     max_pending= 0
+  tick  2000: cells= 12 obs=  78 state=learning     max_pending= 0
+  tick  2500: cells= 12 obs=  95 state=learning     max_pending= 0
+  tick  3000: cells= 12 obs= 113 state=learning     max_pending= 0
+  tick  3500: cells= 12 obs= 122 state=learning     max_pending= 0
+  tick  4000: cells= 12 obs= 150 state=learning     max_pending= 2
+  tick  4500: cells= 12 obs= 185 state=learning     max_pending= 0
+  tick  5000: cells= 12 obs= 203 state=crystallized max_pending= 0
+  tick  5500: cells= 12 obs= 213 state=crystallized max_pending= 0
+  tick  6000: cells= 12 obs= 223 state=crystallized max_pending= 0
+  tick  6500: cells= 12 obs= 234 state=crystallized max_pending= 0
+  tick  7000: cells= 12 obs= 242 state=crystallized max_pending= 0
+  tick  7500: cells= 12 obs= 250 state=crystallized max_pending= 0
+  tick  8000: cells= 12 obs= 259 state=crystallized max_pending= 0
+  tick  8500: cells= 12 obs= 271 state=crystallized max_pending= 0
+  tick  9000: cells= 12 obs= 280 state=crystallized max_pending= 0
+  tick  9500: cells= 12 obs= 287 state=crystallized max_pending= 0
+  tick 10000: cells= 12 obs= 298 state=crystallized max_pending= 0
+
+Spawn log:
+  tick    17: parent_idx=0 child_spectrum={6}
+  tick    49: parent_idx=0 child_spectrum={7}
+  tick   291: parent_idx=0 child_spectrum={10}
+  tick   445: parent_idx=0 child_spectrum={8}
+  tick  1269: parent_idx=0 child_spectrum={9}
+
+========== ALL PHASE 3 SUCCESS CRITERIA PASSED ==========
+PASSED
+
+============================== 1 passed in 0.06s ==============================

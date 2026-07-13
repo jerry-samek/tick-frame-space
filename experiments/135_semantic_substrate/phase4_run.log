@@ -1,0 +1,57 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- W:\tools\python\python.exe
+cachedir: .pytest_cache
+rootdir: W:\workspace\tick-frame-space
+plugins: anyio-4.11.0
+collecting ... collected 1 item
+
+experiments/135_semantic_substrate/phase4_test.py::test_phase4_multi_observer_specialization 
+========== EXP 135 PHASE 4 RESULTS ==========
+K=6 ring + 6 observers (one per ring cell); cadence=30; 10000 ticks; seed=42
+Observer params: learning_threshold=15, crystallization_size=1
+
+Injected: 334 (164 known, 170 unknown)
+Consumed: 325
+  by ring:     115
+  by spawned:  149
+  by observer: 61
+Spawned: 7 cells, spectra [4, 6, 7, 8, 9, 10]
+Semantic known-routing: 161/161 = 100.0%
+
+Per-observer:
+  Host   State          Total obs  Spectrum   Top-3 obs                     
+  c0     crystallized   289        [6]        [(3, 79), (2, 66), (6, 37)]   
+  c1     crystallized   23         [3]        [(3, 11), (2, 3), (4, 3)]     
+  c2     learning       10         []         [(8, 2), (3, 2), (4, 2)]      
+  c3     learning       9          []         [(2, 3), (8, 2), (6, 1)]      
+  c4     crystallized   24         [2]        [(2, 15), (3, 3), (8, 2)]     
+  c5     crystallized   38         [3]        [(3, 16), (2, 15), (8, 2)]    
+
+Spawn log:
+  tick    27: parent_idx=0 child_spectrum={6}
+  tick    59: parent_idx=0 child_spectrum={7}
+  tick   311: parent_idx=0 child_spectrum={10}
+  tick   463: parent_idx=0 child_spectrum={8}
+  tick   495: parent_idx=0 child_spectrum={8}
+  tick  1309: parent_idx=0 child_spectrum={9}
+  tick  4046: parent_idx=0 child_spectrum={4}
+
+Snapshots (states: L=Learning, C=Crystallized, in c0..c5 order):
+  tick  1000: cells= 17 states=[CLLLLL] obs_counts=[35, 6, 6, 6, 8, 10] max_pending=1
+  tick  2000: cells= 18 states=[CLLLLC] obs_counts=[62, 9, 8, 8, 12, 15] max_pending=0
+  tick  3000: cells= 18 states=[CLLLLC] obs_counts=[93, 12, 9, 8, 13, 16] max_pending=0
+  tick  4000: cells= 18 states=[CCLLCC] obs_counts=[132, 15, 10, 9, 15, 22] max_pending=2
+  tick  5000: cells= 19 states=[CCLLCC] obs_counts=[159, 15, 10, 9, 17, 26] max_pending=0
+  tick  6000: cells= 19 states=[CCLLCC] obs_counts=[190, 17, 10, 9, 19, 29] max_pending=0
+  tick  7000: cells= 19 states=[CCLLCC] obs_counts=[216, 17, 10, 9, 20, 31] max_pending=0
+  tick  8000: cells= 19 states=[CCLLCC] obs_counts=[235, 18, 10, 9, 20, 32] max_pending=0
+  tick  9000: cells= 19 states=[CCLLCC] obs_counts=[261, 21, 10, 9, 23, 37] max_pending=0
+  tick 10000: cells= 19 states=[CCLLCC] obs_counts=[289, 23, 10, 9, 24, 38] max_pending=1
+
+Distinct crystallized spectra: 3
+  [[2], [3], [6]]
+
+========== ALL PHASE 4 SUCCESS CRITERIA PASSED ==========
+PASSED
+
+============================== 1 passed in 0.23s ==============================

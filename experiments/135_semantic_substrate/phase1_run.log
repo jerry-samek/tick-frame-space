@@ -1,0 +1,59 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- W:\tools\python\python.exe
+cachedir: .pytest_cache
+rootdir: W:\workspace\tick-frame-space
+plugins: anyio-4.11.0
+collecting ... collected 1 item
+
+experiments/135_semantic_substrate/phase1_test.py::test_phase1_k6_ring_run 
+========== EXP 135 PHASE 1 RESULTS ==========
+Run: 10000 ticks, injection every 15 ticks, seed=42
+
+Injected:        667 total (337 known, 330 unknown)
+Consumed:        658
+  by ring cells: 333
+  by spawned:    325
+Spawned cells:   5
+In-flight at end:1
+Pending at end:  3
+
+Known routing accuracy: 333/333 = 100.0%
+Unknown spawn count:    5 (expected: 5)
+Unknown re-routed:      325
+
+Max age of consumed deposit: 339 ticks
+Max pending observed:        5
+
+Snapshots:
+  tick   500: n_cells= 10 n_connectors_dir=  20 in_flight= 1 sum_pending=  3 max_pending= 3
+  tick  1000: n_cells= 11 n_connectors_dir=  22 in_flight= 0 sum_pending=  0 max_pending= 0
+  tick  1500: n_cells= 11 n_connectors_dir=  22 in_flight= 2 sum_pending=  0 max_pending= 0
+  tick  2000: n_cells= 11 n_connectors_dir=  22 in_flight= 1 sum_pending=  4 max_pending= 4
+  tick  2500: n_cells= 11 n_connectors_dir=  22 in_flight= 2 sum_pending=  5 max_pending= 5
+  tick  3000: n_cells= 11 n_connectors_dir=  22 in_flight= 1 sum_pending=  1 max_pending= 1
+  tick  3500: n_cells= 11 n_connectors_dir=  22 in_flight= 1 sum_pending=  0 max_pending= 0
+  tick  4000: n_cells= 11 n_connectors_dir=  22 in_flight= 1 sum_pending=  0 max_pending= 0
+  tick  4500: n_cells= 11 n_connectors_dir=  22 in_flight= 0 sum_pending=  0 max_pending= 0
+  tick  5000: n_cells= 11 n_connectors_dir=  22 in_flight= 1 sum_pending=  4 max_pending= 4
+  tick  5500: n_cells= 11 n_connectors_dir=  22 in_flight= 1 sum_pending=  3 max_pending= 3
+  tick  6000: n_cells= 11 n_connectors_dir=  22 in_flight= 0 sum_pending=  1 max_pending= 1
+  tick  6500: n_cells= 11 n_connectors_dir=  22 in_flight= 1 sum_pending=  3 max_pending= 3
+  tick  7000: n_cells= 11 n_connectors_dir=  22 in_flight= 1 sum_pending=  2 max_pending= 2
+  tick  7500: n_cells= 11 n_connectors_dir=  22 in_flight= 1 sum_pending=  1 max_pending= 1
+  tick  8000: n_cells= 11 n_connectors_dir=  22 in_flight= 1 sum_pending=  3 max_pending= 3
+  tick  8500: n_cells= 11 n_connectors_dir=  22 in_flight= 1 sum_pending=  1 max_pending= 1
+  tick  9000: n_cells= 11 n_connectors_dir=  22 in_flight= 0 sum_pending=  0 max_pending= 0
+  tick  9500: n_cells= 11 n_connectors_dir=  22 in_flight= 1 sum_pending=  0 max_pending= 0
+  tick 10000: n_cells= 11 n_connectors_dir=  22 in_flight= 1 sum_pending=  3 max_pending= 3
+
+Spawn log (tick, parent_idx, child_spectrum):
+  tick    15: parent=0 child_spectrum={6}
+  tick    35: parent=0 child_spectrum={7}
+  tick   173: parent=0 child_spectrum={10}
+  tick   225: parent=0 child_spectrum={8}
+  tick   637: parent=0 child_spectrum={9}
+
+========== ALL SUCCESS CRITERIA PASSED ==========
+PASSED
+
+============================== 1 passed in 0.07s ==============================

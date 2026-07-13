@@ -1,0 +1,45 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- W:\tools\python\python.exe
+cachedir: .pytest_cache
+rootdir: W:\workspace\tick-frame-space
+plugins: anyio-4.11.0
+collecting ... collected 1 item
+
+experiments/135_semantic_substrate/phase2_test.py::test_phase2_independent_cells_crystallize_correctly 
+========== EXP 135 PHASE 2 RESULTS ==========
+5 isolated cells, 250 observations each, learning_threshold=200, crystallization_size=3, seed=42
+
+Cell 0:
+  state:       crystallized
+  spectrum:    [0, 1, 2]
+  expected:    [0, 1, 2]
+  observed:    [(0, 156), (1, 52), (2, 32), (3, 10)]
+
+Cell 1:
+  state:       crystallized
+  spectrum:    [4, 5, 6]
+  expected:    [4, 5, 6]
+  observed:    [(4, 142), (5, 67), (6, 34), (7, 7)]
+
+Cell 2:
+  state:       crystallized
+  spectrum:    [8, 9, 10]
+  expected:    [8, 9, 10]
+  observed:    [(8, 145), (9, 73), (10, 25), (11, 7)]
+
+Cell 3:
+  state:       crystallized
+  spectrum:    [12, 13, 14]
+  expected:    [12, 13, 14]
+  observed:    [(12, 137), (13, 65), (14, 36), (15, 12)]
+
+Cell 4:
+  state:       crystallized
+  spectrum:    [16, 17, 18]
+  expected:    [16, 17, 18]
+  observed:    [(16, 154), (17, 71), (18, 22), (19, 3)]
+
+========== ALL PHASE 2 SUCCESS CRITERIA PASSED ==========
+PASSED
+
+============================== 1 passed in 0.03s ==============================

@@ -1,0 +1,61 @@
+=== validation against phase1b census ===
+  K=8: raw closures 138, stage1 98, classes 11 (0s)
+  K=10: raw closures 2010, stage1 1304, classes 73 (2s)
+  validation OK (11 / 73)
+
+=== K=12 enumeration ===
+  K=12: raw closures 31754, stage1 19176, classes 755 (71s)
+
+=== anchors (K=12) ===
+  CK=3.123 LAT=10.446+/-0.361 EXP=10.952+/-0.065
+
+=== census sweep: sustains + RG for every class ===
+    ... 200/755 (2s)
+    ... 400/755 (4s)
+    ... 600/755 (6s)
+
+C1: 755 classes, 8 survivors
+  survivor: rank=2 chords=4 RG=2.387 pos=-0.101 cells=[(0, 0, 0), (1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0), (5, 0, 0), (5, 1, 0), (4, 1, 0), (3, 1, 0), (2, 1, 0), (1, 1, 0), (0, 1, 0)]
+  survivor: rank=3 chords=6 RG=2.997 pos=-0.017 cells=[(0, 0, 0), (1, 0, 0), (2, 0, 0), (3, 0, 0), (3, 1, 0), (2, 1, 0), (1, 1, 0), (0, 1, 0), (0, 1, 1), (1, 1, 1), (1, 0, 1), (0, 0, 1)]
+  survivor: rank=3 chords=6 RG=4.078 pos=0.130 cells=[(0, 0, 0), (1, 0, 0), (2, 0, 0), (3, 0, 0), (3, 1, 0), (2, 1, 0), (1, 1, 0), (1, 1, 1), (2, 1, 1), (2, 0, 1), (1, 0, 1), (0, 0, 1)]
+  survivor: rank=2 chords=5 RG=3.668 pos=0.074 cells=[(0, 0, 0), (1, 0, 0), (2, 0, 0), (3, 0, 0), (3, 1, 0), (3, 2, 0), (2, 2, 0), (2, 1, 0), (1, 1, 0), (1, 2, 0), (0, 2, 0), (0, 1, 0)]
+  survivor: rank=3 chords=8 RG=4.656 pos=0.209 cells=[(0, 0, 0), (1, 0, 0), (2, 0, 0), (2, 1, 0), (1, 1, 0), (0, 1, 0), (0, 1, 1), (1, 1, 1), (2, 1, 1), (2, 0, 1), (1, 0, 1), (0, 0, 1)]
+  survivor: rank=3 chords=8 RG=4.656 pos=0.209 cells=[(0, 0, 0), (1, 0, 0), (2, 0, 0), (2, 1, 0), (1, 1, 0), (1, 1, 1), (2, 1, 1), (2, 0, 1), (1, 0, 1), (0, 0, 1), (0, 1, 1), (0, 1, 0)]
+  survivor: rank=3 chords=8 RG=4.656 pos=0.209 cells=[(0, 0, 0), (1, 0, 0), (2, 0, 0), (2, 1, 0), (2, 1, 1), (2, 0, 1), (1, 0, 1), (1, 1, 1), (1, 1, 0), (0, 1, 0), (0, 1, 1), (0, 0, 1)]
+  survivor: rank=3 chords=8 RG=4.656 pos=0.209 cells=[(0, 0, 0), (1, 0, 0), (1, 1, 0), (2, 1, 0), (2, 0, 0), (2, 0, 1), (2, 1, 1), (1, 1, 1), (1, 0, 1), (0, 0, 1), (0, 1, 1), (0, 1, 0)]
+
+C2: pos range over census: [-0.101, 0.228] (ceiling class: chords=5 rank=3); EXPAND (pos>=1) reachable: False
+    max chords in census: 8
+
+C3: chords x rank cross-tab (all classes; survivors in [])
+    chords=0 rank=2: 4 classes [0 survivors]
+    chords=0 rank=3: 73 classes [0 survivors]
+    chords=1 rank=2: 3 classes [0 survivors]
+    chords=1 rank=3: 109 classes [0 survivors]
+    chords=2 rank=2: 7 classes [0 survivors]
+    chords=2 rank=3: 152 classes [0 survivors]
+    chords=3 rank=3: 118 classes [0 survivors]
+    chords=4 rank=2: 10 classes [1 survivors]
+    chords=4 rank=3: 191 classes [0 survivors]
+    chords=5 rank=2: 1 classes [1 survivors]
+    chords=5 rank=3: 53 classes [0 survivors]
+    chords=6 rank=3: 30 classes [2 survivors]
+    chords=8 rank=3: 4 classes [4 survivors]
+    decoupling survivors: planar-chordy(>=4)=2 3D-fewchord(<=3)=0
+
+C4: fixed-chords survivor-vs-non contrast (pos)
+    chords=4: survivors [-0.101] vs non-survivors median=-0.013 IQR=[-0.051,0.055] (n=200)
+    chords=5: survivors [0.074] vs non-survivors median=0.080 IQR=[0.051,0.142] (n=53)
+    chords=6: survivors [-0.017, 0.13] vs non-survivors median=0.104 IQR=[0.078,0.136] (n=28)
+
+C5: M readings (frozen readout) for K=12 survivors
+  rank=2 chords=4: M=5.214+/-0.020
+  rank=3 chords=6: M=5.988+/-0.015
+  rank=3 chords=6: M=7.272+/-0.024
+  rank=2 chords=5: M=5.232+/-0.018
+  rank=3 chords=8: M=5.787+/-0.025
+  rank=3 chords=8: M=5.469+/-0.017
+  rank=3 chords=8: M=5.162+/-0.015
+  rank=3 chords=8: M=6.001+/-0.014
+
+wall clock: 121.3s

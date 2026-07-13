@@ -1,0 +1,4 @@
+splice spot-check J=4 seed=1000:
+  recovered console: cls=poly e_hat=1.26 sq/edge=0.479
+  regenerated      : cls=poly e_hat=1.26 sq/edge=0.479
+condensed graph saved

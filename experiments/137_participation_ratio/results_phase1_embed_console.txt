@@ -1,0 +1,18 @@
+=== (E) fixed-K different-embedding: does a 3D K=8 survivor exist? ===
+CUBE_K8 sustains: True  (period_K=True alive=8/8)
+FLAT_K8 sustains: True  (period_K=True alive=8/8)
+
+R2 dpr_sub  CUBE_K8=4.828 (n_active=8, off_ring_hits=0, off_plane_hits=0)
+R2 dpr_sub  FLAT_K8=4.447 (n_active=8, off_ring_hits=0, off_plane_hits=0)
+  => embedding changes rank? NO (rank tracks period/size, not embedding)
+
+=== (C) confinement under off-ring & delete perturbations, wide 3D window ===
+FLAT_K8 onring_mag1   : dpr_sub=4.447 n_active=8 off_ring_hits=0 off_plane_hits=0 frac_nz=0.938
+FLAT_K8 onring_magK   : dpr_sub=3.966 n_active=8 off_ring_hits=0 off_plane_hits=0 frac_nz=0.781
+FLAT_K8 offring_+K    : dpr_sub=27.510 n_active=36 off_ring_hits=7567 off_plane_hits=4997 frac_nz=0.304
+FLAT_K8 delete_cell   : dpr_sub=4.218 n_active=8 off_ring_hits=0 off_plane_hits=0 frac_nz=0.782
+
+=== (S) proper T6.2a statistics: 100 shuffle surrogates, 2-pooled-sd ===
+K4: real=2.861 surrogate=2.993+/-0.005 |diff|/sd=28.99 passes_2sd=True
+K6: real=3.783 surrogate=4.993+/-0.003 |diff|/sd=411.44 passes_2sd=True
+K8: real=4.363 surrogate=6.994+/-0.002 |diff|/sd=1442.78 passes_2sd=True

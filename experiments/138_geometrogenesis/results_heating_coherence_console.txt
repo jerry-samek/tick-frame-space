@@ -1,0 +1,22 @@
+Peak internal load (core 'temperature') vs pattern radius R. Decoherence threshold theta=60.0.
+production p per node/tick, surface sheds 50%/tick.
+
+   R  #nodes vol/surf  peak load    mean   status
+   1       7     1.17        3.2     2.2   coherent
+   2      33     1.27        4.7     2.0   coherent
+   3     123     1.37        8.6     2.7   coherent
+   4     257     1.92       17.1     6.2   coherent
+   5     515     2.32       27.8    10.1   coherent
+   6     925     2.61       40.9    14.5   coherent
+   8    2109     3.48       74.1    27.4   DECOHERES
+  10    4169     4.26      118.0    44.0   DECOHERES
+
+=== coherence limit R_max vs metabolic rate p (higher metabolism -> smaller max stable size) ===
+     p   R_max (last coherent R)
+   0.3                        11
+   0.5                        10
+   1.0                         7
+   2.0                         5
+   4.0                         3
+
+Reading: peak core load grows with R (volume production ~R^3 vs surface shedding ~R^2 -> vol/surf ratio climbs), crossing the coherence threshold at a critical size = a MAXIMUM STABLE PATTERN. Higher metabolism p -> smaller R_max. This is the framework's Eddington/Chandrasekhar limit, emergent from surface-shedding vs volume-production -- a single/simple pattern sheds directly (no limit); a composite one is bounded by how much its top layers can channel out before forced re-incorporation decoheres it.

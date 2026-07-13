@@ -1,0 +1,146 @@
+  J=0.5 seed=1001: cls=exp e_hat=2.01 sq/edge=0.061 drift=+0.0000 (4963.6s)
+  J=0.5 seed=1004: cls=exp e_hat=2.03 sq/edge=0.055 drift=+0.0000 (4979.3s)
+  J=0.5 seed=1002: cls=exp e_hat=2.04 sq/edge=0.051 drift=+0.0000 (4987.2s)
+  J=0.5 seed=1008: cls=exp e_hat=2.07 sq/edge=0.039 drift=+0.0000 (4993.0s)
+  J=0.5 seed=1006: cls=exp e_hat=2.04 sq/edge=0.031 drift=+0.0000 (4997.8s)
+  J=0.5 seed=1009: cls=exp e_hat=2.02 sq/edge=0.049 drift=+0.0000 (5001.2s)
+  J=0.5 seed=1003: cls=exp e_hat=2.07 sq/edge=0.031 drift=+0.0000 (5012.2s)
+  J=0.5 seed=1000: cls=exp e_hat=2.03 sq/edge=0.041 drift=+0.0000 (5035.2s)
+  J=1.0 seed=1004: cls=exp e_hat=1.96 sq/edge=0.090 drift=+0.0000 (5298.4s)
+  J=1.0 seed=1003: cls=exp e_hat=1.93 sq/edge=0.109 drift=+0.0000 (5300.7s)
+  J=1.0 seed=1000: cls=exp e_hat=1.98 sq/edge=0.080 drift=+0.0000 (5313.6s)
+  J=1.0 seed=1002: cls=exp e_hat=1.97 sq/edge=0.090 drift=+0.0000 (5319.7s)
+  J=1.0 seed=1005: cls=exp e_hat=1.99 sq/edge=0.078 drift=+0.0000 (5330.9s)
+  J=1.0 seed=1001: cls=exp e_hat=1.97 sq/edge=0.096 drift=+0.0000 (5331.1s)
+  J=0.5 seed=1005: cls=exp e_hat=2.04 sq/edge=0.039 drift=+0.0000 (5417.9s)
+  J=0.5 seed=1007: cls=exp e_hat=2.05 sq/edge=0.041 drift=+0.0000 (5440.1s)
+  J=4.0 seed=1000: cls=poly e_hat=1.26 sq/edge=0.479 drift=+0.0000 (3604.2s)
+  J=4.0 seed=1001: cls=poly e_hat=1.19 sq/edge=0.477 drift=+0.0000 (3612.9s)
+  J=2.0 seed=1000: cls=exp e_hat=1.68 sq/edge=0.230 drift=+0.0000 (4075.9s)
+  J=2.0 seed=1001: cls=exp e_hat=1.70 sq/edge=0.248 drift=+0.0000 (4077.0s)
+  J=2.0 seed=1002: cls=exp e_hat=1.73 sq/edge=0.246 drift=+0.0000 (4070.7s)
+  J=2.0 seed=1003: cls=exp e_hat=1.74 sq/edge=0.229 drift=+0.0000 (4086.4s)
+  J=2.0 seed=1004: cls=exp e_hat=1.69 sq/edge=0.223 drift=+0.0000 (4053.1s)
+  J=2.0 seed=1006: cls=exp e_hat=1.72 sq/edge=0.215 drift=+0.0000 (4043.0s)
+  J=2.0 seed=1005: cls=exp e_hat=1.77 sq/edge=0.219 drift=+0.0000 (4066.1s)
+  J=1.0 seed=1006: cls=exp e_hat=1.96 sq/edge=0.092 drift=+0.0000 (4417.7s)
+  J=2.0 seed=1007: cls=exp e_hat=1.63 sq/edge=0.262 drift=+0.0000 (4062.4s)
+  J=2.0 seed=1009: cls=exp e_hat=1.76 sq/edge=0.211 drift=+0.0000 (4056.5s)
+  J=1.0 seed=1007: cls=exp e_hat=1.93 sq/edge=0.111 drift=+0.0000 (4422.4s)
+  J=2.0 seed=1008: cls=exp e_hat=1.74 sq/edge=0.227 drift=+0.0000 (4071.7s)
+  J=1.0 seed=1008: cls=exp e_hat=1.96 sq/edge=0.094 drift=+0.0000 (4420.7s)
+  J=1.0 seed=1009: cls=exp e_hat=1.99 sq/edge=0.084 drift=+0.0000 (4422.3s)
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=87232, pipe_handle=1076)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "W:\tools\python\Lib\multiprocessing\spawn.py", line 113, in spawn_main
+    new_handle = reduction.duplicate(pipe_handle,
+                                     source_process=source_process)
+  File "W:\tools\python\Lib\multiprocessing\reduction.py", line 79, in duplicate
+    return _winapi.DuplicateHandle(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        source_process, handle, target_process,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        0, inheritable, _winapi.DUPLICATE_SAME_ACCESS)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Pøístup byl odepøen
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=87232, pipe_handle=968)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "W:\tools\python\Lib\multiprocessing\spawn.py", line 113, in spawn_main
+    new_handle = reduction.duplicate(pipe_handle,
+                                     source_process=source_process)
+  File "W:\tools\python\Lib\multiprocessing\reduction.py", line 79, in duplicate
+    return _winapi.DuplicateHandle(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        source_process, handle, target_process,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        0, inheritable, _winapi.DUPLICATE_SAME_ACCESS)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Pøístup byl odepøen
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=87232, pipe_handle=1136)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "W:\tools\python\Lib\multiprocessing\spawn.py", line 113, in spawn_main
+    new_handle = reduction.duplicate(pipe_handle,
+                                     source_process=source_process)
+  File "W:\tools\python\Lib\multiprocessing\reduction.py", line 79, in duplicate
+    return _winapi.DuplicateHandle(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        source_process, handle, target_process,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        0, inheritable, _winapi.DUPLICATE_SAME_ACCESS)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Pøístup byl odepøen
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=87232, pipe_handle=1072)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "W:\tools\python\Lib\multiprocessing\spawn.py", line 113, in spawn_main
+    new_handle = reduction.duplicate(pipe_handle,
+                                     source_process=source_process)
+  File "W:\tools\python\Lib\multiprocessing\reduction.py", line 79, in duplicate
+    return _winapi.DuplicateHandle(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        source_process, handle, target_process,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        0, inheritable, _winapi.DUPLICATE_SAME_ACCESS)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Pøístup byl odepøen
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=87232, pipe_handle=1048)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "W:\tools\python\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "W:\tools\python\Lib\multiprocessing\spawn.py", line 132, in _main
+    self = reduction.pickle.load(from_parent)
+  File "W:\tools\python\Lib\multiprocessing\connection.py", line 1179, in rebuild_pipe_connection
+    handle = dh.detach()
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=87232, pipe_handle=828)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "W:\tools\python\Lib\multiprocessing\reduction.py", line 131, in detach
+    return _winapi.DuplicateHandle(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        proc, self._handle, _winapi.GetCurrentProcess(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._access, False, _winapi.DUPLICATE_CLOSE_SOURCE)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "W:\tools\python\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "W:\tools\python\Lib\multiprocessing\spawn.py", line 132, in _main
+    self = reduction.pickle.load(from_parent)
+PermissionError: [WinError 5] Pøístup byl odepøen
+  File "W:\tools\python\Lib\multiprocessing\connection.py", line 1179, in rebuild_pipe_connection
+    handle = dh.detach()
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=87232, pipe_handle=1040)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "W:\tools\python\Lib\multiprocessing\reduction.py", line 131, in detach
+    return _winapi.DuplicateHandle(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        proc, self._handle, _winapi.GetCurrentProcess(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._access, False, _winapi.DUPLICATE_CLOSE_SOURCE)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "W:\tools\python\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "W:\tools\python\Lib\multiprocessing\spawn.py", line 132, in _main
+    self = reduction.pickle.load(from_parent)
+  File "W:\tools\python\Lib\multiprocessing\connection.py", line 1179, in rebuild_pipe_connection
+    handle = dh.detach()
+PermissionError: [WinError 5] Pøístup byl odepøen
+  File "W:\tools\python\Lib\multiprocessing\reduction.py", line 131, in detach
+    return _winapi.DuplicateHandle(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        proc, self._handle, _winapi.GetCurrentProcess(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self._access, False, _winapi.DUPLICATE_CLOSE_SOURCE)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Pøístup byl odepøen

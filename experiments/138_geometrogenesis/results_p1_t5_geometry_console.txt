@@ -1,0 +1,6 @@
+outcome: stationary alive: 2069 deaths: 3334
+  births=1088 alive=1086 lcc=1086 cls=poly e_hat=2.464 gap=+0.0075
+  births=2154 alive=2144 lcc=2144 cls=exp e_hat=2.777 gap=-0.0032
+  births=3276 alive=2016 lcc=2016 cls=poly e_hat=2.529 gap=+0.0021
+  births=4374 alive=2091 lcc=2091 cls=poly e_hat=2.313 gap=+0.0154
+  births=5403 alive=2069 lcc=2069 cls=exp e_hat=2.143 gap=-0.0501

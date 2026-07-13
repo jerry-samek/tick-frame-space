@@ -1,0 +1,17 @@
+graph: 3328 nodes (1600 sheet / 1728 block), seam width 10
+
+LOCAL dimension (ball-growth |B(r)|~r^d) vs graph-distance from seam (median over observers).
+Anchors: pure torus2d = 1.55, pure torus3d = 2.17.
+region   dist  n_obs   local_dim
+sheet       1      8        1.66
+sheet       3      8        1.53
+sheet       6      8        1.55
+sheet      10      8        1.55
+sheet      16      8        1.55
+block       1      8        1.88
+block       3      8        1.93
+block       6      8        2.08
+block      10      8        1.97
+block      16      8        2.01
+
+Reading: sheet observers read ~1.55 (2D) and block observers read ~2.0 (3D) on ONE connected graph -> the instrument reads LOCAL dimension, not a global blend; and the transition across the seam is smooth (frames glue). Shared world, local frames.

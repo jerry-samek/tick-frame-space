@@ -1,0 +1,20 @@
+K4: R0 dpr_sub=1.800 (shuf 2.712) | R2 dpr_sub=2.861 (shuf 2.994) n_active=4 frac_nz=0.875
+K6: R0 dpr_sub=2.859 (shuf 4.514) | R2 dpr_sub=3.783 (shuf 4.994) n_active=6 frac_nz=0.917
+K8: R0 dpr_sub=3.441 (shuf 6.263) | R2 dpr_sub=4.363 (shuf 6.995) n_active=8 frac_nz=0.938
+T6.3 lattice3d: {'dpr_raw': 44.17361221814558, 'dpr_sub': 45.57993496589538, 'mds_dim90c': 48.61026483859207}
+T6.3 expander6: {'dpr_raw': 60.33655607662473, 'dpr_sub': 59.938092361001566, 'mds_dim90c': 53.219592450771245}
+
+=== T6 gate ===
+  T6_1_nondegenerate: True
+  T6_2a_coupling: True
+  T6_2a_is_hollow: True
+  R0_ladder: [1.8, 2.859459459459459, 3.44054464322135]
+  R2_ladder: [2.861478289375898, 3.7834208008715, 4.3629054371527]
+  R0_strictly_K_monotone: True
+  R2_strictly_K_monotone: True
+  T6_2b_R2_escapes_period: False
+  T6_3_transfer_sign: True
+  T6_PASS_registered: True
+  T6_VERDICT: INCONCLUSIVE — registered pass is hollow; gate mis-designed; see RESULTS_phase1.md
+
+T6_PASS_registered = True  ->  INCONCLUSIVE — registered pass is hollow; gate mis-designed; see RESULTS_phase1.md

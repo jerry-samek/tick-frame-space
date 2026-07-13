@@ -1,0 +1,34 @@
+Renewal-stable orbit on the unified substrate (gravity = shadow well; renewal defeats drag). One orbit, 8 phases.
+
+[A] GOD-VIEW (a fiction): planet position around the fixed star:
+    planet = (+10.0, +0.4)   lag(planet,star) = 10.0
+    planet = ( +5.9, +8.0)   lag(planet,star) = 10.0
+    planet = ( -2.6, +9.6)   lag(planet,star) = 10.0
+    planet = ( -9.2, +3.9)   lag(planet,star) = 10.0
+    planet = ( -8.7, -4.8)   lag(planet,star) = 10.0
+    planet = ( -1.7, -9.8)   lag(planet,star) = 10.0
+    planet = ( +6.7, -7.5)   lag(planet,star) = 10.0
+    planet = (+10.0, +0.5)   lag(planet,star) = 10.0
+
+[B] PLANET's PoV: the planet is always at its own origin; where is the star? (star - planet), i.e. the star's apparent position:
+    star @ direction  -177.8 deg, lag 10.0   -> the STAR wheels around the planet
+    star @ direction  -126.4 deg, lag 10.0   -> the STAR wheels around the planet
+    star @ direction   -74.8 deg, lag 10.0   -> the STAR wheels around the planet
+    star @ direction   -23.1 deg, lag 10.0   -> the STAR wheels around the planet
+    star @ direction   +28.7 deg, lag 10.0   -> the STAR wheels around the planet
+    star @ direction   +80.3 deg, lag 10.0   -> the STAR wheels around the planet
+    star @ direction  +131.8 deg, lag 10.0   -> the STAR wheels around the planet
+    star @ direction  -176.9 deg, lag 10.0   -> the STAR wheels around the planet
+
+[C] THIRD OBSERVER's PoV (a body at (14,14), itself ~fixed): both star and planet wheel around the observer:
+    star @ lag 19.8 dir -135.0;  planet @ lag 14.2 dir -106.4
+    star @ lag 19.8 dir -135.0;  planet @ lag 10.0 dir -143.5
+    star @ lag 19.8 dir -135.0;  planet @ lag 17.2 dir -165.2
+    star @ lag 19.8 dir -135.0;  planet @ lag 25.3 dir -156.4
+
+[invariant] the LAG planet<->star is what every frame actually reads, and all agree on it:
+    lag(planet,star) across phases = [np.float64(10.0), np.float64(10.0), np.float64(10.0), np.float64(10.0), np.float64(10.0), np.float64(10.0), np.float64(10.0), np.float64(10.0)]  (constant = circular orbit; frame-INVARIANT)
+
+[renewal / drag] final lag = 10.00 vs initial 10.0 -> orbit STABLE (renewal defeats drag). A persistent (never-renewing) body would have decayed.
+
+Reading: every pattern reads only LAGS, and all frames agree on them (objective). 'Planet orbits star' vs 'star orbits planet' vs 'both orbit the observer' are the SAME lag data in different frames -- none privileged, because there is no god-view. Motion is perspectival; the lag structure is what's real. And the moving pattern is renewal-driven, so its orbit is drag-stable on the one flooding-lag substrate.

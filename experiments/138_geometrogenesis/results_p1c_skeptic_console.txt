@@ -1,0 +1,10 @@
+=== TEST (a): (registered,q2=0.15) with alive hard-capped ~2500 ===
+  seed=3000: outcome=exp-explosion alive=2748 LCC=2748 d_s=2.40 cls=poly eng=0.5%
+  seed=3001: outcome=exp-explosion alive=2629 LCC=2629 d_s=2.58 cls=poly eng=0.6%
+  seed=3002: outcome=exp-explosion alive=2732 LCC=2732 d_s=2.37 cls=poly eng=0.3%
+  seed=3003: outcome=exp-explosion alive=2647 LCC=2647 d_s=2.56 cls=poly eng=0.2%
+  seed=3004: outcome=exp-explosion alive=2805 LCC=2805 d_s=2.44 cls=poly eng=0.3%
+=== TEST (b): d_s on non-geometric nulls (should NOT read ~2) ===
+  random 4-regular N=2025: d_s=2.08
+  random 6-regular N=2025: d_s=0.67
+  random 4-regular N=31000: d_s=5.16

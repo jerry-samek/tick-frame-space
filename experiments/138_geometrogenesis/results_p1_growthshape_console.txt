@@ -1,0 +1,2 @@
+growth-shape re-analysis of alive(t) trajectories (poly-in-time vs exp-in-time):
+{'exp-t': 100, 'too-short': 90}

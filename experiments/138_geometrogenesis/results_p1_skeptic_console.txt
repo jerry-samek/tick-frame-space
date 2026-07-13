@@ -1,0 +1,68 @@
+=== T1: selection-engagement census (production JSON) ===
+  any_cycle: deaths/births = 0/337341 (0.000%)
+  extinct_side: deaths/births = 12/12 (100.000%)
+  no_decay: deaths/births = 0/337341 (0.000%)
+  q0.3p2L4W16: deaths/births = 0/333401 (0.000%)
+  q0.3p2L4W8: deaths/births = 1010/337341 (0.299%)
+  q0.3p2L6W16: deaths/births = 0/333401 (0.000%)
+  q0.3p2L6W8: deaths/births = 4/337341 (0.001%)
+  q0.3p3L4W16: deaths/births = 0/341316 (0.000%)
+  q0.3p3L4W8: deaths/births = 225/339371 (0.066%)
+  q0.3p3L6W16: deaths/births = 0/341316 (0.000%)
+  q0.3p3L6W8: deaths/births = 0/339371 (0.000%)
+  q0.6p2L4W16: deaths/births = 0/384867 (0.000%)
+  q0.6p2L4W8: deaths/births = 0/384385 (0.000%)
+  q0.6p2L6W16: deaths/births = 0/384867 (0.000%)
+  q0.6p2L6W8: deaths/births = 0/384385 (0.000%)
+  q0.6p3L4W16: deaths/births = 0/376033 (0.000%)
+  q0.6p3L4W8: deaths/births = 0/378695 (0.000%)
+  q0.6p3L6W16: deaths/births = 0/376033 (0.000%)
+  q0.6p3L6W8: deaths/births = 0/378695 (0.000%)
+  TOTAL: 1251/6425512 (0.0195%)
+
+=== T5: mature-population quench (q 0.3 -> 0.05 at 2000 alive) ===
+  outcome=stationary final_alive=2069 deaths=3334 peak_alive=2557
+  alive trajectory (sampled): [1, 2, 2, 2, 2] ... [1974, 2042, 2025, 1997, 2040, 2011, 1983, 2069]
+
+=== T3: non-descendant-younger selector (corner cells) ===
+  L=4 W=8 registered: deaths=56/16803 (0.33%) -> max-births
+  L=4 W=8 nondescendant: deaths=2422/16907 (14.33%) -> max-births
+  L=4 W=16 registered: deaths=0/15117 (0.00%) -> max-births
+  L=4 W=16 nondescendant: deaths=47/15117 (0.31%) -> max-births
+
+=== T2: criticality-line scan (ring seed 8, grace W+2) ===
+  q=0.05 W=2 qW=0.1: predicted=die measured=die (alive=8 deaths=0)
+  q=0.1 W=2 qW=0.2: predicted=die measured=die (alive=10 deaths=0)
+  q=0.15 W=2 qW=0.3: predicted=die measured=die (alive=10 deaths=0)
+  q=0.2 W=2 qW=0.4: predicted=die measured=die (alive=10 deaths=0)
+  q=0.25 W=2 qW=0.5: predicted=die measured=die (alive=11 deaths=0)
+  q=0.3 W=2 qW=0.6: predicted=die measured=die (alive=11 deaths=0)
+  q=0.45 W=2 qW=0.9: predicted=die measured=extinct (alive=40 deaths=34)
+  q=0.6 W=2 qW=1.2: predicted=explode measured=explode (alive=12891 deaths=2616)
+  q=0.05 W=4 qW=0.2: predicted=die measured=die (alive=2 deaths=7)
+  q=0.1 W=4 qW=0.4: predicted=die measured=die (alive=5 deaths=6)
+  q=0.15 W=4 qW=0.6: predicted=die measured=die (alive=5 deaths=10)
+  q=0.2 W=4 qW=0.8: predicted=die measured=extinct (alive=23 deaths=16)
+  q=0.25 W=4 qW=1.0: predicted=die measured=extinct (alive=509 deaths=4550)
+  q=0.3 W=4 qW=1.2: predicted=explode measured=explode (alive=12458 deaths=3491)
+  q=0.45 W=4 qW=1.8: predicted=explode measured=explode (alive=15526 deaths=266)
+  q=0.6 W=4 qW=2.4: predicted=explode measured=explode (alive=16431 deaths=26)
+  q=0.05 W=8 qW=0.4: predicted=die measured=die (alive=7 deaths=5)
+  q=0.1 W=8 qW=0.8: predicted=die measured=die (alive=11 deaths=15)
+  q=0.15 W=8 qW=1.2: predicted=explode measured=explode (alive=11550 deaths=3795)
+  q=0.2 W=8 qW=1.6: predicted=explode measured=explode (alive=15920 deaths=740)
+  q=0.25 W=8 qW=2.0: predicted=explode measured=explode (alive=15300 deaths=161)
+  q=0.3 W=8 qW=2.4: predicted=explode measured=explode (alive=18476 deaths=49)
+  q=0.45 W=8 qW=3.6: predicted=explode measured=explode (alive=18423 deaths=1)
+  q=0.6 W=8 qW=4.8: predicted=explode measured=explode (alive=17907 deaths=0)
+  q=0.05 W=16 qW=0.8: predicted=die measured=die (alive=13 deaths=10)
+  q=0.1 W=16 qW=1.6: predicted=explode measured=explode (alive=14546 deaths=732)
+  q=0.15 W=16 qW=2.4: predicted=explode measured=explode (alive=14983 deaths=38)
+  q=0.2 W=16 qW=3.2: predicted=explode measured=explode (alive=17211 deaths=3)
+  q=0.25 W=16 qW=4.0: predicted=explode measured=explode (alive=17196 deaths=0)
+  q=0.3 W=16 qW=4.8: predicted=explode measured=explode (alive=19306 deaths=0)
+  q=0.45 W=16 qW=7.2: predicted=explode measured=explode (alive=16218 deaths=0)
+  q=0.6 W=16 qW=9.6: predicted=explode measured=explode (alive=19128 deaths=0)
+  Euler-Lotka agreement: 29/32; stationary cells found: 0
+
+wall clock: 75.7s
