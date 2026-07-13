@@ -38,7 +38,7 @@ sys.path.insert(0, str(HERE.parents[0] / "137_participation_ratio"))
 from p1_growth import _ball, _on_cycle, _lcc  # reuse tested helpers  # noqa: E402
 from plaquette_closure_probe import plaquette_Q  # noqa: E402
 from boundary_layer_dim import perceived_dim  # noqa: E402
-from two_legged_gate import legs, LOWD_MANIFOLDS  # noqa: E402
+from two_legged_gate import legs, LOWD_MANIFOLDS, CV_HI  # noqa: E402
 from graphs import torus2d, random_regular, binary_tree  # noqa: E402
 
 ALIVE_CAP = 12000
@@ -138,17 +138,21 @@ def gate_thresholds(rng):
 
 def read_gate(adj, rng, Qg_lo, D_lo):
     if len(adj) < 40:
-        return "degenerate", float("nan"), float("nan")
+        return "degenerate", float("nan"), float("nan"), float("nan")
     nodes = sorted(int(x) for x in rng.choice(len(adj), min(300, len(adj)), replace=False))
     _, qg, _ = plaquette_Q(adj, nodes, rng)
     D = float(np.median([perceived_dim(adj, seed=s) for s in (1, 2, 3)]))
-    if qg >= Qg_lo and D <= D_lo:
+    deg = np.array([len(a) for a in adj], float)
+    cv = float(deg.std() / deg.mean()) if deg.mean() > 0 else float("nan")
+    if qg >= Qg_lo and D <= D_lo and cv <= CV_HI:
         v = "MANIFOLD"
-    elif qg < Qg_lo and D <= D_lo:
-        v = "tree/sparse"
-    else:
+    elif cv > CV_HI:
+        v = "hub/irregular"
+    elif D > D_lo:
         v = "expander/crumple"
-    return v, qg, D
+    else:
+        v = "tree/sparse"
+    return v, qg, D, cv
 
 
 # alpha=1 => reab = min(cap, phi): reabsorption REDISTRIBUTES shed flux (one-hop
@@ -161,6 +165,41 @@ BASE = dict(q=0.5, W_window=8, L_cycle=4, p_parents=2,
             c=1.0, D0=3.0, cap=1.5, alpha=1.0, D_min=0.0)
 
 
+def run_fine(Qg_lo, D_lo):
+    """Fine dissipation-strength sweep: hold growth, sweep c toward extinction, to
+    resolve whether cv crosses 0.60 robustly (a manifold window) or asymptotes/
+    collapses (outcome b). scalar_flux only (reconvergence==scalar in the coarse
+    sweep). 5 seeds/c."""
+    print("FINE dissipation-strength sweep: q=0.40 fixed, cap=1.5, mode=scalar_flux, "
+          "5 seeds/c.\n")
+    print(f"{'c':>5}{'#ext':>6}{'#manif':>8}{'cv min..max':>15}{'Qg~':>7}{'D~':>6}"
+          "   per-seed verdicts")
+    for c in [1.0, 1.1, 1.2, 1.3, 1.4, 1.5]:
+        res = []
+        for sd in range(1, 6):
+            r = grow_dissipative(dict(BASE, mode="scalar_flux", q=0.40, c=c),
+                                 sd, max_births=3000)
+            v, qg, D, cv = read_gate(r["lcc_adj"], np.random.default_rng(99 + sd),
+                                     Qg_lo, D_lo)
+            res.append((r["outcome"], v, qg, D, cv))
+        ext = sum(1 for o, v, *_ in res if v == "degenerate" or o == "extinct")
+        manif = sum(1 for _, v, *_ in res if v == "MANIFOLD")
+        good = [(qg, D, cv) for _, v, qg, D, cv in res if v != "degenerate"]
+        if good:
+            cvs = [g[2] for g in good]
+            cvr = f"{min(cvs):.2f}..{max(cvs):.2f}"
+            qgm, Dm = np.mean([g[0] for g in good]), np.mean([g[1] for g in good])
+        else:
+            cvr, qgm, Dm = "--", float("nan"), float("nan")
+        vs = ",".join(v[:5] for _, v, *_ in res)
+        print(f"{c:>5.1f}{ext:>6}{manif:>8}{cvr:>15}{qgm:>7.2f}{Dm:>6.1f}   {vs}",
+              flush=True)
+    print("\nReading (PREREG_P1d): #manif ~0 with cv asymptoting >0.60 while #ext rises "
+          "with c -> outcome (b) (dissipation erodes hubs but does not reach a regular "
+          "manifold before collapse). A c-band with cv robustly <0.60, #manif=5, low "
+          "#ext -> a genuine manifold window (a).")
+
+
 def main():
     rng = np.random.default_rng(0)
     smoke = "--smoke" in sys.argv
@@ -168,6 +207,8 @@ def main():
     print(f"P1d dissipation channel. Frozen gate: Qg_lo={Qg_lo:.3f} D_lo={D_lo:.2f}")
     print("engagement census: reab/shed (dissipation must MOVE flux, P1b lesson); "
           "starve vs select deaths.\n")
+    if "--fine" in sys.argv:
+        run_fine(Qg_lo, D_lo); return
 
     modes = ["none", "scalar_flux", "reconvergence"]
     ratios = [("drive>diss", dict(q=0.5, c=1.0)), ("drive~diss", dict(q=0.3, c=1.4))]
@@ -175,18 +216,18 @@ def main():
     mb = 1500 if smoke else 4000
 
     print(f"{'mode':<14}{'ratio':<11}{'seed':<5}{'outcome':<12}{'lcc':>6}"
-          f"{'reab/shed':>10}{'starve':>8}{'select':>8}   gate(Qg,D)")
+          f"{'reab/shed':>10}{'starve':>8}{'select':>8}   gate (Qg,D,cv)")
     for mode in modes:
         for rname, rp in ratios:
             for sd in seeds:
                 p = dict(BASE, mode=mode, **rp)
                 t0 = time.time()
                 r = grow_dissipative(p, sd, max_births=mb)
-                v, qg, D = read_gate(r["lcc_adj"], np.random.default_rng(99 + sd),
-                                     Qg_lo, D_lo)
+                v, qg, D, cv = read_gate(r["lcc_adj"], np.random.default_rng(99 + sd),
+                                         Qg_lo, D_lo)
                 print(f"{mode:<14}{rname:<11}{sd:<5}{r['outcome']:<12}{r['lcc']:>6}"
                       f"{r['reab_over_shed']:>10.3f}{r['starve_deaths']:>8}"
-                      f"{r['select_deaths']:>8}   {v} ({qg:.2f},{D:.1f})"
+                      f"{r['select_deaths']:>8}   {v} ({qg:.2f},{D:.1f},{cv:.2f})"
                       f"  [{time.time()-t0:.0f}s]", flush=True)
     print("\nReading (pre-registered, PREREG_P1d): compare modes. If none/scalar_flux "
           "-> crumple/extinct and ONLY reconvergence -> MANIFOLD, the selection is "
