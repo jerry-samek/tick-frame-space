@@ -1,0 +1,16 @@
+ONE flooding-lag substrate; ONE consuming pattern at a node.
+
+[1] GRAVITY — the pattern's consumption carves a well; force = the ambient gradient (+ve = attractive):
+    force @ r=2/4/6/8 = +0.2967  +0.0335  +0.0056  +0.0010   -> ATTRACTS (gravity)
+
+[2] PERCEPTION — the SAME pattern's taps read the lag structure of the flux they consume:
+    perceived dimension (lag-rank) = 1.36  (3D torus substrate)   -> PERCEIVES
+
+[3] COHERENCE — the pattern's own metabolism: core load vs body size (volume-produce ~R^3 vs surface-shed ~R^2):
+    R   #nodes   core_load
+    2      25        3.9
+    4     129       10.6
+    6     377       21.7
+    8     827       37.0
+
+One engine, one act of consumption: it GRAVITATES (well), PERCEIVES (lag-rank), and is bounded in size (coherence). Perceiving = gravitating = being, on the single flooding-lag substrate. Gravity uses the flux FIELD; perception uses the flux LAG; both are the one flood on the one graph. (Renewal -- which defeats drag, RAW 135 §13.4 -- is the pattern re-forming each tick; the coherence bound and the maintenance shedding are the same metabolism read structurally.)
