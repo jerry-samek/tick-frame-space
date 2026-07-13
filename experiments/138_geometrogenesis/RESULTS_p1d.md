@@ -40,5 +40,26 @@ Dissipation **partially closes** the geometrogenesis wall in this channel: finit
 ## Banked next (fresh prereg required)
 Fully map the (q,c) plane and the extinction boundary; larger `max_births` to test whether d→2 is reachable off the extinction edge; reconcile the D-leg/ball-growth dimension disagreement; test multi-hop dilution (the one skeptic attack not run to ground); characterize the SOC band (avalanche/mortality statistics) to test the RAW 136 SOC claim directly.
 
+## Map addendum — full (q,c)-plane (2026-07-13)
+`p1d_channel.py --map` (7×7 grid, 5 seeds/cell, frozen gate; `results/p1d_map.log`). Characterizes the closed (a) — not a new hypothesis; the gate is unchanged.
+
+```
+        0.20  0.25  0.30  0.35  0.40  0.45  0.50   (q)
+c=1.0    M     M     h     h     h     h     h
+c=1.1    m     m     h     h     h     h     h
+c=1.2    m     m     h     h     h     h     h
+c=1.3    m     m     h     h     h     h     h
+c=1.4    m     m     h     h     h     h     h
+c=1.5    m     m     M     h     h     h     h
+c=1.6    X     X     m     m     m     h     h
+```
+(M=manifold&survives, m=manifold&high-ext, h=hub, X=mostly extinct)
+
+- **q is the manifold axis; c is the extinction/size axis.** cv rises monotonically with q at every c (manifold cv<0.60 only at q≤0.25); raising c mainly raises extinction and *shrinks* the survivor (q=0.20: n 2208→44 as c 1.0→1.6, d dropping toward filament). The manifold window is a **low-q strip (q≤0.25)**, robust across c.
+- **Caveat #1 (high-extinction critical band) STANDS across the whole plane** — never below 2/5 extinction in the manifold strip.
+- **Caveat #2 REFINED (mild):** the "d≈2 only in tiny ~140-node graphs" limit was a high-c artifact. At **(q=0.20, c=1.0)** survivors are degree-regularized (cv 0.52), gate-MANIFOLD, **~2200 nodes**, ball-growth d≈2.0, 2/5 extinct — the manifold regime is reachable **at scale**, bankable.
+- **Instrument finding (sharpens caveat #2):** the gate-**D leg is FLAT at ~1.0–1.5 across the ENTIRE plane** and does NOT track the ball-growth gradient (d 1.0→3.05 with q). D is uninformative as a dimension reader on these graphs; the verdict is carried by **cv**, corroborated by ball-growth. So "d≈2 at (0.20,1.0)" rests on the P1c-discredited shell classifier with the D-leg disagreeing → **exact dimension UNRESOLVED**. The solid claim is *degree-regularized, finite-d, gate-MANIFOLD at scale*, **not** a certified 2D lattice. A trustworthy dimension instrument is the prerequisite to firm any "d≈2."
+- **Sweet spot = the low-q/low-c corner** (q≤0.25, c≤1.2): manifold + large + lowest-d + moderate extinction. No goal-post move (frozen gate); the map confirms (a), refines the scale caveat, and hardens the open instrument gap.
+
 ## Provenance
 Prereg frozen `1c21e61`; channel `159611c`; gate hardened `7002e78`; wiring + sweeps `<this commit>`. Two fresh-context skeptic passes (one on the gate/probe recon → A.8; one on this channel result → refuted the operator's (b), established qualified (a)).

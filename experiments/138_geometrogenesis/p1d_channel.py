@@ -242,6 +242,62 @@ def run_plane(Qg_lo, D_lo):
           "(finite-d, NOT expander); cv(bare) stays >0.60 (dissipation load-bearing).")
 
 
+def run_map(Qg_lo, D_lo):
+    """Full (q,c)-plane MAP of the closed P1d (a): frozen gate, no cherry-picking,
+    both dimension readings (gate-D and out-of-gate ball-growth) per cell, so the
+    manifold window, the extinction boundary, and the D-leg/ball-growth disagreement
+    are all visible across the plane. scalar_flux (reconvergence==scalar). 5 seeds."""
+    from instrument import shell_counts, fit_exponent
+    q_vals = [0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50]
+    c_vals = [1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6]
+    SEEDS = 5
+    print(f"(q,c)-PLANE MAP: scalar_flux, {SEEDS} seeds/cell, frozen gate "
+          f"(Qg_lo={Qg_lo:.3f} D_lo={D_lo:.2f} cv_hi={CV_HI}).\n")
+    grid = {}
+    for c in c_vals:
+        for q in q_vals:
+            survs, ext = [], 0
+            for sd in range(1, SEEDS + 1):
+                r = grow_dissipative(dict(BASE, mode="scalar_flux", q=q, c=c), sd, 3000)
+                v, qg, D, cv = read_gate(r["lcc_adj"], np.random.default_rng(99 + sd),
+                                         Qg_lo, D_lo)
+                if v == "degenerate":
+                    ext += 1; continue
+                adj, e = r["lcc_adj"], float("nan")
+                if len(adj) >= 200:
+                    srcs = sorted(int(x) for x in np.random.default_rng(7).choice(
+                        len(adj), min(40, len(adj)), replace=False))
+                    f = fit_exponent(shell_counts(adj, srcs))
+                    if f["cls"] == "poly":
+                        e = f["e_hat"]
+                survs.append((v, cv, D, e, len(adj)))
+            nman = sum(1 for s in survs if s[0] == "MANIFOLD")
+            cvm = float(np.mean([s[1] for s in survs])) if survs else float("nan")
+            Dm = float(np.mean([s[2] for s in survs])) if survs else float("nan")
+            es = [s[3] for s in survs if not np.isnan(s[3])]
+            em = float(np.mean(es)) if es else float("nan")
+            szm = int(np.mean([s[4] for s in survs])) if survs else 0
+            grid[(q, c)] = (ext, nman, len(survs), cvm, Dm, em, szm)
+            print(f"q={q:.2f} c={c:.1f}: ext {ext}/{SEEDS}  manif {nman}/{len(survs):<2} "
+                  f"cv~{cvm:.2f}  D~{Dm:.1f}  d_ball~{em:.2f}  n~{szm}", flush=True)
+    print("\nLANDSCAPE (rows c, cols q). M=manifold&survives(ext<=2), "
+          "m=manifold&high-ext, h=hub/irregular, X=mostly extinct(ext>=4)")
+    print("        " + "   ".join(f"{q:.2f}" for q in q_vals))
+    for c in c_vals:
+        row = []
+        for q in q_vals:
+            ext, nman, ns, cvm, Dm, em, szm = grid[(q, c)]
+            row.append("X" if ext >= SEEDS - 1 else
+                       "M" if (nman >= 1 and ext <= 2) else
+                       "m" if nman >= 1 else "h")
+            row[-1] += " " if len(row[-1]) == 1 else ""
+        print(f"c={c:.1f}   " + "    ".join(s.strip().center(2) for s in row))
+    print("\nReading: locate the manifold window (M), the extinction cliff (X), and "
+          "whether d_ball ever reaches ~2 off the cliff. Note gate-D (~1) vs d_ball "
+          "disagreement across the plane -- the unresolved instrument issue from "
+          "RESULTS_p1d.md. This MAPS the closed (a); it is not a new hypothesis test.")
+
+
 def main():
     rng = np.random.default_rng(0)
     smoke = "--smoke" in sys.argv
@@ -253,6 +309,8 @@ def main():
         run_fine(Qg_lo, D_lo); return
     if "--plane" in sys.argv:
         run_plane(Qg_lo, D_lo); return
+    if "--map" in sys.argv:
+        run_map(Qg_lo, D_lo); return
 
     modes = ["none", "scalar_flux", "reconvergence"]
     ratios = [("drive>diss", dict(q=0.5, c=1.0)), ("drive~diss", dict(q=0.3, c=1.4))]
